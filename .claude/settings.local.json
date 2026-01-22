@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:stripe.com)",
+      "Bash(npm install)",
+      "Bash(npm run build:*)",
+      "Bash(ls:*)",
+      "WebFetch(domain:mezzofy.com)",
+      "Bash(grep:*)",
+      "Bash(cat:*)",
+      "Bash(find:*)",
+      "Bash(wc:*)",
+      "Bash(dir:*)",
+      "Bash(python -m http.server:*)",
+      "Bash(curl:*)",
+      "Bash(netsh advfirewall firewall show rule:*)",
+      "Bash(findstr:*)",
+      "Bash(ipconfig:*)",
+      "Bash(node -e:*)",
+      "Bash(for key in \"management.testimonials.maxims.since\" \"management.testimonials.hungFok.since\" \"management.testimonials.jardine.since\")",
+      "Bash(do echo \"Checking: $key\")",
+      "Bash(done)",
+      "Bash(node check-keys.js:*)",
+      "Bash(node:*)"
+    ],
+    "deny": [],
+    "ask": []
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "shadcn"
+  ]
+}

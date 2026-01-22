@@ -1,0 +1,22 @@
+{
+  "name": "mezzofy-landing-page",
+  "version": "1.0.0",
+  "description": "Mezzofy - Global Coupon Exchange Protocol Landing Page",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify && npm run copy-i18n && npm run copy-js",
+    "copy-i18n": "xcopy /E /I /Y src\\i18n dist\\i18n",
+    "copy-js": "if not exist dist\\js mkdir dist\\js && xcopy /Y src\\js\\*.js dist\\js"
+  },
+  "keywords": [
+    "mezzofy",
+    "tailwind",
+    "landing-page"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "shadcn": "^3.6.0",
+    "tailwindcss": "^3.4.0"
+  }
+}

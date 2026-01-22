@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-orange hover:bg-dark-orange text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl;
+  }
+
+  .btn-secondary {
+    @apply bg-white hover:bg-gray-50 text-primary-black font-semibold py-3 px-6 rounded-lg border-2 border-primary-black transition-all duration-300;
+  }
+
+  .feature-card {
+    @apply bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300;
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24;
+  }
+
+  /* Dropdown Navigation Styles */
+  .dropdown {
+    @apply relative;
+  }
+
+  .dropdown-trigger {
+    @apply flex items-center gap-1 cursor-pointer;
+  }
+
+  .dropdown-menu {
+    @apply absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-100 py-2 opacity-0 invisible transition-all duration-200;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    @apply opacity-100 visible;
+  }
+
+  .dropdown-item {
+    @apply block px-4 py-2 text-sm text-dark-grey hover:bg-light-grey hover:text-primary-orange transition-colors;
+  }
+
+  /* Mobile Dropdown Styles */
+  .mobile-dropdown-trigger {
+    @apply flex items-center justify-between w-full py-2 text-medium-grey hover:text-primary-black transition-colors;
+  }
+
+  .mobile-dropdown-menu {
+    @apply pl-4 space-y-1 hidden;
+  }
+
+  .mobile-dropdown-menu.active {
+    @apply block;
+  }
+
+  /* Workflow Step Enhancement */
+  .workflow-step {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1 max-w-xs mx-auto;
+  }
+
+  .workflow-step:hover .bg-primary-orange {
+    @apply scale-110;
+  }
+
+  /* Language Toggle Styles */
+  .lang-option {
+    @apply transition-all duration-200 cursor-pointer;
+  }
+
+  .lang-option:hover {
+    @apply bg-light-grey;
+  }
+}
+
+/* Prevent Flash of Untranslated Content (FOUC) */
+body.i18n-loading {
+  opacity: 0;
+}
+
+body.i18n-ready {
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
+}
+
+/* Smooth transition for language switches */
+body {
+  transition: opacity 0.2s;
+}
