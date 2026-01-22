@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Mezzofy - Connecting Businesses and Customers Through The Power of Smart Couponing. Learn about our mission, values, and recognition.">
+    <title>About Us - Mezzofy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-orange': '#FF6B35',
+                        'primary-black': '#1A1A1A',
+                        'light-grey': '#F5F5F5',
+                        'medium-grey': '#757575',
+                        'dark-grey': '#424242'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+        }
+        .feature-card {
+            background: white;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background-color: #FF6B35;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            display: inline-block;
+            transition: background-color 0.2s;
+        }
+        .btn-primary:hover {
+            background-color: #e55a2b;
+        }
+        .btn-secondary {
+            background-color: white;
+            color: #FF6B35;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            display: inline-block;
+            border: 2px solid #FF6B35;
+            transition: all 0.2s;
+        }
+        .btn-secondary:hover {
+            background-color: #FF6B35;
+            color: white;
+        }
+    </style>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="output.css">
+
+    <!-- i18n Script -->
+    <script src="i18n/i18n.js"></script>
+</head>
+<body class="bg-white text-dark-grey i18n-loading">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <img src="assets/images/logo.png" alt="Mezzofy Logo" class="h-8 md:h-10">
+                        <span class="md:hidden text-xl font-bold text-primary-black">MEZZOFY</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <!-- Solutions Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.solutions">Solutions</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="for-merchants.html" class="dropdown-item" data-i18n="common.nav.merchantSolution">I'm a Merchant</a>
+                            <a href="for-distributors.html" class="dropdown-item" data-i18n="common.nav.distributorSolution">I'm a Distributor</a>
+                            <a href="for-developers.html" class="dropdown-item" data-i18n="common.nav.developerSolution">I'm a Developer</a>
+                        </div>
+                    </div>
+
+                    <!-- Products Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.products">Products</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="coupon-management.html" class="dropdown-item" data-i18n="common.nav.managementSystem">Coupon Management System</a>
+                            <a href="coupon-marketplace.html" class="dropdown-item" data-i18n="common.nav.marketplace">Coupon Marketplace</a>
+                            <a href="coupon-nfc.html" class="dropdown-item" data-i18n="common.nav.nfc">Coupon NFC</a>
+                            <a href="coupon-marketing.html" class="dropdown-item" data-i18n="common.nav.marketing">Coupon Marketing</a>
+                            <a href="coupon-wallet.html" class="dropdown-item" data-i18n="common.nav.wallet">Coupon Wallet</a>
+                        </div>
+                    </div>
+
+                    <!-- Developer Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.developer">Developer</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="index.html#" class="dropdown-item" data-i18n="common.nav.apiDoc">API Documentation</a>
+                            <a href="index.html#" class="dropdown-item" data-i18n="common.nav.apiUseCase">API Use Case</a>
+                        </div>
+                    </div>
+
+                    <!-- Resources Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.resources">Resources</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="coupon-playbook.html" class="dropdown-item" data-i18n="common.nav.playbook">Coupon Playbook</a>
+                            <a href="index.html#" class="dropdown-item" data-i18n="common.nav.support">Support</a>
+                        </div>
+                    </div>
+
+                    <!-- Company Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.company">Company</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="about.html" class="dropdown-item text-primary-orange font-semibold" data-i18n="common.nav.aboutUs">About Us</a>
+                            <a href="contact.html" class="dropdown-item" data-i18n="common.nav.contactUs">Contact Us</a>
+                            <a href="news-press.html" class="dropdown-item" data-i18n="common.nav.newsPress">News & Press</a>
+                            <a href="investors.html" class="dropdown-item" data-i18n="common.nav.investors">Investors</a>
+                        </div>
+                    </div>
+
+                    <!-- Language Toggle Desktop -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <svg class="w-5 h-5 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+                            </svg>
+                            <span id="current-lang-desktop">English</span>
+                            <svg class="w-4 h-4 inline ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item lang-option" data-lang="en">English</a>
+                            <a href="#" class="dropdown-item lang-option" data-lang="zh-TW">繁體中文</a>
+                            <a href="#" class="dropdown-item lang-option" data-lang="zh-CN">简体中文</a>
+                        </div>
+                    </div>
+
+                    <a href="index.html#contact" class="btn-primary" data-i18n="common.nav.getStarted">Get Started</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-primary-black focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-1">
+                <!-- Language Toggle Mobile -->
+                <div class="mobile-dropdown border-b border-gray-200 pb-2 mb-2">
+                    <button class="mobile-dropdown-trigger" data-dropdown="language">
+                        <span class="flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+                            </svg>
+                            <span id="current-lang-mobile">English</span>
+                        </span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="language">
+                        <a href="#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange lang-option" data-lang="en">English</a>
+                        <a href="#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange lang-option" data-lang="zh-TW">繁體中文</a>
+                        <a href="#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange lang-option" data-lang="zh-CN">简体中文</a>
+                    </div>
+                </div>
+
+                <!-- Solutions Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" data-dropdown="solutions">
+                        <span data-i18n="common.nav.solutions">Solutions</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="solutions">
+                        <a href="for-merchants.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.merchantSolution">I'm a Merchant</a>
+                        <a href="for-distributors.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.distributorSolution">I'm a Distributor</a>
+                        <a href="for-developers.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.developerSolution">I'm a Developer</a>
+                    </div>
+                </div>
+
+                <!-- Products Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" data-dropdown="products">
+                        <span data-i18n="common.nav.products">Products</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="products">
+                        <a href="coupon-management.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.managementSystem">Coupon Management System</a>
+                        <a href="coupon-marketplace.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.marketplace">Coupon Marketplace</a>
+                        <a href="coupon-nfc.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.nfc">Coupon NFC</a>
+                        <a href="coupon-marketing.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.marketing">Coupon Marketing</a>
+                        <a href="coupon-wallet.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.wallet">Coupon Wallet</a>
+                    </div>
+                </div>
+
+                <!-- Developer Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" data-dropdown="developer">
+                        <span data-i18n="common.nav.developer">Developer</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="developer">
+                        <a href="index.html#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.apiDoc">API Documentation</a>
+                        <a href="index.html#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.apiUseCase">API Use Case</a>
+                    </div>
+                </div>
+
+                <!-- Resources Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" data-dropdown="resources">
+                        <span data-i18n="common.nav.resources">Resources</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="resources">
+                        <a href="coupon-playbook.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.playbook">Coupon Playbook</a>
+                        <a href="index.html#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.support">Support</a>
+                    </div>
+                </div>
+
+                <!-- Company Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" data-dropdown="company">
+                        <span data-i18n="common.nav.company">Company</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="company">
+                        <a href="about.html" class="block py-2 text-sm text-primary-orange font-semibold" data-i18n="common.nav.aboutUs">About Us</a>
+                        <a href="contact.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.contactUs">Contact Us</a>
+                        <a href="news-press.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.newsPress">News & Press</a>
+                        <a href="investors.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.investors">Investors</a>
+                    </div>
+                </div>
+
+                <a href="index.html#contact" class="block py-2 text-primary-orange font-semibold" data-i18n="common.nav.getStarted">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-primary-black via-gray-900 to-primary-black">
+        <div class="section-container">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-white" data-i18n="about.hero.title">
+                    ABOUT COMPANY
+                </h1>
+                <p class="text-xl sm:text-2xl md:text-3xl text-gray-100 mb-8" data-i18n="about.hero.subtitle">
+                    Connecting Businesses and Customers Through The <span class="text-primary-orange">Power of Smart Couponing</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="bg-light-grey">
+        <div class="section-container">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl md:text-5xl font-bold text-primary-black mb-8 text-center" data-i18n="about.mission.title">Our Mission</h2>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <div class="feature-card">
+                        <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-primary-black" data-i18n="about.mission.nameOrigin.title">Name Origin</h3>
+                        <p class="text-dark-grey leading-relaxed" data-i18n="about.mission.nameOrigin.description">
+                            <span class="font-semibold text-primary-orange">'Mezzo'</span> (Italian for 'medium') combined with <span class="font-semibold text-primary-orange">'-fy'</span> (meaning 'for you')—reflecting our dedication to linking enterprises with patrons through cutting-edge couponing solutions.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-primary-black" data-i18n="about.mission.corePurpose.title">Core Purpose</h3>
+                        <p class="text-dark-grey leading-relaxed" data-i18n="about.mission.corePurpose.description">
+                            Rather than simply developing digital coupons or applications, Mezzofy positions itself as a pioneer in <span class="font-semibold text-primary-orange">COUPONS MARKETING infrastructure</span>, making it easy to create, share, redeem, and measure.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-primary-black" data-i18n="about.mission.keyObjectives.title">Key Objectives</h3>
+                    <p class="text-dark-grey leading-relaxed text-lg" data-i18n="about.mission.keyObjectives.description">
+                        We aim to <span class="text-primary-orange font-semibold">elevate spirits</span>, <span class="text-primary-orange font-semibold">forge meaningful connections</span>, <span class="text-primary-orange font-semibold">unleash creativity</span>, and <span class="text-primary-orange font-semibold">enable focus</span>, making life more vibrant through the joy of sharing by facilitating interactions between merchants and consumers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Metrics Section -->
+    <section class="bg-white">
+        <div class="section-container">
+            <h2 class="text-3xl md:text-5xl font-bold text-primary-black mb-12 text-center" data-i18n="about.performance.title">
+                Performance at Scale
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Metric 1 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary-orange/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"></path>
+                        </svg>
+                    </div>
+                    <div class="text-4xl md:text-5xl font-bold text-primary-orange mb-2" data-i18n="about.performance.metric1.value">Millions</div>
+                    <p class="text-dark-grey font-semibold" data-i18n="about.performance.metric1.label">Coupons Handled</p>
+                </div>
+
+                <!-- Metric 2 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary-orange/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <div class="text-4xl md:text-5xl font-bold text-primary-orange mb-2" data-i18n="about.performance.metric2.value">Billions</div>
+                    <p class="text-dark-grey font-semibold" data-i18n="about.performance.metric2.label">In Value</p>
+                </div>
+
+                <!-- Metric 3 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary-orange/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <div class="text-4xl md:text-5xl font-bold text-primary-orange mb-2" data-i18n="about.performance.metric3.value">Ultra-Fast</div>
+                    <p class="text-dark-grey font-semibold" data-i18n="about.performance.metric3.label">Transaction Speed</p>
+                </div>
+
+                <!-- Metric 4 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary-orange/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <div class="text-4xl md:text-5xl font-bold text-primary-orange mb-2" data-i18n="about.performance.metric4.value">Global</div>
+                    <p class="text-dark-grey font-semibold" data-i18n="about.performance.metric4.label">Markets Served</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recognition & Awards Section -->
+    <section class="bg-light-grey">
+        <div class="section-container">
+            <h2 class="text-3xl md:text-5xl font-bold text-primary-black mb-12 text-center" data-i18n="about.awards.title">
+                Recognition & Awards
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <!-- Award 1 -->
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-primary-orange/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-primary-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-bold text-primary-black">The Technology Era</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Award 2 -->
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-primary-orange/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-primary-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-bold text-primary-black">The CIO World</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Award 3 -->
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-primary-orange/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-primary-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-bold text-primary-black">Forbes China</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Award 4 -->
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-primary-orange/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-primary-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-bold text-primary-black">Silicon Review Magazine</p>
+                            <p class="text-sm text-medium-grey">2019</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Award 5 -->
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-primary-orange/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-primary-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-bold text-primary-black">Business Berg</p>
+                            <p class="text-sm text-medium-grey">2020</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Award 6 -->
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-primary-orange/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-primary-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-bold text-primary-black">APAC Insider</p>
+                            <p class="text-sm text-medium-grey">2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Logos Section -->
+    <section class="bg-white">
+        <div class="section-container">
+            <div class="max-w-6xl mx-auto text-center">
+                <h2 class="text-3xl md:text-5xl font-bold text-primary-black mb-8" data-i18n="about.brands.title">
+                    Trusted by Leading Brands
+                </h2>
+                <p class="text-lg md:text-xl text-dark-grey leading-relaxed mb-12" data-i18n="about.brands.description">
+                    Mezzofy serves numerous <span class="text-primary-orange font-semibold">multinational brands</span> across retail, beauty, hospitality, finance, and entertainment sectors.
+                </p>
+
+                <!-- Logo Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                    <!-- Logo 1: L'Oréal -->
+                    <div class="flex items-center justify-center p-6 bg-light-grey rounded-xl hover:shadow-lg transition-shadow">
+                        <img src="https://placehold.co/240x120/f5f5f5/808080?text=L'Oreal" alt="L'Oréal" class="h-12 w-auto grayscale hover:grayscale-0 transition-all">
+                    </div>
+
+                    <!-- Logo 2: McDonald's -->
+                    <div class="flex items-center justify-center p-6 bg-light-grey rounded-xl hover:shadow-lg transition-shadow">
+                        <img src="https://placehold.co/240x120/f5f5f5/808080?text=McDonald's" alt="McDonald's" class="h-12 w-auto grayscale hover:grayscale-0 transition-all">
+                    </div>
+
+                    <!-- Logo 3: HSBC -->
+                    <div class="flex items-center justify-center p-6 bg-light-grey rounded-xl hover:shadow-lg transition-shadow">
+                        <img src="https://placehold.co/240x120/f5f5f5/808080?text=HSBC" alt="HSBC" class="h-12 w-auto grayscale hover:grayscale-0 transition-all">
+                    </div>
+
+                    <!-- Logo 4: Shell -->
+                    <div class="flex items-center justify-center p-6 bg-light-grey rounded-xl hover:shadow-lg transition-shadow">
+                        <img src="https://placehold.co/240x120/f5f5f5/808080?text=Shell" alt="Shell" class="h-12 w-auto grayscale hover:grayscale-0 transition-all">
+                    </div>
+
+                    <!-- Logo 5: Watsons -->
+                    <div class="flex items-center justify-center p-6 bg-light-grey rounded-xl hover:shadow-lg transition-shadow">
+                        <img src="https://placehold.co/240x120/f5f5f5/808080?text=Watsons" alt="Watsons" class="h-12 w-auto grayscale hover:grayscale-0 transition-all">
+                    </div>
+
+                    <!-- Logo 6: Mannings -->
+                    <div class="flex items-center justify-center p-6 bg-light-grey rounded-xl hover:shadow-lg transition-shadow">
+                        <img src="https://placehold.co/240x120/f5f5f5/808080?text=Mannings" alt="Mannings" class="h-12 w-auto grayscale hover:grayscale-0 transition-all">
+                    </div>
+
+                    <!-- Logo 7: Sasa -->
+                    <div class="flex items-center justify-center p-6 bg-light-grey rounded-xl hover:shadow-lg transition-shadow">
+                        <img src="https://placehold.co/240x120/f5f5f5/808080?text=Sasa" alt="Sasa" class="h-12 w-auto grayscale hover:grayscale-0 transition-all">
+                    </div>
+
+                    <!-- Logo 8: Maxim's -->
+                    <div class="flex items-center justify-center p-6 bg-light-grey rounded-xl hover:shadow-lg transition-shadow">
+                        <img src="https://placehold.co/240x120/f5f5f5/808080?text=Maxim's" alt="Maxim's" class="h-12 w-auto grayscale hover:grayscale-0 transition-all">
+                    </div>
+
+                    <!-- Logo 9: Manulife -->
+                    <div class="flex items-center justify-center p-6 bg-light-grey rounded-xl hover:shadow-lg transition-shadow">
+                        <img src="https://placehold.co/240x120/f5f5f5/808080?text=Manulife" alt="Manulife" class="h-12 w-auto grayscale hover:grayscale-0 transition-all">
+                    </div>
+
+                    <!-- Logo 10: Conrad Hotels -->
+                    <div class="flex items-center justify-center p-6 bg-light-grey rounded-xl hover:shadow-lg transition-shadow">
+                        <img src="https://placehold.co/240x120/f5f5f5/808080?text=Conrad+Hotels" alt="Conrad Hotels" class="h-12 w-auto grayscale hover:grayscale-0 transition-all">
+                    </div>
+
+                    <!-- Logo 11: Wellcome -->
+                    <div class="flex items-center justify-center p-6 bg-light-grey rounded-xl hover:shadow-lg transition-shadow">
+                        <img src="https://placehold.co/240x120/f5f5f5/808080?text=Wellcome" alt="Wellcome" class="h-12 w-auto grayscale hover:grayscale-0 transition-all">
+                    </div>
+
+                    <!-- Logo 12: China Mobile -->
+                    <div class="flex items-center justify-center p-6 bg-light-grey rounded-xl hover:shadow-lg transition-shadow">
+                        <img src="https://placehold.co/240x120/f5f5f5/808080?text=China+Mobile" alt="China Mobile" class="h-12 w-auto grayscale hover:grayscale-0 transition-all">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & CTA -->
+    <footer id="contact" class="bg-primary-black text-white">
+        <div class="section-container">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6" data-i18n="about.cta.title">
+                    Ready to power the future of commerce?
+                </h2>
+                <p class="text-lg sm:text-xl text-orange-200 mb-10 max-w-3xl mx-auto" data-i18n="about.cta.description">
+                    Whether you are a merchant looking for maximum performance or a distributor seeking high-intent inventory, the Mezzofy Exchange Protocol is the indispensable infrastructure you need.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="index.html#contact" class="btn-primary w-full sm:w-auto text-center" data-i18n="about.cta.contactSales">Contact Sales (Enterprise)</a>
+                    <a href="index.html#" class="btn-secondary w-full sm:w-auto text-center bg-white/10 text-white border-white hover:bg-white/20" data-i18n="about.cta.developerDocs">Developer Docs (API Access)</a>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="border-t border-white/20 pt-12 mt-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+                    <!-- Company Info -->
+                    <div class="lg:col-span-1">
+                        <h3 class="text-2xl font-bold text-primary-orange mb-4">Mezzofy</h3>
+                        <p class="text-sm mb-4 text-gray-200" data-i18n="common.footer.tagline">Building the future of coupon infrastructure through the Mezzofy Exchange Protocol.</p>
+                    </div>
+
+                    <!-- Solutions -->
+                    <div>
+                        <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.solutions.title">Solutions</h3>
+                        <ul class="space-y-2 text-gray-200">
+                            <li><a href="for-merchants.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.merchants">For Merchants</a></li>
+                            <li><a href="for-distributors.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.distributors">For Distributors</a></li>
+                            <li><a href="for-developers.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.developers">For Developers</a></li>
+                            <li><a href="index.html#product-ecosystem" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.ecosystem">Product Ecosystem</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Products -->
+                    <div>
+                        <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.products.title">Products</h3>
+                        <ul class="space-y-2 text-gray-200">
+                            <li><a href="coupon-management.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.management">Management</a></li>
+                            <li><a href="coupon-marketplace.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.marketplace">Marketplace</a></li>
+                            <li><a href="coupon-nfc.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.nfc">NFC</a></li>
+                            <li><a href="coupon-marketing.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.marketing">Marketing</a></li>
+                            <li><a href="coupon-wallet.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.wallet">Wallet</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Resources -->
+                    <div>
+                        <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.resources.title">Resources</h3>
+                        <ul class="space-y-2 text-gray-200">
+                            <li><a href="coupon-playbook.html" class="hover:text-white transition-colors" data-i18n="common.footer.resources.playbook">Coupon Playbook</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors" data-i18n="common.footer.resources.apiDoc">API Documentation</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors" data-i18n="common.footer.resources.apiUseCase">API Use Case</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors" data-i18n="common.footer.resources.support">Support</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Company -->
+                    <div>
+                        <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.company.title">Company</h3>
+                        <ul class="space-y-2 text-gray-200">
+                            <li><a href="about.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.about">About Us</a></li>
+                            <li><a href="contact.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.contact">Contact Us</a></li>
+                            <li><a href="news-press.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.news">News & Press</a></li>
+                            <li><a href="investors.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.investors">Investors</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="border-t border-white/20 pt-8 text-center text-gray-200">
+                    <p data-i18n="common.footer.copyright">&copy; 2024 Mezzofy. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

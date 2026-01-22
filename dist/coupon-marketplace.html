@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mezzofy Coupon Marketplace - The Global Exchange Hub for Digital Coupons. B2B, B2C, and C2C marketplace for trading, exchanging, and distributing coupons.">
+    <title>Coupon Marketplace - Mezzofy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-orange': '#FF6B35',
+                        'primary-black': '#1A1A1A',
+                        'light-grey': '#F5F5F5',
+                        'medium-grey': '#757575',
+                        'dark-grey': '#424242'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+        }
+        .feature-card {
+            background: white;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background-color: #FF6B35;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            display: inline-block;
+            transition: background-color 0.2s;
+        }
+        .btn-primary:hover {
+            background-color: #e55a2b;
+        }
+        .btn-secondary {
+            background-color: white;
+            color: #FF6B35;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            display: inline-block;
+            border: 2px solid #FF6B35;
+            transition: all 0.2s;
+        }
+        .btn-secondary:hover {
+            background-color: #FF6B35;
+            color: white;
+        }
+    </style>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="output.css">
+
+    <!-- i18n Script -->
+    <script src="i18n/i18n.js"></script>
+</head>
+<body class="bg-white text-dark-grey i18n-loading">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <img src="assets/images/logo.png" data-i18n-alt="common.logo.alt" alt="Mezzofy Logo" class="h-8 md:h-10">
+                        <span class="md:hidden text-xl font-bold text-primary-black">MEZZOFY</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <!-- Solutions Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.solutions">Solutions</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="for-merchants.html" class="dropdown-item" data-i18n="common.nav.merchantSolution">I'm a Merchant</a>
+                            <a href="for-distributors.html" class="dropdown-item" data-i18n="common.nav.distributorSolution">I'm a Distributor</a>
+                            <a href="for-developers.html" class="dropdown-item" data-i18n="common.nav.developerSolution">I'm a Developer</a>
+                        </div>
+                    </div>
+
+                    <!-- Products Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.products">Products</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="coupon-management.html" class="dropdown-item" data-i18n="common.nav.managementSystem">Coupon Management System</a>
+                            <a href="#" class="dropdown-item text-primary-orange font-semibold" data-i18n="common.nav.marketplace">Coupon Marketplace</a>
+                            <a href="coupon-nfc.html" class="dropdown-item" data-i18n="common.nav.nfc">Coupon NFC</a>
+                            <a href="coupon-marketing.html" class="dropdown-item" data-i18n="common.nav.marketing">Coupon Marketing</a>
+                            <a href="coupon-wallet.html" class="dropdown-item" data-i18n="common.nav.wallet">Coupon Wallet</a>
+                        </div>
+                    </div>
+
+                    <!-- Developer Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.developer">Developer</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="index.html#" class="dropdown-item" data-i18n="common.nav.apiDoc">API Documentation</a>
+                            <a href="index.html#" class="dropdown-item" data-i18n="common.nav.apiUseCase">API Use Case</a>
+                        </div>
+                    </div>
+
+                    <!-- Resources Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.resources">Resources</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="coupon-playbook.html" class="dropdown-item" data-i18n="common.nav.playbook">Coupon Playbook</a>
+                            <a href="index.html#" class="dropdown-item" data-i18n="common.nav.support">Support</a>
+                        </div>
+                    </div>
+
+                    <!-- Company Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.company">Company</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="about.html" class="dropdown-item" data-i18n="common.nav.aboutUs">About Us</a>
+                            <a href="contact.html" class="dropdown-item" data-i18n="common.nav.contactUs">Contact Us</a>
+                            <a href="news-press.html" class="dropdown-item" data-i18n="common.nav.newsPress">News & Press</a>
+                            <a href="investors.html" class="dropdown-item" data-i18n="common.nav.investors">Investors</a>
+                        </div>
+                    </div>
+
+                    <!-- Language Toggle Desktop -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <svg class="w-5 h-5 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+                            </svg>
+                            <span id="current-lang-desktop">English</span>
+                            <svg class="w-4 h-4 inline ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item lang-option" data-lang="en">English</a>
+                            <a href="#" class="dropdown-item lang-option" data-lang="zh-TW">繁體中文</a>
+                            <a href="#" class="dropdown-item lang-option" data-lang="zh-CN">简体中文</a>
+                        </div>
+                    </div>
+
+                    <a href="index.html#contact" class="btn-primary" data-i18n="common.nav.getStarted">Get Started</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-primary-black focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-1">
+                <!-- Language Toggle Mobile -->
+                <div class="mobile-dropdown border-b border-gray-200 pb-2 mb-2">
+                    <button class="mobile-dropdown-trigger" data-dropdown="language">
+                        <span class="flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+                            </svg>
+                            <span id="current-lang-mobile">English</span>
+                        </span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="language">
+                        <a href="#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange lang-option" data-lang="en">English</a>
+                        <a href="#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange lang-option" data-lang="zh-TW">繁體中文</a>
+                        <a href="#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange lang-option" data-lang="zh-CN">简体中文</a>
+                    </div>
+                </div>
+
+                <!-- Solutions Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" data-dropdown="solutions">
+                        <span data-i18n="common.nav.solutions">Solutions</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="solutions">
+                        <a href="for-merchants.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.merchantSolution">I'm a Merchant</a>
+                        <a href="for-distributors.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.distributorSolution">I'm a Distributor</a>
+                        <a href="for-developers.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.developerSolution">I'm a Developer</a>
+                    </div>
+                </div>
+
+                <!-- Products Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" data-dropdown="products">
+                        <span data-i18n="common.nav.products">Products</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="products">
+                        <a href="coupon-management.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.managementSystem">Coupon Management System</a>
+                        <a href="coupon-marketplace.html" class="block py-2 text-sm text-primary-orange font-semibold" data-i18n="common.nav.marketplace">Coupon Marketplace</a>
+                        <a href="coupon-nfc.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.nfc">Coupon NFC</a>
+                        <a href="coupon-marketing.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.marketing">Coupon Marketing</a>
+                        <a href="coupon-wallet.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.wallet">Coupon Wallet</a>
+                    </div>
+                </div>
+
+                <!-- Developer Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" data-dropdown="developer">
+                        <span data-i18n="common.nav.developer">Developer</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="developer">
+                        <a href="index.html#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.apiDoc">API Documentation</a>
+                        <a href="index.html#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.apiUseCase">API Use Case</a>
+                    </div>
+                </div>
+
+                <!-- Resources Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" data-dropdown="resources">
+                        <span data-i18n="common.nav.resources">Resources</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="resources">
+                        <a href="coupon-playbook.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.playbook">Coupon Playbook</a>
+                        <a href="index.html#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.support">Support</a>
+                    </div>
+                </div>
+
+                <!-- Company Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" data-dropdown="company">
+                        <span data-i18n="common.nav.company">Company</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="company">
+                        <a href="about.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.aboutUs">About Us</a>
+                        <a href="contact.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.contactUs">Contact Us</a>
+                        <a href="news-press.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.newsPress">News & Press</a>
+                        <a href="investors.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.investors">Investors</a>
+                    </div>
+                </div>
+
+                <a href="index.html#contact" class="block py-2 text-primary-orange font-semibold" data-i18n="common.nav.getStarted">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Protocol Context Banner -->
+    <section class="mt-16 bg-primary-orange">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="py-2 flex items-center justify-center gap-2 text-white text-sm">
+                <span class="font-medium" data-i18n="marketplace.banner.text">Part of Mezzofy Exchange Protocol</span>
+                <span class="text-white/60">|</span>
+                <a href="index.html" class="hover:underline flex items-center gap-1">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                    </svg>
+                    <span data-i18n="marketplace.banner.link">View Ecosystem</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="pt-6 pb-20 bg-gradient-to-br from-primary-black via-gray-900 to-primary-black">
+        <div class="section-container">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <!-- Content -->
+                    <div>
+                        <p class="text-primary-orange text-lg font-semibold mb-4" data-i18n="marketplace.hero.label">COUPON MARKETPLACE</p>
+                        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-6" data-i18n="marketplace.hero.title">
+                            THE GLOBAL EXCHANGE HUB FOR <span class="text-primary-orange">DIGITAL COUPONS</span>
+                        </h1>
+                        <p class="text-lg text-gray-100 mb-8 leading-relaxed" data-i18n="marketplace.hero.description">
+                            The only <span class="text-primary-orange font-semibold">secure peer-to-peer coupon exchange</span> enabling B2B, B2C, and C2C transactions. Built on <span class="text-primary-orange font-semibold">tokenization technology</span> to create a secondary market for digital promotions with fraud-proof validation.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="index.html#contact" class="btn-primary inline-block text-center">
+                                <span data-i18n="marketplace.hero.listInventory">List Your Inventory</span>
+                                <svg class="inline-block w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                </svg>
+                            </a>
+                            <a href="#marketplace-types" class="btn-secondary inline-block text-center bg-white/10 text-white border-white hover:bg-white/20" data-i18n="marketplace.hero.exploreMarketplace">Explore Marketplace</a>
+                        </div>
+                    </div>
+
+                    <!-- Hero Image -->
+                    <div>
+                        <img src="https://placehold.co/600x400/1a1a1a/ff7a3d?text=Exchange+Hub" data-i18n-alt="marketplace.hero.imageAlt" alt="Coupon Marketplace Platform" class="rounded-xl shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exchange Hub Overview Section -->
+    <section class="bg-light-grey">
+        <div class="section-container">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-5xl font-bold text-primary-black mb-4" data-i18n="marketplace.exchange.title">
+                    The Coupon Exchange Protocol
+                </h2>
+                <p class="text-lg text-dark-grey max-w-3xl mx-auto" data-i18n="marketplace.exchange.description">
+                    Traditional digital promotions are failing due to fragmentation, high costs, and security risks. Mezzofy eliminates the obsolete model and replaces it with a <span class="font-semibold text-primary-orange">high-liquidity, high-performance Exchange Protocol</span>.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Network Effects -->
+                <div class="feature-card">
+                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-primary-black" data-i18n="marketplace.exchange.network.title">From Tool to Network</h3>
+                    <p class="text-dark-grey leading-relaxed" data-i18n="marketplace.exchange.network.description">
+                        We focus on network effects and secure settlement, not just features. Build real value through connections across the global marketplace.
+                    </p>
+                </div>
+
+                <!-- Secure Exchange -->
+                <div class="feature-card">
+                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-primary-black" data-i18n="marketplace.exchange.security.title">Unrivaled Security</h3>
+                    <p class="text-dark-grey leading-relaxed" data-i18n="marketplace.exchange.security.description">
+                        Every promotion is standardized into the Mezzofy Coupon Standard, a proprietary protocol that guarantees unique, fraud-proof digital assets.
+                    </p>
+                </div>
+
+                <!-- AI-Native -->
+                <div class="feature-card">
+                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-primary-black" data-i18n="marketplace.exchange.ai.title">AI-Native Infrastructure</h3>
+                    <p class="text-dark-grey leading-relaxed" data-i18n="marketplace.exchange.ai.description">
+                        Our data is machine-readable, making us the standard interface for the next generation of autonomous AI shopping agents.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketplace Types Section -->
+    <section id="marketplace-types" class="bg-white">
+        <div class="section-container">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-primary-black mb-4" data-i18n="marketplace.models.title">
+                    Three Marketplace Models, One Platform
+                </h2>
+                <p class="text-lg text-dark-grey max-w-3xl mx-auto" data-i18n="marketplace.models.subtitle">
+                    Mezzofy powers coupon exchange across all transaction types, creating a comprehensive ecosystem for digital promotion distribution
+                </p>
+            </div>
+
+            <!-- B2B Marketplace -->
+            <div class="mb-20">
+                <div class="grid md:grid-cols-2 gap-12 items-center mb-8">
+                    <div>
+                        <div class="inline-block bg-primary-orange text-white px-4 py-2 rounded-full font-bold text-sm mb-4" data-i18n="marketplace.models.b2b.badge">B2B MARKETPLACE</div>
+                        <h3 class="text-3xl md:text-4xl font-bold text-primary-black mb-6" data-i18n="marketplace.models.b2b.title">Business to Business</h3>
+                        <p class="text-lg text-dark-grey mb-6 leading-relaxed" data-i18n="marketplace.models.b2b.description">
+                            Mezzofy serves as the <span class="font-semibold text-primary-orange">central exchange hub</span> connecting merchants with distributors, resellers, and channel partners. List your coupon inventory and gain instant access to global distribution networks.
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-dark-grey" data-i18n="marketplace.models.b2b.benefit1"><strong>Wholesale Distribution:</strong> Sell coupon inventory in bulk to distributors and resellers</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-dark-grey" data-i18n="marketplace.models.b2b.benefit2"><strong>Channel Partner Network:</strong> Connect with marketing platforms, loyalty programs, and affiliate networks</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-dark-grey" data-i18n="marketplace.models.b2b.benefit3"><strong>Cross-Promotion Opportunities:</strong> Trade inventory with complementary businesses for mutual benefit</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-dark-grey" data-i18n="marketplace.models.b2b.benefit4"><strong>Transparent Pricing:</strong> Real-time market pricing with automated settlement and commission tracking</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="feature-card bg-gradient-to-br from-primary-orange/5 to-primary-orange/10 border-2 border-primary-orange/20">
+                        <div class="text-center py-8">
+                            <div class="w-24 h-24 bg-primary-orange rounded-full flex items-center justify-center mx-auto mb-6">
+                                <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-2xl font-bold text-primary-black mb-4" data-i18n="marketplace.models.b2b.cardTitle">Merchant → Distributor</h4>
+                            <p class="text-dark-grey" data-i18n="marketplace.models.b2b.cardDescription">Turn coupon liabilities into high-performing digital assets with global reach</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- B2C Marketplace -->
+            <div class="mb-20">
+                <div class="grid md:grid-cols-2 gap-12 items-center mb-8">
+                    <div class="order-2 md:order-1 feature-card bg-gradient-to-br from-primary-orange/5 to-primary-orange/10 border-2 border-primary-orange/20">
+                        <div class="text-center py-8">
+                            <div class="w-24 h-24 bg-primary-orange rounded-full flex items-center justify-center mx-auto mb-6">
+                                <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-2xl font-bold text-primary-black mb-4" data-i18n="marketplace.models.b2c.cardTitle">Business → Consumer</h4>
+                            <p class="text-dark-grey" data-i18n="marketplace.models.b2c.cardDescription">Direct customer engagement with personalized promotional campaigns</p>
+                        </div>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <div class="inline-block bg-primary-orange text-white px-4 py-2 rounded-full font-bold text-sm mb-4" data-i18n="marketplace.models.b2c.badge">B2C MARKETPLACE</div>
+                        <h3 class="text-3xl md:text-4xl font-bold text-primary-black mb-6" data-i18n="marketplace.models.b2c.title">Business to Consumer</h3>
+                        <p class="text-lg text-dark-grey mb-6 leading-relaxed" data-i18n="marketplace.models.b2c.description">
+                            Enable direct-to-consumer coupon distribution through Mezzofy's <span class="font-semibold text-primary-orange">hosted inventory platform</span>. Businesses can list, manage, and distribute coupons directly to end customers through multiple channels.
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-dark-grey" data-i18n="marketplace.models.b2c.benefit1"><strong>Direct Distribution:</strong> Push coupons to customers via email, SMS, social media, and mobile apps</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-dark-grey" data-i18n="marketplace.models.b2c.benefit2"><strong>Personalized Campaigns:</strong> Target specific customer segments with tailored promotional offers</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-dark-grey" data-i18n="marketplace.models.b2c.benefit3"><strong>Real-Time Analytics:</strong> Track redemption rates, customer engagement, and campaign performance</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-dark-grey" data-i18n="marketplace.models.b2c.benefit4"><strong>Multi-Channel Reach:</strong> Distribute through marketplaces, e-commerce platforms, and retail partners</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C2C Marketplace -->
+            <div>
+                <div class="grid md:grid-cols-2 gap-12 items-center mb-8">
+                    <div>
+                        <div class="inline-block bg-primary-orange text-white px-4 py-2 rounded-full font-bold text-sm mb-4" data-i18n="marketplace.models.c2c.badge">C2C MARKETPLACE</div>
+                        <h3 class="text-3xl md:text-4xl font-bold text-primary-black mb-6" data-i18n="marketplace.models.c2c.title">Consumer to Consumer</h3>
+                        <p class="text-lg text-dark-grey mb-6 leading-relaxed" data-i18n="marketplace.models.c2c.description">
+                            Mezzofy enables the first truly <span class="font-semibold text-primary-orange">secure peer-to-peer coupon exchange</span>. Consumers can transfer, gift, trade, or sell unused coupons to other consumers, creating a secondary market that increases overall redemption rates.
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-dark-grey" data-i18n="marketplace.models.c2c.benefit1"><strong>Transferable Coupons:</strong> Gift or transfer coupons to friends and family with secure validation</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-dark-grey" data-i18n="marketplace.models.c2c.benefit2"><strong>Secondary Marketplace:</strong> Trade or sell unused coupons to maximize value and reduce waste</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-dark-grey" data-i18n="marketplace.models.c2c.benefit3"><strong>Fraud Prevention:</strong> Blockchain-inspired tokenization ensures each coupon is unique and valid</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-dark-grey" data-i18n="marketplace.models.c2c.benefit4"><strong>Increased Redemption:</strong> Unused coupons find new owners, driving actual business value for merchants</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="feature-card bg-gradient-to-br from-primary-orange/5 to-primary-orange/10 border-2 border-primary-orange/20">
+                        <div class="text-center py-8">
+                            <div class="w-24 h-24 bg-primary-orange rounded-full flex items-center justify-center mx-auto mb-6">
+                                <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-2xl font-bold text-primary-black mb-4" data-i18n="marketplace.models.c2c.cardTitle">Consumer ↔ Consumer</h4>
+                            <p class="text-dark-grey" data-i18n="marketplace.models.c2c.cardDescription">Peer-to-peer coupon exchange with fraud-proof validation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How The Exchange Works -->
+    <section class="bg-light-grey">
+        <div class="section-container">
+            <h2 class="text-3xl md:text-5xl font-bold text-primary-black mb-12 text-center" data-i18n="marketplace.howItWorks.title">
+                How The Exchange Works
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="feature-card text-center">
+                    <div class="w-16 h-16 bg-primary-orange rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl font-bold text-white">1</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-primary-black" data-i18n="marketplace.howItWorks.step1.title">List Inventory</h3>
+                    <p class="text-dark-grey leading-relaxed" data-i18n="marketplace.howItWorks.step1.description">
+                        Merchants list coupon inventory on the Mezzofy Exchange. Set pricing, terms, and distribution preferences for your digital assets.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="feature-card text-center">
+                    <div class="w-16 h-16 bg-primary-orange rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl font-bold text-white">2</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-primary-black" data-i18n="marketplace.howItWorks.step2.title">Match & Trade</h3>
+                    <p class="text-dark-grey leading-relaxed" data-i18n="marketplace.howItWorks.step2.description">
+                        Our exchange protocol matches supply with demand. Distributors, businesses, or consumers discover and acquire coupons through secure transactions.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="feature-card text-center">
+                    <div class="w-16 h-16 bg-primary-orange rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl font-bold text-white">3</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-primary-black" data-i18n="marketplace.howItWorks.step3.title">Validate & Settle</h3>
+                    <p class="text-dark-grey leading-relaxed" data-i18n="marketplace.howItWorks.step3.description">
+                        Fraudless validation ensures every redemption is legitimate. Automated settlement processes handle payments and commissions instantly.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Exchange Features -->
+    <section class="bg-white">
+        <div class="section-container">
+            <h2 class="text-3xl md:text-5xl font-bold text-primary-black mb-12 text-center" data-i18n="marketplace.features.title">
+                Exchange Platform Features
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="marketplace.features.realTimePricing.title">Real-Time Pricing</h3>
+                    <p class="text-dark-grey text-sm" data-i18n="marketplace.features.realTimePricing.description">Dynamic market pricing based on supply and demand</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="marketplace.features.fraudPrevention.title">Fraud Prevention</h3>
+                    <p class="text-dark-grey text-sm" data-i18n="marketplace.features.fraudPrevention.description">Tokenized coupons with unique digital signatures</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="marketplace.features.instantSettlement.title">Instant Settlement</h3>
+                    <p class="text-dark-grey text-sm" data-i18n="marketplace.features.instantSettlement.description">Automated payment processing and commission tracking</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="marketplace.features.deepAnalytics.title">Deep Analytics</h3>
+                    <p class="text-dark-grey text-sm" data-i18n="marketplace.features.deepAnalytics.description">Track performance, redemption rates, and ROI</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card">
+                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="marketplace.features.globalReach.title">Global Reach</h3>
+                    <p class="text-dark-grey text-sm" data-i18n="marketplace.features.globalReach.description">Access to 15+ markets across Asia-Pacific</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card">
+                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="marketplace.features.apiIntegration.title">API Integration</h3>
+                    <p class="text-dark-grey text-sm" data-i18n="marketplace.features.apiIntegration.description">Seamless integration with existing systems</p>
+                </div>
+
+                <!-- Feature 7 -->
+                <div class="feature-card">
+                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="marketplace.features.flexiblePricing.title">Flexible Pricing</h3>
+                    <p class="text-dark-grey text-sm" data-i18n="marketplace.features.flexiblePricing.description">Pay only when coupons are redeemed</p>
+                </div>
+
+                <!-- Feature 8 -->
+                <div class="feature-card">
+                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="marketplace.features.support24.title">24/7 Support</h3>
+                    <p class="text-dark-grey text-sm" data-i18n="marketplace.features.support24.description">Expert assistance whenever you need it</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration & Ecosystem Section -->
+    <section class="bg-light-grey">
+        <div class="section-container">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary-black mb-4" data-i18n="marketplace.ecosystem.title">
+                    Works Seamlessly with the Mezzofy Ecosystem
+                </h2>
+                <p class="text-lg text-dark-grey max-w-3xl mx-auto" data-i18n="marketplace.ecosystem.description">
+                    Coupon Marketplace integrates with other Mezzofy products to create a complete solution
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Related Product 1 -->
+                <div class="feature-card">
+                    <h4 class="text-lg font-bold text-primary-black mb-3">
+                        <a href="coupon-management.html" class="text-primary-orange hover:underline" data-i18n="marketplace.ecosystem.management.title">+ Coupon Management</a>
+                    </h4>
+                    <p class="text-dark-grey text-sm" data-i18n="marketplace.ecosystem.management.description">Create and manage inventory before listing on marketplace</p>
+                </div>
+
+                <!-- Related Product 2 -->
+                <div class="feature-card">
+                    <h4 class="text-lg font-bold text-primary-black mb-3">
+                        <a href="coupon-marketing.html" class="text-primary-orange hover:underline" data-i18n="marketplace.ecosystem.marketing.title">+ Coupon Marketing</a>
+                    </h4>
+                    <p class="text-dark-grey text-sm" data-i18n="marketplace.ecosystem.marketing.description">Sell your marketplace inventory directly to consumers</p>
+                </div>
+
+                <!-- Related Product 3 -->
+                <div class="feature-card">
+                    <h4 class="text-lg font-bold text-primary-black mb-3">
+                        <a href="for-developers.html" class="text-primary-orange hover:underline" data-i18n="marketplace.ecosystem.bridgeApi.title">+ Bridge API</a>
+                    </h4>
+                    <p class="text-dark-grey text-sm" data-i18n="marketplace.ecosystem.bridgeApi.description">Integrate marketplace access into your platform</p>
+                </div>
+            </div>
+
+            <!-- Recommended Bundle -->
+            <div class="bg-white rounded-xl p-8 max-w-3xl mx-auto border-2 border-primary-orange/20">
+                <h3 class="text-2xl font-bold text-primary-black mb-4 text-center" data-i18n="marketplace.ecosystem.bundle.title">
+                    💡 Recommended Bundle: Revenue Maximizer Bundle
+                </h3>
+                <p class="text-dark-grey text-center mb-6" data-i18n="marketplace.ecosystem.bundle.description">
+                    Combine Management, Marketing, and Marketplace to create, sell, and distribute coupons as a revenue stream
+                </p>
+                <div class="flex justify-center">
+                    <a href="index.html#contact" class="btn-primary" data-i18n="marketplace.ecosystem.bundle.cta">Contact Sales for Bundle Pricing</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & CTA -->
+    <footer id="footer" class="bg-primary-black text-white">
+        <div class="section-container">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6" data-i18n="marketplace.footerCta.title">
+                    Ready to Join The Global Coupon Exchange?
+                </h2>
+                <p class="text-lg sm:text-xl text-gray-100 mb-10 max-w-3xl mx-auto" data-i18n="marketplace.footerCta.description">
+                    Whether you're a merchant looking to maximize reach or a distributor seeking high-intent inventory, Mezzofy is your indispensable exchange infrastructure
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="index.html#contact" class="btn-primary w-full sm:w-auto text-center" data-i18n="marketplace.footerCta.listInventory">List Your Inventory</a>
+                    <a href="index.html#contact" class="btn-secondary w-full sm:w-auto text-center bg-white/10 text-white border-white hover:bg-white/20" data-i18n="marketplace.footerCta.accessDeals">Access Deals</a>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="border-t border-white/20 pt-12 mt-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+                    <!-- Company Info -->
+                    <div class="lg:col-span-1">
+                        <h3 class="text-2xl font-bold text-primary-orange mb-4">Mezzofy</h3>
+                        <p class="text-sm mb-4 text-gray-200" data-i18n="common.footer.tagline">Building the future of coupon infrastructure through the Mezzofy Exchange Protocol.</p>
+                    </div>
+
+                    <!-- Solutions -->
+                    <div>
+                        <h3 class="font-bold text-lg mb-4" data-i18n="common.footer.solutions.title">Solutions</h3>
+                        <ul class="space-y-2 text-gray-200">
+                            <li><a href="for-merchants.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.merchants">For Merchants</a></li>
+                            <li><a href="for-distributors.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.distributors">For Distributors</a></li>
+                            <li><a href="for-developers.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.developers">For Developers</a></li>
+                            <li><a href="index.html#product-ecosystem" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.ecosystem">Product Ecosystem</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Products -->
+                    <div>
+                        <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.products.title">Products</h3>
+                        <ul class="space-y-2 text-gray-200">
+                            <li><a href="coupon-management.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.management">Management</a></li>
+                            <li><a href="coupon-marketplace.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.marketplace">Marketplace</a></li>
+                            <li><a href="coupon-nfc.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.nfc">NFC</a></li>
+                            <li><a href="coupon-marketing.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.marketing">Marketing</a></li>
+                            <li><a href="coupon-wallet.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.wallet">Wallet</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Resources -->
+                    <div>
+                        <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.resources.title">Resources</h3>
+                        <ul class="space-y-2 text-gray-200">
+                            <li><a href="coupon-playbook.html" class="hover:text-white transition-colors" data-i18n="common.footer.resources.playbook">Coupon Playbook</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors" data-i18n="common.footer.resources.apiDoc">API Documentation</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors" data-i18n="common.footer.resources.apiUseCase">API Use Case</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors" data-i18n="common.footer.resources.support">Support</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Company -->
+                    <div>
+                        <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.company.title">Company</h3>
+                        <ul class="space-y-2 text-gray-200">
+                            <li><a href="about.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.about">About Us</a></li>
+                            <li><a href="contact.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.contact">Contact Us</a></li>
+                            <li><a href="news-press.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.news">News & Press</a></li>
+                            <li><a href="investors.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.investors">Investors</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="border-t border-white/20 pt-8 text-center text-gray-200">
+                    <p data-i18n="common.footer.copyright">&copy; 2024 Mezzofy. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

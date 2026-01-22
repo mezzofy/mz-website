@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>i18n Live Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; max-width: 1000px; margin: 0 auto; }
+        .test-section { margin: 20px 0; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+        .success { color: green; font-weight: bold; }
+        .error { color: red; font-weight: bold; }
+        pre { background: #f5f5f5; padding: 10px; overflow-x: auto; }
+        button { padding: 10px 20px; margin: 5px; cursor: pointer; }
+    </style>
+    <script src="i18n/i18n.js"></script>
+</head>
+<body>
+    <h1>i18n System Live Test</h1>
+
+    <div class="test-section">
+        <h2>Test 1: Direct JSON Fetch</h2>
+        <button onclick="test1()">Run Test 1</button>
+        <div id="test1-result"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>Test 2: i18n Library Test</h2>
+        <button onclick="test2()">Run Test 2</button>
+        <div id="test2-result"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>Test 3: Translation Rendering</h2>
+        <p data-i18n="management.footerCta.getStarted">Get Started Now</p>
+        <p data-i18n="management.footerCta.contactSales">Contact Sales</p>
+        <button onclick="test3()">Apply Translations</button>
+        <div id="test3-result"></div>
+    </div>
+
+    <script>
+        async function test1() {
+            const result = document.getElementById('test1-result');
+            result.innerHTML = '<p>Fetching en.json...</p>';
+
+            try {
+                const response = await fetch('i18n/translations/en.json', {
+                    cache: 'no-cache',  // Bypass cache
+                    headers: {
+                        'Cache-Control': 'no-cache',
+                        'Pragma': 'no-cache'
+                    }
+                });
+                const data = await response.json();
+
+                let html = '<p class="success">✓ JSON loaded successfully</p>';
+                html += '<p>management exists: ' + (data.management ? 'YES' : 'NO') + '</p>';
+                html += '<p>footerCta exists: ' + (data.management?.footerCta ? 'YES' : 'NO') + '</p>';
+                html += '<p>getStarted value: ' + (data.management?.footerCta?.getStarted || 'MISSING') + '</p>';
+                html += '<p>contactSales value: ' + (data.management?.footerCta?.contactSales || 'MISSING') + '</p>';
+
+                html += '<h3>Full footerCta object:</h3>';
+                html += '<pre>' + JSON.stringify(data.management?.footerCta, null, 2) + '</pre>';
+
+                result.innerHTML = html;
+            } catch (error) {
+                result.innerHTML = '<p class="error">✗ Error: ' + error.message + '</p>';
+            }
+        }
+
+        async function test2() {
+            const result = document.getElementById('test2-result');
+            result.innerHTML = '<p>Testing i18n library...</p>';
+
+            try {
+                // Initialize i18n
+                await window.i18n.init();
+
+                let html = '<p class="success">✓ i18n initialized</p>';
+                html += '<p>Current language: ' + window.i18n.currentLang + '</p>';
+
+                // Try to get the translation
+                const translation1 = window.i18n.getTranslation('management.footerCta.getStarted');
+                const translation2 = window.i18n.getTranslation('management.footerCta.contactSales');
+
+                html += '<p>getStarted translation: <strong>' + translation1 + '</strong></p>';
+                html += '<p>contactSales translation: <strong>' + translation2 + '</strong></p>';
+
+                // Show what's in the translations object
+                html += '<h3>i18n.translations.management.footerCta:</h3>';
+                html += '<pre>' + JSON.stringify(window.i18n.translations.management?.footerCta, null, 2) + '</pre>';
+
+                result.innerHTML = html;
+            } catch (error) {
+                result.innerHTML = '<p class="error">✗ Error: ' + error.message + '</p>';
+                console.error(error);
+            }
+        }
+
+        async function test3() {
+            const result = document.getElementById('test3-result');
+            result.innerHTML = '<p>Applying translations...</p>';
+
+            try {
+                await window.i18n.init();
+                window.i18n.applyTranslations();
+
+                result.innerHTML = '<p class="success">✓ Translations applied! Check the text above.</p>';
+            } catch (error) {
+                result.innerHTML = '<p class="error">✗ Error: ' + error.message + '</p>';
+            }
+        }
+
+        // Auto-run test 1 on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            console.log('Page loaded, ready to test');
+        });
+    </script>
+</body>
+</html>

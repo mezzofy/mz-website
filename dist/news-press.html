@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Latest news, industry insights, and company updates from Mezzofy - Asia-Pacific's leading digital coupon solution provider.">
+    <title>News & Press - Mezzofy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-orange': '#FF6B35',
+                        'primary-black': '#1A1A1A',
+                        'light-grey': '#F5F5F5',
+                        'medium-grey': '#757575',
+                        'dark-grey': '#424242'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+        }
+        .feature-card {
+            background: white;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background-color: #FF6B35;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            display: inline-block;
+            transition: background-color 0.2s;
+        }
+        .btn-primary:hover {
+            background-color: #e55a2b;
+        }
+        .btn-secondary {
+            background-color: white;
+            color: #FF6B35;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            display: inline-block;
+            border: 2px solid #FF6B35;
+            transition: all 0.2s;
+        }
+        .btn-secondary:hover {
+            background-color: #FF6B35;
+            color: white;
+        }
+    </style>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="output.css">
+
+    <!-- i18n Script -->
+    <script src="i18n/i18n.js"></script>
+
+    <style>
+        .filter-btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: all 0.3s;
+            background-color: white;
+            color: #666;
+            border: 2px solid #e5e5e5;
+        }
+        .filter-btn:hover {
+            border-color: #ff7a3d;
+            color: #ff7a3d;
+        }
+        .filter-btn.active {
+            background-color: #ff7a3d;
+            color: white;
+            border-color: #ff7a3d;
+        }
+        .article-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .article-card:hover {
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body class="bg-white text-dark-grey i18n-loading">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <img src="assets/images/logo.png" alt="Mezzofy Logo" class="h-8 md:h-10">
+                        <span class="md:hidden text-xl font-bold text-primary-black">MEZZOFY</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <!-- Solutions Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.solutions">Solutions</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="for-merchants.html" class="dropdown-item" data-i18n="common.nav.merchantSolution">I'm a Merchant</a>
+                            <a href="for-distributors.html" class="dropdown-item" data-i18n="common.nav.distributorSolution">I'm a Distributor</a>
+                            <a href="for-developers.html" class="dropdown-item" data-i18n="common.nav.developerSolution">I'm a Developer</a>
+                        </div>
+                    </div>
+
+                    <!-- Products Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.products">Products</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item text-primary-orange font-semibold" data-i18n="common.nav.managementSystem">Coupon Management System</a>
+                            <a href="coupon-marketplace.html" class="dropdown-item" data-i18n="common.nav.marketplace">Coupon Marketplace</a>
+                            <a href="coupon-nfc.html" class="dropdown-item" data-i18n="common.nav.nfc">Coupon NFC</a>
+                            <a href="coupon-marketing.html" class="dropdown-item" data-i18n="common.nav.marketing">Coupon Marketing</a>
+                            <a href="coupon-wallet.html" class="dropdown-item" data-i18n="common.nav.wallet">Coupon Wallet</a>
+                        </div>
+                    </div>
+
+                    <!-- Developer Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.developer">Developer</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="index.html#" class="dropdown-item" data-i18n="common.nav.apiDoc">API Documentation</a>
+                            <a href="index.html#" class="dropdown-item" data-i18n="common.nav.apiUseCase">API Use Case</a>
+                        </div>
+                    </div>
+
+                    <!-- Resources Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.resources">Resources</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="coupon-playbook.html" class="dropdown-item" data-i18n="common.nav.playbook">Coupon Playbook</a>
+                            <a href="index.html#" class="dropdown-item" data-i18n="common.nav.support">Support</a>
+                        </div>
+                    </div>
+
+                    <!-- Company Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.company">Company</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="about.html" class="dropdown-item" data-i18n="common.nav.aboutUs">About Us</a>
+                            <a href="contact.html" class="dropdown-item" data-i18n="common.nav.contactUs">Contact Us</a>
+                            <a href="news-press.html" class="dropdown-item text-primary-orange font-semibold" data-i18n="common.nav.newsPress">News & Press</a>
+                            <a href="investors.html" class="dropdown-item" data-i18n="common.nav.investors">Investors</a>
+                        </div>
+                    </div>
+
+                    <!-- Language Toggle Desktop -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <svg class="w-5 h-5 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+                            </svg>
+                            <span id="current-lang-desktop">English</span>
+                            <svg class="w-4 h-4 inline ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item lang-option" data-lang="en">English</a>
+                            <a href="#" class="dropdown-item lang-option" data-lang="zh-TW">繁體中文</a>
+                            <a href="#" class="dropdown-item lang-option" data-lang="zh-CN">简体中文</a>
+                        </div>
+                    </div>
+
+                    <a href="index.html#contact" class="btn-primary" data-i18n="common.buttons.getStarted">Get Started</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-primary-black focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-1">
+                <!-- Language Toggle Mobile -->
+                <div class="mobile-dropdown border-b border-gray-200 pb-2 mb-2">
+                    <button class="mobile-dropdown-trigger" data-dropdown="language">
+                        <span class="flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+                            </svg>
+                            <span id="current-lang-mobile">English</span>
+                        </span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="language">
+                        <a href="#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange lang-option" data-lang="en">English</a>
+                        <a href="#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange lang-option" data-lang="zh-TW">繁體中文</a>
+                        <a href="#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange lang-option" data-lang="zh-CN">简体中文</a>
+                    </div>
+                </div>
+
+                <!-- Solutions Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" data-dropdown="solutions">
+                        <span data-i18n="common.nav.solutions">Solutions</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="solutions">
+                        <a href="for-merchants.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.merchantSolution">I'm a Merchant</a>
+                        <a href="for-distributors.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.distributorSolution">I'm a Distributor</a>
+                        <a href="for-developers.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.developerSolution">I'm a Developer</a>
+                    </div>
+                </div>
+
+                <!-- Products Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" data-dropdown="products">
+                        <span data-i18n="common.nav.products">Products</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="products">
+                        <a href="coupon-management.html" class="block py-2 text-sm text-primary-orange font-semibold" data-i18n="common.nav.managementSystem">Coupon Management System</a>
+                        <a href="coupon-marketplace.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.marketplace">Coupon Marketplace</a>
+                        <a href="coupon-nfc.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.nfc">Coupon NFC</a>
+                        <a href="coupon-marketing.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.marketing">Coupon Marketing</a>
+                        <a href="coupon-wallet.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.wallet">Coupon Wallet</a>
+                    </div>
+                </div>
+
+                <!-- Developer Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" data-dropdown="developer">
+                        <span data-i18n="common.nav.developer">Developer</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="developer">
+                        <a href="index.html#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.apiDoc">API Documentation</a>
+                        <a href="index.html#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.apiUseCase">API Use Case</a>
+                    </div>
+                </div>
+
+                <!-- Resources Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" data-dropdown="resources">
+                        <span data-i18n="common.nav.resources">Resources</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="resources">
+                        <a href="coupon-playbook.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.playbook">Coupon Playbook</a>
+                        <a href="index.html#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.support">Support</a>
+                    </div>
+                </div>
+
+                <!-- Company Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" data-dropdown="company">
+                        <span data-i18n="common.nav.company">Company</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="company">
+                        <a href="about.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.aboutUs">About Us</a>
+                        <a href="contact.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.contactUs">Contact Us</a>
+                        <a href="news-press.html" class="block py-2 text-sm text-primary-orange font-semibold" data-i18n="common.nav.newsPress">News & Press</a>
+                        <a href="investors.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.investors">Investors</a>
+                    </div>
+                </div>
+
+                <a href="index.html#contact" class="block py-2 text-primary-orange font-semibold" data-i18n="common.buttons.getStarted">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-primary-black via-gray-900 to-primary-black">
+        <div class="section-container">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-white" data-i18n="newsPress.hero.title">
+                    NEWS & PRESS
+                </h1>
+                <p class="text-xl sm:text-2xl md:text-3xl text-gray-100 mb-8" data-i18n="newsPress.hero.subtitle">
+                    Stay informed with the <span class="text-primary-orange">latest news, industry insights, and company updates</span> from Mezzofy
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter & Articles Section -->
+    <section class="bg-light-grey py-20">
+        <div class="section-container">
+            <!-- Filter Tabs -->
+            <div class="flex justify-center gap-4 mb-12 flex-wrap">
+                <button class="filter-btn active" data-filter="all" data-i18n="newsPress.filter.all">All (14)</button>
+                <button class="filter-btn" data-filter="blog" data-i18n="newsPress.filter.blog">Blog (6)</button>
+                <button class="filter-btn" data-filter="news" data-i18n="newsPress.filter.news">News (8)</button>
+            </div>
+
+            <!-- Articles Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 1. Blog Article: NFC PARKnSHOP - July 21, 2025 -->
+                <article class="article-card bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow overflow-hidden" data-category="blog">
+                    <img src="https://mezzofy.com/wp-content/uploads/2025/07/PNS_tag_website-e1753104699243-740x740.png" alt="NFC PARKnSHOP" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-primary-orange/10 text-primary-orange text-sm font-semibold px-3 py-1 rounded-full mb-3" data-i18n="newsPress.category.blog">
+                            Blog
+                        </span>
+                        <h3 class="text-xl font-bold text-primary-black mb-3">Mezzofy 助品牌設置優惠券到240 間百佳 NFC 標籤</h3>
+                        <p class="text-dark-grey mb-4">Streamlined promotional processes for FMCG brands partnering with ParknShop through NFC technology, eliminating coordination complexity.</p>
+                        <div class="flex items-center justify-between text-sm text-medium-grey mb-4">
+                            <span>July 21, 2025</span>
+                            <span>Mezzofy</span>
+                        </div>
+                        <a href="blog/nfc-parknshop.html" class="text-primary-orange font-semibold hover:underline" data-i18n="newsPress.readMore">
+                            Read More →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 2. News Article: Treasure Global Partnership - April 16, 2025 -->
+                <article class="article-card bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow overflow-hidden" data-category="news">
+                    <img src="https://mezzofy.com/wp-content/uploads/2025/04/treasure-global-740x740.webp" alt="Treasure Global Partnership" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-blue-100 text-blue-600 text-sm font-semibold px-3 py-1 rounded-full mb-3" data-i18n="newsPress.category.news">
+                            News
+                        </span>
+                        <h3 class="text-xl font-bold text-primary-black mb-3">Mezzofy Partners with Treasure Global</h3>
+                        <p class="text-dark-grey mb-4">Strategic partnership with Treasure Global Inc. to accelerate digital coupon expansion in Malaysia, projecting USD2-4 million in recurring annual revenue.</p>
+                        <div class="flex items-center justify-between text-sm text-medium-grey mb-4">
+                            <span>April 16, 2025</span>
+                            <span>Mezzofy</span>
+                        </div>
+                        <a href="news/treasure-global-partnership.html" class="text-primary-orange font-semibold hover:underline" data-i18n="newsPress.readMore">
+                            Read More →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 3. Blog Article: E-Coupons Preference - January 14, 2025 -->
+                <article class="article-card bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow overflow-hidden" data-category="blog">
+                    <img src="https://mezzofy.com/wp-content/uploads/2025/01/Mezzofy_blogpost_EJinsight-740x740.jpg" alt="E-Coupons Preference" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-primary-orange/10 text-primary-orange text-sm font-semibold px-3 py-1 rounded-full mb-3" data-i18n="newsPress.category.blog">
+                            Blog
+                        </span>
+                        <h3 class="text-xl font-bold text-primary-black mb-3">60% of Consumers Prefer E-Coupons</h3>
+                        <p class="text-dark-grey mb-4">60% of consumers prefer e-coupons, signaling a major shift in shopping behaviors. Digital coupons with NFC and AI are transforming retail.</p>
+                        <div class="flex items-center justify-between text-sm text-medium-grey mb-4">
+                            <span>January 14, 2025</span>
+                            <span>Mezzofy</span>
+                        </div>
+                        <a href="blog/e-coupons-preference.html" class="text-primary-orange font-semibold hover:underline" data-i18n="newsPress.readMore">
+                            Read More →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 4. Blog Article: Environmental Excellence - December 31, 2024 -->
+                <article class="article-card bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow overflow-hidden" data-category="blog">
+                    <img src="https://mezzofy.com/wp-content/uploads/2025/02/HKAEE_Certificate-of-Participation_202300974-740x740.png" alt="Environmental Excellence" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-primary-orange/10 text-primary-orange text-sm font-semibold px-3 py-1 rounded-full mb-3" data-i18n="newsPress.category.blog">
+                            Blog
+                        </span>
+                        <h3 class="text-xl font-bold text-primary-black mb-3">HK Awards for Environmental Excellence</h3>
+                        <p class="text-dark-grey mb-4">Cut costs and save trees with digital coupons. Over 136 billion paper coupons destroy 5 million trees annually. Go digital to reduce expenses by 70%.</p>
+                        <div class="flex items-center justify-between text-sm text-medium-grey mb-4">
+                            <span>December 31, 2024</span>
+                            <span>Mezzofy</span>
+                        </div>
+                        <a href="blog/environmental-excellence.html" class="text-primary-orange font-semibold hover:underline" data-i18n="newsPress.readMore">
+                            Read More →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 5. News Article: TechApple Feature - December 9, 2024 -->
+                <article class="article-card bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow overflow-hidden" data-category="news">
+                    <img src="https://mezzofy.com/wp-content/uploads/2024/12/CII2024_group_scaled-740x740.jpg" alt="TechApple CII Award" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-blue-100 text-blue-600 text-sm font-semibold px-3 py-1 rounded-full mb-3" data-i18n="newsPress.category.news">
+                            News
+                        </span>
+                        <h3 class="text-xl font-bold text-primary-black mb-3">Mezzofy Recognized as 3-Star SME in 2024 CII</h3>
+                        <p class="text-dark-grey mb-4">TechApple features Mezzofy's recognition as 3-Star SME in the 2024 Corporate Innovation Index for digital couponing contributions.</p>
+                        <div class="flex items-center justify-between text-sm text-medium-grey mb-4">
+                            <span>December 9, 2024</span>
+                            <span>Mezzofy</span>
+                        </div>
+                        <a href="news/techapple-innovation-index.html" class="text-primary-orange font-semibold hover:underline" data-i18n="newsPress.readMore">
+                            Read More →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 6. News Article: Dual ESG Awards - October 3, 2024 -->
+                <article class="article-card bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow overflow-hidden" data-category="news">
+                    <img src="https://mezzofy.com/wp-content/uploads/2024/10/Outstanding_ESG_Award_2024-740x740.png" alt="ESG Awards 2024" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-blue-100 text-blue-600 text-sm font-semibold px-3 py-1 rounded-full mb-3" data-i18n="newsPress.category.news">
+                            News
+                        </span>
+                        <h3 class="text-xl font-bold text-primary-black mb-3">Dual Awards at ESG Forum 2024</h3>
+                        <p class="text-dark-grey mb-4">Mezzofy honored with Outstanding ESG Enterprise Award and Sustainable Development Enterprise Certificate at the ESG Forum 2024.</p>
+                        <div class="flex items-center justify-between text-sm text-medium-grey mb-4">
+                            <span>October 3, 2024</span>
+                            <span>Mezzofy</span>
+                        </div>
+                        <a href="news/dual-esg-awards.html" class="text-primary-orange font-semibold hover:underline" data-i18n="newsPress.readMore">
+                            Read More →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 7. News Article: Funding - September 18, 2024 -->
+                <article class="article-card bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow overflow-hidden" data-category="news">
+                    <img src="https://mezzofy.com/wp-content/uploads/2024/09/Mezzofy_general-740x740.png" alt="Funding Announcement" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-blue-100 text-blue-600 text-sm font-semibold px-3 py-1 rounded-full mb-3" data-i18n="newsPress.category.news">
+                            News
+                        </span>
+                        <h3 class="text-xl font-bold text-primary-black mb-3">USD 2 Million Pre-Series A Funding Round</h3>
+                        <p class="text-dark-grey mb-4">Mezzofy raised USD 2 million Pre-series A funding led by Isola Capital to support global expansion and web3 product development.</p>
+                        <div class="flex items-center justify-between text-sm text-medium-grey mb-4">
+                            <span>September 18, 2024</span>
+                            <span>Mezzofy</span>
+                        </div>
+                        <a href="news/funding-announcement.html" class="text-primary-orange font-semibold hover:underline" data-i18n="newsPress.readMore">
+                            Read More →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 8. Blog Article: Holiday Guide - July 18, 2024 -->
+                <article class="article-card bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow overflow-hidden" data-category="blog">
+                    <img src="https://mezzofy.com/wp-content/uploads/2024/07/Its-That-Time-of-Year-740x740.jpg" alt="Holiday Season Guide" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-primary-orange/10 text-primary-orange text-sm font-semibold px-3 py-1 rounded-full mb-3" data-i18n="newsPress.category.blog">
+                            Blog
+                        </span>
+                        <h3 class="text-xl font-bold text-primary-black mb-3">Holiday Season Coupon Guide</h3>
+                        <p class="text-dark-grey mb-4">Master the last-minute holiday sales surge with swift coupon solutions. Holiday retail sales reached $943-960 billion in 2022.</p>
+                        <div class="flex items-center justify-between text-sm text-medium-grey mb-4">
+                            <span>July 18, 2024</span>
+                            <span>Mezzofy</span>
+                        </div>
+                        <a href="blog/holiday-guide.html" class="text-primary-orange font-semibold hover:underline" data-i18n="newsPress.readMore">
+                            Read More →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 9. Blog Article: Smart Retail - July 15, 2024 -->
+                <article class="article-card bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow overflow-hidden" data-category="blog">
+                    <img src="https://mezzofy.com/wp-content/uploads/2024/07/retaill2-740x740.jpg" alt="Tech-led Smart Retail" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-primary-orange/10 text-primary-orange text-sm font-semibold px-3 py-1 rounded-full mb-3" data-i18n="newsPress.category.blog">
+                            Blog
+                        </span>
+                        <h3 class="text-xl font-bold text-primary-black mb-3">Tech-led Smart Retail</h3>
+                        <p class="text-dark-grey mb-4">NFC technology transforms retail dynamics. Research shows 73% of respondents make spontaneous purchases, with average monthly impulse spending exceeding $314.</p>
+                        <div class="flex items-center justify-between text-sm text-medium-grey mb-4">
+                            <span>July 15, 2024</span>
+                            <span>Mezzofy</span>
+                        </div>
+                        <a href="blog/smart-retail.html" class="text-primary-orange font-semibold hover:underline" data-i18n="newsPress.readMore">
+                            Read More →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 10. News Article: TheCIOWorld Feature - October 9, 2023 -->
+                <article class="article-card bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow overflow-hidden" data-category="news">
+                    <img src="https://mezzofy.com/wp-content/uploads/2023/10/TheCIOWorld_feature_2023-740x740.webp" alt="CIOWorld Feature" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-blue-100 text-blue-600 text-sm font-semibold px-3 py-1 rounded-full mb-3" data-i18n="newsPress.category.news">
+                            News
+                        </span>
+                        <h3 class="text-xl font-bold text-primary-black mb-3">Transforming Coupons for a Greener Future</h3>
+                        <p class="text-dark-grey mb-4">TheCIOWorld features Mezzofy's innovative NFC tap-to-get coupons and integrated wallet functionality for sustainable digital marketing.</p>
+                        <div class="flex items-center justify-between text-sm text-medium-grey mb-4">
+                            <span>October 9, 2023</span>
+                            <span>Mezzofy</span>
+                        </div>
+                        <a href="news/cioworld-feature.html" class="text-primary-orange font-semibold hover:underline" data-i18n="newsPress.readMore">
+                            Read More →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 11. News Article: EJTech Highlights - May 14, 2023 -->
+                <article class="article-card bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow overflow-hidden" data-category="news">
+                    <img src="https://mezzofy.com/wp-content/uploads/2023/05/EJtech_feature_2023-740x740.jpg" alt="EJTech 300M Coupons" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-blue-100 text-blue-600 text-sm font-semibold px-3 py-1 rounded-full mb-3" data-i18n="newsPress.category.news">
+                            News
+                        </span>
+                        <h3 class="text-xl font-bold text-primary-black mb-3">300M Digital Coupons Across APAC</h3>
+                        <p class="text-dark-grey mb-4">EJTech highlights Mezzofy's cloud platform distributing over 300 million digital coupons across Asia-Pacific, transforming customer engagement.</p>
+                        <div class="flex items-center justify-between text-sm text-medium-grey mb-4">
+                            <span>May 14, 2023</span>
+                            <span>Mezzofy</span>
+                        </div>
+                        <a href="news/ejtech-300m-coupons.html" class="text-primary-orange font-semibold hover:underline" data-i18n="newsPress.readMore">
+                            Read More →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 12. News Article: eDigest Exclusive - April 28, 2023 -->
+                <article class="article-card bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow overflow-hidden" data-category="news">
+                    <img src="https://mezzofy.com/wp-content/uploads/2023/04/eDigest_post_image-740x740.png" alt="eDigest Leading Solution" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-blue-100 text-blue-600 text-sm font-semibold px-3 py-1 rounded-full mb-3" data-i18n="newsPress.category.news">
+                            News
+                        </span>
+                        <h3 class="text-xl font-bold text-primary-black mb-3">Asia-Pacific's Leading Digital Coupon Solution</h3>
+                        <p class="text-dark-grey mb-4">eDigest exclusive feature on Mezzofy as a leading digital coupon platform transforming coupon management across Asia-Pacific.</p>
+                        <div class="flex items-center justify-between text-sm text-medium-grey mb-4">
+                            <span>April 28, 2023</span>
+                            <span>Mezzofy</span>
+                        </div>
+                        <a href="news/edigest-leading-solution.html" class="text-primary-orange font-semibold hover:underline" data-i18n="newsPress.readMore">
+                            Read More →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 13. News Article: Forbes China - January 6, 2023 -->
+                <article class="article-card bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow overflow-hidden" data-category="news">
+                    <img src="https://mezzofy.com/wp-content/uploads/2023/01/Screenshot-2025-01-23-at-11.25.03 AM-740x740.png" alt="Forbes Dicky Yin" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-blue-100 text-blue-600 text-sm font-semibold px-3 py-1 rounded-full mb-3" data-i18n="newsPress.category.news">
+                            News
+                        </span>
+                        <h3 class="text-xl font-bold text-primary-black mb-3">Forbes Recognizes Dicky Yin for Leadership</h3>
+                        <p class="text-dark-grey mb-4">Forbes China features Mezzofy CEO Dicky Yin for outstanding leadership in innovation, transforming the digital coupon sector.</p>
+                        <div class="flex items-center justify-between text-sm text-medium-grey mb-4">
+                            <span>January 6, 2023</span>
+                            <span>Mezzofy</span>
+                        </div>
+                        <a href="news/forbes-dicky-yin.html" class="text-primary-orange font-semibold hover:underline" data-i18n="newsPress.readMore">
+                            Read More →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 14. Blog Article: Hotel Tech Innovation - August 15, 2021 -->
+                <article class="article-card bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow overflow-hidden" data-category="blog">
+                    <img src="https://mezzofy.com/wp-content/uploads/2021/08/hotel-740x740.jpg" alt="Hotel Tech Innovation" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-primary-orange/10 text-primary-orange text-sm font-semibold px-3 py-1 rounded-full mb-3" data-i18n="newsPress.category.blog">
+                            Blog
+                        </span>
+                        <h3 class="text-xl font-bold text-primary-black mb-3">Why Tech Innovation is Key to Hotel Success</h3>
+                        <p class="text-dark-grey mb-4">67% of travelers expect personalized experiences. Hotels must adopt NFC, chatbots, and AI-driven personalization to boost revenue and loyalty.</p>
+                        <div class="flex items-center justify-between text-sm text-medium-grey mb-4">
+                            <span>August 15, 2021</span>
+                            <span>Mezzofy</span>
+                        </div>
+                        <a href="blog/hotel-tech-innovation.html" class="text-primary-orange font-semibold hover:underline" data-i18n="newsPress.readMore">
+                            Read More →
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & CTA -->
+    <footer class="bg-primary-black text-gray-300 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="lg:col-span-1">
+                    <h3 class="text-2xl font-bold text-primary-orange mb-4">Mezzofy</h3>
+                    <p class="text-sm mb-4" data-i18n="common.footer.tagline">Building the future of coupon infrastructure through the Mezzofy Exchange Protocol.</p>
+                </div>
+
+                <!-- Solutions -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.solutions.title">Solutions</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="for-merchants.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.merchants">For Merchants</a></li>
+                        <li><a href="for-distributors.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.distributors">For Distributors</a></li>
+                        <li><a href="for-developers.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.developers">For Developers</a></li>
+                        <li><a href="index.html#product-ecosystem" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.ecosystem">Product Ecosystem</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.products.title">Products</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="coupon-management.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.management">Management</a></li>
+                        <li><a href="coupon-marketplace.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.marketplace">Marketplace</a></li>
+                        <li><a href="coupon-nfc.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.nfc">NFC</a></li>
+                        <li><a href="coupon-marketing.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.marketing">Marketing</a></li>
+                        <li><a href="coupon-wallet.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.wallet">Wallet</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.resources.title">Resources</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="coupon-playbook.html" class="hover:text-white transition-colors" data-i18n="common.footer.resources.playbook">Coupon Playbook</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors" data-i18n="common.footer.resources.apiDoc">API Documentation</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors" data-i18n="common.footer.resources.apiUseCase">API Use Case</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors" data-i18n="common.footer.resources.support">Support</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.company.title">Company</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="about.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.about">About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.contact">Contact Us</a></li>
+                        <li><a href="news-press.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.news">News & Press</a></li>
+                        <li><a href="investors.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.investors">Investors</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8 text-center text-sm">
+                <p data-i18n="common.footer.copyright">&copy; 2024 Mezzofy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Filter functionality for news/blog tabs
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.dataset.filter;
+
+                // Update active button
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                // Filter articles
+                document.querySelectorAll('[data-category]').forEach(article => {
+                    if (filter === 'all' || article.dataset.category === filter) {
+                        article.style.display = 'block';
+                    } else {
+                        article.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

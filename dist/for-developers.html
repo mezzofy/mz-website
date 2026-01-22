@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Integrate coupon functionality with our developer-first API and SDKs. Build on the Mezzofy Exchange Protocol.">
+    <title>Mezzofy for Developers - Build on the Exchange Protocol</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-orange': '#FF6B35',
+                        'primary-black': '#1A1A1A',
+                        'light-grey': '#F5F5F5',
+                        'medium-grey': '#757575',
+                        'dark-grey': '#424242'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+        }
+        .feature-card {
+            background: white;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background-color: #FF6B35;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            display: inline-block;
+            transition: background-color 0.2s;
+        }
+        .btn-primary:hover {
+            background-color: #e55a2b;
+        }
+        .btn-secondary {
+            background-color: white;
+            color: #FF6B35;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            display: inline-block;
+            border: 2px solid #FF6B35;
+            transition: all 0.2s;
+        }
+        .btn-secondary:hover {
+            background-color: #FF6B35;
+            color: white;
+        }
+        .code-block {
+            background: #1A1A1A;
+            color: #F5F5F5;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.875rem;
+            line-height: 1.5;
+        }
+    </style>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="output.css">
+
+    <!-- i18n Script -->
+    <script src="i18n/i18n.js"></script>
+</head>
+<body class="bg-white text-primary-black i18n-loading">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <img src="assets/images/logo.png" alt="Mezzofy Logo" class="h-8 md:h-10">
+                        <span class="md:hidden text-xl font-bold text-primary-black">MEZZOFY</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <!-- Solutions Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.solutions">Solutions</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="for-merchants.html" class="dropdown-item text-primary-orange font-semibold" data-i18n="common.nav.merchantSolution">I'm a Merchant</a>
+                            <a href="for-distributors.html" class="dropdown-item" data-i18n="common.nav.distributorSolution">I'm a Distributor</a>
+                            <a href="for-developers.html" class="dropdown-item" data-i18n="common.nav.developerSolution">I'm a Developer</a>
+                        </div>
+                    </div>
+
+                    <!-- Products Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.products">Products</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="coupon-management.html" class="dropdown-item" data-i18n="common.nav.managementSystem">Coupon Management System</a>
+                            <a href="coupon-marketplace.html" class="dropdown-item" data-i18n="common.nav.marketplace">Coupon Marketplace</a>
+                            <a href="coupon-nfc.html" class="dropdown-item" data-i18n="common.nav.nfc">Coupon NFC</a>
+                            <a href="coupon-marketing.html" class="dropdown-item" data-i18n="common.nav.marketing">Coupon Marketing</a>
+                            <a href="coupon-wallet.html" class="dropdown-item" data-i18n="common.nav.wallet">Coupon Wallet</a>
+                        </div>
+                    </div>
+
+                    <!-- Developer Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.developer">Developer</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="index.html#" class="dropdown-item" data-i18n="common.nav.apiDoc">API Documentation</a>
+                            <a href="index.html#" class="dropdown-item" data-i18n="common.nav.apiUseCase">API Use Case</a>
+                        </div>
+                    </div>
+
+                    <!-- Resources Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.resources">Resources</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="coupon-playbook.html" class="dropdown-item" data-i18n="common.nav.playbook">Coupon Playbook</a>
+                            <a href="index.html#" class="dropdown-item" data-i18n="common.nav.support">Support</a>
+                        </div>
+                    </div>
+
+                    <!-- Company Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.company">Company</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="about.html" class="dropdown-item" data-i18n="common.nav.aboutUs">About Us</a>
+                            <a href="contact.html" class="dropdown-item" data-i18n="common.nav.contactUs">Contact Us</a>
+                            <a href="news-press.html" class="dropdown-item" data-i18n="common.nav.newsPress">News & Press</a>
+                            <a href="investors.html" class="dropdown-item" data-i18n="common.nav.investors">Investors</a>
+                        </div>
+                    </div>
+
+                    <!-- Language Toggle Desktop -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <svg class="w-5 h-5 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+                            </svg>
+                            <span id="current-lang-desktop">English</span>
+                            <svg class="w-4 h-4 inline ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item lang-option" data-lang="en">English</a>
+                            <a href="#" class="dropdown-item lang-option" data-lang="zh-TW">繁體中文</a>
+                            <a href="#" class="dropdown-item lang-option" data-lang="zh-CN">简体中文</a>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn-primary" data-i18n="common.nav.getStarted">Get Started</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-primary-black focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-1">
+                <!-- Language Toggle Mobile -->
+                <div class="mobile-dropdown border-b border-gray-200 pb-2 mb-2">
+                    <button class="mobile-dropdown-trigger" data-dropdown="language">
+                        <span class="flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+                            </svg>
+                            <span id="current-lang-mobile">English</span>
+                        </span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="language">
+                        <a href="#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange lang-option" data-lang="en">English</a>
+                        <a href="#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange lang-option" data-lang="zh-TW">繁體中文</a>
+                        <a href="#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange lang-option" data-lang="zh-CN">简体中文</a>
+                    </div>
+                </div>
+
+                <!-- Solutions Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" data-dropdown="solutions">
+                        <span data-i18n="common.nav.solutions">Solutions</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="solutions">
+                        <a href="for-merchants.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.merchantSolution">I'm a Merchant</a>
+                        <a href="for-distributors.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.distributorSolution">I'm a Distributor</a>
+                        <a href="for-developers.html" class="block py-2 text-sm text-primary-orange font-semibold" data-i18n="common.nav.developerSolution">I'm a Developer</a>
+                    </div>
+                </div>
+
+                <!-- Products Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" data-dropdown="products">
+                        <span data-i18n="common.nav.products">Products</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="products">
+                        <a href="coupon-management.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.managementSystem">Coupon Management System</a>
+                        <a href="coupon-marketplace.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.marketplace">Coupon Marketplace</a>
+                        <a href="coupon-nfc.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.nfc">Coupon NFC</a>
+                        <a href="coupon-marketing.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.marketing">Coupon Marketing</a>
+                        <a href="coupon-wallet.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.wallet">Coupon Wallet</a>
+                    </div>
+                </div>
+
+                <!-- Developer Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" data-dropdown="developer">
+                        <span data-i18n="common.nav.developer">Developer</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="developer">
+                        <a href="index.html#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.apiDoc">API Documentation</a>
+                        <a href="index.html#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.apiUseCase">API Use Case</a>
+                    </div>
+                </div>
+
+                <!-- Resources Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" data-dropdown="resources">
+                        <span data-i18n="common.nav.resources">Resources</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="resources">
+                        <a href="coupon-playbook.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.playbook">Coupon Playbook</a>
+                        <a href="index.html#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.support">Support</a>
+                    </div>
+                </div>
+
+                <!-- Company Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" data-dropdown="company">
+                        <span data-i18n="common.nav.company">Company</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="company">
+                        <a href="about.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.aboutUs">About Us</a>
+                        <a href="contact.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.contactUs">Contact Us</a>
+                        <a href="news-press.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.newsPress">News & Press</a>
+                        <a href="investors.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.investors">Investors</a>
+                    </div>
+                </div>
+
+                <a href="#contact" class="block py-2 text-primary-orange font-semibold" data-i18n="common.nav.getStarted">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-primary-black via-gray-900 to-primary-black">
+        <div class="section-container">
+            <div class="max-w-6xl mx-auto text-center">
+                <p class="text-primary-orange text-lg font-semibold mb-4" data-i18n="developers.hero.tagline">FOR DEVELOPERS</p>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-6" data-i18n="developers.hero.headline">
+                    Build on the <span class="text-primary-orange">Mezzofy Exchange Protocol</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-100 mb-10 max-w-4xl mx-auto" data-i18n="developers.hero.description">
+                    Integrate coupon functionality with our developer-first API and SDKs
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#api-docs" class="btn-primary inline-block text-center" data-i18n="developers.hero.viewApiDocs">View API Docs</a>
+                    <a href="#contact" class="btn-secondary inline-block text-center bg-white/10 text-white border-white hover:bg-white/20" data-i18n="developers.hero.getApiKey">Get API Key</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Developer Use Cases -->
+    <section class="bg-white">
+        <div class="section-container">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-primary-black mb-4" data-i18n="developers.useCases.heading">
+                    What You Can Build
+                </h2>
+                <p class="text-lg text-dark-grey max-w-3xl mx-auto" data-i18n="developers.useCases.description">
+                    The Mezzofy Exchange Protocol enables developers to integrate coupon functionality into any application or platform
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Use Case 1: Integrate Coupon Functionality -->
+                <div class="feature-card">
+                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="developers.useCases.integrate.title">Integrate Coupons</h3>
+                    <p class="text-dark-grey text-sm mb-4" data-i18n="developers.useCases.integrate.description">Add coupon creation, distribution, and redemption to existing apps</p>
+                </div>
+
+                <!-- Use Case 2: Build Custom Distribution Channels -->
+                <div class="feature-card">
+                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="developers.useCases.distribution.title">Custom Distribution</h3>
+                    <p class="text-dark-grey text-sm mb-4" data-i18n="developers.useCases.distribution.description">Create specialized platforms for specific industries or use cases</p>
+                </div>
+
+                <!-- Use Case 3: AI Shopping Agents -->
+                <div class="feature-card">
+                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="developers.useCases.aiAgents.title">AI Shopping Agents</h3>
+                    <p class="text-dark-grey text-sm mb-4" data-i18n="developers.useCases.aiAgents.description">Build intelligent assistants for coupon discovery and application</p>
+                </div>
+
+                <!-- Use Case 4: White-label Wallet Implementations -->
+                <div class="feature-card">
+                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="developers.useCases.wallets.title">White-label Wallets</h3>
+                    <p class="text-dark-grey text-sm mb-4" data-i18n="developers.useCases.wallets.description">Embed branded coupon wallet functionality in your mobile apps</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- API Products -->
+    <section class="bg-light-grey">
+        <div class="section-container">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black mb-6" data-i18n="developers.apiProducts.heading">
+                    API Products & SDKs
+                </h2>
+                <p class="text-lg sm:text-xl text-dark-grey max-w-3xl mx-auto" data-i18n="developers.apiProducts.description">
+                    Complete suite of APIs and SDKs for every development need
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Bridge API -->
+                <div class="feature-card border-2 border-primary-orange/20 hover:border-primary-orange">
+                    <h3 class="text-lg font-bold text-primary-black mb-3" data-i18n="developers.apiProducts.bridge.title">Bridge API</h3>
+                    <p class="text-sm text-dark-grey mb-4" data-i18n="developers.apiProducts.bridge.description">Access marketplace inventory and distribute coupons through your platform</p>
+                    <div class="text-xs text-medium-grey mb-3 font-mono">GET /marketplace/coupons</div>
+                    <a href="#api-docs" class="text-primary-orange hover:underline text-sm font-semibold" data-i18n="developers.apiProducts.bridge.link">View Docs →</a>
+                </div>
+
+                <!-- Management API -->
+                <div class="feature-card border-2 border-primary-orange/20 hover:border-primary-orange">
+                    <h3 class="text-lg font-bold text-primary-black mb-3" data-i18n="developers.apiProducts.management.title">Management API</h3>
+                    <p class="text-sm text-dark-grey mb-4" data-i18n="developers.apiProducts.management.description">Create and manage coupon campaigns programmatically</p>
+                    <div class="text-xs text-medium-grey mb-3 font-mono">POST /coupons/create</div>
+                    <a href="#api-docs" class="text-primary-orange hover:underline text-sm font-semibold" data-i18n="developers.apiProducts.management.link">View Docs →</a>
+                </div>
+
+                <!-- AI Agent API -->
+                <div class="feature-card border-2 border-primary-orange/20 hover:border-primary-orange">
+                    <h3 class="text-lg font-bold text-primary-black mb-3" data-i18n="developers.apiProducts.aiAgent.title">AI Agent API</h3>
+                    <p class="text-sm text-dark-grey mb-4" data-i18n="developers.apiProducts.aiAgent.description">Enable AI agents to discover and apply coupons on behalf of users</p>
+                    <div class="text-xs text-medium-grey mb-3 font-mono">GET /ai/discover</div>
+                    <a href="#api-docs" class="text-primary-orange hover:underline text-sm font-semibold" data-i18n="developers.apiProducts.aiAgent.link">View Docs →</a>
+                </div>
+
+                <!-- Wallet SDK -->
+                <div class="feature-card border-2 border-primary-orange/20 hover:border-primary-orange">
+                    <h3 class="text-lg font-bold text-primary-black mb-3" data-i18n="developers.apiProducts.wallet.title">Wallet SDK</h3>
+                    <p class="text-sm text-dark-grey mb-4" data-i18n="developers.apiProducts.wallet.description">Mobile SDK for embedding wallet functionality in iOS and Android apps</p>
+                    <div class="text-xs text-medium-grey mb-3 font-mono">iOS • Android • React Native</div>
+                    <a href="#api-docs" class="text-primary-orange hover:underline text-sm font-semibold" data-i18n="developers.apiProducts.wallet.link">View Docs →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Features -->
+    <section class="bg-white">
+        <div class="section-container">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black mb-6" data-i18n="developers.features.heading">
+                    Developer-First Technical Features
+                </h2>
+                <p class="text-lg sm:text-xl text-dark-grey max-w-3xl mx-auto" data-i18n="developers.features.description">
+                    Built with modern architecture and developer experience in mind
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- RESTful API Architecture -->
+                <div class="feature-card">
+                    <div class="text-3xl mb-3">🔌</div>
+                    <h3 class="text-lg font-bold text-primary-black mb-3" data-i18n="developers.features.rest.title">RESTful API Architecture</h3>
+                    <p class="text-dark-grey text-sm" data-i18n="developers.features.rest.description">
+                        Clean, predictable endpoints following REST best practices. JSON request/response format with intuitive resource modeling.
+                    </p>
+                </div>
+
+                <!-- Webhook Support -->
+                <div class="feature-card">
+                    <div class="text-3xl mb-3">🔔</div>
+                    <h3 class="text-lg font-bold text-primary-black mb-3" data-i18n="developers.features.webhooks.title">Webhook Support</h3>
+                    <p class="text-dark-grey text-sm" data-i18n="developers.features.webhooks.description">
+                        Real-time notifications for coupon status changes, redemptions, and inventory updates via configurable webhooks.
+                    </p>
+                </div>
+
+                <!-- OAuth 2.0 Authentication -->
+                <div class="feature-card">
+                    <div class="text-3xl mb-3">🔐</div>
+                    <h3 class="text-lg font-bold text-primary-black mb-3" data-i18n="developers.features.oauth.title">OAuth 2.0 Authentication</h3>
+                    <p class="text-dark-grey text-sm" data-i18n="developers.features.oauth.description">
+                        Industry-standard OAuth 2.0 authentication with API key management and granular permission scopes.
+                    </p>
+                </div>
+
+                <!-- Comprehensive SDKs -->
+                <div class="feature-card">
+                    <div class="text-3xl mb-3">📦</div>
+                    <h3 class="text-lg font-bold text-primary-black mb-3" data-i18n="developers.features.sdks.title">Comprehensive SDKs</h3>
+                    <p class="text-dark-grey text-sm" data-i18n="developers.features.sdks.description">
+                        Official SDKs for JavaScript/TypeScript, Python, PHP, and more. Reduce integration time with idiomatic libraries.
+                    </p>
+                </div>
+
+                <!-- Real-time Data Sync -->
+                <div class="feature-card">
+                    <div class="text-3xl mb-3">⚡</div>
+                    <h3 class="text-lg font-bold text-primary-black mb-3" data-i18n="developers.features.realtime.title">Real-time Data Sync</h3>
+                    <p class="text-dark-grey text-sm" data-i18n="developers.features.realtime.description">
+                        WebSocket support for real-time inventory updates and coupon status changes. Keep your app always in sync.
+                    </p>
+                </div>
+
+                <!-- Machine-readable Standard -->
+                <div class="feature-card">
+                    <div class="text-3xl mb-3">📄</div>
+                    <h3 class="text-lg font-bold text-primary-black mb-3" data-i18n="developers.features.standard.title">Machine-readable Standard</h3>
+                    <p class="text-dark-grey text-sm" data-i18n="developers.features.standard.description">
+                        Standardized coupon data format optimized for AI consumption and programmatic processing. OpenAPI 3.0 compliant.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Start Code Sample -->
+    <section id="api-docs" class="bg-light-grey">
+        <div class="section-container">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black mb-6" data-i18n="developers.quickStart.heading">
+                    Quick Start
+                </h2>
+                <p class="text-lg sm:text-xl text-dark-grey max-w-3xl mx-auto" data-i18n="developers.quickStart.description">
+                    Get started with the Mezzofy API in minutes
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <!-- Code Example Tabs Placeholder -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="bg-primary-black text-white px-6 py-3 flex items-center gap-4">
+                        <span class="font-semibold" data-i18n="developers.quickStart.exampleTitle">Quick Start Example</span>
+                        <div class="flex gap-2 ml-auto">
+                            <button class="px-3 py-1 bg-primary-orange rounded text-sm">JavaScript</button>
+                            <button class="px-3 py-1 bg-dark-grey/50 rounded text-sm hover:bg-dark-grey">Python</button>
+                            <button class="px-3 py-1 bg-dark-grey/50 rounded text-sm hover:bg-dark-grey">PHP</button>
+                        </div>
+                    </div>
+                    <div class="code-block">
+<span style="color: #888;">// Initialize the Mezzofy client</span>
+<span style="color: #FF6B35;">const</span> mezzofy = <span style="color: #FF6B35;">require</span>(<span style="color: #98C379;">'@mezzofy/sdk'</span>);
+
+<span style="color: #FF6B35;">const</span> client = <span style="color: #FF6B35;">new</span> mezzofy.Client({
+  apiKey: <span style="color: #98C379;">'your_api_key_here'</span>,
+  environment: <span style="color: #98C379;">'production'</span>
+});
+
+<span style="color: #888;">// Fetch available coupons from marketplace</span>
+<span style="color: #FF6B35;">const</span> coupons = <span style="color: #FF6B35;">await</span> client.marketplace.getCoupons({
+  category: <span style="color: #98C379;">'retail'</span>,
+  location: <span style="color: #98C379;">'US'</span>,
+  minValue: <span style="color: #D19A66;">10</span>
+});
+
+<span style="color: #888;">// Create a new coupon campaign</span>
+<span style="color: #FF6B35;">const</span> campaign = <span style="color: #FF6B35;">await</span> client.coupons.create({
+  title: <span style="color: #98C379;">'Summer Sale - 20% Off'</span>,
+  discount: { type: <span style="color: #98C379;">'percentage'</span>, value: <span style="color: #D19A66;">20</span> },
+  validUntil: <span style="color: #98C379;">'2024-08-31'</span>,
+  redemptionLimit: <span style="color: #D19A66;">1000</span>
+});
+
+console.log(<span style="color: #98C379;">'Campaign created:'</span>, campaign.id);
+                    </div>
+                </div>
+
+                <div class="mt-8 text-center">
+                    <p class="text-dark-grey mb-4" data-i18n="developers.quickStart.note">
+                        This is a simplified example. Full documentation includes authentication, error handling, webhooks, and advanced features.
+                    </p>
+                    <a href="#contact" class="btn-primary" data-i18n="developers.quickStart.cta">Get API Key to Start Building</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Developer Resources -->
+    <section class="bg-white">
+        <div class="section-container">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black mb-6" data-i18n="developers.resources.heading">
+                    Developer Resources
+                </h2>
+                <p class="text-lg sm:text-xl text-dark-grey max-w-3xl mx-auto" data-i18n="developers.resources.description">
+                    Everything you need to build successfully on Mezzofy
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- API Documentation -->
+                <div class="feature-card border-2 border-primary-orange/20 hover:border-primary-orange text-center">
+                    <div class="text-5xl mb-4">📚</div>
+                    <h3 class="text-xl font-bold text-primary-black mb-3" data-i18n="developers.resources.documentation.title">API Documentation</h3>
+                    <p class="text-dark-grey text-sm mb-4" data-i18n="developers.resources.documentation.description">
+                        Comprehensive API reference with interactive examples and detailed endpoint descriptions
+                    </p>
+                    <a href="#contact" class="text-primary-orange hover:underline text-sm font-semibold" data-i18n="developers.resources.documentation.link">View Docs →</a>
+                </div>
+
+                <!-- SDK Downloads -->
+                <div class="feature-card border-2 border-primary-orange/20 hover:border-primary-orange text-center">
+                    <div class="text-5xl mb-4">⬇️</div>
+                    <h3 class="text-xl font-bold text-primary-black mb-3" data-i18n="developers.resources.sdks.title">SDK Downloads</h3>
+                    <p class="text-dark-grey text-sm mb-4" data-i18n="developers.resources.sdks.description">
+                        Official libraries for JavaScript, Python, PHP, Ruby, and more available via package managers
+                    </p>
+                    <a href="#contact" class="text-primary-orange hover:underline text-sm font-semibold" data-i18n="developers.resources.sdks.link">Get SDKs →</a>
+                </div>
+
+                <!-- Community Support -->
+                <div class="feature-card border-2 border-primary-orange/20 hover:border-primary-orange text-center">
+                    <div class="text-5xl mb-4">💬</div>
+                    <h3 class="text-xl font-bold text-primary-black mb-3" data-i18n="developers.resources.community.title">Community Support</h3>
+                    <p class="text-dark-grey text-sm mb-4" data-i18n="developers.resources.community.description">
+                        Join our developer community on Discord. Get help, share projects, and connect with other builders
+                    </p>
+                    <a href="#contact" class="text-primary-orange hover:underline text-sm font-semibold" data-i18n="developers.resources.community.link">Join Discord →</a>
+                </div>
+
+                <!-- Technical Blog -->
+                <div class="feature-card border-2 border-primary-orange/20 hover:border-primary-orange text-center">
+                    <div class="text-5xl mb-4">✍️</div>
+                    <h3 class="text-xl font-bold text-primary-black mb-3" data-i18n="developers.resources.blog.title">Technical Blog</h3>
+                    <p class="text-dark-grey text-sm mb-4" data-i18n="developers.resources.blog.description">
+                        Deep dives, tutorials, and best practices from our engineering team and developer community
+                    </p>
+                    <a href="#contact" class="text-primary-orange hover:underline text-sm font-semibold" data-i18n="developers.resources.blog.link">Read Blog →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-gradient-to-r from-primary-orange to-orange-600 text-white">
+        <div class="section-container text-center">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6" data-i18n="developers.cta.heading">
+                Start Building Today
+            </h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto" data-i18n="developers.cta.description">
+                Get your API key and start integrating coupon functionality into your applications in minutes
+            </p>
+            <a href="#contact" class="bg-white text-primary-orange px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors inline-block" data-i18n="developers.cta.button">
+                Get API Key
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="bg-white">
+        <div class="section-container">
+            <div class="max-w-2xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-primary-black mb-4" data-i18n="developers.contact.heading">Request API Access</h2>
+                    <p class="text-lg text-dark-grey" data-i18n="developers.contact.description">
+                        Fill out the form below to receive your API credentials and developer documentation
+                    </p>
+                </div>
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-dark-grey font-medium mb-2" data-i18n="developers.contact.firstName">First Name</label>
+                            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary-orange" required>
+                        </div>
+                        <div>
+                            <label class="block text-dark-grey font-medium mb-2" data-i18n="developers.contact.lastName">Last Name</label>
+                            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary-orange" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-dark-grey font-medium mb-2" data-i18n="developers.contact.email">Email</label>
+                        <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary-orange" required>
+                    </div>
+                    <div>
+                        <label class="block text-dark-grey font-medium mb-2" data-i18n="developers.contact.company">Company/Project Name</label>
+                        <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary-orange" required>
+                    </div>
+                    <div>
+                        <label class="block text-dark-grey font-medium mb-2" data-i18n="developers.contact.building">What are you building?</label>
+                        <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary-orange" required>
+                            <option value="" data-i18n="developers.contact.selectUseCase">Select your use case</option>
+                            <option value="integration" data-i18n="developers.contact.optionIntegration">Integrating coupon functionality into existing app</option>
+                            <option value="distribution" data-i18n="developers.contact.optionDistribution">Building custom distribution channel</option>
+                            <option value="ai-agent" data-i18n="developers.contact.optionAiAgent">Creating AI shopping agent</option>
+                            <option value="wallet" data-i18n="developers.contact.optionWallet">White-label wallet implementation</option>
+                            <option value="other" data-i18n="developers.contact.optionOther">Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-dark-grey font-medium mb-2" data-i18n="developers.contact.projectDescription">Project Description</label>
+                        <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary-orange" data-i18n-placeholder="developers.contact.projectPlaceholder"></textarea>
+                    </div>
+                    <button type="submit" class="w-full btn-primary text-lg py-4" data-i18n="developers.contact.submit">
+                        Request API Key
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-black text-gray-300 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="lg:col-span-1">
+                    <h3 class="text-2xl font-bold text-primary-orange mb-4">Mezzofy</h3>
+                    <p class="text-sm mb-4" data-i18n="common.footer.tagline">Building the future of coupon infrastructure through the Mezzofy Exchange Protocol.</p>
+                </div>
+
+                <!-- Solutions -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.solutions.title">Solutions</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="for-merchants.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.merchants">For Merchants</a></li>
+                        <li><a href="for-distributors.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.distributors">For Distributors</a></li>
+                        <li><a href="for-developers.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.developers">For Developers</a></li>
+                        <li><a href="index.html#product-ecosystem" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.ecosystem">Product Ecosystem</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.products.title">Products</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="coupon-management.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.management">Management</a></li>
+                        <li><a href="coupon-marketplace.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.marketplace">Marketplace</a></li>
+                        <li><a href="coupon-nfc.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.nfc">NFC</a></li>
+                        <li><a href="coupon-marketing.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.marketing">Marketing</a></li>
+                        <li><a href="coupon-wallet.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.wallet">Wallet</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.resources.title">Resources</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="coupon-playbook.html" class="hover:text-white transition-colors" data-i18n="common.footer.resources.playbook">Coupon Playbook</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors" data-i18n="common.footer.resources.apiDoc">API Documentation</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors" data-i18n="common.footer.resources.apiUseCase">API Use Case</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors" data-i18n="common.footer.resources.support">Support</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.company.title">Company</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="about.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.about">About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.contact">Contact Us</a></li>
+                        <li><a href="news-press.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.news">News & Press</a></li>
+                        <li><a href="investors.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.investors">Investors</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8 text-center text-sm">
+                <p data-i18n="common.footer.copyright">&copy; 2024 Mezzofy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
