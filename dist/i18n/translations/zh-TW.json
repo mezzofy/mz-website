@@ -1399,5 +1399,126 @@
       "contactUs": "立即聯絡我們",
       "viewDemo": "查看演示"
     }
+  },
+  "nfcGuide": {
+    "header": {
+      "title": "🎫 如何使用 Mezzofy NFC 優惠券",
+      "subtitle": "完整指南：點擊、領取和兌換數位優惠券"
+    },
+    "intro": {
+      "title": "歡迎來到優惠券的未來！",
+      "description": "Mezzofy 的 NFC 技術讓省錢變得前所未有的簡單。只需將手機輕觸任何 Mezzofy NFC 貼紙或掃描 QR 碼即可解鎖專屬優惠。按照這份簡單的指南，今天就開始省錢吧！"
+    },
+    "steps": {
+      "step1": {
+        "number": "1",
+        "title": "在您的手機上啟用 NFC",
+        "description": "在您可以輕觸和儲存之前，請確保您的智慧型手機已啟用 NFC：",
+        "iphone": "<strong>iPhone：</strong>iPhone 7 及更新機型的 NFC 始終開啟。無需設定！",
+        "android": "<strong>Android：</strong>前往「設定」→「連接的裝置」→「連線偏好設定」→「NFC」→ 開啟"
+      },
+      "step2": {
+        "number": "2",
+        "title": "輕觸您的手機",
+        "description": "將智慧型手機背面靠近 NFC 貼紙（距離 1-2 英寸內）。您會感到震動或聽到確認輕觸的聲音。您的手機將自動在瀏覽器中開啟優惠券連結。"
+      },
+      "step3": {
+        "number": "3",
+        "title": "查看優惠券詳情",
+        "description": "頁面載入後，您將看到：",
+        "item1": "折扣或優惠詳情",
+        "item2": "到期日期和條款",
+        "item3": "參與商家資訊",
+        "item4": "唯一的優惠券代碼"
+      },
+      "step4": {
+        "number": "4",
+        "title": "領取您的優惠券（兩種方式）",
+        "optionA": {
+          "heading": "選項 A：使用 Mezzofy 優惠券收集器應用程式（推薦）",
+          "intro": "為獲得最佳體驗，請下載 <strong>Mezzofy 優惠券收集器</strong>應用程式：",
+          "item1": "<strong>無縫收集：</strong>輕觸任何 NFC 優惠券，它會自動儲存到您的應用程式",
+          "item2": "<strong>無需個人資料：</strong>無需註冊即可立即開始使用",
+          "item3": "<strong>所有優惠券集中管理：</strong>輕鬆存取您的整個優惠券收藏",
+          "item4": "<strong>即時兌換：</strong>在結帳時直接從應用程式顯示優惠券"
+        },
+        "optionB": {
+          "heading": "選項 B：不使用應用程式（基於瀏覽器）",
+          "intro": "還沒有應用程式？沒問題！當您輕觸 NFC 優惠券時：",
+          "item1": "優惠券詳情頁面立即在您的瀏覽器中啟動",
+          "item2": "在結帳時立即查看和使用優惠券",
+          "item3": "<strong>儲存選項：</strong>可選擇儲存到 Apple 錢包、Google 錢包或 Samsung 錢包",
+          "item4": "<strong>或下載應用程式：</strong>提供便捷連結下載 Mezzofy 優惠券收集器以供日後使用"
+        }
+      },
+      "step5": {
+        "number": "5",
+        "title": "在結帳時兌換",
+        "description": "當您準備使用優惠券時：",
+        "item1": "開啟您的 Mezzofy 優惠券收集器應用程式或從您的裝置錢包存取優惠券",
+        "item2": "選擇您要使用的優惠券",
+        "item3": "在結帳時向商家的掃描器顯示 QR 碼或條碼",
+        "item4": "觀看您的折扣立即生效！"
+      }
+    },
+    "features": {
+      "title": "✨ Mezzofy NFC 優惠券的主要功能",
+      "feature1": "<strong>即時存取：</strong>無需在輕觸前下載應用程式 — 直接在瀏覽器中使用",
+      "feature2": "<strong>保護隱私：</strong>優惠券收集器應用程式無需個人資料即可使用",
+      "feature3": "<strong>多種錢包選項：</strong>儲存到 Mezzofy、Apple 錢包、Google 錢包或 Samsung 錢包",
+      "feature4": "<strong>無需列印：</strong>完全無紙化且環保",
+      "feature5": "<strong>即時更新：</strong>獲取有關新優惠和即將到期優惠券的通知",
+      "feature6": "<strong>多入口支援：</strong>與 B2C、C2C 和合作商家系統配合使用"
+    },
+    "tips": {
+      "title": "💡 最大化省錢的專業提示",
+      "tip1": "<strong>下載應用程式：</strong>獲取 Mezzofy 優惠券收集器以獲得最快、最無縫的體驗",
+      "tip2": "<strong>啟用通知：</strong>永不錯過優惠 — 允許 Mezzofy 向您發送有關新優惠券和即將到期優惠的提醒",
+      "tip3": "<strong>檢查到期日期：</strong>在優惠券到期前使用以最大化您的省錢",
+      "tip4": "<strong>疊加優惠：</strong>某些商家允許您合併多張優惠券 — 查看條款！",
+      "tip5": "<strong>與朋友分享：</strong>使用我們的 C2C 入口交易或贈送您不會使用的優惠券",
+      "tip6": "<strong>關注喜愛的商家：</strong>獲得他們促銷活動的專屬早期存取權"
+    },
+    "faq": {
+      "title": "常見問題",
+      "q1": {
+        "question": "問：我需要下載應用程式才能使用 NFC 優惠券嗎？",
+        "answer": "答：不需要！您可以直接在行動瀏覽器中輕觸和查看優惠券。但是，下載 Mezzofy 優惠券收集器應用程式可提供最佳體驗，具有自動優惠券收集功能且無需個人資料。"
+      },
+      "q2": {
+        "question": "問：如果我的手機沒有 NFC 怎麼辦？",
+        "answer": "答：沒問題！每個 NFC 優惠券都有 QR 碼選項。只需打開相機應用程式並掃描 QR 碼即可存取相同的優惠券。"
+      },
+      "q3": {
+        "question": "問：Mezzofy 優惠券收集器應用程式需要個人資訊嗎？",
+        "answer": "答：不需要！您可以立即開始使用該應用程式，無需提供任何個人資料。它專為隱私和便利而設計。"
+      },
+      "q4": {
+        "question": "問：我可以多次使用優惠券嗎？",
+        "answer": "答：這取決於優惠券條款。大多數優惠券是一次性使用，但某些促銷優惠允許多次兌換。查看優惠券詳情以獲取具體資訊。"
+      },
+      "q5": {
+        "question": "問：如果我輕觸了優惠券但沒有儲存它會怎樣？",
+        "answer": "答：沒有應用程式，您仍然可以立即從瀏覽器頁面使用優惠券。您也可以將其儲存到您的裝置錢包（Apple、Google 或 Samsung）或稍後再次輕觸相同的 NFC 貼紙。"
+      },
+      "q6": {
+        "question": "問：我可以將優惠券轉讓給其他人嗎？",
+        "answer": "答：可以！透過我們的 C2C（客戶對客戶）入口，您可以與其他 Mezzofy 用戶交易、贈送或出售未使用的優惠券。"
+      },
+      "q7": {
+        "question": "問：如果優惠券在結帳時無法使用怎麼辦？",
+        "answer": "答：首先，檢查優惠券是否尚未到期以及您是否在參與的商家使用。如果問題持續存在，請聯繫商家或 Mezzofy 客戶支援尋求協助。"
+      },
+      "q8": {
+        "question": "問：我應該使用哪個錢包來儲存優惠券？",
+        "answer": "答：我們建議使用 Mezzofy 優惠券收集器應用程式以獲得最佳體驗。但是，您也可以根據您的裝置儲存到 Apple 錢包（iPhone）、Google 錢包（Android）或 Samsung 錢包。"
+      }
+    },
+    "support": {
+      "title": "需要更多協助？",
+      "description": "我們的客戶支援團隊隨時為您提供協助！",
+      "contact": "聯繫我們：<a href=\"mailto:support@mezzofy.com\">support@mezzofy.com</a>",
+      "helpCenter": "造訪我們的幫助中心以獲取更多指南和教學"
+    }
   }
 }
