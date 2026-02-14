@@ -1,0 +1,28 @@
+# Mezzofy Security Contact Information
+#
+# If you discover a security vulnerability, please report it responsibly.
+# For full security policy, see: https://mezzofy.com/SECURITY.md
+#
+# RFC 9116 compliant security.txt
+# Learn more: https://securitytxt.org/
+
+Contact: mailto:security@mezzofy.com
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: en, zh
+Canonical: https://mezzofy.com/.well-known/security.txt
+
+# Security Policy
+Policy: https://mezzofy.com/SECURITY.md
+
+# Acknowledgments
+Acknowledgments: https://mezzofy.com/security-acknowledgments.html
+
+# Encryption (optional - add PGP key URL if available)
+# Encryption: https://mezzofy.com/pgp-key.txt
+
+# Hiring (optional)
+# Hiring: https://mezzofy.com/careers
+
+# Do NOT publicly disclose vulnerabilities before contacting us
+# We aim to respond within 48 hours
+# Please allow 90 days for remediation before public disclosure

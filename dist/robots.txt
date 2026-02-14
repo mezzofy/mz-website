@@ -1,0 +1,34 @@
+# Mezzofy Website - Robots.txt
+
+User-agent: *
+Allow: /
+
+# Block test pages
+Disallow: /test-i18n.html
+
+# Block admin/internal paths (if any added in future)
+Disallow: /admin/
+Disallow: /internal/
+
+# Crawl rate (optional - uncomment if needed)
+# Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://mezzofy.com/sitemap.xml
+
+# Common bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Block bad bots (optional)
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
