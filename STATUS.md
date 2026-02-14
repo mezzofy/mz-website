@@ -35,6 +35,10 @@ Major documentation phase complete. Now focusing on implementing security recomm
 ## Recently Completed (Last 7 Days)
 
 **2026-02-15:**
+- ✅ Optimized CLAUDE.md file size → Reduced from 64KB to 44KB (31% reduction)
+  - Impact: Extracted 826-line AWS deployment section to DEPLOYMENT.md
+  - Lines: 1,927 → 1,136 (791 lines removed, 41% reduction)
+  - Related: See DEPLOYMENT.md for full AWS S3 + CloudFront deployment guide
 - ✅ Page Compliance Matrix added to STATUS.md → Tracks 30 pages across 4 criteria
   - Impact: Clear visibility of color, i18n, SRI, template compliance per page
   - Related: See "Page Compliance Matrix" section below
@@ -85,7 +89,7 @@ Major documentation phase complete. Now focusing on implementing security recomm
 |------|:------:|-------|
 | Testing | ✅ Pass | All pages load correctly |
 | Security | ⚠️ Warning | XSS fix needed, SRI missing |
-| Documentation | ✅ Pass | 1766 lines in CLAUDE.md, 487 in SECURITY.md |
+| Documentation | ✅ Pass | CLAUDE.md (1,136 lines), SECURITY.md (487 lines), DEPLOYMENT.md (906 lines) |
 | Performance | ✅ Pass | Static site, minimal dependencies |
 | i18n (3 langs) | ✅ Pass | EN, zh-TW, zh-CN all configured |
 
@@ -190,6 +194,7 @@ Major documentation phase complete. Now focusing on implementing security recomm
 | Document | Purpose | Last Updated |
 |----------|---------|--------------|
 | [`CLAUDE.md`](CLAUDE.md) | Developer guide & standards | 2026-02-15 |
+| [`DEPLOYMENT.md`](DEPLOYMENT.md) | AWS S3 + CloudFront deployment guide | 2026-02-15 |
 | [`SECURITY.md`](SECURITY.md) | Security guidelines & policy | 2026-02-15 |
 | [`IMPLEMENTATION-SUMMARY.md`](IMPLEMENTATION-SUMMARY.md) | Detailed implementation log | 2026-02-15 |
 | [`DEVELOPMENT.md`](DEVELOPMENT.md) | Legacy quick reference | 2024-12-04 |
