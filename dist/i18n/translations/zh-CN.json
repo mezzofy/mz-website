@@ -1534,5 +1534,35 @@
       "contact": "Contact us at: <a href=\"mailto:support@mezzofy.com\">support@mezzofy.com</a>",
       "helpCenter": "Visit our Help Center for more guides and tutorials"
     }
+  },
+  "articles": {
+    "blog": {
+      "nfcParknshop": {
+        "title": "Mezzofy 助品牌设置优惠券到240 间百佳 NFC 标签，全程代办、无需协调",
+        "headings": {
+          "introduction": "引言",
+          "challenges": "挑战概述",
+          "service": "服务方案",
+          "benefits": "主要优势",
+          "applications": "目标应用"
+        },
+        "paragraphs": {
+          "intro": "对于许多快速消费品和消费品牌而言,通过实体零售渠道执行促销活动涉及大量的协调工作和复杂的程序。",
+          "challenges": "该文章指出典型障碍:与百佳等零售商协调促销细节、设计实体优惠券材料、安排物流和店内摆放,以及追踪销售数据。",
+          "service": "Mezzofy 现在支持百佳在香港 240 个地点的 NFC 标签促销,提供「一站式」服务,品牌只需提供折扣内容,而 Mezzofy 处理优惠券创建、标签设置和物流——无需直接与零售商协调。",
+          "benefitsIntro": "该平台强调了几个优势:",
+          "applications": "该服务适合新产品发布、限时促销、市场测试场景,以及避免使用 POS 或纸本操作的品牌。"
+        },
+        "benefits": {
+          "purchaseIntent": "消费者在主动领取电子优惠券时显示出<span class=\"font-semibold text-primary-orange\">高出 5 倍的购买意愿</span>",
+          "redemptionRate": "兑换率达到<span class=\"font-semibold text-primary-orange\">30-34%</span>,而传统纸本优惠券的兑换率为 15-20%",
+          "costReduction": "每张优惠券的分发成本低于<span class=\"font-semibold text-primary-orange\">HK$0.20</span>,与实体材料相比,费用减少超过 80%"
+        },
+        "contact": {
+          "heading": "联络我们",
+          "info": "<a href=\"mailto:hello@mezzofy.com\" class=\"text-primary-orange hover:underline\">hello@mezzofy.com</a> | WhatsApp: <a href=\"https://wa.me/85294802246\" class=\"text-primary-orange hover:underline\">9480 2246</a>"
+        }
+      }
+    }
   }
 }

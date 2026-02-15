@@ -1534,5 +1534,35 @@
       "contact": "Contact us at: <a href=\"mailto:support@mezzofy.com\">support@mezzofy.com</a>",
       "helpCenter": "Visit our Help Center for more guides and tutorials"
     }
+  },
+  "articles": {
+    "blog": {
+      "nfcParknshop": {
+        "title": "Mezzofy helps brands set up coupons across 240 ParknShop NFC tags with full service and no coordination needed",
+        "headings": {
+          "introduction": "Introduction",
+          "challenges": "Challenges Outlined",
+          "service": "Service Solution",
+          "benefits": "Key Benefits",
+          "applications": "Target Applications"
+        },
+        "paragraphs": {
+          "intro": "For many FMCG and consumer goods brands, executing promotional activities through physical retail channels involves substantial coordination and procedural complexity.",
+          "challenges": "The piece identifies typical obstacles: coordinating promotional details with retailers like ParknShop, designing physical coupon materials, arranging logistics and in-store placement, and tracking sales data.",
+          "service": "Mezzofy now supports NFC tag promotions across ParknShop's 240 Hong Kong locations, offering a \"one-stop\" service where brands provide discount content while Mezzofy handles coupon creation, tag setup, and logistics—eliminating direct retailer coordination requirements.",
+          "benefitsIntro": "The platform highlights several advantages:",
+          "applications": "The service suits new product launches, limited-time promotions, market testing scenarios, and brands avoiding POS or paper-based operations."
+        },
+        "benefits": {
+          "purchaseIntent": "Consumers show <span class=\"font-semibold text-primary-orange\">5x higher purchase intent</span> when actively claiming e-coupons",
+          "redemptionRate": "Redemption rates reach <span class=\"font-semibold text-primary-orange\">30-34%</span> versus traditional paper coupon rates of 15-20%",
+          "costReduction": "Per-coupon distribution costs fall below <span class=\"font-semibold text-primary-orange\">HK$0.20</span>, reducing expenses by over 80% compared to physical materials"
+        },
+        "contact": {
+          "heading": "Contact Us",
+          "info": "<a href=\"mailto:hello@mezzofy.com\" class=\"text-primary-orange hover:underline\">hello@mezzofy.com</a> | WhatsApp: <a href=\"https://wa.me/85294802246\" class=\"text-primary-orange hover:underline\">9480 2246</a>"
+        }
+      }
+    }
   }
 }
