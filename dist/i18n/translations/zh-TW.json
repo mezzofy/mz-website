@@ -1735,6 +1735,39 @@
           "collaboration": "在香港政府和香港中文大學 APIB 的支持下，該計劃促進跨領域合作和數位轉型。它為政策制定者提供數據，同時表彰透過原創性和適應性推動經濟進步的企業。",
           "future": "該指數繼續鼓勵各種規模的企業採用創新方法並加強其競爭地位，確立香港作為全球創新強國的軌跡。"
         }
+      },
+      "ejtech300mCoupons": {
+        "title": "EJTech 專題報導：Mezzofy 雲端平台在亞太地區發送 3 億張數位優惠券",
+        "paragraphs": {
+          "recognition": "Mezzofy 的數位優惠券雲端平台因其在亞太地區轉變客戶參與而獲得 EJTech 的認可。",
+          "platform": "該平台使企業能夠「高效創建和分發環保、無紙化優惠券，涵蓋廣泛的行業」。該解決方案支持透過電子郵件、簡訊和社交媒體管道直接聯繫客戶，同時減少紙張消耗。",
+          "scale": "根據 EJTech，<span class=\"font-semibold text-primary-orange\">「已經分發超過 3 億張數位優惠券」</span>，Mezzofy 在以可持續和具成本效益的方式重塑公司與消費者的聯繫方面展示了顯著的市場吸引力。",
+          "milestone": "這一里程碑代表了亞太地區促銷營銷數位轉型的重大成就。該平台在保持效率和環保的同時處理如此大規模的能力為行業樹立了新標準。"
+        }
+      },
+      "dualEsgAwards": {
+        "title": "Mezzofy 在 2024 年 ESG 與可持續發展論壇上榮獲雙獎",
+        "paragraphs": {
+          "awards": "Mezzofy 在 HK01 於 9 月 27 日主辦的「ESG 與可持續發展論壇及獎項 2024」上獲得表彰。該公司獲得兩項榮譽：<span class=\"font-semibold text-primary-orange\">「傑出 ESG 企業獎」</span>和<span class=\"font-semibold text-primary-orange\">「可持續發展企業證書」</span>。",
+          "forum": "商業領袖和可持續發展專家齊聚一堂，討論 ESG 趨勢以及將可持續發展目標整合到營運中。作為數位優惠券平台，Mezzofy 透過用數位替代品取代紙質優惠券來減少環境影響，從而減少紙張浪費。",
+          "commitment": "這些獎項加強了公司對環境責任和可持續發展領導地位的承諾。香港特別行政區政府環境及生態局局長謝展寰先生強調了企業在推進可持續發展倡議方面的重要性。",
+          "future": "Mezzofy 繼續開發有益於環境和社會的解決方案。這項成就建立在 Mezzofy 早期 ESG 認證的基礎上。"
+        }
+      },
+      "edigestLeadingSolution": {
+        "title": "eDigest 專訪：亞太地區領先的數位優惠券解決方案",
+        "headings": {
+          "pioneering": "開創亞太地區數位優惠券解決方案",
+          "innovative": "創新的數位優惠券平台",
+          "expanding": "擴大市場覆蓋",
+          "commitment": "致力於創新"
+        },
+        "paragraphs": {
+          "pioneering": "Mezzofy 作為<span class=\"font-semibold text-primary-orange\">「領先的數位優惠券平台」</span>營運，已經改變了亞太地區的優惠券管理。該公司提供基於雲端的解決方案，使企業能夠創建、分發和管理電子優惠券，同時改善客戶參與和營運效率。",
+          "innovative": "該平台透過可訪問性和全面功能脫穎而出。企業無需廣泛的技術專業知識即可設計和部署數位優惠券。該系統容納多種優惠券格式，包括折扣、禮品券和促銷優惠，支持多樣化的營銷方法。",
+          "expanding": "Mezzofy 在多個亞太國家開展業務，並已促進發行和管理超過<span class=\"font-semibold text-primary-orange\">3 億張數位優惠券</span>。這種廣泛的覆蓋展示了平台的可擴展性和可靠性，使其成為尋求加強促銷計劃的企業的首選。",
+          "commitment": "該公司繼續投資研發以引入新功能和整合。透過強調創新，Mezzofy 為企業提供了有效客戶參與和加速增長的現代工具。"
+        }
       }
     }
   }
