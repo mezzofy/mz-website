@@ -33,7 +33,21 @@ All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to
 
 ## Recently Completed (Last 7 Days)
 
-**2026-02-16 (Latest - Forbes Image Fix):**
+**2026-02-16 (Latest - Blog/News Footer Standardization):**
+- ✅ Standardized footers across all 14 blog and news articles → `dist/blog/*.html`, `dist/news/*.html`
+  - Impact: Visual consistency across all article pages matching main site design
+  - Changed from 4-column to 5-column footer layout
+  - Added Company Info column and Solutions column
+  - Preserved CTA sections ("Ready to power the future of commerce?")
+  - Updated styling: text-gray-300, text-gray-400, border-gray-700
+  - Changed containers from .section-container to max-w-7xl (Tailwind standard)
+  - Fixed CTA button links: ../contact.html and ../for-developers.html
+  - Added comprehensive i18n attributes throughout footers
+  - Files: All 6 blog articles + all 8 news articles (14 total)
+  - Blog: e-coupons-preference, environmental-excellence, holiday-guide, hotel-tech-innovation, nfc-parknshop, smart-retail
+  - News: cioworld-feature, dual-esg-awards, edigest-leading-solution, ejtech-300m-coupons, forbes-dicky-yin, funding-announcement, techapple-innovation-index, treasure-global-partnership
+
+**2026-02-16 (Forbes Image Fix):**
 - ✅ Fixed Forbes Dicky Yin broken image → `dist/news-press.html` (b27b847)
   - Impact: Forbes article card now displays local image correctly
   - Replaced broken external URL with local image path
@@ -126,7 +140,7 @@ All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to
 
 ## In Progress (Current Work)
 
-*No active work in progress - hero layout improvements complete*
+*No active work in progress - footer standardization complete*
 
 **Next Focus Areas:**
 - Fix XSS vulnerability in dist/i18n/i18n.js (use textContent instead of innerHTML)
@@ -211,11 +225,9 @@ All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to
 | **Solutions** (3) | merchants, distributors, developers | ❌ 0/3 | ✅ 3/3 | ❌ 0/3 | ✅ 3/3 | ⚠️ 50% |
 | **Products** (6) | All coupon pages | ❌ 0/6 | ✅ 6/6 | ❌ 0/6 | ✅ 6/6 | ⚠️ 50% |
 | **Corporate** (3) | investors, news-press, nfc-guide | ⚠️ 1/3 | ✅ 3/3 | ❌ 0/3 | ⚠️ 2/3 | ⚠️ 50% ↑ |
-| **Blog** (6) | All blog articles | ✅ 6/6 | ✅ 6/6 | N/A | ⚠️ 6/6* | ✅ 75% ↑↑ |
-| **News** (8) | All press articles | ✅ 8/8 | ✅ 8/8 | N/A | ⚠️ 8/8* | ✅ 75% ↑↑ |
+| **Blog** (6) | All blog articles | ✅ 6/6 | ✅ 6/6 | N/A | ✅ 6/6 | ✅ 100% ↑↑ |
+| **News** (8) | All press articles | ✅ 8/8 | ✅ 8/8 | N/A | ✅ 8/8 | ✅ 100% ↑↑ |
 | **Test** (1) | test-i18n | N/A | ✅ 1/1 | ❌ 0/1 | ❌ 0/1 | ⚠️ Dev |
-
-\* Minimalist template by design (no dropdowns, simplified nav)
 
 ### Priority Remediation Queue
 
@@ -233,7 +245,14 @@ All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to
 
 ### Recent Page Updates
 
-**2026-02-15 (Latest):**
+**2026-02-16 (Latest - Footer Standardization):**
+- ✅ Blog category: 100% template compliance (6/6 pages with standardized footers)
+- ✅ News category: 100% template compliance (8/8 pages with standardized footers)
+- Changed from 4-column to 5-column footer layout
+- Added Company Info and Solutions columns to all 14 article pages
+- Full i18n support maintained throughout footer updates
+
+**2026-02-15:**
 - ✅ Blog category: 100% i18n coverage (6/6 pages)
 - ✅ News category: 100% i18n coverage (8/8 pages)
 - ✅ Corporate category: NFC User Guide migrated to standard i18n
