@@ -1,10 +1,10 @@
 # Project Status: mz-website
 
 **Last Updated:** 2026-02-15
-**Current Phase:** i18n Implementation (Complete - All 3 phases done)
+**Current Phase:** i18n Implementation (Complete - All 3 phases done + path fix)
 **Overall Progress:** ~90% (Base features complete, i18n expansion complete)
 **Branch:** eric-update
-**Latest Commit:** c9a4de4 - Complete Phase 3: Add i18n support to 8 news articles
+**Latest Commit:** 9306108 - Fix i18n translation path for subdirectory pages
 
 ---
 
@@ -32,6 +32,13 @@ All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to
 ---
 
 ## Recently Completed (Last 7 Days)
+
+**2026-02-15 (Post-i18n fix):**
+- ✅ Fixed i18n path bug → `src/i18n/i18n.js`, `dist/i18n/i18n.js` (9306108)
+  - Impact: Blog and news pages now load translations correctly
+  - Changed fetch path from relative to absolute (/i18n/translations/)
+  - All 22 pages with i18n now fully functional (translation keys no longer display)
+  - Related: Fixes issue where subdirectory pages showed "common.nav.products" instead of "Products"
 
 **2026-02-15 (Latest):**
 - ✅ Phase 3 complete: All 8 news articles with i18n → `dist/news/*.html` (c9a4de4)
