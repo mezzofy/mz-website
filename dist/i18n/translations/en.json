@@ -1699,6 +1699,43 @@
           "senses": "Incorporate attention-grabbing visuals, clear messaging, and strategic product placement to encourage customer interaction with NFC-enabled coupon tags."
         }
       }
+    },
+    "news": {
+      "treasureGlobalPartnership": {
+        "title": "Mezzofy Partners with Treasure Global to Accelerate Digital Coupon Expansion in Malaysia",
+        "paragraphs": {
+          "opening": "Mezzofy announced a strategic partnership with Treasure Global Inc., designating them as the exclusive distributor of its digital coupon platform in Malaysia.",
+          "positioning": "The company positions itself as a regional leader managing over USD40 billion in digital coupon transactions across 15 markets. Its \"Coupon-as-a-Service (CaaS)\" platform enables businesses to engage customers without requiring new infrastructure investments.",
+          "collaboration": "Through this collaboration, Treasure Global will expand platform adoption throughout Malaysia, leveraging their local market expertise and digital capabilities. The partners project achieving <span class=\"font-semibold text-primary-orange\">\"USD2 to 4 million in recurring annual revenue\"</span> within the first year.",
+          "platform": "The platform provides features including seamless coupon creation, real-time redemption tracking, and campaign analytics. The partnership reflects Mezzofy's commitment to supporting Malaysian brands in leveraging digital innovation for customer engagement as the nation advances its digital economy."
+        },
+        "quote": {
+          "text": "\"Treasure Global's strong presence and market insight make them a great partner to scale our solution in Malaysia.\"",
+          "attribution": "— Dicky Ying, CEO of Mezzofy"
+        }
+      },
+      "fundingAnnouncement": {
+        "title": "Mezzofy Raised USD 2 Million Pre-Series A Funding Round",
+        "paragraphs": {
+          "announcement": "Mezzofy announced completion of a <span class=\"font-semibold text-primary-orange\">USD 2 million Pre-series A funding round</span> to support global expansion and product development for web3 capabilities. The funding round was led by Isola Capital's IPVF VII, with additional backing from Ooosh Tech Lab and co-investment from Hong Kong's government ITVF program.",
+          "market": "The global digital coupon market is projected to expand at a compound annual growth rate of <span class=\"font-semibold text-primary-orange\">18.6%</span>, potentially reaching USD 29.7 billion by 2031, with Asia-Pacific representing the second-largest market segment.",
+          "brands": "Nearly 100 Asian brands—including Maxim's, Starbucks, Shell, and Hyatt—utilize Mezzofy's platform. The Coupon-as-a-Service model enables integration with existing systems via API, reportedly cutting operational costs by over 87%.",
+          "management": "Mezzofy manages approximately <span class=\"font-semibold text-primary-orange\">400 million digital coupons</span> across 15 markets, representing a cumulative value exceeding USD 5.1 billion."
+        },
+        "quote": {
+          "text": "\"The growth of digital payments and e-commerce drives the rise of digital coupons. We addressed this by making digital coupons transferable.\"",
+          "attribution": "— Dicky Ying, CEO"
+        }
+      },
+      "techappleInnovationIndex": {
+        "title": "TechApple Features: Mezzofy Recognized as 3-Star SME in 2024 Corporate Innovation Index",
+        "paragraphs": {
+          "innovation": "The 2024 Corporate Innovation Index highlights accomplishments in innovation leadership and operational excellence, reinforcing Hong Kong's standing as a regional innovation center. Arup secured the top position, with Hang Seng Bank and Airport Authority Hong Kong following.",
+          "recognition": "This marked the inaugural year SMEs received evaluation. Thirty-seven organizations achieved star ratings, with <span class=\"font-semibold text-primary-orange\">Mezzofy (Hong Kong) Limited earning three stars</span> \"for its digital couponing contributions.\"",
+          "collaboration": "Backed by the Hong Kong government and CUHK's APIB, the initiative promotes cross-sector collaboration and digital transformation. It furnishes data for policymakers while recognizing enterprises propelling economic progress through originality and adaptability.",
+          "future": "The index continues encouraging enterprises of all dimensions to adopt innovative approaches and strengthen their competitive positions, establishing Hong Kong's trajectory as a worldwide innovation powerhouse."
+        }
+      }
     }
   }
 }

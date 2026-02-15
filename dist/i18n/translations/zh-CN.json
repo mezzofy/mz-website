@@ -1699,6 +1699,43 @@
           "senses": "结合引人注目的视觉效果、清晰的讯息传递和策略性产品放置,以鼓励客户与支持 NFC 的优惠券标签互动。"
         }
       }
+    },
+    "news": {
+      "treasureGlobalPartnership": {
+        "title": "Mezzofy 与 Treasure Global 合作加速马来西亚数字优惠券扩展",
+        "paragraphs": {
+          "opening": "Mezzofy 宣布与 Treasure Global Inc. 达成战略合作伙伴关系,指定其为马来西亚数字优惠券平台的独家经销商。",
+          "positioning": "该公司将自己定位为区域领导者,在 15 个市场管理超过 400 亿美元的数字优惠券交易。其「优惠券即服务 (CaaS)」平台使企业能够在无需新基础设施投资的情况下吸引客户。",
+          "collaboration": "通过这次合作,Treasure Global 将利用其当地市场专业知识和数字能力在马来西亚扩大平台采用。合作伙伴预计在第一年内实现<span class=\"font-semibold text-primary-orange\">「200 万至 400 万美元的经常性年收入」</span>。",
+          "platform": "该平台提供的功能包括无缝优惠券创建、即时兑换追踪和营销活动分析。随着马来西亚推进其数字经济,此次合作伙伴关系反映了 Mezzofy 致力于支持马来西亚品牌利用数字创新进行客户互动的承诺。"
+        },
+        "quote": {
+          "text": "「Treasure Global 强大的市场存在和市场洞察力使他们成为在马来西亚扩展我们解决方案的绝佳合作伙伴。」",
+          "attribution": "— Dicky Ying,Mezzofy 首席执行官"
+        }
+      },
+      "fundingAnnouncement": {
+        "title": "Mezzofy 完成 200 万美元 Pre-A 轮融资",
+        "paragraphs": {
+          "announcement": "Mezzofy 宣布完成<span class=\"font-semibold text-primary-orange\">200 万美元 Pre-A 轮融资</span>,以支持全球扩展和 web3 功能的产品开发。本轮融资由 Isola Capital 的 IPVF VII 领投,Ooosh Tech Lab 额外支持,以及香港政府 ITVF 计划的共同投资。",
+          "market": "全球数字优惠券市场预计将以<span class=\"font-semibold text-primary-orange\">18.6%</span>的复合年增长率扩张,到 2031 年可能达到 297 亿美元,亚太地区代表第二大市场区段。",
+          "brands": "近 100 个亚洲品牌——包括美心、星巴克、壳牌和凯悦——使用 Mezzofy 的平台。优惠券即服务模型可通过 API 与现有系统整合,据报导可将运营成本降低 87% 以上。",
+          "management": "Mezzofy 在 15 个市场管理约<span class=\"font-semibold text-primary-orange\">4 亿张数字优惠券</span>,代表累计价值超过 51 亿美元。"
+        },
+        "quote": {
+          "text": "「数字支付和电子商务的增长推动了数字优惠券的兴起。我们通过使数字优惠券可转让来解决这个问题。」",
+          "attribution": "— Dicky Ying,首席执行官"
+        }
+      },
+      "techappleInnovationIndex": {
+        "title": "TechApple 专题报道:Mezzofy 被评为 2024 年企业创新指数三星级中小企业",
+        "paragraphs": {
+          "innovation": "2024 年企业创新指数突出了创新领导力和运营卓越的成就,巩固了香港作为区域创新中心的地位。Arup 获得第一名,恒生银行和香港机场管理局紧随其后。",
+          "recognition": "这标志着中小企业首次接受评估。37 个组织获得星级评定,<span class=\"font-semibold text-primary-orange\">Mezzofy（香港）有限公司因其数字优惠券贡献获得三星</span>。",
+          "collaboration": "在香港政府和香港中文大学 APIB 的支持下,该计划促进跨领域合作和数字转型。它为政策制定者提供数据,同时表彰通过原创性和适应性推动经济进步的企业。",
+          "future": "该指数继续鼓励各种规模的企业采用创新方法并加强其竞争地位,确立香港作为全球创新强国的轨迹。"
+        }
+      }
     }
   }
 }
