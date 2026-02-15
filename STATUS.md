@@ -1,10 +1,10 @@
 # Project Status: mz-website
 
-**Last Updated:** 2026-02-15
+**Last Updated:** 2026-02-16
 **Current Phase:** Bug Fixes & Navigation Improvements (In Progress)
 **Overall Progress:** ~93% (Base features complete, i18n expansion complete, navigation fixes ongoing)
 **Branch:** main
-**Latest Commit:** 86dc07f - Localize blog and news images to /assets/images/
+**Latest Commit:** b27b847 - Fix Forbes Dicky Yin image: Use local image instead of broken external URL
 
 ---
 
@@ -33,7 +33,16 @@ All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to
 
 ## Recently Completed (Last 7 Days)
 
-**2026-02-15 (Latest - Image Localization):**
+**2026-02-16 (Latest - Forbes Image Fix):**
+- ✅ Fixed Forbes Dicky Yin broken image → `dist/news-press.html` (b27b847)
+  - Impact: Forbes article card now displays local image correctly
+  - Replaced broken external URL with local image path
+  - Image: `assets/images/news/forbes-dicky-yin.png` (802KB)
+  - All 8 news articles now consistently use local images
+  - File: news-press.html line 590
+  - Related: Completes image localization from commit 86dc07f
+
+**2026-02-15 (Image Localization):**
 - ✅ Localized all blog and news images to /assets/images/ → `dist/assets/images/blog/`, `dist/assets/images/news/` (86dc07f)
   - Impact: Eliminated external CDN dependency for all article images
   - Impact: Faster page loads (same-origin requests, no external DNS lookup)
