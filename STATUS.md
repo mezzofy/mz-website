@@ -1,10 +1,10 @@
 # Project Status: mz-website
 
-**Last Updated:** 2026-02-15
-**Current Phase:** Homepage Layout Improvements (In Progress)
-**Overall Progress:** ~92% (Base features complete, i18n expansion complete, layout improvements ongoing)
+**Last Updated:** 2026-02-16
+**Current Phase:** Bug Fixes & Navigation Improvements (In Progress)
+**Overall Progress:** ~93% (Base features complete, i18n expansion complete, navigation fixes ongoing)
 **Branch:** eric-update
-**Latest Commit:** 226bdcb - Improve hero desktop layout: standardize colors, responsive spacing, 1280px container
+**Latest Commit:** 5cd3a4a - Fix broken navigation on 8 news pages
 
 ---
 
@@ -33,7 +33,17 @@ All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to
 
 ## Recently Completed (Last 7 Days)
 
-**2026-02-16 (Latest - Footer Standardization):**
+**2026-02-16 (Latest - News Navigation Fix):**
+- ✅ Fixed broken navigation on 8 news pages → `dist/news/*.html` (5cd3a4a)
+  - Impact: Restored 4 missing dropdown menus (Products, Developer, Resources, Company)
+  - Impact: Fixed mobile menu (added hamburger button + accordion dropdowns)
+  - Impact: Fixed structural HTML errors (missing closing tags)
+  - Method: Replaced incomplete navigation with working reference from blog
+  - Testing: Verified desktop dropdowns (10 triggers), mobile accordion, language switching
+  - All 8 news pages now have consistent navigation (identical to blog structure)
+  - Files: treasure-global-partnership, dual-esg-awards, funding-announcement, cioworld-feature, techapple-innovation-index, ejtech-300m-coupons, edigest-leading-solution, forbes-dicky-yin
+
+**2026-02-16 (Footer Standardization):**
 - ✅ Standardized About Us footer to match homepage pattern → `dist/about.html` (34e5265)
   - Impact: Visual consistency across all 3 core pages (index, about, contact)
   - Removed CTA section from footer (-17 lines)
