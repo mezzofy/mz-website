@@ -1768,6 +1768,38 @@
           "expanding": "Mezzofy 在多个亚太国家开展业务,并已促进发行和管理超过<span class=\"font-semibold text-primary-orange\">3 亿张数字优惠券</span>。这种广泛的覆盖展示了平台的可扩展性和可靠性,使其成为寻求加强促销计划的企业的首选。",
           "commitment": "该公司继续投资研发以引入新功能和整合。通过强调创新,Mezzofy 为企业提供了有效客户参与和加速增长的现代工具。"
         }
+      },
+      "cioworldFeature": {
+        "title": "TheCIOWorld 专题报道:Mezzofy 改造优惠券迈向更环保的未来",
+        "paragraphs": {
+          "innovation": "Mezzofy 的创新数字优惠券方法已在 CIOWorld 中得到重点报道。公司领导者 Dicky Ying 讨论了组织如何通过环保解决方案转变传统优惠券。",
+          "technologies": "该专题强调 Mezzofy 的先进技术,特别是<span class=\"font-semibold text-primary-orange\">NFC 点击获取优惠券</span>和<span class=\"font-semibold text-primary-orange\">整合钱包功能</span>。这些工具协助企业减少环境影响,同时提供个性化的客户体验。",
+          "redefining": "该出版物强调 Mezzofy 如何重新定义可持续数字营销计划的格局。该报道展示了技术创新如何推动商业成功和环境可持续性。"
+        },
+        "callout": {
+          "heading": "阅读完整文章",
+          "text": "访问 CIOWorld 了解更多关于 Mezzofy 对环保数字优惠券的愿景。"
+        }
+      },
+      "forbesDickyYin": {
+        "title": "Forbes China 表彰 Dicky Yin 在创新方面的卓越领导力",
+        "paragraphs": {
+          "recognition": "Mezzofy（香港）有限公司首席执行官 Dicky Yin 先生获得 Forbes China 表彰为杰出的商业领袖。",
+          "philosophy": "根据这篇文章,Yin 认为真正的领导力涉及激励同事自愿与组织方向保持一致。他强调建立提供战略方向和可能性的工作场所文化,将团队成员视为推进集体目标的合作伙伴。",
+          "stewardship": "在 Yin 的领导下,Mezzofy 已经从根本上改变了数字优惠券领域。该组织为零售商提供灵活的工具,以提高客户对数字优惠券解决方案的认知和接受度。",
+          "reshaping": "通过重塑消费者模式,该公司正在推进行业内的可持续发展。Forbes China 的认可突显了 Yin 创新的领导方法以及他致力于在商业实践和环境影响方面创造积极变化的承诺。"
+        },
+        "quote": {
+          "text": "「追随者决定谁是领导者。」",
+          "attribution": "— Dicky Yin 的领导理念"
+        },
+        "headings": {
+          "transforming": "改造数字优惠券领域"
+        },
+        "callout": {
+          "heading": "阅读完整的 Forbes China 文章",
+          "text": "了解更多关于 Dicky Yin 的领导理念和 Mezzofy 的使命。"
+        }
       }
     }
   }
