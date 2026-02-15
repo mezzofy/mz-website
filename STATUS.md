@@ -33,7 +33,17 @@ All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to
 
 ## Recently Completed (Last 7 Days)
 
-**2026-02-15 (Latest - Hero Layout Improvements):**
+**2026-02-16 (Latest - Footer Standardization):**
+- ✅ Standardized About Us footer to match homepage pattern → `dist/about.html` (34e5265)
+  - Impact: Visual consistency across all 3 core pages (index, about, contact)
+  - Removed CTA section from footer (-17 lines)
+  - Changed container from .section-container to max-w-7xl (Tailwind standard)
+  - Updated text colors: text-white/text-gray-200 → text-gray-300
+  - Updated copyright border: border-white/20 → border-gray-700
+  - Removed extra wrapper div and id="contact" attribute
+  - All 3 core pages now have identical footer structure
+
+**2026-02-15 (Hero Layout Improvements):**
 - ✅ Improved homepage hero section desktop layout → `dist/index.html` (226bdcb)
   - Impact: Better desktop screen utilization (+80px container width: 1200px → 1280px)
   - Fixed deprecated color #FF6B35 → #ff7a3d (official brand)
