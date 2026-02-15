@@ -7,16 +7,189 @@
     <title>Mezzofy 300M Coupons Across APAC - Mezzofy News</title>
     <link rel="icon" type="image/png" href="../favicon.png">
     <link rel="stylesheet" href="../output.css">
+<!-- i18n Script -->
+    <script src="../i18n/i18n.js"></script>
 </head>
-<body class="bg-white text-dark-grey">
+<body class="bg-white text-dark-grey i18n-loading">
     <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-md z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <div class="flex items-center"><a href="../index.html"><img src="../assets/images/logo.png" alt="Mezzofy" class="h-8 md:h-10"></a></div>
-                <div class="hidden md:flex items-center space-x-6">
-                    <a href="../news-press.html" class="text-medium-grey hover:text-primary-black">News & Press</a>
-                    <a href="#contact" class="btn-primary">Get Started</a>
+                <div class="flex items-center">
+                    <a href="../index.html" class="flex items-center gap-2">
+                        <img src="../assets/images/logo.png" alt="Mezzofy Logo" class="h-8 md:h-10">
+                        <span class="md:hidden text-xl font-bold text-primary-black">MEZZOFY</span>
+                    </a>
                 </div>
+
+                <div class="hidden md:flex items-center space-x-6">
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.products">Products</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="../coupon-management.html" class="dropdown-item" data-i18n="common.nav.managementSystem">Coupon Management System</a>
+                            <a href="../coupon-marketplace.html" class="dropdown-item" data-i18n="common.nav.marketplace">Coupon Marketplace</a>
+                            <a href="../coupon-nfc.html" class="dropdown-item" data-i18n="common.nav.nfc">Coupon NFC</a>
+                            <a href="../coupon-marketing.html" class="dropdown-item" data-i18n="common.nav.marketing">Coupon Marketing</a>
+                            <a href="../coupon-wallet.html" class="dropdown-item" data-i18n="common.nav.wallet">Coupon Wallet</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.developer">Developer</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="../index.html#" class="dropdown-item" data-i18n="common.nav.apiDoc">API Documentation</a>
+                            <a href="../index.html#" class="dropdown-item" data-i18n="common.nav.apiUseCase">API Use Case</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.resources">Resources</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="../coupon-playbook.html" class="dropdown-item" data-i18n="common.nav.playbook">Coupon Playbook</a>
+                            <a href="../index.html#" class="dropdown-item" data-i18n="common.nav.support">Support</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.company">Company</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="../about.html" class="dropdown-item" data-i18n="common.nav.aboutUs">About Us</a>
+                            <a href="../contact.html" class="dropdown-item" data-i18n="common.nav.contactUs">Contact Us</a>
+                            <a href="../news-press.html" class="dropdown-item" data-i18n="common.nav.newsPress">News & Press</a>
+                            <a href="../investors.html" class="dropdown-item" data-i18n="common.nav.investors">Investors</a>
+                        </div>
+                    </div>
+
+                    <!-- Language Selector -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <svg class="w-5 h-5 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+                            </svg>
+                            <span id="current-lang-desktop">English</span>
+                            <svg class="w-4 h-4 inline ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item lang-option" data-lang="en">English</a>
+                            <a href="#" class="dropdown-item lang-option" data-lang="zh-TW">繁體中文</a>
+                            <a href="#" class="dropdown-item lang-option" data-lang="zh-CN">简体中文</a>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn-primary" data-i18n="common.buttons.getStarted">Get Started</a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-primary-black focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <!-- Language Selector Mobile -->
+                <div class="mobile-dropdown border-b border-gray-200 pb-2 mb-2">
+                    <button class="mobile-dropdown-trigger" data-dropdown="mobile-lang">
+                        <span class="flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+                            </svg>
+                            <span id="current-lang-mobile">English</span>
+                        </span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="mobile-lang">
+                        <a href="#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange lang-option" data-lang="en">English</a>
+                        <a href="#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange lang-option" data-lang="zh-TW">繁體中文</a>
+                        <a href="#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange lang-option" data-lang="zh-CN">简体中文</a>
+                    </div>
+                </div>
+
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger w-full text-left py-2 text-medium-grey font-medium">
+                        <span data-i18n="common.nav.products">Products</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu hidden pl-4 space-y-2 mt-2">
+                        <a href="../coupon-management.html" class="block py-2 text-dark-grey" data-i18n="common.nav.managementSystem">Coupon Management System</a>
+                        <a href="../coupon-marketplace.html" class="block py-2 text-dark-grey" data-i18n="common.nav.marketplace">Coupon Marketplace</a>
+                        <a href="../coupon-nfc.html" class="block py-2 text-dark-grey" data-i18n="common.nav.nfc">Coupon NFC</a>
+                        <a href="../coupon-marketing.html" class="block py-2 text-dark-grey" data-i18n="common.nav.marketing">Coupon Marketing</a>
+                        <a href="../coupon-wallet.html" class="block py-2 text-dark-grey" data-i18n="common.nav.wallet">Coupon Wallet</a>
+                    </div>
+                </div>
+
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger w-full text-left py-2 text-medium-grey font-medium">
+                        <span data-i18n="common.nav.developer">Developer</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu hidden pl-4 space-y-2 mt-2">
+                        <a href="../index.html#" class="block py-2 text-dark-grey" data-i18n="common.nav.apiDoc">API Documentation</a>
+                        <a href="../index.html#" class="block py-2 text-dark-grey" data-i18n="common.nav.apiUseCase">API Use Case</a>
+                    </div>
+                </div>
+
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger w-full text-left py-2 text-medium-grey font-medium">
+                        <span data-i18n="common.nav.resources">Resources</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu hidden pl-4 space-y-2 mt-2">
+                        <a href="../coupon-playbook.html" class="block py-2 text-dark-grey" data-i18n="common.nav.playbook">Coupon Playbook</a>
+                        <a href="../index.html#" class="block py-2 text-dark-grey" data-i18n="common.nav.support">Support</a>
+                    </div>
+                </div>
+
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger w-full text-left py-2 text-medium-grey font-medium">
+                        <span data-i18n="common.nav.company">Company</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu hidden pl-4 space-y-2 mt-2">
+                        <a href="../about.html" class="block py-2 text-dark-grey" data-i18n="common.nav.aboutUs">About Us</a>
+                        <a href="../contact.html" class="block py-2 text-dark-grey" data-i18n="common.nav.contactUs">Contact Us</a>
+                        <a href="../news-press.html" class="block py-2 text-dark-grey" data-i18n="common.nav.newsPress">News & Press</a>
+                        <a href="../investors.html" class="block py-2 text-dark-grey" data-i18n="common.nav.investors">Investors</a>
+                    </div>
+                </div>
+
+                <a href="#contact" class="block py-2 btn-primary text-center mt-4" data-i18n="common.buttons.getStarted">Get Started</a>
             </div>
         </div>
     </nav>
@@ -28,7 +201,7 @@
                     Back to News & Press
                 </a>
                 <h1 class="text-4xl sm:text-5xl font-bold text-primary-black mb-6">EJTech Highlights: Mezzofy's Cloud Platform Distributes 300M Digital Coupons Across APAC</h1>
-                <div class="flex items-center gap-6 text-medium-grey mb-8"><span>May 14, 2023</span><span>•</span><span>Mezzofy</span><span>•</span><span>News</span></div>
+                <div class="flex items-center gap-6 text-medium-grey mb-8"><span>May 14, 2023</span><span>•</span><span>Mezzofy</span><span>•</span><span data-i18n="common.news.category">News</span></div>
             </div>
         </div>
     </section>
@@ -49,17 +222,17 @@
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                         </svg>
-                        <span>Previous</span>
+                        <span data-i18n="common.news.previous">Previous</span>
                     </a>
                     <a href="../news/edigest-leading-solution.html" class="flex items-center gap-2 text-medium-grey hover:text-primary-orange transition-colors">
-                        <span>Next</span>
+                        <span data-i18n="common.news.next">Next</span>
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                         </svg>
                     </a>
                 </div>
 
-                <div class="mt-8"><a href="../news-press.html" class="btn-secondary inline-block">← Back to News & Press</a></div>
+                <div class="mt-8"><a href="../news-press.html" class="btn-secondary inline-block">← <span data-i18n="common.news.backToHub">Back to News & Press</span></a></div>
             </div>
         </div>
     </section>
@@ -101,7 +274,7 @@
                         </ul>
                     </div>
                     <div>
-                        <h3 class="font-bold text-lg mb-4">Company</h3>
+                        <h3 class="font-bold text-lg mb-4"><span data-i18n="common.nav.company">Company</span></h3>
                         <ul class="space-y-2 text-gray-200">
                             <li><a href="../about.html" class="hover:text-white transition-colors">About Us</a></li>
                             <li><a href="../news-press.html" class="hover:text-white transition-colors">News & Press</a></li>
@@ -127,6 +300,6 @@
             </div>
         </div>
     </footer>
-    <script src="../../src/js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

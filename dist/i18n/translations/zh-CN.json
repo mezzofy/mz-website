@@ -65,6 +65,20 @@
     },
     "logo": {
       "alt": "Mezzofy 标志"
+    },
+    "blog": {
+      "backToHub": "Back to News & Press",
+      "previous": "Previous",
+      "next": "Next",
+      "source": "Source",
+      "category": "Blog"
+    },
+    "news": {
+      "backToHub": "Back to News & Press",
+      "previous": "Previous",
+      "next": "Next",
+      "source": "Source",
+      "category": "News"
     }
   },
   "home": {
@@ -1398,6 +1412,127 @@
       "description": "加入信任 Mezzofy 为其数字优惠券销售提供动力的领先商家行列",
       "contactUs": "立即联系我们",
       "viewDemo": "查看演示"
+    }
+  },
+  "nfcGuide": {
+    "header": {
+      "title": "🎫 How to Use Mezzofy NFC Coupons",
+      "subtitle": "Your complete guide to tapping, claiming, and redeeming digital coupons"
+    },
+    "intro": {
+      "title": "Welcome to the Future of Coupons!",
+      "description": "Mezzofy's NFC technology makes saving money easier than ever. Simply tap your phone on any Mezzofy NFC sticker or scan a QR code to unlock exclusive deals. Follow this simple guide to start saving today!"
+    },
+    "steps": {
+      "step1": {
+        "number": "1",
+        "title": "Enable NFC on Your Phone",
+        "description": "Before you can tap and save, make sure NFC is enabled on your smartphone:",
+        "iphone": "<strong>iPhone:</strong> NFC is always on for iPhone 7 and newer. No setup needed!",
+        "android": "<strong>Android:</strong> Go to Settings → Connected Devices → Connection Preferences → NFC → Turn ON"
+      },
+      "step2": {
+        "number": "2",
+        "title": "Tap Your Phone",
+        "description": "Hold the back of your smartphone close to the NFC sticker (within 1-2 inches). You'll feel a vibration or hear a sound confirming the tap. Your phone will automatically open the coupon link in your browser."
+      },
+      "step3": {
+        "number": "3",
+        "title": "View Coupon Details",
+        "description": "Once the page loads, you'll see:",
+        "item1": "The discount or offer details",
+        "item2": "Expiration date and terms",
+        "item3": "Participating merchant information",
+        "item4": "A unique coupon code"
+      },
+      "step4": {
+        "number": "4",
+        "title": "Claim Your Coupon (Two Ways)",
+        "optionA": {
+          "heading": "Option A: With Mezzofy Coupon Clipper App (Recommended)",
+          "intro": "For the best experience, download the <strong>Mezzofy Coupon Clipper</strong> app:",
+          "item1": "<strong>Seamless Collection:</strong> Tap any NFC coupon and it automatically saves to your app",
+          "item2": "<strong>No Personal Data Required:</strong> Start using immediately without sign-up",
+          "item3": "<strong>All Coupons in One Place:</strong> Easy access to your entire coupon collection",
+          "item4": "<strong>Instant Redemption:</strong> Show coupons directly from the app at checkout"
+        },
+        "optionB": {
+          "heading": "Option B: Without the App (Browser-Based)",
+          "intro": "Don't have the app yet? No problem! When you tap an NFC coupon:",
+          "item1": "The coupon details page launches immediately in your browser",
+          "item2": "View and use the coupon right away at checkout",
+          "item3": "<strong>Save Options:</strong> Optionally save to Apple Wallet, Google Wallet, or Samsung Wallet",
+          "item4": "<strong>Or Download the App:</strong> A convenient link to download Mezzofy Coupon Clipper for future use"
+        }
+      },
+      "step5": {
+        "number": "5",
+        "title": "Redeem at Checkout",
+        "description": "When you're ready to use your coupon:",
+        "item1": "Open your Mezzofy Coupon Clipper app or access the coupon from your device wallet",
+        "item2": "Select the coupon you want to use",
+        "item3": "Show the QR code or barcode to the merchant's scanner at checkout",
+        "item4": "Watch your discount apply instantly!"
+      }
+    },
+    "features": {
+      "title": "✨ Key Features of Mezzofy NFC Coupons",
+      "feature1": "<strong>Instant Access:</strong> No need to download apps before tapping – works directly in your browser",
+      "feature2": "<strong>Privacy-Friendly:</strong> The Coupon Clipper app requires no personal data to use",
+      "feature3": "<strong>Multiple Wallet Options:</strong> Save to Mezzofy, Apple Wallet, Google Wallet, or Samsung Wallet",
+      "feature4": "<strong>No Printing Required:</strong> Completely paperless and eco-friendly",
+      "feature5": "<strong>Real-Time Updates:</strong> Get notifications about new deals and expiring coupons",
+      "feature6": "<strong>Multi-Portal Support:</strong> Works with B2C, C2C, and partner merchant systems"
+    },
+    "tips": {
+      "title": "💡 Pro Tips for Maximum Savings",
+      "tip1": "<strong>Download the App:</strong> Get the Mezzofy Coupon Clipper for the fastest, most seamless experience",
+      "tip2": "<strong>Enable Notifications:</strong> Never miss a deal – allow Mezzofy to send you alerts about new coupons and expiring offers",
+      "tip3": "<strong>Check Expiration Dates:</strong> Use your coupons before they expire to maximize your savings",
+      "tip4": "<strong>Stack Offers:</strong> Some merchants allow you to combine multiple coupons – check the terms!",
+      "tip5": "<strong>Share with Friends:</strong> Use our C2C portal to trade or gift coupons you won't use",
+      "tip6": "<strong>Follow Favorite Merchants:</strong> Get exclusive early access to their promotions"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": {
+        "question": "Q: Do I need to download an app to use NFC coupons?",
+        "answer": "A: No! You can tap and view coupons directly in your mobile browser. However, downloading the Mezzofy Coupon Clipper app provides the best experience with automatic coupon collection and no personal data required."
+      },
+      "q2": {
+        "question": "Q: What if my phone doesn't have NFC?",
+        "answer": "A: No problem! Every NFC coupon also has a QR code option. Simply open your camera app and scan the QR code to access the same coupon."
+      },
+      "q3": {
+        "question": "Q: Does the Mezzofy Coupon Clipper app require personal information?",
+        "answer": "A: No! You can start using the app immediately without providing any personal data. It's designed for privacy and convenience."
+      },
+      "q4": {
+        "question": "Q: Can I use a coupon multiple times?",
+        "answer": "A: It depends on the coupon terms. Most coupons are single-use, but some promotional offers allow multiple redemptions. Check the coupon details for specific information."
+      },
+      "q5": {
+        "question": "Q: What happens if I tap a coupon but don't save it?",
+        "answer": "A: Without the app, you can still use the coupon immediately from the browser page. You can also save it to your device wallet (Apple, Google, or Samsung) or tap the same NFC sticker again later."
+      },
+      "q6": {
+        "question": "Q: Can I transfer my coupons to someone else?",
+        "answer": "A: Yes! Through our C2C (Customer-to-Customer) portal, you can trade, gift, or sell unused coupons to other Mezzofy users."
+      },
+      "q7": {
+        "question": "Q: What if the coupon doesn't work at checkout?",
+        "answer": "A: First, check that the coupon hasn't expired and that you're using it at a participating merchant. If issues persist, contact the merchant or Mezzofy customer support for assistance."
+      },
+      "q8": {
+        "question": "Q: Which wallet should I use to save coupons?",
+        "answer": "A: We recommend the Mezzofy Coupon Clipper app for the best experience. However, you can also save to Apple Wallet (iPhone), Google Wallet (Android), or Samsung Wallet depending on your device."
+      }
+    },
+    "support": {
+      "title": "Need More Help?",
+      "description": "Our customer support team is here to assist you!",
+      "contact": "Contact us at: <a href=\"mailto:support@mezzofy.com\">support@mezzofy.com</a>",
+      "helpCenter": "Visit our Help Center for more guides and tutorials"
     }
   }
 }

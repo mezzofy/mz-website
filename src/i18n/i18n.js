@@ -39,7 +39,9 @@ class I18n {
   // Load translation JSON file
   async loadTranslations(lang) {
     try {
-      const response = await fetch(`i18n/translations/${lang}.json`);
+      // Use absolute path from site root to work for pages in subdirectories
+      // (e.g., /blog/, /news/) as well as root-level pages
+      const response = await fetch(`/i18n/translations/${lang}.json`);
       if (!response.ok) {
         throw new Error(`Failed to load ${lang}.json`);
       }
