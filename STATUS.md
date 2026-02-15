@@ -1,10 +1,10 @@
 # Project Status: mz-website
 
 **Last Updated:** 2026-02-16
-**Current Phase:** Bug Fixes & Navigation Improvements (In Progress)
-**Overall Progress:** ~93% (Base features complete, i18n expansion complete, navigation fixes ongoing)
+**Current Phase:** i18n Enhancements (In Progress)
+**Overall Progress:** ~94% (Base features complete, i18n expansion complete, hub page translations added)
 **Branch:** main
-**Latest Commit:** b27b847 - Fix Forbes Dicky Yin image: Use local image instead of broken external URL
+**Latest Commit:** f9e0f34 - Add Chinese translations to news-press.html article preview cards
 
 ---
 
@@ -33,7 +33,18 @@ All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to
 
 ## Recently Completed (Last 7 Days)
 
-**2026-02-16 (Latest - Blog/News Footer Standardization):**
+**2026-02-16 (Latest - News-Press Hub Translations):**
+- ✅ Added Chinese translations to news-press.html article preview cards → `dist/news-press.html`, `dist/i18n/translations/*.json` (f9e0f34)
+  - Impact: All 14 article preview cards now display translated titles and descriptions
+  - Added newsPress.articles namespace with 14 article objects (title + description each)
+  - Updated all 3 translation files: en.json, zh-TW.json, zh-CN.json
+  - Added data-i18n attributes to 28 elements (14 titles + 14 descriptions)
+  - Articles: 6 blog articles + 8 news articles
+  - Blog: nfcParknshop, eCouponsPreference, environmentalExcellence, holidayGuide, smartRetail, hotelTechInnovation
+  - News: treasureGlobal, techappleInnovation, dualEsgAwards, fundingAnnouncement, cioworldFeature, ejtech300m, edigestLeading, forbesDickyYin
+  - Users can now switch between EN, zh-TW, zh-CN on the news-press hub page
+
+**2026-02-16 (Blog/News Footer Standardization):**
 - ✅ Standardized footers across all 14 blog and news articles → `dist/blog/*.html`, `dist/news/*.html`
   - Impact: Visual consistency across all article pages matching main site design
   - Changed from 4-column to 5-column footer layout
