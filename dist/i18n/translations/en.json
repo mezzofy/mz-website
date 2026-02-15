@@ -355,7 +355,65 @@
       "blog": "Blog",
       "news": "News"
     },
-    "readMore": "Read More →"
+    "readMore": "Read More →",
+    "articles": {
+      "nfcParknshop": {
+        "title": "Mezzofy 助品牌設置優惠券到240 間百佳 NFC 標籤",
+        "description": "Streamlined promotional processes for FMCG brands partnering with ParknShop through NFC technology, eliminating coordination complexity."
+      },
+      "treasureGlobal": {
+        "title": "Mezzofy Partners with Treasure Global",
+        "description": "Strategic partnership with Treasure Global Inc. to accelerate digital coupon expansion in Malaysia, projecting USD2-4 million in recurring annual revenue."
+      },
+      "eCouponsPreference": {
+        "title": "60% of Consumers Prefer E-Coupons",
+        "description": "60% of consumers prefer e-coupons, signaling a major shift in shopping behaviors. Digital coupons with NFC and AI are transforming retail."
+      },
+      "environmentalExcellence": {
+        "title": "HK Awards for Environmental Excellence",
+        "description": "Cut costs and save trees with digital coupons. Over 136 billion paper coupons destroy 5 million trees annually. Go digital to reduce expenses by 70%."
+      },
+      "techappleInnovation": {
+        "title": "Mezzofy Recognized as 3-Star SME in 2024 CII",
+        "description": "TechApple features Mezzofy's recognition as 3-Star SME in the 2024 Corporate Innovation Index for digital couponing contributions."
+      },
+      "dualEsgAwards": {
+        "title": "Dual Awards at ESG Forum 2024",
+        "description": "Mezzofy honored with Outstanding ESG Enterprise Award and Sustainable Development Enterprise Certificate at the ESG Forum 2024."
+      },
+      "fundingAnnouncement": {
+        "title": "USD 2 Million Pre-Series A Funding Round",
+        "description": "Mezzofy raised USD 2 million Pre-series A funding led by Isola Capital to support global expansion and web3 product development."
+      },
+      "holidayGuide": {
+        "title": "Holiday Season Coupon Guide",
+        "description": "Master the last-minute holiday sales surge with swift coupon solutions. Holiday retail sales reached $943-960 billion in 2022."
+      },
+      "smartRetail": {
+        "title": "Tech-led Smart Retail",
+        "description": "NFC technology transforms retail dynamics. Research shows 73% of respondents make spontaneous purchases, with average monthly impulse spending exceeding $314."
+      },
+      "cioworldFeature": {
+        "title": "Transforming Coupons for a Greener Future",
+        "description": "TheCIOWorld features Mezzofy's innovative NFC tap-to-get coupons and integrated wallet functionality for sustainable digital marketing."
+      },
+      "ejtech300m": {
+        "title": "300M Digital Coupons Across APAC",
+        "description": "EJTech highlights Mezzofy's cloud platform distributing over 300 million digital coupons across Asia-Pacific, transforming customer engagement."
+      },
+      "edigestLeading": {
+        "title": "Asia-Pacific's Leading Digital Coupon Solution",
+        "description": "eDigest exclusive feature on Mezzofy as a leading digital coupon platform transforming coupon management across Asia-Pacific."
+      },
+      "forbesDickyYin": {
+        "title": "Forbes Recognizes Dicky Yin for Leadership",
+        "description": "Forbes China features Mezzofy CEO Dicky Yin for outstanding leadership in innovation, transforming the digital coupon sector."
+      },
+      "hotelTechInnovation": {
+        "title": "Why Tech Innovation is Key to Hotel Success",
+        "description": "67% of travelers expect personalized experiences. Hotels must adopt NFC, chatbots, and AI-driven personalization to boost revenue and loyalty."
+      }
+    }
   },
   "investors": {
     "hero": {

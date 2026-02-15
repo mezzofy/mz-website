@@ -355,7 +355,65 @@
       "blog": "博客",
       "news": "新闻"
     },
-    "readMore": "阅读更多 →"
+    "readMore": "阅读更多 →",
+    "articles": {
+      "nfcParknshop": {
+        "title": "Mezzofy 助品牌设置优惠券到240 间百佳 NFC 标签",
+        "description": "通过 NFC 技术简化快速消费品品牌与百佳合作的促销流程,消除协调复杂性。"
+      },
+      "treasureGlobal": {
+        "title": "Mezzofy 与 Treasure Global 合作",
+        "description": "与 Treasure Global Inc. 达成战略合作伙伴关系,加速马来西亚数字优惠券扩展,预计第一年经常性年收入达 200-400 万美元。"
+      },
+      "eCouponsPreference": {
+        "title": "60% 消费者偏好电子优惠券",
+        "description": "60% 的消费者偏好电子优惠券,标志着购物行为的重大转变。配备 NFC 和 AI 的数字优惠券正在改变零售业。"
+      },
+      "environmentalExcellence": {
+        "title": "香港环境卓越奖",
+        "description": "使用数字优惠券降低成本并拯救树木。每年超过 1,360 亿张纸质优惠券摧毁 500 万棵树。采用数字化可减少 70% 的费用。"
+      },
+      "techappleInnovation": {
+        "title": "Mezzofy 被评为 2024 年企业创新指数三星级中小企业",
+        "description": "TechApple 专题报道 Mezzofy 因数字优惠券贡献在 2024 年企业创新指数中获评三星级中小企业。"
+      },
+      "dualEsgAwards": {
+        "title": "2024 年 ESG 论坛双奖",
+        "description": "Mezzofy 在 2024 年 ESG 论坛上荣获杰出 ESG 企业奖和可持续发展企业证书。"
+      },
+      "fundingAnnouncement": {
+        "title": "200 万美元 Pre-A 轮融资",
+        "description": "Mezzofy 完成由 Isola Capital 领投的 200 万美元 Pre-A 轮融资,以支持全球扩展和 web3 产品开发。"
+      },
+      "holidayGuide": {
+        "title": "假日季优惠券指南",
+        "description": "通过快速优惠券解决方案掌握最后一刻的假日销售高峰。2022 年假日零售销售额达到 9,430-9,600 亿美元。"
+      },
+      "smartRetail": {
+        "title": "科技主导的智慧零售",
+        "description": "NFC 技术改变零售动态。研究显示 73% 的受访者进行自发性购买,平均每月冲动支出超过 314 美元。"
+      },
+      "cioworldFeature": {
+        "title": "为更环保的未来改造优惠券",
+        "description": "TheCIOWorld 专题报道 Mezzofy 创新的 NFC 点击获取优惠券和整合钱包功能,实现可持续数字营销。"
+      },
+      "ejtech300m": {
+        "title": "在亚太地区发送 3 亿张数字优惠券",
+        "description": "EJTech 重点报道 Mezzofy 云端平台在亚太地区发送超过 3 亿张数字优惠券,改变客户参与方式。"
+      },
+      "edigestLeading": {
+        "title": "亚太地区领先的数字优惠券解决方案",
+        "description": "eDigest 专访 Mezzofy 作为领先的数字优惠券平台,改变亚太地区的优惠券管理。"
+      },
+      "forbesDickyYin": {
+        "title": "Forbes 表彰 Dicky Yin 的领导力",
+        "description": "Forbes China 专题报道 Mezzofy 首席执行官 Dicky Yin 在创新方面的卓越领导力,改造数字优惠券领域。"
+      },
+      "hotelTechInnovation": {
+        "title": "为何技术创新是酒店成功的关键",
+        "description": "67% 的旅客期待个性化体验。酒店必须采用 NFC、聊天机器人和 AI 驱动的个性化以提高收入和忠诚度。"
+      }
+    }
   },
   "investors": {
     "hero": {
