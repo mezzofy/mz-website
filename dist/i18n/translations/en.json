@@ -83,9 +83,9 @@
   },
   "home": {
     "hero": {
-      "title": "THE GLOBAL EXCHANGE FOR DIGITAL PROMOTIONS",
+      "title": "THE GLOBAL EXCHANGE<br>FOR DIGITAL PROMOTIONS",
       "subtitle": "Moving from Selling Software to Powering the World's Digital Commerce Infrastructure",
-      "description": "Mezzofy is the secure, tokenized protocol that connects coupon <strong>Supply</strong> (Merchants) directly to <strong>Demand</strong> (Distributors), ensuring fraudless validation and maximized redemption across the globe.",
+      "description": "Mezzofy is the secure, tokenized protocol that connects coupon <strong>Supply</strong> (Merchants) directly to <strong>Demand</strong> (Distributors), ensuring fraudless validation and maximized redemption across the&nbsp;globe.",
       "ctaMerchants": "List Your Inventory: Start Selling",
       "ctaDistributors": "Access Deals: Find Partners"
     },
