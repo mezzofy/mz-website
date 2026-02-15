@@ -1,10 +1,10 @@
 # Project Status: mz-website
 
-**Last Updated:** 2026-02-16
+**Last Updated:** 2026-02-15
 **Current Phase:** Bug Fixes & Navigation Improvements (In Progress)
 **Overall Progress:** ~93% (Base features complete, i18n expansion complete, navigation fixes ongoing)
-**Branch:** eric-update
-**Latest Commit:** 5cd3a4a - Fix broken navigation on 8 news pages
+**Branch:** main
+**Latest Commit:** 86dc07f - Localize blog and news images to /assets/images/
 
 ---
 
@@ -33,7 +33,19 @@ All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to
 
 ## Recently Completed (Last 7 Days)
 
-**2026-02-16 (Latest - News Navigation Fix):**
+**2026-02-15 (Latest - Image Localization):**
+- ✅ Localized all blog and news images to /assets/images/ → `dist/assets/images/blog/`, `dist/assets/images/news/` (86dc07f)
+  - Impact: Eliminated external CDN dependency for all article images
+  - Impact: Faster page loads (same-origin requests, no external DNS lookup)
+  - Impact: Site works offline and in testing environments
+  - Downloaded 14 images: 6 blog (1.2 MB) + 8 news (1.9 MB) = ~3 MB total
+  - Updated 21 HTML files: 6 blog + 8 news + 7 news backup files
+  - Changed paths from https://mezzofy.com/wp-content/uploads/... to ../assets/images/blog|news/
+  - Removed orphaned forbes-dicky-yin.png from root assets folder
+  - Known Issue: forbes-dicky-yin.png returns 404 from server (placeholder copied, needs manual replacement - 146 bytes)
+  - Files: e-coupons-preference, environmental-excellence, holiday-guide, hotel-tech-innovation, nfc-parknshop, smart-retail, cioworld-feature, dual-esg-awards, edigest-leading-solution, ejtech-300m-coupons, forbes-dicky-yin, funding-announcement, techapple-innovation-index, treasure-global-partnership
+
+**2026-02-16 (News Navigation Fix):**
 - ✅ Fixed broken navigation on 8 news pages → `dist/news/*.html` (5cd3a4a)
   - Impact: Restored 4 missing dropdown menus (Products, Developer, Resources, Company)
   - Impact: Fixed mobile menu (added hamburger button + accordion dropdowns)
