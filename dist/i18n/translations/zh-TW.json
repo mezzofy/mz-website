@@ -1562,6 +1562,58 @@
           "heading": "聯絡我們",
           "info": "<a href=\"mailto:hello@mezzofy.com\" class=\"text-primary-orange hover:underline\">hello@mezzofy.com</a> | WhatsApp: <a href=\"https://wa.me/85294802246\" class=\"text-primary-orange hover:underline\">9480 2246</a>"
         }
+      },
+      "eCouponsPreference": {
+        "title": "60% 的消費者偏好電子優惠券：這對數位時代零售業的意義",
+        "headings": {
+          "rise": "電子優惠券的崛起",
+          "footTraffic": "推動客流量和銷售",
+          "nfc": "NFC 技術：簡化兌換流程",
+          "ai": "AI 驅動的個人化",
+          "location": "基於位置的行銷"
+        },
+        "paragraphs": {
+          "rise": "「60% 的消費者偏好電子優惠券」這一統計數據顯示了購物行為的變革性轉變。數位優惠券已成為企業的關鍵互動工具，特別是在透過 NFC 和 AI 技術增強時。這種偏好反映了消費者在日益數位化的零售環境中對便利性、速度和個人化購物體驗的渴望。",
+          "footTraffic": "研究表明「77% 的購物者更有可能光顧提供折扣的商店」，突顯了優惠券驅動的促銷如何推動客流量和線上銷售。這一令人信服的統計數據表明，消費者積極尋找具有吸引力促銷優惠的零售商，使數位優惠券成為獲取市場份額和增加商店訪問量的關鍵工具。",
+          "nfc": "NFC 技術允許消費者在結帳時輕觸手機即可立即兌換優惠券，消除摩擦並創造無縫的購物體驗。透過消除出示實體優惠券或手動輸入代碼的需要，支援 NFC 的數位優惠券顯著減少了交易時間並提高了銷售點的客戶滿意度。",
+          "ai": "AI 透過根據客戶行為模式提供個人化優惠來增強數位優惠券。機器學習演算法分析購買歷史、偏好和購物習慣，創建與個別消費者產生共鳴的目標優惠，顯著提高兌換率和客戶終身價值。",
+          "location": "支援 GPS 的數位優惠券代表另一種強大的零售策略，向靠近實體位置的客戶提供限時優惠。這種地理圍欄功能使零售商能夠在決策時刻吸引消費者，顯著增加兌換和衝動購買的可能性。"
+        },
+        "source": {
+          "name": "EJINSIGHT"
+        }
+      },
+      "environmentalExcellence": {
+        "title": "香港環保卓越獎 - 使用數位優惠券降低成本並拯救樹木",
+        "headings": {
+          "impact": "紙本優惠券的環境影響",
+          "waste": "浪費問題",
+          "business": "數位解決方案的商業優勢",
+          "demand": "消費者對可持續選擇的需求",
+          "implementation": "實施步驟"
+        },
+        "paragraphs": {
+          "impact": "全球每年分發超過 1,360 億張紙本優惠券，摧毀了約 500 萬棵樹。紙張生產是空氣、水和土壤的第三大工業污染源。傳統優惠券系統的環境成本遠遠超出簡單的物流——它代表了對我們星球自然資源和生態系統的重大負擔。",
+          "waste": "超過 90% 的紙本優惠券未被兌換並最終進入垃圾填埋場，在全球社區造成嚴重的浪費問題。這一驚人的浪費率不僅代表資源損失，還透過垃圾填埋場的甲烷排放和持續污染導致環境退化。",
+          "businessIntro": "數位優惠券解決方案在環境效益之外還提供了顯著的商業優勢：",
+          "demand": "數位優惠券的採用符合 ESG（環境、社會、治理）原則——73% 的全球消費者願意修改消費行為以減少環境損害。這種消費者偏好既代表了道德責任，也代表了對具有前瞻性思維的零售商的令人信服的商業機會。",
+          "implementationIntro": "希望轉向數位優惠券解決方案的組織應遵循以下關鍵步驟："
+        },
+        "benefits": {
+          "cost": "<span class=\"font-semibold text-primary-orange\">將行銷費用減少高達 70%</span>，相比傳統紙本優惠券活動",
+          "redemption": "<span class=\"font-semibold text-primary-orange\">數位優惠券達到 10% 的兌換率</span>，而紙本優惠券僅為 1%",
+          "personalization": "<span class=\"font-semibold text-primary-orange\">個人化優惠將兌換率提高 50%</span>，透過 AI 驅動的目標推薦",
+          "analytics": "<span class=\"font-semibold text-primary-orange\">即時分析</span>使商家能夠優化策略並最大化投資回報率"
+        },
+        "steps": {
+          "evaluate": "<span class=\"font-semibold text-primary-orange\">評估當前紙本優惠券成本</span>以了解潛在節省",
+          "select": "<span class=\"font-semibold text-primary-orange\">選擇適當的數位平台</span>以符合您的業務需求",
+          "communicate": "<span class=\"font-semibold text-primary-orange\">向利益相關者和客戶傳達環境效益</span>"
+        },
+        "contact": {
+          "heading": "聯絡我們",
+          "info": "<a href=\"mailto:hello@mezzofy.com\" class=\"text-primary-orange hover:underline\">hello@mezzofy.com</a> | WhatsApp: <a href=\"https://wa.me/85294802246\" class=\"text-primary-orange hover:underline\">9480 2246</a>"
+        }
       }
     }
   }

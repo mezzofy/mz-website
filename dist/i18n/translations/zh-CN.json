@@ -1562,6 +1562,58 @@
           "heading": "联络我们",
           "info": "<a href=\"mailto:hello@mezzofy.com\" class=\"text-primary-orange hover:underline\">hello@mezzofy.com</a> | WhatsApp: <a href=\"https://wa.me/85294802246\" class=\"text-primary-orange hover:underline\">9480 2246</a>"
         }
+      },
+      "eCouponsPreference": {
+        "title": "60% 的消费者偏好电子优惠券：这对数字时代零售业的意义",
+        "headings": {
+          "rise": "电子优惠券的崛起",
+          "footTraffic": "推动客流量和销售",
+          "nfc": "NFC 技术：简化兑换流程",
+          "ai": "AI 驱动的个性化",
+          "location": "基于位置的营销"
+        },
+        "paragraphs": {
+          "rise": "「60% 的消费者偏好电子优惠券」这一统计数据显示了购物行为的变革性转变。数字优惠券已成为企业的关键互动工具,特别是在通过 NFC 和 AI 技术增强时。这种偏好反映了消费者在日益数字化的零售环境中对便利性、速度和个性化购物体验的渴望。",
+          "footTraffic": "研究表明「77% 的购物者更有可能光顾提供折扣的商店」,突显了优惠券驱动的促销如何推动客流量和线上销售。这一令人信服的统计数据表明,消费者积极寻找具有吸引力促销优惠的零售商,使数字优惠券成为获取市场份额和增加商店访问量的关键工具。",
+          "nfc": "NFC 技术允许消费者在结账时轻触手机即可立即兑换优惠券,消除摩擦并创造无缝的购物体验。通过消除出示实体优惠券或手动输入代码的需要,支持 NFC 的数字优惠券显著减少了交易时间并提高了销售点的客户满意度。",
+          "ai": "AI 通过根据客户行为模式提供个性化优惠来增强数字优惠券。机器学习算法分析购买历史、偏好和购物习惯,创建与个别消费者产生共鸣的目标优惠,显著提高兑换率和客户终身价值。",
+          "location": "支持 GPS 的数字优惠券代表另一种强大的零售策略,向靠近实体位置的客户提供限时优惠。这种地理围栏功能使零售商能够在决策时刻吸引消费者,显著增加兑换和冲动购买的可能性。"
+        },
+        "source": {
+          "name": "EJINSIGHT"
+        }
+      },
+      "environmentalExcellence": {
+        "title": "香港环保卓越奖 - 使用数字优惠券降低成本并拯救树木",
+        "headings": {
+          "impact": "纸本优惠券的环境影响",
+          "waste": "浪费问题",
+          "business": "数字解决方案的商业优势",
+          "demand": "消费者对可持续选择的需求",
+          "implementation": "实施步骤"
+        },
+        "paragraphs": {
+          "impact": "全球每年分发超过 1,360 亿张纸本优惠券,摧毁了约 500 万棵树。纸张生产是空气、水和土壤的第三大工业污染源。传统优惠券系统的环境成本远远超出简单的物流——它代表了对我们星球自然资源和生态系统的重大负担。",
+          "waste": "超过 90% 的纸本优惠券未被兑换并最终进入垃圾填埋场,在全球社区造成严重的浪费问题。这一惊人的浪费率不仅代表资源损失,还通过垃圾填埋场的甲烷排放和持续污染导致环境退化。",
+          "businessIntro": "数字优惠券解决方案在环境效益之外还提供了显著的商业优势:",
+          "demand": "数字优惠券的采用符合 ESG（环境、社会、治理）原则——73% 的全球消费者愿意修改消费行为以减少环境损害。这种消费者偏好既代表了道德责任,也代表了对具有前瞻性思维的零售商的令人信服的商业机会。",
+          "implementationIntro": "希望转向数字优惠券解决方案的组织应遵循以下关键步骤:"
+        },
+        "benefits": {
+          "cost": "<span class=\"font-semibold text-primary-orange\">将营销费用减少高达 70%</span>,相比传统纸本优惠券活动",
+          "redemption": "<span class=\"font-semibold text-primary-orange\">数字优惠券达到 10% 的兑换率</span>,而纸本优惠券仅为 1%",
+          "personalization": "<span class=\"font-semibold text-primary-orange\">个性化优惠将兑换率提高 50%</span>,通过 AI 驱动的目标推荐",
+          "analytics": "<span class=\"font-semibold text-primary-orange\">实时分析</span>使商家能够优化策略并最大化投资回报率"
+        },
+        "steps": {
+          "evaluate": "<span class=\"font-semibold text-primary-orange\">评估当前纸本优惠券成本</span>以了解潜在节省",
+          "select": "<span class=\"font-semibold text-primary-orange\">选择适当的数字平台</span>以符合您的业务需求",
+          "communicate": "<span class=\"font-semibold text-primary-orange\">向利益相关者和客户传达环境效益</span>"
+        },
+        "contact": {
+          "heading": "联络我们",
+          "info": "<a href=\"mailto:hello@mezzofy.com\" class=\"text-primary-orange hover:underline\">hello@mezzofy.com</a> | WhatsApp: <a href=\"https://wa.me/85294802246\" class=\"text-primary-orange hover:underline\">9480 2246</a>"
+        }
       }
     }
   }

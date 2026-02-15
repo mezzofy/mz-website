@@ -1562,6 +1562,58 @@
           "heading": "Contact Us",
           "info": "<a href=\"mailto:hello@mezzofy.com\" class=\"text-primary-orange hover:underline\">hello@mezzofy.com</a> | WhatsApp: <a href=\"https://wa.me/85294802246\" class=\"text-primary-orange hover:underline\">9480 2246</a>"
         }
+      },
+      "eCouponsPreference": {
+        "title": "60% of Consumers Prefer E-Coupons: What This Means for Retail in the Digital Age",
+        "headings": {
+          "rise": "The Rise of E-Coupons",
+          "footTraffic": "Driving Foot Traffic and Sales",
+          "nfc": "NFC Technology: Streamlining Redemption",
+          "ai": "AI-Powered Personalization",
+          "location": "Location-Based Marketing"
+        },
+        "paragraphs": {
+          "rise": "The statistic that \"60% of consumers prefer e-coupons\" signals a transformative shift in shopping behaviors. Digital coupons have become critical engagement tools for businesses, particularly when enhanced with NFC and AI technologies. This preference reflects consumers' desire for convenience, speed, and personalized shopping experiences in an increasingly digital retail landscape.",
+          "footTraffic": "Research indicates that \"77% of shoppers are more likely to visit stores offering discounts,\" underscoring how coupon-driven promotions drive both foot traffic and online sales. This compelling statistic demonstrates that consumers actively seek out retailers with attractive promotional offers, making digital coupons a critical tool for capturing market share and increasing store visits.",
+          "nfc": "NFC technology allows consumers to tap their phones at checkout for instant coupon redemption, eliminating friction and creating seamless shopping experiences. By removing the need to present physical vouchers or manually enter codes, NFC-enabled digital coupons significantly reduce transaction time and improve customer satisfaction at the point of sale.",
+          "ai": "AI enhances digital coupons by delivering personalized deals based on customer behavior patterns. Machine learning algorithms analyze purchase history, preferences, and shopping habits to create targeted offers that resonate with individual consumers, dramatically improving redemption rates and customer lifetime value.",
+          "location": "GPS-enabled digital coupons represent another powerful retail strategy with time-sensitive offers delivered to customers near physical locations. This geofencing capability enables retailers to engage consumers at the moment of decision-making, dramatically increasing the likelihood of redemption and impulse purchases."
+        },
+        "source": {
+          "name": "EJINSIGHT"
+        }
+      },
+      "environmentalExcellence": {
+        "title": "HK Awards for Environmental Excellence - Cut Costs & Save Trees with Digital Coupons",
+        "headings": {
+          "impact": "The Environmental Impact of Paper Coupons",
+          "waste": "The Waste Problem",
+          "business": "Business Advantages of Digital Solutions",
+          "demand": "Consumer Demand for Sustainable Options",
+          "implementation": "Implementation Steps"
+        },
+        "paragraphs": {
+          "impact": "Over 136 billion paper coupons are distributed globally annually, destroying approximately 5 million trees. Paper production ranks as the third-largest industrial polluter of air, water, and soil. The environmental cost of traditional coupon systems extends far beyond simple logistics—it represents a significant burden on our planet's natural resources and ecosystems.",
+          "waste": "More than 90% of paper coupons go unredeemed and end up in landfills, creating massive waste problems in communities worldwide. This staggering waste rate not only represents lost resources but also contributes to environmental degradation through landfill methane emissions and persistent pollution.",
+          "businessIntro": "Digital coupon solutions offer significant business advantages alongside environmental benefits:",
+          "demand": "Digital coupon adoption aligns with ESG (Environmental, Social, Governance) principles—73% of global consumers would modify consumption to minimize environmental damage. This consumer preference represents both an ethical imperative and a compelling business opportunity for forward-thinking retailers.",
+          "implementationIntro": "Organizations looking to transition to digital coupon solutions should follow these key steps:"
+        },
+        "benefits": {
+          "cost": "<span class=\"font-semibold text-primary-orange\">Reduce marketing expenses by up to 70%</span> compared to traditional paper coupon campaigns",
+          "redemption": "<span class=\"font-semibold text-primary-orange\">Digital coupons achieve 10% redemption rates</span> compared to just 1% for paper coupons",
+          "personalization": "<span class=\"font-semibold text-primary-orange\">Personalized offers boost redemption by 50%</span> through targeted AI-driven recommendations",
+          "analytics": "<span class=\"font-semibold text-primary-orange\">Real-time analytics</span> enable merchants to refine strategies and optimize ROI"
+        },
+        "steps": {
+          "evaluate": "<span class=\"font-semibold text-primary-orange\">Evaluate current paper coupon costs</span> to understand potential savings",
+          "select": "<span class=\"font-semibold text-primary-orange\">Select appropriate digital platform</span> that matches your business needs",
+          "communicate": "<span class=\"font-semibold text-primary-orange\">Communicate environmental benefits</span> to stakeholders and customers"
+        },
+        "contact": {
+          "heading": "Contact Us",
+          "info": "<a href=\"mailto:hello@mezzofy.com\" class=\"text-primary-orange hover:underline\">hello@mezzofy.com</a> | WhatsApp: <a href=\"https://wa.me/85294802246\" class=\"text-primary-orange hover:underline\">9480 2246</a>"
+        }
       }
     }
   }
