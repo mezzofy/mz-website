@@ -1,10 +1,10 @@
 # Project Status: mz-website
 
 **Last Updated:** 2026-02-15
-**Current Phase:** i18n Implementation (Complete - All 3 phases done + path fix)
-**Overall Progress:** ~90% (Base features complete, i18n expansion complete)
+**Current Phase:** Homepage Layout Improvements (In Progress)
+**Overall Progress:** ~92% (Base features complete, i18n expansion complete, layout improvements ongoing)
 **Branch:** eric-update
-**Latest Commit:** 9306108 - Fix i18n translation path for subdirectory pages
+**Latest Commit:** 226bdcb - Improve hero desktop layout: standardize colors, responsive spacing, 1280px container
 
 ---
 
@@ -32,6 +32,18 @@ All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to
 ---
 
 ## Recently Completed (Last 7 Days)
+
+**2026-02-15 (Latest - Hero Layout Improvements):**
+- ✅ Improved homepage hero section desktop layout → `dist/index.html` (226bdcb)
+  - Impact: Better desktop screen utilization (+80px container width: 1200px → 1280px)
+  - Fixed deprecated color #FF6B35 → #ff7a3d (official brand)
+  - Added dark-orange (#e6682f) and light-orange (#ffb088) to Tailwind config
+  - Standardized container to max-w-7xl (Tailwind standard)
+  - Made spacing responsive: pt-24 pb-16 md:pt-32 md:pb-24 (better mobile UX)
+  - Expanded description width: max-w-3xl → max-w-4xl (better readability)
+  - Updated subtitle to brand color: text-light-orange
+  - Removed 43 lines of inline style overrides (code cleanup)
+  - All sections now use responsive containers from compiled CSS
 
 **2026-02-15 (Post-i18n fix):**
 - ✅ Fixed i18n path bug → `src/i18n/i18n.js`, `dist/i18n/i18n.js` (9306108)
@@ -73,11 +85,12 @@ All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to
 
 ## In Progress (Current Work)
 
-*No active work in progress - i18n expansion complete*
+*No active work in progress - hero layout improvements complete*
 
 **Next Focus Areas:**
 - Fix XSS vulnerability in dist/i18n/i18n.js (use textContent instead of innerHTML)
-- Fix color on 14 pages (bulk find/replace: #FF6B35 → #ff7a3d)
+- Fix color on remaining 13 pages (bulk find/replace: #FF6B35 → #ff7a3d)
+  - ✅ index.html already fixed (226bdcb)
 - Add SRI hashes to 14 pages with Tailwind CDN
 
 ---
@@ -86,7 +99,8 @@ All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to
 
 **High Priority:**
 - ⏳ Fix XSS vulnerability in dist/i18n/i18n.js line 110 (use textContent)
-- ⏳ Fix color on 14 pages (bulk find/replace: #FF6B35 → #ff7a3d)
+- ⏳ Fix color on remaining 13 pages (bulk find/replace: #FF6B35 → #ff7a3d)
+  - ✅ index.html fixed (226bdcb)
 - ⏳ Add SRI hashes to 14 pages with Tailwind CDN (security)
 - ⏳ Deploy CloudFront security headers function (7/7 headers)
 
