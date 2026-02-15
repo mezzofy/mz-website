@@ -1,40 +1,50 @@
 # Project Status: mz-website
 
 **Last Updated:** 2026-02-15
-**Current Phase:** Security Hardening & Documentation Enhancement (Complete)
-**Overall Progress:** ~85% (Base features complete, ongoing improvements)
+**Current Phase:** i18n Implementation (In Progress)
+**Overall Progress:** ~87% (Base features complete, i18n expansion in progress)
 **Branch:** eric-update
-**Latest Commit:** 202d645 - Add comprehensive security guidelines and page standards
+**Latest Commit:** a2d3cf2 - Add common blog/news translation keys for i18n
 
 ---
 
 ## Quick Summary
 
-Security guidelines and page standards implementation completed (Feb 15, 2026). Project is production-ready with comprehensive documentation, standardized templates, and 15 security gaps addressed. Current focus: Security fixes and color standardization.
+i18n expansion in progress (Feb 15, 2026). NFC User Guide migrated from custom i18n to standard system, now supports 3 languages (EN, zh-TW, zh-CN). Common blog/news translation keys added. Remaining: 14 blog/news articles need i18n implementation. Current focus: Expanding multilingual support to all content pages.
 
 ---
 
 ## Current Phase
 
-**Phase:** Post-Implementation - Security Fixes
+**Phase:** i18n Implementation
 **Start Date:** 2026-02-15
-**Target Completion:** 2026-02-22 (1 week)
-**Progress:** 0/4 tasks complete
+**Target Completion:** 2026-02-16 (1-2 days)
+**Progress:** 1/3 phases complete (33%)
 
 ### Objectives
-- [ ] Fix XSS vulnerability in i18n.js
-- [ ] Add SRI hashes to Tailwind CDN (14 pages)
-- [ ] Update HTML colors #FF6B35 → #ff7a3d (14 pages)
-- [ ] Deploy CloudFront security headers
+- [x] **Phase 1:** Migrate NFC User Guide to standard i18n (COMPLETE)
+- [ ] **Phase 2:** Add i18n to 6 blog articles (IN PROGRESS - common keys ready)
+- [ ] **Phase 3:** Add i18n to 8 news articles (PENDING)
 
 ### Status
-Major documentation phase complete. Now focusing on implementing security recommendations from SECURITY.md.
+NFC User Guide successfully migrated from custom i18n to standard system. Now supports 3 languages (EN, zh-TW, zh-CN) with localStorage persistence. Common translation keys for blog/news articles created. Next: Update 14 HTML files (6 blog + 8 news) with i18n infrastructure.
 
 ---
 
 ## Recently Completed (Last 7 Days)
 
-**2026-02-15:**
+**2026-02-15 (Late):**
+- ✅ NFC User Guide migrated to standard i18n system → `dist/nfc-user-guide.html` (966f1dd)
+  - Impact: Replaced custom language switcher with standard i18n.js integration
+  - Added zh-CN support (3rd language, previously only EN + zh-TW)
+  - Integrated with site-wide language persistence via localStorage
+  - Related: See `dist/i18n/translations/*.json` for nfcGuide translation keys
+- ✅ Common blog/news translation keys added → `dist/i18n/translations/*.json` (a2d3cf2)
+  - Impact: Created reusable keys for navigation, labels, UI elements across 14 articles
+  - Prepared foundation for Phase 2 (blog) and Phase 3 (news) i18n implementation
+  - Related: common.blog.* and common.news.* keys in all 3 language files
+
+**2026-02-15 (Earlier):**
 - ✅ Optimized CLAUDE.md file size → Reduced from 64KB to 44KB (31% reduction)
   - Impact: Extracted 826-line AWS deployment section to DEPLOYMENT.md
   - Lines: 1,927 → 1,136 (791 lines removed, 41% reduction)
@@ -53,7 +63,15 @@ Major documentation phase complete. Now focusing on implementing security recomm
 
 ## In Progress (Current Work)
 
-*No work currently in progress*
+**i18n Implementation (Phases 2 & 3):**
+- 🔄 Phase 2: Add i18n to 6 blog articles
+  - Status: Common translation keys ready
+  - Next: Update HTML files with i18n infrastructure
+  - Files: `dist/blog/*.html` (6 files)
+- 🔄 Phase 3: Add i18n to 8 news articles
+  - Status: Common translation keys ready
+  - Next: Update HTML files with i18n infrastructure
+  - Files: `dist/news/*.html` (8 files)
 
 ---
 
@@ -99,11 +117,11 @@ Major documentation phase complete. Now focusing on implementing security recomm
 
 | Metric | Value | Trend |
 |--------|------:|-------|
-| Total Files Modified | 15 | +15 (Feb 15) |
+| Total Files Modified | 19 | +4 (Feb 15 late) |
 | HTML Pages | 30 | Stable |
 | Pages Fully Compliant | 0/30 | 0% |
 | Pages with Correct Color | 16/30 | 53% |
-| Pages with i18n | 15/30 | 50% |
+| Pages with i18n | 16/30 | 53% ↑ |
 | Pages with SRI | 0/30 | 0% |
 | Test Coverage | N/A | Static site |
 | Security Issues | 2 | XSS + SRI (documented) |
@@ -130,7 +148,7 @@ Major documentation phase complete. Now focusing on implementing security recomm
 | **Core** (3) | index, about, contact | ❌ 0/3 | ✅ 3/3 | ❌ 0/3 | ✅ 3/3 | ⚠️ 50% |
 | **Solutions** (3) | merchants, distributors, developers | ❌ 0/3 | ✅ 3/3 | ❌ 0/3 | ✅ 3/3 | ⚠️ 50% |
 | **Products** (6) | All coupon pages | ❌ 0/6 | ✅ 6/6 | ❌ 0/6 | ✅ 6/6 | ⚠️ 50% |
-| **Corporate** (3) | investors, news-press, nfc-guide | ⚠️ 1/3 | ⚠️ 2/3 | ❌ 0/3 | ⚠️ 2/3 | ⚠️ 37% |
+| **Corporate** (3) | investors, news-press, nfc-guide | ⚠️ 1/3 | ✅ 3/3 | ❌ 0/3 | ⚠️ 2/3 | ⚠️ 50% ↑ |
 | **Blog** (6) | All blog articles | ✅ 6/6 | ❌ 0/6 | N/A | ⚠️ 6/6* | ⚠️ 50% |
 | **News** (8) | All press articles | ✅ 8/8 | ❌ 0/8 | N/A | ⚠️ 8/8* | ⚠️ 50% |
 | **Test** (1) | test-i18n | N/A | ✅ 1/1 | ❌ 0/1 | ❌ 0/1 | ⚠️ Dev |
@@ -201,9 +219,103 @@ Major documentation phase complete. Now focusing on implementing security recomm
 
 ---
 
+## i18n Implementation Plan (Phase 2 & 3)
+
+**Current Status:** Phase 1 complete, Phase 2 & 3 in progress
+
+### Phase 2: Blog Articles (6 files) - IN PROGRESS
+
+**Files to Update:**
+1. `dist/blog/e-coupons-preference.html`
+2. `dist/blog/environmental-excellence.html`
+3. `dist/blog/holiday-guide.html`
+4. `dist/blog/hotel-tech-innovation.html`
+5. `dist/blog/nfc-parknshop.html`
+6. `dist/blog/smart-retail.html`
+
+**For Each File:**
+1. Add `<script src="../i18n/i18n.js"></script>` after `<link rel="stylesheet" href="../output.css">`
+2. Add `class="i18n-loading"` to `<body>` tag
+3. Add language selector dropdown to desktop nav (after Company dropdown):
+   ```html
+   <!-- Language Selector -->
+   <div class="dropdown">
+     <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+       <svg class="w-5 h-5 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+       </svg>
+       <span id="current-lang-desktop">English</span>
+       <svg class="w-4 h-4 inline ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+       </svg>
+     </button>
+     <div class="dropdown-menu">
+       <a href="#" class="dropdown-item lang-option" data-lang="en">English</a>
+       <a href="#" class="dropdown-item lang-option" data-lang="zh-TW">繁體中文</a>
+       <a href="#" class="dropdown-item lang-option" data-lang="zh-CN">简体中文</a>
+     </div>
+   </div>
+   ```
+4. Add language selector to mobile menu (after Company dropdown in mobile section)
+5. Add `data-i18n` attributes to navigation labels:
+   - `data-i18n="common.nav.products"` → Products
+   - `data-i18n="common.nav.developer"` → Developer
+   - `data-i18n="common.nav.resources"` → Resources
+   - `data-i18n="common.nav.company"` → Company
+   - `data-i18n="common.buttons.getStarted"` → Get Started
+   - All dropdown items (use existing common.nav.* keys)
+6. Add `data-i18n` attributes to article elements:
+   - Back link: `data-i18n="common.blog.backToHub"`
+   - Category label: `data-i18n="common.blog.category"`
+   - Previous: `data-i18n="common.blog.previous"`
+   - Next: `data-i18n="common.blog.next"`
+   - Source label: `data-i18n="common.blog.source"`
+   - Back button: `data-i18n="common.blog.backToHub"`
+
+**Note:** Article titles and body content can remain as English for now (professional translation later).
+
+### Phase 3: News Articles (8 files) - PENDING
+
+**Files to Update:**
+1. `dist/news/cioworld-feature.html`
+2. `dist/news/dual-esg-awards.html`
+3. `dist/news/edigest-leading-solution.html`
+4. `dist/news/ejtech-300m-coupons.html`
+5. `dist/news/forbes-dicky-yin.html`
+6. `dist/news/funding-announcement.html`
+7. `dist/news/techapple-innovation-index.html`
+8. `dist/news/treasure-global-partnership.html`
+
+**Same steps as Phase 2**, but use `common.news.*` keys instead of `common.blog.*`:
+- Category label: `data-i18n="common.news.category"`
+- Back link: `data-i18n="common.news.backToHub"`
+- Previous/Next: `data-i18n="common.news.previous"` / `data-i18n="common.news.next"`
+
+### Verification Checklist (Per Page)
+
+After updating each page:
+- [ ] Page loads without errors
+- [ ] Language selector appears in desktop nav
+- [ ] Language selector appears in mobile menu
+- [ ] Language switching works (EN ↔ zh-TW ↔ zh-CN)
+- [ ] Language persists on page reload
+- [ ] Navigation labels translate correctly
+- [ ] Article labels (Back, Previous, Next, Source) translate correctly
+- [ ] No console errors or missing translation warnings
+
+### Estimated Effort
+
+- Phase 2 (6 blog): ~45-60 minutes (7-10 min per file)
+- Phase 3 (8 news): ~60-80 minutes (7-10 min per file)
+- **Total:** ~2 hours for both phases
+
+---
+
 ## Change Log (Recent Updates)
 
-**2026-02-15:** Project restructured with comprehensive security documentation. Added STATUS.md for progress tracking. Completed security guidelines implementation (P0, P1, P2 phases). 15 files changed, +2,912 insertions.
+**2026-02-15 (Late):** i18n implementation started. Phase 1 complete (NFC guide migrated to standard system, now supports 3 languages). Common blog/news translation keys added. 4 files changed, +564 insertions. Commits: 966f1dd, a2d3cf2.
+
+**2026-02-15 (Earlier):** Project restructured with comprehensive security documentation. Added STATUS.md for progress tracking. Completed security guidelines implementation (P0, P1, P2 phases). 15 files changed, +2,912 insertions.
 
 ---
 
