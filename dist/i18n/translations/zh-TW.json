@@ -65,6 +65,20 @@
     },
     "logo": {
       "alt": "Mezzofy 標誌"
+    },
+    "blog": {
+      "backToHub": "返回新聞與媒體",
+      "previous": "上一篇",
+      "next": "下一篇",
+      "source": "來源",
+      "category": "部落格"
+    },
+    "news": {
+      "backToHub": "返回新聞與媒體",
+      "previous": "上一篇",
+      "next": "下一篇",
+      "source": "來源",
+      "category": "新聞"
     }
   },
   "home": {

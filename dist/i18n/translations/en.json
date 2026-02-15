@@ -65,6 +65,20 @@
     },
     "logo": {
       "alt": "Mezzofy Logo"
+    },
+    "blog": {
+      "backToHub": "Back to News & Press",
+      "previous": "Previous",
+      "next": "Next",
+      "source": "Source",
+      "category": "Blog"
+    },
+    "news": {
+      "backToHub": "Back to News & Press",
+      "previous": "Previous",
+      "next": "Next",
+      "source": "Source",
+      "category": "News"
     }
   },
   "home": {
