@@ -38,11 +38,11 @@
                             </svg>
                         </button>
                         <div class="dropdown-menu">
-                            <a href="../coupon-management.html" class="dropdown-item">Coupon Management System</a>
-                            <a href="../coupon-marketplace.html" class="dropdown-item">Coupon Marketplace</a>
-                            <a href="../coupon-nfc.html" class="dropdown-item">Coupon NFC</a>
-                            <a href="../coupon-marketing.html" class="dropdown-item">Coupon Marketing</a>
-                            <a href="../coupon-wallet.html" class="dropdown-item">Coupon Wallet</a>
+                            <a href="../coupon-management.html" class="dropdown-item" data-i18n="common.nav.managementSystem">Coupon Management System</a>
+                            <a href="../coupon-marketplace.html" class="dropdown-item" data-i18n="common.nav.marketplace">Coupon Marketplace</a>
+                            <a href="../coupon-nfc.html" class="dropdown-item" data-i18n="common.nav.nfc">Coupon NFC</a>
+                            <a href="../coupon-marketing.html" class="dropdown-item" data-i18n="common.nav.marketing">Coupon Marketing</a>
+                            <a href="../coupon-wallet.html" class="dropdown-item" data-i18n="common.nav.wallet">Coupon Wallet</a>
                         </div>
                     </div>
 
@@ -54,8 +54,8 @@
                             </svg>
                         </button>
                         <div class="dropdown-menu">
-                            <a href="../index.html#" class="dropdown-item">API Documentation</a>
-                            <a href="../index.html#" class="dropdown-item">API Use Case</a>
+                            <a href="../index.html#" class="dropdown-item" data-i18n="common.nav.apiDoc">API Documentation</a>
+                            <a href="../index.html#" class="dropdown-item" data-i18n="common.nav.apiUseCase">API Use Case</a>
                         </div>
                     </div>
 
@@ -67,8 +67,8 @@
                             </svg>
                         </button>
                         <div class="dropdown-menu">
-                            <a href="../coupon-playbook.html" class="dropdown-item">Coupon Playbook</a>
-                            <a href="../index.html#" class="dropdown-item">Support</a>
+                            <a href="../coupon-playbook.html" class="dropdown-item" data-i18n="common.nav.playbook">Coupon Playbook</a>
+                            <a href="../index.html#" class="dropdown-item" data-i18n="common.nav.support">Support</a>
                         </div>
                     </div>
 
@@ -80,14 +80,34 @@
                             </svg>
                         </button>
                         <div class="dropdown-menu">
-                            <a href="../about.html" class="dropdown-item">About Us</a>
-                            <a href="../contact.html" class="dropdown-item">Contact Us</a>
-                            <a href="../news-press.html" class="dropdown-item">News & Press</a>
-                            <a href="../investors.html" class="dropdown-item">Investors</a>
+                            <a href="../about.html" class="dropdown-item" data-i18n="common.nav.aboutUs">About Us</a>
+                            <a href="../contact.html" class="dropdown-item" data-i18n="common.nav.contactUs">Contact Us</a>
+                            <a href="../news-press.html" class="dropdown-item" data-i18n="common.nav.newsPress">News >News & Press</a> Press</a>
+                            <a href="../investors.html" class="dropdown-item" data-i18n="common.nav.investors">Investors</a>
                         </div>
                     </div>
 
-                    <a href="#contact" class="btn-primary">Get Started</a>
+                    
+                    <!-- Language Selector -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <svg class="w-5 h-5 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+                            </svg>
+                            <span id="current-lang-desktop">English</span>
+                            <svg class="w-4 h-4 inline ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item lang-option" data-lang="en">English</a>
+                            <a href="#" class="dropdown-item lang-option" data-lang="zh-TW">繁體中文</a>
+                            <a href="#" class="dropdown-item lang-option" data-lang="zh-CN">简体中文</a>
+                        </div>
+                    </div>
+
+
+                    <a href="#contact" class="btn-primary" data-i18n="common.buttons.getStarted">Get Started</a>
                 </div>
 
                 <div class="md:hidden">
@@ -102,6 +122,26 @@
 
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
             <div class="px-4 pt-2 pb-4 space-y-2">
+                <!-- Language Selector Mobile -->
+                <div class="mobile-dropdown border-b border-gray-200 pb-2 mb-2">
+                    <button class="mobile-dropdown-trigger" data-dropdown="mobile-lang">
+                        <span class="flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+                            </svg>
+                            <span id="current-lang-mobile">English</span>
+                        </span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="mobile-lang">
+                        <a href="#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange lang-option" data-lang="en">English</a>
+                        <a href="#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange lang-option" data-lang="zh-TW">繁體中文</a>
+                        <a href="#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange lang-option" data-lang="zh-CN">简体中文</a>
+                    </div>
+                </div>
+
                 <div class="mobile-dropdown">
                     <button class="mobile-dropdown-trigger w-full text-left py-2 text-medium-grey font-medium">
                         Products
@@ -110,11 +150,11 @@
                         </svg>
                     </button>
                     <div class="mobile-dropdown-menu hidden pl-4 space-y-2 mt-2">
-                        <a href="../coupon-management.html" class="block py-2 text-dark-grey">Coupon Management System</a>
-                        <a href="../coupon-marketplace.html" class="block py-2 text-dark-grey">Coupon Marketplace</a>
-                        <a href="../coupon-nfc.html" class="block py-2 text-dark-grey">Coupon NFC</a>
-                        <a href="../coupon-marketing.html" class="block py-2 text-dark-grey">Coupon Marketing</a>
-                        <a href="../coupon-wallet.html" class="block py-2 text-dark-grey">Coupon Wallet</a>
+                        <a href="../coupon-management.html" class="block py-2 text-dark-grey" data-i18n="common.nav.managementSystem">Coupon Management System</a>
+                        <a href="../coupon-marketplace.html" class="block py-2 text-dark-grey" data-i18n="common.nav.marketplace">Coupon Marketplace</a>
+                        <a href="../coupon-nfc.html" class="block py-2 text-dark-grey" data-i18n="common.nav.nfc">Coupon NFC</a>
+                        <a href="../coupon-marketing.html" class="block py-2 text-dark-grey" data-i18n="common.nav.marketing">Coupon Marketing</a>
+                        <a href="../coupon-wallet.html" class="block py-2 text-dark-grey" data-i18n="common.nav.wallet">Coupon Wallet</a>
                     </div>
                 </div>
 
@@ -126,8 +166,8 @@
                         </svg>
                     </button>
                     <div class="mobile-dropdown-menu hidden pl-4 space-y-2 mt-2">
-                        <a href="../index.html#" class="block py-2 text-dark-grey">API Documentation</a>
-                        <a href="../index.html#" class="block py-2 text-dark-grey">API Use Case</a>
+                        <a href="../index.html#" class="block py-2 text-dark-grey" data-i18n="common.nav.apiDoc">API Documentation</a>
+                        <a href="../index.html#" class="block py-2 text-dark-grey" data-i18n="common.nav.apiUseCase">API Use Case</a>
                     </div>
                 </div>
 
@@ -139,8 +179,8 @@
                         </svg>
                     </button>
                     <div class="mobile-dropdown-menu hidden pl-4 space-y-2 mt-2">
-                        <a href="../coupon-playbook.html" class="block py-2 text-dark-grey">Coupon Playbook</a>
-                        <a href="../index.html#" class="block py-2 text-dark-grey">Support</a>
+                        <a href="../coupon-playbook.html" class="block py-2 text-dark-grey" data-i18n="common.nav.playbook">Coupon Playbook</a>
+                        <a href="../index.html#" class="block py-2 text-dark-grey" data-i18n="common.nav.support">Support</a>
                     </div>
                 </div>
 
@@ -152,14 +192,14 @@
                         </svg>
                     </button>
                     <div class="mobile-dropdown-menu hidden pl-4 space-y-2 mt-2">
-                        <a href="../about.html" class="block py-2 text-dark-grey">About Us</a>
-                        <a href="../contact.html" class="block py-2 text-dark-grey">Contact Us</a>
-                        <a href="../news-press.html" class="block py-2 text-dark-grey">News & Press</a>
-                        <a href="../investors.html" class="block py-2 text-dark-grey">Investors</a>
+                        <a href="../about.html" class="block py-2 text-dark-grey" data-i18n="common.nav.aboutUs">About Us</a>
+                        <a href="../contact.html" class="block py-2 text-dark-grey" data-i18n="common.nav.contactUs">Contact Us</a>
+                        <a href="../news-press.html" class="block py-2 text-dark-grey" data-i18n="common.nav.newsPress">News >News & Press</a> Press</a>
+                        <a href="../investors.html" class="block py-2 text-dark-grey" data-i18n="common.nav.investors">Investors</a>
                     </div>
                 </div>
 
-                <a href="#contact" class="block py-2 btn-primary text-center mt-4">Get Started</a>
+                <a href="#contact" class="block py-2 btn-primary text-center mt-4" data-i18n="common.buttons.getStarted">Get Started</a>
             </div>
         </div>
     </nav>
@@ -182,7 +222,7 @@
                     <span>•</span>
                     <span>Mezzofy</span>
                     <span>•</span>
-                    <span>Blog</span>
+                    <span data-i18n="common.blog.category">Blog</span>
                 </div>
             </div>
         </div>
@@ -254,7 +294,7 @@
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                         </svg>
-                        <span>Previous</span>
+                        <span data-i18n="common.blog.previous">Previous</span>
                     </a>
                     <span class="text-light-grey"><!-- No next article --></span>
                 </div>
@@ -306,11 +346,11 @@
                         </ul>
                     </div>
                     <div>
-                        <h3 class="font-bold text-lg mb-4">Company</h3>
+                        <h3 class="font-bold text-lg mb-4"><span data-i18n="common.nav.company">Company</span></h3>
                         <ul class="space-y-2 text-gray-200">
-                            <li><a href="../about.html" class="hover:text-white transition-colors">About Us</a></li>
-                            <li><a href="../news-press.html" class="hover:text-white transition-colors">News & Press</a></li>
-                            <li><a href="../investors.html" class="hover:text-white transition-colors">Investors</a></li>
+                            <li><a href="../about.html" class="hover:text-white transition-colors" data-i18n="common.nav.aboutUs">About Us</a></li>
+                            <li><a href="../news-press.html" class="hover:text-white transition-colors" data-i18n="common.nav.newsPress">News >News & Press</a> Press</a></li>
+                            <li><a href="../investors.html" class="hover:text-white transition-colors" data-i18n="common.nav.investors">Investors</a></li>
                             <li><a href="../index.html#" class="hover:text-white transition-colors">Careers</a></li>
                             <li><a href="../index.html#contact" class="hover:text-white transition-colors">Contact</a></li>
                         </ul>
