@@ -33,7 +33,23 @@ All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to
 
 ## Recently Completed (Last 7 Days)
 
-**2026-02-16 (Latest - Solutions Navigation Dropdown Added):**
+**2026-02-16 (Latest - CTA Section Translations Added):**
+- ✅ Added i18n translation attributes to CTA section on all blog and news pages → `dist/blog/*.html`, `dist/news/*.html`
+  - Impact: Call-to-action section above footer now translates correctly into Traditional and Simplified Chinese
+  - Added data-i18n="home.cta.title" to CTA heading on 14 pages
+  - Added data-i18n="home.cta.description" to CTA paragraph on 14 pages
+  - Added data-i18n="home.cta.contactSales" to "Contact Sales (Enterprise)" button on 14 pages
+  - Added data-i18n="home.cta.developerDocs" to "Developer Docs (API Access)" button on 14 pages
+  - Files modified: All 6 blog articles + all 8 news articles (14 total)
+  - Translation keys already existed in all 3 language files (en.json, zh-TW.json, zh-CN.json)
+  - No JSON modifications required - HTML-only changes
+  - Verified with automated tests: All 14 files have all 4 required data-i18n attributes
+  - Translations work correctly:
+    - EN: "Ready to power the future of commerce?" / "Contact Sales (Enterprise)" / "Developer Docs (API Access)"
+    - zh-TW: "準備好推動商務的未來了嗎？" / "聯絡業務（企業）" / "開發者文件（API 訪問）"
+    - zh-CN: "准备好推动商务的未来了吗？" / "联系业务（企业）" / "开发者文档（API 访问）"
+
+**2026-02-16 (Solutions Navigation Dropdown Added):**
 - ✅ Added missing Solutions dropdown to all blog and news pages → `dist/blog/*.html`, `dist/news/*.html` (6cec90c)
   - Impact: Blog and news readers can now navigate to audience-specific landing pages (For Merchants, For Distributors, For Developers)
   - Added desktop Solutions dropdown (appears first, before Products)
