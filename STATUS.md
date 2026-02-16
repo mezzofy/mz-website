@@ -1,10 +1,10 @@
 # Project Status: mz-website
 
-**Last Updated:** 2026-02-16
+**Last Updated:** 2026-02-17
 **Current Phase:** i18n Enhancements (In Progress)
-**Overall Progress:** ~94% (Base features complete, i18n expansion complete, hub page translations added)
+**Overall Progress:** ~94% (Base features complete, i18n expansion complete, critical i18n bug fixed)
 **Branch:** main
-**Latest Commit:** 6cec90c - Add missing Solutions dropdown to blog and news navigation
+**Latest Commit:** a731688 - Fix critical i18n bug: Return null for missing keys to preserve HTML fallback
 
 ---
 
@@ -32,6 +32,18 @@ All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to
 ---
 
 ## Recently Completed (Last 7 Days)
+
+**2026-02-17 (CRITICAL BUG FIX - i18n Key Display Issue):**
+- ✅ Fixed critical i18n bug where translation keys displayed instead of content → `dist/i18n/i18n.js` (a731688)
+  - Impact: Blog and news pages now show actual content instead of raw i18n key strings like "articles.blog.nfcParknshop.title"
+  - Root cause: getTranslation() returned key string when translation not found, which then replaced HTML fallback content
+  - Solution: Changed line 159 to return `null` instead of key string to preserve HTML fallback content
+  - Behavior now: Missing translation → HTML fallback shows | Translation exists → Translation shows
+  - Console warnings still logged for debugging missing keys
+  - Risk: Very low - improves system robustness
+  - Breaking changes: None - only improves fallback behavior
+  - All language switching functionality preserved
+  - Users no longer see technical key strings on any pages
 
 **2026-02-16 (Latest - Individual Article Page Translations Added):**
 - ✅ Added missing article.blog.* and articles.news.* translations for all individual article pages → `dist/i18n/translations/*.json`
