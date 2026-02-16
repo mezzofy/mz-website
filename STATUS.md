@@ -4,7 +4,7 @@
 **Current Phase:** i18n Enhancements (In Progress)
 **Overall Progress:** ~94% (Base features complete, i18n expansion complete, hub page translations added)
 **Branch:** main
-**Latest Commit:** f9e0f34 - Add Chinese translations to news-press.html article preview cards
+**Latest Commit:** c579689 - Fix missing translations in smart-retail.html article
 
 ---
 
@@ -33,7 +33,18 @@ All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to
 
 ## Recently Completed (Last 7 Days)
 
-**2026-02-16 (Latest - Article Translation Attributes Fixed):**
+**2026-02-16 (Latest - Smart Retail Article Translations Fixed):**
+- ✅ Fixed missing translation keys in smart-retail.html article → `dist/i18n/translations/*.json` (c579689)
+  - Impact: Article final section now displays proper content instead of translation key names
+  - Impact: Users can view the complete article in all 3 languages (EN, zh-TW, zh-CN)
+  - Added 4 missing translation keys to smartRetail article in all 3 language files
+  - Keys added: headings.transformative, paragraphs.transformative, contact.heading, contact.info
+  - Files updated: en.json, zh-TW.json (繁體中文), zh-CN.json (简体中文)
+  - Translations: "The Transformative Potential" (EN), "轉型潛力" (zh-TW), "转型潜力" (zh-CN)
+  - Contact section: Email and WhatsApp links now translate correctly
+  - Users no longer see technical key names like "articles.blog.smartRetail.contact.heading"
+
+**2026-02-16 (Article Translation Attributes Fixed):**
 - ✅ Fixed missing translation attributes in 5 blog articles → `dist/blog/*.html` (dc17cc6)
   - Impact: Desktop navigation dropdowns now translate to Chinese languages
   - Impact: Breadcrumb "Back to News & Press" links now translate properly
