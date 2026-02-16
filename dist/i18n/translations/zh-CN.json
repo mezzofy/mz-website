@@ -1728,6 +1728,10 @@
           "accenture": "Accenture Interactive(67% 的个性化期望)",
           "pwc": "PwC 消费者情报系列(75% 的数据分享意愿)",
           "epsilon": "Epsilon 研究(80% 的个性化偏好)"
+        },
+        "contact": {
+          "heading": "联系我们",
+          "info": "<a href=\"mailto:hello@mezzofy.com\" class=\"text-primary-orange hover:underline\">hello@mezzofy.com</a> | WhatsApp: <a href=\"https://wa.me/85294802246\" class=\"text-primary-orange hover:underline\">9480 2246</a>"
         }
       },
       "smartRetail": {

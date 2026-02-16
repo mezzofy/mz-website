@@ -1728,6 +1728,10 @@
           "accenture": "Accenture Interactive (67% personalization expectation)",
           "pwc": "PwC Consumer Intelligence Series (75% data sharing willingness)",
           "epsilon": "Epsilon research (80% personalization preference)"
+        },
+        "contact": {
+          "heading": "Contact Us",
+          "info": "<a href=\"mailto:hello@mezzofy.com\" class=\"text-primary-orange hover:underline\">hello@mezzofy.com</a> | WhatsApp: <a href=\"https://wa.me/85294802246\" class=\"text-primary-orange hover:underline\">9480 2246</a>"
         }
       },
       "smartRetail": {
