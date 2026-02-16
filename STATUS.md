@@ -33,6 +33,30 @@ All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to
 
 ## Recently Completed (Last 7 Days)
 
+**2026-02-17 (CLAUDE.md Enhancement - Comprehensive i18n Documentation):**
+- ✅ Enhanced CLAUDE.md i18n section with comprehensive workflows and troubleshooting → `CLAUDE.md` (lines 743-1136)
+  - Impact: Developers now have centralized reference for all i18n workflows, testing, and troubleshooting
+  - Expanded from ~72 lines to ~393 lines (5.4x increase)
+  - Added 7 major enhancements:
+    1. Progress Tracking Reference (22/30 pages = 73% coverage visibility)
+    2. Translation Workflows Section (4 workflows: single page, batch updates, fixing mismatches, testing)
+    3. Translation Glossary Requirements (consistency rules, 100+ standardized terms)
+    4. HTML Content in Translations (safe tags, XSS security considerations)
+    5. Common Issues & Troubleshooting (4 common issues with fixes)
+    6. Testing Checklist (8 essential tests before commit)
+    7. Documentation Reference Table (6 documentation files with navigation guide)
+  - Enhanced File Structure section with line counts for all documentation files
+  - Added Best Practices to Key Naming Convention section
+  - Replaced "Full Documentation" with comprehensive Documentation Reference table
+  - Included security warnings about innerHTML XSS risk (references SECURITY.md)
+  - Documents fallback behavior (commit a731688 changes)
+  - Cross-references: STATUS.md, SECURITY.md, README.md, TRANSLATION_CHECKLIST.md, TRANSLATION_GLOSSARY.md, QA-CHECKLIST.md, ARTICLE-TRANSLATIONS-IMPLEMENTATION.md
+  - Improved developer onboarding: One central place to learn entire i18n system
+  - Reduced confusion: Clear workflow steps for common tasks
+  - Faster troubleshooting: Common issues documented with specific fixes
+  - Better consistency: Glossary requirements standardized
+  - Security awareness: HTML/XSS considerations documented
+
 **2026-02-17 (CRITICAL BUG FIX - i18n Key Display Issue):**
 - ✅ Fixed critical i18n bug where translation keys displayed instead of content → `dist/i18n/i18n.js` (a731688)
   - Impact: Blog and news pages now show actual content instead of raw i18n key strings like "articles.blog.nfcParknshop.title"

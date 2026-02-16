@@ -749,17 +749,43 @@ The website includes a comprehensive translation system supporting multiple lang
 - Traditional Chinese (zh-TW)
 - Simplified Chinese (zh-CN)
 
+### i18n Implementation Progress
+
+**Current Status:** 22 of 30 pages (73%) have full i18n support
+
+**Pages with i18n (22):**
+- Corporate: nfc-user-guide.html
+- Blog: All 6 articles (nfc-parknshop, e-coupons-preference, environmental-excellence, holiday-guide, hotel-tech-innovation, smart-retail)
+- News: All 8 articles (cioworld-feature, dual-esg-awards, edigest-leading-solution, ejtech-300m-coupons, forbes-dicky-yin, funding-announcement, techapple-innovation-index, treasure-global-partnership)
+- Hub pages: news-press.html (with article previews)
+- Solutions: for-distributors.html (reference implementation)
+
+**Remaining Pages (8):**
+- Core: index.html, about.html, contact.html
+- Solutions: for-merchants.html, for-developers.html
+- Products: coupon-management.html, coupon-marketplace.html, coupon-nfc.html, coupon-marketing.html, coupon-wallet.html, coupon-playbook.html
+
+**Progress Tracking:** See STATUS.md for current i18n implementation status
+
+---
+
 ### File Structure
 ```
 dist/i18n/
-  ├── README.md              # Complete i18n documentation
-  ├── TRANSLATION_CHECKLIST.md  # Quick reference checklist
+  ├── README.md              # Complete i18n documentation (383 lines)
+  ├── TRANSLATION_CHECKLIST.md  # Quick reference checklist (222 lines)
+  ├── TRANSLATION_GLOSSARY.md   # Standardized terminology (136 lines)
+  ├── QA-CHECKLIST.md           # Comprehensive testing (292 lines)
   ├── i18n.js                # Core translation library
   └── translations/
-      ├── en.json            # English translations
-      ├── zh-TW.json         # Traditional Chinese
-      └── zh-CN.json         # Simplified Chinese
+      ├── en.json            # English translations (1,873 lines)
+      ├── zh-TW.json         # Traditional Chinese (1,738 lines)
+      └── zh-CN.json         # Simplified Chinese (1,738 lines)
 ```
+
+**Total:** 5,349 lines of translation data + 1,033 lines of documentation
+
+---
 
 ### Quick Start
 To add translations to a page:
@@ -797,6 +823,8 @@ To add translations to a page:
    <script src="js/main.js"></script>
    ```
 
+---
+
 ### Key Naming Convention
 Use dot-notation with descriptive names:
 - ✅ `distributors.hero.title`
@@ -804,13 +832,308 @@ Use dot-notation with descriptive names:
 - ✅ `common.nav.solutions`
 - ❌ `page1.heading1`
 
-### Reference Implementation
-See `for-distributors.html` for a complete working example.
+**Best Practices:**
+- Use semantic names that describe content, not position
+- Group related keys under common namespace (e.g., `contact.form.*`)
+- Use consistent naming patterns across pages
+- Review existing keys before creating new ones to avoid duplication
 
-### Full Documentation
-For comprehensive instructions, best practices, and troubleshooting:
-- **Complete guide**: `dist/i18n/README.md`
-- **Quick checklist**: `dist/i18n/TRANSLATION_CHECKLIST.md`
+---
+
+## Translation Workflows
+
+### Workflow 1: Adding i18n to a Single Page
+
+**Quick Steps:**
+1. Add `<script src="i18n/i18n.js"></script>` to `<head>`
+2. Add `class="i18n-loading"` to `<body>`
+3. Add language selector dropdowns (desktop + mobile)
+4. Add `data-i18n` attributes to all user-facing text
+5. Update all 3 JSON files (en.json, zh-TW.json, zh-CN.json)
+6. Test language switching and persistence
+
+**Detailed Guide:** See `dist/i18n/TRANSLATION_CHECKLIST.md` for step-by-step instructions
+
+**Example:** `for-distributors.html` demonstrates complete implementation
+
+---
+
+### Workflow 2: Batch i18n Updates (Multiple Pages)
+
+**Use Case:** Adding i18n to multiple pages at once (e.g., all 6 blog articles)
+
+**Process:**
+1. Extract translation keys from HTML files (can automate with scripts)
+2. Organize keys into namespace structure
+3. Merge keys into all 3 JSON files simultaneously
+4. Create backup files before merge (.backup extension)
+5. Validate JSON syntax in all files
+6. Test on sample pages before deploying all
+
+**Tools:** See `extract-article-translations.js` and `merge-translations.js` examples from commit 21a76eb
+
+**Detailed Guide:** See `ARTICLE-TRANSLATIONS-IMPLEMENTATION.md` for batch process documentation
+
+---
+
+### Workflow 3: Fixing Translation Key Mismatches
+
+**Problem:** Page shows "articles.blog.title" instead of translated content
+
+**Common Causes:**
+- Translation key doesn't exist in JSON files
+- Typo in `data-i18n` attribute name
+- Key exists but has different casing/spelling
+- JSON file failed to load (check browser console)
+
+**How to Fix:**
+1. Check browser console for "Translation key not found: X" warnings
+2. Verify key exists in all 3 JSON files (en.json, zh-TW.json, zh-CN.json)
+3. Verify key name matches exactly (case-sensitive)
+4. Validate JSON syntax (no trailing commas, missing brackets)
+5. Hard refresh browser (Ctrl+Shift+R) to clear cached JSON
+
+**Prevention:** Always update all 3 JSON files together, validate JSON syntax before committing
+
+---
+
+### Workflow 4: Testing & QA Procedures
+
+**Before Committing i18n Changes:**
+- [ ] Language switching works (EN → zh-TW → zh-CN → EN)
+- [ ] Selected language persists on page reload
+- [ ] No translation key strings visible (e.g., "articles.blog.title")
+- [ ] No console errors or warnings
+- [ ] HTML formatting preserved (bold, links, spans)
+- [ ] Numbers/currency format correct for each language
+- [ ] Proper nouns unchanged across languages
+- [ ] Fallback content displays if i18n.js fails to load
+
+**Detailed QA:** See `dist/i18n/QA-CHECKLIST.md` for comprehensive testing procedures
+
+---
+
+## Translation Glossary Requirements
+
+The project maintains a **standardized translation glossary** to ensure consistency across all 30 pages and 14 articles.
+
+### Why Use the Glossary?
+
+- **Consistency:** Same terms translated identically across all pages
+- **Quality:** Professional terminology maintained
+- **Efficiency:** No re-translating the same phrases
+- **User Experience:** Predictable language across the site
+
+### Consistency Rules
+
+**Before translating new content:**
+1. Review `dist/i18n/TRANSLATION_GLOSSARY.md` for existing terminology
+2. Check other translated pages for precedent
+3. Use established translations for common terms (e.g., "coupon" → "優惠券" in zh-TW)
+4. For new terms, add to glossary after translation
+
+**Content Guidelines:**
+- Maintain HTML formatting (spans, links, strong tags)
+- Keep proper nouns in English (company names, product names)
+- Keep numeric values unchanged
+- Preserve special characters and punctuation
+
+### Glossary Reference
+
+**File:** `dist/i18n/TRANSLATION_GLOSSARY.md`
+
+**Contains:** 100+ standardized term translations across EN/zh-TW/zh-CN including:
+- Product terminology (coupon, marketplace, wallet, NFC)
+- Business terms (merchant, distributor, campaign)
+- UI labels (submit, cancel, learn more)
+- Messaging (success, error, warning)
+
+---
+
+## HTML Content in Translations
+
+Translation strings can include **limited HTML** for formatting, but this requires security awareness.
+
+### Safe HTML Tags
+
+**Allowed in translations:**
+- `<span>` with class attributes (e.g., `<span class="text-primary-orange">`)
+- `<strong>` and `<b>` for bold text
+- `<em>` and `<i>` for italic text
+- `<a href="...">` for links (URLs should be validated)
+
+**Example:**
+```json
+{
+  "title": "We are <span class=\"text-primary-orange\">pioneers</span> in digital coupons",
+  "description": "Learn more about our <strong>innovative solutions</strong> for merchants"
+}
+```
+
+### Security Considerations ⚠️
+
+**CRITICAL:** `i18n.js` uses `.innerHTML` when content contains `<` character (line 110)
+
+**XSS Risk:** If translation content includes user-provided data, XSS vulnerabilities possible
+
+**Mitigation:**
+- Never include user input in translation strings
+- Only allow HTML in controlled, static translations
+- Use `.textContent` for dynamic content (see SECURITY.md)
+- Consider DOMPurify for HTML sanitization if implementing dynamic translations
+
+**Status:** Known security issue documented in STATUS.md (Priority: High)
+
+### Fallback Behavior
+
+**When translation key is missing:**
+- i18n.js returns `null` (as of commit a731688)
+- Original HTML fallback content displays
+- Console warning logged: "Translation key not found: X"
+- Users see actual content instead of technical key strings
+
+**Best Practice:** Always include fallback content in HTML elements:
+```html
+<h1 data-i18n="page.title">Default English Title (displays if key missing)</h1>
+```
+
+---
+
+## Common Issues & Troubleshooting
+
+### Issue 1: Page Shows Translation Keys Instead of Content
+
+**Symptom:** Elements display "articles.blog.nfcParknshop.title" instead of translated text
+
+**Root Causes:**
+- Translation key doesn't exist in JSON files (most common)
+- JSON file failed to load (check browser console Network tab)
+- Key name mismatch (typo in `data-i18n` attribute)
+
+**Fix:**
+1. Open browser console and look for warnings: `Translation key not found: X`
+2. Verify key exists in all 3 JSON files (en.json, zh-TW.json, zh-CN.json)
+3. Verify exact key name match (case-sensitive, check for typos)
+4. Validate JSON syntax with linter or jsonlint.com
+5. Hard refresh (Ctrl+Shift+R) to clear cached JSON files
+
+**Recent Fix:** Commit a731688 changed fallback behavior - now shows HTML content instead of key string
+
+---
+
+### Issue 2: Language Selection Doesn't Persist
+
+**Symptom:** Language resets to English on page reload or navigation
+
+**Root Causes:**
+- localStorage disabled in browser
+- i18n.js not fully loaded before main.js executes
+- Browser in private/incognito mode (localStorage limited)
+
+**Fix:**
+1. Verify localStorage enabled: Open console and run `localStorage.setItem('test', '1')`
+2. Check i18n.js loads before main.js in HTML (`<script>` order matters)
+3. Verify `data-lang` attribute on language selector links
+4. Check console for errors during page load
+
+**Prevention:** Always include i18n.js in `<head>` and main.js before `</body>`
+
+---
+
+### Issue 3: Some Elements Don't Translate
+
+**Symptom:** Some text remains in default language when switching
+
+**Root Causes:**
+- Missing `data-i18n` attribute on element
+- Translation key exists but is empty string in JSON
+- Element added to DOM after i18n.init() executed (dynamic content)
+
+**Fix:**
+1. Inspect element in browser DevTools and verify `data-i18n` attribute present
+2. Check JSON file for empty values: `"key": ""`
+3. For dynamic content, manually call i18n after adding to DOM
+
+---
+
+### Issue 4: How to Find All Missing Translation Keys?
+
+**Methods:**
+1. **Browser Console:** Warnings logged automatically: "Translation key not found: X"
+2. **Automated Testing:** Use test page (see test-i18n.html example)
+3. **JSON Comparison:** Compare keys across en.json, zh-TW.json, zh-CN.json
+4. **Grep Search:** Search HTML files for `data-i18n` attributes and cross-reference with JSON
+
+**Detailed Troubleshooting:** See `dist/i18n/README.md` § Troubleshooting section
+
+---
+
+## Testing Checklist
+
+### Essential i18n Tests (Before Commit)
+
+Run these tests on every page with i18n changes:
+
+- [ ] **Language Switching:** Toggle EN → zh-TW → zh-CN → EN works correctly
+- [ ] **Persistence:** Selected language persists on page reload
+- [ ] **Content Display:** No translation key strings visible (e.g., "articles.blog.title")
+- [ ] **Console Clean:** No errors or warnings in browser console
+- [ ] **HTML Formatting:** Bold, links, spans render correctly in all languages
+- [ ] **Fallback Content:** Original HTML displays if i18n.js fails to load
+- [ ] **Numbers/Currency:** Numeric values unchanged across languages
+- [ ] **Proper Nouns:** Company/product names unchanged
+
+### Comprehensive QA Checklist
+
+For detailed testing procedures including:
+- Visual regression testing
+- Accessibility validation (WCAG)
+- Browser compatibility (Chrome, Firefox, Safari, Edge)
+- Mobile/tablet responsive testing
+- Performance impact measurement
+
+**See:** `dist/i18n/QA-CHECKLIST.md` for comprehensive testing procedures (292 lines)
+
+---
+
+### Reference Implementation
+See `for-distributors.html` for a complete working example with all i18n features implemented.
+
+---
+
+## i18n Documentation Reference
+
+The i18n system has **comprehensive documentation** across multiple files. Use this table to find the right documentation for your task:
+
+| Documentation File | Lines | Use When | Contents |
+|-------------------|:-----:|----------|----------|
+| **README.md** | 383 | Implementing i18n for first time | Complete setup guide, best practices, architecture, troubleshooting |
+| **TRANSLATION_CHECKLIST.md** | 222 | Adding i18n to a page | Quick step-by-step checklist, validation steps |
+| **TRANSLATION_GLOSSARY.md** | 136 | Translating content | Standardized terminology, consistency rules, proper nouns |
+| **QA-CHECKLIST.md** | 292 | Testing i18n implementation | Comprehensive QA procedures, visual regression, accessibility |
+| **for-distributors.html** | — | Reference implementation | Complete working example with all i18n features |
+| **CLAUDE.md (this file)** | — | Quick reference & workflows | High-level guide with links to detailed docs |
+
+**File Locations:** All documentation in `dist/i18n/` directory
+
+### Quick Navigation
+
+- **New to i18n?** Start with README.md for architecture overview
+- **Adding i18n to page?** Use TRANSLATION_CHECKLIST.md for quick steps
+- **Translating content?** Review TRANSLATION_GLOSSARY.md for terminology
+- **Ready to test?** Follow QA-CHECKLIST.md for comprehensive validation
+- **Need example?** View for-distributors.html source code
+- **Fixing issues?** Check "Common Issues & Troubleshooting" section above
+
+### Translation Files
+
+| File | Lines | Language | Status |
+|------|------:|----------|--------|
+| `en.json` | 1,873 | English (default) | ✅ Master file |
+| `zh-TW.json` | 1,738 | Traditional Chinese | ✅ Complete |
+| `zh-CN.json` | 1,738 | Simplified Chinese | ✅ Complete |
+
+**Total:** 5,349 lines of translation data across 22 pages (73% coverage)
 
 ## Development Workflow
 
