@@ -4,7 +4,7 @@
 **Current Phase:** i18n Enhancements (In Progress)
 **Overall Progress:** ~94% (Base features complete, i18n expansion complete, hub page translations added)
 **Branch:** main
-**Latest Commit:** 29ab5e2 - Fix missing title translation in smart-retail.html
+**Latest Commit:** 8dc1520 - Fix translation key mismatch in smart-retail.html paragraph
 
 ---
 
@@ -33,7 +33,19 @@ All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to
 
 ## Recently Completed (Last 7 Days)
 
-**2026-02-16 (Latest - Smart Retail Title Translation Fixed):**
+**2026-02-16 (Latest - Smart Retail Paragraph Translation Key Fixed):**
+- ✅ Fixed translation key mismatch in smart-retail.html paragraph → `dist/blog/smart-retail.html` (8dc1520)
+  - Impact: Paragraph now translates correctly when users switch to Chinese languages
+  - Changed data-i18n key from "strategies" to "strategiesIntro" to match JSON translation files
+  - Translation content already existed but couldn't be accessed due to incorrect key name
+  - Fixed line 254: Updated data-i18n attribute
+  - Users can now see the paragraph in their selected language:
+    - EN: "Successful implementation of NFC coupon strategies requires careful attention to multiple key factors:"
+    - zh-TW: "成功實施 NFC 優惠券策略需要仔細關注多個關鍵因素："
+    - zh-CN: "成功实施 NFC 优惠券策略需要仔细关注多个关键因素:"
+  - Consistent with other paragraphs in the same article which had working translations
+
+**2026-02-16 (Smart Retail Title Translation Fixed):**
 - ✅ Fixed missing title translation in smart-retail.html → `dist/blog/smart-retail.html` (29ab5e2)
   - Impact: Article title now translates to Chinese languages when user switches language
   - Added data-i18n="articles.blog.smartRetail.title" attribute to h1 element at line 217
