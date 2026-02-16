@@ -1736,7 +1736,8 @@
           "landscape": "不斷演變的零售格局",
           "nfc": "NFC 技術實現無縫體驗",
           "impulse": "衝動購買機會",
-          "strategies": "NFC 優惠券成功的智能策略"
+          "strategies": "NFC 優惠券成功的智能策略",
+          "transformative": "轉型潛力"
         },
         "subheadings": {
           "location": "策略位置",
@@ -1754,7 +1755,12 @@
           "value": "強調優惠的節省和好處有助於推動兌換。關於折扣金額和價值主張的清晰溝通鼓勵客戶採取行動。",
           "merchandising": "按類別、季節或活動進行邏輯分組可創建連貫的購物體驗。策略性產品放置與目標優惠券一起可改善交叉銷售和購物籃大小。",
           "relevance": "基於當地活動、天氣和客戶行為模式的精確定位可確保優惠在正確的時間與正確的受眾產生共鳴。",
-          "senses": "結合引人注目的視覺效果、清晰的訊息傳遞和策略性產品放置，以鼓勵客戶與支援 NFC 的優惠券標籤互動。"
+          "senses": "結合引人注目的視覺效果、清晰的訊息傳遞和策略性產品放置，以鼓勵客戶與支援 NFC 的優惠券標籤互動。",
+          "transformative": "將 NFC 技術整合到數位優惠券策略中，為零售業帶來了轉型潛力。通過結合策略性定位和無縫的點擊兌換體驗，企業可以實現前所未有的衝動購買率，同時為消費者提供真正的價值。"
+        },
+        "contact": {
+          "heading": "聯絡我們",
+          "info": "<a href=\"mailto:hello@mezzofy.com\" class=\"text-primary-orange hover:underline\">hello@mezzofy.com</a> | WhatsApp: <a href=\"https://wa.me/85294802246\" class=\"text-primary-orange hover:underline\">9480 2246</a>"
         }
       }
     },

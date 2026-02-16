@@ -1736,7 +1736,8 @@
           "landscape": "The Evolving Retail Landscape",
           "nfc": "NFC Technology for Seamless Experiences",
           "impulse": "The Impulse Purchase Opportunity",
-          "strategies": "Smart Strategies for NFC Coupon Success"
+          "strategies": "Smart Strategies for NFC Coupon Success",
+          "transformative": "The Transformative Potential"
         },
         "subheadings": {
           "location": "Strategic Location",
@@ -1754,7 +1755,12 @@
           "value": "Emphasizing the savings and benefits of offers helps drive redemption. Clear communication about discount amounts and value propositions encourages customer action.",
           "merchandising": "Logical grouping by category, season, or event creates coherent shopping experiences. Strategic product placement alongside targeted coupons improves cross-selling and basket size.",
           "relevance": "Precision targeting based on local events, weather, and customer behavior patterns ensures offers resonate with the right audience at the right time.",
-          "senses": "Incorporate attention-grabbing visuals, clear messaging, and strategic product placement to encourage customer interaction with NFC-enabled coupon tags."
+          "senses": "Incorporate attention-grabbing visuals, clear messaging, and strategic product placement to encourage customer interaction with NFC-enabled coupon tags.",
+          "transformative": "Integrating NFC technology into digital coupon strategies represents transformative potential for retail. By combining strategic positioning with seamless tap-and-redeem experiences, businesses can achieve unprecedented impulse purchase rates while delivering genuine value to consumers."
+        },
+        "contact": {
+          "heading": "Contact Us",
+          "info": "<a href=\"mailto:hello@mezzofy.com\" class=\"text-primary-orange hover:underline\">hello@mezzofy.com</a> | WhatsApp: <a href=\"https://wa.me/85294802246\" class=\"text-primary-orange hover:underline\">9480 2246</a>"
         }
       }
     },
