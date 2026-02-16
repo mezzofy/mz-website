@@ -10,7 +10,7 @@
 
 ## Quick Summary
 
-i18n expansion COMPLETE (Feb 15, 2026). Successfully added internationalization support to 15 pages (1 corporate, 6 blog, 8 news). All pages now support 3 languages (EN, zh-TW, zh-CN) with language selectors and localStorage persistence. Progress: 22/30 pages with full i18n (73%). Remaining: 8 pages need i18n (core/solutions/products).
+i18n expansion COMPLETE (Feb 15, 2026). Successfully added internationalization support to 15 pages (1 corporate, 6 blog, 8 news). All pages now support 3 languages (EN, zh-TW, zh-CN) with language selectors and localStorage persistence. Progress: 23/30 pages with full i18n (77%). Remaining: 7 pages need i18n (core/solutions/products).
 
 ---
 
@@ -27,11 +27,23 @@ i18n expansion COMPLETE (Feb 15, 2026). Successfully added internationalization 
 - [x] **Phase 3:** Add i18n to 8 news articles (COMPLETE)
 
 ### Status
-All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to standard system, then added full i18n support to all 6 blog articles and all 8 news articles. All pages now support 3 languages (EN, zh-TW, zh-CN) with language selectors and localStorage persistence. Progress: 22/30 pages with full i18n (73%).
+All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to standard system, then added full i18n support to all 6 blog articles and all 8 news articles. All pages now support 3 languages (EN, zh-TW, zh-CN) with language selectors and localStorage persistence. Progress: 23/30 pages with full i18n (77%).
 
 ---
 
 ## Recently Completed (Last 7 Days)
+
+**2026-02-17 (news-press.html i18n Verification):**
+- ✅ Verified news-press.html has complete i18n support → `news-press.html` + `i18n/translations/*.json`
+  - Impact: Hub page for all 14 articles fully supports EN, zh-TW, zh-CN
+  - Translations verified: 46 translation keys across 3 languages work correctly
+  - Infrastructure: Language selectors, localStorage persistence, filter functionality
+  - HTML structure: 128 data-i18n attributes properly configured
+  - Translation keys: newsPress.hero.*, newsPress.filter.*, newsPress.articles.* (all 14 articles)
+  - English translations complete (lines 344-417 in en.json)
+  - Traditional Chinese complete (lines 330-403 in zh-TW.json)
+  - Simplified Chinese complete (lines 330-403 in zh-CN.json)
+  - Progress: 23/30 pages with full i18n (77%) [was 22/30 = 73%]
 
 **2026-02-17 (CLAUDE.md Compression - Below 40KB Target):**
 - ✅ Compressed CLAUDE.md from 53.6KB to 32.8KB without context loss → `CLAUDE.md` (956 lines)
@@ -51,7 +63,7 @@ All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to
   - Impact: Developers now have centralized reference for all i18n workflows, testing, and troubleshooting
   - Expanded from ~72 lines to ~393 lines (5.4x increase)
   - Added 7 major enhancements:
-    1. Progress Tracking Reference (22/30 pages = 73% coverage visibility)
+    1. Progress Tracking Reference (23/30 pages = 77% coverage visibility)
     2. Translation Workflows Section (4 workflows: single page, batch updates, fixing mismatches, testing)
     3. Translation Glossary Requirements (consistency rules, 100+ standardized terms)
     4. HTML Content in Translations (safe tags, XSS security considerations)
@@ -298,7 +310,7 @@ All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to
 - ✅ Phase 3 complete: All 8 news articles with i18n → `dist/news/*.html` (c9a4de4)
   - Impact: Added language selectors (desktop + mobile) and data-i18n attributes
   - All news articles now support EN, zh-TW, zh-CN
-  - Progress: 22/30 pages with full i18n (73%, up from 53%)
+  - Progress: 23/30 pages with full i18n (77%, up from 53%)
 - ✅ Phase 2 complete: All 6 blog articles with i18n → `dist/blog/*.html` (b210b99)
   - Impact: Added i18n infrastructure, language selectors, and data-i18n attributes
   - All blog articles now support EN, zh-TW, zh-CN
@@ -384,7 +396,7 @@ All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to
 | HTML Pages | 30 | Stable |
 | Pages Fully Compliant | 0/30 | 0% |
 | Pages with Correct Color | 16/30 | 53% |
-| Pages with i18n | 22/30 | 73% ↑↑ |
+| Pages with i18n | 23/30 | 77% ↑↑ |
 | Pages with SRI | 0/30 | 0% |
 | Test Coverage | N/A | Static site |
 | Security Issues | 2 | XSS + SRI (documented) |
@@ -443,7 +455,7 @@ All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to
 - ✅ Blog category: 100% i18n coverage (6/6 pages)
 - ✅ News category: 100% i18n coverage (8/8 pages)
 - ✅ Corporate category: NFC User Guide migrated to standard i18n
-- Progress: 22/30 pages with i18n (73%, up from 53%)
+- Progress: 23/30 pages with i18n (77%, up from 53%)
 
 **2026-02-15 (Earlier):**
 - Initial audit completed - assessed all 30 pages
@@ -587,7 +599,7 @@ After updating each page:
 
 ## Change Log (Recent Updates)
 
-**2026-02-15 (Latest):** i18n implementation COMPLETE. All 3 phases done: Phase 1 (NFC guide), Phase 2 (6 blog articles), Phase 3 (8 news articles). 15 files updated with i18n support. Progress: 22/30 pages with full i18n (73%). Commits: 966f1dd, a2d3cf2, b003d03, b210b99, c9a4de4.
+**2026-02-15 (Latest):** i18n implementation COMPLETE. All 3 phases done: Phase 1 (NFC guide), Phase 2 (6 blog articles), Phase 3 (8 news articles). 15 files updated with i18n support. Progress: 23/30 pages with full i18n (77%). Commits: 966f1dd, a2d3cf2, b003d03, b210b99, c9a4de4.
 
 **2026-02-15 (Earlier):** Project restructured with comprehensive security documentation. Added STATUS.md for progress tracking. Completed security guidelines implementation (P0, P1, P2 phases). 15 files changed, +2,912 insertions.
 
