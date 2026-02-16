@@ -4,7 +4,7 @@
 **Current Phase:** i18n Enhancements (In Progress)
 **Overall Progress:** ~94% (Base features complete, i18n expansion complete, hub page translations added)
 **Branch:** main
-**Latest Commit:** 85366d4 - Add contact section translations for hotel-tech-innovation article
+**Latest Commit:** 6cec90c - Add missing Solutions dropdown to blog and news navigation
 
 ---
 
@@ -33,7 +33,21 @@ All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to
 
 ## Recently Completed (Last 7 Days)
 
-**2026-02-16 (Latest - Hotel Tech Innovation Translation Attributes Fixed):**
+**2026-02-16 (Latest - Solutions Navigation Dropdown Added):**
+- ✅ Added missing Solutions dropdown to all blog and news pages → `dist/blog/*.html`, `dist/news/*.html` (6cec90c)
+  - Impact: Blog and news readers can now navigate to audience-specific landing pages (For Merchants, For Distributors, For Developers)
+  - Added desktop Solutions dropdown (appears first, before Products)
+  - Added mobile Solutions dropdown (appears after Language selector, before Products)
+  - Files modified: All 6 blog articles + all 8 news articles (14 total)
+  - Used correct relative paths (../) for subdirectory navigation
+  - Included proper i18n translation attributes (common.nav.solutions, common.nav.merchantSolution, etc.)
+  - Navigation structure now matches main pages (for-distributors.html, index.html)
+  - Desktop: CSS-only hover dropdowns with .dropdown and .dropdown-trigger classes
+  - Mobile: JavaScript accordion with data-dropdown="solutions" and data-menu="solutions"
+  - Verified with automated tests: 14 files with desktop nav, 14 files with mobile nav, 140 correct relative paths
+  - Build successful: npm run build completed, CSS recompiled
+
+**2026-02-16 (Hotel Tech Innovation Translation Attributes Fixed):**
 - ✅ Fixed missing translation attributes in hotel-tech-innovation.html → `dist/blog/hotel-tech-innovation.html` (fbdd7cf)
   - Impact: Article title and Contact Us section now translate when users switch to Chinese languages
   - Added data-i18n="articles.blog.hotelTechInnovation.title" to h1 element at line 217
