@@ -65,20 +65,6 @@
     },
     "logo": {
       "alt": "Mezzofy 标志"
-    },
-    "blog": {
-      "backToHub": "Back to News & Press",
-      "previous": "Previous",
-      "next": "Next",
-      "source": "Source",
-      "category": "Blog"
-    },
-    "news": {
-      "backToHub": "Back to News & Press",
-      "previous": "Previous",
-      "next": "Next",
-      "source": "Source",
-      "category": "News"
     }
   },
   "home": {
@@ -359,59 +345,59 @@
     "articles": {
       "nfcParknshop": {
         "title": "Mezzofy 助品牌设置优惠券到240 间百佳 NFC 标签",
-        "description": "通过 NFC 技术简化快速消费品品牌与百佳合作的促销流程,消除协调复杂性。"
+        "description": "通过 NFC 技术简化与百佳合作的快消品牌促销流程，消除协调复杂性。"
       },
       "treasureGlobal": {
-        "title": "Mezzofy 与 Treasure Global 合作",
-        "description": "与 Treasure Global Inc. 达成战略合作伙伴关系,加速马来西亚数字优惠券扩展,预计第一年经常性年收入达 200-400 万美元。"
+        "title": "Mezzofy 与 Treasure Global 建立合作伙伴关系",
+        "description": "与 Treasure Global Inc. 策略合作，加速马来西亚数字优惠券扩展，预计年度经常性收入达 200-400 万美元。"
       },
       "eCouponsPreference": {
-        "title": "60% 消费者偏好电子优惠券",
-        "description": "60% 的消费者偏好电子优惠券,标志着购物行为的重大转变。配备 NFC 和 AI 的数字优惠券正在改变零售业。"
+        "title": "60% 的消费者偏好电子优惠券",
+        "description": "60% 的消费者偏好电子优惠券，显示购物行为的重大转变。配备 NFC 和 AI 的数字优惠券正在改变零售业。"
       },
       "environmentalExcellence": {
-        "title": "香港环境卓越奖",
-        "description": "使用数字优惠券降低成本并拯救树木。每年超过 1,360 亿张纸质优惠券摧毁 500 万棵树。采用数字化可减少 70% 的费用。"
+        "title": "香港环保卓越奖",
+        "description": "使用数字优惠券降低成本并保护树木。每年超过 1,360 亿张纸质优惠券摧毁 500 万棵树。数字化可减少 70% 的开支。"
       },
       "techappleInnovation": {
-        "title": "Mezzofy 被评为 2024 年企业创新指数三星级中小企业",
-        "description": "TechApple 专题报道 Mezzofy 因数字优惠券贡献在 2024 年企业创新指数中获评三星级中小企业。"
+        "title": "Mezzofy 荣获 2024 年企业创新指数三星中小企业",
+        "description": "TechApple 报道 Mezzofy 在 2024 年企业创新指数中荣获三星中小企业，表彰其在数字优惠券领域的贡献。"
       },
       "dualEsgAwards": {
-        "title": "2024 年 ESG 论坛双奖",
-        "description": "Mezzofy 在 2024 年 ESG 论坛上荣获杰出 ESG 企业奖和可持续发展企业证书。"
+        "title": "在 2024 ESG 论坛获得双奖",
+        "description": "Mezzofy 在 2024 ESG 论坛荣获杰出 ESG 企业奖及可持续发展企业证书。"
       },
       "fundingAnnouncement": {
-        "title": "200 万美元 Pre-A 轮融资",
-        "description": "Mezzofy 完成由 Isola Capital 领投的 200 万美元 Pre-A 轮融资,以支持全球扩展和 web3 产品开发。"
+        "title": "200 万美元 A 轮前融资",
+        "description": "Mezzofy 由 Isola Capital 领投完成 200 万美元 A 轮前融资，以支持全球扩展和 web3 产品开发。"
       },
       "holidayGuide": {
-        "title": "假日季优惠券指南",
-        "description": "通过快速优惠券解决方案掌握最后一刻的假日销售高峰。2022 年假日零售销售额达到 9,430-9,600 亿美元。"
+        "title": "假期优惠券指南",
+        "description": "使用快速优惠券解决方案掌握假期销售高峰。2022 年假期零售销售额达 9,430-9,600 亿美元。"
       },
       "smartRetail": {
-        "title": "科技主导的智慧零售",
-        "description": "NFC 技术改变零售动态。研究显示 73% 的受访者进行自发性购买,平均每月冲动支出超过 314 美元。"
+        "title": "技术主导的智能零售",
+        "description": "NFC 技术改变零售动态。研究显示 73% 的受访者会进行冲动购买，平均每月冲动消费超过 314 美元。"
       },
       "cioworldFeature": {
-        "title": "为更环保的未来改造优惠券",
-        "description": "TheCIOWorld 专题报道 Mezzofy 创新的 NFC 点击获取优惠券和整合钱包功能,实现可持续数字营销。"
+        "title": "为更绿色的未来转变优惠券",
+        "description": "TheCIOWorld 报道 Mezzofy 的创新 NFC 轻触即得优惠券和整合钱包功能，实现可持续的数字营销。"
       },
       "ejtech300m": {
-        "title": "在亚太地区发送 3 亿张数字优惠券",
-        "description": "EJTech 重点报道 Mezzofy 云端平台在亚太地区发送超过 3 亿张数字优惠券,改变客户参与方式。"
+        "title": "亚太地区 3 亿张数字优惠券",
+        "description": "EJTech 报道 Mezzofy 的云平台在亚太地区分发超过 3 亿张数字优惠券，改变客户参与方式。"
       },
       "edigestLeading": {
         "title": "亚太地区领先的数字优惠券解决方案",
-        "description": "eDigest 专访 Mezzofy 作为领先的数字优惠券平台,改变亚太地区的优惠券管理。"
+        "description": "eDigest 独家报道 Mezzofy 作为亚太地区领先的数字优惠券平台，改变优惠券管理。"
       },
       "forbesDickyYin": {
         "title": "Forbes 表彰 Dicky Yin 的领导力",
-        "description": "Forbes China 专题报道 Mezzofy 首席执行官 Dicky Yin 在创新方面的卓越领导力,改造数字优惠券领域。"
+        "description": "Forbes 中国版报道 Mezzofy 执行长 Dicky Yin 在创新领域的杰出领导力，改变数字优惠券产业。"
       },
       "hotelTechInnovation": {
-        "title": "为何技术创新是酒店成功的关键",
-        "description": "67% 的旅客期待个性化体验。酒店必须采用 NFC、聊天机器人和 AI 驱动的个性化以提高收入和忠诚度。"
+        "title": "为什么技术创新是酒店成功的关键",
+        "description": "67% 的旅客期待个性化体验。酒店必须采用 NFC、聊天机器人和 AI 驱动的个性化来提升收入和忠诚度。"
       }
     }
   },
@@ -1470,405 +1456,6 @@
       "description": "加入信任 Mezzofy 为其数字优惠券销售提供动力的领先商家行列",
       "contactUs": "立即联系我们",
       "viewDemo": "查看演示"
-    }
-  },
-  "nfcGuide": {
-    "header": {
-      "title": "🎫 How to Use Mezzofy NFC Coupons",
-      "subtitle": "Your complete guide to tapping, claiming, and redeeming digital coupons"
-    },
-    "intro": {
-      "title": "Welcome to the Future of Coupons!",
-      "description": "Mezzofy's NFC technology makes saving money easier than ever. Simply tap your phone on any Mezzofy NFC sticker or scan a QR code to unlock exclusive deals. Follow this simple guide to start saving today!"
-    },
-    "steps": {
-      "step1": {
-        "number": "1",
-        "title": "Enable NFC on Your Phone",
-        "description": "Before you can tap and save, make sure NFC is enabled on your smartphone:",
-        "iphone": "<strong>iPhone:</strong> NFC is always on for iPhone 7 and newer. No setup needed!",
-        "android": "<strong>Android:</strong> Go to Settings → Connected Devices → Connection Preferences → NFC → Turn ON"
-      },
-      "step2": {
-        "number": "2",
-        "title": "Tap Your Phone",
-        "description": "Hold the back of your smartphone close to the NFC sticker (within 1-2 inches). You'll feel a vibration or hear a sound confirming the tap. Your phone will automatically open the coupon link in your browser."
-      },
-      "step3": {
-        "number": "3",
-        "title": "View Coupon Details",
-        "description": "Once the page loads, you'll see:",
-        "item1": "The discount or offer details",
-        "item2": "Expiration date and terms",
-        "item3": "Participating merchant information",
-        "item4": "A unique coupon code"
-      },
-      "step4": {
-        "number": "4",
-        "title": "Claim Your Coupon (Two Ways)",
-        "optionA": {
-          "heading": "Option A: With Mezzofy Coupon Clipper App (Recommended)",
-          "intro": "For the best experience, download the <strong>Mezzofy Coupon Clipper</strong> app:",
-          "item1": "<strong>Seamless Collection:</strong> Tap any NFC coupon and it automatically saves to your app",
-          "item2": "<strong>No Personal Data Required:</strong> Start using immediately without sign-up",
-          "item3": "<strong>All Coupons in One Place:</strong> Easy access to your entire coupon collection",
-          "item4": "<strong>Instant Redemption:</strong> Show coupons directly from the app at checkout"
-        },
-        "optionB": {
-          "heading": "Option B: Without the App (Browser-Based)",
-          "intro": "Don't have the app yet? No problem! When you tap an NFC coupon:",
-          "item1": "The coupon details page launches immediately in your browser",
-          "item2": "View and use the coupon right away at checkout",
-          "item3": "<strong>Save Options:</strong> Optionally save to Apple Wallet, Google Wallet, or Samsung Wallet",
-          "item4": "<strong>Or Download the App:</strong> A convenient link to download Mezzofy Coupon Clipper for future use"
-        }
-      },
-      "step5": {
-        "number": "5",
-        "title": "Redeem at Checkout",
-        "description": "When you're ready to use your coupon:",
-        "item1": "Open your Mezzofy Coupon Clipper app or access the coupon from your device wallet",
-        "item2": "Select the coupon you want to use",
-        "item3": "Show the QR code or barcode to the merchant's scanner at checkout",
-        "item4": "Watch your discount apply instantly!"
-      }
-    },
-    "features": {
-      "title": "✨ Key Features of Mezzofy NFC Coupons",
-      "feature1": "<strong>Instant Access:</strong> No need to download apps before tapping – works directly in your browser",
-      "feature2": "<strong>Privacy-Friendly:</strong> The Coupon Clipper app requires no personal data to use",
-      "feature3": "<strong>Multiple Wallet Options:</strong> Save to Mezzofy, Apple Wallet, Google Wallet, or Samsung Wallet",
-      "feature4": "<strong>No Printing Required:</strong> Completely paperless and eco-friendly",
-      "feature5": "<strong>Real-Time Updates:</strong> Get notifications about new deals and expiring coupons",
-      "feature6": "<strong>Multi-Portal Support:</strong> Works with B2C, C2C, and partner merchant systems"
-    },
-    "tips": {
-      "title": "💡 Pro Tips for Maximum Savings",
-      "tip1": "<strong>Download the App:</strong> Get the Mezzofy Coupon Clipper for the fastest, most seamless experience",
-      "tip2": "<strong>Enable Notifications:</strong> Never miss a deal – allow Mezzofy to send you alerts about new coupons and expiring offers",
-      "tip3": "<strong>Check Expiration Dates:</strong> Use your coupons before they expire to maximize your savings",
-      "tip4": "<strong>Stack Offers:</strong> Some merchants allow you to combine multiple coupons – check the terms!",
-      "tip5": "<strong>Share with Friends:</strong> Use our C2C portal to trade or gift coupons you won't use",
-      "tip6": "<strong>Follow Favorite Merchants:</strong> Get exclusive early access to their promotions"
-    },
-    "faq": {
-      "title": "Frequently Asked Questions",
-      "q1": {
-        "question": "Q: Do I need to download an app to use NFC coupons?",
-        "answer": "A: No! You can tap and view coupons directly in your mobile browser. However, downloading the Mezzofy Coupon Clipper app provides the best experience with automatic coupon collection and no personal data required."
-      },
-      "q2": {
-        "question": "Q: What if my phone doesn't have NFC?",
-        "answer": "A: No problem! Every NFC coupon also has a QR code option. Simply open your camera app and scan the QR code to access the same coupon."
-      },
-      "q3": {
-        "question": "Q: Does the Mezzofy Coupon Clipper app require personal information?",
-        "answer": "A: No! You can start using the app immediately without providing any personal data. It's designed for privacy and convenience."
-      },
-      "q4": {
-        "question": "Q: Can I use a coupon multiple times?",
-        "answer": "A: It depends on the coupon terms. Most coupons are single-use, but some promotional offers allow multiple redemptions. Check the coupon details for specific information."
-      },
-      "q5": {
-        "question": "Q: What happens if I tap a coupon but don't save it?",
-        "answer": "A: Without the app, you can still use the coupon immediately from the browser page. You can also save it to your device wallet (Apple, Google, or Samsung) or tap the same NFC sticker again later."
-      },
-      "q6": {
-        "question": "Q: Can I transfer my coupons to someone else?",
-        "answer": "A: Yes! Through our C2C (Customer-to-Customer) portal, you can trade, gift, or sell unused coupons to other Mezzofy users."
-      },
-      "q7": {
-        "question": "Q: What if the coupon doesn't work at checkout?",
-        "answer": "A: First, check that the coupon hasn't expired and that you're using it at a participating merchant. If issues persist, contact the merchant or Mezzofy customer support for assistance."
-      },
-      "q8": {
-        "question": "Q: Which wallet should I use to save coupons?",
-        "answer": "A: We recommend the Mezzofy Coupon Clipper app for the best experience. However, you can also save to Apple Wallet (iPhone), Google Wallet (Android), or Samsung Wallet depending on your device."
-      }
-    },
-    "support": {
-      "title": "Need More Help?",
-      "description": "Our customer support team is here to assist you!",
-      "contact": "Contact us at: <a href=\"mailto:support@mezzofy.com\">support@mezzofy.com</a>",
-      "helpCenter": "Visit our Help Center for more guides and tutorials"
-    }
-  },
-  "articles": {
-    "blog": {
-      "nfcParknshop": {
-        "title": "Mezzofy 助品牌设置优惠券到240 间百佳 NFC 标签，全程代办、无需协调",
-        "headings": {
-          "introduction": "引言",
-          "challenges": "挑战概述",
-          "service": "服务方案",
-          "benefits": "主要优势",
-          "applications": "目标应用"
-        },
-        "paragraphs": {
-          "intro": "对于许多快速消费品和消费品牌而言,通过实体零售渠道执行促销活动涉及大量的协调工作和复杂的程序。",
-          "challenges": "该文章指出典型障碍:与百佳等零售商协调促销细节、设计实体优惠券材料、安排物流和店内摆放,以及追踪销售数据。",
-          "service": "Mezzofy 现在支持百佳在香港 240 个地点的 NFC 标签促销,提供「一站式」服务,品牌只需提供折扣内容,而 Mezzofy 处理优惠券创建、标签设置和物流——无需直接与零售商协调。",
-          "benefitsIntro": "该平台强调了几个优势:",
-          "applications": "该服务适合新产品发布、限时促销、市场测试场景,以及避免使用 POS 或纸本操作的品牌。"
-        },
-        "benefits": {
-          "purchaseIntent": "消费者在主动领取电子优惠券时显示出<span class=\"font-semibold text-primary-orange\">高出 5 倍的购买意愿</span>",
-          "redemptionRate": "兑换率达到<span class=\"font-semibold text-primary-orange\">30-34%</span>,而传统纸本优惠券的兑换率为 15-20%",
-          "costReduction": "每张优惠券的分发成本低于<span class=\"font-semibold text-primary-orange\">HK$0.20</span>,与实体材料相比,费用减少超过 80%"
-        },
-        "contact": {
-          "heading": "联络我们",
-          "info": "<a href=\"mailto:hello@mezzofy.com\" class=\"text-primary-orange hover:underline\">hello@mezzofy.com</a> | WhatsApp: <a href=\"https://wa.me/85294802246\" class=\"text-primary-orange hover:underline\">9480 2246</a>"
-        }
-      },
-      "eCouponsPreference": {
-        "title": "60% 的消费者偏好电子优惠券：这对数字时代零售业的意义",
-        "headings": {
-          "rise": "电子优惠券的崛起",
-          "footTraffic": "推动客流量和销售",
-          "nfc": "NFC 技术：简化兑换流程",
-          "ai": "AI 驱动的个性化",
-          "location": "基于位置的营销"
-        },
-        "paragraphs": {
-          "rise": "「60% 的消费者偏好电子优惠券」这一统计数据显示了购物行为的变革性转变。数字优惠券已成为企业的关键互动工具,特别是在通过 NFC 和 AI 技术增强时。这种偏好反映了消费者在日益数字化的零售环境中对便利性、速度和个性化购物体验的渴望。",
-          "footTraffic": "研究表明「77% 的购物者更有可能光顾提供折扣的商店」,突显了优惠券驱动的促销如何推动客流量和线上销售。这一令人信服的统计数据表明,消费者积极寻找具有吸引力促销优惠的零售商,使数字优惠券成为获取市场份额和增加商店访问量的关键工具。",
-          "nfc": "NFC 技术允许消费者在结账时轻触手机即可立即兑换优惠券,消除摩擦并创造无缝的购物体验。通过消除出示实体优惠券或手动输入代码的需要,支持 NFC 的数字优惠券显著减少了交易时间并提高了销售点的客户满意度。",
-          "ai": "AI 通过根据客户行为模式提供个性化优惠来增强数字优惠券。机器学习算法分析购买历史、偏好和购物习惯,创建与个别消费者产生共鸣的目标优惠,显著提高兑换率和客户终身价值。",
-          "location": "支持 GPS 的数字优惠券代表另一种强大的零售策略,向靠近实体位置的客户提供限时优惠。这种地理围栏功能使零售商能够在决策时刻吸引消费者,显著增加兑换和冲动购买的可能性。"
-        },
-        "source": {
-          "name": "EJINSIGHT"
-        }
-      },
-      "environmentalExcellence": {
-        "title": "香港环保卓越奖 - 使用数字优惠券降低成本并拯救树木",
-        "headings": {
-          "impact": "纸本优惠券的环境影响",
-          "waste": "浪费问题",
-          "business": "数字解决方案的商业优势",
-          "demand": "消费者对可持续选择的需求",
-          "implementation": "实施步骤"
-        },
-        "paragraphs": {
-          "impact": "全球每年分发超过 1,360 亿张纸本优惠券,摧毁了约 500 万棵树。纸张生产是空气、水和土壤的第三大工业污染源。传统优惠券系统的环境成本远远超出简单的物流——它代表了对我们星球自然资源和生态系统的重大负担。",
-          "waste": "超过 90% 的纸本优惠券未被兑换并最终进入垃圾填埋场,在全球社区造成严重的浪费问题。这一惊人的浪费率不仅代表资源损失,还通过垃圾填埋场的甲烷排放和持续污染导致环境退化。",
-          "businessIntro": "数字优惠券解决方案在环境效益之外还提供了显著的商业优势:",
-          "demand": "数字优惠券的采用符合 ESG（环境、社会、治理）原则——73% 的全球消费者愿意修改消费行为以减少环境损害。这种消费者偏好既代表了道德责任,也代表了对具有前瞻性思维的零售商的令人信服的商业机会。",
-          "implementationIntro": "希望转向数字优惠券解决方案的组织应遵循以下关键步骤:"
-        },
-        "benefits": {
-          "cost": "<span class=\"font-semibold text-primary-orange\">将营销费用减少高达 70%</span>,相比传统纸本优惠券活动",
-          "redemption": "<span class=\"font-semibold text-primary-orange\">数字优惠券达到 10% 的兑换率</span>,而纸本优惠券仅为 1%",
-          "personalization": "<span class=\"font-semibold text-primary-orange\">个性化优惠将兑换率提高 50%</span>,通过 AI 驱动的目标推荐",
-          "analytics": "<span class=\"font-semibold text-primary-orange\">实时分析</span>使商家能够优化策略并最大化投资回报率"
-        },
-        "steps": {
-          "evaluate": "<span class=\"font-semibold text-primary-orange\">评估当前纸本优惠券成本</span>以了解潜在节省",
-          "select": "<span class=\"font-semibold text-primary-orange\">选择适当的数字平台</span>以符合您的业务需求",
-          "communicate": "<span class=\"font-semibold text-primary-orange\">向利益相关者和客户传达环境效益</span>"
-        },
-        "contact": {
-          "heading": "联络我们",
-          "info": "<a href=\"mailto:hello@mezzofy.com\" class=\"text-primary-orange hover:underline\">hello@mezzofy.com</a> | WhatsApp: <a href=\"https://wa.me/85294802246\" class=\"text-primary-orange hover:underline\">9480 2246</a>"
-        }
-      },
-      "holidayGuide": {
-        "title": "假日季节优惠券指南 - 掌握最后一分钟的假日销售高峰",
-        "headings": {
-          "opportunity": "假日零售机会",
-          "misconception": "打破最后一分钟的误解",
-          "capitalizing": "把握剩余机会",
-          "strategies": "假日成功的数字优惠券策略",
-          "tactics": "快速且策略性的营销策略",
-          "guidance": "全面的假日指导"
-        },
-        "paragraphs": {
-          "opportunity": "根据美国零售联合会 (NRF) 的数据,2022 年假日零售销售额飙升至 9,430-9,600 亿美元。这些惊人的数字强调了在假日季节最大化销售额的重要性——这是消费者支出达到年度高峰且充满机会的时期。",
-          "misconception": "该指南解决了零售商中普遍存在的误解,即吸引最后一分钟购物者的窗口已经关闭。许多零售商错误地认为,到 12 月中旬,他们已经抓住了假日受众。然而,在圣诞节前的最后几周,仍有大量机会从拖延购物者和寻找最后一刻礼物解决方案的人那里获取消费支出。",
-          "capitalizing": "大量消费者群体在假日前的最后几天积极购物,寻找礼物、囤积必需品或寻找最后一刻的娱乐选择。在这个关键窗口实施目标优惠券活动的策略零售商可以获取大量市场份额并最大化假日季节收入。",
-          "strategies": "该文章探讨了在假日期间执行有效促销活动的策略,特别关注数字优惠券解决方案。现代零售商可以使用复杂的工具快速部署促销优惠——使他们能够动态响应消费者需求和购物模式。",
-          "tacticsIntro": "零售商可以采用快速且策略性的营销策略,以在节日季节剩余时间内最大化销售额。关键方法包括:",
-          "guidance": "这份全面的指南帮助企业使用有效的优惠券策略度过关键的最后一分钟假日购物期。通过结合紧迫性营销、个性化和现代数字交付渠道,零售商可以在一年中最重要的商业季节最大化收入捕获。"
-        },
-        "tactics": {
-          "flash": "针对最后一分钟购物者的限时快闪促销",
-          "personalized": "基于浏览和购买历史的个性化数字优惠券",
-          "mobile": "通过 SMS 和推送通知的移动优先优惠券交付",
-          "nfc": "支持 NFC 的店内促销以实现即时兑换",
-          "bundled": "跨类别捆绑优惠以增加购物篮大小"
-        },
-        "contact": {
-          "heading": "联络我们",
-          "info": "<a href=\"mailto:hello@mezzofy.com\" class=\"text-primary-orange hover:underline\">hello@mezzofy.com</a> | WhatsApp: <a href=\"https://wa.me/85294802246\" class=\"text-primary-orange hover:underline\">9480 2246</a>"
-        }
-      },
-      "hotelTechInnovation": {
-        "title": "为什么技术创新是酒店成功的关键",
-        "headings": {
-          "challenges": "行业挑战",
-          "travelers": "旅行者想要什么",
-          "nfc": "NFC 技术增强宾客体验",
-          "success": "真实成功案例",
-          "chatbots": "用于基于位置互动的聊天机器人",
-          "ai": "AI 驱动的个性化",
-          "urgency": "适应的紧迫性"
-        },
-        "paragraphs": {
-          "challenges": "酒店和旅游业面临重大挑战,包括客户忠诚度下降和激烈竞争。在日益拥挤的市场中,酒店业务必须通过卓越的体验和创新的服务交付来区分自己,以保留客户并建立长期关系。",
-          "travelers": "研究表明,<span class=\"font-semibold text-primary-orange\">67% 的旅行者期望个性化体验</span>,<span class=\"font-semibold text-primary-orange\">75% 的旅行者愿意分享个人数据</span>以接收量身定制的优惠。这些数据揭示了现代旅行者积极寻求定制体验,并愿意用隐私换取个性化——酒店可以通过智能技术实施来利用这一机会。",
-          "nfc": "NFC 技术不仅简化了入住流程——客人可以轻触智能手机即可获得即时奖励,如餐饮或当地景点的数字优惠券,在提升体验的同时增加收入。这种数字便利性与个性化优惠的无缝整合创造了令人难忘的体验,使酒店脱颖而出。",
-          "success": "<span class=\"font-semibold text-primary-orange\">Sarah Kay,民宿业主:</span>「实施 NFC 和数字优惠券改变了我们与客人联系的方式。它提升了销售额,并与当地企业建立了更牢固的关系。」这一证词展示了酒店在整合 NFC 优惠券技术到运营中时实现的实际效益。",
-          "chatbots": "聊天机器人通过提供附近商店和餐厅的基于位置的优惠券优惠来增强客人互动。智能聊天机器人系统可以根据客人偏好和位置主动建议餐饮、娱乐和购物机会,在提高客人满意度的同时创造额外的收入流。",
-          "ai": "AI 驱动的个性化通过分析先前的住宿和偏好创建量身定制的促销活动。机器学习算法检查历史客人数据以预测需求和偏好,使酒店能够提供与个别旅行者产生共鸣并提高参与率的优惠和推荐。",
-          "urgency": "适应的紧迫性至关重要:<span class=\"font-semibold text-primary-orange\">80% 的客户更有可能选择提供个性化体验的品牌。</span>延迟采用技术的酒店面临失去市场份额给有效利用个性化来区分自己并建立客户忠诚度的竞争对手的风险。"
-        },
-        "dataSources": {
-          "heading": "数据来源",
-          "accenture": "Accenture Interactive(67% 的个性化期望)",
-          "pwc": "PwC 消费者情报系列(75% 的数据分享意愿)",
-          "epsilon": "Epsilon 研究(80% 的个性化偏好)"
-        },
-        "contact": {
-          "heading": "联系我们",
-          "info": "<a href=\"mailto:hello@mezzofy.com\" class=\"text-primary-orange hover:underline\">hello@mezzofy.com</a> | WhatsApp: <a href=\"https://wa.me/85294802246\" class=\"text-primary-orange hover:underline\">9480 2246</a>"
-        }
-      },
-      "smartRetail": {
-        "title": "技术主导的智能零售 - NFC 优惠券推动冲动购买",
-        "headings": {
-          "landscape": "不断演变的零售格局",
-          "nfc": "NFC 技术实现无缝体验",
-          "impulse": "冲动购买机会",
-          "strategies": "NFC 优惠券成功的智能策略",
-          "transformative": "转型潜力"
-        },
-        "subheadings": {
-          "location": "策略位置",
-          "value": "价值感知",
-          "merchandising": "互补商品销售",
-          "relevance": "通过技术实现相关性",
-          "senses": "吸引感官"
-        },
-        "paragraphs": {
-          "landscape": "零售业正在经历由技术和不断演变的消费者偏好驱动的重大转变。现代零售商必须拥抱创新才能保持竞争力,并在日益数字化的市场中满足不断变化的客户期望。",
-          "nfc": "NFC 技术使客户能够通过轻触店内 NFC 标签轻松接收数字优惠券,简化购物并消除实体优惠券管理。这种无摩擦的互动为零售商创造了无缝的客户体验,同时减少了运营开支。",
-          "impulse": "来自 Slickdeals 的研究表明「四分之三 (73%) 的受访者进行自发购买」,平均每月冲动支出从 2021 年的 276 美元增加到目前的 314 美元以上。这些令人信服的数据展示了通过策略性店内促销和精心放置的数字优惠券捕获冲动购买行为的巨大价值。",
-          "strategiesIntro": "成功实施 NFC 优惠券策略需要仔细关注多个关键因素:",
-          "location": "将 NFC 优惠券放置在收银台附近和高停留区域可最大化可见度和参与度。处于决策阶段的消费者对精心放置的促销优惠反应最有效。",
-          "value": "强调优惠的节省和好处有助于推动兑换。关于折扣金额和价值主张的清晰沟通鼓励客户采取行动。",
-          "merchandising": "按类别、季节或活动进行逻辑分组可创建连贯的购物体验。策略性产品放置与目标优惠券一起可改善交叉销售和购物篮大小。",
-          "relevance": "基于当地活动、天气和客户行为模式的精确定位可确保优惠在正确的时间与正确的受众产生共鸣。",
-          "senses": "结合引人注目的视觉效果、清晰的讯息传递和策略性产品放置,以鼓励客户与支持 NFC 的优惠券标签互动。",
-          "transformative": "将 NFC 技术整合到数字优惠券策略中,为零售业带来了转型潜力。通过结合策略性定位和无缝的点击兑换体验,企业可以实现前所未有的冲动购买率,同时为消费者提供真正的价值。"
-        },
-        "contact": {
-          "heading": "联系我们",
-          "info": "<a href=\"mailto:hello@mezzofy.com\" class=\"text-primary-orange hover:underline\">hello@mezzofy.com</a> | WhatsApp: <a href=\"https://wa.me/85294802246\" class=\"text-primary-orange hover:underline\">9480 2246</a>"
-        }
-      }
-    },
-    "news": {
-      "treasureGlobalPartnership": {
-        "title": "Mezzofy 与 Treasure Global 合作加速马来西亚数字优惠券扩展",
-        "paragraphs": {
-          "opening": "Mezzofy 宣布与 Treasure Global Inc. 达成战略合作伙伴关系,指定其为马来西亚数字优惠券平台的独家经销商。",
-          "positioning": "该公司将自己定位为区域领导者,在 15 个市场管理超过 400 亿美元的数字优惠券交易。其「优惠券即服务 (CaaS)」平台使企业能够在无需新基础设施投资的情况下吸引客户。",
-          "collaboration": "通过这次合作,Treasure Global 将利用其当地市场专业知识和数字能力在马来西亚扩大平台采用。合作伙伴预计在第一年内实现<span class=\"font-semibold text-primary-orange\">「200 万至 400 万美元的经常性年收入」</span>。",
-          "platform": "该平台提供的功能包括无缝优惠券创建、即时兑换追踪和营销活动分析。随着马来西亚推进其数字经济,此次合作伙伴关系反映了 Mezzofy 致力于支持马来西亚品牌利用数字创新进行客户互动的承诺。"
-        },
-        "quote": {
-          "text": "「Treasure Global 强大的市场存在和市场洞察力使他们成为在马来西亚扩展我们解决方案的绝佳合作伙伴。」",
-          "attribution": "— Dicky Ying,Mezzofy 首席执行官"
-        }
-      },
-      "fundingAnnouncement": {
-        "title": "Mezzofy 完成 200 万美元 Pre-A 轮融资",
-        "paragraphs": {
-          "announcement": "Mezzofy 宣布完成<span class=\"font-semibold text-primary-orange\">200 万美元 Pre-A 轮融资</span>,以支持全球扩展和 web3 功能的产品开发。本轮融资由 Isola Capital 的 IPVF VII 领投,Ooosh Tech Lab 额外支持,以及香港政府 ITVF 计划的共同投资。",
-          "market": "全球数字优惠券市场预计将以<span class=\"font-semibold text-primary-orange\">18.6%</span>的复合年增长率扩张,到 2031 年可能达到 297 亿美元,亚太地区代表第二大市场区段。",
-          "brands": "近 100 个亚洲品牌——包括美心、星巴克、壳牌和凯悦——使用 Mezzofy 的平台。优惠券即服务模型可通过 API 与现有系统整合,据报导可将运营成本降低 87% 以上。",
-          "management": "Mezzofy 在 15 个市场管理约<span class=\"font-semibold text-primary-orange\">4 亿张数字优惠券</span>,代表累计价值超过 51 亿美元。"
-        },
-        "quote": {
-          "text": "「数字支付和电子商务的增长推动了数字优惠券的兴起。我们通过使数字优惠券可转让来解决这个问题。」",
-          "attribution": "— Dicky Ying,首席执行官"
-        }
-      },
-      "techappleInnovationIndex": {
-        "title": "TechApple 专题报道:Mezzofy 被评为 2024 年企业创新指数三星级中小企业",
-        "paragraphs": {
-          "innovation": "2024 年企业创新指数突出了创新领导力和运营卓越的成就,巩固了香港作为区域创新中心的地位。Arup 获得第一名,恒生银行和香港机场管理局紧随其后。",
-          "recognition": "这标志着中小企业首次接受评估。37 个组织获得星级评定,<span class=\"font-semibold text-primary-orange\">Mezzofy（香港）有限公司因其数字优惠券贡献获得三星</span>。",
-          "collaboration": "在香港政府和香港中文大学 APIB 的支持下,该计划促进跨领域合作和数字转型。它为政策制定者提供数据,同时表彰通过原创性和适应性推动经济进步的企业。",
-          "future": "该指数继续鼓励各种规模的企业采用创新方法并加强其竞争地位,确立香港作为全球创新强国的轨迹。"
-        }
-      },
-      "ejtech300mCoupons": {
-        "title": "EJTech 专题报道:Mezzofy 云端平台在亚太地区发送 3 亿张数字优惠券",
-        "paragraphs": {
-          "recognition": "Mezzofy 的数字优惠券云端平台因其在亚太地区转变客户参与而获得 EJTech 的认可。",
-          "platform": "该平台使企业能够「高效创建和分发环保、无纸化优惠券,涵盖广泛的行业」。该解决方案支持通过电子邮件、短信和社交媒体渠道直接联系客户,同时减少纸张消耗。",
-          "scale": "根据 EJTech,<span class=\"font-semibold text-primary-orange\">「已经分发超过 3 亿张数字优惠券」</span>,Mezzofy 在以可持续和具成本效益的方式重塑公司与消费者的联系方面展示了显著的市场吸引力。",
-          "milestone": "这一里程碑代表了亚太地区促销营销数字转型的重大成就。该平台在保持效率和环保的同时处理如此大规模的能力为行业树立了新标准。"
-        }
-      },
-      "dualEsgAwards": {
-        "title": "Mezzofy 在 2024 年 ESG 与可持续发展论坛上荣获双奖",
-        "paragraphs": {
-          "awards": "Mezzofy 在 HK01 于 9 月 27 日主办的「ESG 与可持续发展论坛及奖项 2024」上获得表彰。该公司获得两项荣誉:<span class=\"font-semibold text-primary-orange\">「杰出 ESG 企业奖」</span>和<span class=\"font-semibold text-primary-orange\">「可持续发展企业证书」</span>。",
-          "forum": "商业领袖和可持续发展专家齐聚一堂,讨论 ESG 趋势以及将可持续发展目标整合到运营中。作为数字优惠券平台,Mezzofy 通过用数字替代品取代纸质优惠券来减少环境影响,从而减少纸张浪费。",
-          "commitment": "这些奖项加强了公司对环境责任和可持续发展领导地位的承诺。香港特别行政区政府环境及生态局局长谢展寰先生强调了企业在推进可持续发展倡议方面的重要性。",
-          "future": "Mezzofy 继续开发有益于环境和社会的解决方案。这项成就建立在 Mezzofy 早期 ESG 认证的基础上。"
-        }
-      },
-      "edigestLeadingSolution": {
-        "title": "eDigest 专访:亚太地区领先的数字优惠券解决方案",
-        "headings": {
-          "pioneering": "开创亚太地区数字优惠券解决方案",
-          "innovative": "创新的数字优惠券平台",
-          "expanding": "扩大市场覆盖",
-          "commitment": "致力于创新"
-        },
-        "paragraphs": {
-          "pioneering": "Mezzofy 作为<span class=\"font-semibold text-primary-orange\">「领先的数字优惠券平台」</span>运营,已经改变了亚太地区的优惠券管理。该公司提供基于云端的解决方案,使企业能够创建、分发和管理电子优惠券,同时改善客户参与和运营效率。",
-          "innovative": "该平台通过可访问性和全面功能脱颖而出。企业无需广泛的技术专业知识即可设计和部署数字优惠券。该系统容纳多种优惠券格式,包括折扣、礼品券和促销优惠,支持多样化的营销方法。",
-          "expanding": "Mezzofy 在多个亚太国家开展业务,并已促进发行和管理超过<span class=\"font-semibold text-primary-orange\">3 亿张数字优惠券</span>。这种广泛的覆盖展示了平台的可扩展性和可靠性,使其成为寻求加强促销计划的企业的首选。",
-          "commitment": "该公司继续投资研发以引入新功能和整合。通过强调创新,Mezzofy 为企业提供了有效客户参与和加速增长的现代工具。"
-        }
-      },
-      "cioworldFeature": {
-        "title": "TheCIOWorld 专题报道:Mezzofy 改造优惠券迈向更环保的未来",
-        "paragraphs": {
-          "innovation": "Mezzofy 的创新数字优惠券方法已在 CIOWorld 中得到重点报道。公司领导者 Dicky Ying 讨论了组织如何通过环保解决方案转变传统优惠券。",
-          "technologies": "该专题强调 Mezzofy 的先进技术,特别是<span class=\"font-semibold text-primary-orange\">NFC 点击获取优惠券</span>和<span class=\"font-semibold text-primary-orange\">整合钱包功能</span>。这些工具协助企业减少环境影响,同时提供个性化的客户体验。",
-          "redefining": "该出版物强调 Mezzofy 如何重新定义可持续数字营销计划的格局。该报道展示了技术创新如何推动商业成功和环境可持续性。"
-        },
-        "callout": {
-          "heading": "阅读完整文章",
-          "text": "访问 CIOWorld 了解更多关于 Mezzofy 对环保数字优惠券的愿景。"
-        }
-      },
-      "forbesDickyYin": {
-        "title": "Forbes China 表彰 Dicky Yin 在创新方面的卓越领导力",
-        "paragraphs": {
-          "recognition": "Mezzofy（香港）有限公司首席执行官 Dicky Yin 先生获得 Forbes China 表彰为杰出的商业领袖。",
-          "philosophy": "根据这篇文章,Yin 认为真正的领导力涉及激励同事自愿与组织方向保持一致。他强调建立提供战略方向和可能性的工作场所文化,将团队成员视为推进集体目标的合作伙伴。",
-          "stewardship": "在 Yin 的领导下,Mezzofy 已经从根本上改变了数字优惠券领域。该组织为零售商提供灵活的工具,以提高客户对数字优惠券解决方案的认知和接受度。",
-          "reshaping": "通过重塑消费者模式,该公司正在推进行业内的可持续发展。Forbes China 的认可突显了 Yin 创新的领导方法以及他致力于在商业实践和环境影响方面创造积极变化的承诺。"
-        },
-        "quote": {
-          "text": "「追随者决定谁是领导者。」",
-          "attribution": "— Dicky Yin 的领导理念"
-        },
-        "headings": {
-          "transforming": "改造数字优惠券领域"
-        },
-        "callout": {
-          "heading": "阅读完整的 Forbes China 文章",
-          "text": "了解更多关于 Dicky Yin 的领导理念和 Mezzofy 的使命。"
-        }
-      }
     }
   }
 }
