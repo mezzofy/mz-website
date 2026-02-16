@@ -4,7 +4,7 @@
 **Current Phase:** i18n Enhancements (In Progress)
 **Overall Progress:** ~94% (Base features complete, i18n expansion complete, hub page translations added)
 **Branch:** main
-**Latest Commit:** c579689 - Fix missing translations in smart-retail.html article
+**Latest Commit:** 29ab5e2 - Fix missing title translation in smart-retail.html
 
 ---
 
@@ -33,7 +33,18 @@ All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to
 
 ## Recently Completed (Last 7 Days)
 
-**2026-02-16 (Latest - Smart Retail Article Translations Fixed):**
+**2026-02-16 (Latest - Smart Retail Title Translation Fixed):**
+- ✅ Fixed missing title translation in smart-retail.html → `dist/blog/smart-retail.html` (29ab5e2)
+  - Impact: Article title now translates to Chinese languages when user switches language
+  - Added data-i18n="articles.blog.smartRetail.title" attribute to h1 element at line 217
+  - Translation keys already existed in all 3 JSON files, just needed HTML attribute
+  - Users can now see title in their selected language:
+    - EN: "Tech-led Smart Retail - NFC Coupons Driving Impulse Purchases"
+    - zh-TW: "技術主導的智能零售 - NFC 優惠券推動衝動購買"
+    - zh-CN: "技术主导的智能零售 - NFC 优惠券推动冲动购买"
+  - Consistent with other blog articles which had working title translations
+
+**2026-02-16 (Smart Retail Article Translations Fixed):**
 - ✅ Fixed missing translation keys in smart-retail.html article → `dist/i18n/translations/*.json` (c579689)
   - Impact: Article final section now displays proper content instead of translation key names
   - Impact: Users can view the complete article in all 3 languages (EN, zh-TW, zh-CN)
