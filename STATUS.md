@@ -33,7 +33,24 @@ All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to
 
 ## Recently Completed (Last 7 Days)
 
-**2026-02-16 (Latest - News Hub Article Translations Added):**
+**2026-02-16 (Latest - Individual Article Page Translations Added):**
+- ✅ Added missing article.blog.* and articles.news.* translations for all individual article pages → `dist/i18n/translations/*.json`
+  - Impact: All 14 individual blog and news article detail pages now display translated content instead of translation key strings
+  - Added 166 translation keys across all 3 language files (en.json, zh-TW.json, zh-CN.json)
+  - Blog articles (6): eCouponsPreference, environmentalExcellence, holidayGuide, hotelTechInnovation, nfcParknshop, smartRetail (112 keys)
+  - News articles (8): cioworldFeature, dualEsgAwards, edigestLeadingSolution, ejtech300mCoupons, forbesDickyYin, fundingAnnouncement, techappleInnovationIndex, treasureGlobalPartnership (54 keys)
+  - Created automated extraction script (extract-article-translations.js) to extract English content from HTML files
+  - Created merge script (merge-translations.js) to add translations to all 3 JSON files
+  - Manually added missing ejtech300mCoupons article (add-ejtech-article.js)
+  - English translations: Extracted from HTML fallback content
+  - Chinese translations: Using English placeholders temporarily (professional translation recommended for production)
+  - Fixes issue where users saw "articles.blog.nfcParknshop.title" instead of actual article titles
+  - Users can now switch between EN, zh-TW, zh-CN on all individual blog and news pages
+  - Created test page (test-article-translations.html) for verification
+  - All JSON files validated - syntax correct
+  - Backup files created (.backup) for rollback if needed
+
+**2026-02-16 (News Hub Article Translations Added):**
 - ✅ Added missing newsPress.articles translations to hub page → `dist/i18n/translations/*.json` (c3f241c)
   - Impact: All 14 article preview cards now display translated titles and descriptions when switching languages
   - Added newsPress.articles namespace with 14 article objects (title + description each = 28 keys total)
