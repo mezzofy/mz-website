@@ -33,7 +33,22 @@ All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to
 
 ## Recently Completed (Last 7 Days)
 
-**2026-02-16 (Latest - News-Press Hub Translations):**
+**2026-02-16 (Latest - Article Translation Attributes Fixed):**
+- ✅ Fixed missing translation attributes in 5 blog articles → `dist/blog/*.html` (dc17cc6)
+  - Impact: Desktop navigation dropdowns now translate to Chinese languages
+  - Impact: Breadcrumb "Back to News & Press" links now translate properly
+  - Impact: Bottom "Back to News & Press" buttons now translate properly
+  - Added <span data-i18n="..."> wrappers to 27 elements across 5 blog articles
+  - Files: environmental-excellence (6 edits), holiday-guide (5 edits), hotel-tech-innovation (6 edits), nfc-parknshop (4 edits), smart-retail (6 edits)
+  - Note: e-coupons-preference.html already had correct attributes
+- ✅ Fixed missing translation attributes in 8 news articles → `dist/news/*.html` (376455c)
+  - Impact: Breadcrumb "Back to News & Press" links now translate to Chinese languages
+  - Added <span data-i18n="common.news.backToHub"> wrappers to 8 breadcrumb links
+  - Files: cioworld-feature, dual-esg-awards, edigest-leading-solution, ejtech-300m-coupons, forbes-dicky-yin, funding-announcement, techapple-innovation-index, treasure-global-partnership
+  - All translation keys already existed in JSON files
+  - Users can now switch languages (EN ↔ zh-TW ↔ zh-CN) and see fully translated navigation and breadcrumbs
+
+**2026-02-16 (Earlier - News-Press Hub Translations):**
 - ✅ Added Chinese translations to news-press.html article preview cards → `dist/news-press.html`, `dist/i18n/translations/*.json` (f9e0f34)
   - Impact: All 14 article preview cards now display translated titles and descriptions
   - Added newsPress.articles namespace with 14 article objects (title + description each)
