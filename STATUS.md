@@ -33,7 +33,20 @@ All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to
 
 ## Recently Completed (Last 7 Days)
 
-**2026-02-16 (Latest - CTA Section Translations Added):**
+**2026-02-16 (Latest - News Hub Article Translations Added):**
+- ✅ Added missing newsPress.articles translations to hub page → `dist/i18n/translations/*.json` (c3f241c)
+  - Impact: All 14 article preview cards now display translated titles and descriptions when switching languages
+  - Added newsPress.articles namespace with 14 article objects (title + description each = 28 keys total)
+  - Updated all 3 translation files: en.json, zh-TW.json, zh-CN.json
+  - English: Extracted from news-press.html fallback content
+  - Traditional Chinese: Professional translations for all articles
+  - Simplified Chinese: Professional translations for all articles
+  - Articles included: nfcParknshop, treasureGlobal, eCouponsPreference, environmentalExcellence, techappleInnovation, dualEsgAwards, fundingAnnouncement, holidayGuide, smartRetail, cioworldFeature, ejtech300m, edigestLeading, forbesDickyYin, hotelTechInnovation
+  - Users can now switch between EN, zh-TW, zh-CN on news-press.html hub page without seeing translation key strings
+  - All JSON files validated - syntax correct
+  - Fixes broken display where users saw "newsPress.articles.holidayGuide.title" instead of actual translated text
+
+**2026-02-16 (Earlier - CTA Section Translations Added):**
 - ✅ Added i18n translation attributes to CTA section on all blog and news pages → `dist/blog/*.html`, `dist/news/*.html`
   - Impact: Call-to-action section above footer now translates correctly into Traditional and Simplified Chinese
   - Added data-i18n="home.cta.title" to CTA heading on 14 pages
