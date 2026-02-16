@@ -156,7 +156,7 @@ class I18n {
         value = value[k];
       } else {
         console.warn(`Translation key not found: ${key}`);
-        return key; // Return key as fallback
+        return null; // Preserve HTML fallback content
       }
     }
 
