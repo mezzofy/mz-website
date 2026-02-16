@@ -4,7 +4,7 @@
 **Current Phase:** i18n Enhancements (In Progress)
 **Overall Progress:** ~94% (Base features complete, i18n expansion complete, hub page translations added)
 **Branch:** main
-**Latest Commit:** 8dc1520 - Fix translation key mismatch in smart-retail.html paragraph
+**Latest Commit:** 85366d4 - Add contact section translations for hotel-tech-innovation article
 
 ---
 
@@ -33,7 +33,25 @@ All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to
 
 ## Recently Completed (Last 7 Days)
 
-**2026-02-16 (Latest - Smart Retail Paragraph Translation Key Fixed):**
+**2026-02-16 (Latest - Hotel Tech Innovation Translation Attributes Fixed):**
+- ✅ Fixed missing translation attributes in hotel-tech-innovation.html → `dist/blog/hotel-tech-innovation.html` (fbdd7cf)
+  - Impact: Article title and Contact Us section now translate when users switch to Chinese languages
+  - Added data-i18n="articles.blog.hotelTechInnovation.title" to h1 element at line 217
+  - Added data-i18n="articles.blog.hotelTechInnovation.contact.heading" to Contact Us heading at line 283
+  - Added data-i18n="articles.blog.hotelTechInnovation.contact.info" to contact info paragraph at line 284
+  - Title translation keys already existed in JSON files, just needed HTML attribute
+- ✅ Added contact section translations to hotel-tech-innovation article → `dist/i18n/translations/*.json` (85366d4)
+  - Impact: Contact Us section heading now translates properly in all 3 languages
+  - Added articles.blog.hotelTechInnovation.contact.heading and contact.info keys to all 3 language files
+  - Translations: "Contact Us" (EN), "聯絡我們" (zh-TW), "联系我们" (zh-CN)
+  - Users can now see the article title in their selected language:
+    - EN: "Why Tech Innovation is Key to Hotel Success"
+    - zh-TW: "為什麼技術創新是酒店成功的關鍵"
+    - zh-CN: "为什么技术创新是酒店成功的关键"
+  - Contact section heading displays correctly in all languages
+  - Consistent with other blog articles (smart-retail.html has working title and contact translations)
+
+**2026-02-16 (Smart Retail Paragraph Translation Key Fixed):**
 - ✅ Fixed translation key mismatch in smart-retail.html paragraph → `dist/blog/smart-retail.html` (8dc1520)
   - Impact: Paragraph now translates correctly when users switch to Chinese languages
   - Changed data-i18n key from "strategies" to "strategiesIntro" to match JSON translation files
