@@ -203,6 +203,12 @@
                 "title": "清算所",
                 "description": "核心管理所有寄售、财务对账和无欺诈验证。"
             }
+        },
+        "cta": {
+            "title": "准备好推动商务的未来了吗？",
+            "description": "无论您是寻求最高性能的商家，还是寻求高意向库存的分销商，Mezzofy 交易协议都是您不可或缺的基础设施。",
+            "contactSales": "联系业务（企业）",
+            "developerDocs": "开发者文档（API 访问）"
         }
     },
     "about": {

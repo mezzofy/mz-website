@@ -217,6 +217,12 @@
                 "title": "Clearinghouse",
                 "description": "The core manages all consignment, financial reconciliation, and fraudless validation."
             }
+        },
+        "cta": {
+            "title": "Ready to power the future of commerce?",
+            "description": "Whether you are a merchant looking for maximum performance or a distributor seeking high-intent inventory, the Mezzofy Exchange Protocol is the indispensable infrastructure you need.",
+            "contactSales": "Contact Sales (Enterprise)",
+            "developerDocs": "Developer Docs (API Access)"
         }
     },
     "about": {
