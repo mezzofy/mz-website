@@ -10,7 +10,7 @@
 
 ## Quick Summary
 
-i18n expansion COMPLETE (Feb 15, 2026). Successfully added internationalization support to 15 pages (1 corporate, 6 blog, 8 news). All pages now support 3 languages (EN, zh-TW, zh-CN) with language selectors and localStorage persistence. Progress: 27/30 pages with full i18n (90%). Remaining: 3 pages need i18n (index.html, coupon-management, coupon-marketplace + 4 other product pages).
+i18n expansion COMPLETE (Feb 15, 2026). Successfully added internationalization support to 15 pages (1 corporate, 6 blog, 8 news). All pages now support 3 languages (EN, zh-TW, zh-CN) with language selectors and localStorage persistence. Progress: 28/30 pages with full i18n (93%). Remaining: coupon-management, coupon-marketplace, coupon-nfc, coupon-marketing, coupon-wallet, coupon-playbook (2 already may be done).
 
 ---
 
@@ -32,6 +32,13 @@ All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to
 ---
 
 ## Recently Completed (Last 7 Days)
+
+**2026-02-17 (index.html i18n Verification):**
+- ✅ Verified index.html already has complete i18n support → `index.html` + `i18n/translations/*.json`
+  - Impact: Homepage confirmed supporting EN, zh-TW, zh-CN — updates progress to 28/30 (93%)
+  - 126 total translation keys (80 home-specific) all verified present in all 3 JSON files
+  - Includes data-i18n, data-i18n-placeholder, and data-i18n-alt attributes
+  - Progress: 28/30 pages with full i18n (93%) [was 27/30 = 90%]
 
 **2026-02-17 (for-merchants.html + for-developers.html i18n Verification):**
 - ✅ Verified for-merchants.html and for-developers.html already have complete i18n support → `for-merchants.html` + `for-developers.html` + `i18n/translations/*.json`

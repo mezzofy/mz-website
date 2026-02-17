@@ -248,18 +248,17 @@ The website includes a comprehensive translation system supporting multiple lang
 
 ### i18n Implementation Progress
 
-**Current Status:** 27 of 30 pages (90%) have full i18n support
+**Current Status:** 28 of 30 pages (93%) have full i18n support
 
-**Pages with i18n (27):**
+**Pages with i18n (28):**
 - Corporate: nfc-user-guide.html
 - Blog: All 6 articles (nfc-parknshop, e-coupons-preference, environmental-excellence, holiday-guide, hotel-tech-innovation, smart-retail)
 - News: All 8 articles (cioworld-feature, dual-esg-awards, edigest-leading-solution, ejtech-300m-coupons, forbes-dicky-yin, funding-announcement, techapple-innovation-index, treasure-global-partnership)
 - Hub pages: news-press.html (verified 2026-02-17)
 - Solutions: for-distributors.html (reference implementation), for-merchants.html, for-developers.html (verified 2026-02-17)
-- Core: about.html, contact.html (verified 2026-02-17)
+- Core: index.html, about.html, contact.html (verified 2026-02-17)
 
-**Remaining Pages (3 core + product pages):**
-- Core: index.html
+**Remaining Pages (product pages — need verification):**
 - Products: coupon-management.html, coupon-marketplace.html, coupon-nfc.html, coupon-marketing.html, coupon-wallet.html, coupon-playbook.html
 
 **Progress Tracking:** See STATUS.md for current i18n implementation status
@@ -630,7 +629,7 @@ The i18n system has **comprehensive documentation** across multiple files. Use t
 | `zh-TW.json` | 1,738 | Traditional Chinese | ✅ Complete |
 | `zh-CN.json` | 1,738 | Simplified Chinese | ✅ Complete |
 
-**Total:** 5,349 lines of translation data across 27 pages (90% coverage)
+**Total:** 5,349 lines of translation data across 28 pages (93% coverage)
 
 ## Development Workflow
 
