@@ -1039,7 +1039,8 @@
             "title": "全球数字优惠券交换中心",
             "description": "唯一支持 B2B、B2C 和 C2C 交易的安全点对点优惠券交换平台。基于代币化技术打造，为数字促销活动建立具防诈保护的二级市场。",
             "listInventory": "刊登您的库存",
-            "exploreMarketplace": "探索市场"
+            "exploreMarketplace": "探索市场",
+            "imageAlt": "优惠券市场平台"
         },
         "exchange": {
             "title": "优惠券交换协议",
@@ -1457,6 +1458,129 @@
             "description": "加入信任 Mezzofy 为其数字优惠券销售提供动力的领先商家行列",
             "contactUs": "立即联系我们",
             "viewDemo": "查看演示"
+        }
+    },
+    "wallet": {
+        "banner": {
+            "text": "Mezzofy 交换协议的一部分",
+            "link": "查看生态系统"
+        },
+        "hero": {
+            "label": "优惠券钱包",
+            "title": "您的数字<span class=\"text-primary-orange\">优惠券</span>钱包",
+            "description": "多平台优惠券收集体验，<span class=\"text-primary-orange font-semibold\">提升兑换率达40%以上</span>。由 Mezzofy 交换协议驱动的跨设备同步与智能管理，提供<span class=\"text-primary-orange font-semibold\">白牌或 API 集成</span>方案。",
+            "getStarted": "立即开始",
+            "exploreFeatures": "探索功能",
+            "imageAlt": "优惠券钱包平台"
+        },
+        "platforms": {
+            "title": "随处可用",
+            "subtitle": "选择最适合您客户的平台。Mezzofy 优惠券钱包支持所有主要平台与设备。",
+            "ios": {
+                "title": "iOS 移动应用",
+                "description": "原生 iPhone 和 iPad 体验，与 Apple Wallet 无缝集成，支持 NFC 标签即时下载优惠券"
+            },
+            "android": {
+                "title": "Android 移动应用",
+                "description": "优化的 Android 体验，集成 Google Pay 并支持 NFC 功能，可轻触下载优惠券"
+            },
+            "web": {
+                "title": "网页应用",
+                "description": "从任何浏览器、任何设备访问您的钱包，无需安装应用"
+            },
+            "nfcCard": {
+                "title": "NFC 实体卡",
+                "description": "附有 QR 码和 NFC 芯片的实体卡，适合偏好实体钱包解决方案的客户"
+            }
+        },
+        "features": {
+            "title": "强大的钱包功能",
+            "organization": {
+                "title": "智能管理",
+                "item1": "有效状态 - 查看可兑换的优惠券",
+                "item2": "兑换记录 - 追踪过去的兑换",
+                "item3": "优惠券历史 - 访问已过期、作废或转让的优惠券",
+                "item4": "智能筛选与搜索功能",
+                "item5": "按到期日自动排序"
+            },
+            "retrieval": {
+                "title": "轻松获取",
+                "item1": "从 Mezzofy 平台即时同步",
+                "item2": "自动更新优惠券",
+                "item3": "实时状态追踪",
+                "item4": "安全的云端存储",
+                "item5": "跨设备同步"
+            },
+            "flexibleIntegration": {
+                "title": "灵活集成",
+                "item1": "白牌定制",
+                "item2": "完整的 API 访问",
+                "item3": "嵌入现有移动应用",
+                "item4": "自定义品牌选项",
+                "item5": "提供 iOS 和 Android SDK"
+            }
+        },
+        "howItWorks": {
+            "title": "简单三步开始",
+            "step1": {
+                "title": "选择平台",
+                "description": "根据客户偏好，从 iOS 应用、Android 应用、网页应用或 NFC 实体卡中选择"
+            },
+            "step2": {
+                "title": "获取优惠券",
+                "description": "通过自动同步，即时访问 Mezzofy 平台上存储的所有优惠券"
+            },
+            "step3": {
+                "title": "管理与兑换",
+                "description": "按状态筛选优惠券（有效、已兑换、历史记录），轻松管理并用一次轻触完成兑换"
+            }
+        },
+        "integration": {
+            "title": "按您的方式集成",
+            "subtitle": "无论您需要完全品牌化的解决方案，还是想将钱包功能集成到现有应用中，我们都能满足您的需求",
+            "whiteLabelTitle": "白牌解决方案",
+            "whiteLabelDescription": "推出您自己品牌的优惠券钱包，完全掌控设计",
+            "whiteLabelItem1": "完全以您的标志和颜色品牌化",
+            "whiteLabelItem2": "自定义域名和应用商店",
+            "whiteLabelItem3": "完全设计控制",
+            "whiteLabelItem4": "包含托管服务",
+            "apiTitle": "API 集成",
+            "apiDescription": "将钱包功能无缝集成到您现有的移动或网页应用中",
+            "apiItem1": "RESTful API 轻松集成",
+            "apiItem2": "完整的开发文档",
+            "apiItem3": "支持 Webhook 实时更新",
+            "apiItem4": "提供 iOS 和 Android SDK"
+        },
+        "nfcCallout": {
+            "title": "NFC 轻触下载",
+            "description": "移动应用用户可与 Mezzofy NFC 标签互动，只需轻触即可即时下载优惠券。无需手动输入 - 只需将手机轻触 NFC 标签，优惠券即自动添加至您的钱包。"
+        },
+        "ecosystem": {
+            "title": "与 Mezzofy 生态系统无缝集成",
+            "description": "优惠券钱包与其他 Mezzofy 产品集成，打造完整解决方案",
+            "nfc": {
+                "title": "+ 优惠券 NFC",
+                "description": "为实体零售提供轻触至钱包功能"
+            },
+            "marketing": {
+                "title": "+ 优惠券营销",
+                "description": "购买的优惠券自动添加至钱包"
+            },
+            "marketplace": {
+                "title": "+ 优惠券市场",
+                "description": "从钱包界面访问市场库存"
+            },
+            "bundle": {
+                "title": "💡 推荐组合：零售卓越套餐",
+                "description": "任何优惠券发行策略的核心客户体验层",
+                "cta": "联系销售了解套餐价格"
+            }
+        },
+        "footerCta": {
+            "title": "准备好推出您的数字钱包了吗？",
+            "description": "加入领先品牌，为您的客户提供无缝的优惠券钱包体验",
+            "getStarted": "立即开始",
+            "requestDemo": "申请演示"
         }
     },
     "articles": {

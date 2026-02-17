@@ -1039,7 +1039,8 @@
             "title": "全球數位優惠券交換中心",
             "description": "唯一支援 B2B、B2C 和 C2C 交易的安全點對點優惠券交換平台。基於代幣化技術打造，為數位促銷活動建立具防詐保護的二級市場。",
             "listInventory": "刊登您的庫存",
-            "exploreMarketplace": "探索市集"
+            "exploreMarketplace": "探索市集",
+            "imageAlt": "優惠券市場平台"
         },
         "exchange": {
             "title": "優惠券交換協定",
@@ -1457,6 +1458,129 @@
             "description": "加入信任 Mezzofy 為其數位優惠券銷售提供動力的領先商家行列",
             "contactUs": "立即聯絡我們",
             "viewDemo": "查看演示"
+        }
+    },
+    "wallet": {
+        "banner": {
+            "text": "Mezzofy 交換協議的一部分",
+            "link": "查看生態系統"
+        },
+        "hero": {
+            "label": "優惠券錢包",
+            "title": "您的數位<span class=\"text-primary-orange\">優惠券</span>錢包",
+            "description": "多平台優惠券收集體驗，<span class=\"text-primary-orange font-semibold\">提升兌換率達40%以上</span>。由 Mezzofy 交換協議驅動的跨設備同步與智慧管理，提供<span class=\"text-primary-orange font-semibold\">白牌或 API 整合</span>方案。",
+            "getStarted": "立即開始",
+            "exploreFeatures": "探索功能",
+            "imageAlt": "優惠券錢包平台"
+        },
+        "platforms": {
+            "title": "隨處可用",
+            "subtitle": "選擇最適合您客戶的平台。Mezzofy 優惠券錢包支援所有主要平台與設備。",
+            "ios": {
+                "title": "iOS 行動應用程式",
+                "description": "原生 iPhone 和 iPad 體驗，與 Apple Wallet 無縫整合，支援 NFC 標籤即時下載優惠券"
+            },
+            "android": {
+                "title": "Android 行動應用程式",
+                "description": "優化的 Android 體驗，整合 Google Pay 並支援 NFC 功能，可輕觸下載優惠券"
+            },
+            "web": {
+                "title": "網頁應用程式",
+                "description": "從任何瀏覽器、任何設備存取您的錢包，無需安裝應用程式"
+            },
+            "nfcCard": {
+                "title": "NFC 實體卡",
+                "description": "附有 QR 碼和 NFC 晶片的實體卡，適合偏好實體錢包解決方案的客戶"
+            }
+        },
+        "features": {
+            "title": "強大的錢包功能",
+            "organization": {
+                "title": "智慧管理",
+                "item1": "有效狀態 - 查看可兌換的優惠券",
+                "item2": "兌換記錄 - 追蹤過去的兌換",
+                "item3": "優惠券歷史 - 存取已過期、作廢或轉讓的優惠券",
+                "item4": "智慧篩選與搜尋功能",
+                "item5": "按到期日自動排序"
+            },
+            "retrieval": {
+                "title": "輕鬆取得",
+                "item1": "從 Mezzofy 平台即時同步",
+                "item2": "自動更新優惠券",
+                "item3": "即時狀態追蹤",
+                "item4": "安全的雲端儲存",
+                "item5": "跨設備同步"
+            },
+            "flexibleIntegration": {
+                "title": "靈活整合",
+                "item1": "白牌自訂",
+                "item2": "完整的 API 存取",
+                "item3": "嵌入現有行動應用程式",
+                "item4": "自訂品牌選項",
+                "item5": "提供 iOS 和 Android SDK"
+            }
+        },
+        "howItWorks": {
+            "title": "簡單三步驟開始",
+            "step1": {
+                "title": "選擇平台",
+                "description": "根據客戶偏好，從 iOS 應用程式、Android 應用程式、網頁應用程式或 NFC 實體卡中選擇"
+            },
+            "step2": {
+                "title": "取得優惠券",
+                "description": "透過自動同步，即時存取 Mezzofy 平台上儲存的所有優惠券"
+            },
+            "step3": {
+                "title": "管理與兌換",
+                "description": "依狀態篩選優惠券（有效、已兌換、歷史記錄），輕鬆管理並用一次輕觸完成兌換"
+            }
+        },
+        "integration": {
+            "title": "按您的方式整合",
+            "subtitle": "無論您需要完全品牌化的解決方案，還是想將錢包功能整合到現有應用程式中，我們都能滿足您的需求",
+            "whiteLabelTitle": "白牌解決方案",
+            "whiteLabelDescription": "推出您自己品牌的優惠券錢包，完全掌控設計",
+            "whiteLabelItem1": "完全以您的標誌和顏色品牌化",
+            "whiteLabelItem2": "自訂域名和應用程式商店",
+            "whiteLabelItem3": "完全設計控制",
+            "whiteLabelItem4": "包含代管服務",
+            "apiTitle": "API 整合",
+            "apiDescription": "將錢包功能無縫整合到您現有的行動或網頁應用程式中",
+            "apiItem1": "RESTful API 輕鬆整合",
+            "apiItem2": "完整的開發文件",
+            "apiItem3": "支援 Webhook 即時更新",
+            "apiItem4": "提供 iOS 和 Android SDK"
+        },
+        "nfcCallout": {
+            "title": "NFC 輕觸下載",
+            "description": "行動應用程式用戶可與 Mezzofy NFC 標籤互動，只需輕觸即可即時下載優惠券。無需手動輸入 - 只需將手機輕觸 NFC 標籤，優惠券即自動添加至您的錢包。"
+        },
+        "ecosystem": {
+            "title": "與 Mezzofy 生態系統無縫整合",
+            "description": "優惠券錢包與其他 Mezzofy 產品整合，打造完整解決方案",
+            "nfc": {
+                "title": "+ 優惠券 NFC",
+                "description": "為實體零售提供輕觸至錢包功能"
+            },
+            "marketing": {
+                "title": "+ 優惠券行銷",
+                "description": "購買的優惠券自動添加至錢包"
+            },
+            "marketplace": {
+                "title": "+ 優惠券市場",
+                "description": "從錢包界面存取市場庫存"
+            },
+            "bundle": {
+                "title": "💡 推薦組合：零售卓越套餐",
+                "description": "任何優惠券發行策略的核心客戶體驗層",
+                "cta": "聯繫銷售了解套餐價格"
+            }
+        },
+        "footerCta": {
+            "title": "準備好推出您的數位錢包了嗎？",
+            "description": "加入領先品牌，為您的客戶提供無縫的優惠券錢包體驗",
+            "getStarted": "立即開始",
+            "requestDemo": "申請演示"
         }
     },
     "articles": {

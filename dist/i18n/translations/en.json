@@ -1053,7 +1053,8 @@
             "title": "THE GLOBAL EXCHANGE HUB FOR DIGITAL COUPONS",
             "description": "The only secure peer-to-peer coupon exchange enabling B2B, B2C, and C2C transactions. Built on tokenization technology to create a secondary market for digital promotions with fraud-proof validation.",
             "listInventory": "List Your Inventory",
-            "exploreMarketplace": "Explore Marketplace"
+            "exploreMarketplace": "Explore Marketplace",
+            "imageAlt": "Coupon Marketplace Platform"
         },
         "exchange": {
             "title": "The Coupon Exchange Protocol",
@@ -1471,6 +1472,129 @@
             "description": "Join leading merchants who trust Mezzofy to power their digital voucher sales",
             "contactUs": "Contact Us Now",
             "viewDemo": "View Demo"
+        }
+    },
+    "wallet": {
+        "banner": {
+            "text": "Part of Mezzofy Exchange Protocol",
+            "link": "View Ecosystem"
+        },
+        "hero": {
+            "label": "COUPON WALLET",
+            "title": "YOUR DIGITAL WALLET FOR <span class=\"text-primary-orange\">COUPONS</span>",
+            "description": "Multi-platform coupon collection experience <span class=\"text-primary-orange font-semibold\">improving redemption rates 40%+</span>. Cross-device sync and smart organization powered by the Mezzofy Exchange Protocol, available as <span class=\"text-primary-orange font-semibold\">white-label or API integration</span>.",
+            "getStarted": "Get Started",
+            "exploreFeatures": "Explore Features",
+            "imageAlt": "Coupon Wallet Platform"
+        },
+        "platforms": {
+            "title": "Available Everywhere You Need It",
+            "subtitle": "Choose the platform that works best for your customers. Mezzofy Coupon Wallet is accessible across all major platforms and devices.",
+            "ios": {
+                "title": "iOS Mobile App",
+                "description": "Native iPhone and iPad experience with seamless Apple Wallet integration and NFC tag support for instant coupon downloads"
+            },
+            "android": {
+                "title": "Android Mobile App",
+                "description": "Optimized Android experience with Google Pay integration and NFC capabilities for tap-to-download coupons"
+            },
+            "web": {
+                "title": "Web Application",
+                "description": "Access your wallet from any browser, any device. No app installation required for your customers"
+            },
+            "nfcCard": {
+                "title": "NFC Physical Card",
+                "description": "Physical card with QR code and NFC chip for customers who prefer tangible wallet solutions"
+            }
+        },
+        "features": {
+            "title": "Powerful Wallet Features",
+            "organization": {
+                "title": "Smart Organization",
+                "item1": "Active Status - View ready-to-redeem coupons",
+                "item2": "Redeemed History - Track past redemptions",
+                "item3": "Coupon History - Access expired, voided, or transferred coupons",
+                "item4": "Smart filtering and search capabilities",
+                "item5": "Automatic sorting by expiration date"
+            },
+            "retrieval": {
+                "title": "Easy Retrieval",
+                "item1": "Instant sync from Mezzofy platform",
+                "item2": "Automatic coupon updates",
+                "item3": "Real-time status tracking",
+                "item4": "Secure cloud storage",
+                "item5": "Cross-device synchronization"
+            },
+            "flexibleIntegration": {
+                "title": "Flexible Integration",
+                "item1": "White-label customization",
+                "item2": "Comprehensive API access",
+                "item3": "Embed in existing mobile apps",
+                "item4": "Custom branding options",
+                "item5": "SDK available for iOS and Android"
+            }
+        },
+        "howItWorks": {
+            "title": "Simple Steps to Start",
+            "step1": {
+                "title": "Choose Platform",
+                "description": "Select from iOS app, Android app, web application, or NFC physical card based on your customer preferences"
+            },
+            "step2": {
+                "title": "Retrieve Coupons",
+                "description": "Instantly access all stored coupons from the Mezzofy platform with automatic synchronization"
+            },
+            "step3": {
+                "title": "Manage & Redeem",
+                "description": "Filter coupons by status (Active, Redeemed, History), organize, and redeem with a simple tap"
+            }
+        },
+        "integration": {
+            "title": "Integration That Works Your Way",
+            "subtitle": "Whether you need a fully branded solution or want to integrate wallet functionality into your existing apps, we have you covered",
+            "whiteLabelTitle": "White-Label Solution",
+            "whiteLabelDescription": "Launch your own branded coupon wallet with complete design control and customization",
+            "whiteLabelItem1": "Fully branded with your logo and colors",
+            "whiteLabelItem2": "Custom domain and app store presence",
+            "whiteLabelItem3": "Complete design control",
+            "whiteLabelItem4": "Managed hosting included",
+            "apiTitle": "API Integration",
+            "apiDescription": "Seamlessly integrate wallet functionality into your existing mobile or web applications",
+            "apiItem1": "RESTful API for easy integration",
+            "apiItem2": "Comprehensive documentation",
+            "apiItem3": "Webhook support for real-time updates",
+            "apiItem4": "SDK available for iOS and Android"
+        },
+        "nfcCallout": {
+            "title": "NFC Tap-to-Download",
+            "description": "Mobile app users can interact with Mezzofy NFC tags to instantly download coupons with a simple tap. No manual input required - just tap your phone to the NFC tag and coupons are added to your wallet automatically."
+        },
+        "ecosystem": {
+            "title": "Works Seamlessly with the Mezzofy Ecosystem",
+            "description": "Coupon Wallet integrates with other Mezzofy products to create a complete solution",
+            "nfc": {
+                "title": "+ Coupon NFC",
+                "description": "Tap-to-wallet functionality for physical retail"
+            },
+            "marketing": {
+                "title": "+ Coupon Marketing",
+                "description": "Purchased vouchers automatically added to wallet"
+            },
+            "marketplace": {
+                "title": "+ Coupon Marketplace",
+                "description": "Access marketplace inventory from wallet interface"
+            },
+            "bundle": {
+                "title": "💡 Recommended Bundle: Retail Excellence Bundle",
+                "description": "Essential customer experience layer for any coupon distribution strategy",
+                "cta": "Contact Sales for Bundle Pricing"
+            }
+        },
+        "footerCta": {
+            "title": "Ready to Launch Your Digital Wallet?",
+            "description": "Join leading brands and provide your customers with a seamless coupon wallet experience",
+            "getStarted": "Get Started Now",
+            "requestDemo": "Request Demo"
         }
     },
     "nfcGuide": {
