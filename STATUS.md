@@ -10,7 +10,7 @@
 
 ## Quick Summary
 
-i18n expansion COMPLETE (Feb 15, 2026). Successfully added internationalization support to 15 pages (1 corporate, 6 blog, 8 news). All pages now support 3 languages (EN, zh-TW, zh-CN) with language selectors and localStorage persistence. Progress: 23/30 pages with full i18n (77%). Remaining: 7 pages need i18n (core/solutions/products).
+i18n expansion COMPLETE (Feb 15, 2026). Successfully added internationalization support to 15 pages (1 corporate, 6 blog, 8 news). All pages now support 3 languages (EN, zh-TW, zh-CN) with language selectors and localStorage persistence. Progress: 25/30 pages with full i18n (83%). Remaining: 5 pages need i18n (index.html, for-merchants, for-developers, coupon-management, coupon-marketplace + 4 other products).
 
 ---
 
@@ -32,6 +32,14 @@ All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to
 ---
 
 ## Recently Completed (Last 7 Days)
+
+**2026-02-17 (about.html + contact.html i18n Verification):**
+- ✅ Verified about.html and contact.html already have complete i18n support → `about.html` + `contact.html` + `i18n/translations/*.json`
+  - Impact: 2 core pages confirmed supporting EN, zh-TW, zh-CN — updates progress to 25/30 (83%)
+  - about.html: 25 translation keys (hero, mission, performance metrics, awards, brands) all verified in 3 JSON files
+  - contact.html: 37 translation keys (hero, contact info, offices, form with 5 dropdown options) all verified in 3 JSON files
+  - Both pages have i18n.js in head, i18n-loading body class, language selectors, and all data-i18n attributes
+  - Progress: 25/30 pages with full i18n (83%) [was 23/30 = 77%]
 
 **2026-02-17 (news-press.html i18n Verification):**
 - ✅ Verified news-press.html has complete i18n support → `news-press.html` + `i18n/translations/*.json`
