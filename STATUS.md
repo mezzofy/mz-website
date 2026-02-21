@@ -33,6 +33,20 @@ All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to
 
 ## Recently Completed (Last 7 Days)
 
+**2026-02-21 (Copyright Year Update — 2024 → 2025):**
+- ✅ Updated copyright year across all pages → `src/i18n/translations/*.json` + `dist/i18n/translations/*.json` (9176859)
+  - Impact: All 31 active pages now display "© 2025 Mezzofy. All rights reserved." in footer
+  - Updated common.footer.copyright in all 3 languages (EN, zh-TW, zh-CN)
+  - Changes: EN: "© 2024" → "© 2025 Mezzofy. All rights reserved."
+  - Changes: zh-TW: "© 2024 Mezzofy. 版權所有。" → "© 2025 Mezzofy. 版權所有。"
+  - Changes: zh-CN: "© 2024 Mezzofy. 版权所有。" → "© 2025 Mezzofy. 版权所有。"
+  - Updated both src/ (source) and dist/ (distribution) translation files
+  - Automatic propagation via i18n system using data-i18n="common.footer.copyright"
+  - Files modified: 6 JSON files (3 in src, 3 in dist)
+  - Backup files created: *.json.2024backup (for rollback if needed)
+  - JSON syntax validated: All 6 files pass validation
+  - Implementation: JSON-only update (no HTML changes needed)
+
 **2026-02-17 (Session 4 — 6 Product Pages i18n Complete):**
 - ✅ Verified and completed i18n for all 6 product pages → `coupon-*.html` + `i18n/translations/*.json`
   - coupon-management.html: 0 missing keys (already complete)
