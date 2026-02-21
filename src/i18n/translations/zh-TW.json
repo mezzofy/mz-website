@@ -1140,164 +1140,236 @@
       "link": "查看生態系統"
     },
     "hero": {
-      "label": "優惠券 NFC",
-      "title": "使用 NFC 技術即時分發優惠券",
-      "description": "無需客戶安裝應用程式即可實現即時點擊下載互動。透過整合到 Mezzofy 交換協定的 NFC 技術，連接實體與數位世界。",
-      "viewPricing": "查看定價",
-      "learnHowItWorks": "了解運作方式",
-      "imageAlt": "NFC 優惠券技術"
+      "label": "NFC 分銷網絡",
+      "title": "透過 Mezzofy NFC 網絡為您的空間賦能",
+      "subtitle": "成為分銷節點，透過點擊啟動的 NFC 技術將商家優惠連接到您的目標受眾",
+      "becomePartner": "成為渠道合作夥伴",
+      "viewPartnerTypes": "查看合作夥伴類型",
+      "imageAlt": "NFC 分銷網絡"
+    },
+    "valueProp": {
+      "title": "為什麼成為 NFC 渠道合作夥伴？",
+      "description": "將您的實體空間轉變為 Mezzofy 交換網絡中的高價值分銷節點",
+      "zeroTech": {
+        "title": "零技術負擔",
+        "description": "Mezzofy 處理所有技術、內容更新和商家庫存管理"
+      },
+      "audience": {
+        "title": "目標受眾價值",
+        "description": "透過高意向商家優惠觸及辦公室員工、購物者或租戶"
+      },
+      "network": {
+        "title": "網絡效應",
+        "description": "每個新商家都讓您的分銷節點對您的受眾更有價值"
+      },
+      "revenue": {
+        "title": "收益機會",
+        "description": "基於績效的收益與成功的商家-消費者連接保持一致"
+      }
+    },
+    "partnerTypes": {
+      "title": "適合每個空間的分銷機會",
+      "description": "為購物中心、企業環境和物業組合設計的 NFC 渠道合作夥伴關係",
+      "malls": {
+        "title": "購物中心營運商",
+        "description": "在入口、導覽目錄、美食街和租戶空間的標籤推動客流並提升購物者體驗",
+        "valueTitle": "提供價值：",
+        "value1": "透過商家優惠推動客流",
+        "value2": "租戶增值服務",
+        "value3": "兌換分析與洞察"
+      },
+      "corporate": {
+        "title": "企業人力資源與福利",
+        "description": "辦公室大廳、茶水間和電梯區域的標籤為員工提供福利，無需履行負擔",
+        "valueTitle": "提供價值：",
+        "value1": "零成本員工福利計劃",
+        "value2": "高意向專業受眾",
+        "value3": "人力資源指標的參與追蹤"
+      },
+      "property": {
+        "title": "物業開發商",
+        "description": "跨物業組合的可擴展部署創造租戶便利價值和差異化",
+        "valueTitle": "提供價值：",
+        "value1": "多地點推廣潛力",
+        "value2": "租戶吸引與留存工具",
+        "value3": "物業差異化便利設施"
+      }
     },
     "howItWorks": {
-      "title": "運作方式",
+      "title": "渠道合作夥伴如何啟動分銷節點",
+      "subtitle": "從合作夥伴入駐到即時消費者參與的五個簡單步驟",
       "step1": {
-        "title": "配置",
-        "description": "Mezzofy 將您的優惠券詳細資訊配置到 NFC 標籤上"
+        "title": "合作夥伴入駐",
+        "description": "簡單的設定流程，Mezzofy 為您的空間配置 NFC 標籤"
       },
       "step2": {
-        "title": "配送",
-        "description": "實體 NFC 標籤直接配送到您的企業"
+        "title": "標籤部署",
+        "description": "在高流量區域（大廳、入口、茶水間）進行策略性放置"
       },
       "step3": {
-        "title": "展示",
-        "description": "將標籤放置在店內戰略位置以獲得最大曝光"
+        "title": "商家流通",
+        "description": "Mezzofy 交換平台的任何商家都可以出現在您的標籤上"
       },
       "step4": {
-        "title": "點擊",
-        "description": "客戶用手機點擊 NFC 標籤"
+        "title": "消費者參與",
+        "description": "用戶點擊收集優惠直接到他們的行動錢包"
       },
       "step5": {
-        "title": "兌換",
-        "description": "優惠券即時接收並準備兌換"
+        "title": "網絡成長",
+        "description": "更多兌換產生數據，吸引更多商家"
       }
     },
-    "features": {
-      "title": "強大功能",
-      "fraudPrevention": {
-        "title": "防詐欺",
-        "description": "每張優惠券都有獨特的非序列化編號，確保最大安全性"
+    "networkEffect": {
+      "title": "分銷網絡飛輪",
+      "subtitle": "每個新渠道合作夥伴都讓整個網絡對商家和消費者更有價值",
+      "step1": {
+        "title": "更多渠道節點",
+        "description": "更多購物中心、辦公室和物業加入分銷網絡"
       },
-      "simpleSetup": {
-        "title": "簡易設定",
-        "description": "透過直觀介面即時建立和修改優惠券"
+      "step2": {
+        "title": "商家更多分銷",
+        "description": "更廣泛的觸及吸引更多優質商家加入交換平台"
       },
-      "analytics": {
-        "title": "分析",
-        "description": "完整的使用追蹤和促銷洞察，支援數據驅動決策"
+      "step3": {
+        "title": "更多消費者參與",
+        "description": "更好的商家優惠推動更高的點擊和兌換率"
       },
-      "integration": {
-        "title": "整合",
-        "description": "開放 API 相容您現有的系統和工作流程"
+      "step4": {
+        "title": "更好的數據與定向",
+        "description": "更多兌換產生改善定向的智能"
       },
-      "pricing": {
-        "title": "透明定價",
-        "description": "單一訂閱費用涵蓋設定，無隱藏費用"
-      },
-      "multiChannel": {
-        "title": "多通路分銷",
-        "description": "將優惠擴展到單一地點以外的多個通路"
-      },
-      "formatVariety": {
-        "title": "格式多樣性",
-        "description": "多種優惠券類型，包括折扣和遊戲化選項"
-      },
-      "noApp": {
-        "title": "無需應用程式",
-        "description": "優惠券直接儲存到行動錢包，方便客戶使用"
+      "step5": {
+        "title": "更高的兌換率",
+        "description": "更智能的定向吸引更多商家（循環重複）"
       }
     },
-    "pricing": {
-      "title": "簡單定價方案",
-      "subtitle": "選擇適合您業務需求的方案",
-      "monthly": {
-        "title": "月度方案",
-        "price": "$79",
-        "period": "/月",
-        "item1": "每月 3,000 張優惠券",
-        "item2": "包含一個 NFC 標籤",
-        "item3": "透過電子郵件提供基本支援",
-        "item4": "即時分析儀表板",
-        "item5": "行動錢包整合",
-        "cta": "開始使用"
+    "pilots": {
+      "title": "啟動試點機會可用",
+      "subtitle": "與 Mezzofy 在經過驗證的企業合作夥伴上進行策略性試點部署",
+      "corporate": {
+        "title": "一級全球銀行（人力資源試點）",
+        "description": "跨多個辦公地點的內部員工福利 NFC 部署。與擔任渠道合作夥伴和需求買家的全球銀行試點。",
+        "benefit1": "目標專業受眾",
+        "benefit2": "企業級案例研究",
+        "benefit3": "多市場擴展潛力"
       },
-      "annual": {
-        "badge": "最佳價值",
-        "title": "年度方案",
-        "price": "$799",
-        "period": "/年",
-        "savings": "年度計費節省 15%",
-        "item1": "每年 36,000 張優惠券",
-        "item2": "包含五個 NFC 標籤",
-        "item3": "優先支援及擴展協助",
-        "item4": "進階分析與報告",
-        "item5": "專屬設定協助",
-        "cta": "開始使用"
+      "malls": {
+        "title": "中型購物中心營運商",
+        "description": "更快的決策週期、更具實驗性的思維、強大的案例研究潛力，可擴展到更大的房地產投資信託基金合作夥伴。",
+        "benefit1": "快速部署與迭代",
+        "benefit2": "租戶與購物者參與數據",
+        "benefit3": "房地產投資信託基金合作夥伴關係途徑"
       }
+    },
+    "partnershipModel": {
+      "title": "靈活的合作夥伴關係條款",
+      "subtitle": "基於績效的模式保持一致的激勵，而非預付訂閱",
+      "performance": {
+        "title": "基於績效",
+        "description": "透過您的分銷節點成功兌換的交易費用",
+        "item1": "僅支付實際兌換費用",
+        "item2": "無預付成本",
+        "item3": "提供批量折扣"
+      },
+      "revenueShare": {
+        "badge": "熱門",
+        "title": "收益分成",
+        "description": "從流經您網絡的兌換中的商家付款中獲利",
+        "item1": "被動收益流",
+        "item2": "一致的激勵",
+        "item3": "每月結算"
+      },
+      "custom": {
+        "title": "定制部署",
+        "description": "為大型物業組合和多地點合作夥伴量身定制條款",
+        "item1": "訂制合約條款",
+        "item2": "專屬客戶經理",
+        "item3": "白標選項"
+      },
+      "note": "無月度訂閱。無預付庫存成本。您的收益隨著網絡成長而成長。",
+      "cta": "討論合作夥伴關係條款"
     },
     "caseStudy": {
-      "title": "成功案例",
-      "company": "連鎖超市",
-      "industry": "零售業",
-      "description": "一家領先的連鎖超市在 200 多個門市成功實施了 Mezzofy 的 NFC 優惠券解決方案，徹底革新了他們的促銷分銷策略。",
+      "title": "渠道合作夥伴成功案例",
+      "company": "領先的購物中心營運商",
+      "industry": "零售物業管理",
+      "description": "一家區域性購物中心營運商啟動了 50 多個地點作為 NFC 分銷節點，將商家優惠大規模連接到購物者，並推動可衡量的客流增長。",
       "metrics": {
-        "stores": {
-          "value": "200+",
-          "label": "門市地點"
+        "locations": {
+          "value": "50+",
+          "label": "分銷節點"
         },
-        "engagement": {
-          "value": "85%",
-          "label": "客戶參與度"
+        "merchants": {
+          "value": "120+",
+          "label": "商家啟動"
         },
-        "redemption": {
-          "value": "3x",
-          "label": "兌換率"
+        "traffic": {
+          "value": "+18%",
+          "label": "客流增長"
         }
       }
     },
     "faq": {
       "title": "常見問題",
       "q1": {
-        "question": "帳戶啟用需要多長時間？",
-        "answer": "帳戶啟用通常在註冊後 24-48 小時內完成。啟用後，您可以立即開始透過 NFC 標籤建立和分發優惠券。"
+        "question": "作為渠道合作夥伴，我的技術義務是什麼？",
+        "answer": "零。Mezzofy 處理所有技術基礎設施、商家庫存管理、標籤配置和內容更新。您只需在空間中部署實體標籤。"
       },
       "q2": {
-        "question": "優惠券如何計算？",
-        "answer": "每個分發給客戶的獨特優惠券實例都會計入您的月度或年度限額。同一客戶對同一優惠券的多次點擊只計算一次。"
+        "question": "我如何控制標籤上出現哪些商家優惠？",
+        "answer": "渠道合作夥伴可以設定地理、類別和價值層級過濾器。Mezzofy 的路由引擎自動將最相關的商家庫存匹配到您的受眾人口統計和位置。"
       },
       "q3": {
-        "question": "分發後可以修改優惠嗎？",
-        "answer": "可以！我們的平台允許即時修改活動。您可以隨時透過儀表板更新優惠條款、延長到期日、作廢優惠券或調整目標參數。"
+        "question": "如果商家離開網絡會怎樣？",
+        "answer": "您的標籤保持完全運作。Mezzofy 交換平台自動路由新商家庫存以替換任何離開的商家。分銷節點保持活躍並對您的受眾有價值。"
       },
       "q4": {
-        "question": "如果超過優惠券限額會怎樣？",
-        "answer": "當您接近優惠券限額時，我們會提前通知您。您可以升級到更高的方案或購買額外的優惠券配額。服務不會中斷 - 超額使用按具競爭力的每張優惠券費率計費。"
+        "question": "我可以多快啟動試點部署？",
+        "answer": "入駐通常從最初討論到即時部署需要 1-2 週。對於策略合作夥伴（企業人力資源、中型購物中心），我們快速追蹤至 5-7 個工作日，並提供專屬實施支援。"
       }
     },
     "ecosystem": {
-      "title": "與 Mezzofy 生態系統無縫協作",
-      "description": "優惠券 NFC 與其他 Mezzofy 產品整合，打造完整解決方案",
-      "management": {
-        "title": "+ 優惠券管理",
-        "description": "建立和管理透過 NFC 標籤分發的優惠券"
+      "title": "接入完整的 Mezzofy 交換生態系統",
+      "description": "渠道合作夥伴連接到完整的商家到消費者基礎設施",
+      "marketplace": {
+        "title": "+ 優惠券市場",
+        "description": "存取流經您分銷節點的經過驗證的商家庫存"
       },
       "wallet": {
         "title": "+ 優惠券錢包",
-        "description": "將透過 NFC 獲取的優惠券儲存在客戶錢包中"
+        "description": "消費者在行動錢包中收集 NFC 分發的優惠券"
       },
-      "playbook": {
-        "title": "+ 優惠券手冊",
-        "description": "學習店內 NFC 活動的最佳實踐"
+      "management": {
+        "title": "+ 優惠券管理",
+        "description": "商家創建透過合作夥伴網絡分發的優惠"
       },
       "bundle": {
-        "title": "💡 推薦套裝：零售卓越套裝",
-        "description": "非常適合實體零售商：管理 + NFC + 錢包打造從店內到行動裝置的無縫體驗",
-        "cta": "聯絡銷售了解套裝定價"
+        "title": "渠道合作夥伴分銷套裝",
+        "description": "NFC 分銷網絡 + 市場存取 + 結算基礎設施創建完整的渠道合作夥伴解決方案",
+        "cta": "討論渠道合作夥伴條款"
       }
     },
     "footerCta": {
-      "title": "準備好推出您的 NFC 優惠券活動了嗎？",
-      "description": "加入領先的零售商行列，立即開始透過點擊啟動的優惠券與客戶互動",
-      "startTrial": "開始免費試用",
-      "contactSales": "聯絡銷售"
+      "title": "準備好成為分銷合作夥伴了嗎？",
+      "description": "加入在亞太地區推動商家到消費者優惠券分銷的網絡",
+      "becomePartner": "安排合作夥伴討論"
+    },
+    "contact": {
+      "heading": "開始成為渠道合作夥伴",
+      "description": "聯繫我們的合作夥伴團隊討論 NFC 分銷網絡機會",
+      "firstName": "名字",
+      "lastName": "姓氏",
+      "email": "業務電子郵件",
+      "company": "公司名稱",
+      "partnerType": "合作夥伴類型",
+      "selectPartnerType": "選擇您的合作夥伴類型",
+      "typeMall": "購物中心營運商 / 物業開發商",
+      "typeCorporate": "企業人力資源 / 員工福利",
+      "typeProperty": "物業房地產投資信託基金 / 多地點",
+      "typeOther": "其他",
+      "message": "訊息",
+      "messagePlaceholder": "告訴我們您的分銷合作夥伴關係目標...",
+      "submit": "請求合作夥伴關係討論"
     }
   },
   "marketing": {
