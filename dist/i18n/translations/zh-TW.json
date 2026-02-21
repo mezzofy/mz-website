@@ -55,7 +55,7 @@
         "news": "新聞與媒體",
         "investors": "投資者"
       },
-      "copyright": "© 2024 Mezzofy. 版權所有。"
+      "copyright": "© 2025 Mezzofy. 版權所有。"
     },
     "buttons": {
       "getStarted": "開始使用",
@@ -83,9 +83,9 @@
   },
   "home": {
     "hero": {
-      "title": "全球數位促銷交易所",
-      "subtitle": "從銷售軟體轉型為驅動全球數位商務基礎設施",
-      "description": "Mezzofy 是安全的代幣化協議，直接連結優惠券<strong>供應方</strong>（商家）與<strong>需求方</strong>（分銷商），確保全球範圍內的無欺詐驗證和最大化兌換率。",
+      "title": "電子票券<span class=\"text-primary-orange\">智能交換</span>平台",
+      "subtitle": "以安全、代幣化的數位商務，連結商家與經銷商",
+      "description": "Mezzofy 是 AI 驅動的代幣化協議，讓電子票券的供需直接對接，實現全球範圍內的防詐驗證與兌換率最大化。",
       "ctaMerchants": "列出您的庫存：開始銷售",
       "ctaDistributors": "取得優惠：尋找合作夥伴"
     },
@@ -110,24 +110,24 @@
       "description": "我們的交易協議為完整的產品套件提供動力，旨在在整個優惠券生命週期中執行我們的基礎設施願景",
       "diagram": "[視覺圖表：產品生態系統層級，顯示核心基礎設施 → 分銷渠道 → 消費者體驗 → 策略之間的關係]",
       "coreInfra": {
-        "title": "🏗️ 核心基礎設施",
+        "title": "核心基礎設施",
         "description": "創建和交換優惠券的基礎產品",
         "item1": "後端營運",
         "item2": "交易層"
       },
       "distribution": {
-        "title": "📡 分銷渠道",
+        "title": "分銷渠道",
         "description": "多渠道優惠券分銷選項",
         "item1": "實體零售接觸點",
         "item2": "電子商務銷售"
       },
       "consumer": {
-        "title": "👥 消費者體驗",
+        "title": "消費者體驗",
         "description": "面向客戶的優惠券收集",
         "item1": "多平台訪問"
       },
       "strategy": {
-        "title": "🎯 策略與賦能",
+        "title": "策略與賦能",
         "description": "戰略指導和最佳實踐",
         "item1": "生命週期框架"
       },
@@ -1879,6 +1879,141 @@
           "milestone": "這一里程碑代表著亞太區促銷營銷數碼轉型的重大成就。平台在保持效率和環保性的同時處理如此大規模的能力，為行業樹立了新標準。"
         }
       }
+    }
+  },
+  "support": {
+    "status": {
+      "label": "平台狀態：",
+      "operational": "運營正常",
+      "viewLive": "查看即時狀態"
+    },
+    "hero": {
+      "title": "我們全天候為您提供協助",
+      "subtitle": "為 Mezzofy 平台上的商家、分銷商、合作夥伴及終端用戶提供專屬支援服務。",
+      "ctaMerchant": "商家入口",
+      "ctaPartner": "合作夥伴入口"
+    },
+    "reach": {
+      "title": "如何聯繫我們",
+      "description": "根據您在 Mezzofy 平台的角色，選擇最適合的支援渠道。",
+      "merchant": {
+        "badge": "適用於商家",
+        "title": "商家入口",
+        "desc": "供應方客戶可透過商家入口直接提交及追蹤支援請求，包括工單管理及文件查閱。",
+        "cta": "進入商家入口"
+      },
+      "partner": {
+        "badge": "適用於合作夥伴",
+        "title": "合作夥伴入口",
+        "desc": "需求方合作夥伴及經銷商可透過合作夥伴入口管理支援請求、查閱 SLA 及升級問題。",
+        "cta": "進入合作夥伴入口"
+      },
+      "email": {
+        "title": "電郵支援",
+        "desc": "適用於需要優惠券兌換、錢包問題或一般查詢協助的消費者及終端用戶。",
+        "address": "support@mezzofy.com",
+        "cta": "發送電郵"
+      }
+    },
+    "audience": {
+      "title": "按用戶類型提供支援",
+      "description": "根據用戶類型整理的常見問題及處理方式。",
+      "supply": {
+        "title": "供應方客戶（商家）",
+        "issue1": "優惠券未啟用或顯示不正確",
+        "issue2": "NFC 標籤設定及配置問題",
+        "issue3": "兌換數據差異或報告錯誤",
+        "issue4": "API 整合失敗或 Webhook 錯誤",
+        "issue5": "帳單及訂閱查詢",
+        "note": "提交工單前，請先檢查您的門店網絡及設備配置。"
+      },
+      "demand": {
+        "title": "需求方客戶（經銷商及合作夥伴）",
+        "issue1": "市場平台存取或庫存同步問題",
+        "issue2": "Bridge API 驗證或頻率限制錯誤",
+        "issue3": "錢包白標配置問題",
+        "issue4": "合作夥伴帳單及合約查詢"
+      },
+      "partners": {
+        "title": "終端用戶及消費者",
+        "issue1": "結帳時優惠券未能套用",
+        "issue2": "錢包應用程式登入或同步問題",
+        "issue3": "銷售點 NFC 輕觸未被識別",
+        "issue4": "優惠券已過期或條款與預期不符"
+      }
+    },
+    "sla": {
+      "title": "服務等級協議（SLA）",
+      "description": "我們對各支援層級的響應及解決時間的承諾。",
+      "hosting": "託管於 AWS（新加坡地區）— 99.9% 正常運行時間 SLA",
+      "col": {
+        "severity": "嚴重程度",
+        "definition": "定義",
+        "response": "響應時間",
+        "resolution": "解決時間",
+        "hours": "支援時間"
+      },
+      "disclaimer": "SLA 計時從工單確認起開始計算。解決時間為目標，並非保證，涉及第三方的問題可能有所差異。支援時間以新加坡時間（SGT，UTC+8）為準。"
+    },
+    "process": {
+      "title": "工單流程",
+      "description": "提交支援請求後的處理流程。",
+      "step1": {
+        "title": "提交",
+        "desc": "透過商家入口、合作夥伴入口或電郵提交請求，請附上您的帳戶 ID、清晰描述及相關截圖或日誌。"
+      },
+      "step2": {
+        "title": "確認",
+        "desc": "我們的團隊將在 SLA 響應時間內確認您的工單，並分配案例參考編號供追蹤使用。"
+      },
+      "step3": {
+        "title": "調查及更新",
+        "desc": "我們的工程師調查問題並定期提供更新，每次狀態變更時將透過電郵或入口通知通知您。"
+      },
+      "step4": {
+        "title": "解決",
+        "desc": "問題解決後，我們將提供完整的解決摘要並與您確認關閉。若問題在 7 天內重現，您可重新開啟工單。"
+      }
+    },
+    "escalation": {
+      "title": "仍需幫助？請直接聯繫我們。",
+      "support": {
+        "label": "一般支援",
+        "email": "support@mezzofy.com"
+      },
+      "tech": {
+        "label": "技術支援",
+        "email": "kris@mezzofy.com"
+      },
+      "ops": {
+        "label": "運營支援",
+        "email": "maverick@mezzofy.com"
+      }
+    },
+    "aiChat": {
+      "buttonLabel": "詢問 Mezzofy AI",
+      "title": "Mezzofy 支援助理",
+      "subtitle": "獲取常見問題的即時解答或提交支援工單。",
+      "placeholder": "輸入您的問題...",
+      "send": "發送",
+      "merchantLink": "透過商家入口提交 →",
+      "partnerLink": "透過合作夥伴入口提交 →"
+    },
+    "footerCta": {
+      "title": "準備好獲取支援了嗎？",
+      "description": "我們的團隊全天候 24/7 為您提供服務，協助您解決 Mezzofy 平台上的任何問題。",
+      "contactUs": "聯絡支援",
+      "viewDocs": "查看文件"
+    }
+  },
+  "notFound": {
+    "hero": {
+      "title": "找不到頁面",
+      "description": "抱歉，您要找的頁面不存在或已移至其他位置，讓我們幫您回到正軌。"
+    },
+    "cta": {
+      "home": "返回首頁",
+      "support": "聯絡支援"
     }
   }
 }
