@@ -454,6 +454,27 @@
                 "link": "Read More →"
             }
         },
+        "marketOpportunity": {
+            "title": "Market Opportunity",
+            "subtitle": "The digital coupon and loyalty market represents a massive, rapidly growing opportunity with significant inefficiencies to solve.",
+            "source": "Source: Industry Reports 2024",
+            "card1": {
+                "title": "Global Market Size",
+                "description": "Digital coupon redemption market value in 2024, driven by mobile-first consumer behavior and retail digital transformation."
+            },
+            "card2": {
+                "title": "Market Growth Rate",
+                "description": "Projected compound annual growth rate (CAGR) from 2024-2029, fueled by e-commerce expansion and personalization demand."
+            },
+            "card3": {
+                "title": "Total Addressable Market",
+                "description": "Global loyalty and rewards program market, representing the full opportunity for digital coupon infrastructure and exchange protocols."
+            },
+            "card4": {
+                "title": "Annual Fraud Losses",
+                "description": "Global losses from coupon fraud, counterfeit redemptions, and promotional abuse—a critical problem our blockchain-secured protocol solves."
+            }
+        },
         "whyInvest": {
             "title": "Why Invest in Mezzofy?",
             "highlight1": {
