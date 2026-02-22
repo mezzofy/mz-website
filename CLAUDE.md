@@ -47,6 +47,67 @@ npm run build
 
 **CRITICAL:** Always run `npm run build` after editing HTML or CSS files. JavaScript changes don't require a rebuild.
 
+---
+
+## MCP Server Configuration
+
+The project uses the **Shadcn MCP server** for UI component integration with Claude Code.
+
+### Configuration File
+
+**Location:** `.mcp.json` (project root)
+
+**Windows-Compatible Configuration:**
+```json
+{
+  "mcpServers": {
+    "shadcn": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "shadcn@latest",
+        "mcp"
+      ]
+    }
+  }
+}
+```
+
+**Why Windows requires `cmd /c`:**
+- Windows cannot execute `npx` directly as a command
+- `cmd` is the Windows command interpreter
+- `/c` flag tells cmd to execute the command and terminate
+- This wrapper is required for npm executables on Windows
+
+### Troubleshooting MCP Server Issues
+
+**Common issues:**
+
+1. **Shadcn MCP server not loading**
+   - Check MCP diagnostics in Claude Code for warnings
+   - Verify `.claude/settings.local.json` has `enableAllProjectMcpServers: true`
+   - Reload Claude Code window after config changes
+
+2. **"Command not found" errors**
+   - Verify Node.js and npm are installed: `node --version` and `npm --version`
+   - Ensure npx is available: `npx --version`
+   - Check PATH environment variable includes npm global bin
+
+3. **Cross-platform considerations**
+   - Current config is Windows-specific (`cmd /c`)
+   - For Unix/Linux/macOS, use: `"command": "npx", "args": ["shadcn@latest", "mcp"]`
+   - Consider OS-specific wrapper scripts if cross-platform support needed
+
+**Verification:**
+- ✅ No warnings in Claude Code MCP diagnostics
+- ✅ Shadcn MCP server shows as "running" in diagnostics
+- ✅ No errors in Claude Code output panel
+
+**Reference:** [MCP Documentation](https://code.claude.com/docs/en/mcp)
+
+---
+
 ## Project Architecture
 
 ### File Structure

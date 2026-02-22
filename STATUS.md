@@ -1,37 +1,80 @@
 # Project Status: mz-website
 
-**Last Updated:** 2026-02-17
+**Last Updated:** 2026-02-22
 **Current Phase:** i18n Complete ✅
-**Overall Progress:** ~98% (Base features complete, i18n 100% complete, critical i18n bug fixed)
+**Overall Progress:** ~98% (Base features complete, i18n 100% complete, MCP server configuration fixed)
 **Branch:** main
-**Latest Commit:** (Session 4 — see recently completed)
+**Latest Commit:** (MCP Server Configuration Fix — see recently completed)
 
 ---
 
 ## Quick Summary
 
-i18n implementation COMPLETE (Feb 17, 2026). All 30/30 pages now support 3 languages (EN, zh-TW, zh-CN) with language selectors and localStorage persistence. Session 4 completed: verified 4 product pages already had full i18n, fixed coupon-marketplace.html (1 missing key), and implemented full i18n for coupon-wallet.html (120 translation keys added). Website is now 100% multilingual.
+i18n implementation COMPLETE (Feb 17, 2026). All 30/30 pages now support 3 languages (EN, zh-TW, zh-CN) with language selectors and localStorage persistence. MCP server configuration fixed for Windows compatibility (Feb 22, 2026). Website is now 100% multilingual with proper development tooling.
 
 ---
 
 ## Current Phase
 
-**Phase:** i18n Implementation
-**Start Date:** 2026-02-15
-**Completion Date:** 2026-02-15 (same day)
-**Progress:** 3/3 phases complete (100%)
+**Phase:** Maintenance & Tooling
+**Start Date:** 2026-02-22
+**Progress:** Ongoing
 
 ### Objectives
-- [x] **Phase 1:** Migrate NFC User Guide to standard i18n (COMPLETE)
-- [x] **Phase 2:** Add i18n to 6 blog articles (COMPLETE)
-- [x] **Phase 3:** Add i18n to 8 news articles (COMPLETE)
+- [x] **MCP Server Configuration:** Fix Windows compatibility issue (COMPLETE)
+- [ ] **Security:** Address XSS vulnerability in i18n.js (PENDING)
+- [ ] **Deployment:** AWS S3 + CloudFront setup (PENDING)
 
 ### Status
-All 3 phases successfully completed! Migrated NFC User Guide from custom i18n to standard system, then added full i18n support to all 6 blog articles and all 8 news articles. All pages now support 3 languages (EN, zh-TW, zh-CN) with language selectors and localStorage persistence. Progress: 23/30 pages with full i18n (77%).
+MCP server configuration fixed for Windows. Shadcn MCP server now loads correctly using `cmd /c npx` wrapper. Documentation updated in CLAUDE.md with troubleshooting guide.
 
 ---
 
 ## Recently Completed (Last 7 Days)
+
+**2026-02-22 (MCP Server Configuration Fix — Windows Compatibility):**
+- ✅ Fixed Shadcn MCP server configuration for Windows → `.mcp.json`
+  - Impact: Claude Code can now access Shadcn UI component tools on Windows
+  - Changed command from `npx` (Unix-only) to `cmd /c npx` (Windows-compatible)
+  - Root cause: Windows cannot execute npm executables directly without command wrapper
+  - Added comprehensive MCP server documentation to CLAUDE.md
+  - Includes: Configuration guide, troubleshooting steps, cross-platform notes
+  - Risk: Low (single file change, non-breaking, easy to revert)
+  - Verification: MCP diagnostics should show no warnings for Shadcn server
+  - Files modified: `.mcp.json` (config), `CLAUDE.md` (documentation)
+  - Reference: https://code.claude.com/docs/en/mcp
+
+**2026-02-21 (NFC Page Strategic Pivot — Channel Partner Rewrite + Hero Standardization):**
+- ✅ **HERO SECTION STANDARDIZATION:** Changed coupon-nfc.html hero from Pattern 1 (text-centered) to Pattern 2 (grid-based with image) → `dist/coupon-nfc.html`
+  - Impact: NFC product page now matches standard product page design (same as coupon-management, coupon-marketplace, coupon-marketing, coupon-wallet)
+  - Changed `pt-32` → `pt-6` (Protocol Context Banner above hero)
+  - Removed `text-center` from hero container (content now left-aligned)
+  - Added grid layout: `grid md:grid-cols-2 gap-12 items-center`
+  - Added hero image column: `https://placehold.co/600x400/1a1a1a/ff7a3d?text=NFC+Distribution+Network`
+  - Added `nfc.hero.imageAlt` translation key to all 6 JSON files (dist + src, EN/zh-TW/zh-CN)
+  - Synced entire NFC section from dist to src JSON files (237 lines replaced 166 old merchant-focused lines)
+- ✅ Rewrote coupon-nfc.html to align with strategic pivot from SaaS to B2B channel partner model → `dist/coupon-nfc.html` + `dist/i18n/translations/en.json`
+  - Impact: NFC page now targets channel partners (malls, corporate HR, property developers) instead of individual merchants
+  - **REMOVED:** All pricing sections ($79/month, $799/year SaaS subscriptions) — 107 lines deleted
+  - **REMOVED:** Merchant-focused features section (8 feature items) — 113 lines deleted
+  - **ADDED:** Value Proposition section (4 partner benefits: zero tech burden, captive audience, network effect, revenue opportunity)
+  - **ADDED:** Partner Types section (Mall Operators, Corporate HR & Benefits, Property Developers with specific value propositions)
+  - **ADDED:** Network Effect section (5-step distribution flywheel explaining compounding network value)
+  - **ADDED:** Pilot Opportunities section (Standard Chartered Bank HR pilot, mid-size mall operators)
+  - **ADDED:** Partnership Model section (performance-based, revenue share, custom deployment — replaces pricing)
+  - **ADDED:** Contact form with partner type dropdown (mall/corporate/property/other)
+  - **REVISED:** Hero section — "Power Your Spaces with the Mezzofy NFC Network" (was "Instant Coupon Distribution")
+  - **REVISED:** How It Works — Partner POV (Partner Onboards → Tags Deployed → Merchants Flow Through → Consumers Engage → Network Grows)
+  - **REVISED:** Case Study — Leading Mall Operator (50+ nodes, 120+ merchants, +18% traffic) instead of Supermarket Chain
+  - **REVISED:** FAQ — 4 partner-focused questions (tech obligations, merchant control, churn handling, launch timing)
+  - **REVISED:** Ecosystem section — "Plug into Full Exchange Ecosystem" with channel partner framing
+  - **REVISED:** Footer CTA — "Ready to Become a Distribution Partner?" (was "Launch Your NFC Campaign")
+  - Translations: English (dist/en.json) complete with 38 new keys, 5 modified keys, 27 deprecated keys removed
+  - Remaining: Chinese translations (zh-TW, zh-CN) pending for both dist/ and src/ directories
+  - Strategic Alignment: Page now aligns with Mezzofy_Pivot_Strategy_v3.md (stop selling $79/month subscriptions, reposition NFC as distribution network)
+  - Documentation: Created NFC-PAGE-REWRITE-SUMMARY.md (comprehensive implementation summary with testing checklist)
+  - Files modified: `dist/coupon-nfc.html` (HTML complete), `dist/i18n/translations/en.json` (English translations complete)
+  - Files pending: 5 translation files (zh-TW and zh-CN in both dist/ and src/, plus src/en.json sync)
 
 **2026-02-21 (Copyright Year Update — 2024 → 2025):**
 - ✅ Updated copyright year across all pages → `src/i18n/translations/*.json` + `dist/i18n/translations/*.json` (9176859)
