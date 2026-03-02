@@ -10,6 +10,7 @@
       "merchantSolution": "我是商家",
       "distributorSolution": "我是分銷商",
       "developerSolution": "我是開發者",
+      "aiCommerceSolution": "AI 電商",
       "managementSystem": "優惠券管理系統",
       "marketplace": "優惠券市場",
       "nfc": "優惠券 NFC",
@@ -31,6 +32,7 @@
         "merchants": "商家方案",
         "distributors": "分銷商方案",
         "developers": "開發者方案",
+        "aiCommerce": "AI 電商方案",
         "ecosystem": "產品生態系統"
       },
       "products": {
