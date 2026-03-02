@@ -21,7 +21,9 @@
       "Bash(do echo \"Checking: $key\")",
       "Bash(done)",
       "Bash(node check-keys.js:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "WebFetch(domain:mezzofy.github.io)",
+      "Bash(git fetch:*)"
     ],
     "deny": [],
     "ask": []
