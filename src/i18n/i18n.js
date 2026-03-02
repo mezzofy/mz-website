@@ -1,4 +1,12 @@
 // i18n.js - Core internationalization library for Mezzofy
+
+// Resolve translation files relative to this script's actual URL so the
+// site works from any subpath (e.g., GitHub Pages /mz-website/, local dev, etc.)
+const _i18nTranslationsUrl = (() => {
+  const s = document.currentScript;
+  return s ? s.src.replace(/\/i18n\.js(\?.*)?$/, '/translations/') : '/i18n/translations/';
+})();
+
 class I18n {
   constructor() {
     this.currentLang = 'en';
@@ -39,9 +47,8 @@ class I18n {
   // Load translation JSON file
   async loadTranslations(lang) {
     try {
-      // Use absolute path from site root to work for pages in subdirectories
-      // (e.g., /blog/, /news/) as well as root-level pages
-      const response = await fetch(`/i18n/translations/${lang}.json`);
+      // Use script-relative path so this works on any subpath (GitHub Pages, local dev, etc.)
+      const response = await fetch(`${_i18nTranslationsUrl}${lang}.json`);
       if (!response.ok) {
         throw new Error(`Failed to load ${lang}.json`);
       }
