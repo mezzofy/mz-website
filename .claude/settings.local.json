@@ -28,7 +28,8 @@
       "WebFetch(domain:mezzofy.com)",
       "Bash(copy \"C:\\\\Mezzofy\\\\resources\\\\website\\\\coupon-exchange-hub-placeholder.png\" \"C:\\\\Mezzofy\\\\workspace\\\\mz-website\\\\dist\\\\assets\\\\images\\\\marketplace-hero.png\")",
       "Bash(timeout:*)",
-      "Bash(git rm:*)"
+      "Bash(git rm:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []
