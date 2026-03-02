@@ -1590,5 +1590,128 @@
       "message": "消息",
       "submit": "申请 AI 电商访问权限"
     }
+  },
+  "wallet": {
+    "banner": {
+      "protocol": "Mezzofy 交易所协议的一部分",
+      "viewEcosystem": "查看生态系统"
+    },
+    "hero": {
+      "badge": "优惠券钱包",
+      "title": "您的数字优惠券钱包",
+      "subtitle": "多平台优惠券收集体验，提升兑换率 40% 以上。跨设备同步和智能管理，由 Mezzofy 交易所协议驱动，可作白标或 API 集成。",
+      "getStarted": "立即开始",
+      "exploreFeatures": "探索功能"
+    },
+    "platforms": {
+      "title": "随处可用",
+      "subtitle": "根据您客户的需求选择最合适的平台。Mezzofy 优惠券钱包可在所有主要平台和设备上访问。",
+      "ios": {
+        "title": "iOS 移动应用",
+        "description": "原生 iPhone 和 iPad 体验，无缝集成 Apple Wallet 并支持 NFC 标签即时下载优惠券"
+      },
+      "android": {
+        "title": "Android 移动应用",
+        "description": "优化的 Android 体验，集成 Google Pay 并具备 NFC 功能，支持点触下载优惠券"
+      },
+      "web": {
+        "title": "网页应用",
+        "description": "从任何浏览器、任何设备访问您的钱包。无需安装应用程序"
+      },
+      "nfcCard": {
+        "title": "NFC 实体卡",
+        "description": "附有二维码和 NFC 芯片的实体卡，适合偏好有形钱包的客户"
+      }
+    },
+    "features": {
+      "title": "强大的钱包功能",
+      "organization": {
+        "title": "智能管理",
+        "item1": "有效状态 - 查看可兑换优惠券",
+        "item2": "已兑换历史 - 追踪过往兑换记录",
+        "item3": "优惠券历史 - 查看过期、已作废或已转让的优惠券",
+        "item4": "智能筛选和搜索功能",
+        "item5": "按到期日自动排序"
+      },
+      "retrieval": {
+        "title": "轻松获取",
+        "item1": "从 Mezzofy 平台即时同步",
+        "item2": "自动更新优惠券",
+        "item3": "实时状态追踪",
+        "item4": "安全云端存储",
+        "item5": "跨设备同步"
+      },
+      "integration": {
+        "title": "灵活集成",
+        "item1": "白标定制",
+        "item2": "全面的 API 访问",
+        "item3": "嵌入现有移动应用",
+        "item4": "自定义品牌选项",
+        "item5": "提供 iOS 和 Android SDK"
+      }
+    },
+    "howItWorks": {
+      "title": "简单步骤开始使用",
+      "step1": {
+        "title": "选择平台",
+        "description": "根据客户偏好从 iOS 应用、Android 应用、网页应用或 NFC 实体卡中选择"
+      },
+      "step2": {
+        "title": "获取优惠券",
+        "description": "通过自动同步即时访问 Mezzofy 平台上所有已存储的优惠券"
+      },
+      "step3": {
+        "title": "管理与兑换",
+        "description": "按状态（有效、已兑换、历史）筛选优惠券，组织并轻触兑换"
+      }
+    },
+    "integrationOptions": {
+      "title": "适合您的集成方案",
+      "subtitle": "无论您需要完全品牌化的解决方案，还是想将钱包功能集成到现有应用程序中，我们都能满足您的需求",
+      "whiteLabelSolution": {
+        "title": "白标解决方案",
+        "description": "以完全的设计控制和定制功能推出您自己品牌的优惠券钱包",
+        "feature1": "以您的标志和颜色完全品牌化",
+        "feature2": "自定义域名和应用商店展示",
+        "feature3": "完全设计控制",
+        "feature4": "包含托管服务"
+      },
+      "apiIntegration": {
+        "title": "API 集成",
+        "description": "无缝地将钱包功能集成到您现有的移动或网页应用程序中",
+        "feature1": "RESTful API 便于集成",
+        "feature2": "全面的技术文档",
+        "feature3": "Webhook 支持实时更新",
+        "feature4": "提供 iOS 和 Android SDK"
+      }
+    },
+    "nfcFeature": {
+      "title": "NFC 点触下载",
+      "description": "移动应用用户可以与 Mezzofy NFC 标签互动，轻触即可即时下载优惠券，无需手动输入——只需将手机点触 NFC 标签，优惠券即自动添加到钱包中。"
+    },
+    "ecosystem": {
+      "title": "与 Mezzofy 生态系统无缝集成",
+      "subtitle": "优惠券钱包与其他 Mezzofy 产品集成，提供完整解决方案",
+      "nfc": {
+        "description": "在实体零售中提供点触入钱包功能"
+      },
+      "marketing": {
+        "description": "购买的代金券自动添加到钱包"
+      },
+      "marketplace": {
+        "description": "从钱包界面访问市场库存"
+      }
+    },
+    "bundle": {
+      "title": "推荐套餐：零售卓越套餐",
+      "description": "任何优惠券分发策略的必备客户体验层",
+      "button": "联系销售获取套餐定价"
+    },
+    "footerCta": {
+      "title": "准备好推出您的数字钱包了吗？",
+      "subtitle": "加入领先品牌，为您的客户提供无缝的优惠券钱包体验",
+      "getStarted": "立即开始",
+      "requestDemo": "申请演示"
+    }
   }
 }
