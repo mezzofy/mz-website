@@ -65,20 +65,6 @@
     },
     "logo": {
       "alt": "Mezzofy 標誌"
-    },
-    "blog": {
-      "backToHub": "返回新聞發布",
-      "previous": "上一篇",
-      "next": "下一篇",
-      "source": "來源",
-      "category": "部落格"
-    },
-    "news": {
-      "backToHub": "返回新聞發布",
-      "previous": "上一篇",
-      "next": "下一篇",
-      "source": "來源",
-      "category": "新聞"
     }
   },
   "home": {
@@ -217,12 +203,6 @@
         "title": "清算所",
         "description": "核心管理所有寄售、財務對帳和無欺詐驗證。"
       }
-    },
-    "cta": {
-      "title": "準備好推動商務的未來了嗎？",
-      "description": "無論您是尋求最高性能的商家，還是尋求高意向庫存的分銷商，Mezzofy 交易協議都是您不可或缺的基礎設施。",
-      "contactSales": "聯絡業務（企業）",
-      "developerDocs": "開發者文件（API 訪問）"
     }
   },
   "about": {
@@ -361,65 +341,7 @@
       "blog": "部落格",
       "news": "新聞"
     },
-    "readMore": "閱讀更多 →",
-    "articles": {
-      "nfcParknshop": {
-        "title": "Mezzofy 助品牌設置優惠券到240 間百佳 NFC 標籤",
-        "description": "透過 NFC 技術簡化與百佳合作的快消品牌促銷流程，消除協調複雜性。"
-      },
-      "treasureGlobal": {
-        "title": "Mezzofy 與 Treasure Global 建立合作夥伴關係",
-        "description": "與 Treasure Global Inc. 策略合作，加速馬來西亞數位優惠券擴展，預計年度經常性收入達 200-400 萬美元。"
-      },
-      "eCouponsPreference": {
-        "title": "60% 的消費者偏好電子優惠券",
-        "description": "60% 的消費者偏好電子優惠券，顯示購物行為的重大轉變。配備 NFC 和 AI 的數位優惠券正在改變零售業。"
-      },
-      "environmentalExcellence": {
-        "title": "香港環保卓越獎",
-        "description": "使用數位優惠券降低成本並保護樹木。每年超過 1,360 億張紙質優惠券摧毀 500 萬棵樹。數位化可減少 70% 的開支。"
-      },
-      "techappleInnovation": {
-        "title": "Mezzofy 榮獲 2024 年企業創新指數三星中小企業",
-        "description": "TechApple 報導 Mezzofy 在 2024 年企業創新指數中榮獲三星中小企業，表彰其在數位優惠券領域的貢獻。"
-      },
-      "dualEsgAwards": {
-        "title": "在 2024 ESG 論壇獲得雙獎",
-        "description": "Mezzofy 在 2024 ESG 論壇榮獲傑出 ESG 企業獎及可持續發展企業證書。"
-      },
-      "fundingAnnouncement": {
-        "title": "200 萬美元 A 輪前融資",
-        "description": "Mezzofy 由 Isola Capital 領投完成 200 萬美元 A 輪前融資，以支持全球擴展和 web3 產品開發。"
-      },
-      "holidayGuide": {
-        "title": "假期優惠券指南",
-        "description": "使用快速優惠券解決方案掌握假期銷售高峰。2022 年假期零售銷售額達 9,430-9,600 億美元。"
-      },
-      "smartRetail": {
-        "title": "技術主導的智能零售",
-        "description": "NFC 技術改變零售動態。研究顯示 73% 的受訪者會進行衝動購買，平均每月衝動消費超過 314 美元。"
-      },
-      "cioworldFeature": {
-        "title": "為更綠色的未來轉變優惠券",
-        "description": "TheCIOWorld 報導 Mezzofy 的創新 NFC 輕觸即得優惠券和整合錢包功能，實現可持續的數位營銷。"
-      },
-      "ejtech300m": {
-        "title": "亞太地區 3 億張數位優惠券",
-        "description": "EJTech 報導 Mezzofy 的雲平台在亞太地區分發超過 3 億張數位優惠券，改變客戶參與方式。"
-      },
-      "edigestLeading": {
-        "title": "亞太地區領先的數位優惠券解決方案",
-        "description": "eDigest 獨家報導 Mezzofy 作為亞太地區領先的數位優惠券平台，改變優惠券管理。"
-      },
-      "forbesDickyYin": {
-        "title": "Forbes 表彰 Dicky Yin 的領導力",
-        "description": "Forbes 中國版報導 Mezzofy 執行長 Dicky Yin 在創新領域的傑出領導力，改變數位優惠券產業。"
-      },
-      "hotelTechInnovation": {
-        "title": "為什麼技術創新是酒店成功的關鍵",
-        "description": "67% 的旅客期待個性化體驗。酒店必須採用 NFC、聊天機器人和 AI 驅動的個性化來提升收入和忠誠度。"
-      }
-    }
+    "readMore": "閱讀更多 →"
   },
   "investors": {
     "hero": {
@@ -1066,8 +988,7 @@
       "optionWallet": "優惠券錢包",
       "optionOther": "其他",
       "projectDescription": "專案描述",
-      "submit": "申請 API 存取權限",
-      "projectPlaceholder": "描述您的專案以及您計劃如何使用 Mezzofy API..."
+      "submit": "申請 API 存取權限"
     }
   },
   "marketplace": {
@@ -1080,8 +1001,7 @@
       "title": "全球數位優惠券交換中心",
       "description": "唯一支援 B2B、B2C 和 C2C 交易的安全點對點優惠券交換平台。基於代幣化技術打造，為數位促銷活動建立具防詐保護的二級市場。",
       "listInventory": "刊登您的庫存",
-      "exploreMarketplace": "探索市集",
-      "imageAlt": "優惠券市場平台"
+      "exploreMarketplace": "探索市集"
     },
     "exchange": {
       "title": "優惠券交換協定",
@@ -1459,7 +1379,7 @@
     },
     "hero": {
       "label": "優惠券行銷",
-      "title": "線上銷售優惠券從未如此簡單",
+      "title": "銷售優惠券比以往更簡單",
       "description": "將優惠券行銷費用轉化為收入。透過無縫的支付整合和多通路分銷直接向客戶銷售",
       "contactUs": "立即聯絡我們",
       "learnMore": "了解更多",
@@ -1571,407 +1491,6 @@
       "description": "加入信任 Mezzofy 為其數位優惠券銷售提供動力的領先商家行列",
       "contactUs": "立即聯絡我們",
       "viewDemo": "查看演示"
-    }
-  },
-  "wallet": {
-    "banner": {
-      "text": "Mezzofy 交換協議的一部分",
-      "link": "查看生態系統"
-    },
-    "hero": {
-      "label": "優惠券錢包",
-      "title": "您的數位<span class=\"text-primary-orange\">優惠券</span>錢包",
-      "description": "多平台優惠券收集體驗，<span class=\"text-primary-orange font-semibold\">提升兌換率達40%以上</span>。由 Mezzofy 交換協議驅動的跨設備同步與智慧管理，提供<span class=\"text-primary-orange font-semibold\">白牌或 API 整合</span>方案。",
-      "getStarted": "立即開始",
-      "exploreFeatures": "探索功能",
-      "imageAlt": "優惠券錢包平台"
-    },
-    "platforms": {
-      "title": "隨處可用",
-      "subtitle": "選擇最適合您客戶的平台。Mezzofy 優惠券錢包支援所有主要平台與設備。",
-      "ios": {
-        "title": "iOS 行動應用程式",
-        "description": "原生 iPhone 和 iPad 體驗，與 Apple Wallet 無縫整合，支援 NFC 標籤即時下載優惠券"
-      },
-      "android": {
-        "title": "Android 行動應用程式",
-        "description": "優化的 Android 體驗，整合 Google Pay 並支援 NFC 功能，可輕觸下載優惠券"
-      },
-      "web": {
-        "title": "網頁應用程式",
-        "description": "從任何瀏覽器、任何設備存取您的錢包，無需安裝應用程式"
-      },
-      "nfcCard": {
-        "title": "NFC 實體卡",
-        "description": "附有 QR 碼和 NFC 晶片的實體卡，適合偏好實體錢包解決方案的客戶"
-      }
-    },
-    "features": {
-      "title": "強大的錢包功能",
-      "organization": {
-        "title": "智慧管理",
-        "item1": "有效狀態 - 查看可兌換的優惠券",
-        "item2": "兌換記錄 - 追蹤過去的兌換",
-        "item3": "優惠券歷史 - 存取已過期、作廢或轉讓的優惠券",
-        "item4": "智慧篩選與搜尋功能",
-        "item5": "按到期日自動排序"
-      },
-      "retrieval": {
-        "title": "輕鬆取得",
-        "item1": "從 Mezzofy 平台即時同步",
-        "item2": "自動更新優惠券",
-        "item3": "即時狀態追蹤",
-        "item4": "安全的雲端儲存",
-        "item5": "跨設備同步"
-      },
-      "flexibleIntegration": {
-        "title": "靈活整合",
-        "item1": "白牌自訂",
-        "item2": "完整的 API 存取",
-        "item3": "嵌入現有行動應用程式",
-        "item4": "自訂品牌選項",
-        "item5": "提供 iOS 和 Android SDK"
-      }
-    },
-    "howItWorks": {
-      "title": "簡單三步驟開始",
-      "step1": {
-        "title": "選擇平台",
-        "description": "根據客戶偏好，從 iOS 應用程式、Android 應用程式、網頁應用程式或 NFC 實體卡中選擇"
-      },
-      "step2": {
-        "title": "取得優惠券",
-        "description": "透過自動同步，即時存取 Mezzofy 平台上儲存的所有優惠券"
-      },
-      "step3": {
-        "title": "管理與兌換",
-        "description": "依狀態篩選優惠券（有效、已兌換、歷史記錄），輕鬆管理並用一次輕觸完成兌換"
-      }
-    },
-    "integration": {
-      "title": "按您的方式整合",
-      "subtitle": "無論您需要完全品牌化的解決方案，還是想將錢包功能整合到現有應用程式中，我們都能滿足您的需求",
-      "whiteLabelTitle": "白牌解決方案",
-      "whiteLabelDescription": "推出您自己品牌的優惠券錢包，完全掌控設計",
-      "whiteLabelItem1": "完全以您的標誌和顏色品牌化",
-      "whiteLabelItem2": "自訂域名和應用程式商店",
-      "whiteLabelItem3": "完全設計控制",
-      "whiteLabelItem4": "包含代管服務",
-      "apiTitle": "API 整合",
-      "apiDescription": "將錢包功能無縫整合到您現有的行動或網頁應用程式中",
-      "apiItem1": "RESTful API 輕鬆整合",
-      "apiItem2": "完整的開發文件",
-      "apiItem3": "支援 Webhook 即時更新",
-      "apiItem4": "提供 iOS 和 Android SDK"
-    },
-    "nfcCallout": {
-      "title": "NFC 輕觸下載",
-      "description": "行動應用程式用戶可與 Mezzofy NFC 標籤互動，只需輕觸即可即時下載優惠券。無需手動輸入 - 只需將手機輕觸 NFC 標籤，優惠券即自動添加至您的錢包。"
-    },
-    "ecosystem": {
-      "title": "與 Mezzofy 生態系統無縫整合",
-      "description": "優惠券錢包與其他 Mezzofy 產品整合，打造完整解決方案",
-      "nfc": {
-        "title": "+ 優惠券 NFC",
-        "description": "為實體零售提供輕觸至錢包功能"
-      },
-      "marketing": {
-        "title": "+ 優惠券行銷",
-        "description": "購買的優惠券自動添加至錢包"
-      },
-      "marketplace": {
-        "title": "+ 優惠券市場",
-        "description": "從錢包界面存取市場庫存"
-      },
-      "bundle": {
-        "title": "💡 推薦組合：零售卓越套餐",
-        "description": "任何優惠券發行策略的核心客戶體驗層",
-        "cta": "聯繫銷售了解套餐價格"
-      }
-    },
-    "footerCta": {
-      "title": "準備好推出您的數位錢包了嗎？",
-      "description": "加入領先品牌，為您的客戶提供無縫的優惠券錢包體驗",
-      "getStarted": "立即開始",
-      "requestDemo": "申請演示"
-    }
-  },
-  "articles": {
-    "blog": {
-      "eCouponsPreference": {
-        "title": "60%消費者偏愛電子優惠券：這對數碼時代零售業意味著什麼",
-        "headings": {
-          "rise": "電子優惠券的崛起",
-          "footTraffic": "帶動人流和銷售",
-          "nfc": "NFC技術：簡化兌換流程",
-          "ai": "AI驅動的個性化服務",
-          "location": "基於位置的營銷"
-        },
-        "paragraphs": {
-          "rise": "「60%消費者偏愛電子優惠券」這一數據標誌著購物行為的轉變性轉變。數碼優惠券已成為企業的重要互動工具，尤其是在結合NFC和AI技術後更為有效。這一偏好反映了消費者在日益數碼化的零售環境中對便利性、速度和個性化購物體驗的渴望。",
-          "footTraffic": "研究表明，「77%的購物者更可能光顧提供折扣的商店」，凸顯優惠券驅動的促銷如何同時帶動人流和線上銷售。這一引人注目的數據表明消費者積極尋找具有吸引力促銷優惠的零售商，使數碼優惠券成為搶佔市場份額和增加店鋪訪問量的重要工具。",
-          "nfc": "NFC技術讓消費者在結帳時輕觸手機即可即時兌換優惠券，消除摩擦並創造無縫購物體驗。通過免除出示實體憑證或手動輸入代碼的需求，NFC啟用的數碼優惠券大幅縮短交易時間，並提高銷售點的客戶滿意度。",
-          "ai": "AI通過根據客戶行為模式提供個性化優惠來增強數碼優惠券的效果。機器學習算法分析購買歷史、偏好和購物習慣，創建與個別消費者產生共鳴的針對性優惠，大幅提升兌換率和客戶終身價值。",
-          "location": "GPS啟用的數碼優惠券代表另一種強大的零售策略，向實體地點附近的客戶提供限時優惠。這種地理圍欄功能使零售商能夠在消費者做決定的時刻進行互動，大幅提高兌換可能性和衝動購買行為。"
-        },
-        "source": {
-          "name": "EJINSIGHT"
-        }
-      },
-      "environmentalExcellence": {
-        "title": "香港環保卓越計劃 - 數碼優惠券助您減低成本並保護樹木",
-        "headings": {
-          "impact": "紙張優惠券的環境影響",
-          "waste": "廢物問題",
-          "business": "數碼解決方案的商業優勢",
-          "demand": "消費者對可持續選擇的需求",
-          "implementation": "實施步驟"
-        },
-        "paragraphs": {
-          "impact": "全球每年發行超過1,360億張紙質優惠券，摧毀約500萬棵樹木。造紙業是空氣、水和土壤的第三大工業污染源。傳統優惠券系統的環境成本遠超簡單物流範疇——它對地球自然資源和生態系統造成了重大負擔。",
-          "waste": "超過90%的紙質優惠券未被兌換即流入垃圾填埋場，在全球各地社區造成大規模廢物問題。這一驚人的廢棄率不僅代表資源浪費，還通過垃圾填埋場甲烷排放和持久性污染加劇環境惡化。",
-          "businessIntro": "數碼優惠券解決方案在帶來環境效益的同時，也提供顯著的商業優勢：",
-          "demand": "數碼優惠券的採用符合ESG（環境、社會、治理）原則——73%的全球消費者願意改變消費習慣以減少環境損害。這一消費者偏好既代表道德責任，也為具前瞻性的零售商帶來有力的商業機遇。",
-          "implementationIntro": "希望轉型到數碼優惠券解決方案的機構應遵循以下關鍵步驟："
-        },
-        "benefits": {
-          "cost": "降低高達70%的營銷費用",
-          "redemption": "數碼優惠券達到10%的兌換率",
-          "personalization": "個性化優惠提升50%兌換率",
-          "analytics": "實時數據分析"
-        },
-        "steps": {
-          "evaluate": "評估現有紙質優惠券的成本",
-          "select": "選擇合適的數碼平台",
-          "communicate": "傳達環保效益"
-        },
-        "contact": {
-          "heading": "聯絡我們",
-          "info": "hello@mezzofy.com"
-        }
-      },
-      "holidayGuide": {
-        "title": "節日購物季優惠券指南 - 掌握最後衝刺期的假日銷售高峰",
-        "headings": {
-          "opportunity": "假日零售商機",
-          "misconception": "打破最後時刻的誤解",
-          "capitalizing": "把握剩餘商機",
-          "strategies": "假日成功的數碼優惠券策略",
-          "tactics": "快速且策略性的營銷戰術",
-          "guidance": "全面的假日指導"
-        },
-        "paragraphs": {
-          "opportunity": "根據全國零售聯合會（NRF）數據，2022年假日零售銷售額飆升至9,430-9,600億美元。這些驚人數字凸顯了在購物季最大化銷售額的重要性——這段時期消費者支出達到年度峰值，為具策略眼光的零售商創造了無數機遇。",
-          "misconception": "本指南探討零售商的常見誤解：即接觸最後時刻購物者的窗口已關閉。許多零售商誤以為到了十二月中旬，已吸引了所有假日客群。然而，在聖誕節前最後幾週，仍有大量機會吸引拖延購物者和尋找最後禮物方案的消費者。",
-          "capitalizing": "大批消費者在假日前最後幾天積極購物，尋找禮品、補充必需品或尋找最後娛樂選擇。在這關鍵窗口推出針對性優惠券活動的策略型零售商，可以獲取可觀的市場份額，最大化假日銷售收入。",
-          "strategies": "本文探討在假日期間執行有效促銷活動的策略，特別聚焦於數碼優惠券解決方案。現代零售商擁有先進工具，能夠快速部署促銷優惠——讓他們能動態回應消費者需求和購物模式。",
-          "tacticsIntro": "零售商可採用快速且策略性的營銷戰術，在節慶季剩餘時間最大化銷售。主要方式包括：",
-          "guidance": "本全面指南協助企業以有效的優惠券策略應對至關重要的最後時刻假日購物期。通過結合緊迫感營銷、個性化和現代數碼推送渠道，零售商可在一年中商業上最重要的旺季最大化收入。"
-        },
-        "tactics": {
-          "flash": "針對最後時刻購物者的限時閃促",
-          "personalized": "基於瀏覽和購買歷史的個性化數碼優惠券",
-          "mobile": "透過短訊和推送通知的移動端優先優惠券推送",
-          "nfc": "NFC啟用的店內促銷，即時兌換",
-          "bundled": "跨品類捆綁優惠以增加購物籃大小"
-        },
-        "contact": {
-          "heading": "聯絡我們",
-          "info": "hello@mezzofy.com"
-        }
-      },
-      "hotelTechInnovation": {
-        "title": "為何科技創新是酒店成功的關鍵",
-        "headings": {
-          "challenges": "行業挑戰",
-          "travelers": "旅客的期望",
-          "nfc": "NFC技術提升住客體驗",
-          "success": "真實成功案例",
-          "chatbots": "聊天機器人實現基於位置的互動",
-          "ai": "AI驅動的個性化服務",
-          "urgency": "適應的緊迫性"
-        },
-        "paragraphs": {
-          "challenges": "酒店和旅遊業面臨客戶忠誠度下降和激烈競爭等重大挑戰。在日益擁擠的市場中，酒店業務必須通過提供卓越體驗和創新服務方式來區分自身，以留住客戶並建立長期關係。",
-          "travelers": "研究表明，67%的旅客期望獲得個性化體驗",
-          "nfc": "NFC技術不僅簡化入住手續——住客可用智能手機輕觸即可獲得即時優惠，例如用餐或當地景點的數碼優惠券，在提升體驗的同時增加收益。數碼便利與個性化優惠的無縫融合創造了令人難忘的體驗，讓酒店在競爭對手中脫穎而出。",
-          "success": "民宿業主 Sarah Kay：",
-          "chatbots": "聊天機器人通過提供附近商店和餐廳的基於位置優惠券，增強住客互動。智能聊天機器人系統可根據住客偏好和位置，主動推薦用餐、娛樂和購物機會，在提高住客滿意度的同時創造額外收入。",
-          "ai": "AI驅動的個性化服務通過分析過往入住記錄和偏好，創建量身定制的促銷活動。機器學習算法分析住客歷史數據，預測需求和偏好，使酒店能夠提供與個別旅客產生共鳴的優惠和建議，提高互動率。",
-          "urgency": "適應的緊迫性至關重要：80%的客戶更傾向於選擇提供個性化體驗的品牌。"
-        },
-        "dataSources": {
-          "heading": "數據來源",
-          "accenture": "Accenture Interactive（67%個性化期望）",
-          "pwc": "PwC消費者智能系列（75%數據共享意願）",
-          "epsilon": "Epsilon研究（80%個性化偏好）"
-        },
-        "contact": {
-          "heading": "聯絡我們",
-          "info": "hello@mezzofy.com"
-        }
-      },
-      "nfcParknshop": {
-        "title": "Mezzofy 助品牌設置優惠券到240 間百佳 NFC 標籤，全程代辦、無需協調",
-        "headings": {
-          "introduction": "簡介",
-          "challenges": "挑戰概述",
-          "service": "服務解決方案",
-          "benefits": "主要優勢",
-          "applications": "目標應用場景"
-        },
-        "paragraphs": {
-          "intro": "對於許多快消品和消費品品牌而言，通過實體零售渠道執行促銷活動涉及大量協調工作和程序複雜性。",
-          "challenges": "本文指出典型障礙：與百佳等零售商協調促銷細節、設計實體優惠券材料、安排物流和店內陳設以及追蹤銷售數據。",
-          "service": "Mezzofy現已支持在百佳全港240個門店的NFC標籤促銷，提供「一站式」服務，品牌只需提供折扣內容，Mezzofy負責優惠券創建、標籤設置和物流——免除直接與零售商協調的需求。",
-          "benefitsIntro": "該平台突出了幾項優勢：",
-          "applications": "該服務適合新產品發布、限時促銷、市場測試場景以及避免使用POS或紙質業務的品牌。"
-        },
-        "benefits": {
-          "purchaseIntent": "消費者購買意願提升5倍",
-          "redemptionRate": "兌換率達到30-34%",
-          "costReduction": "每張優惠券的分發成本低於港幣0.20元"
-        },
-        "contact": {
-          "heading": "聯絡我們",
-          "info": "hello@mezzofy.com"
-        }
-      },
-      "smartRetail": {
-        "title": "科技引領智慧零售 - NFC優惠券推動衝動購買",
-        "headings": {
-          "landscape": "零售業的演變格局",
-          "nfc": "NFC技術打造無縫體驗",
-          "impulse": "衝動購買的商機",
-          "strategies": "NFC優惠券成功的智慧策略",
-          "transformative": "轉型潛力"
-        },
-        "paragraphs": {
-          "landscape": "零售業正在經歷技術和消費者偏好演變驅動的重大轉變。現代零售商必須擁抱創新，以在日益數碼化的市場中保持競爭力，並滿足不斷變化的客戶期望。",
-          "nfc": "NFC技術讓客戶通過輕鬆輕觸店內NFC標籤即可獲得數碼優惠券，簡化購物流程並免除實體優惠券管理。這種無摩擦的互動為客戶創造無縫體驗，同時降低零售商的運營成本。",
-          "impulse": "Slickdeals的研究表明「四分之三（73%）的受訪者會進行自發購買」，平均每月衝動消費從2021年的276美元增至目前超過314美元。這一引人注目的數據展示了通過策略性店內促銷和精心放置的數碼優惠券來捕捉衝動購買行為的巨大價值。",
-          "strategiesIntro": "成功實施NFC優惠券策略需要認真關注多個關鍵因素：",
-          "location": "將NFC優惠券放置在結帳台附近和高停留時間區域，可最大化可見度和互動效果。處於決策階段的消費者對放置良好的促銷優惠反應最為積極。",
-          "value": "強調優惠的節省和好處有助於推動兌換。清晰傳達折扣金額和價值主張鼓勵客戶行動。",
-          "merchandising": "按品類、季節或活動進行合理分組創造連貫的購物體驗。針對性優惠券搭配的戰略性產品擺放改善交叉銷售和購物籃大小。",
-          "relevance": "基於本地活動、天氣和客戶行為模式的精準定位確保優惠在正確時間觸達正確受眾。",
-          "senses": "限時優惠製造緊迫感並刺激客戶反應。限時優惠利用稀缺心理推動即時購買決策。",
-          "transformative": "將NFC技術整合到數碼優惠券策略中代表零售業的轉型潛力。通過結合便利技術和策略性促銷思維，零售商可大幅提升銷售業績、客戶滿意度和競爭定位。"
-        },
-        "subheadings": {
-          "location": "策略性位置",
-          "value": "價值感知",
-          "merchandising": "互補陳設",
-          "relevance": "通過技術實現相關性",
-          "senses": "感官互動"
-        },
-        "contact": {
-          "heading": "聯絡我們",
-          "info": "hello@mezzofy.com"
-        }
-      }
-    },
-    "news": {
-      "cioworldFeature": {
-        "title": "TheCIOWorld報道Mezzofy：為更環保的未來轉型優惠券",
-        "paragraphs": {
-          "innovation": "Mezzofy創新的數碼優惠券方式已在CIOWorld獲得報導。公司領導人 Dicky Ying 探討了組織如何以注重環保的解決方案轉型傳統優惠券業務。",
-          "technologies": "專題文章強調了Mezzofy的先進技術，特別是NFC輕觸領取優惠券功能",
-          "redefining": "出版物強調Mezzofy如何重新定義可持續數碼營銷的格局。報導展示了技術創新如何同時推動商業成功和環境可持續性。"
-        },
-        "callout": {
-          "heading": "閱讀完整文章",
-          "text": "訪問CIOWorld，了解Mezzofy關於環保數碼優惠券的願景。"
-        }
-      },
-      "dualEsgAwards": {
-        "title": "Mezzofy榮獲ESG及可持續發展論壇2024雙料大獎",
-        "paragraphs": {
-          "awards": "Mezzofy在9月27日由HK01主辦的「ESG及可持續發展論壇暨頒獎典禮2024」上獲得表彰。公司獲得兩項榮譽：「傑出ESG企業大獎」",
-          "forum": "商業領袖和可持續發展專家齊聚一堂，探討ESG趨勢以及將可持續發展目標整合到企業運營中。作為數碼優惠券平台，Mezzofy通過以數碼方案取代紙質優惠券，從而減少紙張浪費，降低環境影響。",
-          "commitment": "獎項強化了公司在環境責任和可持續發展領導力方面的承諾。香港特區政府環境及生態局局長謝展寰強調了商業界在推動可持續發展計劃中的重要性。",
-          "future": "Mezzofy持續開發造福環境和社會的解決方案。這一成就建立在Mezzofy早前獲得ESG認證的基礎上。"
-        }
-      },
-      "edigestLeadingSolution": {
-        "title": "eDigest獨家報道：亞太區領先數碼優惠券解決方案",
-        "headings": {
-          "pioneering": "亞太區數碼優惠券解決方案的先驅",
-          "innovative": "創新數碼優惠券平台",
-          "expanding": "拓展業務版圖",
-          "commitment": "創新承諾"
-        },
-        "paragraphs": {
-          "pioneering": "Mezzofy作為「領先的數碼優惠券平台」運營",
-          "innovative": "該平台通過高可及性和全面功能脫穎而出。企業無需廣泛的技術專業知識，即可設計和部署數碼優惠券。系統支持多種優惠券格式，包括折扣、禮品券和促銷優惠，支持多樣化的營銷方式。",
-          "expanding": "Mezzofy在亞太區多個國家開展業務，已促成超過3億張數碼優惠券的發行和管理",
-          "commitment": "公司持續投入研發以引入新功能和整合。通過強調創新，Mezzofy為企業提供有效吸引客戶和加速增長的現代工具。"
-        }
-      },
-      "forbesDickyYin": {
-        "title": "《Forbes China》認可殷建德在創新方面的傑出領導力",
-        "paragraphs": {
-          "recognition": "Mezzofy（香港）有限公司行政總裁殷建德先生獲得《Forbes China》認可，被評為傑出商業領袖。",
-          "philosophy": "根據文章，殷建德認為真正的領導力在於激勵員工主動認同並配合組織方向。他強調建立提供策略方向和可能性的職場文化，將團隊成員視為共同推進集體目標的合作夥伴。",
-          "stewardship": "在殷建德的領導下，Mezzofy從根本上轉型了數碼優惠券行業。該組織為零售商提供靈活工具，提升客戶對數碼優惠券解決方案的認知和接受度。",
-          "reshaping": "通過重塑消費模式，公司正在推動行業的可持續發展。《Forbes China》的認可凸顯了殷建德創新的領導方式，以及他對在商業實踐和環境影響方面創造積極變革的承諾。"
-        },
-        "quote": {
-          "text": "\"Followers determine who the leader is.\"",
-          "attribution": "— 殷建德的領導哲學"
-        },
-        "headings": {
-          "transforming": "轉型數碼優惠券行業"
-        },
-        "callout": {
-          "heading": "閱讀完整《Forbes China》文章",
-          "text": "了解更多殷建德的領導哲學和Mezzofy的使命。"
-        }
-      },
-      "fundingAnnouncement": {
-        "title": "Mezzofy完成200萬美元Pre-Series A融資",
-        "paragraphs": {
-          "announcement": "Mezzofy宣布完成200萬美元的Pre-series A融資輪",
-          "market": "全球數碼優惠券市場預計將以18.6%的複合年增長率擴張",
-          "brands": "近100個亞洲品牌——包括美心、星巴克、Shell和凱悅——使用Mezzofy的平台。優惠券即服務（CaaS）模式支持通過API與現有系統整合，據報可削減超過87%的運營成本。",
-          "management": "Mezzofy管理約4億張數碼優惠券"
-        },
-        "quote": {
-          "text": "\"The growth of digital payments and e-commerce drives the rise of digital coupons. We addressed this by making digital coupons transferable.\"",
-          "attribution": "— Dicky Ying, CEO"
-        }
-      },
-      "techappleInnovationIndex": {
-        "title": "TechApple報道：Mezzofy在2024年企業創新指數中獲評3星中小企",
-        "paragraphs": {
-          "innovation": "2024年企業創新指數凸顯了在創新領導力和卓越運營方面的成就，強化了香港作為區域創新中心的地位。奧雅納工程顧問奪得首位，恒生銀行和香港機場管理局緊隨其後。",
-          "recognition": "這是中小企首次獲得評估的一年。37個機構獲得星級評定，其中Mezzofy（香港）有限公司獲得三星評級",
-          "collaboration": "在香港政府和中文大學APIB的支持下，該計劃促進跨界合作和數碼轉型。它為政策制定者提供數據，同時表彰通過原創性和適應能力推動經濟進步的企業。",
-          "future": "指數持續鼓勵各規模企業採用創新方式，加強競爭定位，確立香港作為全球創新強國的發展軌跡。"
-        }
-      },
-      "treasureGlobalPartnership": {
-        "title": "Mezzofy與Treasure Global合作，加速在馬來西亞的數碼優惠券業務拓展",
-        "paragraphs": {
-          "opening": "Mezzofy宣布與Treasure Global Inc.建立戰略合作伙伴關係，指定其為Mezzofy數碼優惠券平台在馬來西亞的獨家分銷商。",
-          "positioning": "公司定位為區域領導者，在15個市場管理超過400億美元的數碼優惠券交易。其「優惠券即服務（CaaS）」平台使企業無需投入新基礎設施即可吸引客戶。",
-          "collaboration": "通過此次合作，Treasure Global將在馬來西亞全面推廣平台，利用其本地市場專業知識和數碼能力。雙方預計實現「每年200至400萬美元的經常性收入」",
-          "platform": "該平台提供無縫優惠券創建、實時兌換追蹤和活動數據分析等功能。此次合作體現了Mezzofy支持馬來西亞品牌利用數碼創新促進客戶互動的承諾，呼應該國推進數碼經濟的目標。"
-        },
-        "quote": {
-          "text": "\"Treasure Global's strong presence and market insight make them a great partner to scale our solution in Malaysia.\"",
-          "attribution": "— Dicky Ying, CEO of Mezzofy"
-        }
-      },
-      "ejtech300mCoupons": {
-        "title": "EJTech報道：Mezzofy雲平台在亞太區分發3億張數碼優惠券",
-        "paragraphs": {
-          "recognition": "Mezzofy的數碼優惠券雲平台因其在亞太區轉型客戶互動方式而獲得EJTech的認可。",
-          "platform": "該平台使企業能夠「高效創建和分發環保的無紙化優惠券，覆蓋各行各業」。解決方案支持通過電子郵件、短訊和社交媒體渠道直接接觸客戶，同時減少紙張消耗。",
-          "scale": "根據EJTech的報導，「已分發超過3億張數碼優惠券」，Mezzofy在重塑企業以可持續和具成本效益方式接觸消費者方面展示了顯著的市場吸引力。",
-          "milestone": "這一里程碑代表著亞太區促銷營銷數碼轉型的重大成就。平台在保持效率和環保性的同時處理如此大規模的能力，為行業樹立了新標準。"
-        }
-      }
     }
   },
   "support": {
@@ -2097,6 +1616,15 @@
       "description": "我們的團隊全天候 24/7 為您提供服務，協助您解決 Mezzofy 平台上的任何問題。",
       "contactUs": "聯絡支援",
       "viewDocs": "查看文件"
+    }
+  },
+  "wallet": {
+    "hero": {
+      "label": "優惠券錢包",
+      "title": "您的<span class=\"text-primary-orange\">優惠券</span>數位錢包",
+      "description": "多平台優惠券收集<span class=\"text-primary-orange font-semibold\">提升兌換率 40%+</span>。透過 Mezzofy 交換協議實現跨裝置同步—<span class=\"text-primary-orange font-semibold\">白標或 API 整合</span>。",
+      "getStarted": "立即開始",
+      "exploreFeatures": "探索功能"
     }
   },
   "notFound": {

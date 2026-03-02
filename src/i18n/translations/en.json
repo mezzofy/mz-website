@@ -1012,7 +1012,7 @@
     },
     "hero": {
       "label": "COUPON MARKETPLACE",
-      "title": "THE GLOBAL EXCHANGE HUB FOR DIGITAL COUPONS",
+      "title": "GLOBAL EXCHANGE HUB FOR DIGITAL COUPONS",
       "description": "The only secure peer-to-peer coupon exchange enabling B2B, B2C, and C2C transactions. Built on tokenization technology to create a secondary market for digital promotions with fraud-proof validation.",
       "listInventory": "List Your Inventory",
       "exploreMarketplace": "Explore Marketplace"
@@ -1154,164 +1154,236 @@
       "link": "View Ecosystem"
     },
     "hero": {
-      "label": "COUPON NFC",
-      "title": "INSTANT COUPON DISTRIBUTION WITH NFC TECHNOLOGY",
-      "description": "Instant tap-to-download engagement without customer app requirements. Bridge the physical and digital worlds with NFC technology integrated into the Mezzofy Exchange Protocol.",
-      "viewPricing": "View Pricing",
-      "learnHowItWorks": "Learn How It Works",
-      "imageAlt": "NFC Coupon Technology"
+      "label": "NFC DISTRIBUTION NETWORK",
+      "title": "Power Your Spaces with the Mezzofy NFC Network",
+      "subtitle": "Become a distribution node connecting merchant offers to your captive audience through tap-activated NFC technology",
+      "becomePartner": "Become a Channel Partner",
+      "viewPartnerTypes": "View Partner Types",
+      "imageAlt": "NFC Distribution Network"
+    },
+    "valueProp": {
+      "title": "Why Become an NFC Channel Partner?",
+      "description": "Transform your physical spaces into high-value distribution nodes in the Mezzofy Exchange network",
+      "zeroTech": {
+        "title": "Zero Tech Burden",
+        "description": "Mezzofy handles all technology, content updates, and merchant inventory management"
+      },
+      "audience": {
+        "title": "Captive Audience Value",
+        "description": "Reach office workers, shoppers, or tenants with high-intent merchant offers"
+      },
+      "network": {
+        "title": "Network Effect",
+        "description": "Every new merchant makes your distribution node more valuable to your audience"
+      },
+      "revenue": {
+        "title": "Revenue Opportunity",
+        "description": "Performance-based earnings aligned with successful merchant-consumer connections"
+      }
+    },
+    "partnerTypes": {
+      "title": "Distribution Opportunities for Every Space",
+      "description": "NFC channel partnerships designed for malls, corporate environments, and property portfolios",
+      "malls": {
+        "title": "Mall Operators",
+        "description": "Tags at entrances, directories, food courts, and tenant spaces drive foot traffic and enhance shopper experience",
+        "valueTitle": "Value Delivered:",
+        "value1": "Drive foot traffic with merchant offers",
+        "value2": "Tenant value-add service",
+        "value3": "Redemption analytics & insights"
+      },
+      "corporate": {
+        "title": "Corporate HR & Benefits",
+        "description": "Tags in office lobbies, pantries, and lift areas provide employee perks without fulfillment burden",
+        "valueTitle": "Value Delivered:",
+        "value1": "Zero-cost employee benefits program",
+        "value2": "High-intent professional audience",
+        "value3": "Engagement tracking for HR metrics"
+      },
+      "property": {
+        "title": "Property Developers",
+        "description": "Scalable deployment across property portfolios creates tenant amenity value and differentiation",
+        "valueTitle": "Value Delivered:",
+        "value1": "Multi-location rollout potential",
+        "value2": "Tenant attraction & retention tool",
+        "value3": "Property differentiation amenity"
+      }
     },
     "howItWorks": {
-      "title": "How It Works",
+      "title": "How Channel Partners Activate Distribution Nodes",
+      "subtitle": "Five simple steps from partner onboarding to live consumer engagement",
       "step1": {
-        "title": "Configure",
-        "description": "Mezzofy configures your coupon details onto NFC tags"
+        "title": "Partner Onboards",
+        "description": "Simple setup process with Mezzofy configuring NFC tags for your spaces"
       },
       "step2": {
-        "title": "Deliver",
-        "description": "Physical NFC tags are delivered directly to your business"
+        "title": "Tags Deployed",
+        "description": "Strategic placement in high-traffic areas (lobbies, entrances, pantries)"
       },
       "step3": {
-        "title": "Display",
-        "description": "Place tags in strategic in-store locations for maximum visibility"
+        "title": "Merchants Flow Through",
+        "description": "Any merchant from the Mezzofy exchange can appear on your tags"
       },
       "step4": {
-        "title": "Tap",
-        "description": "Customers tap their phones on the NFC tags"
+        "title": "Consumers Engage",
+        "description": "Users tap to collect offers directly to their mobile wallets"
       },
       "step5": {
-        "title": "Redeem",
-        "description": "Coupons are instantly received and ready to redeem"
+        "title": "Network Grows",
+        "description": "More redemptions generate data that attracts more merchants"
       }
     },
-    "features": {
-      "title": "Powerful Features",
-      "fraudPrevention": {
-        "title": "Fraud Prevention",
-        "description": "Each coupon has unique, non-serialized numbers for maximum security"
+    "networkEffect": {
+      "title": "The Distribution Network Flywheel",
+      "subtitle": "Every new channel partner makes the entire network more valuable for merchants and consumers",
+      "step1": {
+        "title": "More Channel Nodes",
+        "description": "More malls, offices, and properties join the distribution network"
       },
-      "simpleSetup": {
-        "title": "Simple Setup",
-        "description": "Real-time coupon creation and modification with intuitive interface"
+      "step2": {
+        "title": "More Distribution for Merchants",
+        "description": "Wider reach attracts more quality merchants to the exchange"
       },
-      "analytics": {
-        "title": "Analytics",
-        "description": "Complete usage tracking and promotional insights for data-driven decisions"
+      "step3": {
+        "title": "More Consumer Engagement",
+        "description": "Better merchant offers drive higher tap and redemption rates"
       },
-      "integration": {
-        "title": "Integration",
-        "description": "Open API compatibility with your existing systems and workflows"
+      "step4": {
+        "title": "Better Data & Targeting",
+        "description": "More redemptions generate intelligence that improves targeting"
       },
-      "pricing": {
-        "title": "Transparent Pricing",
-        "description": "Single subscription fee covering setup with no hidden costs"
-      },
-      "multiChannel": {
-        "title": "Multi-Channel Distribution",
-        "description": "Extend offers beyond single locations to multiple channels"
-      },
-      "formatVariety": {
-        "title": "Format Variety",
-        "description": "Multiple coupon types including discounts and gamification options"
-      },
-      "noApp": {
-        "title": "No App Required",
-        "description": "Coupons save directly to mobile wallets for customer convenience"
+      "step5": {
+        "title": "Higher Redemption Rates",
+        "description": "Smarter targeting attracts even more merchants (loop repeats)"
       }
     },
-    "pricing": {
-      "title": "Simple Pricing Plans",
-      "subtitle": "Choose the plan that fits your business needs",
-      "monthly": {
-        "title": "Monthly Plan",
-        "price": "$79",
-        "period": "/month",
-        "item1": "3,000 coupons per month",
-        "item2": "One NFC tag included",
-        "item3": "Basic support via email",
-        "item4": "Real-time analytics dashboard",
-        "item5": "Mobile wallet integration",
-        "cta": "Get Started"
+    "pilots": {
+      "title": "Launch Pilot Opportunities Available",
+      "subtitle": "Partner with Mezzofy on strategic pilot deployments with proven enterprise partners",
+      "corporate": {
+        "title": "Tier-1 Global Bank (HR Pilot)",
+        "description": "Internal employee benefits NFC deployment across multiple office locations. Pilot with a global bank serving as both channel partner and demand buyer.",
+        "benefit1": "Captive professional audience",
+        "benefit2": "Enterprise-grade case study",
+        "benefit3": "Multi-market expansion potential"
       },
-      "annual": {
-        "badge": "BEST VALUE",
-        "title": "Annual Plan",
-        "price": "$799",
-        "period": "/year",
-        "savings": "Save 15% with annual billing",
-        "item1": "36,000 coupons per year",
-        "item2": "Five NFC tags included",
-        "item3": "Priority support with expanded assistance",
-        "item4": "Advanced analytics & reporting",
-        "item5": "Dedicated setup assistance",
-        "cta": "Get Started"
+      "malls": {
+        "title": "Mid-Size Mall Operators",
+        "description": "Faster decision cycles, more experimental mindset, strong case study potential for scaling to larger REIT partners.",
+        "benefit1": "Rapid deployment & iteration",
+        "benefit2": "Tenant & shopper engagement data",
+        "benefit3": "Pathway to REIT partnerships"
       }
+    },
+    "partnershipModel": {
+      "title": "Flexible Partnership Terms",
+      "subtitle": "Aligned incentives with performance-based models, not upfront subscriptions",
+      "performance": {
+        "title": "Performance-Based",
+        "description": "Transaction fees on successful redemptions through your distribution nodes",
+        "item1": "Pay only for actual redemptions",
+        "item2": "No upfront costs",
+        "item3": "Volume discounts available"
+      },
+      "revenueShare": {
+        "badge": "POPULAR",
+        "title": "Revenue Share",
+        "description": "Earn from merchant payments on redemptions flowing through your network",
+        "item1": "Passive revenue stream",
+        "item2": "Aligned incentives",
+        "item3": "Monthly settlement"
+      },
+      "custom": {
+        "title": "Custom Deployment",
+        "description": "Tailored terms for large property portfolios and multi-location partners",
+        "item1": "Bespoke contract terms",
+        "item2": "Dedicated account manager",
+        "item3": "White-label options"
+      },
+      "note": "No monthly subscriptions. No upfront inventory costs. Your revenue grows as the network grows.",
+      "cta": "Discuss Partnership Terms"
     },
     "caseStudy": {
-      "title": "Success Story",
-      "company": "Supermarket Chain",
-      "industry": "Retail Industry",
-      "description": "A leading supermarket chain successfully implemented Mezzofy's NFC coupon solution across 200+ outlets, revolutionizing their promotional distribution strategy.",
+      "title": "Channel Partner Success Story",
+      "company": "Leading Mall Operator",
+      "industry": "Retail Property Management",
+      "description": "A regional mall operator activated 50+ locations as NFC distribution nodes, connecting merchant offers to shoppers at scale and driving measurable foot traffic increases.",
       "metrics": {
-        "stores": {
-          "value": "200+",
-          "label": "Store Locations"
+        "locations": {
+          "value": "50+",
+          "label": "Distribution Nodes"
         },
-        "engagement": {
-          "value": "85%",
-          "label": "Customer Engagement"
+        "merchants": {
+          "value": "120+",
+          "label": "Merchants Activated"
         },
-        "redemption": {
-          "value": "3x",
-          "label": "Redemption Rate"
+        "traffic": {
+          "value": "+18%",
+          "label": "Foot Traffic Increase"
         }
       }
     },
     "faq": {
       "title": "Frequently Asked Questions",
       "q1": {
-        "question": "How long does account activation take?",
-        "answer": "Account activation typically takes 24-48 hours after signup. Once activated, you can immediately start creating and distributing coupons through your NFC tags."
+        "question": "What are my technology obligations as a channel partner?",
+        "answer": "Zero. Mezzofy handles all technology infrastructure, merchant inventory management, tag configuration, and content updates. You simply deploy the physical tags in your spaces."
       },
       "q2": {
-        "question": "How are coupons counted?",
-        "answer": "Each unique coupon instance distributed to a customer counts toward your monthly or annual limit. Multiple taps by the same customer for the same coupon only count once."
+        "question": "How do I control which merchant offers appear on my tags?",
+        "answer": "Channel partners can set geographic, category, and value tier filters. Mezzofy's routing engine automatically matches the most relevant merchant inventory to your audience demographics and location."
       },
       "q3": {
-        "question": "Can I modify offers after distribution?",
-        "answer": "Yes! Our platform allows real-time modifications to active campaigns. You can update offer terms, extend expiration dates, void coupons, or refine targeting parameters at any time through the dashboard."
+        "question": "What if a merchant leaves the network?",
+        "answer": "Your tags remain fully operational. The Mezzofy exchange automatically routes new merchant inventory to replace any merchants that leave. The distribution node stays alive and valuable to your audience."
       },
       "q4": {
-        "question": "What happens if I exceed my coupon limit?",
-        "answer": "If you approach your coupon limit, we'll notify you in advance. You can either upgrade to a higher plan or purchase additional coupon credits. There's no service interruption - excess usage is billed at a competitive per-coupon rate."
+        "question": "How quickly can I launch a pilot deployment?",
+        "answer": "Onboarding typically takes 1-2 weeks from initial discussion to live deployment. For strategic partners (enterprise HR, mid-size malls), we fast-track to 5-7 business days with dedicated implementation support."
       }
     },
     "ecosystem": {
-      "title": "Works Seamlessly with the Mezzofy Ecosystem",
-      "description": "Coupon NFC integrates with other Mezzofy products to create a complete solution",
-      "management": {
-        "title": "+ Coupon Management",
-        "description": "Create and manage coupons distributed via NFC tags"
+      "title": "Plug into the Full Mezzofy Exchange Ecosystem",
+      "description": "Channel partners connect to the complete merchant-to-consumer infrastructure",
+      "marketplace": {
+        "title": "+ Coupon Marketplace",
+        "description": "Access verified merchant inventory flowing through your distribution nodes"
       },
       "wallet": {
         "title": "+ Coupon Wallet",
-        "description": "Store NFC-acquired coupons in customer wallets"
+        "description": "Consumers collect NFC-distributed coupons in mobile wallets"
       },
-      "playbook": {
-        "title": "+ Coupon Playbook",
-        "description": "Learn best practices for in-store NFC campaigns"
+      "management": {
+        "title": "+ Coupon Management",
+        "description": "Merchants create offers distributed through partner networks"
       },
       "bundle": {
-        "title": "💡 Recommended Bundle: Retail Excellence Bundle",
-        "description": "Perfect for physical retailers: Management + NFC + Wallet creates seamless in-store to mobile experience",
-        "cta": "Contact Sales for Bundle Pricing"
+        "title": "Channel Partner Distribution Bundle",
+        "description": "NFC Distribution Network + Marketplace Access + Settlement Infrastructure creates complete channel partner solution",
+        "cta": "Discuss Channel Partner Terms"
       }
     },
     "footerCta": {
-      "title": "Ready to Launch Your NFC Coupon Campaign?",
-      "description": "Join leading retailers and start engaging customers with tap-activated coupons today",
-      "startTrial": "Start Free Trial",
-      "contactSales": "Contact Sales"
+      "title": "Ready to Become a Distribution Partner?",
+      "description": "Join the network powering merchant-to-consumer coupon distribution across Asia-Pacific",
+      "becomePartner": "Schedule Partner Discussion"
+    },
+    "contact": {
+      "heading": "Get Started as a Channel Partner",
+      "description": "Connect with our partnerships team to discuss NFC distribution network opportunities",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Business Email",
+      "company": "Company Name",
+      "partnerType": "Partner Type",
+      "selectPartnerType": "Select your partner type",
+      "typeMall": "Mall Operator / Property Developer",
+      "typeCorporate": "Corporate HR / Employee Benefits",
+      "typeProperty": "Property REIT / Multi-Location",
+      "typeOther": "Other",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your distribution partnership goals...",
+      "submit": "Request Partnership Discussion"
     }
   },
   "marketing": {
@@ -1321,7 +1393,7 @@
     },
     "hero": {
       "label": "COUPON MARKETING",
-      "title": "SELLING VOUCHERS HAS NEVER BEEN EASIER",
+      "title": "SELL VOUCHERS EASIER THAN EVER",
       "description": "Turn coupon marketing expense into revenue. Sell directly to customers with seamless payment integration and multi-channel distribution",
       "contactUs": "Contact Us Now",
       "learnMore": "Learn More",
@@ -1679,6 +1751,15 @@
       "description": "Our team is available 24/7 to help you resolve any issues with the Mezzofy platform.",
       "contactUs": "Contact Support",
       "viewDocs": "View Documentation"
+    }
+  },
+  "wallet": {
+    "hero": {
+      "label": "COUPON WALLET",
+      "title": "YOUR DIGITAL WALLET FOR <span class=\"text-primary-orange\">COUPONS</span>",
+      "description": "Multi-platform coupon collection <span class=\"text-primary-orange font-semibold\">improving redemption rates 40%+</span>. Cross-device sync via Mezzofy Exchange Protocol—<span class=\"text-primary-orange font-semibold\">white-label or API integration</span>.",
+      "getStarted": "Get Started",
+      "exploreFeatures": "Explore Features"
     }
   },
   "notFound": {

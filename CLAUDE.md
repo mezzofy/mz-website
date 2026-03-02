@@ -159,15 +159,15 @@ tailwind.config.js    # Theme configuration (custom colors)
 
 | Color | Hex | Tailwind Class | Usage |
 |-------|-----|----------------|-------|
-| **Primary Orange** | `#F39C12` | `primary-orange` | CTA buttons, links, brand accents |
-| **Dark Orange** | `#DC7B08` | `dark-orange` | Hover states, active states (15% darker) |
-| **Light Orange** | `#F8C471` | `light-orange` | Subtle backgrounds, highlights (30% lighter) |
+| **Primary Orange** | `#FF6B35` | `primary-orange` | CTA buttons, links, brand accents |
+| **Dark Orange** | `#e65a2b` | `dark-orange` | Hover states, active states (15% darker) |
+| **Light Orange** | `#ffa374` | `light-orange` | Subtle backgrounds, highlights (30% lighter) |
 | **Primary Black** | `#1a1a1a` | `primary-black` | Headers, dark sections, footer |
 | **Dark Grey** | `#4a4a4a` | `dark-grey` | Body text, paragraphs |
 | **Medium Grey** | `#808080` | `medium-grey` | Secondary text, captions |
 | **Light Grey** | `#f5f5f5` | `light-grey` | Section backgrounds, dividers |
 
-**Color Standardization Complete:** All 18 HTML files now use `#F39C12` as the official brand orange (updated Feb 2026)
+**Color Standardization Complete:** All 42 files (18 HTML with inline styles + 24 using compiled CSS) now use `#FF6B35` as the official brand orange (updated Feb 2026)
 
 **Usage Rules:**
 - **CTA Buttons:** `bg-primary-orange hover:bg-dark-orange`
@@ -182,9 +182,9 @@ tailwind.config = {
   theme: {
     extend: {
       colors: {
-        'primary-orange': '#F39C12',   // ✅ Official brand orange
-        'dark-orange': '#DC7B08',      // Hover states (15% darker)
-        'light-orange': '#F8C471',     // Backgrounds (30% lighter)
+        'primary-orange': '#FF6B35',   // ✅ Official brand orange
+        'dark-orange': '#e65a2b',      // Hover states (15% darker)
+        'light-orange': '#ffa374',     // Backgrounds (30% lighter)
         'primary-black': '#1a1a1a',
         'dark-grey': '#4a4a4a',
         'medium-grey': '#808080',

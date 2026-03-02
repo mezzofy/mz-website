@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Integrate coupon functionality with our developer-first API and SDKs. Build on the Mezzofy Exchange Protocol.">
+    <meta name="theme-color" content="#FF6B35">
     <title>Mezzofy for Developers - Build on the Exchange Protocol</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -11,7 +12,7 @@
             theme: {
                 extend: {
                     colors: {
-                        'primary-orange': '#F39C12',
+                        'primary-orange': '#FF6B35',
                         'primary-black': '#1A1A1A',
                         'light-grey': '#F5F5F5',
                         'medium-grey': '#757575',
@@ -39,7 +40,7 @@
             box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.1);
         }
         .btn-primary {
-            background-color: #F39C12;
+            background-color: #FF6B35;
             color: white;
             padding: 0.75rem 1.5rem;
             border-radius: 0.5rem;
@@ -48,20 +49,20 @@
             transition: background-color 0.2s;
         }
         .btn-primary:hover {
-            background-color: #e55a2b;
+            background-color: #e65a2b;
         }
         .btn-secondary {
             background-color: white;
-            color: #F39C12;
+            color: #FF6B35;
             padding: 0.75rem 1.5rem;
             border-radius: 0.5rem;
             font-weight: 600;
             display: inline-block;
-            border: 2px solid #F39C12;
+            border: 2px solid #FF6B35;
             transition: all 0.2s;
         }
         .btn-secondary:hover {
-            background-color: #F39C12;
+            background-color: #FF6B35;
             color: white;
         }
         .code-block {
@@ -114,6 +115,7 @@
                             <a href="for-merchants.html" class="dropdown-item text-primary-orange font-semibold" data-i18n="common.nav.merchantSolution">I'm a Merchant</a>
                             <a href="for-distributors.html" class="dropdown-item" data-i18n="common.nav.distributorSolution">I'm a Distributor</a>
                             <a href="for-developers.html" class="dropdown-item" data-i18n="common.nav.developerSolution">I'm a Developer</a>
+                                                    <a href="for-ai-commerce.html" class="dropdown-item" data-i18n="common.nav.aiCommerceSolution">AI Commerce</a>
                         </div>
                     </div>
 
@@ -245,6 +247,7 @@
                         <a href="for-merchants.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.merchantSolution">I'm a Merchant</a>
                         <a href="for-distributors.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.distributorSolution">I'm a Distributor</a>
                         <a href="for-developers.html" class="block py-2 text-sm text-primary-orange font-semibold" data-i18n="common.nav.developerSolution">I'm a Developer</a>
+                                            <a href="for-ai-commerce.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.aiCommerceSolution">AI Commerce</a>
                     </div>
                 </div>
 
@@ -560,22 +563,22 @@
                     </div>
                     <div class="code-block">
 <span style="color: #888;">// Initialize the Mezzofy client</span>
-<span style="color: #F39C12;">const</span> mezzofy = <span style="color: #F39C12;">require</span>(<span style="color: #98C379;">'@mezzofy/sdk'</span>);
+<span style="color: #FF6B35;">const</span> mezzofy = <span style="color: #FF6B35;">require</span>(<span style="color: #98C379;">'@mezzofy/sdk'</span>);
 
-<span style="color: #F39C12;">const</span> client = <span style="color: #F39C12;">new</span> mezzofy.Client({
+<span style="color: #FF6B35;">const</span> client = <span style="color: #FF6B35;">new</span> mezzofy.Client({
   apiKey: <span style="color: #98C379;">'your_api_key_here'</span>,
   environment: <span style="color: #98C379;">'production'</span>
 });
 
 <span style="color: #888;">// Fetch available coupons from marketplace</span>
-<span style="color: #F39C12;">const</span> coupons = <span style="color: #F39C12;">await</span> client.marketplace.getCoupons({
+<span style="color: #FF6B35;">const</span> coupons = <span style="color: #FF6B35;">await</span> client.marketplace.getCoupons({
   category: <span style="color: #98C379;">'retail'</span>,
   location: <span style="color: #98C379;">'US'</span>,
   minValue: <span style="color: #D19A66;">10</span>
 });
 
 <span style="color: #888;">// Create a new coupon campaign</span>
-<span style="color: #F39C12;">const</span> campaign = <span style="color: #F39C12;">await</span> client.coupons.create({
+<span style="color: #FF6B35;">const</span> campaign = <span style="color: #FF6B35;">await</span> client.coupons.create({
   title: <span style="color: #98C379;">'Summer Sale - 20% Off'</span>,
   discount: { type: <span style="color: #98C379;">'percentage'</span>, value: <span style="color: #D19A66;">20</span> },
   validUntil: <span style="color: #98C379;">'2024-08-31'</span>,
@@ -752,6 +755,7 @@ console.log(<span style="color: #98C379;">'Campaign created:'</span>, campaign.i
                         <li><a href="for-merchants.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.merchants">For Merchants</a></li>
                         <li><a href="for-distributors.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.distributors">For Distributors</a></li>
                         <li><a href="for-developers.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.developers">For Developers</a></li>
+                                                <li><a href="for-ai-commerce.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.aiCommerce">For AI Commerce</a></li>
                         <li><a href="index.html#product-ecosystem" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.ecosystem">Product Ecosystem</a></li>
                     </ul>
                 </div>

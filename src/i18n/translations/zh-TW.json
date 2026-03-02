@@ -1379,7 +1379,7 @@
     },
     "hero": {
       "label": "優惠券行銷",
-      "title": "線上銷售優惠券從未如此簡單",
+      "title": "銷售優惠券比以往更簡單",
       "description": "將優惠券行銷費用轉化為收入。透過無縫的支付整合和多通路分銷直接向客戶銷售",
       "contactUs": "立即聯絡我們",
       "learnMore": "了解更多",
@@ -1616,6 +1616,15 @@
       "description": "我們的團隊全天候 24/7 為您提供服務，協助您解決 Mezzofy 平台上的任何問題。",
       "contactUs": "聯絡支援",
       "viewDocs": "查看文件"
+    }
+  },
+  "wallet": {
+    "hero": {
+      "label": "優惠券錢包",
+      "title": "您的<span class=\"text-primary-orange\">優惠券</span>數位錢包",
+      "description": "多平台優惠券收集<span class=\"text-primary-orange font-semibold\">提升兌換率 40%+</span>。透過 Mezzofy 交換協議實現跨裝置同步—<span class=\"text-primary-orange font-semibold\">白標或 API 整合</span>。",
+      "getStarted": "立即開始",
+      "exploreFeatures": "探索功能"
     }
   },
   "notFound": {

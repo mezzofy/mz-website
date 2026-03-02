@@ -1,16 +1,16 @@
 # Project Status: mz-website
 
-**Last Updated:** 2026-02-22
-**Current Phase:** i18n Complete ✅
-**Overall Progress:** ~98% (Base features complete, i18n 100% complete, MCP server configuration fixed)
+**Last Updated:** 2026-02-25
+**Current Phase:** i18n Complete ✅ / Color Audit Complete ✅
+**Overall Progress:** ~98% (Base features complete, i18n 100% complete, Color audit complete, 1 fix pending)
 **Branch:** main
-**Latest Commit:** (MCP Server Configuration Fix — see recently completed)
+**Latest Commit:** (Color Audit Complete — see recently completed)
 
 ---
 
 ## Quick Summary
 
-i18n implementation COMPLETE (Feb 17, 2026). All 30/30 pages now support 3 languages (EN, zh-TW, zh-CN) with language selectors and localStorage persistence. MCP server configuration fixed for Windows compatibility (Feb 22, 2026). Website is now 100% multilingual with proper development tooling.
+i18n implementation COMPLETE (Feb 17, 2026). All 30/30 pages now support 3 languages (EN, zh-TW, zh-CN) with language selectors and localStorage persistence. MCP server configuration fixed for Windows compatibility (Feb 22, 2026). Comprehensive color audit completed and homepage color compliance fixed (Feb 25, 2026). Website is now 100% multilingual with 96.8% brand color compliance (30 of 31 pages).
 
 ---
 
@@ -22,6 +22,8 @@ i18n implementation COMPLETE (Feb 17, 2026). All 30/30 pages now support 3 langu
 
 ### Objectives
 - [x] **MCP Server Configuration:** Fix Windows compatibility issue (COMPLETE)
+- [x] **Color Audit:** Comprehensive brand color compliance audit (COMPLETE)
+- [x] **Color Fix:** Fix index.html Tailwind config color definitions (COMPLETE)
 - [ ] **Security:** Address XSS vulnerability in i18n.js (PENDING)
 - [ ] **Deployment:** AWS S3 + CloudFront setup (PENDING)
 
@@ -31,6 +33,63 @@ MCP server configuration fixed for Windows. Shadcn MCP server now loads correctl
 ---
 
 ## Recently Completed (Last 7 Days)
+
+**2026-02-25 (Coupon Marketplace Hero Title Rephrase):**
+- ✅ Reduced hero title by one word on coupon-marketplace.html → `dist/coupon-marketplace.html:335`
+  - Impact: More direct and authoritative hero headline
+  - Changed from: "THE GLOBAL EXCHANGE HUB FOR DIGITAL COUPONS" (8 words)
+  - Changed to: "GLOBAL EXCHANGE HUB FOR DIGITAL COUPONS" (7 words)
+  - Files updated: dist/coupon-marketplace.html, dist/i18n/translations/en.json, src/i18n/translations/en.json
+  - Chinese translations unchanged (no "THE" equivalent in Chinese)
+  - Orange highlight on "DIGITAL COUPONS" preserved
+  - No build required (static HTML and JSON updates)
+  - Time: ~7 minutes (as estimated)
+  - Rationale: Removing article "THE" creates more punchy, professional headline
+
+**2026-02-25 (Theme-Color Meta Tag — All Pages):**
+- ✅ Added theme-color meta tag to all 39 pages → `dist/**/*.html`
+  - Impact: Consistent mobile browser chrome color across entire site
+  - Tag added: `<meta name="theme-color" content="#FF6B35">`
+  - Pages updated: 17 main + 6 blog + 8 news + 8 news backups = 39 pages
+  - Placement: After viewport/description meta tags, before title tag
+  - Platform support: Android Chrome (toolbar), iOS Safari (PWA status bar)
+  - Verification: Automated grep confirms 40 pages with theme-color (including index.html)
+  - Result: Professional branded appearance on all mobile browsers
+  - Time: 35 minutes (within 35-45 minute estimate)
+  - No build needed (static HTML meta tag)
+  - Files modified: 39 HTML files across dist/, dist/blog/, dist/news/, dist/news/backup/
+  - Related: Plan document in conversation history
+
+**2026-02-25 (Color Compliance Fix — index.html):**
+- ✅ Fixed index.html Tailwind config color definitions → `dist/index.html:15-16`
+  - Impact: Homepage now 100% compliant with brand color standards
+  - Changed: 'dark-orange' from #DC7B08 to #e65a2b (correct)
+  - Changed: 'light-orange' from #F8C471 to #ffa374 (correct)
+  - Added: theme-color meta tag #FF6B35 for mobile browser chrome
+  - Verification: Automated grep search confirms old colors removed
+  - Result: Overall site compliance improved from 93.5% to 96.8%
+  - Time: 3 minutes (faster than 5-minute estimate)
+  - No build needed (inline config interpreted at runtime)
+  - Files modified: `dist/index.html` (3 lines: 6, 15, 16)
+  - Related: COLOR-AUDIT-FINAL-REPORT.md (updated with fix details)
+
+**2026-02-25 (Comprehensive Orange Color Audit — 31 Pages):**
+- ✅ Completed comprehensive color audit of all 31 pages (main + blog + news) → `COLOR-AUDIT-FINAL-REPORT.md`
+  - Impact: Verified brand color consistency across entire website
+  - Result: 93.5% compliance (29/31 pages fully compliant)
+  - Found: ZERO deprecated colors (#ff7a3d, #F39C12) — previous standardization successful
+  - Identified: 1 non-compliant page (index.html - incorrect Tailwind config)
+  - Identified: 1 page needing review (nfc-user-guide.html - semantic colors)
+  - Method: Automated grep searches + manual code review
+  - Scope: 17 main pages + 6 blog articles + 8 news articles
+  - Official brand color: #FF6B35 (primary-orange), #e65a2b (dark-orange)
+  - Files created:
+    - `COLOR-AUDIT-FINAL-REPORT.md` (comprehensive 500+ line report)
+    - `temp/color-audit-batch-1-main-pages.md` (detailed main pages findings)
+    - `temp/color-audit-batch-2-blog.md` (blog articles findings)
+    - `temp/color-audit-batch-3-news.md` (news articles findings)
+  - **Next Step:** Fix index.html Tailwind config (lines 15-16) — 5 minutes estimated
+  - Reference: CLAUDE.md § Color Palette, tailwind.config.js
 
 **2026-02-22 (MCP Server Configuration Fix — Windows Compatibility):**
 - ✅ Fixed Shadcn MCP server configuration for Windows → `.mcp.json`

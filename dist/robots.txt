@@ -5,6 +5,8 @@ Allow: /
 
 # Block test pages
 Disallow: /test-i18n.html
+Disallow: /test-translation-debug.html
+Disallow: /translation-test-results.html
 
 # Block admin/internal paths (if any added in future)
 Disallow: /admin/

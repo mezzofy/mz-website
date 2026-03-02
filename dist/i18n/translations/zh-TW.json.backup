@@ -1,0 +1,2040 @@
+{
+  "common": {
+    "nav": {
+      "solutions": "解決方案",
+      "products": "產品",
+      "developer": "開發者",
+      "resources": "資源",
+      "company": "公司",
+      "getStarted": "開始使用",
+      "merchantSolution": "我是商家",
+      "distributorSolution": "我是分銷商",
+      "developerSolution": "我是開發者",
+      "managementSystem": "優惠券管理系統",
+      "marketplace": "優惠券市場",
+      "nfc": "優惠券 NFC",
+      "marketing": "優惠券行銷",
+      "wallet": "優惠券錢包",
+      "apiDoc": "API 文檔",
+      "apiUseCase": "API 使用案例",
+      "playbook": "優惠券指南",
+      "support": "支援",
+      "aboutUs": "關於我們",
+      "contactUs": "聯絡我們",
+      "newsPress": "新聞與媒體",
+      "investors": "投資者"
+    },
+    "footer": {
+      "tagline": "透過 Mezzofy 交易協議，打造優惠券基礎設施的未來。",
+      "solutions": {
+        "title": "解決方案",
+        "merchants": "商家方案",
+        "distributors": "分銷商方案",
+        "developers": "開發者方案",
+        "ecosystem": "產品生態系統"
+      },
+      "products": {
+        "title": "產品",
+        "management": "管理",
+        "marketplace": "市場",
+        "nfc": "NFC",
+        "marketing": "行銷",
+        "wallet": "錢包"
+      },
+      "resources": {
+        "title": "資源",
+        "playbook": "優惠券指南",
+        "apiDoc": "API 文檔",
+        "apiUseCase": "API 使用案例",
+        "support": "支援"
+      },
+      "company": {
+        "title": "公司",
+        "about": "關於我們",
+        "contact": "聯絡我們",
+        "news": "新聞與媒體",
+        "investors": "投資者"
+      },
+      "copyright": "© 2025 Mezzofy. 版權所有。"
+    },
+    "buttons": {
+      "getStarted": "開始使用",
+      "learnMore": "了解更多",
+      "contactSales": "聯絡業務",
+      "readMore": "閱讀更多"
+    },
+    "logo": {
+      "alt": "Mezzofy 標誌"
+    },
+    "blog": {
+      "backToHub": "返回新聞發布",
+      "previous": "上一篇",
+      "next": "下一篇",
+      "source": "來源",
+      "category": "部落格"
+    },
+    "news": {
+      "backToHub": "返回新聞發布",
+      "previous": "上一篇",
+      "next": "下一篇",
+      "source": "來源",
+      "category": "新聞"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "電子票券<span class=\"text-primary-orange\">智能交換</span>平台",
+      "subtitle": "以安全、代幣化的數位商務，連結商家與經銷商",
+      "description": "Mezzofy 是 AI 驅動的代幣化協議，讓電子票券的供需直接對接，實現全球範圍內的防詐驗證與兌換率最大化。",
+      "ctaMerchants": "列出您的庫存：開始銷售",
+      "ctaDistributors": "取得優惠：尋找合作夥伴"
+    },
+    "protocol": {
+      "title": "促銷的未來是安全、標準化且代幣化的",
+      "description": "傳統數位促銷因分散化、高成本和安全風險而失敗。我們淘汰過時的 SaaS 模式，以高流動性、高效能的交易協議取而代之。",
+      "network": {
+        "title": "從工具到網路",
+        "description": "我們專注於網路效應和安全結算，而不僅僅是功能。透過連結建立真正的價值。"
+      },
+      "ai": {
+        "title": "AI 原生基礎設施",
+        "description": "我們的數據是機器可讀的，使我們成為下一代自主 AI 購物代理的標準介面。"
+      },
+      "security": {
+        "title": "無與倫比的安全性",
+        "description": "每個促銷都被標準化為 Mezzofy 優惠券標準，這是一個專有協議，保證獨特、防欺詐的數位資產。"
+      }
+    },
+    "ecosystem": {
+      "title": "從願景到產品：Mezzofy 生態系統",
+      "description": "我們的交易協議為完整的產品套件提供動力，旨在在整個優惠券生命週期中執行我們的基礎設施願景",
+      "diagram": "[視覺圖表：產品生態系統層級，顯示核心基礎設施 → 分銷渠道 → 消費者體驗 → 策略之間的關係]",
+      "coreInfra": {
+        "title": "核心基礎設施",
+        "description": "創建和交換優惠券的基礎產品",
+        "item1": "後端營運",
+        "item2": "交易層"
+      },
+      "distribution": {
+        "title": "分銷渠道",
+        "description": "多渠道優惠券分銷選項",
+        "item1": "實體零售接觸點",
+        "item2": "電子商務銷售"
+      },
+      "consumer": {
+        "title": "消費者體驗",
+        "description": "面向客戶的優惠券收集",
+        "item1": "多平台訪問"
+      },
+      "strategy": {
+        "title": "策略與賦能",
+        "description": "戰略指導和最佳實踐",
+        "item1": "生命週期框架"
+      },
+      "bundlesTitle": "推薦產品組合",
+      "retail": {
+        "title": "零售卓越",
+        "description": "適用於擁有實體+數位業務的多地點零售商",
+        "item1": "管理",
+        "item2": "NFC",
+        "item3": "錢包"
+      },
+      "revenue": {
+        "title": "收益最大化",
+        "description": "適用於將優惠券作為收入來源銷售的商家",
+        "item1": "管理",
+        "item2": "行銷",
+        "item3": "市場"
+      },
+      "partner": {
+        "title": "分銷合作夥伴",
+        "description": "適用於忠誠度計劃、人力資源平台、渠道合作夥伴",
+        "item1": "市場",
+        "item2": "Bridge API",
+        "item3": "錢包（白標）"
+      },
+      "enterprise": {
+        "title": "企業完整方案",
+        "description": "適用於有複雜需求的大型企業",
+        "item1": "所有產品",
+        "item2": "客製化整合",
+        "item3": "專屬支援"
+      },
+      "contactSales": "聯絡業務 →"
+    },
+    "merchants": {
+      "title": "商家方案：將優惠券負債轉化為高效能數位資產",
+      "description": "免費加入交易所，立即獲得全球分銷渠道。您只需在成功完成銷售和兌換時付費。",
+      "benefit1": {
+        "title": "零前期成本",
+        "description": "免費註冊。僅在最終成功兌換時支付少量交易費（基於績效的模式）。"
+      },
+      "benefit2": {
+        "title": "靈活控制",
+        "description": "使用我們的 Bridge API 與您現有的 CMS 整合，或使用我們免費的 Mezzofy CMS 產品。您制定規則，我們處理安全性。"
+      },
+      "benefit3": {
+        "title": "全球足跡",
+        "description": "立即將您的庫存暴露給我們的 B2B 市場、渠道合作夥伴和高流量的 NFC 網路，以進行實體零售互動。"
+      },
+      "benefit4": {
+        "title": "面向未來的資產",
+        "description": "您的促銷被代幣化，為二級市場和新金融工具（RWA 連結）開啟了可能性。"
+      }
+    },
+    "distributors": {
+      "title": "分銷商與合作夥伴：取得全球最安全、最具意向性的優惠券庫存",
+      "description": "使用即時、經過驗證的優惠增強您的忠誠度計劃、銀行應用程式或企業人力資源入口網站，無需承擔庫存採購的財務風險。",
+      "benefit1": {
+        "title": "無風險整合",
+        "description": "免費訪問，透過 Bridge API 無縫整合。立即將標準化優惠拉入您的平台。"
+      },
+      "benefit2": {
+        "title": "現金流保護",
+        "description": "我們的寄售結算模式僅要求大型企業支付部分預付款，大部分費用僅在驗證兌換時處理。"
+      },
+      "benefit3": {
+        "title": "標準化品質",
+        "description": "所有優惠券都遵守 Mezzofy 優惠券標準，消除欺詐風險，確保為您的客戶提供完美的兌換體驗。"
+      },
+      "benefit4": {
+        "title": "精準分銷",
+        "description": "消費為您的渠道量身定制的庫存：忠誠度與人力資源用於內部福利，AI 代理 API 用於程式化消費。"
+      }
+    },
+    "tokenization": {
+      "title": "交易核心：商務與安全的交匯處",
+      "description": "我們的第二層核心將簡單的促銷代碼轉換為獨特、可追蹤的數位資產。",
+      "component1": {
+        "title": "標準化與代幣化",
+        "description": "每張優惠券在接收時都被代幣化，轉換為安全的單次使用數位資產（NFT/可替代工具）。"
+      },
+      "component2": {
+        "title": "資產連結",
+        "description": "我們為將這些資產連結到實體資產（RWA）創建基礎，將數位優惠券市場擴展到快速增長的 Web3/DeFi 資產空間。"
+      },
+      "component3": {
+        "title": "清算所",
+        "description": "核心管理所有寄售、財務對帳和無欺詐驗證。"
+      }
+    },
+    "cta": {
+      "title": "準備好推動商務的未來了嗎？",
+      "description": "無論您是尋求最高性能的商家，還是尋求高意向庫存的分銷商，Mezzofy 交易協議都是您不可或缺的基礎設施。",
+      "contactSales": "聯絡業務（企業）",
+      "developerDocs": "開發者文件（API 訪問）"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "關於公司",
+      "subtitle": "透過<span class=\"text-primary-orange\">智能優惠券的力量</span>連接企業與客戶"
+    },
+    "mission": {
+      "title": "我們的使命",
+      "nameOrigin": {
+        "title": "名稱起源",
+        "description": "<span class=\"font-semibold text-primary-orange\">'Mezzo'</span>（義大利語「中間」）結合<span class=\"font-semibold text-primary-orange\">'-fy'</span>（意為「為你」）——體現我們透過尖端優惠券解決方案連結企業與顧客的奉獻精神。"
+      },
+      "corePurpose": {
+        "title": "核心宗旨",
+        "description": "Mezzofy 不僅僅是開發數位優惠券或應用程式，而是定位為<span class=\"font-semibold text-primary-orange\">優惠券行銷基礎設施</span>的先驅，使創建、分享、兌換和測量變得容易。"
+      },
+      "keyObjectives": {
+        "title": "關鍵目標",
+        "description": "我們旨在<span class=\"text-primary-orange font-semibold\">提升精神</span>、<span class=\"text-primary-orange font-semibold\">建立有意義的連結</span>、<span class=\"text-primary-orange font-semibold\">釋放創造力</span>和<span class=\"text-primary-orange font-semibold\">實現專注</span>，透過促進商家與消費者之間的互動，讓生活更加充滿活力。"
+      }
+    },
+    "performance": {
+      "title": "大規模性能",
+      "metric1": {
+        "value": "數百萬",
+        "label": "處理的優惠券"
+      },
+      "metric2": {
+        "value": "數十億",
+        "label": "價值"
+      },
+      "metric3": {
+        "value": "超快速",
+        "label": "交易速度"
+      },
+      "metric4": {
+        "value": "全球",
+        "label": "服務市場"
+      }
+    },
+    "awards": {
+      "title": "榮譽與獎項"
+    },
+    "brands": {
+      "title": "受到領先品牌信賴",
+      "description": "Mezzofy 為零售、美容、酒店、金融和娛樂等行業的眾多<span class=\"text-primary-orange font-semibold\">跨國品牌</span>提供服務。"
+    },
+    "cta": {
+      "title": "準備好推動商務的未來了嗎？",
+      "description": "無論您是尋求最高性能的商家，還是尋求高意向庫存的分銷商，Mezzofy 交易協議都是您不可或缺的基礎設施。",
+      "contactSales": "聯絡業務（企業）",
+      "developerDocs": "開發者文件（API 訪問）"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "聯絡我們",
+      "subtitle": "聯絡 Mezzofy 團隊以獲取所有<span class=\"text-primary-orange\">商業查詢</span>和全球<span class=\"text-primary-orange\">戰略合作</span>機會"
+    },
+    "info": {
+      "email": {
+        "title": "電郵給我們",
+        "general": "一般查詢",
+        "sales": "銷售與合作"
+      },
+      "phone": {
+        "title": "致電或發訊息給我們",
+        "label": "WhatsApp / 電話",
+        "hours": "服務時間：星期一至五，上午 9:00 - 下午 6:00（香港時間）"
+      }
+    },
+    "offices": {
+      "title": "我們的全球辦事處",
+      "subtitle": "歡迎訪問我們在亞洲的任何辦事處",
+      "hongkong": {
+        "title": "香港",
+        "address": "九龍尖沙咀<br>麼地道 61 號<br>Mirror Tower LG1 2號單位"
+      },
+      "singapore": {
+        "title": "新加坡",
+        "address": "20 Cecil Street #05-03<br>PLUS<br>Singapore 049705"
+      },
+      "malaysia": {
+        "title": "馬來西亞",
+        "address": "No. 20-02, Jalan Eco Cascadia 6/2<br>Taman Setia Eco Cascadia<br>81100 Johor Bahru, Johor, Malaysia"
+      }
+    },
+    "form": {
+      "title": "發送訊息給我們",
+      "description": "有疑問或想進一步了解我們的解決方案？填寫以下表格，我們將在 24 小時內回覆您。",
+      "name": {
+        "label": "姓名 <span class=\"text-primary-orange\">*</span>",
+        "placeholder": "您的全名"
+      },
+      "email": {
+        "label": "電郵 <span class=\"text-primary-orange\">*</span>",
+        "placeholder": "your@email.com"
+      },
+      "company": {
+        "label": "公司",
+        "placeholder": "您的公司名稱"
+      },
+      "phone": {
+        "label": "電話",
+        "placeholder": "+852 0000 0000"
+      },
+      "subject": {
+        "label": "主題 <span class=\"text-primary-orange\">*</span>",
+        "select": "選擇主題",
+        "general": "一般查詢",
+        "sales": "銷售與合作",
+        "support": "技術支援",
+        "demo": "請求演示",
+        "other": "其他"
+      },
+      "message": {
+        "label": "訊息 <span class=\"text-primary-orange\">*</span>",
+        "placeholder": "告訴我們如何幫助您..."
+      },
+      "submit": "發送訊息",
+      "privacy": "我們尊重您的隱私。您的資訊絕不會與第三方共享。"
+    }
+  },
+  "newsPress": {
+    "hero": {
+      "title": "新聞與媒體",
+      "subtitle": "了解 Mezzofy 的<span class=\"text-primary-orange\">最新消息、行業見解和公司動態</span>"
+    },
+    "filter": {
+      "all": "全部 (14)",
+      "blog": "部落格 (6)",
+      "news": "新聞 (8)"
+    },
+    "category": {
+      "blog": "部落格",
+      "news": "新聞"
+    },
+    "readMore": "閱讀更多 →",
+    "articles": {
+      "nfcParknshop": {
+        "title": "Mezzofy 助品牌設置優惠券到240 間百佳 NFC 標籤",
+        "description": "透過 NFC 技術簡化與百佳合作的快消品牌促銷流程，消除協調複雜性。"
+      },
+      "treasureGlobal": {
+        "title": "Mezzofy 與 Treasure Global 建立合作夥伴關係",
+        "description": "與 Treasure Global Inc. 策略合作，加速馬來西亞數位優惠券擴展，預計年度經常性收入達 200-400 萬美元。"
+      },
+      "eCouponsPreference": {
+        "title": "60% 的消費者偏好電子優惠券",
+        "description": "60% 的消費者偏好電子優惠券，顯示購物行為的重大轉變。配備 NFC 和 AI 的數位優惠券正在改變零售業。"
+      },
+      "environmentalExcellence": {
+        "title": "香港環保卓越獎",
+        "description": "使用數位優惠券降低成本並保護樹木。每年超過 1,360 億張紙質優惠券摧毀 500 萬棵樹。數位化可減少 70% 的開支。"
+      },
+      "techappleInnovation": {
+        "title": "Mezzofy 榮獲 2024 年企業創新指數三星中小企業",
+        "description": "TechApple 報導 Mezzofy 在 2024 年企業創新指數中榮獲三星中小企業，表彰其在數位優惠券領域的貢獻。"
+      },
+      "dualEsgAwards": {
+        "title": "在 2024 ESG 論壇獲得雙獎",
+        "description": "Mezzofy 在 2024 ESG 論壇榮獲傑出 ESG 企業獎及可持續發展企業證書。"
+      },
+      "fundingAnnouncement": {
+        "title": "200 萬美元 A 輪前融資",
+        "description": "Mezzofy 由 Isola Capital 領投完成 200 萬美元 A 輪前融資，以支持全球擴展和 web3 產品開發。"
+      },
+      "holidayGuide": {
+        "title": "假期優惠券指南",
+        "description": "使用快速優惠券解決方案掌握假期銷售高峰。2022 年假期零售銷售額達 9,430-9,600 億美元。"
+      },
+      "smartRetail": {
+        "title": "技術主導的智能零售",
+        "description": "NFC 技術改變零售動態。研究顯示 73% 的受訪者會進行衝動購買，平均每月衝動消費超過 314 美元。"
+      },
+      "cioworldFeature": {
+        "title": "為更綠色的未來轉變優惠券",
+        "description": "TheCIOWorld 報導 Mezzofy 的創新 NFC 輕觸即得優惠券和整合錢包功能，實現可持續的數位營銷。"
+      },
+      "ejtech300m": {
+        "title": "亞太地區 3 億張數位優惠券",
+        "description": "EJTech 報導 Mezzofy 的雲平台在亞太地區分發超過 3 億張數位優惠券，改變客戶參與方式。"
+      },
+      "edigestLeading": {
+        "title": "亞太地區領先的數位優惠券解決方案",
+        "description": "eDigest 獨家報導 Mezzofy 作為亞太地區領先的數位優惠券平台，改變優惠券管理。"
+      },
+      "forbesDickyYin": {
+        "title": "Forbes 表彰 Dicky Yin 的領導力",
+        "description": "Forbes 中國版報導 Mezzofy 執行長 Dicky Yin 在創新領域的傑出領導力，改變數位優惠券產業。"
+      },
+      "hotelTechInnovation": {
+        "title": "為什麼技術創新是酒店成功的關鍵",
+        "description": "67% 的旅客期待個性化體驗。酒店必須採用 NFC、聊天機器人和 AI 驅動的個性化來提升收入和忠誠度。"
+      }
+    }
+  },
+  "investors": {
+    "hero": {
+      "title": "投資者",
+      "subtitle": "通過戰略投資與合作夥伴關係<span class=\"text-primary-orange\">機會</span>，開啟<span class=\"text-primary-orange\">可持續增長</span>"
+    },
+    "intro": {
+      "label": "投資者",
+      "title": "與我們一起革新數位商務",
+      "description": "在 Mezzofy，我們正在重新定義企業如何通過創新的數位優惠券解決方案與客戶互動。隨著我們持續擴展和創新，我們誠邀志同道合的投資者和合作夥伴探索與我們合作的機會。讓我們一起革新企業與客戶連接的方式，開啟新的增長可能性。",
+      "cta": "聯絡我們"
+    },
+    "cases": {
+      "title": "從我們的成功案例和最新見解中學習",
+      "description": "探索 Mezzofy 如何推動數位商務創新，並與全球領先品牌建立合作夥伴關係。",
+      "card1": {
+        "tag": "部落格",
+        "title": "透過 NFC 數位優惠券革新零售業",
+        "description": "探索我們的 NFC 優惠券技術如何為大型零售連鎖店轉變店內客戶體驗。",
+        "link": "閱讀更多 →"
+      },
+      "card2": {
+        "tag": "新聞",
+        "title": "Mezzofy 將數位優惠券平台擴展至東南亞",
+        "description": "戰略合作夥伴關係加速市場擴張，將創新優惠券解決方案帶到新的地區。",
+        "link": "閱讀更多 →"
+      },
+      "card3": {
+        "tag": "案例研究",
+        "title": "透過個人化數位獎勵推動客戶留存",
+        "description": "一家領先企業如何使用 Mezzofy 的智能優惠券平台將客戶參與度提高 45%。",
+        "link": "閱讀更多 →"
+      }
+    },
+    "marketOpportunity": {
+      "title": "市場機會",
+      "subtitle": "數位優惠券和忠誠度市場規模龐大且快速增長，存在顯著的效率提升空間。",
+      "source": "資料來源：2024年產業報告",
+      "card1": {
+        "title": "全球市場規模",
+        "description": "2024年數位優惠券兌換市場價值，由行動優先的消費者行為和零售數位轉型所驅動。"
+      },
+      "card2": {
+        "title": "市場增長率",
+        "description": "2024-2029年預計複合年增長率（CAGR），受電子商務擴張和個性化需求推動。"
+      },
+      "card3": {
+        "title": "總潛在市場",
+        "description": "全球忠誠度和獎勵計劃市場，代表數位優惠券基礎設施和交換協議的完整機會。"
+      },
+      "card4": {
+        "title": "年度欺詐損失",
+        "description": "優惠券欺詐、偽造兌換和促銷濫用造成的全球損失——我們基於區塊鏈的安全協議所解決的關鍵問題。"
+      }
+    },
+    "whyInvest": {
+      "title": "為什麼投資 Mezzofy？",
+      "highlight1": {
+        "title": "市場領導地位",
+        "description": "作為數位優惠券基礎設施領域的先驅，我們已經建立了最全面的平台，連接全球商家、分銷商和消費者。"
+      },
+      "highlight2": {
+        "title": "經過驗證的技術",
+        "description": "我們安全、可擴展的平台已處理價值數十億的數百萬張優惠券，擁有業界領先的防欺詐和實時驗證功能。"
+      },
+      "highlight3": {
+        "title": "藍籌合作夥伴",
+        "description": "受到財富 500 強公司和全球零售、金融、酒店和娛樂行業領先品牌的信賴。"
+      },
+      "highlight4": {
+        "title": "全球擴張",
+        "description": "快速擴展到新市場，擁有強勁的增長軌跡、創新的產品線和清晰的市場主導地位路徑。"
+      }
+    }
+  },
+  "playbook": {
+    "banner": {
+      "text": "Mezzofy 交易協議的一部分",
+      "link": "查看生態系統"
+    },
+    "hero": {
+      "title": "終極<span class=\"text-primary-orange\">優惠券指南</span>",
+      "subtitle": "適用於各個成長階段的智能優惠券策略",
+      "description": "<span class=\"text-primary-orange font-semibold\">策略框架</span>將優惠券策略與客戶生命週期階段對齊。提供<span class=\"text-primary-orange font-semibold\">吸引、激發和保留</span>階段最佳實踐的教育資源，使用 Mezzofy 交易協議。",
+      "requestDemo": "申請演示",
+      "exploreStrategies": "探索策略"
+    },
+    "stage1": {
+      "title": "吸引潛在客戶",
+      "subtitle": "吸引注意力、激發興趣，將新客戶帶到您的品牌",
+      "flashSales": {
+        "title": "限時搶購",
+        "description": "通過限時優惠創造緊迫感，推動即時行動，吸引尋求優惠的客戶。"
+      },
+      "brandedCatalog": {
+        "title": "品牌目錄",
+        "description": "通過精選的優惠券目錄展示您的產品，突出您的品牌形象和價值主張。"
+      },
+      "socialSharing": {
+        "title": "社交分享優惠券",
+        "description": "通過激勵客戶在社交媒體上與他們的網絡分享獨家優惠券，擴大您的觸及範圍。"
+      },
+      "messenger": {
+        "title": "通訊軟體優惠券",
+        "description": "通過訊息平台直接與客戶互動，提供個性化的優惠券，感覺既獨特又即時。"
+      }
+    },
+    "stage2": {
+      "title": "激發興趣並推動行動",
+      "subtitle": "鼓勵發現、建立信任並吸引客戶",
+      "survey": {
+        "title": "調查優惠券",
+        "description": "收集有價值的客戶洞察，同時用優惠券獎勵參與，創造雙贏的互動機會。"
+      },
+      "freeTrial": {
+        "title": "免費試用優惠券",
+        "description": "通過提供無風險試用來降低進入門檻，讓客戶親身體驗您的產品或服務。"
+      },
+      "wallet": {
+        "title": "優惠券錢包",
+        "description": "通過允許客戶在集中式錢包中保存多張優惠券以供將來使用，建立期待並鼓勵重複訪問。"
+      },
+      "chained": {
+        "title": "連鎖優惠券",
+        "description": "創建漸進式旅程，每次優惠券兌換都會解鎖下一個，引導客戶瀏覽您的產品線。"
+      }
+    },
+    "stage3": {
+      "title": "讓客戶持續回訪",
+      "subtitle": "建立長期關係，將客戶轉變為忠實擁護者",
+      "luckyDraw": {
+        "title": "幸運抽獎優惠券",
+        "description": "通過隨機獎勵抽獎增加興奮感和遊戲化，保持客戶的參與度和熱情。"
+      },
+      "bundle": {
+        "title": "組合折扣優惠券",
+        "description": "通過為相互補充的產品組合提供有吸引力的折扣，增加平均訂單價值。"
+      },
+      "occasion": {
+        "title": "場合優惠券",
+        "description": "通過慶祝生日、週年紀念和特殊時刻提供個性化優惠，加強情感聯繫。"
+      },
+      "valueBoost": {
+        "title": "價值提升優惠券",
+        "description": "通過基於購買金額或頻率增加價值的分級優惠券來獎勵忠誠度並鼓勵更高消費。"
+      }
+    },
+    "whyMezzofy": {
+      "title": "為什麼企業選擇 Mezzofy",
+      "efficient": {
+        "title": "高效",
+        "description": "無縫且靈活的優惠券創建和管理 - 幾分鐘內完成，而非數小時"
+      },
+      "firstParty": {
+        "title": "第一方數據",
+        "description": "實時追踪和分析，做出數據驅動的決策，提升您的投資回報率"
+      },
+      "openApi": {
+        "title": "開放 API 且可擴展",
+        "description": "輕鬆與您的營銷工具整合。為各種規模的企業量身定制的可擴展解決方案"
+      }
+    },
+    "ecosystem": {
+      "title": "與 Mezzofy 生態系統無縫配合",
+      "description": "優惠券指南與其他 Mezzofy 產品整合，創建完整的解決方案",
+      "product1": "使用我們的基礎設施實施指南策略",
+      "product2": "執行指南中的店內激活策略",
+      "product3": "通過優惠券銷售將指南策略變現",
+      "recommended": "💡 推薦：所有套裝均包含",
+      "recommendedDesc": "指南作為戰略指導包含在內，用於最大化任何 Mezzofy 產品組合",
+      "contactSales": "聯繫銷售獲取套裝價格"
+    },
+    "footerCta": {
+      "title": "通過正確的優惠券策略吸引、轉化和保留客戶",
+      "description": "準備好使用智能優惠券策略轉變您的客戶獲取和保留了嗎？",
+      "contactUs": "聯繫我們開始",
+      "scheduleDemo": "預約演示"
+    }
+  },
+  "merchants": {
+    "hero": {
+      "tagline": "商家專區",
+      "title": "將優惠券負債轉化為<span class=\"text-primary-orange\">高效能數位資產</span>",
+      "subtitle": "加入使用 Mezzofy 交換協議的商家行列，最大化觸及率、控制力和收益",
+      "listInventory": "列出您的庫存",
+      "viewBundles": "查看產品組合"
+    },
+    "journey": {
+      "title": "您的優惠券成功之旅",
+      "description": "商家如何在優惠券生命週期中善用 Mezzofy 交換協議",
+      "step1": {
+        "title": "創建",
+        "description": "使用<a href=\"coupon-management.html\" class=\"text-primary-orange hover:underline\">管理系統</a>建立活動，掌控第一方數據"
+      },
+      "step2": {
+        "title": "分發",
+        "description": "透過<a href=\"coupon-nfc.html\" class=\"text-primary-orange hover:underline\">NFC</a>、<a href=\"coupon-marketing.html\" class=\"text-primary-orange hover:underline\">行銷</a>、<a href=\"coupon-marketplace.html\" class=\"text-primary-orange hover:underline\">市集</a>部署"
+      },
+      "step3": {
+        "title": "優化",
+        "description": "使用<a href=\"coupon-playbook.html\" class=\"text-primary-orange hover:underline\">指南</a>策略追蹤，透過<a href=\"coupon-wallet.html\" class=\"text-primary-orange hover:underline\">錢包</a>洞察分析"
+      }
+    },
+    "segments": {
+      "title": "適合各種規模商家的解決方案",
+      "description": "從新創到企業零售商，我們為您提供合適的產品組合",
+      "enterprise": {
+        "title": "企業零售商",
+        "size": "100+ 個據點",
+        "description": "具有實體和數位存在的多據點零售商",
+        "bundle": "→ 零售卓越組合",
+        "contactSales": "聯繫銷售 →"
+      },
+      "midMarket": {
+        "title": "中型商家",
+        "size": "10-100 個據點",
+        "description": "將優惠券作為收入來源的商家",
+        "bundle": "→ 收益最大化組合",
+        "contactSales": "聯繫銷售 →"
+      },
+      "small": {
+        "title": "小型商家與新創企業",
+        "size": "1-10 個據點",
+        "description": "開始使用數位優惠券",
+        "bundle": "→ 入門套裝",
+        "contactSales": "聯繫銷售 →"
+      }
+    },
+    "products": {
+      "title": "為商家打造的產品",
+      "description": "探索我們為商家量身打造的完整產品套件",
+      "management": {
+        "title": "管理系統",
+        "description": "優惠券生命週期管理的企業級基礎設施",
+        "learnMore": "了解更多 →"
+      },
+      "nfc": {
+        "title": "優惠券 NFC",
+        "description": "實體零售接觸點，支援輕觸下載",
+        "learnMore": "了解更多 →"
+      },
+      "marketing": {
+        "title": "優惠券行銷",
+        "description": "將行銷費用轉化為收入來源",
+        "learnMore": "了解更多 →"
+      },
+      "wallet": {
+        "title": "優惠券錢包",
+        "description": "多平台客戶體驗層",
+        "learnMore": "了解更多 →"
+      }
+    },
+    "benefits": {
+      "title": "商家選擇 Mezzofy 的理由",
+      "zeroUpfront": {
+        "title": "零前期成本",
+        "description": "僅在優惠券兌換時付費。無設置費或每月最低消費。"
+      },
+      "flexibleControl": {
+        "title": "靈活控制",
+        "description": "即時修改活動。完全掌控第一方數據。"
+      },
+      "globalFootprint": {
+        "title": "全球足跡",
+        "description": "進入亞太地區 15 個以上市場及不斷成長的分銷網絡。"
+      },
+      "futureProof": {
+        "title": "面向未來的資產",
+        "description": "為自主購物代理準備的 AI 原生基礎設施。"
+      }
+    },
+    "footerCta": {
+      "title": "準備好轉變您的優惠券策略了嗎？",
+      "description": "加入信任 Mezzofy 為其數位優惠券基礎設施提供動力的領先商家",
+      "getStarted": "列出您的第一張優惠券",
+      "talkToSales": "查看所有產品"
+    }
+  },
+  "distributors": {
+    "hero": {
+      "tagline": "經銷商專區",
+      "title": "存取全球最<span class=\"text-primary-orange\">安全、高意圖</span>的優惠券庫存",
+      "subtitle": "使用 Mezzofy 交換協定的優惠券，增強您的會員計劃、銀行應用程式或企業入口網站",
+      "accessDeals": "存取優惠",
+      "viewApiDoc": "查看 API 文件"
+    },
+    "journey": {
+      "title": "您的優質優惠券經銷之路",
+      "description": "三個簡單步驟，將經過驗證的高價值優惠券庫存整合到您的平台",
+      "step1": {
+        "title": "來源",
+        "description": "瀏覽<a href=\"coupon-marketplace.html\" class=\"text-primary-orange hover:underline\">市集</a>庫存，獲取來自經過驗證商家的精選優惠"
+      },
+      "step2": {
+        "title": "整合",
+        "description": "使用<a href=\"for-developers.html\" class=\"text-primary-orange hover:underline\">橋接 API</a>，透過簡單的 RESTful 整合和全面的 SDK"
+      },
+      "step3": {
+        "title": "分發",
+        "description": "透過您的管道部署，可選擇使用<a href=\"coupon-wallet.html\" class=\"text-primary-orange hover:underline\">白標錢包</a>"
+      }
+    },
+    "types": {
+      "title": "為您的分銷模式量身打造",
+      "description": "無論您是會員計劃、企業福利平台或渠道合作夥伴，Mezzofy 都能為您的優惠券分銷策略提供動力",
+      "loyalty": {
+        "title": "會員計劃",
+        "subtitle": "銀行、電信、航空和零售",
+        "description": "透過高價值福利增強您的會員計劃",
+        "bundle": "→ 分銷合作夥伴套裝",
+        "contactSales": "聯絡銷售 →"
+      },
+      "corporate": {
+        "title": "企業福利",
+        "subtitle": "人力資源平台和員工福利",
+        "description": "提供有價值的員工折扣，無需履行負擔",
+        "bundle": "→ 分銷合作夥伴套裝",
+        "contactSales": "聯絡銷售 →"
+      },
+      "channel": {
+        "title": "渠道合作夥伴",
+        "subtitle": "經銷商、聚合商、聯盟行銷",
+        "description": "透過批發定價模式擴展產品選擇",
+        "bundle": "→ 客製化合作條款",
+        "contactSales": "聯絡銷售 →"
+      }
+    },
+    "products": {
+      "title": "為您的分銷提供動力的產品",
+      "description": "專為經銷商和渠道合作夥伴設計的核心 Mezzofy 產品",
+      "marketplace": {
+        "title": "優惠券市集",
+        "description": "來自全球商家的經過驗證、高品質優惠券庫存",
+        "link": "了解更多 →"
+      },
+      "bridgeApi": {
+        "title": "橋接 API",
+        "description": "具備全面 SDK 的 RESTful API，實現無縫整合",
+        "link": "查看文件 →"
+      },
+      "wallet": {
+        "title": "優惠券錢包 <span class=\"text-xs font-normal text-medium-grey\">(白標)</span>",
+        "description": "品牌化優惠券收集體驗，兌換率提升 40% 以上",
+        "link": "了解更多 →"
+      }
+    },
+    "benefits": {
+      "title": "為什麼經銷商選擇 Mezzofy",
+      "description": "使 Mezzofy 交換協定成為優惠券分銷值得信賴選擇的優勢",
+      "riskFree": {
+        "title": "零風險整合",
+        "description": "無需預付庫存投資。存取市集優惠而無需購買或持有庫存。僅在使用者兌換時付款。",
+        "point1": "零庫存持有成本",
+        "point2": "未使用優惠無財務責任",
+        "point3": "靈活的數量擴展"
+      },
+      "cashFlow": {
+        "title": "現金流保護",
+        "description": "透明的定價模式，可預測的成本。為經銷商現金流優化而設計的結算條款。",
+        "point1": "大量合作夥伴的批發定價",
+        "point2": "靈活的結算週期",
+        "point3": "無意外費用或隱藏成本"
+      },
+      "standardized": {
+        "title": "標準化品質",
+        "description": "市集上的每張優惠券都符合嚴格的品質標準。經過驗證的商家、明確的條款和防欺詐代幣化確保可靠性。",
+        "point1": "商家驗證和審查",
+        "point2": "機器可讀的優惠券標準",
+        "point3": "自動化欺詐檢測"
+      },
+      "targeted": {
+        "title": "目標分銷",
+        "description": "篩選和策劃庫存以匹配您的受眾人口統計、地理市場和戰略合作夥伴關係。",
+        "point1": "地理定位功能",
+        "point2": "類別和垂直篩選",
+        "point3": "價值層級細分"
+      }
+    },
+    "footerCta": {
+      "title": "準備好存取優質優惠券庫存了嗎？",
+      "description": "加入領先的會員計劃、企業福利平台和渠道合作夥伴，透過 Mezzofy 交換協定分銷經過驗證的優惠",
+      "button": "存取市集庫存"
+    },
+    "contact": {
+      "heading": "立即開始",
+      "description": "與我們的分銷合作夥伴團隊聯繫，討論您的整合需求",
+      "firstName": "名字",
+      "lastName": "姓氏",
+      "email": "商務電子郵件",
+      "company": "公司名稱",
+      "distributionModel": "分銷模式",
+      "selectModel": "選擇您的分銷模式",
+      "modelLoyalty": "會員計劃（銀行、電信、航空、零售）",
+      "modelCorporate": "企業人力資源 / 員工福利",
+      "modelChannel": "渠道合作夥伴 / 經銷商",
+      "modelOther": "其他",
+      "message": "訊息",
+      "messagePlaceholder": "告訴我們您的分銷需求...",
+      "submit": "申請市集存取權限"
+    }
+  },
+  "management": {
+    "banner": {
+      "text": "Mezzofy 交換協定的一部分",
+      "link": "查看生態系統"
+    },
+    "hero": {
+      "label": "優惠券管理",
+      "title": "您的優惠券<span class=\"text-primary-orange\">基礎架構</span>",
+      "description": "企業級優惠券生命週期管理基礎架構。Mezzofy 交換協定的基礎層，具備<span class=\"text-primary-orange font-semibold\">第一方數據控制</span>和<span class=\"text-primary-orange font-semibold\">即時修改</span>能力。",
+      "startTrial": "開始免費試用",
+      "exploreFeatures": "探索功能",
+      "imageAlt": "優惠券管理平台"
+    },
+    "howItWorks": {
+      "title": "運作方式",
+      "step1": {
+        "title": "設置活動",
+        "description": "建立符合您特定業務目標和客戶目標的優惠券營銷計劃"
+      },
+      "step2": {
+        "title": "創建優惠券",
+        "description": "選擇格式並按人口統計和位置細分受眾，以進行有針對性的分發"
+      },
+      "step3": {
+        "title": "分發",
+        "description": "透過電子郵件、簡訊和社群管道部署，具備精確的排程控制，實現最大影響"
+      }
+    },
+    "features": {
+      "title": "強大功能",
+      "flexible": {
+        "title": "靈活且動態的產品",
+        "item1": "多種優惠券類型和格式可供選擇",
+        "item2": "個人化和位置定向功能",
+        "item3": "品牌優惠券目錄",
+        "item4": "可分享和可轉讓選項",
+        "item5": "客戶友善（無需應用程式）",
+        "item6": "行動裝置或 Mezzofy 錢包整合"
+      },
+      "firstParty": {
+        "title": "第一方數據參與",
+        "item1": "CRM 和電子郵件基礎整合",
+        "item2": "即時調整功能（作廢、延長、細化）",
+        "item3": "防詐騙非序列化代碼",
+        "item4": "詳細使用分析（個人、時間、位置層級）",
+        "item5": "活動績效比較工具"
+      },
+      "scalable": {
+        "title": "可擴展基礎架構",
+        "item1": "B2C 市集、電子商務、聊天商務相容性",
+        "item2": "全球支付閘道支援",
+        "item3": "POS 整合或 Mezzofy 操作員應用程式兌換"
+      }
+    },
+    "testimonials": {
+      "title": "業界領導者信賴",
+      "maxims": {
+        "quote": "自 2016 年以來與 Mezzofy 的合作夥伴關係簡化了我們的優惠券操作並增強了客戶參與度。",
+        "company": "美心集團",
+        "since": "自 2016 年"
+      },
+      "jardine": {
+        "quote": "系統整合和順暢的合作夥伴關係改變了我們的促銷活動。",
+        "company": "怡和餐飲集團"
+      },
+      "hungFok": {
+        "quote": "Mezzofy 的平台使我們能夠以前所未有的輕鬆和效率提供有針對性的促銷活動。",
+        "company": "鴻福堂"
+      }
+    },
+    "pricing": {
+      "title": "簡單透明的定價",
+      "description": "使用我們為各種規模企業設計的靈活定價模式開始",
+      "singleFee": {
+        "title": "單一管理費用",
+        "description": "所有功能只需一個簡單的費用結構"
+      },
+      "payPerUse": {
+        "title": "按使用付費",
+        "description": "只為您實際使用的部分付費"
+      },
+      "flexible": {
+        "title": "靈活選項",
+        "description": "隨時升級或取消，無需承諾"
+      }
+    },
+    "ecosystem": {
+      "title": "與 Mezzofy 生態系統無縫整合",
+      "description": "優惠券管理系統與其他 Mezzofy 產品整合，創建完整解決方案",
+      "nfc": {
+        "title": "+ 優惠券 NFC",
+        "description": "為您管理的優惠券添加實體零售接觸點"
+      },
+      "marketplace": {
+        "title": "+ 優惠券市集",
+        "description": "透過 B2B 管道分發您管理的庫存"
+      },
+      "wallet": {
+        "title": "+ 優惠券錢包",
+        "description": "為客戶提供有組織的優惠券儲存"
+      },
+      "bundle": {
+        "title": "💡 推薦套裝：零售卓越套裝",
+        "description": "結合管理系統、NFC 和錢包，打造完整的實體 + 數位零售解決方案",
+        "cta": "聯繫銷售人員了解套裝定價"
+      }
+    },
+    "footerCta": {
+      "title": "準備好改變您的優惠券策略了嗎？",
+      "description": "加入業界領導者，立即開始創建強大的優惠券活動",
+      "getStarted": "立即開始",
+      "contactSales": "聯繫銷售人員"
+    }
+  },
+  "developers": {
+    "hero": {
+      "tagline": "開發者專區",
+      "headline": "在 <span class=\"text-primary-orange\">Mezzofy 交換協定</span>上建構",
+      "description": "使用我們的開發者優先 API 和 SDK 整合優惠券功能",
+      "viewApiDocs": "查看 API 文件",
+      "getApiKey": "取得 API 金鑰"
+    },
+    "useCases": {
+      "heading": "您可以建構什麼",
+      "description": "使用 Mezzofy 交換協定為您的應用程式或服務添加優惠券超能力",
+      "integrate": {
+        "title": "整合優惠券",
+        "description": "將優惠券發現和兌換嵌入您現有的應用程式或服務"
+      },
+      "distribution": {
+        "title": "分銷平台",
+        "description": "為會員計劃或企業福利平台建立優惠券市集"
+      },
+      "aiAgents": {
+        "title": "AI 購物代理",
+        "description": "讓自主代理為使用者發現並應用最優惠的優惠"
+      },
+      "wallets": {
+        "title": "優惠券錢包",
+        "description": "建立消費者可以儲存和管理優惠券的品牌體驗"
+      }
+    },
+    "apiProducts": {
+      "heading": "API 產品與 SDK",
+      "description": "選擇最適合您使用案例的整合層級",
+      "management": {
+        "title": "優惠券管理",
+        "description": "建立、管理和追蹤優惠券活動",
+        "link": "了解更多"
+      },
+      "bridge": {
+        "title": "橋接 API",
+        "description": "從市集提取經過驗證的優惠券",
+        "link": "了解更多"
+      },
+      "aiAgent": {
+        "title": "AI 代理 API",
+        "description": "讓 AI 代理發現並應用優惠",
+        "link": "了解更多"
+      },
+      "wallet": {
+        "title": "錢包 API",
+        "description": "建立品牌優惠券錢包體驗",
+        "link": "了解更多"
+      }
+    },
+    "features": {
+      "heading": "為開發者建構",
+      "description": "我們的平台提供現代開發者期望的工具和彈性",
+      "rest": {
+        "title": "RESTful API",
+        "description": "具有清晰文件和一致端點的直觀 API"
+      },
+      "standard": {
+        "title": "標準化資料",
+        "description": "機器可讀的優惠券格式，適用於 AI 與自動化"
+      },
+      "oauth": {
+        "title": "OAuth 2.0",
+        "description": "安全認證，精細的存取控制"
+      },
+      "webhooks": {
+        "title": "網路鉤子",
+        "description": "即時事件通知"
+      },
+      "sdks": {
+        "title": "官方 SDK",
+        "description": "JavaScript、Python 和 PHP 的程式庫"
+      },
+      "realtime": {
+        "title": "即時同步",
+        "description": "所有平台即時更新"
+      }
+    },
+    "quickStart": {
+      "heading": "快速開始",
+      "description": "只需幾行程式碼即可開始使用 Mezzofy API",
+      "exampleTitle": "範例：取得可用優惠券",
+      "note": "這個範例從市集中擷取可用的優惠券。請參閱我們的完整 API 文件以了解更多端點與功能。",
+      "cta": "查看完整文件"
+    },
+    "resources": {
+      "heading": "開發者資源",
+      "description": "開始建構所需的一切",
+      "documentation": {
+        "title": "API 文件",
+        "description": "完整的參考文件，包含端點、參數和範例",
+        "link": "查看文件"
+      },
+      "sdks": {
+        "title": "SDK 與程式庫",
+        "description": "JavaScript、Python 和 PHP 的官方 SDK",
+        "link": "瀏覽 SDK"
+      },
+      "community": {
+        "title": "開發者社群",
+        "description": "加入我們的社群論壇以獲得支援和討論",
+        "link": "加入社群"
+      },
+      "blog": {
+        "title": "開發者部落格",
+        "description": "教學、指南和 API 更新",
+        "link": "閱讀部落格"
+      }
+    },
+    "cta": {
+      "heading": "準備好開始建構了嗎？",
+      "description": "立即加入在 Mezzofy 交換協定上建構的開發者社群",
+      "button": "取得 API 存取權限"
+    },
+    "contact": {
+      "heading": "取得 API 存取權限",
+      "description": "填寫以下表單以接收您的 API 憑證和存取開發者資源",
+      "firstName": "名字",
+      "lastName": "姓氏",
+      "email": "開發者電子郵件",
+      "company": "公司名稱",
+      "building": "您正在建構什麼？",
+      "selectUseCase": "選擇您的使用案例",
+      "optionIntegration": "優惠券整合",
+      "optionDistribution": "分銷平台",
+      "optionAiAgent": "AI 購物代理",
+      "optionWallet": "優惠券錢包",
+      "optionOther": "其他",
+      "projectDescription": "專案描述",
+      "submit": "申請 API 存取權限",
+      "projectPlaceholder": "描述您的專案以及您計劃如何使用 Mezzofy API..."
+    }
+  },
+  "marketplace": {
+    "banner": {
+      "text": "Mezzofy 交換協定的一部分",
+      "link": "查看生態系統"
+    },
+    "hero": {
+      "label": "優惠券市集",
+      "title": "全球數位優惠券交換中心",
+      "description": "唯一支援 B2B、B2C 和 C2C 交易的安全點對點優惠券交換平台。基於代幣化技術打造，為數位促銷活動建立具防詐保護的二級市場。",
+      "listInventory": "刊登您的庫存",
+      "exploreMarketplace": "探索市集",
+      "imageAlt": "優惠券市場平台"
+    },
+    "exchange": {
+      "title": "優惠券交換協定",
+      "description": "傳統數位促銷因破碎化、高成本和安全風險而失敗。Mezzofy 消除過時模式，以高流動性、高效能的交換協定取而代之。",
+      "network": {
+        "title": "從工具到網路",
+        "description": "我們專注於網路效應和安全結算，而非僅僅功能。透過全球市集的連結建立真正價值。"
+      },
+      "security": {
+        "title": "無與倫比的安全性",
+        "description": "每個促銷活動都被標準化為 Mezzofy 優惠券標準，這是一個專有協定，保證獨特、防詐的數位資產。"
+      },
+      "ai": {
+        "title": "AI 原生基礎設施",
+        "description": "我們的數據是機器可讀的，使我們成為下一代自主 AI 購物代理的標準介面。"
+      }
+    },
+    "models": {
+      "title": "三種市集模式，一個平台",
+      "subtitle": "Mezzofy 支援所有交易類型的優惠券交換，建立完整的數位促銷分銷生態系統",
+      "b2b": {
+        "badge": "B2B 市集",
+        "title": "企業對企業",
+        "description": "Mezzofy 作為中央交換中心，連接商家與分銷商、轉售商和通路夥伴。刊登您的優惠券庫存，立即獲得全球分銷網路。",
+        "benefit1": "批發分銷：向分銷商和轉售商批量銷售優惠券庫存",
+        "benefit2": "通路夥伴網路：與行銷平台、會員計劃和聯盟網路連結",
+        "benefit3": "交叉促銷機會：與互補企業交換庫存以實現互惠",
+        "benefit4": "透明定價：即時市場定價，自動結算和佣金追蹤",
+        "cardTitle": "商家 → 分銷商",
+        "cardDescription": "將優惠券負債轉化為具有全球覆蓋範圍的高效能數位資產"
+      },
+      "b2c": {
+        "badge": "B2C 市集",
+        "title": "企業對消費者",
+        "description": "透過安全、個人化的促銷活動實現直接客戶互動，並產生可衡量的結果。",
+        "benefit1": "直接分銷：透過電子郵件、簡訊、社群媒體和行動應用程式向客戶推送優惠券",
+        "benefit2": "個人化活動：針對特定客戶群體提供量身訂製的促銷優惠",
+        "benefit3": "即時分析：追蹤兌換率、客戶參與度和活動表現",
+        "benefit4": "多通路覆蓋：透過市集、電商平台和零售夥伴分銷",
+        "cardTitle": "企業 → 消費者",
+        "cardDescription": "透過個人化促銷活動直接與客戶互動"
+      },
+      "c2c": {
+        "badge": "C2C 市集",
+        "title": "消費者對消費者",
+        "description": "全球首個安全的點對點優惠券交換市集。透過防詐驗證轉移、贈送或交易優惠券。",
+        "benefit1": "可轉讓優惠券：透過安全驗證將優惠券贈送或轉讓給親友",
+        "benefit2": "二級市場：交易或出售未使用的優惠券以最大化價值並減少浪費",
+        "benefit3": "防詐保護：區塊鏈啟發的代幣化確保每張優惠券唯一且有效",
+        "benefit4": "提高兌換率：未使用的優惠券找到新主人，為商家帶來實際商業價值",
+        "cardTitle": "消費者 ↔ 消費者",
+        "cardDescription": "具有防詐驗證的點對點優惠券交換"
+      }
+    },
+    "howItWorks": {
+      "title": "交換機制運作方式",
+      "step1": {
+        "title": "刊登庫存",
+        "description": "商家在 Mezzofy 交換平台上刊登優惠券庫存。為您的數位資產設定定價、條款和分銷偏好。"
+      },
+      "step2": {
+        "title": "配對與交易",
+        "description": "我們的交換協定將供需配對。分銷商、企業或消費者透過安全交易發現並取得優惠券。"
+      },
+      "step3": {
+        "title": "驗證與結算",
+        "description": "無詐驗證確保每次兌換都是合法的。自動結算流程即時處理付款和佣金。"
+      }
+    },
+    "features": {
+      "title": "交換平台功能",
+      "realTimePricing": {
+        "title": "即時定價",
+        "description": "基於供需的動態市場定價"
+      },
+      "fraudPrevention": {
+        "title": "防詐保護",
+        "description": "具有獨特數位簽名的代幣化優惠券"
+      },
+      "instantSettlement": {
+        "title": "即時結算",
+        "description": "自動化付款處理和佣金追蹤"
+      },
+      "deepAnalytics": {
+        "title": "深度分析",
+        "description": "追蹤表現、兌換率和投資報酬率"
+      },
+      "globalReach": {
+        "title": "全球覆蓋",
+        "description": "覆蓋亞太地區 15 個以上市場"
+      },
+      "apiIntegration": {
+        "title": "API 整合",
+        "description": "與現有系統無縫整合"
+      },
+      "flexiblePricing": {
+        "title": "彈性定價",
+        "description": "僅在優惠券被兌換時付費"
+      },
+      "support24": {
+        "title": "24/7 支援",
+        "description": "隨時提供專業協助"
+      }
+    },
+    "ecosystem": {
+      "title": "與 Mezzofy 生態系統無縫協作",
+      "description": "優惠券市集與其他 Mezzofy 產品整合，打造完整解決方案",
+      "management": {
+        "title": "+ 優惠券管理",
+        "description": "在刊登到市集前建立和管理庫存"
+      },
+      "marketing": {
+        "title": "+ 優惠券行銷",
+        "description": "直接向消費者銷售市集庫存"
+      },
+      "bridgeApi": {
+        "title": "+ 橋接 API",
+        "description": "將市集存取整合到您的平台"
+      },
+      "bundle": {
+        "title": "想要完整平台？",
+        "description": "結合優惠券市集與管理、行銷和 API 存取，發揮最大影響力",
+        "cta": "聯繫銷售人員了解套裝價格"
+      }
+    },
+    "footerCta": {
+      "title": "準備好轉型您的優惠券策略了嗎？",
+      "description": "加入全球交換網路，為您的數位促銷活動解鎖新的分銷通路",
+      "listInventory": "刊登您的庫存",
+      "accessDeals": "存取優惠"
+    }
+  },
+  "nfc": {
+    "banner": {
+      "text": "Mezzofy 交換協定的一部分",
+      "link": "查看生態系統"
+    },
+    "hero": {
+      "label": "優惠券 NFC",
+      "title": "使用 NFC 技術即時分發優惠券",
+      "description": "無需客戶安裝應用程式即可實現即時點擊下載互動。透過整合到 Mezzofy 交換協定的 NFC 技術，連接實體與數位世界。",
+      "viewPricing": "查看定價",
+      "learnHowItWorks": "了解運作方式",
+      "imageAlt": "NFC 優惠券技術"
+    },
+    "howItWorks": {
+      "title": "運作方式",
+      "step1": {
+        "title": "配置",
+        "description": "Mezzofy 將您的優惠券詳細資訊配置到 NFC 標籤上"
+      },
+      "step2": {
+        "title": "配送",
+        "description": "實體 NFC 標籤直接配送到您的企業"
+      },
+      "step3": {
+        "title": "展示",
+        "description": "將標籤放置在店內戰略位置以獲得最大曝光"
+      },
+      "step4": {
+        "title": "點擊",
+        "description": "客戶用手機點擊 NFC 標籤"
+      },
+      "step5": {
+        "title": "兌換",
+        "description": "優惠券即時接收並準備兌換"
+      }
+    },
+    "features": {
+      "title": "強大功能",
+      "fraudPrevention": {
+        "title": "防詐欺",
+        "description": "每張優惠券都有獨特的非序列化編號，確保最大安全性"
+      },
+      "simpleSetup": {
+        "title": "簡易設定",
+        "description": "透過直觀介面即時建立和修改優惠券"
+      },
+      "analytics": {
+        "title": "分析",
+        "description": "完整的使用追蹤和促銷洞察，支援數據驅動決策"
+      },
+      "integration": {
+        "title": "整合",
+        "description": "開放 API 相容您現有的系統和工作流程"
+      },
+      "pricing": {
+        "title": "透明定價",
+        "description": "單一訂閱費用涵蓋設定，無隱藏費用"
+      },
+      "multiChannel": {
+        "title": "多通路分銷",
+        "description": "將優惠擴展到單一地點以外的多個通路"
+      },
+      "formatVariety": {
+        "title": "格式多樣性",
+        "description": "多種優惠券類型，包括折扣和遊戲化選項"
+      },
+      "noApp": {
+        "title": "無需應用程式",
+        "description": "優惠券直接儲存到行動錢包，方便客戶使用"
+      }
+    },
+    "pricing": {
+      "title": "簡單定價方案",
+      "subtitle": "選擇適合您業務需求的方案",
+      "monthly": {
+        "title": "月度方案",
+        "price": "$79",
+        "period": "/月",
+        "item1": "每月 3,000 張優惠券",
+        "item2": "包含一個 NFC 標籤",
+        "item3": "透過電子郵件提供基本支援",
+        "item4": "即時分析儀表板",
+        "item5": "行動錢包整合",
+        "cta": "開始使用"
+      },
+      "annual": {
+        "badge": "最佳價值",
+        "title": "年度方案",
+        "price": "$799",
+        "period": "/年",
+        "savings": "年度計費節省 15%",
+        "item1": "每年 36,000 張優惠券",
+        "item2": "包含五個 NFC 標籤",
+        "item3": "優先支援及擴展協助",
+        "item4": "進階分析與報告",
+        "item5": "專屬設定協助",
+        "cta": "開始使用"
+      }
+    },
+    "caseStudy": {
+      "title": "成功案例",
+      "company": "連鎖超市",
+      "industry": "零售業",
+      "description": "一家領先的連鎖超市在 200 多個門市成功實施了 Mezzofy 的 NFC 優惠券解決方案，徹底革新了他們的促銷分銷策略。",
+      "metrics": {
+        "stores": {
+          "value": "200+",
+          "label": "門市地點"
+        },
+        "engagement": {
+          "value": "85%",
+          "label": "客戶參與度"
+        },
+        "redemption": {
+          "value": "3x",
+          "label": "兌換率"
+        }
+      }
+    },
+    "faq": {
+      "title": "常見問題",
+      "q1": {
+        "question": "帳戶啟用需要多長時間？",
+        "answer": "帳戶啟用通常在註冊後 24-48 小時內完成。啟用後，您可以立即開始透過 NFC 標籤建立和分發優惠券。"
+      },
+      "q2": {
+        "question": "優惠券如何計算？",
+        "answer": "每個分發給客戶的獨特優惠券實例都會計入您的月度或年度限額。同一客戶對同一優惠券的多次點擊只計算一次。"
+      },
+      "q3": {
+        "question": "分發後可以修改優惠嗎？",
+        "answer": "可以！我們的平台允許即時修改活動。您可以隨時透過儀表板更新優惠條款、延長到期日、作廢優惠券或調整目標參數。"
+      },
+      "q4": {
+        "question": "如果超過優惠券限額會怎樣？",
+        "answer": "當您接近優惠券限額時，我們會提前通知您。您可以升級到更高的方案或購買額外的優惠券配額。服務不會中斷 - 超額使用按具競爭力的每張優惠券費率計費。"
+      }
+    },
+    "ecosystem": {
+      "title": "與 Mezzofy 生態系統無縫協作",
+      "description": "優惠券 NFC 與其他 Mezzofy 產品整合，打造完整解決方案",
+      "management": {
+        "title": "+ 優惠券管理",
+        "description": "建立和管理透過 NFC 標籤分發的優惠券"
+      },
+      "wallet": {
+        "title": "+ 優惠券錢包",
+        "description": "將透過 NFC 獲取的優惠券儲存在客戶錢包中"
+      },
+      "playbook": {
+        "title": "+ 優惠券手冊",
+        "description": "學習店內 NFC 活動的最佳實踐"
+      },
+      "bundle": {
+        "title": "💡 推薦套裝：零售卓越套裝",
+        "description": "非常適合實體零售商：管理 + NFC + 錢包打造從店內到行動裝置的無縫體驗",
+        "cta": "聯絡銷售了解套裝定價"
+      }
+    },
+    "footerCta": {
+      "title": "準備好推出您的 NFC 優惠券活動了嗎？",
+      "description": "加入領先的零售商行列，立即開始透過點擊啟動的優惠券與客戶互動",
+      "startTrial": "開始免費試用",
+      "contactSales": "聯絡銷售"
+    }
+  },
+  "marketing": {
+    "banner": {
+      "text": "Mezzofy 交換協定的一部分",
+      "link": "查看生態系統"
+    },
+    "hero": {
+      "label": "優惠券行銷",
+      "title": "線上銷售優惠券從未如此簡單",
+      "description": "將優惠券行銷費用轉化為收入。透過無縫的支付整合和多通路分銷直接向客戶銷售",
+      "contactUs": "立即聯絡我們",
+      "learnMore": "了解更多",
+      "imageAlt": "優惠券銷售平台"
+    },
+    "features": {
+      "title": "您需要的一切線上銷售優惠券功能",
+      "subtitle": "從創建到付款的完整平台解決方案，專為希望最大化數位優惠券銷售的商家設計",
+      "fullService": {
+        "title": "全方位服務",
+        "description": "Mezzofy 管理優惠券創建，提供完整的可見性和控制權。專注於您的業務，讓我們處理技術複雜性。",
+        "item1": "端到端優惠券管理",
+        "item2": "完整的可見性和控制權"
+      },
+      "paymentConnected": {
+        "title": "支付連接",
+        "description": "無縫整合的支付處理，自動支付到您的商家帳戶。",
+        "item1": "多個支付閘道整合",
+        "item2": "自動支付到商家帳戶"
+      },
+      "multipleChannels": {
+        "title": "多通路銷售",
+        "description": "同時在您自己的通路和合作夥伴網絡上銷售，以最大化覆蓋範圍和收入。",
+        "item1": "專有通路支持",
+        "item2": "合作夥伴網絡分銷"
+      },
+      "onlineSales": {
+        "title": "優惠券線上銷售",
+        "description": "透過即時交付和改善的現金流，充分發揮數位優惠券銷售的潛力。",
+        "item1": "即時交付給客戶",
+        "item2": "提前獲得業務現金流",
+        "item3": "提升客戶忠誠度"
+      }
+    },
+    "strengths": {
+      "title": "安全。無縫。靈活",
+      "subtitle": "我們的平台提供防詐欺功能和靈活的支付整合選項，專為隨您的業務規模而擴展而設計",
+      "authentic": {
+        "title": "真實優惠券",
+        "description": "透過安全驗證技術支援的經過驗證的真實數位優惠券，為客戶提供零風險。"
+      },
+      "integrated": {
+        "title": "完全整合",
+        "description": "靈活的支付閘道選項，適用於您現有的基礎架構和首選支付供應商。"
+      },
+      "expandReach": {
+        "title": "擴大覆蓋範圍",
+        "description": "訪問市場通路和企業員工福利計劃，以觸及新的客戶群體。"
+      },
+      "analytics": {
+        "title": "銷售數據分析",
+        "description": "全面的洞察力用於活動優化，具有即時報告和績效指標。"
+      }
+    },
+    "process": {
+      "title": "我們管理。您賺錢",
+      "subtitle": "三個簡單步驟開始線上銷售您的數位優惠券",
+      "step1": {
+        "title": "設定和創建",
+        "description": "商家填寫簡單的表格來設定他們的帳戶並創建優惠券產品。快速入門，複雜性最小。"
+      },
+      "step2": {
+        "title": "線上銷售",
+        "description": "多通路分銷從安全的支付處理開始。您的優惠券在所有選定的通路上同時上線。"
+      },
+      "step3": {
+        "title": "獲得付款和審查",
+        "description": "以完全的銷售透明度接收每月付款。查看詳細的分析並優化您的產品。"
+      }
+    },
+    "pricing": {
+      "title": "簡單定價",
+      "subtitle": "一個透明的費用結構，包含您開始銷售所需的一切",
+      "price": "$99",
+      "period": "/月",
+      "annual": "或每年 $999（節省 17%）",
+      "includesTitle": "一項費用包含：",
+      "item1": "帳戶設定 - 完整的入門協助",
+      "item2": "優惠券目錄設定 - 專業的優惠券配置",
+      "item3": "優惠券設定 - 最低 $20 售價",
+      "item4": "支付閘道整合 - 安全處理",
+      "item5": "線上支援 - 專屬協助",
+      "item6": "低交易費 - 有競爭力的銷售費率",
+      "cta": "立即開始"
+    },
+    "ecosystem": {
+      "title": "與 Mezzofy 生態系統無縫協作",
+      "subtitle": "優惠券行銷與其他 Mezzofy 產品整合，創建完整的解決方案",
+      "management": {
+        "title": "+ 優惠券管理",
+        "description": "您銷售的優惠券的後端基礎架構"
+      },
+      "marketplace": {
+        "title": "+ 優惠券市場",
+        "description": "透過 B2B 分銷擴展銷售通路"
+      },
+      "wallet": {
+        "title": "+ 優惠券錢包",
+        "description": "客戶存儲購買的優惠券以便輕鬆兌換"
+      },
+      "bundle": {
+        "title": "💡 推薦套裝：收入最大化套裝",
+        "description": "將您的促銷活動變現：管理 + 行銷 + 市場，實現完整的收入生成",
+        "cta": "聯絡銷售了解套裝定價"
+      }
+    },
+    "footerCta": {
+      "title": "準備好開始線上銷售優惠券了嗎？",
+      "description": "加入信任 Mezzofy 為其數位優惠券銷售提供動力的領先商家行列",
+      "contactUs": "立即聯絡我們",
+      "viewDemo": "查看演示"
+    }
+  },
+  "wallet": {
+    "banner": {
+      "text": "Mezzofy 交換協議的一部分",
+      "link": "查看生態系統"
+    },
+    "hero": {
+      "label": "優惠券錢包",
+      "title": "您的數位<span class=\"text-primary-orange\">優惠券</span>錢包",
+      "description": "多平台優惠券收集體驗，<span class=\"text-primary-orange font-semibold\">提升兌換率達40%以上</span>。由 Mezzofy 交換協議驅動的跨設備同步與智慧管理，提供<span class=\"text-primary-orange font-semibold\">白牌或 API 整合</span>方案。",
+      "getStarted": "立即開始",
+      "exploreFeatures": "探索功能",
+      "imageAlt": "優惠券錢包平台"
+    },
+    "platforms": {
+      "title": "隨處可用",
+      "subtitle": "選擇最適合您客戶的平台。Mezzofy 優惠券錢包支援所有主要平台與設備。",
+      "ios": {
+        "title": "iOS 行動應用程式",
+        "description": "原生 iPhone 和 iPad 體驗，與 Apple Wallet 無縫整合，支援 NFC 標籤即時下載優惠券"
+      },
+      "android": {
+        "title": "Android 行動應用程式",
+        "description": "優化的 Android 體驗，整合 Google Pay 並支援 NFC 功能，可輕觸下載優惠券"
+      },
+      "web": {
+        "title": "網頁應用程式",
+        "description": "從任何瀏覽器、任何設備存取您的錢包，無需安裝應用程式"
+      },
+      "nfcCard": {
+        "title": "NFC 實體卡",
+        "description": "附有 QR 碼和 NFC 晶片的實體卡，適合偏好實體錢包解決方案的客戶"
+      }
+    },
+    "features": {
+      "title": "強大的錢包功能",
+      "organization": {
+        "title": "智慧管理",
+        "item1": "有效狀態 - 查看可兌換的優惠券",
+        "item2": "兌換記錄 - 追蹤過去的兌換",
+        "item3": "優惠券歷史 - 存取已過期、作廢或轉讓的優惠券",
+        "item4": "智慧篩選與搜尋功能",
+        "item5": "按到期日自動排序"
+      },
+      "retrieval": {
+        "title": "輕鬆取得",
+        "item1": "從 Mezzofy 平台即時同步",
+        "item2": "自動更新優惠券",
+        "item3": "即時狀態追蹤",
+        "item4": "安全的雲端儲存",
+        "item5": "跨設備同步"
+      },
+      "flexibleIntegration": {
+        "title": "靈活整合",
+        "item1": "白牌自訂",
+        "item2": "完整的 API 存取",
+        "item3": "嵌入現有行動應用程式",
+        "item4": "自訂品牌選項",
+        "item5": "提供 iOS 和 Android SDK"
+      }
+    },
+    "howItWorks": {
+      "title": "簡單三步驟開始",
+      "step1": {
+        "title": "選擇平台",
+        "description": "根據客戶偏好，從 iOS 應用程式、Android 應用程式、網頁應用程式或 NFC 實體卡中選擇"
+      },
+      "step2": {
+        "title": "取得優惠券",
+        "description": "透過自動同步，即時存取 Mezzofy 平台上儲存的所有優惠券"
+      },
+      "step3": {
+        "title": "管理與兌換",
+        "description": "依狀態篩選優惠券（有效、已兌換、歷史記錄），輕鬆管理並用一次輕觸完成兌換"
+      }
+    },
+    "integration": {
+      "title": "按您的方式整合",
+      "subtitle": "無論您需要完全品牌化的解決方案，還是想將錢包功能整合到現有應用程式中，我們都能滿足您的需求",
+      "whiteLabelTitle": "白牌解決方案",
+      "whiteLabelDescription": "推出您自己品牌的優惠券錢包，完全掌控設計",
+      "whiteLabelItem1": "完全以您的標誌和顏色品牌化",
+      "whiteLabelItem2": "自訂域名和應用程式商店",
+      "whiteLabelItem3": "完全設計控制",
+      "whiteLabelItem4": "包含代管服務",
+      "apiTitle": "API 整合",
+      "apiDescription": "將錢包功能無縫整合到您現有的行動或網頁應用程式中",
+      "apiItem1": "RESTful API 輕鬆整合",
+      "apiItem2": "完整的開發文件",
+      "apiItem3": "支援 Webhook 即時更新",
+      "apiItem4": "提供 iOS 和 Android SDK"
+    },
+    "nfcCallout": {
+      "title": "NFC 輕觸下載",
+      "description": "行動應用程式用戶可與 Mezzofy NFC 標籤互動，只需輕觸即可即時下載優惠券。無需手動輸入 - 只需將手機輕觸 NFC 標籤，優惠券即自動添加至您的錢包。"
+    },
+    "ecosystem": {
+      "title": "與 Mezzofy 生態系統無縫整合",
+      "description": "優惠券錢包與其他 Mezzofy 產品整合，打造完整解決方案",
+      "nfc": {
+        "title": "+ 優惠券 NFC",
+        "description": "為實體零售提供輕觸至錢包功能"
+      },
+      "marketing": {
+        "title": "+ 優惠券行銷",
+        "description": "購買的優惠券自動添加至錢包"
+      },
+      "marketplace": {
+        "title": "+ 優惠券市場",
+        "description": "從錢包界面存取市場庫存"
+      },
+      "bundle": {
+        "title": "💡 推薦組合：零售卓越套餐",
+        "description": "任何優惠券發行策略的核心客戶體驗層",
+        "cta": "聯繫銷售了解套餐價格"
+      }
+    },
+    "footerCta": {
+      "title": "準備好推出您的數位錢包了嗎？",
+      "description": "加入領先品牌，為您的客戶提供無縫的優惠券錢包體驗",
+      "getStarted": "立即開始",
+      "requestDemo": "申請演示"
+    }
+  },
+  "articles": {
+    "blog": {
+      "eCouponsPreference": {
+        "title": "60%消費者偏愛電子優惠券：這對數碼時代零售業意味著什麼",
+        "headings": {
+          "rise": "電子優惠券的崛起",
+          "footTraffic": "帶動人流和銷售",
+          "nfc": "NFC技術：簡化兌換流程",
+          "ai": "AI驅動的個性化服務",
+          "location": "基於位置的營銷"
+        },
+        "paragraphs": {
+          "rise": "「60%消費者偏愛電子優惠券」這一數據標誌著購物行為的轉變性轉變。數碼優惠券已成為企業的重要互動工具，尤其是在結合NFC和AI技術後更為有效。這一偏好反映了消費者在日益數碼化的零售環境中對便利性、速度和個性化購物體驗的渴望。",
+          "footTraffic": "研究表明，「77%的購物者更可能光顧提供折扣的商店」，凸顯優惠券驅動的促銷如何同時帶動人流和線上銷售。這一引人注目的數據表明消費者積極尋找具有吸引力促銷優惠的零售商，使數碼優惠券成為搶佔市場份額和增加店鋪訪問量的重要工具。",
+          "nfc": "NFC技術讓消費者在結帳時輕觸手機即可即時兌換優惠券，消除摩擦並創造無縫購物體驗。通過免除出示實體憑證或手動輸入代碼的需求，NFC啟用的數碼優惠券大幅縮短交易時間，並提高銷售點的客戶滿意度。",
+          "ai": "AI通過根據客戶行為模式提供個性化優惠來增強數碼優惠券的效果。機器學習算法分析購買歷史、偏好和購物習慣，創建與個別消費者產生共鳴的針對性優惠，大幅提升兌換率和客戶終身價值。",
+          "location": "GPS啟用的數碼優惠券代表另一種強大的零售策略，向實體地點附近的客戶提供限時優惠。這種地理圍欄功能使零售商能夠在消費者做決定的時刻進行互動，大幅提高兌換可能性和衝動購買行為。"
+        },
+        "source": {
+          "name": "EJINSIGHT"
+        }
+      },
+      "environmentalExcellence": {
+        "title": "香港環保卓越計劃 - 數碼優惠券助您減低成本並保護樹木",
+        "headings": {
+          "impact": "紙張優惠券的環境影響",
+          "waste": "廢物問題",
+          "business": "數碼解決方案的商業優勢",
+          "demand": "消費者對可持續選擇的需求",
+          "implementation": "實施步驟"
+        },
+        "paragraphs": {
+          "impact": "全球每年發行超過1,360億張紙質優惠券，摧毀約500萬棵樹木。造紙業是空氣、水和土壤的第三大工業污染源。傳統優惠券系統的環境成本遠超簡單物流範疇——它對地球自然資源和生態系統造成了重大負擔。",
+          "waste": "超過90%的紙質優惠券未被兌換即流入垃圾填埋場，在全球各地社區造成大規模廢物問題。這一驚人的廢棄率不僅代表資源浪費，還通過垃圾填埋場甲烷排放和持久性污染加劇環境惡化。",
+          "businessIntro": "數碼優惠券解決方案在帶來環境效益的同時，也提供顯著的商業優勢：",
+          "demand": "數碼優惠券的採用符合ESG（環境、社會、治理）原則——73%的全球消費者願意改變消費習慣以減少環境損害。這一消費者偏好既代表道德責任，也為具前瞻性的零售商帶來有力的商業機遇。",
+          "implementationIntro": "希望轉型到數碼優惠券解決方案的機構應遵循以下關鍵步驟："
+        },
+        "benefits": {
+          "cost": "降低高達70%的營銷費用",
+          "redemption": "數碼優惠券達到10%的兌換率",
+          "personalization": "個性化優惠提升50%兌換率",
+          "analytics": "實時數據分析"
+        },
+        "steps": {
+          "evaluate": "評估現有紙質優惠券的成本",
+          "select": "選擇合適的數碼平台",
+          "communicate": "傳達環保效益"
+        },
+        "contact": {
+          "heading": "聯絡我們",
+          "info": "hello@mezzofy.com"
+        }
+      },
+      "holidayGuide": {
+        "title": "節日購物季優惠券指南 - 掌握最後衝刺期的假日銷售高峰",
+        "headings": {
+          "opportunity": "假日零售商機",
+          "misconception": "打破最後時刻的誤解",
+          "capitalizing": "把握剩餘商機",
+          "strategies": "假日成功的數碼優惠券策略",
+          "tactics": "快速且策略性的營銷戰術",
+          "guidance": "全面的假日指導"
+        },
+        "paragraphs": {
+          "opportunity": "根據全國零售聯合會（NRF）數據，2022年假日零售銷售額飆升至9,430-9,600億美元。這些驚人數字凸顯了在購物季最大化銷售額的重要性——這段時期消費者支出達到年度峰值，為具策略眼光的零售商創造了無數機遇。",
+          "misconception": "本指南探討零售商的常見誤解：即接觸最後時刻購物者的窗口已關閉。許多零售商誤以為到了十二月中旬，已吸引了所有假日客群。然而，在聖誕節前最後幾週，仍有大量機會吸引拖延購物者和尋找最後禮物方案的消費者。",
+          "capitalizing": "大批消費者在假日前最後幾天積極購物，尋找禮品、補充必需品或尋找最後娛樂選擇。在這關鍵窗口推出針對性優惠券活動的策略型零售商，可以獲取可觀的市場份額，最大化假日銷售收入。",
+          "strategies": "本文探討在假日期間執行有效促銷活動的策略，特別聚焦於數碼優惠券解決方案。現代零售商擁有先進工具，能夠快速部署促銷優惠——讓他們能動態回應消費者需求和購物模式。",
+          "tacticsIntro": "零售商可採用快速且策略性的營銷戰術，在節慶季剩餘時間最大化銷售。主要方式包括：",
+          "guidance": "本全面指南協助企業以有效的優惠券策略應對至關重要的最後時刻假日購物期。通過結合緊迫感營銷、個性化和現代數碼推送渠道，零售商可在一年中商業上最重要的旺季最大化收入。"
+        },
+        "tactics": {
+          "flash": "針對最後時刻購物者的限時閃促",
+          "personalized": "基於瀏覽和購買歷史的個性化數碼優惠券",
+          "mobile": "透過短訊和推送通知的移動端優先優惠券推送",
+          "nfc": "NFC啟用的店內促銷，即時兌換",
+          "bundled": "跨品類捆綁優惠以增加購物籃大小"
+        },
+        "contact": {
+          "heading": "聯絡我們",
+          "info": "hello@mezzofy.com"
+        }
+      },
+      "hotelTechInnovation": {
+        "title": "為何科技創新是酒店成功的關鍵",
+        "headings": {
+          "challenges": "行業挑戰",
+          "travelers": "旅客的期望",
+          "nfc": "NFC技術提升住客體驗",
+          "success": "真實成功案例",
+          "chatbots": "聊天機器人實現基於位置的互動",
+          "ai": "AI驅動的個性化服務",
+          "urgency": "適應的緊迫性"
+        },
+        "paragraphs": {
+          "challenges": "酒店和旅遊業面臨客戶忠誠度下降和激烈競爭等重大挑戰。在日益擁擠的市場中，酒店業務必須通過提供卓越體驗和創新服務方式來區分自身，以留住客戶並建立長期關係。",
+          "travelers": "研究表明，67%的旅客期望獲得個性化體驗",
+          "nfc": "NFC技術不僅簡化入住手續——住客可用智能手機輕觸即可獲得即時優惠，例如用餐或當地景點的數碼優惠券，在提升體驗的同時增加收益。數碼便利與個性化優惠的無縫融合創造了令人難忘的體驗，讓酒店在競爭對手中脫穎而出。",
+          "success": "民宿業主 Sarah Kay：",
+          "chatbots": "聊天機器人通過提供附近商店和餐廳的基於位置優惠券，增強住客互動。智能聊天機器人系統可根據住客偏好和位置，主動推薦用餐、娛樂和購物機會，在提高住客滿意度的同時創造額外收入。",
+          "ai": "AI驅動的個性化服務通過分析過往入住記錄和偏好，創建量身定制的促銷活動。機器學習算法分析住客歷史數據，預測需求和偏好，使酒店能夠提供與個別旅客產生共鳴的優惠和建議，提高互動率。",
+          "urgency": "適應的緊迫性至關重要：80%的客戶更傾向於選擇提供個性化體驗的品牌。"
+        },
+        "dataSources": {
+          "heading": "數據來源",
+          "accenture": "Accenture Interactive（67%個性化期望）",
+          "pwc": "PwC消費者智能系列（75%數據共享意願）",
+          "epsilon": "Epsilon研究（80%個性化偏好）"
+        },
+        "contact": {
+          "heading": "聯絡我們",
+          "info": "hello@mezzofy.com"
+        }
+      },
+      "nfcParknshop": {
+        "title": "Mezzofy 助品牌設置優惠券到240 間百佳 NFC 標籤，全程代辦、無需協調",
+        "headings": {
+          "introduction": "簡介",
+          "challenges": "挑戰概述",
+          "service": "服務解決方案",
+          "benefits": "主要優勢",
+          "applications": "目標應用場景"
+        },
+        "paragraphs": {
+          "intro": "對於許多快消品和消費品品牌而言，通過實體零售渠道執行促銷活動涉及大量協調工作和程序複雜性。",
+          "challenges": "本文指出典型障礙：與百佳等零售商協調促銷細節、設計實體優惠券材料、安排物流和店內陳設以及追蹤銷售數據。",
+          "service": "Mezzofy現已支持在百佳全港240個門店的NFC標籤促銷，提供「一站式」服務，品牌只需提供折扣內容，Mezzofy負責優惠券創建、標籤設置和物流——免除直接與零售商協調的需求。",
+          "benefitsIntro": "該平台突出了幾項優勢：",
+          "applications": "該服務適合新產品發布、限時促銷、市場測試場景以及避免使用POS或紙質業務的品牌。"
+        },
+        "benefits": {
+          "purchaseIntent": "消費者購買意願提升5倍",
+          "redemptionRate": "兌換率達到30-34%",
+          "costReduction": "每張優惠券的分發成本低於港幣0.20元"
+        },
+        "contact": {
+          "heading": "聯絡我們",
+          "info": "hello@mezzofy.com"
+        }
+      },
+      "smartRetail": {
+        "title": "科技引領智慧零售 - NFC優惠券推動衝動購買",
+        "headings": {
+          "landscape": "零售業的演變格局",
+          "nfc": "NFC技術打造無縫體驗",
+          "impulse": "衝動購買的商機",
+          "strategies": "NFC優惠券成功的智慧策略",
+          "transformative": "轉型潛力"
+        },
+        "paragraphs": {
+          "landscape": "零售業正在經歷技術和消費者偏好演變驅動的重大轉變。現代零售商必須擁抱創新，以在日益數碼化的市場中保持競爭力，並滿足不斷變化的客戶期望。",
+          "nfc": "NFC技術讓客戶通過輕鬆輕觸店內NFC標籤即可獲得數碼優惠券，簡化購物流程並免除實體優惠券管理。這種無摩擦的互動為客戶創造無縫體驗，同時降低零售商的運營成本。",
+          "impulse": "Slickdeals的研究表明「四分之三（73%）的受訪者會進行自發購買」，平均每月衝動消費從2021年的276美元增至目前超過314美元。這一引人注目的數據展示了通過策略性店內促銷和精心放置的數碼優惠券來捕捉衝動購買行為的巨大價值。",
+          "strategiesIntro": "成功實施NFC優惠券策略需要認真關注多個關鍵因素：",
+          "location": "將NFC優惠券放置在結帳台附近和高停留時間區域，可最大化可見度和互動效果。處於決策階段的消費者對放置良好的促銷優惠反應最為積極。",
+          "value": "強調優惠的節省和好處有助於推動兌換。清晰傳達折扣金額和價值主張鼓勵客戶行動。",
+          "merchandising": "按品類、季節或活動進行合理分組創造連貫的購物體驗。針對性優惠券搭配的戰略性產品擺放改善交叉銷售和購物籃大小。",
+          "relevance": "基於本地活動、天氣和客戶行為模式的精準定位確保優惠在正確時間觸達正確受眾。",
+          "senses": "限時優惠製造緊迫感並刺激客戶反應。限時優惠利用稀缺心理推動即時購買決策。",
+          "transformative": "將NFC技術整合到數碼優惠券策略中代表零售業的轉型潛力。通過結合便利技術和策略性促銷思維，零售商可大幅提升銷售業績、客戶滿意度和競爭定位。"
+        },
+        "subheadings": {
+          "location": "策略性位置",
+          "value": "價值感知",
+          "merchandising": "互補陳設",
+          "relevance": "通過技術實現相關性",
+          "senses": "感官互動"
+        },
+        "contact": {
+          "heading": "聯絡我們",
+          "info": "hello@mezzofy.com"
+        }
+      }
+    },
+    "news": {
+      "cioworldFeature": {
+        "title": "TheCIOWorld報道Mezzofy：為更環保的未來轉型優惠券",
+        "paragraphs": {
+          "innovation": "Mezzofy創新的數碼優惠券方式已在CIOWorld獲得報導。公司領導人 Dicky Ying 探討了組織如何以注重環保的解決方案轉型傳統優惠券業務。",
+          "technologies": "專題文章強調了Mezzofy的先進技術，特別是NFC輕觸領取優惠券功能",
+          "redefining": "出版物強調Mezzofy如何重新定義可持續數碼營銷的格局。報導展示了技術創新如何同時推動商業成功和環境可持續性。"
+        },
+        "callout": {
+          "heading": "閱讀完整文章",
+          "text": "訪問CIOWorld，了解Mezzofy關於環保數碼優惠券的願景。"
+        }
+      },
+      "dualEsgAwards": {
+        "title": "Mezzofy榮獲ESG及可持續發展論壇2024雙料大獎",
+        "paragraphs": {
+          "awards": "Mezzofy在9月27日由HK01主辦的「ESG及可持續發展論壇暨頒獎典禮2024」上獲得表彰。公司獲得兩項榮譽：「傑出ESG企業大獎」",
+          "forum": "商業領袖和可持續發展專家齊聚一堂，探討ESG趨勢以及將可持續發展目標整合到企業運營中。作為數碼優惠券平台，Mezzofy通過以數碼方案取代紙質優惠券，從而減少紙張浪費，降低環境影響。",
+          "commitment": "獎項強化了公司在環境責任和可持續發展領導力方面的承諾。香港特區政府環境及生態局局長謝展寰強調了商業界在推動可持續發展計劃中的重要性。",
+          "future": "Mezzofy持續開發造福環境和社會的解決方案。這一成就建立在Mezzofy早前獲得ESG認證的基礎上。"
+        }
+      },
+      "edigestLeadingSolution": {
+        "title": "eDigest獨家報道：亞太區領先數碼優惠券解決方案",
+        "headings": {
+          "pioneering": "亞太區數碼優惠券解決方案的先驅",
+          "innovative": "創新數碼優惠券平台",
+          "expanding": "拓展業務版圖",
+          "commitment": "創新承諾"
+        },
+        "paragraphs": {
+          "pioneering": "Mezzofy作為「領先的數碼優惠券平台」運營",
+          "innovative": "該平台通過高可及性和全面功能脫穎而出。企業無需廣泛的技術專業知識，即可設計和部署數碼優惠券。系統支持多種優惠券格式，包括折扣、禮品券和促銷優惠，支持多樣化的營銷方式。",
+          "expanding": "Mezzofy在亞太區多個國家開展業務，已促成超過3億張數碼優惠券的發行和管理",
+          "commitment": "公司持續投入研發以引入新功能和整合。通過強調創新，Mezzofy為企業提供有效吸引客戶和加速增長的現代工具。"
+        }
+      },
+      "forbesDickyYin": {
+        "title": "《Forbes China》認可殷建德在創新方面的傑出領導力",
+        "paragraphs": {
+          "recognition": "Mezzofy（香港）有限公司行政總裁殷建德先生獲得《Forbes China》認可，被評為傑出商業領袖。",
+          "philosophy": "根據文章，殷建德認為真正的領導力在於激勵員工主動認同並配合組織方向。他強調建立提供策略方向和可能性的職場文化，將團隊成員視為共同推進集體目標的合作夥伴。",
+          "stewardship": "在殷建德的領導下，Mezzofy從根本上轉型了數碼優惠券行業。該組織為零售商提供靈活工具，提升客戶對數碼優惠券解決方案的認知和接受度。",
+          "reshaping": "通過重塑消費模式，公司正在推動行業的可持續發展。《Forbes China》的認可凸顯了殷建德創新的領導方式，以及他對在商業實踐和環境影響方面創造積極變革的承諾。"
+        },
+        "quote": {
+          "text": "\"Followers determine who the leader is.\"",
+          "attribution": "— 殷建德的領導哲學"
+        },
+        "headings": {
+          "transforming": "轉型數碼優惠券行業"
+        },
+        "callout": {
+          "heading": "閱讀完整《Forbes China》文章",
+          "text": "了解更多殷建德的領導哲學和Mezzofy的使命。"
+        }
+      },
+      "fundingAnnouncement": {
+        "title": "Mezzofy完成200萬美元Pre-Series A融資",
+        "paragraphs": {
+          "announcement": "Mezzofy宣布完成200萬美元的Pre-series A融資輪",
+          "market": "全球數碼優惠券市場預計將以18.6%的複合年增長率擴張",
+          "brands": "近100個亞洲品牌——包括美心、星巴克、Shell和凱悅——使用Mezzofy的平台。優惠券即服務（CaaS）模式支持通過API與現有系統整合，據報可削減超過87%的運營成本。",
+          "management": "Mezzofy管理約4億張數碼優惠券"
+        },
+        "quote": {
+          "text": "\"The growth of digital payments and e-commerce drives the rise of digital coupons. We addressed this by making digital coupons transferable.\"",
+          "attribution": "— Dicky Ying, CEO"
+        }
+      },
+      "techappleInnovationIndex": {
+        "title": "TechApple報道：Mezzofy在2024年企業創新指數中獲評3星中小企",
+        "paragraphs": {
+          "innovation": "2024年企業創新指數凸顯了在創新領導力和卓越運營方面的成就，強化了香港作為區域創新中心的地位。奧雅納工程顧問奪得首位，恒生銀行和香港機場管理局緊隨其後。",
+          "recognition": "這是中小企首次獲得評估的一年。37個機構獲得星級評定，其中Mezzofy（香港）有限公司獲得三星評級",
+          "collaboration": "在香港政府和中文大學APIB的支持下，該計劃促進跨界合作和數碼轉型。它為政策制定者提供數據，同時表彰通過原創性和適應能力推動經濟進步的企業。",
+          "future": "指數持續鼓勵各規模企業採用創新方式，加強競爭定位，確立香港作為全球創新強國的發展軌跡。"
+        }
+      },
+      "treasureGlobalPartnership": {
+        "title": "Mezzofy與Treasure Global合作，加速在馬來西亞的數碼優惠券業務拓展",
+        "paragraphs": {
+          "opening": "Mezzofy宣布與Treasure Global Inc.建立戰略合作伙伴關係，指定其為Mezzofy數碼優惠券平台在馬來西亞的獨家分銷商。",
+          "positioning": "公司定位為區域領導者，在15個市場管理超過400億美元的數碼優惠券交易。其「優惠券即服務（CaaS）」平台使企業無需投入新基礎設施即可吸引客戶。",
+          "collaboration": "通過此次合作，Treasure Global將在馬來西亞全面推廣平台，利用其本地市場專業知識和數碼能力。雙方預計實現「每年200至400萬美元的經常性收入」",
+          "platform": "該平台提供無縫優惠券創建、實時兌換追蹤和活動數據分析等功能。此次合作體現了Mezzofy支持馬來西亞品牌利用數碼創新促進客戶互動的承諾，呼應該國推進數碼經濟的目標。"
+        },
+        "quote": {
+          "text": "\"Treasure Global's strong presence and market insight make them a great partner to scale our solution in Malaysia.\"",
+          "attribution": "— Dicky Ying, CEO of Mezzofy"
+        }
+      },
+      "ejtech300mCoupons": {
+        "title": "EJTech報道：Mezzofy雲平台在亞太區分發3億張數碼優惠券",
+        "paragraphs": {
+          "recognition": "Mezzofy的數碼優惠券雲平台因其在亞太區轉型客戶互動方式而獲得EJTech的認可。",
+          "platform": "該平台使企業能夠「高效創建和分發環保的無紙化優惠券，覆蓋各行各業」。解決方案支持通過電子郵件、短訊和社交媒體渠道直接接觸客戶，同時減少紙張消耗。",
+          "scale": "根據EJTech的報導，「已分發超過3億張數碼優惠券」，Mezzofy在重塑企業以可持續和具成本效益方式接觸消費者方面展示了顯著的市場吸引力。",
+          "milestone": "這一里程碑代表著亞太區促銷營銷數碼轉型的重大成就。平台在保持效率和環保性的同時處理如此大規模的能力，為行業樹立了新標準。"
+        }
+      }
+    }
+  },
+  "support": {
+    "status": {
+      "label": "平台狀態：",
+      "operational": "運營正常",
+      "viewLive": "查看即時狀態"
+    },
+    "hero": {
+      "title": "我們全天候為您提供協助",
+      "subtitle": "為 Mezzofy 平台上的商家、分銷商、合作夥伴及終端用戶提供專屬支援服務。",
+      "ctaMerchant": "商家入口",
+      "ctaPartner": "合作夥伴入口"
+    },
+    "reach": {
+      "title": "如何聯繫我們",
+      "description": "根據您在 Mezzofy 平台的角色，選擇最適合的支援渠道。",
+      "merchant": {
+        "badge": "適用於商家",
+        "title": "商家入口",
+        "desc": "供應方客戶可透過商家入口直接提交及追蹤支援請求，包括工單管理及文件查閱。",
+        "cta": "進入商家入口"
+      },
+      "partner": {
+        "badge": "適用於合作夥伴",
+        "title": "合作夥伴入口",
+        "desc": "需求方合作夥伴及經銷商可透過合作夥伴入口管理支援請求、查閱 SLA 及升級問題。",
+        "cta": "進入合作夥伴入口"
+      },
+      "email": {
+        "title": "電郵支援",
+        "desc": "適用於需要優惠券兌換、錢包問題或一般查詢協助的消費者及終端用戶。",
+        "address": "support@mezzofy.com",
+        "cta": "發送電郵"
+      }
+    },
+    "audience": {
+      "title": "按用戶類型提供支援",
+      "description": "根據用戶類型整理的常見問題及處理方式。",
+      "supply": {
+        "title": "供應方客戶（商家）",
+        "issue1": "優惠券未啟用或顯示不正確",
+        "issue2": "NFC 標籤設定及配置問題",
+        "issue3": "兌換數據差異或報告錯誤",
+        "issue4": "API 整合失敗或 Webhook 錯誤",
+        "issue5": "帳單及訂閱查詢",
+        "note": "提交工單前，請先檢查您的門店網絡及設備配置。"
+      },
+      "demand": {
+        "title": "需求方客戶（經銷商及合作夥伴）",
+        "issue1": "市場平台存取或庫存同步問題",
+        "issue2": "Bridge API 驗證或頻率限制錯誤",
+        "issue3": "錢包白標配置問題",
+        "issue4": "合作夥伴帳單及合約查詢"
+      },
+      "partners": {
+        "title": "終端用戶及消費者",
+        "issue1": "結帳時優惠券未能套用",
+        "issue2": "錢包應用程式登入或同步問題",
+        "issue3": "銷售點 NFC 輕觸未被識別",
+        "issue4": "優惠券已過期或條款與預期不符"
+      }
+    },
+    "sla": {
+      "title": "服務等級協議（SLA）",
+      "description": "我們對各支援層級的響應及解決時間的承諾。",
+      "hosting": "託管於 AWS（新加坡地區）— 99.9% 正常運行時間 SLA",
+      "col": {
+        "severity": "嚴重程度",
+        "definition": "定義",
+        "response": "響應時間",
+        "resolution": "解決時間",
+        "hours": "支援時間"
+      },
+      "disclaimer": "SLA 計時從工單確認起開始計算。解決時間為目標，並非保證，涉及第三方的問題可能有所差異。支援時間以新加坡時間（SGT，UTC+8）為準。"
+    },
+    "process": {
+      "title": "工單流程",
+      "description": "提交支援請求後的處理流程。",
+      "step1": {
+        "title": "提交",
+        "desc": "透過商家入口、合作夥伴入口或電郵提交請求，請附上您的帳戶 ID、清晰描述及相關截圖或日誌。"
+      },
+      "step2": {
+        "title": "確認",
+        "desc": "我們的團隊將在 SLA 響應時間內確認您的工單，並分配案例參考編號供追蹤使用。"
+      },
+      "step3": {
+        "title": "調查及更新",
+        "desc": "我們的工程師調查問題並定期提供更新，每次狀態變更時將透過電郵或入口通知通知您。"
+      },
+      "step4": {
+        "title": "解決",
+        "desc": "問題解決後，我們將提供完整的解決摘要並與您確認關閉。若問題在 7 天內重現，您可重新開啟工單。"
+      }
+    },
+    "escalation": {
+      "title": "仍需幫助？請直接聯繫我們。",
+      "support": {
+        "label": "一般支援",
+        "email": "support@mezzofy.com"
+      },
+      "tech": {
+        "label": "技術支援",
+        "email": "kris@mezzofy.com"
+      },
+      "ops": {
+        "label": "運營支援",
+        "email": "maverick@mezzofy.com"
+      }
+    },
+    "aiChat": {
+      "buttonLabel": "詢問 Mezzofy AI",
+      "title": "Mezzofy 支援助理",
+      "subtitle": "獲取常見問題的即時解答或提交支援工單。",
+      "placeholder": "輸入您的問題...",
+      "send": "發送",
+      "merchantLink": "透過商家入口提交 →",
+      "partnerLink": "透過合作夥伴入口提交 →"
+    },
+    "footerCta": {
+      "title": "準備好獲取支援了嗎？",
+      "description": "我們的團隊全天候 24/7 為您提供服務，協助您解決 Mezzofy 平台上的任何問題。",
+      "contactUs": "聯絡支援",
+      "viewDocs": "查看文件"
+    }
+  },
+  "notFound": {
+    "hero": {
+      "title": "找不到頁面",
+      "description": "抱歉，您要找的頁面不存在或已移至其他位置，讓我們幫您回到正軌。"
+    },
+    "cta": {
+      "home": "返回首頁",
+      "support": "聯絡支援"
+    }
+  }
+}
