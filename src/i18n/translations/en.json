@@ -1534,5 +1534,196 @@
       "contact": "Contact us at: <a href=\"mailto:support@mezzofy.com\">support@mezzofy.com</a>",
       "helpCenter": "Visit our Help Center for more guides and tutorials"
     }
+  },
+  "aiCommerce": {
+    "hero": {
+      "subtitle": "Mezzofy is the supply layer that AI shopping agents query in real time. When ChatGPT, Gemini, or Kimi recommend a deal, it comes from the Mezzofy Exchange — tokenized, fraud-proof, and ready to redeem. 900M+ weekly AI users. Your merchant inventory. One integration.",
+      "primaryCta": "Become an AI Supply Partner",
+      "secondaryCta": "Explore Integration Protocols"
+    },
+    "shift": {
+      "title": "The Next Distribution Channel Isn't an App — It's an AI Agent",
+      "subtitle": "Consumers are shifting from searching for deals to asking AI to find them.",
+      "card1": {
+        "title": "Agentic Commerce is Live",
+        "description": "ChatGPT launched Instant Checkout, Google announced Universal Commerce Protocol"
+      },
+      "card2": {
+        "title": "900M+ Weekly AI Users",
+        "description": "Distribution metrics across platforms"
+      },
+      "card3": {
+        "title": "Structured Data Wins",
+        "description": "Unstructured promotions are invisible to AI"
+      }
+    },
+    "protocols": {
+      "title": "Three Protocols, One Supply Layer",
+      "subtitle": "Mezzofy exposes your merchant coupon inventory to the world's largest AI platforms through standardized commerce protocols. One listing in the Mezzofy Exchange = discoverable across all three.",
+      "acp": {
+        "title": "ChatGPT — Agentic Commerce Protocol",
+        "badge": "LIVE · SEPTEMBER 2025",
+        "description": "User asks 'find me a dining deal near Bukit Bintang' → ChatGPT queries Mezzofy API",
+        "benefit1": {
+          "title": "900M Weekly Users",
+          "description": "Largest AI user base globally, high purchase intent"
+        },
+        "benefit2": {
+          "title": "4% Transaction Fee Model",
+          "description": "Aligns with Mezzofy's performance-based revenue structure"
+        },
+        "benefit3": {
+          "title": "Instant Checkout",
+          "description": "Complete redemption within the chat interface, no app switching"
+        },
+        "benefit4": {
+          "title": "Zero Merchant Effort",
+          "description": "Merchants listed in the Mezzofy supply pool are automatically discoverable"
+        }
+      },
+      "ucp": {
+        "title": "Google Gemini — Universal Commerce Protocol",
+        "badge": "ANNOUNCED · JANUARY 2026",
+        "description": "Gemini's 45 billion-item Shopping Graph now includes promotions",
+        "benefit1": {
+          "title": "45B-Item Shopping Graph",
+          "description": "Mezzofy coupons indexed alongside the world's largest product catalog"
+        },
+        "benefit2": {
+          "title": "Cross-Surface Distribution",
+          "description": "Coupons surface in Google Search, Maps, Shopping, and Assistant"
+        },
+        "benefit3": {
+          "title": "Backed by Major Partners",
+          "description": "Walmart, Target, Shopify, Mastercard, and Visa are UCP launch partners"
+        },
+        "benefit4": {
+          "title": "Conditional Triggers",
+          "description": "Consumers set preferences; Gemini automatically matches Mezzofy inventory"
+        }
+      },
+      "mcp": {
+        "title": "Kimi & Regional AI Agents",
+        "badge": "OPPORTUNITY · EXPANDING",
+        "description": "Moonshot AI's Kimi dominates Chinese-speaking markets",
+        "benefit1": {
+          "title": "China Market Access",
+          "description": "Largest coupon consumption market globally"
+        },
+        "benefit2": {
+          "title": "China Mobile Bridge",
+          "description": "Existing telco partnership accelerates integration"
+        },
+        "benefit3": {
+          "title": "Multi-Language Support",
+          "description": "Mezzofy already supports Traditional and Simplified Chinese"
+        },
+        "benefit4": {
+          "title": "Open Protocol",
+          "description": "MCP and REST API enable integration with any emerging AI agent platform"
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "From Merchant Listing to AI Redemption in Four Steps",
+      "step1": {
+        "title": "LIST",
+        "description": "Merchant lists coupon inventory in the Mezzofy Exchange via the self-serve supply portal. Zero upfront cost."
+      },
+      "step2": {
+        "title": "INDEX",
+        "description": "Mezzofy tokenizes and standardizes inventory"
+      },
+      "step3": {
+        "title": "DISCOVER",
+        "description": "AI agents query Mezzofy supply in real time"
+      },
+      "step4": {
+        "title": "REDEEM",
+        "description": "Consumer redeems directly within the AI interface"
+      }
+    },
+    "opportunities": {
+      "title": "Beyond Discovery: The AI-Powered Product Suite",
+      "subtitle": "Coupon search is just the starting point. Mezzofy is building a full AI commerce intelligence layer on top of the exchange.",
+      "api": {
+        "title": "AI Shopping Agent API",
+        "description": "Mezzofy becomes a registered data provider for ChatGPT (ACP) and Gemini (UCP). Merchants in the supply pool are automatically discoverable by 900M+ AI users globally."
+      },
+      "intelligence": {
+        "title": "Predictive Coupon Intelligence",
+        "description": "Aggregate anonymized redemption data across thousands of merchants to build predictive models."
+      },
+      "concierge": {
+        "title": "Conversational Commerce Concierge",
+        "description": "White-label AI chat assistant embedded in demand buyer apps."
+      },
+      "pricing": {
+        "title": "Dynamic Pricing & Smart Quotas",
+        "description": "AI engine that automatically adjusts coupon availability based on redemption velocity, merchant capacity, and time-of-day demand."
+      },
+      "fraud": {
+        "title": "AI-Powered Fraud Detection",
+        "description": "Machine learning layer on top of tokenized validation. Detects anomalous patterns in real time."
+      },
+      "matching": {
+        "title": "AI Merchant Matching Engine",
+        "description": "AI automatically routes merchant inventory to the most relevant distribution channel."
+      }
+    },
+    "marketValidation": {
+      "title": "The Market Is Moving Now",
+      "stat1": "ChatGPT weekly active users (source: OpenAI, 2025)",
+      "stat2": "Items in Google's Shopping Graph now including promotions",
+      "stat3": "Global digital coupon market by 2035, growing at 18% CAGR",
+      "stat4": "ChatGPT Instant Checkout transaction fee — same structure as Mezzofy's model"
+    },
+    "stakeholders": {
+      "title": "What AI Commerce Means for You",
+      "merchants": {
+        "title": "For Merchants",
+        "description": "Your coupons become discoverable to 900M+ AI users the moment you list them",
+        "cta": "List Your Inventory →"
+      },
+      "distributors": {
+        "title": "For Distributors & Partners",
+        "description": "Embed a Mezzofy-powered AI concierge into your banking, telco, or HR app",
+        "cta": "Become a Distribution Partner →"
+      },
+      "developers": {
+        "title": "For Developers",
+        "description": "Integrate Mezzofy's coupon supply via ACP, UCP, or MCP endpoints",
+        "cta": "Explore API Documentation →"
+      }
+    },
+    "architecture": {
+      "title": "Integration Architecture",
+      "diagram": "MERCHANT SUPPLY POOL",
+      "description": "Expose Mezzofy supply inventory via ACP, UCP, and MCP endpoints. AI agents query in real time. Coupon tokens are validated on redemption. Mezzofy earns a transaction fee on every successful AI-referred redemption. One supply listing. Three protocol endpoints. Global AI distribution."
+    },
+    "footerCta": {
+      "title": "AI Commerce Is Live. Your Inventory Should Be Too.",
+      "description": "Merchants already in the Mezzofy Exchange are discoverable by AI agents today. The window to be an early supply partner is now — before your competitors list their inventory first.",
+      "primaryButton": "Become an AI Supply Partner",
+      "secondaryButton": "Talk to Our Team"
+    },
+    "contact": {
+      "title": "Get Started with AI Commerce",
+      "subtitle": "Tell us about your business and we'll show you how AI agents can distribute your coupon inventory",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Business Email",
+      "company": "Company Name",
+      "role": "Your Role",
+      "roleOptions": {
+        "merchant": "Merchant",
+        "distributor": "Distributor/Partner",
+        "developer": "Developer",
+        "investor": "Investor",
+        "other": "Other"
+      },
+      "message": "Message",
+      "submit": "Request AI Commerce Access"
+    }
   }
 }

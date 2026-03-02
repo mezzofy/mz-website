@@ -1534,5 +1534,196 @@
       "contact": "聯繫我們：<a href=\"mailto:support@mezzofy.com\">support@mezzofy.com</a>",
       "helpCenter": "造訪我們的幫助中心以獲取更多指南和教學"
     }
+  },
+  "aiCommerce": {
+    "hero": {
+      "subtitle": "Mezzofy 是 AI 購物代理商即時查詢的供應層。當 ChatGPT、Gemini 或 Kimi 推薦優惠時，它來自 Mezzofy 交易所——已代幣化、防欺詐，並可立即兌換。每週 9 億以上 AI 用戶。您的商家庫存。一次整合。",
+      "primaryCta": "成為 AI 供應夥伴",
+      "secondaryCta": "探索整合協議"
+    },
+    "shift": {
+      "title": "下一個分銷渠道不是應用程式——而是 AI 代理商",
+      "subtitle": "消費者正從搜尋優惠轉向詢問 AI 為他們尋找優惠。",
+      "card1": {
+        "title": "代理商電商已上線",
+        "description": "ChatGPT 推出即時結帳，Google 宣布通用電商協議"
+      },
+      "card2": {
+        "title": "每週 9 億以上 AI 用戶",
+        "description": "跨平台分發指標"
+      },
+      "card3": {
+        "title": "結構化數據勝出",
+        "description": "非結構化促銷對 AI 不可見"
+      }
+    },
+    "protocols": {
+      "title": "三大協議，一個供應層",
+      "subtitle": "Mezzofy 通過標準化電商協議將您的商家優惠券庫存開放給全球最大的 AI 平台。在 Mezzofy 交易所一次上架 = 可在三大平台發現。",
+      "acp": {
+        "title": "ChatGPT — 代理商電商協議",
+        "badge": "已上線 · 2025 年 9 月",
+        "description": "用戶詢問「在吉隆坡附近找餐飲優惠」→ ChatGPT 查詢 Mezzofy API",
+        "benefit1": {
+          "title": "每週 9 億用戶",
+          "description": "全球最大 AI 用戶群，購買意向高"
+        },
+        "benefit2": {
+          "title": "4% 交易費模式",
+          "description": "與 Mezzofy 的績效收益結構一致"
+        },
+        "benefit3": {
+          "title": "即時結帳",
+          "description": "在聊天介面內完成兌換，無需切換應用程式"
+        },
+        "benefit4": {
+          "title": "商家零負擔",
+          "description": "在 Mezzofy 供應池中上架的商家可自動被發現"
+        }
+      },
+      "ucp": {
+        "title": "Google Gemini — 通用電商協議",
+        "badge": "已宣布 · 2026 年 1 月",
+        "description": "Gemini 的 450 億商品購物圖譜現已涵蓋促銷活動",
+        "benefit1": {
+          "title": "450 億商品購物圖譜",
+          "description": "Mezzofy 優惠券與全球最大商品目錄一起被索引"
+        },
+        "benefit2": {
+          "title": "跨平台分發",
+          "description": "優惠券出現在 Google 搜尋、地圖、購物和助理中"
+        },
+        "benefit3": {
+          "title": "主要夥伴支持",
+          "description": "Walmart、Target、Shopify、Mastercard 和 Visa 是 UCP 啟動夥伴"
+        },
+        "benefit4": {
+          "title": "條件觸發",
+          "description": "消費者設置偏好；Gemini 自動匹配 Mezzofy 庫存"
+        }
+      },
+      "mcp": {
+        "title": "Kimi 及區域 AI 代理商",
+        "badge": "機遇 · 持續擴展",
+        "description": "Moonshot AI 的 Kimi 主導中文市場",
+        "benefit1": {
+          "title": "中國市場准入",
+          "description": "全球最大的優惠券消費市場"
+        },
+        "benefit2": {
+          "title": "中國移動橋樑",
+          "description": "現有電信合作夥伴關係加速整合"
+        },
+        "benefit3": {
+          "title": "多語言支持",
+          "description": "Mezzofy 已支持繁體和簡體中文"
+        },
+        "benefit4": {
+          "title": "開放協議",
+          "description": "MCP 和 REST API 可與任何新興 AI 代理商平台整合"
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "從商家上架到 AI 兌換的四個步驟",
+      "step1": {
+        "title": "上架",
+        "description": "商家通過自助供應門戶在 Mezzofy 交易所上架優惠券庫存。零前期費用。"
+      },
+      "step2": {
+        "title": "索引",
+        "description": "Mezzofy 對庫存進行代幣化和標準化"
+      },
+      "step3": {
+        "title": "發現",
+        "description": "AI 代理商即時查詢 Mezzofy 供應"
+      },
+      "step4": {
+        "title": "兌換",
+        "description": "消費者直接在 AI 介面內兌換"
+      }
+    },
+    "opportunities": {
+      "title": "超越發現：AI 驅動的產品套件",
+      "subtitle": "優惠券搜尋只是起點。Mezzofy 正在交易所之上構建完整的 AI 電商智能層。",
+      "api": {
+        "title": "AI 購物代理商 API",
+        "description": "Mezzofy 成為 ChatGPT（ACP）和 Gemini（UCP）的註冊數據提供商。供應池中的商家可被全球 9 億以上 AI 用戶自動發現。"
+      },
+      "intelligence": {
+        "title": "預測性優惠券智能",
+        "description": "匯總數千家商家的匿名兌換數據，建立預測模型。"
+      },
+      "concierge": {
+        "title": "對話式電商顧問",
+        "description": "嵌入需求買家應用程式的白標 AI 聊天助理。"
+      },
+      "pricing": {
+        "title": "動態定價與智能配額",
+        "description": "根據兌換速度、商家容量和時段需求自動調整優惠券可用性的 AI 引擎。"
+      },
+      "fraud": {
+        "title": "AI 驅動的欺詐檢測",
+        "description": "在代幣化驗證之上的機器學習層，即時檢測異常模式。"
+      },
+      "matching": {
+        "title": "AI 商家匹配引擎",
+        "description": "AI 自動將商家庫存路由到最相關的分發渠道。"
+      }
+    },
+    "marketValidation": {
+      "title": "市場正在即時移動",
+      "stat1": "ChatGPT 每週活躍用戶（來源：OpenAI，2025）",
+      "stat2": "Google 購物圖譜中現已包含促銷活動的商品數",
+      "stat3": "2035 年全球數字優惠券市場規模，年複合增長率 18%",
+      "stat4": "ChatGPT 即時結帳交易費——與 Mezzofy 模式相同"
+    },
+    "stakeholders": {
+      "title": "AI 電商對您意味著什麼",
+      "merchants": {
+        "title": "對商家而言",
+        "description": "您的優惠券一旦上架，即可被 9 億以上 AI 用戶發現",
+        "cta": "上架您的庫存 →"
+      },
+      "distributors": {
+        "title": "對分銷商和夥伴而言",
+        "description": "將 Mezzofy 驅動的 AI 顧問嵌入您的銀行、電信或 HR 應用程式",
+        "cta": "成為分發夥伴 →"
+      },
+      "developers": {
+        "title": "對開發者而言",
+        "description": "通過 ACP、UCP 或 MCP 端點整合 Mezzofy 的優惠券供應",
+        "cta": "探索 API 文檔 →"
+      }
+    },
+    "architecture": {
+      "title": "整合架構",
+      "diagram": "商家供應池",
+      "description": "通過 ACP、UCP 和 MCP 端點開放 Mezzofy 供應庫存。AI 代理商即時查詢。優惠券代幣在兌換時驗證。Mezzofy 對每次成功的 AI 推薦兌換收取交易費。一次供應上架。三個協議端點。全球 AI 分發。"
+    },
+    "footerCta": {
+      "title": "AI 電商已上線。您的庫存也應該上線了。",
+      "description": "已在 Mezzofy 交易所上架的商家今天就可以被 AI 代理商發現。成為早期供應夥伴的窗口就是現在——在您的競爭對手搶先上架之前。",
+      "primaryButton": "成為 AI 供應夥伴",
+      "secondaryButton": "聯絡我們的團隊"
+    },
+    "contact": {
+      "title": "開始使用 AI 電商",
+      "subtitle": "告訴我們您的業務，我們將向您展示 AI 代理商如何分發您的優惠券庫存",
+      "firstName": "名字",
+      "lastName": "姓氏",
+      "email": "公司電子郵件",
+      "company": "公司名稱",
+      "role": "您的角色",
+      "roleOptions": {
+        "merchant": "商家",
+        "distributor": "分銷商/夥伴",
+        "developer": "開發者",
+        "investor": "投資者",
+        "other": "其他"
+      },
+      "message": "訊息",
+      "submit": "申請 AI 電商訪問權限"
+    }
   }
 }
