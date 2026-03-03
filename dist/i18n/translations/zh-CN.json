@@ -2438,5 +2438,114 @@
       "getStarted": "立即开始",
       "requestDemo": "申请演示"
     }
+  },
+  "support": {
+    "status": {
+      "label": "平台状态：",
+      "operational": "正常运行",
+      "viewLive": "查看实时状态"
+    },
+    "hero": {
+      "title": "全天候为您提供帮助 — <span class=\"text-primary-orange\">24/7</span>",
+      "subtitle": "<span class=\"text-primary-orange font-semibold\">专属支持</span>服务商、经销商、合作伙伴及 Mezzofy 平台上的终端用户。我们的团队全天候待命，确保您的<span class=\"text-primary-orange font-semibold\">业务不间断</span>。",
+      "ctaMerchant": "商家入口",
+      "ctaPartner": "合作伙伴入口"
+    },
+    "reach": {
+      "title": "如何联系我们",
+      "description": "选择最适合您在 Mezzofy 平台角色的支持渠道。",
+      "merchant": {
+        "badge": "商家专用",
+        "title": "商家入口",
+        "desc": "供应端客户可直接通过商家入口提交并跟踪支持请求，访问工单系统及帮助文档。",
+        "cta": "访问商家入口"
+      },
+      "partner": {
+        "badge": "合作伙伴专用",
+        "title": "合作伙伴入口",
+        "desc": "需求端合作伙伴及经销商可通过合作伙伴入口管理支持请求、查看 SLA 及升级问题。",
+        "cta": "访问合作伙伴入口"
+      },
+      "email": {
+        "title": "电子邮件支持",
+        "desc": "适用于需要协助兑换优惠券、钱包问题或一般咨询的消费者及终端用户。",
+        "cta": "电子邮件支持"
+      }
+    },
+    "audience": {
+      "title": "按受众分类的支持",
+      "description": "按用户类型整理的常见问题及处理方式。",
+      "supply": {
+        "title": "供应客户（商家）",
+        "issue1": "优惠券无法激活或显示不正确",
+        "issue2": "NFC 标签设置和配置问题",
+        "issue3": "兑换数据差异或报表错误",
+        "issue4": "API 集成失败或 Webhook 错误",
+        "issue5": "账单和订阅问题",
+        "note": "提交工单前，请先检查您的商店网络和设备配置。"
+      },
+      "demand": {
+        "title": "需求客户（经销商及合作伙伴）",
+        "issue1": "市场访问或库存同步问题",
+        "issue2": "Bridge API 身份验证或速率限制错误",
+        "issue3": "钱包白标配置问题",
+        "issue4": "合作伙伴账单和合同咨询"
+      },
+      "partners": {
+        "title": "终端用户及消费者",
+        "issue1": "结账时优惠券无法使用",
+        "issue2": "钱包应用程序登录或同步问题",
+        "issue3": "NFC 感应在销售点未被识别",
+        "issue4": "优惠券已过期或条款与预期不符"
+      }
+    },
+    "sla": {
+      "title": "服务等级协议（SLA）",
+      "description": "我们对所有支持等级的响应和解决时间承诺。",
+      "hosting": "托管于 AWS（新加坡区域）— 99.9% 正常运行时间 SLA",
+      "col": {
+        "severity": "严重程度",
+        "definition": "定义",
+        "response": "响应时间",
+        "resolution": "解决时间",
+        "hours": "支持时间"
+      },
+      "disclaimer": "SLA 计时从工单确认后开始。解决时间为目标值，并非保证，涉及第三方的问题可能有所不同。支持时间以新加坡时间（SGT，UTC+8）为准。"
+    },
+    "process": {
+      "title": "工单流程",
+      "description": "提交支持请求后的处理步骤。",
+      "step1": {
+        "title": "提交",
+        "desc": "通过商家入口、合作伙伴入口或电子邮件提交请求。请附上您的账号 ID、清晰的问题描述及任何截图或日志。"
+      },
+      "step2": {
+        "title": "确认",
+        "desc": "我们的团队将在 SLA 响应时间内确认您的工单，并分配案例参考编号以供跟踪。"
+      },
+      "step3": {
+        "title": "调查及更新",
+        "desc": "我们的工程师调查问题并定期提供更新。每次状态变更时，您将通过电子邮件或入口通知收到通知。"
+      },
+      "step4": {
+        "title": "解决",
+        "desc": "问题解决后，我们提供完整的解决摘要并与您确认关闭。如问题再次出现，您可在 7 天内重新开启工单。"
+      }
+    },
+    "footerCta": {
+      "title": "准备好获取支持了吗？",
+      "description": "我们的团队全天候待命，协助您解决 Mezzofy 平台上的任何问题。",
+      "contactUs": "联系支持",
+      "viewDocs": "查看帮助文档"
+    },
+    "aiChat": {
+      "buttonLabel": "询问 Mezzofy AI",
+      "title": "Mezzofy 支持助理",
+      "subtitle": "获取常见问题的即时解答或提交支持工单。",
+      "placeholder": "输入您的问题...",
+      "send": "发送",
+      "merchantLink": "通过商家入口提交 →",
+      "partnerLink": "通过合作伙伴入口提交 →"
+    }
   }
 }

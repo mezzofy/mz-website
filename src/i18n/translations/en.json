@@ -1948,5 +1948,114 @@
       "getStarted": "Get Started Now",
       "requestDemo": "Request Demo"
     }
+  },
+  "support": {
+    "status": {
+      "label": "Platform Status:",
+      "operational": "Operational",
+      "viewLive": "View Live Status"
+    },
+    "hero": {
+      "title": "We're Here to Help — <span class=\"text-primary-orange\">24/7</span>",
+      "subtitle": "<span class=\"text-primary-orange font-semibold\">Dedicated support</span> for merchants, distributors, partners, and end users across the Mezzofy platform. Our team is available around the clock to ensure your <span class=\"text-primary-orange font-semibold\">business never stops</span>.",
+      "ctaMerchant": "Merchant Portal",
+      "ctaPartner": "Partner Portal"
+    },
+    "reach": {
+      "title": "How to Reach Us",
+      "description": "Choose the support channel that best fits your role on the Mezzofy platform.",
+      "merchant": {
+        "badge": "For Merchants",
+        "title": "Merchant Portal",
+        "desc": "Supply-side customers can submit and track support requests directly through the Merchant Portal. Access ticketing and documentation.",
+        "cta": "Access Merchant Portal"
+      },
+      "partner": {
+        "badge": "For Partners",
+        "title": "Partner Portal",
+        "desc": "Demand-side partners and distributors can manage support requests, review SLAs, and escalate issues through the Partner Portal.",
+        "cta": "Access Partner Portal"
+      },
+      "email": {
+        "title": "Email Support",
+        "desc": "For consumers and end users who need assistance with coupon redemption, wallet issues, or general inquiries.",
+        "cta": "Email Support"
+      }
+    },
+    "audience": {
+      "title": "Support by Audience",
+      "description": "Common issues and what to do, organized by user type.",
+      "supply": {
+        "title": "Supply Customers (Merchants)",
+        "issue1": "Coupon not activating or displaying incorrectly",
+        "issue2": "NFC tag setup and configuration issues",
+        "issue3": "Redemption data discrepancies or reporting errors",
+        "issue4": "API integration failures or webhook errors",
+        "issue5": "Billing and subscription questions",
+        "note": "Please check your store network and device configuration before submitting a ticket."
+      },
+      "demand": {
+        "title": "Demand Customers (Distributors & Partners)",
+        "issue1": "Marketplace access or inventory sync issues",
+        "issue2": "Bridge API authentication or rate limit errors",
+        "issue3": "Wallet white-label configuration problems",
+        "issue4": "Partner billing and contract inquiries"
+      },
+      "partners": {
+        "title": "End Users & Consumers",
+        "issue1": "Coupon not applying at checkout",
+        "issue2": "Wallet app login or sync issues",
+        "issue3": "NFC tap not recognized at point of sale",
+        "issue4": "Coupon expired or terms not as expected"
+      }
+    },
+    "sla": {
+      "title": "Service Level Agreement (SLA)",
+      "description": "Our commitment to response and resolution times across all support tiers.",
+      "hosting": "Hosted on AWS (Singapore region) — 99.9% uptime SLA",
+      "col": {
+        "severity": "Severity",
+        "definition": "Definition",
+        "response": "Response Time",
+        "resolution": "Resolution Time",
+        "hours": "Support Hours"
+      },
+      "disclaimer": "SLA timers begin upon ticket acknowledgement. Resolution times are targets, not guarantees, and may vary for issues requiring third-party involvement. Support hours are based on Singapore Time (SGT, UTC+8)."
+    },
+    "process": {
+      "title": "Ticket Process",
+      "description": "What happens after you submit a support request.",
+      "step1": {
+        "title": "Submit",
+        "desc": "Submit your request via the Merchant Portal, Partner Portal, or email. Include your account ID, a clear description, and any screenshots or logs."
+      },
+      "step2": {
+        "title": "Acknowledge",
+        "desc": "Our team acknowledges your ticket within the SLA response time and assigns a case reference number for tracking."
+      },
+      "step3": {
+        "title": "Investigate & Update",
+        "desc": "Our engineers investigate the issue and provide regular updates. You will be notified at each status change via email or portal notification."
+      },
+      "step4": {
+        "title": "Resolve",
+        "desc": "Once resolved, we provide a full resolution summary and confirm closure with you. You can reopen the ticket within 7 days if the issue recurs."
+      }
+    },
+    "footerCta": {
+      "title": "Ready to Get Support?",
+      "description": "Our team is available 24/7 to help you resolve any issues with the Mezzofy platform.",
+      "contactUs": "Contact Support",
+      "viewDocs": "View Documentation"
+    },
+    "aiChat": {
+      "buttonLabel": "Ask Mezzofy AI",
+      "title": "Mezzofy Support Assistant",
+      "subtitle": "Get instant answers to common questions or submit a support ticket.",
+      "placeholder": "Type your question...",
+      "send": "Send",
+      "merchantLink": "Submit via Merchant Portal →",
+      "partnerLink": "Submit via Partner Portal →"
+    }
   }
 }
