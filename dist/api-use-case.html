@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Mezzofy - Get in touch with our team for inquiries about digital coupon solutions, partnerships, and support.">
+    <meta name="description" content="API Use Case examples for the Mezzofy Exchange Protocol. Coming soon.">
     <meta name="theme-color" content="#FF6B35">
-    <title>Contact Us - Mezzofy</title>
+    <title>API Use Case - Mezzofy</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -28,17 +28,6 @@
             margin: 0 auto;
             padding: 4rem 1.5rem;
         }
-        .feature-card {
-            background: white;
-            border-radius: 0.5rem;
-            padding: 2rem;
-            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .feature-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.1);
-        }
         .btn-primary {
             background-color: #FF6B35;
             color: white;
@@ -50,20 +39,6 @@
         }
         .btn-primary:hover {
             background-color: #e65a2b;
-        }
-        .btn-secondary {
-            background-color: white;
-            color: #FF6B35;
-            padding: 0.75rem 1.5rem;
-            border-radius: 0.5rem;
-            font-weight: 600;
-            display: inline-block;
-            border: 2px solid #FF6B35;
-            transition: all 0.2s;
-        }
-        .btn-secondary:hover {
-            background-color: #FF6B35;
-            color: white;
         }
     </style>
 
@@ -77,7 +52,7 @@
     <!-- i18n Script -->
     <script src="i18n/i18n.js"></script>
 </head>
-<body class="bg-white text-dark-grey i18n-loading">
+<body class="bg-white text-primary-black i18n-loading">
 
     <!-- Navigation -->
     <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-md z-50">
@@ -105,7 +80,7 @@
                             <a href="for-merchants.html" class="dropdown-item" data-i18n="common.nav.merchantSolution">I'm a Merchant</a>
                             <a href="for-distributors.html" class="dropdown-item" data-i18n="common.nav.distributorSolution">I'm a Distributor</a>
                             <a href="for-developers.html" class="dropdown-item" data-i18n="common.nav.developerSolution">I'm a Developer</a>
-                                                    <a href="for-ai-commerce.html" class="dropdown-item" data-i18n="common.nav.aiCommerceSolution">AI Commerce</a>
+                            <a href="for-ai-commerce.html" class="dropdown-item" data-i18n="common.nav.aiCommerceSolution">AI Commerce</a>
                         </div>
                     </div>
 
@@ -118,7 +93,7 @@
                             </svg>
                         </button>
                         <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item text-primary-orange font-semibold" data-i18n="common.nav.managementSystem">Coupon Management System</a>
+                            <a href="coupon-management.html" class="dropdown-item" data-i18n="common.nav.managementSystem">Coupon Management System</a>
                             <a href="coupon-marketplace.html" class="dropdown-item" data-i18n="common.nav.marketplace">Coupon Marketplace</a>
                             <a href="coupon-nfc.html" class="dropdown-item" data-i18n="common.nav.nfc">Coupon NFC</a>
                             <a href="coupon-marketing.html" class="dropdown-item" data-i18n="common.nav.marketing">Coupon Marketing</a>
@@ -136,7 +111,7 @@
                         </button>
                         <div class="dropdown-menu">
                             <a href="api-doc.html" class="dropdown-item" data-i18n="common.nav.apiDoc">API Documentation</a>
-                            <a href="api-use-case.html" class="dropdown-item" data-i18n="common.nav.apiUseCase">API Use Case</a>
+                            <a href="api-use-case.html" class="dropdown-item text-primary-orange font-semibold" data-i18n="common.nav.apiUseCase">API Use Case</a>
                         </div>
                     </div>
 
@@ -164,7 +139,7 @@
                         </button>
                         <div class="dropdown-menu">
                             <a href="about.html" class="dropdown-item" data-i18n="common.nav.aboutUs">About Us</a>
-                            <a href="contact.html" class="dropdown-item text-primary-orange font-semibold" data-i18n="common.nav.contactUs">Contact Us</a>
+                            <a href="contact.html" class="dropdown-item" data-i18n="common.nav.contactUs">Contact Us</a>
                             <a href="news-press.html" class="dropdown-item" data-i18n="common.nav.newsPress">News & Press</a>
                             <a href="investors.html" class="dropdown-item" data-i18n="common.nav.investors">Investors</a>
                         </div>
@@ -188,7 +163,7 @@
                         </div>
                     </div>
 
-                    <a href="index.html#contact" class="btn-primary" data-i18n="common.buttons.getStarted">Get Started</a>
+                    <a href="contact.html" class="btn-primary" data-i18n="common.nav.getStarted">Get Started</a>
                 </div>
 
                 <!-- Mobile Menu Button -->
@@ -237,7 +212,7 @@
                         <a href="for-merchants.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.merchantSolution">I'm a Merchant</a>
                         <a href="for-distributors.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.distributorSolution">I'm a Distributor</a>
                         <a href="for-developers.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.developerSolution">I'm a Developer</a>
-                                            <a href="for-ai-commerce.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.aiCommerceSolution">AI Commerce</a>
+                        <a href="for-ai-commerce.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.aiCommerceSolution">AI Commerce</a>
                     </div>
                 </div>
 
@@ -250,7 +225,7 @@
                         </svg>
                     </button>
                     <div class="mobile-dropdown-menu" data-menu="products">
-                        <a href="coupon-management.html" class="block py-2 text-sm text-primary-orange font-semibold" data-i18n="common.nav.managementSystem">Coupon Management System</a>
+                        <a href="coupon-management.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.managementSystem">Coupon Management System</a>
                         <a href="coupon-marketplace.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.marketplace">Coupon Marketplace</a>
                         <a href="coupon-nfc.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.nfc">Coupon NFC</a>
                         <a href="coupon-marketing.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.marketing">Coupon Marketing</a>
@@ -268,7 +243,7 @@
                     </button>
                     <div class="mobile-dropdown-menu" data-menu="developer">
                         <a href="api-doc.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.apiDoc">API Documentation</a>
-                        <a href="api-use-case.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.apiUseCase">API Use Case</a>
+                        <a href="api-use-case.html" class="block py-2 text-sm text-primary-orange font-semibold" data-i18n="common.nav.apiUseCase">API Use Case</a>
                     </div>
                 </div>
 
@@ -296,262 +271,38 @@
                     </button>
                     <div class="mobile-dropdown-menu" data-menu="company">
                         <a href="about.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.aboutUs">About Us</a>
-                        <a href="contact.html" class="block py-2 text-sm text-primary-orange font-semibold" data-i18n="common.nav.contactUs">Contact Us</a>
+                        <a href="contact.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.contactUs">Contact Us</a>
                         <a href="news-press.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.newsPress">News & Press</a>
                         <a href="investors.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.investors">Investors</a>
                     </div>
                 </div>
 
-                <a href="index.html#contact" class="block py-2 text-primary-orange font-semibold" data-i18n="common.buttons.getStarted">Get Started</a>
+                <a href="contact.html" class="block py-2 text-primary-orange font-semibold" data-i18n="common.nav.getStarted">Get Started</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="pt-32 pb-20 bg-gradient-to-br from-primary-black via-gray-900 to-primary-black">
-        <div class="section-container">
-            <div class="max-w-4xl mx-auto text-center">
-                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-white" data-i18n="contact.hero.title">
-                    CONTACT US
+    <section class="pt-32 pb-20 bg-gradient-to-br from-primary-black via-gray-900 to-primary-black min-h-screen flex items-center">
+        <div class="section-container w-full">
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="text-primary-orange text-lg font-semibold mb-4 uppercase tracking-wider">Developer Resources</p>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-8" data-i18n="common.nav.apiUseCase">
+                    API Use Case
                 </h1>
-                <p class="text-xl sm:text-2xl md:text-3xl text-gray-100 mb-8" data-i18n="contact.hero.subtitle">
-                    Reach out to the Mezzofy Team for all <span class="text-primary-orange">Business Inquiries</span> and <span class="text-primary-orange">Strategic Collaboration</span> Opportunities Globally
+                <div class="inline-flex items-center gap-3 bg-primary-orange/20 border border-primary-orange/40 rounded-full px-6 py-3 mb-8">
+                    <span class="w-2 h-2 rounded-full bg-primary-orange animate-pulse"></span>
+                    <span class="text-primary-orange font-semibold text-lg" data-i18n="common.comingSoon.badge">Coming Soon</span>
+                </div>
+                <p class="text-lg sm:text-xl text-gray-300 mb-10 max-w-2xl mx-auto" data-i18n="common.comingSoon.message">
+                    This page is currently under construction. Check back soon!
                 </p>
+                <a href="index.html" class="btn-primary text-lg px-8 py-4" data-i18n="common.comingSoon.backHome">Back to Home</a>
             </div>
         </div>
     </section>
 
-    <!-- Contact Information Section -->
-    <section class="bg-light-grey">
-        <div class="section-container">
-            <div class="max-w-5xl mx-auto">
-                <!-- Email & Phone Section -->
-                <div class="grid md:grid-cols-2 gap-8 mb-12">
-                    <!-- Contact Info -->
-                    <div class="feature-card">
-                        <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-6">
-                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold mb-4 text-primary-black" data-i18n="contact.info.email.title">Email Us</h3>
-                        <p class="text-dark-grey leading-relaxed mb-2" data-i18n="contact.info.email.general">
-                            General Inquiries
-                        </p>
-                        <a href="mailto:hello@mezzofy.com" class="text-primary-orange font-semibold hover:underline mb-4 inline-block">
-                            hello@mezzofy.com
-                        </a>
-                        <p class="text-dark-grey leading-relaxed mb-2 mt-4" data-i18n="contact.info.email.sales">
-                            Sales & Partnerships
-                        </p>
-                        <a href="mailto:sales@mezzofy.com" class="text-primary-orange font-semibold hover:underline inline-block">
-                            sales@mezzofy.com
-                        </a>
-                    </div>
-
-                    <!-- Phone & WhatsApp -->
-                    <div class="feature-card">
-                        <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-6">
-                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold mb-4 text-primary-black" data-i18n="contact.info.phone.title">Call or Message Us</h3>
-                        <p class="text-dark-grey leading-relaxed mb-2" data-i18n="contact.info.phone.label">
-                            WhatsApp / Phone
-                        </p>
-                        <a href="https://wa.me/85294802246" class="text-primary-orange font-semibold hover:underline inline-block" target="_blank">
-                            +852 9480 2246
-                        </a>
-                        <p class="text-dark-grey text-sm mt-4" data-i18n="contact.info.phone.hours">
-                            Available Monday - Friday, 9:00 AM - 6:00 PM (HKT)
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Office Locations Section -->
-                <div class="text-center mb-8">
-                    <h3 class="text-2xl md:text-3xl font-bold text-primary-black mb-2" data-i18n="contact.offices.title">Our Global Offices</h3>
-                    <p class="text-dark-grey" data-i18n="contact.offices.subtitle">Visit us at any of our locations across Asia</p>
-                </div>
-
-                <div class="grid md:grid-cols-3 gap-6">
-                    <!-- Hong Kong Office -->
-                    <div class="feature-card">
-                        <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-6">
-                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                            </svg>
-                        </div>
-                        <h4 class="text-lg font-bold mb-3 text-primary-orange" data-i18n="contact.offices.hongkong.title">Hong Kong</h4>
-                        <p class="text-dark-grey leading-relaxed text-sm" data-i18n="contact.offices.hongkong.address">
-                            61 Mody Road, Mirror Tower<br>
-                            Unit 2 of LG 1, Tsim Sha Tsui<br>
-                            Kowloon, Hong Kong
-                        </p>
-                    </div>
-
-                    <!-- Singapore Office -->
-                    <div class="feature-card">
-                        <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-6">
-                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                            </svg>
-                        </div>
-                        <h4 class="text-lg font-bold mb-3 text-primary-orange" data-i18n="contact.offices.singapore.title">Singapore</h4>
-                        <p class="text-dark-grey leading-relaxed text-sm" data-i18n="contact.offices.singapore.address">
-                            20 Cecil Street #05-03<br>
-                            PLUS<br>
-                            Singapore 049705
-                        </p>
-                    </div>
-
-                    <!-- Malaysia Office -->
-                    <div class="feature-card">
-                        <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-6">
-                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                            </svg>
-                        </div>
-                        <h4 class="text-lg font-bold mb-3 text-primary-orange" data-i18n="contact.offices.malaysia.title">Malaysia</h4>
-                        <p class="text-dark-grey leading-relaxed text-sm" data-i18n="contact.offices.malaysia.address">
-                            No. 20-02, Jalan Eco Cascadia 6/2<br>
-                            Taman Setia Eco Cascadia<br>
-                            81100 Johor Bahru, Johor, Malaysia
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Form Section -->
-    <section class="bg-white">
-        <div class="section-container">
-            <div class="max-w-3xl mx-auto">
-                <h2 class="text-3xl md:text-5xl font-bold text-primary-black mb-4 text-center" data-i18n="contact.form.title">
-                    Send Us a Message
-                </h2>
-                <p class="text-lg text-dark-grey text-center mb-12" data-i18n="contact.form.description">
-                    Have a question or want to learn more about our solutions? Fill out the form below and we'll get back to you within 24 hours.
-                </p>
-
-                <form class="space-y-6">
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <label for="name" class="block text-sm font-semibold text-primary-black mb-2" data-i18n="contact.form.name.label">
-                                Name <span class="text-primary-orange">*</span>
-                            </label>
-                            <input
-                                type="text"
-                                id="name"
-                                name="name"
-                                required
-                                class="w-full px-4 py-3 border border-medium-grey/30 rounded-lg focus:ring-2 focus:ring-primary-orange focus:border-transparent transition-all"
-                                data-i18n-placeholder="contact.form.name.placeholder"
-                                placeholder="Your full name"
-                            >
-                        </div>
-                        <div>
-                            <label for="email" class="block text-sm font-semibold text-primary-black mb-2" data-i18n="contact.form.email.label">
-                                Email <span class="text-primary-orange">*</span>
-                            </label>
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                required
-                                class="w-full px-4 py-3 border border-medium-grey/30 rounded-lg focus:ring-2 focus:ring-primary-orange focus:border-transparent transition-all"
-                                data-i18n-placeholder="contact.form.email.placeholder"
-                                placeholder="your@email.com"
-                            >
-                        </div>
-                    </div>
-
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <label for="company" class="block text-sm font-semibold text-primary-black mb-2" data-i18n="contact.form.company.label">
-                                Company
-                            </label>
-                            <input
-                                type="text"
-                                id="company"
-                                name="company"
-                                class="w-full px-4 py-3 border border-medium-grey/30 rounded-lg focus:ring-2 focus:ring-primary-orange focus:border-transparent transition-all"
-                                data-i18n-placeholder="contact.form.company.placeholder"
-                                placeholder="Your company name"
-                            >
-                        </div>
-                        <div>
-                            <label for="phone" class="block text-sm font-semibold text-primary-black mb-2" data-i18n="contact.form.phone.label">
-                                Phone
-                            </label>
-                            <input
-                                type="tel"
-                                id="phone"
-                                name="phone"
-                                class="w-full px-4 py-3 border border-medium-grey/30 rounded-lg focus:ring-2 focus:ring-primary-orange focus:border-transparent transition-all"
-                                data-i18n-placeholder="contact.form.phone.placeholder"
-                                placeholder="+852 0000 0000"
-                            >
-                        </div>
-                    </div>
-
-                    <div>
-                        <label for="subject" class="block text-sm font-semibold text-primary-black mb-2" data-i18n="contact.form.subject.label">
-                            Subject <span class="text-primary-orange">*</span>
-                        </label>
-                        <select
-                            id="subject"
-                            name="subject"
-                            required
-                            class="w-full px-4 py-3 border border-medium-grey/30 rounded-lg focus:ring-2 focus:ring-primary-orange focus:border-transparent transition-all"
-                        >
-                            <option value="" data-i18n="contact.form.subject.select">Select a topic</option>
-                            <option value="general" data-i18n="contact.form.subject.general">General Inquiry</option>
-                            <option value="sales" data-i18n="contact.form.subject.sales">Sales & Partnerships</option>
-                            <option value="support" data-i18n="contact.form.subject.support">Technical Support</option>
-                            <option value="demo" data-i18n="contact.form.subject.demo">Request a Demo</option>
-                            <option value="other" data-i18n="contact.form.subject.other">Other</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <label for="message" class="block text-sm font-semibold text-primary-black mb-2" data-i18n="contact.form.message.label">
-                            Message <span class="text-primary-orange">*</span>
-                        </label>
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows="6"
-                            required
-                            class="w-full px-4 py-3 border border-medium-grey/30 rounded-lg focus:ring-2 focus:ring-primary-orange focus:border-transparent transition-all resize-none"
-                            data-i18n-placeholder="contact.form.message.placeholder"
-                            placeholder="Tell us how we can help you..."
-                        ></textarea>
-                    </div>
-
-                    <div class="text-center">
-                        <button
-                            type="submit"
-                            class="btn-primary px-8 py-4 text-lg"
-                            data-i18n="contact.form.submit"
-                        >
-                            Send Message
-                        </button>
-                        <p class="text-sm text-medium-grey mt-4" data-i18n="contact.form.privacy">
-                            We respect your privacy. Your information will never be shared with third parties.
-                        </p>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer & CTA -->
+    <!-- Footer -->
     <footer class="bg-primary-black text-gray-300 pt-16 pb-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
@@ -568,7 +319,7 @@
                         <li><a href="for-merchants.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.merchants">For Merchants</a></li>
                         <li><a href="for-distributors.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.distributors">For Distributors</a></li>
                         <li><a href="for-developers.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.developers">For Developers</a></li>
-                                                <li><a href="for-ai-commerce.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.aiCommerce">For AI Commerce</a></li>
+                        <li><a href="for-ai-commerce.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.aiCommerce">For AI Commerce</a></li>
                         <li><a href="index.html#product-ecosystem" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.ecosystem">Product Ecosystem</a></li>
                     </ul>
                 </div>

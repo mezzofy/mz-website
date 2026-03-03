@@ -81,6 +81,11 @@
       "next": "Next",
       "source": "Source",
       "category": "News"
+    },
+    "comingSoon": {
+      "badge": "Coming Soon",
+      "message": "This page is currently under construction. Check back soon!",
+      "backHome": "Back to Home"
     }
   },
   "home": {
