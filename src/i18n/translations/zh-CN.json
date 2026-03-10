@@ -711,7 +711,13 @@
       "title": "访问全球最<span class=\"text-primary-orange\">安全、高意图</span>的优惠券库存",
       "subtitle": "使用 Mezzofy 交换协议的优惠券，增强您的会员计划、银行应用程序或企业门户",
       "accessDeals": "访问优惠",
-      "viewApiDoc": "查看 API 文档"
+      "viewApiDoc": "查看 API 文档",
+      "buyer": {
+        "cta": "探索买家模式"
+      },
+      "partner": {
+        "cta": "探索合作伙伴模式"
+      }
     },
     "journey": {
       "title": "您的优质优惠券经销之路",
@@ -803,6 +809,23 @@
         "point1": "地理定位功能",
         "point2": "类别和垂直筛选",
         "point3": "价值层级细分"
+      },
+      "subtitle": "建立在Mezzofy交易所协议上——安全、防欺诈优惠券基础设施的全球标准",
+      "fraud": {
+        "title": "防欺诈库存",
+        "desc": "每张优惠券都经过HMAC签名和协议验证。为您的分发网络提供零假冒风险。"
+      },
+      "api": {
+        "title": "免费API访问",
+        "desc": "所有合作伙伴均包含完整的Bridge API访问。无按次调用费用，无API密钥费用，标准层级无速率限制。"
+      },
+      "global": {
+        "title": "全球标准",
+        "desc": "符合ISO标准的优惠券格式。以标准化库存跨境运营，在全球任何地方均可使用。"
+      },
+      "custody": {
+        "title": "Mezzofy优惠券托管",
+        "desc": "Mezzofy作为所有库存的可信托管机构。商户和买家均受到协议层面的托管保护。"
       }
     },
     "footerCta": {
@@ -825,7 +848,206 @@
       "modelOther": "其他",
       "message": "消息",
       "messagePlaceholder": "告诉我们您的分销需求...",
-      "submit": "申请市场访问权限"
+      "submit": "申请市场访问权限",
+      "title": "立即开始",
+      "subtitle": "告诉我们您的业务，我们将在1个工作日内回复您。",
+      "role": "我是：",
+      "roleSelect": "选择您的角色",
+      "roleDistributionPartner": "分发合作伙伴",
+      "roleInventoryBuyer": "库存买家",
+      "roleNotSure": "尚未确定"
+    },
+    "buyer": {
+      "badge": "库存买家",
+      "title": "采购、分发与盈利",
+      "subtitle": "访问来自数百家商户的经核实优惠券库存，通过您的平台分发并从每次成功兑换中获得收益。",
+      "whoFor": "适合对象",
+      "howWorks": "运作方式",
+      "who": {
+        "banks": {
+          "title": "银行及金融机构",
+          "desc": "以经核实的商户优惠增强信用卡礼遇和忠诚度计划"
+        },
+        "corporates": {
+          "title": "企业及人力资源平台",
+          "desc": "以精选折扣和礼遇支持员工福利计划"
+        },
+        "telcos": {
+          "title": "电信公司及数字钱包",
+          "desc": "以品牌优惠券和独家优惠提升您的手机应用程序价值"
+        }
+      },
+      "step1": {
+        "label": "加入",
+        "title": "申请买家访问权限",
+        "desc": "完成KYB核实并获批准成为Mezzofy交易所的持牌库存买家"
+      },
+      "step2": {
+        "label": "采购",
+        "title": "浏览及获取库存",
+        "desc": "向经核实的商户直接购买或寄售优惠券库存，涵盖多个类别"
+      },
+      "step3": {
+        "label": "分发",
+        "title": "向您的受众部署",
+        "desc": "通过您的忠诚度应用程序、人力资源门户或Mezzofy白标钱包推送优惠券，并从每次兑换中获益"
+      },
+      "acquisition": {
+        "title": "获取选项",
+        "upfront": {
+          "title": "预付购买",
+          "desc": "直接获取优惠券库存。完整所有权，最大控制，无限利润潜力。",
+          "point1": "完整库存所有权",
+          "point2": "设定您自己的零售价格和利润",
+          "point3": "适合高交易量忠诚度计划"
+        },
+        "consignment": {
+          "title": "寄售模式",
+          "desc": "以寄售方式获取库存。仅为成功兑换付款。适合新计划或低交易量合作伙伴。",
+          "point1": "零预付库存成本",
+          "point2": "仅在成功兑换时付款",
+          "point3": "零风险分发模式"
+        }
+      },
+      "pricing": {
+        "title": "定价结构",
+        "col1": "优惠券类型",
+        "col2": "费用触发",
+        "col3": "费用公式",
+        "col4": "示例",
+        "row1": {
+          "type": "数字优惠券",
+          "trigger": "成功兑换时",
+          "formula": "面值的X%",
+          "example": "$10优惠券 → $X费用"
+        },
+        "row2": {
+          "type": "NFC优惠券",
+          "trigger": "成功兑换时",
+          "formula": "面值的X%",
+          "example": "$10 NFC优惠券 → $X费用"
+        },
+        "row3": {
+          "type": "礼品券",
+          "trigger": "成功兑换时",
+          "formula": "面值的X%",
+          "example": "$50礼品券 → $X费用"
+        },
+        "row4": {
+          "type": "批量",
+          "trigger": "批量购买时",
+          "formula": "协商费率",
+          "example": "按安排"
+        },
+        "note": "*定价因商户和库存类别而异。请联系销售团队了解协商费率。"
+      },
+      "addons": {
+        "title": "可选附加项目",
+        "wallet": {
+          "title": "白标钱包",
+          "desc": "部署由Mezzofy基础设施驱动的自有品牌优惠券钱包"
+        },
+        "analytics": {
+          "title": "分析仪表板",
+          "desc": "实时兑换数据、用户行为洞察和投资回报报告"
+        }
+      },
+      "cta": {
+        "primary": "申请买家访问权限",
+        "secondary": "查看API文档"
+      }
+    },
+    "partner": {
+      "badge": "分发合作伙伴",
+      "title": "授权我们的平台并获得收益",
+      "subtitle": "集成我们的Bridge API，通过您自己的平台分发经核实的优惠券。无库存风险，经常性收益模式。",
+      "whoFor": "适合对象",
+      "howWorks": "运作方式",
+      "who": {
+        "hr": {
+          "title": "人力资源及福利平台",
+          "desc": "为您的员工福利生态系统添加优惠券分发功能，产生新的经常性收益"
+        },
+        "nfc": {
+          "title": "NFC及POS合作伙伴",
+          "desc": "将安全的NFC优惠券发行和兑换集成到您的终端或支付基础设施中"
+        },
+        "local": {
+          "title": "本地商业网络",
+          "desc": "以Mezzofy驱动的品牌优惠券市场汇聚本地商户和消费者"
+        }
+      },
+      "step1": {
+        "label": "授权",
+        "title": "申请合作伙伴授权",
+        "desc": "完成KYB核实并签署Mezzofy分发合作伙伴协议。无需预付授权或设置费用。"
+      },
+      "step2": {
+        "label": "集成",
+        "title": "通过API连接",
+        "desc": "使用我们的RESTful Bridge API将优惠券发行、分发和兑换集成到您现有的平台中"
+      },
+      "step3": {
+        "label": "盈利",
+        "title": "获得收益分成",
+        "desc": "获得通过您的分发网络处理的每笔优惠券交易的X%收益分成，每月支付"
+      },
+      "pricing": {
+        "title": "合作伙伴费用结构",
+        "col1": "费用类型",
+        "col2": "结构",
+        "col3": "备注",
+        "row1": {
+          "type": "授权费",
+          "structure": "零预付",
+          "notes": "无设置或月度订阅费用"
+        },
+        "row2": {
+          "type": "收益分成",
+          "structure": "兑换费用的X%",
+          "notes": "每月支付，基于交易量"
+        },
+        "row3": {
+          "type": "API访问",
+          "structure": "免费",
+          "notes": "授权中包含无限制API调用"
+        },
+        "note": "*收益分成比例取决于分发量和合作伙伴层级。请联系partnership@mezzofy.com了解详情。"
+      },
+      "capabilities": {
+        "title": "作为合作伙伴您能做什么"
+      },
+      "cap1": {
+        "title": "通过API发行优惠券",
+        "desc": "以程序方式大规模创建和分发优惠券至您的网络"
+      },
+      "cap2": {
+        "title": "安全验证和兑换",
+        "desc": "HMAC签名的NFC优惠券在每个兑换点防止欺诈"
+      },
+      "cap3": {
+        "title": "白标您的品牌",
+        "desc": "完全以您自己的品牌部署，由Mezzofy基础设施提供支持"
+      },
+      "cap4": {
+        "title": "访问分析数据",
+        "desc": "实时跟踪绩效、兑换率和收益"
+      },
+      "addons": {
+        "title": "可选附加项目",
+        "marketing": {
+          "title": "营销模块",
+          "desc": "针对您的分发网络的活动创建、推送通知和A/B测试工具"
+        },
+        "nfc": {
+          "title": "NFC硬件支持",
+          "desc": "物理NFC卡配置和安全密码密钥管理"
+        }
+      },
+      "cta": {
+        "primary": "申请合作伙伴授权",
+        "secondary": "查看合作伙伴API文档"
+      }
     }
   },
   "management": {

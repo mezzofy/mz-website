@@ -647,7 +647,13 @@
       "title": "Access the World's Most <span class=\"text-primary-orange\">Secure, High-Intent</span> Coupon Inventory",
       "subtitle": "Enhance your loyalty program, banking app, or corporate portal with verified deals from the Mezzofy Exchange Protocol",
       "accessDeals": "Access Deals",
-      "viewApiDoc": "View API Documentation"
+      "viewApiDoc": "View API Documentation",
+      "buyer": {
+        "cta": "Explore Buyer Model"
+      },
+      "partner": {
+        "cta": "Explore Partner Model"
+      }
     },
     "journey": {
       "title": "Your Path to Premium Coupon Distribution",
@@ -739,6 +745,23 @@
         "point1": "Geographic targeting capabilities",
         "point2": "Category and vertical filtering",
         "point3": "Value tier segmentation"
+      },
+      "subtitle": "Built on the Mezzofy Exchange Protocol — the global standard for secure, fraud-proof coupon infrastructure",
+      "fraud": {
+        "title": "Fraud-Proof Inventory",
+        "desc": "Every coupon is HMAC-signed and protocol-validated. Zero counterfeit risk for your distribution network."
+      },
+      "api": {
+        "title": "Free API Access",
+        "desc": "Full Bridge API access included for all partners. No per-call fees, no API key costs, no rate limits on standard tiers."
+      },
+      "global": {
+        "title": "Global Standards",
+        "desc": "ISO-compliant coupon formats. Operate across borders with standardised inventory that works anywhere in the world."
+      },
+      "custody": {
+        "title": "Mezzofy Coupon Custody",
+        "desc": "Mezzofy acts as trusted custodian for all inventory. Merchants and buyers are protected by protocol-layer escrow."
       }
     },
     "footerCta": {
@@ -761,7 +784,206 @@
       "modelOther": "Other",
       "message": "Message",
       "messagePlaceholder": "Tell us about your distribution needs...",
-      "submit": "Request Marketplace Access"
+      "submit": "Request Marketplace Access",
+      "title": "Get Started Today",
+      "subtitle": "Tell us about your business and we'll get back to you within 1 business day.",
+      "role": "I am a:",
+      "roleSelect": "Select your role",
+      "roleDistributionPartner": "Distribution Partner",
+      "roleInventoryBuyer": "Inventory Buyer",
+      "roleNotSure": "Not Sure Yet"
+    },
+    "buyer": {
+      "badge": "INVENTORY BUYER",
+      "title": "Source, Distribute, and Earn",
+      "subtitle": "Access verified coupon inventory from hundreds of merchants. Distribute through your platform and generate revenue on every successful redemption.",
+      "whoFor": "Who This Is For",
+      "howWorks": "How It Works",
+      "who": {
+        "banks": {
+          "title": "Banks & Financial Institutions",
+          "desc": "Enhance credit card perks and loyalty programs with verified merchant deals"
+        },
+        "corporates": {
+          "title": "Corporates & HR Platforms",
+          "desc": "Power employee benefits programs with curated discounts and perks"
+        },
+        "telcos": {
+          "title": "Telcos & Digital Wallets",
+          "desc": "Add value to your mobile app with branded coupons and exclusive deals"
+        }
+      },
+      "step1": {
+        "label": "JOIN",
+        "title": "Apply for Buyer Access",
+        "desc": "Complete KYB verification and get approved as a licensed inventory buyer on the Mezzofy Exchange"
+      },
+      "step2": {
+        "label": "SOURCE",
+        "title": "Browse & Acquire Inventory",
+        "desc": "Purchase outright or consign coupon inventory from verified merchants across multiple categories"
+      },
+      "step3": {
+        "label": "DISTRIBUTE",
+        "title": "Deploy to Your Audience",
+        "desc": "Push coupons through your loyalty app, HR portal, or Mezzofy white-label wallet and earn on every redemption"
+      },
+      "acquisition": {
+        "title": "Acquisition Options",
+        "upfront": {
+          "title": "Upfront Purchase",
+          "desc": "Acquire coupon inventory outright. Full ownership, maximum control, and unlimited margin potential.",
+          "point1": "Full inventory ownership",
+          "point2": "Set your own retail price and margin",
+          "point3": "Ideal for high-volume loyalty programs"
+        },
+        "consignment": {
+          "title": "Consignment Model",
+          "desc": "Source inventory on consignment. Pay only for successful redemptions. Perfect for new programs or lower-volume partners.",
+          "point1": "Zero upfront inventory cost",
+          "point2": "Pay only on successful redemption",
+          "point3": "Risk-free distribution model"
+        }
+      },
+      "pricing": {
+        "title": "Pricing Structure",
+        "col1": "Coupon Type",
+        "col2": "Fee Trigger",
+        "col3": "Fee Formula",
+        "col4": "Example",
+        "row1": {
+          "type": "Digital Coupon",
+          "trigger": "On successful redemption",
+          "formula": "X% of face value",
+          "example": "$10 coupon → $X fee"
+        },
+        "row2": {
+          "type": "NFC Coupon",
+          "trigger": "On successful redemption",
+          "formula": "X% of face value",
+          "example": "$10 NFC coupon → $X fee"
+        },
+        "row3": {
+          "type": "Gift Voucher",
+          "trigger": "On successful redemption",
+          "formula": "X% of face value",
+          "example": "$50 voucher → $X fee"
+        },
+        "row4": {
+          "type": "Bulk Batch",
+          "trigger": "On batch purchase",
+          "formula": "Negotiated rate",
+          "example": "Per arrangement"
+        },
+        "note": "*Pricing varies by merchant and inventory category. Contact sales for negotiated rates."
+      },
+      "addons": {
+        "title": "Optional Add-Ons",
+        "wallet": {
+          "title": "White-Label Wallet",
+          "desc": "Deploy your own branded coupon wallet powered by Mezzofy infrastructure"
+        },
+        "analytics": {
+          "title": "Analytics Dashboard",
+          "desc": "Real-time redemption data, user behaviour insights, and ROI reporting"
+        }
+      },
+      "cta": {
+        "primary": "Apply for Buyer Access",
+        "secondary": "View API Documentation"
+      }
+    },
+    "partner": {
+      "badge": "DISTRIBUTION PARTNER",
+      "title": "Licence Our Platform and Earn Revenue",
+      "subtitle": "Integrate our Bridge API and distribute verified coupons through your own platform. No inventory risk, recurring revenue model.",
+      "whoFor": "Who This Is For",
+      "howWorks": "How It Works",
+      "who": {
+        "hr": {
+          "title": "HR & Benefits Platforms",
+          "desc": "Add coupon distribution to your employee benefits ecosystem and generate new recurring revenue"
+        },
+        "nfc": {
+          "title": "NFC & POS Partners",
+          "desc": "Embed secure NFC coupon issuance and redemption into your terminal or payment infrastructure"
+        },
+        "local": {
+          "title": "Local Business Networks",
+          "desc": "Aggregate local merchants and consumers into a branded coupon marketplace powered by Mezzofy"
+        }
+      },
+      "step1": {
+        "label": "LICENCE",
+        "title": "Apply for Partner Licence",
+        "desc": "Complete KYB verification and sign the Mezzofy Distribution Partner Agreement. No upfront licence or setup fees."
+      },
+      "step2": {
+        "label": "INTEGRATE",
+        "title": "Connect via API",
+        "desc": "Use our RESTful Bridge API to integrate coupon issuance, distribution, and redemption into your existing platform"
+      },
+      "step3": {
+        "label": "EARN",
+        "title": "Earn Revenue Share",
+        "desc": "Receive X% revenue share on every coupon transaction processed through your distribution network, paid monthly"
+      },
+      "pricing": {
+        "title": "Partner Fee Structure",
+        "col1": "Fee Type",
+        "col2": "Structure",
+        "col3": "Notes",
+        "row1": {
+          "type": "Licence Fee",
+          "structure": "Zero upfront",
+          "notes": "No setup or monthly subscription fees"
+        },
+        "row2": {
+          "type": "Revenue Share",
+          "structure": "X% of redemption fees",
+          "notes": "Paid monthly, based on transaction volume"
+        },
+        "row3": {
+          "type": "API Access",
+          "structure": "Free",
+          "notes": "Unlimited API calls included in licence"
+        },
+        "note": "*Revenue share rate depends on distribution volume and partnership tier. Contact partnership@mezzofy.com for details."
+      },
+      "capabilities": {
+        "title": "What You Can Do as a Partner"
+      },
+      "cap1": {
+        "title": "Issue Coupons via API",
+        "desc": "Programmatically create and distribute coupons at scale across your network"
+      },
+      "cap2": {
+        "title": "Validate & Redeem Securely",
+        "desc": "HMAC-signed NFC coupons prevent fraud at every point of redemption"
+      },
+      "cap3": {
+        "title": "White-Label Your Brand",
+        "desc": "Deploy entirely under your own brand with Mezzofy infrastructure powering it"
+      },
+      "cap4": {
+        "title": "Access Analytics",
+        "desc": "Track performance, redemption rates, and earnings in real time"
+      },
+      "addons": {
+        "title": "Optional Add-Ons",
+        "marketing": {
+          "title": "Marketing Module",
+          "desc": "Campaign creation, push notifications, and A/B testing tools for your distribution network"
+        },
+        "nfc": {
+          "title": "NFC Hardware Support",
+          "desc": "Physical NFC card provisioning and secure cryptographic key management"
+        }
+      },
+      "cta": {
+        "primary": "Apply for Partner Licence",
+        "secondary": "View Partner API Docs"
+      }
     }
   },
   "management": {

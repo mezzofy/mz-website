@@ -633,7 +633,13 @@
       "title": "存取全球最<span class=\"text-primary-orange\">安全、高意圖</span>的優惠券庫存",
       "subtitle": "使用 Mezzofy 交換協定的優惠券，增強您的會員計劃、銀行應用程式或企業入口網站",
       "accessDeals": "存取優惠",
-      "viewApiDoc": "查看 API 文件"
+      "viewApiDoc": "查看 API 文件",
+      "buyer": {
+        "cta": "探索買家模式"
+      },
+      "partner": {
+        "cta": "探索合作夥伴模式"
+      }
     },
     "journey": {
       "title": "您的優質優惠券經銷之路",
@@ -725,6 +731,23 @@
         "point1": "地理定位功能",
         "point2": "類別和垂直篩選",
         "point3": "價值層級細分"
+      },
+      "subtitle": "建立在Mezzofy交易所協議上——安全、防欺詐優惠券基礎設施的全球標準",
+      "fraud": {
+        "title": "防欺詐庫存",
+        "desc": "每張優惠券都經過HMAC簽名和協議驗證。為您的分發網絡提供零假冒風險。"
+      },
+      "api": {
+        "title": "免費API存取",
+        "desc": "所有合作夥伴均包含完整的Bridge API存取。無按次調用費用，無API密鑰費用，標準層級無速率限制。"
+      },
+      "global": {
+        "title": "全球標準",
+        "desc": "符合ISO標準的優惠券格式。以標準化庫存跨境運營，在全球任何地方均可使用。"
+      },
+      "custody": {
+        "title": "Mezzofy優惠券託管",
+        "desc": "Mezzofy作為所有庫存的可信託管機構。商戶和買家均受到協議層面的託管保護。"
       }
     },
     "footerCta": {
@@ -747,7 +770,206 @@
       "modelOther": "其他",
       "message": "訊息",
       "messagePlaceholder": "告訴我們您的分銷需求...",
-      "submit": "申請市集存取權限"
+      "submit": "申請市集存取權限",
+      "title": "立即開始",
+      "subtitle": "告訴我們您的業務，我們將在1個工作日內回覆您。",
+      "role": "我是：",
+      "roleSelect": "選擇您的角色",
+      "roleDistributionPartner": "分發合作夥伴",
+      "roleInventoryBuyer": "庫存買家",
+      "roleNotSure": "尚未確定"
+    },
+    "buyer": {
+      "badge": "庫存買家",
+      "title": "採購、分發與盈利",
+      "subtitle": "存取來自數百家商戶的經核實優惠券庫存，透過您的平台分發並從每次成功兌換中獲得收益。",
+      "whoFor": "適合對象",
+      "howWorks": "運作方式",
+      "who": {
+        "banks": {
+          "title": "銀行及金融機構",
+          "desc": "以經核實的商戶優惠增強信用卡禮遇和忠誠度計劃"
+        },
+        "corporates": {
+          "title": "企業及人力資源平台",
+          "desc": "以精選折扣和禮遇支持員工福利計劃"
+        },
+        "telcos": {
+          "title": "電信公司及數位錢包",
+          "desc": "以品牌優惠券和獨家優惠提升您的手機應用程式價值"
+        }
+      },
+      "step1": {
+        "label": "加入",
+        "title": "申請買家存取權限",
+        "desc": "完成KYB核實並獲批准成為Mezzofy交易所的持牌庫存買家"
+      },
+      "step2": {
+        "label": "採購",
+        "title": "瀏覽及取得庫存",
+        "desc": "向經核實的商戶直接購買或寄售優惠券庫存，涵蓋多個類別"
+      },
+      "step3": {
+        "label": "分發",
+        "title": "向您的受眾部署",
+        "desc": "透過您的忠誠度應用程式、人力資源門戶或Mezzofy白標錢包推送優惠券，並從每次兌換中獲益"
+      },
+      "acquisition": {
+        "title": "取得選項",
+        "upfront": {
+          "title": "預付購買",
+          "desc": "直接取得優惠券庫存。完整所有權，最大控制，無限利潤潛力。",
+          "point1": "完整庫存所有權",
+          "point2": "設定您自己的零售價格和利潤",
+          "point3": "適合高交易量忠誠度計劃"
+        },
+        "consignment": {
+          "title": "寄售模式",
+          "desc": "以寄售方式取得庫存。僅為成功兌換付款。適合新計劃或低交易量合作夥伴。",
+          "point1": "零預付庫存成本",
+          "point2": "僅在成功兌換時付款",
+          "point3": "零風險分發模式"
+        }
+      },
+      "pricing": {
+        "title": "定價結構",
+        "col1": "優惠券類型",
+        "col2": "費用觸發",
+        "col3": "費用公式",
+        "col4": "示例",
+        "row1": {
+          "type": "數位優惠券",
+          "trigger": "成功兌換時",
+          "formula": "面值的X%",
+          "example": "$10優惠券 → $X費用"
+        },
+        "row2": {
+          "type": "NFC優惠券",
+          "trigger": "成功兌換時",
+          "formula": "面值的X%",
+          "example": "$10 NFC優惠券 → $X費用"
+        },
+        "row3": {
+          "type": "禮品券",
+          "trigger": "成功兌換時",
+          "formula": "面值的X%",
+          "example": "$50禮品券 → $X費用"
+        },
+        "row4": {
+          "type": "批量",
+          "trigger": "批量購買時",
+          "formula": "協商費率",
+          "example": "按安排"
+        },
+        "note": "*定價因商戶和庫存類別而異。請聯絡銷售團隊了解協商費率。"
+      },
+      "addons": {
+        "title": "可選附加項目",
+        "wallet": {
+          "title": "白標錢包",
+          "desc": "部署由Mezzofy基礎設施驅動的自有品牌優惠券錢包"
+        },
+        "analytics": {
+          "title": "分析儀表板",
+          "desc": "即時兌換數據、用戶行為洞察和投資回報報告"
+        }
+      },
+      "cta": {
+        "primary": "申請買家存取權限",
+        "secondary": "查看API文件"
+      }
+    },
+    "partner": {
+      "badge": "分發合作夥伴",
+      "title": "授權我們的平台並獲得收益",
+      "subtitle": "整合我們的Bridge API，透過您自己的平台分發經核實的優惠券。無庫存風險，經常性收益模式。",
+      "whoFor": "適合對象",
+      "howWorks": "運作方式",
+      "who": {
+        "hr": {
+          "title": "人力資源及福利平台",
+          "desc": "為您的員工福利生態系統添加優惠券分發功能，產生新的經常性收益"
+        },
+        "nfc": {
+          "title": "NFC及POS合作夥伴",
+          "desc": "將安全的NFC優惠券發行和兌換整合到您的終端或支付基礎設施中"
+        },
+        "local": {
+          "title": "本地商業網絡",
+          "desc": "以Mezzofy驅動的品牌優惠券市場匯聚本地商戶和消費者"
+        }
+      },
+      "step1": {
+        "label": "授權",
+        "title": "申請合作夥伴授權",
+        "desc": "完成KYB核實並簽署Mezzofy分發合作夥伴協議。無需預付授權或設置費用。"
+      },
+      "step2": {
+        "label": "整合",
+        "title": "透過API連接",
+        "desc": "使用我們的RESTful Bridge API將優惠券發行、分發和兌換整合到您現有的平台中"
+      },
+      "step3": {
+        "label": "盈利",
+        "title": "獲得收益分成",
+        "desc": "獲得透過您的分發網絡處理的每筆優惠券交易的X%收益分成，每月支付"
+      },
+      "pricing": {
+        "title": "合作夥伴費用結構",
+        "col1": "費用類型",
+        "col2": "結構",
+        "col3": "備注",
+        "row1": {
+          "type": "授權費",
+          "structure": "零預付",
+          "notes": "無設置或月度訂閱費用"
+        },
+        "row2": {
+          "type": "收益分成",
+          "structure": "兌換費用的X%",
+          "notes": "每月支付，基於交易量"
+        },
+        "row3": {
+          "type": "API存取",
+          "structure": "免費",
+          "notes": "授權中包含無限制API調用"
+        },
+        "note": "*收益分成比例取決於分發量和合作夥伴層級。請聯絡partnership@mezzofy.com了解詳情。"
+      },
+      "capabilities": {
+        "title": "作為合作夥伴您能做什麼"
+      },
+      "cap1": {
+        "title": "透過API發行優惠券",
+        "desc": "以程式方式大規模創建和分發優惠券至您的網絡"
+      },
+      "cap2": {
+        "title": "安全驗證和兌換",
+        "desc": "HMAC簽名的NFC優惠券在每個兌換點防止欺詐"
+      },
+      "cap3": {
+        "title": "白標您的品牌",
+        "desc": "完全以您自己的品牌部署，由Mezzofy基礎設施提供支持"
+      },
+      "cap4": {
+        "title": "存取分析數據",
+        "desc": "即時追蹤效能、兌換率和收益"
+      },
+      "addons": {
+        "title": "可選附加項目",
+        "marketing": {
+          "title": "行銷模塊",
+          "desc": "針對您的分發網絡的活動創建、推送通知和A/B測試工具"
+        },
+        "nfc": {
+          "title": "NFC硬件支持",
+          "desc": "物理NFC卡配置和安全密碼密鑰管理"
+        }
+      },
+      "cta": {
+        "primary": "申請合作夥伴授權",
+        "secondary": "查看合作夥伴API文件"
+      }
     }
   },
   "management": {
@@ -1503,111 +1725,101 @@
   "support": {
     "status": {
       "label": "平台狀態：",
-      "operational": "運營正常",
+      "operational": "正常運作",
       "viewLive": "查看即時狀態"
     },
     "hero": {
-      "title": "我們全天候為您提供協助",
-      "subtitle": "為 Mezzofy 平台上的商家、分銷商、合作夥伴及終端用戶提供專屬支援服務。",
+      "title": "全天候為您提供協助 — <span class=\"text-primary-orange\">24/7</span>",
+      "subtitle": "<span class=\"text-primary-orange font-semibold\">專屬支援</span>服務商、經銷商、合作夥伴及 Mezzofy 平台上的終端用戶。我們的團隊全天候待命，確保您的<span class=\"text-primary-orange font-semibold\">業務不間斷</span>。",
       "ctaMerchant": "商家入口",
       "ctaPartner": "合作夥伴入口"
     },
     "reach": {
       "title": "如何聯繫我們",
-      "description": "根據您在 Mezzofy 平台的角色，選擇最適合的支援渠道。",
+      "description": "選擇最適合您在 Mezzofy 平台角色的支援管道。",
       "merchant": {
-        "badge": "適用於商家",
+        "badge": "商家專用",
         "title": "商家入口",
-        "desc": "供應方客戶可透過商家入口直接提交及追蹤支援請求，包括工單管理及文件查閱。",
-        "cta": "進入商家入口"
+        "desc": "供應端客戶可直接透過商家入口提交並追蹤支援請求，存取工單系統及說明文件。",
+        "cta": "存取商家入口"
       },
       "partner": {
-        "badge": "適用於合作夥伴",
+        "badge": "合作夥伴專用",
         "title": "合作夥伴入口",
-        "desc": "需求方合作夥伴及經銷商可透過合作夥伴入口管理支援請求、查閱 SLA 及升級問題。",
-        "cta": "進入合作夥伴入口"
+        "desc": "需求端合作夥伴及經銷商可透過合作夥伴入口管理支援請求、查看 SLA 及升級問題。",
+        "cta": "存取合作夥伴入口"
       },
       "email": {
-        "title": "電郵支援",
-        "desc": "適用於需要優惠券兌換、錢包問題或一般查詢協助的消費者及終端用戶。",
-        "address": "support@mezzofy.com",
-        "cta": "發送電郵"
+        "title": "電子郵件支援",
+        "desc": "適用於需要協助兌換優惠券、錢包問題或一般查詢的消費者及終端用戶。",
+        "cta": "電子郵件支援"
       }
     },
     "audience": {
-      "title": "按用戶類型提供支援",
-      "description": "根據用戶類型整理的常見問題及處理方式。",
+      "title": "按受眾分類的支援",
+      "description": "按用戶類型整理的常見問題及處理方式。",
       "supply": {
-        "title": "供應方客戶（商家）",
-        "issue1": "優惠券未啟用或顯示不正確",
-        "issue2": "NFC 標籤設定及配置問題",
-        "issue3": "兌換數據差異或報告錯誤",
+        "title": "供應客戶（商家）",
+        "issue1": "優惠券無法啟用或顯示不正確",
+        "issue2": "NFC 標籤設定和配置問題",
+        "issue3": "兌換數據差異或報表錯誤",
         "issue4": "API 整合失敗或 Webhook 錯誤",
-        "issue5": "帳單及訂閱查詢",
-        "note": "提交工單前，請先檢查您的門店網絡及設備配置。"
+        "issue5": "帳單和訂閱問題",
+        "note": "提交工單前，請先檢查您的商店網路和設備配置。"
       },
       "demand": {
-        "title": "需求方客戶（經銷商及合作夥伴）",
-        "issue1": "市場平台存取或庫存同步問題",
-        "issue2": "Bridge API 驗證或頻率限制錯誤",
+        "title": "需求客戶（經銷商及合作夥伴）",
+        "issue1": "市場存取或庫存同步問題",
+        "issue2": "Bridge API 身份驗證或速率限制錯誤",
         "issue3": "錢包白標配置問題",
-        "issue4": "合作夥伴帳單及合約查詢"
+        "issue4": "合作夥伴帳單和合約查詢"
       },
       "partners": {
         "title": "終端用戶及消費者",
-        "issue1": "結帳時優惠券未能套用",
+        "issue1": "結帳時優惠券無法套用",
         "issue2": "錢包應用程式登入或同步問題",
-        "issue3": "銷售點 NFC 輕觸未被識別",
+        "issue3": "NFC 感應在銷售點未被識別",
         "issue4": "優惠券已過期或條款與預期不符"
       }
     },
     "sla": {
       "title": "服務等級協議（SLA）",
-      "description": "我們對各支援層級的響應及解決時間的承諾。",
-      "hosting": "託管於 AWS（新加坡地區）— 99.9% 正常運行時間 SLA",
+      "description": "我們對所有支援等級的回應和解決時間承諾。",
+      "hosting": "托管於 AWS（新加坡區域）— 99.9% 正常運行時間 SLA",
       "col": {
         "severity": "嚴重程度",
         "definition": "定義",
-        "response": "響應時間",
+        "response": "回應時間",
         "resolution": "解決時間",
         "hours": "支援時間"
       },
-      "disclaimer": "SLA 計時從工單確認起開始計算。解決時間為目標，並非保證，涉及第三方的問題可能有所差異。支援時間以新加坡時間（SGT，UTC+8）為準。"
+      "disclaimer": "SLA 計時從工單確認後開始。解決時間為目標值，並非保證，涉及第三方的問題可能有所不同。支援時間以新加坡時間（SGT，UTC+8）為準。"
     },
     "process": {
       "title": "工單流程",
-      "description": "提交支援請求後的處理流程。",
+      "description": "提交支援請求後的處理步驟。",
       "step1": {
         "title": "提交",
-        "desc": "透過商家入口、合作夥伴入口或電郵提交請求，請附上您的帳戶 ID、清晰描述及相關截圖或日誌。"
+        "desc": "透過商家入口、合作夥伴入口或電子郵件提交請求。請附上您的帳號 ID、清晰的問題描述及任何截圖或日誌。"
       },
       "step2": {
         "title": "確認",
-        "desc": "我們的團隊將在 SLA 響應時間內確認您的工單，並分配案例參考編號供追蹤使用。"
+        "desc": "我們的團隊將在 SLA 回應時間內確認您的工單，並分配案例參考編號以供追蹤。"
       },
       "step3": {
         "title": "調查及更新",
-        "desc": "我們的工程師調查問題並定期提供更新，每次狀態變更時將透過電郵或入口通知通知您。"
+        "desc": "我們的工程師調查問題並定期提供更新。每次狀態變更時，您將透過電子郵件或入口通知收到通知。"
       },
       "step4": {
         "title": "解決",
-        "desc": "問題解決後，我們將提供完整的解決摘要並與您確認關閉。若問題在 7 天內重現，您可重新開啟工單。"
+        "desc": "問題解決後，我們提供完整的解決摘要並與您確認關閉。如問題再次出現，您可在 7 天內重新開啟工單。"
       }
     },
-    "escalation": {
-      "title": "仍需幫助？請直接聯繫我們。",
-      "support": {
-        "label": "一般支援",
-        "email": "support@mezzofy.com"
-      },
-      "tech": {
-        "label": "技術支援",
-        "email": "kris@mezzofy.com"
-      },
-      "ops": {
-        "label": "運營支援",
-        "email": "maverick@mezzofy.com"
-      }
+    "footerCta": {
+      "title": "準備好獲取支援了嗎？",
+      "description": "我們的團隊全天候待命，協助您解決 Mezzofy 平台上的任何問題。",
+      "contactUs": "聯絡支援",
+      "viewDocs": "查看說明文件"
     },
     "aiChat": {
       "buttonLabel": "詢問 Mezzofy AI",
@@ -1617,21 +1829,129 @@
       "send": "發送",
       "merchantLink": "透過商家入口提交 →",
       "partnerLink": "透過合作夥伴入口提交 →"
-    },
-    "footerCta": {
-      "title": "準備好獲取支援了嗎？",
-      "description": "我們的團隊全天候 24/7 為您提供服務，協助您解決 Mezzofy 平台上的任何問題。",
-      "contactUs": "聯絡支援",
-      "viewDocs": "查看文件"
     }
   },
   "wallet": {
+    "banner": {
+      "protocol": "Mezzofy 交易所協議的一部分",
+      "viewEcosystem": "查看生態系統"
+    },
     "hero": {
-      "label": "優惠券錢包",
-      "title": "您的<span class=\"text-primary-orange\">優惠券</span>數位錢包",
-      "description": "多平台優惠券收集<span class=\"text-primary-orange font-semibold\">提升兌換率 40%+</span>。透過 Mezzofy 交換協議實現跨裝置同步—<span class=\"text-primary-orange font-semibold\">白標或 API 整合</span>。",
+      "badge": "優惠券錢包",
+      "title": "您的數字優惠券錢包",
+      "subtitle": "多平台優惠券收集體驗，提升兌換率 40% 以上。跨設備同步和智能管理，由 Mezzofy 交易所協議驅動，可作白標或 API 整合。",
       "getStarted": "立即開始",
       "exploreFeatures": "探索功能"
+    },
+    "platforms": {
+      "title": "隨處可用",
+      "subtitle": "根據您客戶的需求選擇最合適的平台。Mezzofy 優惠券錢包可在所有主要平台和設備上訪問。",
+      "ios": {
+        "title": "iOS 行動應用",
+        "description": "原生 iPhone 和 iPad 體驗，無縫整合 Apple Wallet 並支持 NFC 標籤即時下載優惠券"
+      },
+      "android": {
+        "title": "Android 行動應用",
+        "description": "優化的 Android 體驗，整合 Google Pay 並具備 NFC 功能，支持點觸下載優惠券"
+      },
+      "web": {
+        "title": "網頁應用",
+        "description": "從任何瀏覽器、任何設備訪問您的錢包。無需安裝應用程式"
+      },
+      "nfcCard": {
+        "title": "NFC 實體卡",
+        "description": "附有二維碼和 NFC 芯片的實體卡，適合偏好有形錢包的客戶"
+      }
+    },
+    "features": {
+      "title": "強大的錢包功能",
+      "organization": {
+        "title": "智能管理",
+        "item1": "有效狀態 - 查看可兌換優惠券",
+        "item2": "已兌換歷史 - 追蹤過往兌換記錄",
+        "item3": "優惠券歷史 - 查看過期、已作廢或已轉讓的優惠券",
+        "item4": "智能篩選和搜尋功能",
+        "item5": "按到期日自動排序"
+      },
+      "retrieval": {
+        "title": "輕鬆取得",
+        "item1": "從 Mezzofy 平台即時同步",
+        "item2": "自動更新優惠券",
+        "item3": "即時狀態追蹤",
+        "item4": "安全雲端存儲",
+        "item5": "跨設備同步"
+      },
+      "integration": {
+        "title": "靈活整合",
+        "item1": "白標定制",
+        "item2": "全面的 API 訪問",
+        "item3": "嵌入現有行動應用",
+        "item4": "自定義品牌選項",
+        "item5": "提供 iOS 和 Android SDK"
+      }
+    },
+    "howItWorks": {
+      "title": "簡單步驟開始使用",
+      "step1": {
+        "title": "選擇平台",
+        "description": "根據客戶偏好從 iOS 應用、Android 應用、網頁應用或 NFC 實體卡中選擇"
+      },
+      "step2": {
+        "title": "取得優惠券",
+        "description": "透過自動同步即時訪問 Mezzofy 平台上所有已儲存的優惠券"
+      },
+      "step3": {
+        "title": "管理與兌換",
+        "description": "按狀態（有效、已兌換、歷史）篩選優惠券，組織並輕觸兌換"
+      }
+    },
+    "integrationOptions": {
+      "title": "適合您的整合方案",
+      "subtitle": "無論您需要完全品牌化的解決方案，還是想將錢包功能整合到現有應用程式中，我們都能滿足您的需求",
+      "whiteLabelSolution": {
+        "title": "白標解決方案",
+        "description": "以完全的設計控制和定制功能推出您自己品牌的優惠券錢包",
+        "feature1": "以您的標誌和顏色完全品牌化",
+        "feature2": "自定義域名和應用商店展示",
+        "feature3": "完全設計控制",
+        "feature4": "包含託管服務"
+      },
+      "apiIntegration": {
+        "title": "API 整合",
+        "description": "無縫地將錢包功能整合到您現有的行動或網頁應用程式中",
+        "feature1": "RESTful API 便於整合",
+        "feature2": "全面的技術文檔",
+        "feature3": "Webhook 支持即時更新",
+        "feature4": "提供 iOS 和 Android SDK"
+      }
+    },
+    "nfcFeature": {
+      "title": "NFC 點觸下載",
+      "description": "行動應用用戶可以與 Mezzofy NFC 標籤互動，輕觸即可即時下載優惠券，無需手動輸入——只需將手機點觸 NFC 標籤，優惠券即自動添加到錢包中。"
+    },
+    "ecosystem": {
+      "title": "與 Mezzofy 生態系統無縫整合",
+      "subtitle": "優惠券錢包與其他 Mezzofy 產品整合，提供完整解決方案",
+      "nfc": {
+        "description": "在實體零售中提供點觸入錢包功能"
+      },
+      "marketing": {
+        "description": "購買的代金券自動添加到錢包"
+      },
+      "marketplace": {
+        "description": "從錢包介面訪問市場庫存"
+      }
+    },
+    "bundle": {
+      "title": "推薦套餐：零售卓越套餐",
+      "description": "任何優惠券分發策略的必備客戶體驗層",
+      "button": "聯繫銷售獲取套餐定價"
+    },
+    "footerCta": {
+      "title": "準備好推出您的數字錢包了嗎？",
+      "subtitle": "加入領先品牌，為您的客戶提供無縫的優惠券錢包體驗",
+      "getStarted": "立即開始",
+      "requestDemo": "申請演示"
     }
   },
   "notFound": {
@@ -1833,238 +2153,6 @@
       },
       "message": "訊息",
       "submit": "申請 AI 電商訪問權限"
-    }
-  },
-  "wallet": {
-    "banner": {
-      "protocol": "Mezzofy 交易所協議的一部分",
-      "viewEcosystem": "查看生態系統"
-    },
-    "hero": {
-      "badge": "優惠券錢包",
-      "title": "您的數字優惠券錢包",
-      "subtitle": "多平台優惠券收集體驗，提升兌換率 40% 以上。跨設備同步和智能管理，由 Mezzofy 交易所協議驅動，可作白標或 API 整合。",
-      "getStarted": "立即開始",
-      "exploreFeatures": "探索功能"
-    },
-    "platforms": {
-      "title": "隨處可用",
-      "subtitle": "根據您客戶的需求選擇最合適的平台。Mezzofy 優惠券錢包可在所有主要平台和設備上訪問。",
-      "ios": {
-        "title": "iOS 行動應用",
-        "description": "原生 iPhone 和 iPad 體驗，無縫整合 Apple Wallet 並支持 NFC 標籤即時下載優惠券"
-      },
-      "android": {
-        "title": "Android 行動應用",
-        "description": "優化的 Android 體驗，整合 Google Pay 並具備 NFC 功能，支持點觸下載優惠券"
-      },
-      "web": {
-        "title": "網頁應用",
-        "description": "從任何瀏覽器、任何設備訪問您的錢包。無需安裝應用程式"
-      },
-      "nfcCard": {
-        "title": "NFC 實體卡",
-        "description": "附有二維碼和 NFC 芯片的實體卡，適合偏好有形錢包的客戶"
-      }
-    },
-    "features": {
-      "title": "強大的錢包功能",
-      "organization": {
-        "title": "智能管理",
-        "item1": "有效狀態 - 查看可兌換優惠券",
-        "item2": "已兌換歷史 - 追蹤過往兌換記錄",
-        "item3": "優惠券歷史 - 查看過期、已作廢或已轉讓的優惠券",
-        "item4": "智能篩選和搜尋功能",
-        "item5": "按到期日自動排序"
-      },
-      "retrieval": {
-        "title": "輕鬆取得",
-        "item1": "從 Mezzofy 平台即時同步",
-        "item2": "自動更新優惠券",
-        "item3": "即時狀態追蹤",
-        "item4": "安全雲端存儲",
-        "item5": "跨設備同步"
-      },
-      "integration": {
-        "title": "靈活整合",
-        "item1": "白標定制",
-        "item2": "全面的 API 訪問",
-        "item3": "嵌入現有行動應用",
-        "item4": "自定義品牌選項",
-        "item5": "提供 iOS 和 Android SDK"
-      }
-    },
-    "howItWorks": {
-      "title": "簡單步驟開始使用",
-      "step1": {
-        "title": "選擇平台",
-        "description": "根據客戶偏好從 iOS 應用、Android 應用、網頁應用或 NFC 實體卡中選擇"
-      },
-      "step2": {
-        "title": "取得優惠券",
-        "description": "透過自動同步即時訪問 Mezzofy 平台上所有已儲存的優惠券"
-      },
-      "step3": {
-        "title": "管理與兌換",
-        "description": "按狀態（有效、已兌換、歷史）篩選優惠券，組織並輕觸兌換"
-      }
-    },
-    "integrationOptions": {
-      "title": "適合您的整合方案",
-      "subtitle": "無論您需要完全品牌化的解決方案，還是想將錢包功能整合到現有應用程式中，我們都能滿足您的需求",
-      "whiteLabelSolution": {
-        "title": "白標解決方案",
-        "description": "以完全的設計控制和定制功能推出您自己品牌的優惠券錢包",
-        "feature1": "以您的標誌和顏色完全品牌化",
-        "feature2": "自定義域名和應用商店展示",
-        "feature3": "完全設計控制",
-        "feature4": "包含託管服務"
-      },
-      "apiIntegration": {
-        "title": "API 整合",
-        "description": "無縫地將錢包功能整合到您現有的行動或網頁應用程式中",
-        "feature1": "RESTful API 便於整合",
-        "feature2": "全面的技術文檔",
-        "feature3": "Webhook 支持即時更新",
-        "feature4": "提供 iOS 和 Android SDK"
-      }
-    },
-    "nfcFeature": {
-      "title": "NFC 點觸下載",
-      "description": "行動應用用戶可以與 Mezzofy NFC 標籤互動，輕觸即可即時下載優惠券，無需手動輸入——只需將手機點觸 NFC 標籤，優惠券即自動添加到錢包中。"
-    },
-    "ecosystem": {
-      "title": "與 Mezzofy 生態系統無縫整合",
-      "subtitle": "優惠券錢包與其他 Mezzofy 產品整合，提供完整解決方案",
-      "nfc": {
-        "description": "在實體零售中提供點觸入錢包功能"
-      },
-      "marketing": {
-        "description": "購買的代金券自動添加到錢包"
-      },
-      "marketplace": {
-        "description": "從錢包介面訪問市場庫存"
-      }
-    },
-    "bundle": {
-      "title": "推薦套餐：零售卓越套餐",
-      "description": "任何優惠券分發策略的必備客戶體驗層",
-      "button": "聯繫銷售獲取套餐定價"
-    },
-    "footerCta": {
-      "title": "準備好推出您的數字錢包了嗎？",
-      "subtitle": "加入領先品牌，為您的客戶提供無縫的優惠券錢包體驗",
-      "getStarted": "立即開始",
-      "requestDemo": "申請演示"
-    }
-  },
-  "support": {
-    "status": {
-      "label": "平台狀態：",
-      "operational": "正常運作",
-      "viewLive": "查看即時狀態"
-    },
-    "hero": {
-      "title": "全天候為您提供協助 — <span class=\"text-primary-orange\">24/7</span>",
-      "subtitle": "<span class=\"text-primary-orange font-semibold\">專屬支援</span>服務商、經銷商、合作夥伴及 Mezzofy 平台上的終端用戶。我們的團隊全天候待命，確保您的<span class=\"text-primary-orange font-semibold\">業務不間斷</span>。",
-      "ctaMerchant": "商家入口",
-      "ctaPartner": "合作夥伴入口"
-    },
-    "reach": {
-      "title": "如何聯繫我們",
-      "description": "選擇最適合您在 Mezzofy 平台角色的支援管道。",
-      "merchant": {
-        "badge": "商家專用",
-        "title": "商家入口",
-        "desc": "供應端客戶可直接透過商家入口提交並追蹤支援請求，存取工單系統及說明文件。",
-        "cta": "存取商家入口"
-      },
-      "partner": {
-        "badge": "合作夥伴專用",
-        "title": "合作夥伴入口",
-        "desc": "需求端合作夥伴及經銷商可透過合作夥伴入口管理支援請求、查看 SLA 及升級問題。",
-        "cta": "存取合作夥伴入口"
-      },
-      "email": {
-        "title": "電子郵件支援",
-        "desc": "適用於需要協助兌換優惠券、錢包問題或一般查詢的消費者及終端用戶。",
-        "cta": "電子郵件支援"
-      }
-    },
-    "audience": {
-      "title": "按受眾分類的支援",
-      "description": "按用戶類型整理的常見問題及處理方式。",
-      "supply": {
-        "title": "供應客戶（商家）",
-        "issue1": "優惠券無法啟用或顯示不正確",
-        "issue2": "NFC 標籤設定和配置問題",
-        "issue3": "兌換數據差異或報表錯誤",
-        "issue4": "API 整合失敗或 Webhook 錯誤",
-        "issue5": "帳單和訂閱問題",
-        "note": "提交工單前，請先檢查您的商店網路和設備配置。"
-      },
-      "demand": {
-        "title": "需求客戶（經銷商及合作夥伴）",
-        "issue1": "市場存取或庫存同步問題",
-        "issue2": "Bridge API 身份驗證或速率限制錯誤",
-        "issue3": "錢包白標配置問題",
-        "issue4": "合作夥伴帳單和合約查詢"
-      },
-      "partners": {
-        "title": "終端用戶及消費者",
-        "issue1": "結帳時優惠券無法套用",
-        "issue2": "錢包應用程式登入或同步問題",
-        "issue3": "NFC 感應在銷售點未被識別",
-        "issue4": "優惠券已過期或條款與預期不符"
-      }
-    },
-    "sla": {
-      "title": "服務等級協議（SLA）",
-      "description": "我們對所有支援等級的回應和解決時間承諾。",
-      "hosting": "托管於 AWS（新加坡區域）— 99.9% 正常運行時間 SLA",
-      "col": {
-        "severity": "嚴重程度",
-        "definition": "定義",
-        "response": "回應時間",
-        "resolution": "解決時間",
-        "hours": "支援時間"
-      },
-      "disclaimer": "SLA 計時從工單確認後開始。解決時間為目標值，並非保證，涉及第三方的問題可能有所不同。支援時間以新加坡時間（SGT，UTC+8）為準。"
-    },
-    "process": {
-      "title": "工單流程",
-      "description": "提交支援請求後的處理步驟。",
-      "step1": {
-        "title": "提交",
-        "desc": "透過商家入口、合作夥伴入口或電子郵件提交請求。請附上您的帳號 ID、清晰的問題描述及任何截圖或日誌。"
-      },
-      "step2": {
-        "title": "確認",
-        "desc": "我們的團隊將在 SLA 回應時間內確認您的工單，並分配案例參考編號以供追蹤。"
-      },
-      "step3": {
-        "title": "調查及更新",
-        "desc": "我們的工程師調查問題並定期提供更新。每次狀態變更時，您將透過電子郵件或入口通知收到通知。"
-      },
-      "step4": {
-        "title": "解決",
-        "desc": "問題解決後，我們提供完整的解決摘要並與您確認關閉。如問題再次出現，您可在 7 天內重新開啟工單。"
-      }
-    },
-    "footerCta": {
-      "title": "準備好獲取支援了嗎？",
-      "description": "我們的團隊全天候待命，協助您解決 Mezzofy 平台上的任何問題。",
-      "contactUs": "聯絡支援",
-      "viewDocs": "查看說明文件"
-    },
-    "aiChat": {
-      "buttonLabel": "詢問 Mezzofy AI",
-      "title": "Mezzofy 支援助理",
-      "subtitle": "獲取常見問題的即時解答或提交支援工單。",
-      "placeholder": "輸入您的問題...",
-      "send": "發送",
-      "merchantLink": "透過商家入口提交 →",
-      "partnerLink": "透過合作夥伴入口提交 →"
     }
   }
 }

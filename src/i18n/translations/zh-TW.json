@@ -633,7 +633,13 @@
       "title": "存取全球最<span class=\"text-primary-orange\">安全、高意圖</span>的優惠券庫存",
       "subtitle": "使用 Mezzofy 交換協定的優惠券，增強您的會員計劃、銀行應用程式或企業入口網站",
       "accessDeals": "存取優惠",
-      "viewApiDoc": "查看 API 文件"
+      "viewApiDoc": "查看 API 文件",
+      "buyer": {
+        "cta": "探索買家模式"
+      },
+      "partner": {
+        "cta": "探索合作夥伴模式"
+      }
     },
     "journey": {
       "title": "您的優質優惠券經銷之路",
@@ -725,6 +731,23 @@
         "point1": "地理定位功能",
         "point2": "類別和垂直篩選",
         "point3": "價值層級細分"
+      },
+      "subtitle": "建立在Mezzofy交易所協議上——安全、防欺詐優惠券基礎設施的全球標準",
+      "fraud": {
+        "title": "防欺詐庫存",
+        "desc": "每張優惠券都經過HMAC簽名和協議驗證。為您的分發網絡提供零假冒風險。"
+      },
+      "api": {
+        "title": "免費API存取",
+        "desc": "所有合作夥伴均包含完整的Bridge API存取。無按次調用費用，無API密鑰費用，標準層級無速率限制。"
+      },
+      "global": {
+        "title": "全球標準",
+        "desc": "符合ISO標準的優惠券格式。以標準化庫存跨境運營，在全球任何地方均可使用。"
+      },
+      "custody": {
+        "title": "Mezzofy優惠券託管",
+        "desc": "Mezzofy作為所有庫存的可信託管機構。商戶和買家均受到協議層面的託管保護。"
       }
     },
     "footerCta": {
@@ -747,7 +770,206 @@
       "modelOther": "其他",
       "message": "訊息",
       "messagePlaceholder": "告訴我們您的分銷需求...",
-      "submit": "申請市集存取權限"
+      "submit": "申請市集存取權限",
+      "title": "立即開始",
+      "subtitle": "告訴我們您的業務，我們將在1個工作日內回覆您。",
+      "role": "我是：",
+      "roleSelect": "選擇您的角色",
+      "roleDistributionPartner": "分發合作夥伴",
+      "roleInventoryBuyer": "庫存買家",
+      "roleNotSure": "尚未確定"
+    },
+    "buyer": {
+      "badge": "庫存買家",
+      "title": "採購、分發與盈利",
+      "subtitle": "存取來自數百家商戶的經核實優惠券庫存，透過您的平台分發並從每次成功兌換中獲得收益。",
+      "whoFor": "適合對象",
+      "howWorks": "運作方式",
+      "who": {
+        "banks": {
+          "title": "銀行及金融機構",
+          "desc": "以經核實的商戶優惠增強信用卡禮遇和忠誠度計劃"
+        },
+        "corporates": {
+          "title": "企業及人力資源平台",
+          "desc": "以精選折扣和禮遇支持員工福利計劃"
+        },
+        "telcos": {
+          "title": "電信公司及數位錢包",
+          "desc": "以品牌優惠券和獨家優惠提升您的手機應用程式價值"
+        }
+      },
+      "step1": {
+        "label": "加入",
+        "title": "申請買家存取權限",
+        "desc": "完成KYB核實並獲批准成為Mezzofy交易所的持牌庫存買家"
+      },
+      "step2": {
+        "label": "採購",
+        "title": "瀏覽及取得庫存",
+        "desc": "向經核實的商戶直接購買或寄售優惠券庫存，涵蓋多個類別"
+      },
+      "step3": {
+        "label": "分發",
+        "title": "向您的受眾部署",
+        "desc": "透過您的忠誠度應用程式、人力資源門戶或Mezzofy白標錢包推送優惠券，並從每次兌換中獲益"
+      },
+      "acquisition": {
+        "title": "取得選項",
+        "upfront": {
+          "title": "預付購買",
+          "desc": "直接取得優惠券庫存。完整所有權，最大控制，無限利潤潛力。",
+          "point1": "完整庫存所有權",
+          "point2": "設定您自己的零售價格和利潤",
+          "point3": "適合高交易量忠誠度計劃"
+        },
+        "consignment": {
+          "title": "寄售模式",
+          "desc": "以寄售方式取得庫存。僅為成功兌換付款。適合新計劃或低交易量合作夥伴。",
+          "point1": "零預付庫存成本",
+          "point2": "僅在成功兌換時付款",
+          "point3": "零風險分發模式"
+        }
+      },
+      "pricing": {
+        "title": "定價結構",
+        "col1": "優惠券類型",
+        "col2": "費用觸發",
+        "col3": "費用公式",
+        "col4": "示例",
+        "row1": {
+          "type": "數位優惠券",
+          "trigger": "成功兌換時",
+          "formula": "面值的X%",
+          "example": "$10優惠券 → $X費用"
+        },
+        "row2": {
+          "type": "NFC優惠券",
+          "trigger": "成功兌換時",
+          "formula": "面值的X%",
+          "example": "$10 NFC優惠券 → $X費用"
+        },
+        "row3": {
+          "type": "禮品券",
+          "trigger": "成功兌換時",
+          "formula": "面值的X%",
+          "example": "$50禮品券 → $X費用"
+        },
+        "row4": {
+          "type": "批量",
+          "trigger": "批量購買時",
+          "formula": "協商費率",
+          "example": "按安排"
+        },
+        "note": "*定價因商戶和庫存類別而異。請聯絡銷售團隊了解協商費率。"
+      },
+      "addons": {
+        "title": "可選附加項目",
+        "wallet": {
+          "title": "白標錢包",
+          "desc": "部署由Mezzofy基礎設施驅動的自有品牌優惠券錢包"
+        },
+        "analytics": {
+          "title": "分析儀表板",
+          "desc": "即時兌換數據、用戶行為洞察和投資回報報告"
+        }
+      },
+      "cta": {
+        "primary": "申請買家存取權限",
+        "secondary": "查看API文件"
+      }
+    },
+    "partner": {
+      "badge": "分發合作夥伴",
+      "title": "授權我們的平台並獲得收益",
+      "subtitle": "整合我們的Bridge API，透過您自己的平台分發經核實的優惠券。無庫存風險，經常性收益模式。",
+      "whoFor": "適合對象",
+      "howWorks": "運作方式",
+      "who": {
+        "hr": {
+          "title": "人力資源及福利平台",
+          "desc": "為您的員工福利生態系統添加優惠券分發功能，產生新的經常性收益"
+        },
+        "nfc": {
+          "title": "NFC及POS合作夥伴",
+          "desc": "將安全的NFC優惠券發行和兌換整合到您的終端或支付基礎設施中"
+        },
+        "local": {
+          "title": "本地商業網絡",
+          "desc": "以Mezzofy驅動的品牌優惠券市場匯聚本地商戶和消費者"
+        }
+      },
+      "step1": {
+        "label": "授權",
+        "title": "申請合作夥伴授權",
+        "desc": "完成KYB核實並簽署Mezzofy分發合作夥伴協議。無需預付授權或設置費用。"
+      },
+      "step2": {
+        "label": "整合",
+        "title": "透過API連接",
+        "desc": "使用我們的RESTful Bridge API將優惠券發行、分發和兌換整合到您現有的平台中"
+      },
+      "step3": {
+        "label": "盈利",
+        "title": "獲得收益分成",
+        "desc": "獲得透過您的分發網絡處理的每筆優惠券交易的X%收益分成，每月支付"
+      },
+      "pricing": {
+        "title": "合作夥伴費用結構",
+        "col1": "費用類型",
+        "col2": "結構",
+        "col3": "備注",
+        "row1": {
+          "type": "授權費",
+          "structure": "零預付",
+          "notes": "無設置或月度訂閱費用"
+        },
+        "row2": {
+          "type": "收益分成",
+          "structure": "兌換費用的X%",
+          "notes": "每月支付，基於交易量"
+        },
+        "row3": {
+          "type": "API存取",
+          "structure": "免費",
+          "notes": "授權中包含無限制API調用"
+        },
+        "note": "*收益分成比例取決於分發量和合作夥伴層級。請聯絡partnership@mezzofy.com了解詳情。"
+      },
+      "capabilities": {
+        "title": "作為合作夥伴您能做什麼"
+      },
+      "cap1": {
+        "title": "透過API發行優惠券",
+        "desc": "以程式方式大規模創建和分發優惠券至您的網絡"
+      },
+      "cap2": {
+        "title": "安全驗證和兌換",
+        "desc": "HMAC簽名的NFC優惠券在每個兌換點防止欺詐"
+      },
+      "cap3": {
+        "title": "白標您的品牌",
+        "desc": "完全以您自己的品牌部署，由Mezzofy基礎設施提供支持"
+      },
+      "cap4": {
+        "title": "存取分析數據",
+        "desc": "即時追蹤效能、兌換率和收益"
+      },
+      "addons": {
+        "title": "可選附加項目",
+        "marketing": {
+          "title": "行銷模塊",
+          "desc": "針對您的分發網絡的活動創建、推送通知和A/B測試工具"
+        },
+        "nfc": {
+          "title": "NFC硬件支持",
+          "desc": "物理NFC卡配置和安全密碼密鑰管理"
+        }
+      },
+      "cta": {
+        "primary": "申請合作夥伴授權",
+        "secondary": "查看合作夥伴API文件"
+      }
     }
   },
   "management": {
