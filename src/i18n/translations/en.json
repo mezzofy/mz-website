@@ -840,7 +840,7 @@
         "consignment": {
           "title": "Consignment Model",
           "desc": "Source inventory on consignment. Pay only for successful redemptions. Perfect for new programs or lower-volume partners.",
-          "point1": "Zero upfront inventory cost",
+          "point1": "50% upfront inventory cost",
           "point2": "Pay only on successful redemption",
           "point3": "Risk-free distribution model"
         }
@@ -935,12 +935,12 @@
         "col3": "Notes",
         "row1": {
           "type": "Licence Fee",
-          "structure": "Zero upfront",
+          "structure": "Yearly",
           "notes": "No setup or monthly subscription fees"
         },
         "row2": {
           "type": "Revenue Share",
-          "structure": "X% of redemption fees",
+          "structure": "50% of Redemption Fees",
           "notes": "Paid monthly, based on transaction volume"
         },
         "row3": {
