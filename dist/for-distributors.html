@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Enhance your loyalty program, banking app, or corporate portal with verified deals from the Mezzofy Exchange Protocol.">
+    <meta name="description" content="Access the world's most secure coupon supply. Source inventory as an Inventory Buyer or earn revenue as a Distribution Partner on the Mezzofy Exchange Protocol.">
     <meta name="theme-color" content="#FF6B35">
-    <title>Mezzofy for Distributors - Access Premium Coupon Inventory</title>
+    <title>For Distributors | Mezzofy</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -65,6 +65,134 @@
             background-color: #FF6B35;
             color: white;
         }
+        .btn-indigo {
+            background-color: #4F46E5;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            display: inline-block;
+            transition: background-color 0.2s;
+        }
+        .btn-indigo:hover {
+            background-color: #4338CA;
+        }
+        .btn-indigo-outline {
+            background-color: transparent;
+            color: #4F46E5;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            display: inline-block;
+            border: 2px solid #4F46E5;
+            transition: all 0.2s;
+        }
+        .btn-indigo-outline:hover {
+            background-color: #4F46E5;
+            color: white;
+        }
+        .badge-orange {
+            display: inline-block;
+            background-color: #FF6B35;
+            color: white;
+            padding: 0.25rem 0.875rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+        .badge-indigo {
+            display: inline-block;
+            background-color: #4F46E5;
+            color: white;
+            padding: 0.25rem 0.875rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .pricing-table th {
+            background-color: #F9FAFB;
+            font-weight: 600;
+            border: 1px solid #E5E7EB;
+            text-align: left;
+            padding: 0.75rem 1rem;
+            font-size: 0.875rem;
+            color: #1A1A1A;
+        }
+        .pricing-table td {
+            border: 1px solid #E5E7EB;
+            padding: 0.75rem 1rem;
+            font-size: 0.875rem;
+            color: #424242;
+        }
+        .pricing-table tr:hover td {
+            background-color: #F9FAFB;
+        }
+        /* Desktop dropdown */
+        .dropdown { position: relative; }
+        .dropdown-trigger {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            min-width: 200px;
+            padding: 0.5rem 0;
+            z-index: 100;
+            margin-top: 0.5rem;
+        }
+        .dropdown:hover .dropdown-menu { display: block; }
+        .dropdown-item {
+            display: block;
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
+            color: #424242;
+            transition: all 0.15s;
+        }
+        .dropdown-item:hover {
+            background-color: #FFF7F4;
+            color: #FF6B35;
+        }
+        /* Mobile dropdown */
+        .mobile-dropdown-trigger {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 0.625rem 0;
+            font-size: 0.9375rem;
+            font-weight: 500;
+            color: #1A1A1A;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .mobile-dropdown-menu {
+            display: none;
+            padding-left: 1rem;
+        }
+        .mobile-dropdown-menu.active { display: block; }
     </style>
 
     <!-- Favicon -->
@@ -165,7 +293,7 @@
                         <div class="dropdown-menu">
                             <a href="about.html" class="dropdown-item" data-i18n="common.nav.aboutUs">About Us</a>
                             <a href="contact.html" class="dropdown-item" data-i18n="common.nav.contactUs">Contact Us</a>
-                            <a href="news-press.html" class="dropdown-item" data-i18n="common.nav.newsPress">News & Press</a>
+                            <a href="news-press.html" class="dropdown-item" data-i18n="common.nav.newsPress">News &amp; Press</a>
                             <a href="investors.html" class="dropdown-item" data-i18n="common.nav.investors">Investors</a>
                         </div>
                     </div>
@@ -297,7 +425,7 @@
                     <div class="mobile-dropdown-menu" data-menu="company">
                         <a href="about.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.aboutUs">About Us</a>
                         <a href="contact.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.contactUs">Contact Us</a>
-                        <a href="news-press.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.newsPress">News & Press</a>
+                        <a href="news-press.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.newsPress">News &amp; Press</a>
                         <a href="investors.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.investors">Investors</a>
                     </div>
                 </div>
@@ -307,398 +435,553 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- SECTION 1: HERO                                 -->
+    <!-- ═══════════════════════════════════════════════ -->
     <section class="pt-32 pb-20 bg-gradient-to-br from-primary-black via-gray-900 to-primary-black">
         <div class="section-container">
-            <div class="max-w-6xl mx-auto text-center">
-                <p class="text-primary-orange text-lg font-semibold mb-4" data-i18n="distributors.hero.tagline">FOR DISTRIBUTORS</p>
-                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-6" data-i18n="distributors.hero.title">
-                    Access the World's Most <span class="text-primary-orange">Secure, High-Intent</span> Coupon Inventory
+            <div class="max-w-5xl mx-auto text-center">
+                <span class="badge-orange mb-6 inline-block" data-i18n="distributors.hero.tagline">FOR DISTRIBUTORS</span>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-6 mt-4" data-i18n="distributors.hero.title">
+                    Access the World's Most <span class="text-primary-orange">Secure Coupon Supply</span>
                 </h1>
-                <p class="text-lg sm:text-xl text-gray-100 mb-10 max-w-4xl mx-auto" data-i18n="distributors.hero.subtitle">
-                    Enhance your loyalty program, banking app, or corporate portal with verified deals from the Mezzofy Exchange Protocol
+                <p class="text-lg sm:text-xl text-gray-300 mb-12 max-w-3xl mx-auto" data-i18n="distributors.hero.subtitle">
+                    Choose your demand-side role. Source inventory to distribute across your network, or licence our platform to power your own coupon ecosystem.
                 </p>
+
+                <!-- Audience Selector Cards -->
+                <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto text-left">
+
+                    <!-- Inventory Buyer Card -->
+                    <div class="rounded-xl p-8 border-2 border-orange-500/40 hover:border-primary-orange transition-colors" style="background: rgba(255,255,255,0.07);">
+                        <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-5" style="background: rgba(255,107,53,0.15);">
+                            <svg class="w-7 h-7 text-primary-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 7H4l1-7z"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-2xl font-bold text-white mb-2" data-i18n="distributors.hero.buyer.title">Inventory Buyer</h2>
+                        <p class="text-gray-300 mb-6 text-sm leading-relaxed" data-i18n="distributors.hero.buyer.description">
+                            Purchase or consign coupon inventory from the Mezzofy Exchange. Distribute through your loyalty program, employee benefits portal, or end-customer app and earn on every redemption.
+                        </p>
+                        <a href="#buyer" class="btn-primary" data-i18n="distributors.hero.buyer.cta">Explore Buyer Model &rarr;</a>
+                    </div>
+
+                    <!-- Distribution Partner Card -->
+                    <div class="rounded-xl p-8 border-2 hover:border-indigo-400 transition-colors" style="background: rgba(255,255,255,0.07); border-color: rgba(99,102,241,0.4);">
+                        <div class="w-14 h-14 rounded-xl flex items-center justify-center mb-5" style="background: rgba(79,70,229,0.15);">
+                            <svg class="w-7 h-7" style="color: #818CF8;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-2xl font-bold text-white mb-2" data-i18n="distributors.hero.partner.title">Distribution Partner</h2>
+                        <p class="text-gray-300 mb-6 text-sm leading-relaxed" data-i18n="distributors.hero.partner.description">
+                            Licence the Mezzofy platform to power your own coupon distribution network. Integrate our API, build your merchant and consumer base, and earn revenue share on every transaction.
+                        </p>
+                        <a href="#partner" class="btn-indigo" data-i18n="distributors.hero.partner.cta">Explore Partner Model &rarr;</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- SECTION 2: INVENTORY BUYER                      -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section id="buyer" class="bg-white">
+        <div class="section-container">
+
+            <!-- Section Header -->
+            <div class="text-center mb-14">
+                <span class="badge-orange mb-4 inline-block" data-i18n="distributors.buyer.badge">INVENTORY BUYER</span>
+                <h2 class="text-3xl md:text-5xl font-bold text-primary-black mb-4 mt-2" data-i18n="distributors.buyer.title">
+                    Source, Distribute, and Earn
+                </h2>
+                <p class="text-lg text-dark-grey max-w-3xl mx-auto" data-i18n="distributors.buyer.subtitle">
+                    Access verified coupon inventory from hundreds of merchants. Distribute through your platform and generate revenue on every successful redemption.
+                </p>
+            </div>
+
+            <!-- Who This Is For -->
+            <div class="mb-16">
+                <h3 class="text-xl font-bold text-primary-black mb-8 text-center" data-i18n="distributors.buyer.whoFor">Who This Is For</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+
+                    <div class="text-center p-6 rounded-xl bg-light-grey">
+                        <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background: rgba(255,107,53,0.1);">
+                            <svg class="w-8 h-8 text-primary-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-primary-black mb-2" data-i18n="distributors.buyer.who.banks.title">Banks &amp; Financial Institutions</h4>
+                        <p class="text-sm text-dark-grey" data-i18n="distributors.buyer.who.banks.desc">Enhance credit card perks and loyalty programs with verified merchant deals</p>
+                    </div>
+
+                    <div class="text-center p-6 rounded-xl bg-light-grey">
+                        <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background: rgba(255,107,53,0.1);">
+                            <svg class="w-8 h-8 text-primary-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-primary-black mb-2" data-i18n="distributors.buyer.who.corporates.title">Corporates &amp; HR Platforms</h4>
+                        <p class="text-sm text-dark-grey" data-i18n="distributors.buyer.who.corporates.desc">Power employee benefits programs with curated discounts and perks</p>
+                    </div>
+
+                    <div class="text-center p-6 rounded-xl bg-light-grey">
+                        <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background: rgba(255,107,53,0.1);">
+                            <svg class="w-8 h-8 text-primary-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-primary-black mb-2" data-i18n="distributors.buyer.who.telcos.title">Telcos &amp; Digital Wallets</h4>
+                        <p class="text-sm text-dark-grey" data-i18n="distributors.buyer.who.telcos.desc">Add value to your mobile app with branded coupons and exclusive deals</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- How It Works -->
+            <div class="mb-16">
+                <h3 class="text-xl font-bold text-primary-black mb-8 text-center" data-i18n="distributors.buyer.howWorks">How It Works</h3>
+                <div class="grid md:grid-cols-3 gap-8">
+
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary-orange rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-white">1</span>
+                        </div>
+                        <div class="font-bold text-lg text-primary-orange mb-2" data-i18n="distributors.buyer.step1.label">JOIN</div>
+                        <h4 class="font-semibold text-primary-black mb-2" data-i18n="distributors.buyer.step1.title">Apply for Buyer Access</h4>
+                        <p class="text-sm text-dark-grey" data-i18n="distributors.buyer.step1.desc">Complete KYB verification and get approved as a licensed inventory buyer on the Mezzofy Exchange</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary-orange rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-white">2</span>
+                        </div>
+                        <div class="font-bold text-lg text-primary-orange mb-2" data-i18n="distributors.buyer.step2.label">SOURCE</div>
+                        <h4 class="font-semibold text-primary-black mb-2" data-i18n="distributors.buyer.step2.title">Browse &amp; Acquire Inventory</h4>
+                        <p class="text-sm text-dark-grey" data-i18n="distributors.buyer.step2.desc">Purchase outright or consign coupon inventory from verified merchants across multiple categories</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary-orange rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-white">3</span>
+                        </div>
+                        <div class="font-bold text-lg text-primary-orange mb-2" data-i18n="distributors.buyer.step3.label">DISTRIBUTE</div>
+                        <h4 class="font-semibold text-primary-black mb-2" data-i18n="distributors.buyer.step3.title">Deploy to Your Audience</h4>
+                        <p class="text-sm text-dark-grey" data-i18n="distributors.buyer.step3.desc">Push coupons through your loyalty app, HR portal, or Mezzofy white-label wallet and earn on every redemption</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Acquisition Options -->
+            <div class="mb-16">
+                <h3 class="text-xl font-bold text-primary-black mb-8 text-center" data-i18n="distributors.buyer.acquisition.title">Acquisition Options</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+
+                    <div class="feature-card border-l-4 border-primary-orange">
+                        <h4 class="text-lg font-bold text-primary-black mb-3" data-i18n="distributors.buyer.acquisition.upfront.title">Upfront Purchase</h4>
+                        <p class="text-dark-grey mb-4 text-sm" data-i18n="distributors.buyer.acquisition.upfront.desc">
+                            Buy coupon inventory at cost from the Mezzofy Exchange. You own the inventory, set your own distribution price, and keep the margin on every sale.
+                        </p>
+                        <ul class="space-y-2 text-sm text-dark-grey">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-4 h-4 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span data-i18n="distributors.buyer.acquisition.upfront.point1">Full inventory ownership</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-4 h-4 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span data-i18n="distributors.buyer.acquisition.upfront.point2">Set your own retail price and margin</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-4 h-4 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span data-i18n="distributors.buyer.acquisition.upfront.point3">Ideal for high-volume loyalty programs</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card border-l-4 border-primary-orange">
+                        <h4 class="text-lg font-bold text-primary-black mb-3" data-i18n="distributors.buyer.acquisition.consignment.title">Consignment Model</h4>
+                        <p class="text-dark-grey mb-4 text-sm" data-i18n="distributors.buyer.acquisition.consignment.desc">
+                            Source inventory without upfront capital. Mezzofy holds inventory in escrow and you pay only when a coupon is successfully redeemed by an end customer.
+                        </p>
+                        <ul class="space-y-2 text-sm text-dark-grey">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-4 h-4 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span data-i18n="distributors.buyer.acquisition.consignment.point1">Zero upfront inventory cost</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-4 h-4 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span data-i18n="distributors.buyer.acquisition.consignment.point2">Pay only on successful redemption</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-4 h-4 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span data-i18n="distributors.buyer.acquisition.consignment.point3">Risk-free distribution model</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Buyer Pricing Table -->
+            <div class="mb-12">
+                <h3 class="text-xl font-bold text-primary-black mb-6 text-center" data-i18n="distributors.buyer.pricing.title">Pricing Structure</h3>
+                <div class="overflow-x-auto rounded-xl border border-gray-200">
+                    <table class="pricing-table">
+                        <thead>
+                            <tr>
+                                <th data-i18n="distributors.buyer.pricing.col1">Coupon Type</th>
+                                <th data-i18n="distributors.buyer.pricing.col2">Fee Trigger</th>
+                                <th data-i18n="distributors.buyer.pricing.col3">Fee Formula</th>
+                                <th data-i18n="distributors.buyer.pricing.col4">Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-medium text-primary-black" data-i18n="distributors.buyer.pricing.row1.type">Digital Coupon</td>
+                                <td data-i18n="distributors.buyer.pricing.row1.trigger">On successful redemption</td>
+                                <td data-i18n="distributors.buyer.pricing.row1.formula">X% of face value</td>
+                                <td data-i18n="distributors.buyer.pricing.row1.example">$10 coupon &rarr; $X fee</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium text-primary-black" data-i18n="distributors.buyer.pricing.row2.type">NFC Coupon</td>
+                                <td data-i18n="distributors.buyer.pricing.row2.trigger">On successful redemption</td>
+                                <td data-i18n="distributors.buyer.pricing.row2.formula">X% of face value</td>
+                                <td data-i18n="distributors.buyer.pricing.row2.example">$10 NFC coupon &rarr; $X fee</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium text-primary-black" data-i18n="distributors.buyer.pricing.row3.type">Gift Voucher</td>
+                                <td data-i18n="distributors.buyer.pricing.row3.trigger">On successful redemption</td>
+                                <td data-i18n="distributors.buyer.pricing.row3.formula">X% of face value</td>
+                                <td data-i18n="distributors.buyer.pricing.row3.example">$50 voucher &rarr; $X fee</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium text-primary-black" data-i18n="distributors.buyer.pricing.row4.type">Bulk Batch</td>
+                                <td data-i18n="distributors.buyer.pricing.row4.trigger">On batch purchase</td>
+                                <td data-i18n="distributors.buyer.pricing.row4.formula">Negotiated rate</td>
+                                <td data-i18n="distributors.buyer.pricing.row4.example">Per arrangement</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="text-sm text-medium-grey mt-3" data-i18n="distributors.buyer.pricing.note">
+                    * Exact fee percentages are provided upon application approval. No monthly subscription fees.
+                </p>
+            </div>
+
+            <!-- Buyer Add-Ons -->
+            <div class="mb-14 p-6 bg-light-grey rounded-xl">
+                <h4 class="font-bold text-primary-black mb-4" data-i18n="distributors.buyer.addons.title">Optional Add-Ons</h4>
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <div class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+                        <div>
+                            <span class="font-semibold text-sm" data-i18n="distributors.buyer.addons.wallet.title">White-Label Wallet</span>
+                            <p class="text-xs text-dark-grey mt-0.5" data-i18n="distributors.buyer.addons.wallet.desc">Deploy your own branded coupon wallet powered by Mezzofy infrastructure</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+                        <div>
+                            <span class="font-semibold text-sm" data-i18n="distributors.buyer.addons.analytics.title">Analytics Dashboard</span>
+                            <p class="text-xs text-dark-grey mt-0.5" data-i18n="distributors.buyer.addons.analytics.desc">Real-time redemption data, user behaviour insights, and ROI reporting</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Buyer CTA -->
+            <div class="text-center">
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#contact" class="btn-primary inline-block text-center" data-i18n="distributors.hero.accessDeals">Access Deals</a>
-                    <a href="for-developers.html" class="btn-secondary inline-block text-center bg-white/10 text-white border-white hover:bg-white/20" data-i18n="distributors.hero.viewApiDoc">View API Documentation</a>
+                    <a href="#contact" class="btn-primary" data-i18n="distributors.buyer.cta.primary">Apply for Buyer Access</a>
+                    <a href="for-developers.html" class="btn-secondary" data-i18n="distributors.buyer.cta.secondary">View API Documentation</a>
                 </div>
             </div>
+
         </div>
     </section>
 
-    <!-- Distributor Journey Section -->
-    <section class="bg-white">
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- SECTION 3: DISTRIBUTION PARTNER                 -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section id="partner" class="bg-light-grey">
         <div class="section-container">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-bold text-primary-black mb-4" data-i18n="distributors.journey.title">
-                    Your Path to Premium Coupon Distribution
+
+            <!-- Section Header -->
+            <div class="text-center mb-14">
+                <span class="badge-indigo mb-4 inline-block" data-i18n="distributors.partner.badge">DISTRIBUTION PARTNER</span>
+                <h2 class="text-3xl md:text-5xl font-bold text-primary-black mb-4 mt-2" data-i18n="distributors.partner.title">
+                    Licence Our Platform, Build Your Network
                 </h2>
-                <p class="text-lg text-dark-grey max-w-3xl mx-auto" data-i18n="distributors.journey.description">
-                    Three simple steps to integrate verified, high-value coupon inventory into your platform
+                <p class="text-lg text-dark-grey max-w-3xl mx-auto" data-i18n="distributors.partner.subtitle">
+                    Become a licensed Mezzofy Distribution Partner. Integrate our API, grow your merchant and consumer base, and earn revenue share on every transaction processed through your network.
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Step 1: SOURCE -->
-                <div class="feature-card text-center">
-                    <div class="w-16 h-16 bg-primary-orange rounded-full flex items-center justify-center mx-auto mb-6">
-                        <span class="text-3xl font-bold text-white">1</span>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4 text-primary-black" data-i18n="distributors.journey.step1.title">SOURCE</h3>
-                    <p class="text-dark-grey mb-4 leading-relaxed" data-i18n="distributors.journey.step1.description">
-                        Browse <a href="coupon-marketplace.html" class="text-primary-orange hover:underline">Marketplace</a> inventory with curated deals from verified merchants
-                    </p>
-                </div>
+            <!-- Who This Is For -->
+            <div class="mb-16">
+                <h3 class="text-xl font-bold text-primary-black mb-8 text-center" data-i18n="distributors.partner.whoFor">Who This Is For</h3>
+                <div class="grid md:grid-cols-3 gap-6">
 
-                <!-- Step 2: INTEGRATE -->
-                <div class="feature-card text-center">
-                    <div class="w-16 h-16 bg-primary-orange rounded-full flex items-center justify-center mx-auto mb-6">
-                        <span class="text-3xl font-bold text-white">2</span>
+                    <div class="text-center p-6 rounded-xl bg-white">
+                        <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background: #EEF2FF;">
+                            <svg class="w-8 h-8" style="color: #4F46E5;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-primary-black mb-2" data-i18n="distributors.partner.who.hr.title">HR &amp; Benefits Platforms</h4>
+                        <p class="text-sm text-dark-grey" data-i18n="distributors.partner.who.hr.desc">Add coupon distribution to your employee benefits ecosystem and generate new recurring revenue</p>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 text-primary-black" data-i18n="distributors.journey.step2.title">INTEGRATE</h3>
-                    <p class="text-dark-grey mb-4 leading-relaxed" data-i18n="distributors.journey.step2.description">
-                        Use <a href="for-developers.html" class="text-primary-orange hover:underline">Bridge API</a> with simple RESTful integration and comprehensive SDKs
-                    </p>
-                </div>
 
-                <!-- Step 3: DISTRIBUTE -->
-                <div class="feature-card text-center">
-                    <div class="w-16 h-16 bg-primary-orange rounded-full flex items-center justify-center mx-auto mb-6">
-                        <span class="text-3xl font-bold text-white">3</span>
+                    <div class="text-center p-6 rounded-xl bg-white">
+                        <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background: #EEF2FF;">
+                            <svg class="w-8 h-8" style="color: #4F46E5;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-primary-black mb-2" data-i18n="distributors.partner.who.nfc.title">NFC &amp; POS Partners</h4>
+                        <p class="text-sm text-dark-grey" data-i18n="distributors.partner.who.nfc.desc">Embed secure NFC coupon issuance and redemption into your terminal or payment infrastructure</p>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 text-primary-black" data-i18n="distributors.journey.step3.title">DISTRIBUTE</h3>
-                    <p class="text-dark-grey mb-4 leading-relaxed" data-i18n="distributors.journey.step3.description">
-                        Deploy through your channels with optional <a href="coupon-wallet.html" class="text-primary-orange hover:underline">white-label Wallet</a>
-                    </p>
+
+                    <div class="text-center p-6 rounded-xl bg-white">
+                        <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background: #EEF2FF;">
+                            <svg class="w-8 h-8" style="color: #4F46E5;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-primary-black mb-2" data-i18n="distributors.partner.who.local.title">Local Business Networks</h4>
+                        <p class="text-sm text-dark-grey" data-i18n="distributors.partner.who.local.desc">Aggregate local merchants and consumers into a branded coupon marketplace powered by Mezzofy</p>
+                    </div>
+
                 </div>
             </div>
+
+            <!-- How It Works -->
+            <div class="mb-16">
+                <h3 class="text-xl font-bold text-primary-black mb-8 text-center" data-i18n="distributors.partner.howWorks">How It Works</h3>
+                <div class="grid md:grid-cols-3 gap-8">
+
+                    <div class="text-center">
+                        <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: #4F46E5;">
+                            <span class="text-2xl font-bold text-white">1</span>
+                        </div>
+                        <div class="font-bold text-lg mb-2" style="color: #4F46E5;" data-i18n="distributors.partner.step1.label">LICENCE</div>
+                        <h4 class="font-semibold text-primary-black mb-2" data-i18n="distributors.partner.step1.title">Apply for Partner Licence</h4>
+                        <p class="text-sm text-dark-grey" data-i18n="distributors.partner.step1.desc">Complete KYB verification and sign the Mezzofy Distribution Partner Agreement. No upfront licence or setup fees.</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: #4F46E5;">
+                            <span class="text-2xl font-bold text-white">2</span>
+                        </div>
+                        <div class="font-bold text-lg mb-2" style="color: #4F46E5;" data-i18n="distributors.partner.step2.label">INTEGRATE</div>
+                        <h4 class="font-semibold text-primary-black mb-2" data-i18n="distributors.partner.step2.title">Connect via API</h4>
+                        <p class="text-sm text-dark-grey" data-i18n="distributors.partner.step2.desc">Use our RESTful Bridge API to integrate coupon issuance, distribution, and redemption into your existing platform</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: #4F46E5;">
+                            <span class="text-2xl font-bold text-white">3</span>
+                        </div>
+                        <div class="font-bold text-lg mb-2" style="color: #4F46E5;" data-i18n="distributors.partner.step3.label">EARN</div>
+                        <h4 class="font-semibold text-primary-black mb-2" data-i18n="distributors.partner.step3.title">Earn Revenue Share</h4>
+                        <p class="text-sm text-dark-grey" data-i18n="distributors.partner.step3.desc">Receive X% revenue share on every coupon transaction processed through your distribution network, paid monthly</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Partner Pricing Table -->
+            <div class="mb-12">
+                <h3 class="text-xl font-bold text-primary-black mb-6 text-center" data-i18n="distributors.partner.pricing.title">Partner Fee Structure</h3>
+                <div class="overflow-x-auto rounded-xl border border-gray-200 bg-white">
+                    <table class="pricing-table">
+                        <thead>
+                            <tr>
+                                <th data-i18n="distributors.partner.pricing.col1">Fee Type</th>
+                                <th data-i18n="distributors.partner.pricing.col2">Structure</th>
+                                <th data-i18n="distributors.partner.pricing.col3">Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-medium text-primary-black" data-i18n="distributors.partner.pricing.row1.type">Licence Fee</td>
+                                <td data-i18n="distributors.partner.pricing.row1.structure">Zero upfront</td>
+                                <td data-i18n="distributors.partner.pricing.row1.notes">No setup or monthly subscription fees</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium text-primary-black" data-i18n="distributors.partner.pricing.row2.type">Revenue Share</td>
+                                <td data-i18n="distributors.partner.pricing.row2.structure">X% of redemption fees</td>
+                                <td data-i18n="distributors.partner.pricing.row2.notes">Paid monthly, based on transaction volume</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium text-primary-black" data-i18n="distributors.partner.pricing.row3.type">API Access</td>
+                                <td data-i18n="distributors.partner.pricing.row3.structure">Free</td>
+                                <td data-i18n="distributors.partner.pricing.row3.notes">Unlimited API calls included in licence</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="text-sm text-medium-grey mt-3" data-i18n="distributors.partner.pricing.note">
+                    * Revenue share percentage is confirmed upon application approval. No monthly subscription fees.
+                </p>
+            </div>
+
+            <!-- What You Can Do -->
+            <div class="mb-12">
+                <h3 class="text-xl font-bold text-primary-black mb-8 text-center" data-i18n="distributors.partner.capabilities.title">What You Can Do as a Partner</h3>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+                    <div class="bg-white rounded-xl p-6 text-center">
+                        <div class="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3" style="background: #EEF2FF;">
+                            <svg class="w-6 h-6" style="color: #4F46E5;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-sm text-primary-black mb-1" data-i18n="distributors.partner.cap1.title">Issue Coupons via API</h4>
+                        <p class="text-xs text-dark-grey" data-i18n="distributors.partner.cap1.desc">Programmatically create and distribute coupons at scale across your network</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 text-center">
+                        <div class="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3" style="background: #EEF2FF;">
+                            <svg class="w-6 h-6" style="color: #4F46E5;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-sm text-primary-black mb-1" data-i18n="distributors.partner.cap2.title">Validate &amp; Redeem Securely</h4>
+                        <p class="text-xs text-dark-grey" data-i18n="distributors.partner.cap2.desc">HMAC-signed NFC coupons prevent fraud at every point of redemption</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 text-center">
+                        <div class="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3" style="background: #EEF2FF;">
+                            <svg class="w-6 h-6" style="color: #4F46E5;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-sm text-primary-black mb-1" data-i18n="distributors.partner.cap3.title">White-Label Your Brand</h4>
+                        <p class="text-xs text-dark-grey" data-i18n="distributors.partner.cap3.desc">Deploy entirely under your own brand with Mezzofy infrastructure powering it</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 text-center">
+                        <div class="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3" style="background: #EEF2FF;">
+                            <svg class="w-6 h-6" style="color: #4F46E5;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-sm text-primary-black mb-1" data-i18n="distributors.partner.cap4.title">Access Analytics</h4>
+                        <p class="text-xs text-dark-grey" data-i18n="distributors.partner.cap4.desc">Track performance, redemption rates, and earnings in real time</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Partner Add-Ons -->
+            <div class="mb-14 p-6 bg-white rounded-xl border border-gray-200">
+                <h4 class="font-bold text-primary-black mb-4" data-i18n="distributors.partner.addons.title">Optional Add-Ons</h4>
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <div class="flex items-start gap-3">
+                        <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: #4F46E5;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+                        <div>
+                            <span class="font-semibold text-sm" data-i18n="distributors.partner.addons.marketing.title">Marketing Module</span>
+                            <p class="text-xs text-dark-grey mt-0.5" data-i18n="distributors.partner.addons.marketing.desc">Campaign creation, push notifications, and A/B testing tools for your distribution network</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <svg class="w-5 h-5 flex-shrink-0 mt-0.5" style="color: #4F46E5;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+                        <div>
+                            <span class="font-semibold text-sm" data-i18n="distributors.partner.addons.nfc.title">NFC Hardware Support</span>
+                            <p class="text-xs text-dark-grey mt-0.5" data-i18n="distributors.partner.addons.nfc.desc">Physical NFC card provisioning and secure cryptographic key management</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Partner CTA -->
+            <div class="text-center">
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#contact" class="btn-indigo" data-i18n="distributors.partner.cta.primary">Apply for Partner Licence</a>
+                    <a href="for-developers.html" class="btn-indigo-outline" data-i18n="distributors.partner.cta.secondary">View Partner API Docs</a>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <!-- Distributor Segments Section -->
-    <section class="bg-light-grey">
-        <div class="section-container">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-bold text-primary-black mb-4" data-i18n="distributors.types.title">
-                    Built for Your Distribution Model
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- SECTION 4: SHARED BENEFITS                      -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section class="py-20 bg-gradient-to-br from-primary-black via-gray-900 to-primary-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4" data-i18n="distributors.benefits.title">
+                    Why Demand Partners Choose Mezzofy
                 </h2>
-                <p class="text-lg text-dark-grey max-w-3xl mx-auto" data-i18n="distributors.types.description">
-                    Whether you're a loyalty program, corporate benefits platform, or channel partner, Mezzofy powers your coupon distribution strategy
+                <p class="text-lg text-gray-300 max-w-3xl mx-auto" data-i18n="distributors.benefits.subtitle">
+                    Built on the Mezzofy Exchange Protocol — the global standard for secure, fraud-proof coupon infrastructure
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Loyalty Programs -->
-                <div class="feature-card border-2 border-primary-orange/20 hover:border-primary-orange transition-colors">
-                    <h3 class="text-xl font-bold text-primary-black mb-3" data-i18n="distributors.types.loyalty.title">Loyalty Programs</h3>
-                    <p class="text-sm text-medium-grey mb-4" data-i18n="distributors.types.loyalty.subtitle">Banks, telcos, airlines, and retail</p>
-                    <p class="text-dark-grey mb-6" data-i18n="distributors.types.loyalty.description">Enhance your loyalty program with high-value perks</p>
-                    <h4 class="text-lg font-semibold text-primary-orange mb-3" data-i18n="distributors.types.loyalty.bundle">→ Distribution Partner Bundle</h4>
-                    <ul class="space-y-2 text-sm text-dark-grey mb-6">
-                        <li class="flex items-start gap-2">
-                            <svg class="w-4 h-4 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>Marketplace</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-4 h-4 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>Bridge API</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-4 h-4 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>Wallet (White-label)</span>
-                        </li>
-                    </ul>
-                    <a href="#contact" class="text-primary-orange hover:underline text-sm font-semibold" data-i18n="distributors.types.loyalty.contactSales">Contact Sales →</a>
-                </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
-                <!-- Corporate HR / Employee Benefits -->
-                <div class="feature-card border-2 border-primary-orange/20 hover:border-primary-orange transition-colors">
-                    <h3 class="text-xl font-bold text-primary-black mb-3" data-i18n="distributors.types.corporate.title">Corporate Benefits</h3>
-                    <p class="text-sm text-medium-grey mb-4" data-i18n="distributors.types.corporate.subtitle">HR platforms and employee perks</p>
-                    <p class="text-dark-grey mb-6" data-i18n="distributors.types.corporate.description">Provide valuable employee discounts without fulfillment burden</p>
-                    <h4 class="text-lg font-semibold text-primary-orange mb-3" data-i18n="distributors.types.corporate.bundle">→ Distribution Partner Bundle</h4>
-                    <ul class="space-y-2 text-sm text-dark-grey mb-6">
-                        <li class="flex items-start gap-2">
-                            <svg class="w-4 h-4 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>Marketplace</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-4 h-4 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>Bridge API</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-4 h-4 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>Wallet (White-label)</span>
-                        </li>
-                    </ul>
-                    <a href="#contact" class="text-primary-orange hover:underline text-sm font-semibold" data-i18n="distributors.types.corporate.contactSales">Contact Sales →</a>
-                </div>
-
-                <!-- Channel Partners / Resellers -->
-                <div class="feature-card border-2 border-primary-orange/20 hover:border-primary-orange transition-colors">
-                    <h3 class="text-xl font-bold text-primary-black mb-3" data-i18n="distributors.types.channel.title">Channel Partners</h3>
-                    <p class="text-sm text-medium-grey mb-4" data-i18n="distributors.types.channel.subtitle">Resellers, aggregators, affiliates</p>
-                    <p class="text-dark-grey mb-6" data-i18n="distributors.types.channel.description">Expand product offerings with wholesale pricing models</p>
-                    <h4 class="text-lg font-semibold text-primary-orange mb-3" data-i18n="distributors.types.channel.bundle">→ Custom Partnership Terms</h4>
-                    <ul class="space-y-2 text-sm text-dark-grey mb-6">
-                        <li class="flex items-start gap-2">
-                            <svg class="w-4 h-4 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>Marketplace</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-4 h-4 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>Bridge API</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-4 h-4 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>Volume Pricing</span>
-                        </li>
-                    </ul>
-                    <a href="#contact" class="text-primary-orange hover:underline text-sm font-semibold" data-i18n="distributors.types.channel.contactSales">Contact Sales →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Products for Distributors -->
-    <section class="bg-white">
-        <div class="section-container">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-bold text-primary-black mb-4" data-i18n="distributors.products.title">
-                    Products Powering Your Distribution
-                </h2>
-                <p class="text-lg text-dark-grey max-w-3xl mx-auto" data-i18n="distributors.products.description">
-                    Core Mezzofy products designed specifically for distributors and channel partners
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Coupon Marketplace -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                <div class="rounded-xl p-6 text-center" style="background: rgba(255,255,255,0.08);">
+                    <div class="w-14 h-14 rounded-xl flex items-center justify-center mx-auto mb-4" style="background: rgba(255,107,53,0.15);">
+                        <svg class="w-7 h-7 text-primary-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="distributors.products.marketplace.title">Coupon Marketplace</h3>
-                    <p class="text-dark-grey text-sm mb-4" data-i18n="distributors.products.marketplace.description">Verified, high-quality coupon inventory from merchants worldwide</p>
-                    <a href="coupon-marketplace.html" class="text-primary-orange hover:underline text-sm font-semibold" data-i18n="distributors.products.marketplace.link">Learn More →</a>
+                    <h3 class="text-lg font-bold text-white mb-2" data-i18n="distributors.benefits.fraud.title">Fraud-Proof Inventory</h3>
+                    <p class="text-sm text-gray-300" data-i18n="distributors.benefits.fraud.desc">Every coupon is HMAC-signed and protocol-validated. Zero counterfeit risk for your distribution network.</p>
                 </div>
 
-                <!-- Bridge API -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="rounded-xl p-6 text-center" style="background: rgba(255,255,255,0.08);">
+                    <div class="w-14 h-14 rounded-xl flex items-center justify-center mx-auto mb-4" style="background: rgba(255,107,53,0.15);">
+                        <svg class="w-7 h-7 text-primary-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="distributors.products.bridgeApi.title">Bridge API</h3>
-                    <p class="text-dark-grey text-sm mb-4" data-i18n="distributors.products.bridgeApi.description">RESTful API with comprehensive SDKs for seamless integration</p>
-                    <a href="for-developers.html" class="text-primary-orange hover:underline text-sm font-semibold" data-i18n="distributors.products.bridgeApi.link">View Documentation →</a>
+                    <h3 class="text-lg font-bold text-white mb-2" data-i18n="distributors.benefits.api.title">Free API Access</h3>
+                    <p class="text-sm text-gray-300" data-i18n="distributors.benefits.api.desc">Full Bridge API access included for all partners. No per-call fees, no API key costs, no rate limits on standard tiers.</p>
                 </div>
 
-                <!-- Coupon Wallet (White-label) -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
+                <div class="rounded-xl p-6 text-center" style="background: rgba(255,255,255,0.08);">
+                    <div class="w-14 h-14 rounded-xl flex items-center justify-center mx-auto mb-4" style="background: rgba(255,107,53,0.15);">
+                        <svg class="w-7 h-7 text-primary-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="distributors.products.wallet.title">Coupon Wallet <span class="text-xs font-normal text-medium-grey">(White-label)</span></h3>
-                    <p class="text-dark-grey text-sm mb-4" data-i18n="distributors.products.wallet.description">Branded coupon collection experience with 40%+ redemption increase</p>
-                    <a href="coupon-wallet.html" class="text-primary-orange hover:underline text-sm font-semibold" data-i18n="distributors.products.wallet.link">Learn More →</a>
+                    <h3 class="text-lg font-bold text-white mb-2" data-i18n="distributors.benefits.global.title">Global Standards</h3>
+                    <p class="text-sm text-gray-300" data-i18n="distributors.benefits.global.desc">ISO-compliant coupon formats. Operate across borders with standardised inventory that works anywhere in the world.</p>
                 </div>
+
+                <div class="rounded-xl p-6 text-center" style="background: rgba(255,255,255,0.08);">
+                    <div class="w-14 h-14 rounded-xl flex items-center justify-center mx-auto mb-4" style="background: rgba(255,107,53,0.15);">
+                        <svg class="w-7 h-7 text-primary-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2" data-i18n="distributors.benefits.custody.title">Mezzofy Coupon Custody</h3>
+                    <p class="text-sm text-gray-300" data-i18n="distributors.benefits.custody.desc">Mezzofy acts as trusted custodian for all inventory. Merchants and buyers are protected by protocol-layer escrow.</p>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Distributor Benefits -->
-    <section class="bg-light-grey">
-        <div class="section-container">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black mb-6" data-i18n="distributors.benefits.title">
-                    Why Distributors Choose Mezzofy
-                </h2>
-                <p class="text-lg sm:text-xl text-dark-grey max-w-3xl mx-auto" data-i18n="distributors.benefits.description">
-                    The benefits that make the Mezzofy Exchange Protocol the trusted choice for coupon distribution
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- Risk-Free Integration -->
-                <div class="feature-card">
-                    <div class="flex items-start gap-4">
-                        <div>
-                            <h3 class="text-2xl font-bold text-primary-black mb-3" data-i18n="distributors.benefits.riskFree.title">Risk-Free Integration</h3>
-                            <p class="text-dark-grey mb-4" data-i18n="distributors.benefits.riskFree.description">
-                                No upfront inventory investment. Access marketplace deals without purchasing or holding inventory. Pay only for what your users redeem.
-                            </p>
-                            <ul class="space-y-2 text-dark-grey">
-                                <li class="flex items-start gap-2">
-                                    <svg class="w-5 h-5 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                    <span data-i18n="distributors.benefits.riskFree.point1">Zero inventory holding costs</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <svg class="w-5 h-5 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                    <span data-i18n="distributors.benefits.riskFree.point2">No financial liability for unused deals</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <svg class="w-5 h-5 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                    <span data-i18n="distributors.benefits.riskFree.point3">Flexible volume scaling</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Cash Flow Protection -->
-                <div class="feature-card">
-                    <div class="flex items-start gap-4">
-                        <div>
-                            <h3 class="text-2xl font-bold text-primary-black mb-3" data-i18n="distributors.benefits.cashFlow.title">Cash Flow Protection</h3>
-                            <p class="text-dark-grey mb-4" data-i18n="distributors.benefits.cashFlow.description">
-                                Transparent pricing models with predictable costs. Settlement terms designed for distributor cash flow optimization.
-                            </p>
-                            <ul class="space-y-2 text-dark-grey">
-                                <li class="flex items-start gap-2">
-                                    <svg class="w-5 h-5 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                    <span data-i18n="distributors.benefits.cashFlow.point1">Wholesale pricing for volume partners</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <svg class="w-5 h-5 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                    <span data-i18n="distributors.benefits.cashFlow.point2">Flexible settlement cycles</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <svg class="w-5 h-5 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                    <span data-i18n="distributors.benefits.cashFlow.point3">No surprise fees or hidden costs</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Standardized Quality -->
-                <div class="feature-card">
-                    <div class="flex items-start gap-4">
-                        <div>
-                            <h3 class="text-2xl font-bold text-primary-black mb-3" data-i18n="distributors.benefits.standardized.title">Standardized Quality</h3>
-                            <p class="text-dark-grey mb-4" data-i18n="distributors.benefits.standardized.description">
-                                Every coupon on the marketplace meets strict quality standards. Verified merchants, clear terms, and fraud-proof tokenization ensure reliability.
-                            </p>
-                            <ul class="space-y-2 text-dark-grey">
-                                <li class="flex items-start gap-2">
-                                    <svg class="w-5 h-5 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                    <span data-i18n="distributors.benefits.standardized.point1">Merchant verification and vetting</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <svg class="w-5 h-5 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                    <span data-i18n="distributors.benefits.standardized.point2">Machine-readable coupon standards</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <svg class="w-5 h-5 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                    <span data-i18n="distributors.benefits.standardized.point3">Automated fraud detection</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Targeted Distribution -->
-                <div class="feature-card">
-                    <div class="flex items-start gap-4">
-                        <div>
-                            <h3 class="text-2xl font-bold text-primary-black mb-3" data-i18n="distributors.benefits.targeted.title">Targeted Distribution</h3>
-                            <p class="text-dark-grey mb-4" data-i18n="distributors.benefits.targeted.description">
-                                Filter and curate inventory to match your audience demographics, geographic markets, and strategic partnerships.
-                            </p>
-                            <ul class="space-y-2 text-dark-grey">
-                                <li class="flex items-start gap-2">
-                                    <svg class="w-5 h-5 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                    <span data-i18n="distributors.benefits.targeted.point1">Geographic targeting capabilities</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <svg class="w-5 h-5 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                    <span data-i18n="distributors.benefits.targeted.point2">Category and vertical filtering</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <svg class="w-5 h-5 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                    <span data-i18n="distributors.benefits.targeted.point3">Value tier segmentation</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="bg-gradient-to-r from-primary-orange to-orange-600 text-white">
-        <div class="section-container text-center">
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6" data-i18n="distributors.footerCta.title">
-                Ready to Access Premium Coupon Inventory?
-            </h2>
-            <p class="text-xl mb-8 max-w-3xl mx-auto" data-i18n="distributors.footerCta.description">
-                Join leading loyalty programs, corporate benefits platforms, and channel partners distributing verified deals through the Mezzofy Exchange Protocol
-            </p>
-            <a href="#contact" class="bg-white text-primary-orange px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors inline-block" data-i18n="distributors.footerCta.button">
-                Access Marketplace Inventory
-            </a>
-        </div>
-    </section>
-
-    <!-- Contact Form Section -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- SECTION 5: CONTACT FORM                         -->
+    <!-- ═══════════════════════════════════════════════ -->
     <section id="contact" class="bg-white">
         <div class="section-container">
             <div class="max-w-2xl mx-auto">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl sm:text-4xl font-bold text-primary-black mb-4" data-i18n="distributors.contact.heading">Get Started Today</h2>
-                    <p class="text-lg text-dark-grey" data-i18n="distributors.contact.description">
-                        Connect with our distribution partnerships team to discuss your integration needs
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary-black mb-4" data-i18n="distributors.contact.title">Get Started Today</h2>
+                    <p class="text-lg text-dark-grey" data-i18n="distributors.contact.subtitle">
+                        Tell us about your business and we'll get back to you within 1 business day.
                     </p>
                 </div>
+
                 <form class="space-y-6">
                     <div class="grid md:grid-cols-2 gap-6">
                         <div>
@@ -719,21 +1002,20 @@
                         <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary-orange" required>
                     </div>
                     <div>
-                        <label class="block text-dark-grey font-medium mb-2" data-i18n="distributors.contact.distributionModel">Distribution Model</label>
+                        <label class="block text-dark-grey font-medium mb-2" data-i18n="distributors.contact.role">I am a:</label>
                         <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary-orange" required>
-                            <option value="" data-i18n="distributors.contact.selectModel">Select your distribution model</option>
-                            <option value="loyalty" data-i18n="distributors.contact.modelLoyalty">Loyalty Program (Bank, Telco, Airline, Retail)</option>
-                            <option value="corporate" data-i18n="distributors.contact.modelCorporate">Corporate HR / Employee Benefits</option>
-                            <option value="channel" data-i18n="distributors.contact.modelChannel">Channel Partner / Reseller</option>
-                            <option value="other" data-i18n="distributors.contact.modelOther">Other</option>
+                            <option value="" data-i18n="distributors.contact.roleSelect">Select your role</option>
+                            <option value="buyer" data-i18n="distributors.contact.roleInventoryBuyer">Inventory Buyer</option>
+                            <option value="partner" data-i18n="distributors.contact.roleDistributionPartner">Distribution Partner</option>
+                            <option value="unsure" data-i18n="distributors.contact.roleNotSure">Not Sure Yet</option>
                         </select>
                     </div>
                     <div>
                         <label class="block text-dark-grey font-medium mb-2" data-i18n="distributors.contact.message">Message</label>
-                        <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary-orange" data-i18n-placeholder="distributors.contact.messagePlaceholder" placeholder="Tell us about your distribution needs..."></textarea>
+                        <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary-orange" data-i18n-placeholder="distributors.contact.messagePlaceholder" placeholder="Tell us about your business and distribution needs..."></textarea>
                     </div>
                     <button type="submit" class="w-full btn-primary text-lg py-4" data-i18n="distributors.contact.submit">
-                        Request Marketplace Access
+                        Request Access
                     </button>
                 </form>
             </div>
@@ -791,14 +1073,14 @@
                     <ul class="space-y-2 text-gray-300">
                         <li><a href="about.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.about">About Us</a></li>
                         <li><a href="contact.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.contact">Contact Us</a></li>
-                        <li><a href="news-press.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.news">News & Press</a></li>
+                        <li><a href="news-press.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.news">News &amp; Press</a></li>
                         <li><a href="investors.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.investors">Investors</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="border-t border-gray-700 pt-8 text-center text-sm">
-                <p data-i18n="common.footer.copyright">&copy; 2024 Mezzofy. All rights reserved.</p>
+                <p data-i18n="common.footer.copyright">&copy; 2026 Mezzofy. All rights reserved.</p>
             </div>
         </div>
     </footer>
