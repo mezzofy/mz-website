@@ -119,7 +119,8 @@
       "consumer": {
         "title": "消費者體驗",
         "description": "面向客戶的優惠券收集",
-        "item1": "多平台訪問"
+        "item1": "多平台訪問",
+        "item2": "唯一憑證序號"
       },
       "strategy": {
         "title": "策略與賦能",

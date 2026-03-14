@@ -133,7 +133,8 @@
       "consumer": {
         "title": "Consumer Experience",
         "description": "Customer-facing coupon collection",
-        "item1": "Multi-platform access"
+        "item1": "Multi-platform access",
+        "item2": "Unique voucher identity"
       },
       "strategy": {
         "title": "Strategy & Enablement",
