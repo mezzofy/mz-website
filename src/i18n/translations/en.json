@@ -190,10 +190,11 @@
       "benefit4": {
         "title": "Future-Proof Asset",
         "description": "Your promotions are tokenized, opening up possibilities for secondary markets and new financial instruments (RWA Linkage)."
-      }
+      },
+      "cta": "Learn More"
     },
     "distributors": {
-      "title": "For Distributors & Partners: Access the World's Most Secure, High-Intent Coupon Inventory",
+      "title": "For Distributors: Access the World's Most Secure, High-Intent Coupon Inventory",
       "description": "Enhance your loyalty program, banking app, or corporate HR portal with real-time, verified deals without the financial risk of inventory purchasing.",
       "benefit1": {
         "title": "Risk-Free Integration",
@@ -210,7 +211,8 @@
       "benefit4": {
         "title": "Targeted Distribution",
         "description": "Consume inventory tailored for your channels: Loyalty & HR for internal benefits, and the AI Agent API for programmatic consumption."
-      }
+      },
+      "cta": "Learn More"
     },
     "tokenization": {
       "title": "The Exchange Core: Where Commerce Meets Security",
