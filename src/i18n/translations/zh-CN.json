@@ -16,6 +16,7 @@
       "nfc": "优惠券 NFC",
       "marketing": "优惠券营销",
       "wallet": "优惠券钱包",
+      "serial": "优惠券序列号",
       "apiDoc": "API 文档",
       "apiUseCase": "API 使用案例",
       "playbook": "优惠券指南",
@@ -41,7 +42,8 @@
         "marketplace": "市场",
         "nfc": "NFC",
         "marketing": "营销",
-        "wallet": "钱包"
+        "wallet": "钱包",
+        "serial": "序列号"
       },
       "resources": {
         "title": "资源",
@@ -2115,6 +2117,133 @@
     "footerCta": {
       "title": "准备好推出您的数字钱包了吗？",
       "subtitle": "加入领先品牌，为您的客户提供无缝的优惠券钱包体验",
+      "getStarted": "立即开始",
+      "requestDemo": "申请演示"
+    }
+  },
+  "serial": {
+    "banner": {
+      "protocol": "Mezzofy 交易所协议的一部分",
+      "viewEcosystem": "查看生态系统"
+    },
+    "hero": {
+      "badge": "优惠券序列号",
+      "title": "您的唯一凭证序列号，即时兑换",
+      "subtitle": "Mezzofy 平台上的每张优惠券都有唯一的防篡改序列号。客户可在任何合作商户出示序列号进行兑换 — 支持 <span class=\"text-primary-orange font-semibold\">Apple 钱包、Google Pay、三星钱包</span>及任何网页浏览器。",
+      "getStarted": "立即开始",
+      "exploreFeatures": "探索功能",
+      "imageAlt": "优惠券序列号凭证显示"
+    },
+    "platforms": {
+      "title": "随处保存与出示",
+      "subtitle": "客户可将唯一序列号保存至偏好的钱包，或通过安全网页链接访问 — 无需特定应用。",
+      "appleWallet": {
+        "title": "Apple 钱包",
+        "description": "将优惠券序列号保存至 Apple 钱包，结账时一键出示。离线可用，实时显示到期状态。"
+      },
+      "googlePay": {
+        "title": "Google Pay",
+        "description": "添加至 Google Pay，在任何 Android 设备上即时访问。在商户销售点轻触即可出示序列号。"
+      },
+      "samsungWallet": {
+        "title": "三星钱包",
+        "description": "兼容三星 Galaxy 设备的三星钱包。以会员卡样式显示，完整呈现商户品牌。"
+      },
+      "webBrowser": {
+        "title": "网页浏览器 / 二维码链接",
+        "description": "无需应用。通过安全网页链接或二维码，在任何浏览器、任何设备上访问序列号。"
+      }
+    },
+    "features": {
+      "title": "数字凭证所需的一切",
+      "voucherIdentity": {
+        "title": "凭证身份",
+        "item1": "全球唯一的 16 位字母数字序列号",
+        "item2": "通过 Mezzofy 协议进行防篡改加密签名",
+        "item3": "内含二维码及条码表示",
+        "item4": "实时有效性状态 — 有效、已兑换、已过期、已作废",
+        "item5": "支持多币种及多面额"
+      },
+      "redemptionExperience": {
+        "title": "兑换体验",
+        "item1": "显示条款及细则、有效期及兑换地点",
+        "item2": "多语言内容 — 英文、繁体及简体中文",
+        "item3": "一键保存至 Apple 钱包、Google Pay 或三星钱包",
+        "item4": "转让给其他客户，并保留完整审计追踪",
+        "item5": "支持分额兑换的部分兑换功能"
+      },
+      "integrationOwnership": {
+        "title": "集成与所有权",
+        "item1": "若所有权尚未指定，可保存至优惠券钱包",
+        "item2": "购买或分发时 API 触发序列号生成",
+        "item3": "兑换及转让事件的 Webhook 回调",
+        "item4": "带有您品牌的白标序列号显示页面",
+        "item5": "兼容现有 POS 及电商系统"
+      }
+    },
+    "howItWorks": {
+      "title": "优惠券序列号如何运作",
+      "step1": {
+        "title": "收取您的序列号",
+        "description": "购买或分发后，客户通过电邮、短信或直接在 Mezzofy 优惠券钱包中收到唯一序列号。"
+      },
+      "step2": {
+        "title": "保存或分享",
+        "description": "一键将序列号保存至 Apple 钱包、Google Pay 或三星钱包 — 或作为礼物转让给他人。"
+      },
+      "step3": {
+        "title": "随处兑换",
+        "description": "在任何合作商户出示序列号。即时验证 — 无需纸张，无需应用。"
+      }
+    },
+    "integrationOptions": {
+      "title": "符合您品牌的集成方案",
+      "subtitle": "无论您需要完整品牌化的序列号显示页面，还是以编程方式生成序列号，Mezzofy 都能满足您的需求。",
+      "whiteLabelPage": {
+        "title": "白标序列号页面",
+        "description": "在您的应用或网站中嵌入完整品牌化的序列号显示页面。客户看到的是您的品牌 — 由 Mezzofy 提供技术支持。",
+        "feature1": "所有序列号显示 URL 的自定义域名",
+        "feature2": "完整品牌色彩及标志控制",
+        "feature3": "以任何支持语言显示本地化条款及细则",
+        "feature4": "含正常运行时间 SLA 的托管服务"
+      },
+      "serialApi": {
+        "title": "序列号 API",
+        "description": "从您自己的平台或商户系统以编程方式生成、验证及兑换序列号。",
+        "feature1": "用于序列号生成及实时查询的 REST API",
+        "feature2": "实时兑换验证端点",
+        "feature3": "兑换及转让操作的 Webhook 事件",
+        "feature4": "提供 iOS、Android 及网页 SDK"
+      }
+    },
+    "transferFeature": {
+      "title": "赠送凭证礼物",
+      "description": "优惠券序列号支持点对点转让。客户可将凭证作为礼物赠送或转让给他人。转让过程完全可追踪 — 序列号在新持有人名下仍然有效，非常适合礼品卡、特别优惠及忠诚度奖励。"
+    },
+    "ecosystem": {
+      "title": "与 Mezzofy 生态系统无缝集成",
+      "subtitle": "优惠券序列号与其他 Mezzofy 产品集成，打造完整的凭证生命周期",
+      "wallet": {
+        "title": "+ 优惠券钱包",
+        "description": "将序列号直接保存至优惠券钱包，统一管理所有凭证"
+      },
+      "management": {
+        "title": "+ 优惠券管理",
+        "description": "从中央控制台发行及管理数千个序列号，实现完整生命周期控制"
+      },
+      "nfc": {
+        "title": "+ 优惠券 NFC",
+        "description": "在实体包装中嵌入序列号关联的 NFC 标签，实现点触激活体验"
+      }
+    },
+    "bundle": {
+      "title": "💡 推荐套餐：客户旅程套餐",
+      "description": "将序列号与钱包及管理系统结合，打造完整的端到端优惠券生命周期解决方案。",
+      "button": "联系销售以获取套餐定价"
+    },
+    "footerCta": {
+      "title": "准备好发行您的第一张序列号凭证了吗？",
+      "subtitle": "加入信任 Mezzofy 大规模管理数字凭证的商户和分销商",
       "getStarted": "立即开始",
       "requestDemo": "申请演示"
     }
