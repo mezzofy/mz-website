@@ -2095,12 +2095,15 @@
       "title": "与 Mezzofy 生态系统无缝集成",
       "subtitle": "优惠券钱包与其他 Mezzofy 产品集成，提供完整解决方案",
       "nfc": {
+        "title": "+ 优惠券 NFC",
         "description": "在实体零售中提供点触入钱包功能"
       },
       "marketing": {
+        "title": "+ 优惠券营销",
         "description": "购买的代金券自动添加到钱包"
       },
       "marketplace": {
+        "title": "+ 优惠券市场",
         "description": "从钱包界面访问市场库存"
       }
     },

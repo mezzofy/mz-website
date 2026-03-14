@@ -2150,12 +2150,15 @@
       "title": "Works Seamlessly with the Mezzofy Ecosystem",
       "subtitle": "Coupon Wallet integrates with other Mezzofy products to create a complete solution",
       "nfc": {
+        "title": "+ Coupon NFC",
         "description": "Tap-to-wallet functionality for physical retail"
       },
       "marketing": {
+        "title": "+ Coupon Marketing",
         "description": "Purchased vouchers automatically added to wallet"
       },
       "marketplace": {
+        "title": "+ Coupon Marketplace",
         "description": "Access marketplace inventory from wallet interface"
       }
     },

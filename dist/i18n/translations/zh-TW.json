@@ -1933,12 +1933,15 @@
       "title": "與 Mezzofy 生態系統無縫整合",
       "subtitle": "優惠券錢包與其他 Mezzofy 產品整合，提供完整解決方案",
       "nfc": {
+        "title": "+ 優惠券 NFC",
         "description": "在實體零售中提供點觸入錢包功能"
       },
       "marketing": {
+        "title": "+ 優惠券行銷",
         "description": "購買的代金券自動添加到錢包"
       },
       "marketplace": {
+        "title": "+ 優惠券市集",
         "description": "從錢包介面訪問市場庫存"
       }
     },
