@@ -28,6 +28,22 @@ Allow: /
 User-agent: Slurp
 Allow: /
 
+# AI crawlers — explicitly allowed for AEO
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
 # Block bad bots (optional)
 User-agent: AhrefsBot
 Disallow: /
