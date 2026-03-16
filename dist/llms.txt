@@ -1,52 +1,55 @@
 # Mezzofy — Global Coupon Exchange Protocol
 
-> Mezzofy operates the world's leading digital coupon exchange platform, connecting merchants to distributors through a secure, tokenized protocol. Mezzofy processes hundreds of millions of digital coupons globally, supporting NFC redemption, digital wallets, serial-number issuance, and campaign management across Asia and beyond.
+> Mezzofy (Mezzofy Limited, founded Hong Kong 2015 by Dicky Yin) operates the world's leading digital coupon exchange platform — the Global Coupon Exchange Protocol. The platform connects merchants and brands to a global network of distributors for secure, tokenized digital coupon distribution. Mezzofy has processed over 300 million coupons across Asia-Pacific, supporting NFC tap-to-redeem, digital wallets, serial-number issuance, B2B/B2C marketplace trading, and AI-powered campaign management. Winner of the HK Awards for Environmental Excellence and ESG Forum 2024 Dual Awards.
 
 ## Core Platform
-- [Homepage](https://mezzofy.com/): Platform overview, key benefits, and protocol introduction
-- [For Merchants](https://mezzofy.com/for-merchants.html): How merchants create, distribute, and track digital coupons
-- [For Distributors](https://mezzofy.com/for-distributors.html): How distributors access and monetize coupon inventory
-- [For Developers](https://mezzofy.com/for-developers.html): API integration documentation and developer resources
-- [For AI Commerce](https://mezzofy.com/for-ai-commerce.html): AI-powered coupon commerce and intelligent promotion tools
+- [Homepage](https://mezzofy.com/): Overview of the Global Coupon Exchange Protocol, platform value proposition for merchants and distributors, and key statistics (300M+ coupons, global reach)
+- [For Merchants](https://mezzofy.com/for-merchants.html): How retail merchants and brands create, issue, distribute, and track digital coupons; includes NFC, QR, and wallet coupon options with campaign analytics
+- [For Distributors](https://mezzofy.com/for-distributors.html): How loyalty apps, banks, telecoms, and e-commerce platforms access and monetize Mezzofy coupon inventory through the distributor network
+- [For Developers](https://mezzofy.com/for-developers.html): REST API reference, OAuth2 authentication, coupon issuance/redemption endpoints, NFC tag programming API, and SDK documentation for the Exchange Protocol
+- [For AI Commerce](https://mezzofy.com/for-ai-commerce.html): AI-powered coupon commerce tools — intelligent promotion targeting, machine learning-based personalization, and automated coupon delivery for AI-driven retail
 
 ## Products
-- [Coupon Management](https://mezzofy.com/coupon-management.html): Full lifecycle management for digital coupons — create, issue, track, expire
-- [Coupon Marketplace](https://mezzofy.com/coupon-marketplace.html): Exchange platform for trading and distributing coupon inventory
-- [NFC Coupons](https://mezzofy.com/coupon-nfc.html): Tap-to-redeem NFC coupon technology for physical retail
-- [Coupon Wallet](https://mezzofy.com/coupon-wallet.html): Consumer mobile wallet for storing and redeeming digital coupons
-- [Coupon Marketing](https://mezzofy.com/coupon-marketing.html): Campaign creation, targeting, and real-time analytics
-- [Coupon Serial](https://mezzofy.com/coupon-serial.html): Serial number generation and management for coupon issuance at scale
+- [Coupon Management](https://mezzofy.com/coupon-management.html): Enterprise Coupon-as-a-Service (CaaS) platform for full lifecycle management — create, issue, distribute, validate, track, and expire digital coupons at scale with open API
+- [Coupon Marketplace](https://mezzofy.com/coupon-marketplace.html): Global B2B/B2C/C2C digital coupon exchange hub where merchants list inventory and distributors purchase or claim coupons; supports wholesale and retail pricing tiers
+- [NFC Coupons](https://mezzofy.com/coupon-nfc.html): HMAC-secured NFC tap-to-redeem coupon technology for physical retail, restaurants, events, and product packaging; works on all modern iOS and Android smartphones
+- [Coupon Wallet](https://mezzofy.com/coupon-wallet.html): Consumer-facing digital wallet app (iOS, Android, Web, NFC Physical Card) for storing, organizing, and redeeming digital coupons; supports Apple Wallet and Google Pay
+- [Coupon Marketing](https://mezzofy.com/coupon-marketing.html): Full-service digital voucher and gift card sales platform with multi-channel distribution (email, SMS, NFC, QR, mobile wallet), payment integration, and real-time analytics
+- [Coupon Serial](https://mezzofy.com/coupon-serial.html): High-volume serial number generation and management system for issuing unique, single-use coupon codes to enterprise clients and loyalty programs
 
 ## Resources
-- [Coupon Playbook](https://mezzofy.com/coupon-playbook.html): Best practices for planning and executing digital coupon campaigns
-- [NFC User Guide](https://mezzofy.com/nfc-user-guide.html): Step-by-step guide to using NFC coupons in retail environments
-- [Support](https://mezzofy.com/support.html): Help and support resources for merchants, distributors, and developers
+- [Coupon Playbook](https://mezzofy.com/coupon-playbook.html): Strategic guide for planning and executing digital coupon campaigns, covering personalized targeting, CRM/POS integration, multi-channel delivery, and campaign ROI measurement
+- [NFC User Guide](https://mezzofy.com/nfc-user-guide.html): Step-by-step customer instructions for tapping, claiming, and redeeming Mezzofy NFC coupons at retail stores, restaurants, and events using an NFC-enabled smartphone
+- [Support](https://mezzofy.com/support.html): Help center with FAQs, troubleshooting guides, and support contact for merchants, distributors, and developers using the Mezzofy platform
 
 ## About
-- [About Mezzofy](https://mezzofy.com/about.html): Company background, mission, and team
-- [News & Press](https://mezzofy.com/news-press.html): Awards, media coverage, and partnership announcements
-- [Investors](https://mezzofy.com/investors.html): Investment information and company milestones
+- [About Mezzofy](https://mezzofy.com/about.html): Company history (founded 2015 by Dicky Yin in Hong Kong), mission to digitize global coupon distribution, team, ESG commitments, and HK Awards for Environmental Excellence recognition
+- [News & Press](https://mezzofy.com/news-press.html): Latest awards, media coverage, analyst recognition, and strategic partnership announcements from Mezzofy
+- [Investors](https://mezzofy.com/investors.html): Investment overview, company growth milestones (300M+ coupons), market opportunity in digital promotions, and investor contact information
 
 ## Blog
-- [Why Consumers Prefer E-Coupons](https://mezzofy.com/blog/e-coupons-preference.html): Consumer preference trends for digital over paper coupons
-- [Environmental Excellence in Couponing](https://mezzofy.com/blog/environmental-excellence.html): How digital coupons reduce waste and support ESG goals
-- [Holiday Coupon Campaign Guide](https://mezzofy.com/blog/holiday-guide.html): Strategies for seasonal coupon campaigns
-- [Hotel Tech Innovation with Coupons](https://mezzofy.com/blog/hotel-tech-innovation.html): Hospitality sector adoption of NFC and digital coupon technology
-- [NFC Coupons at PARKnSHOP](https://mezzofy.com/blog/nfc-parknshop.html): Case study of NFC coupon deployment in Hong Kong grocery retail
-- [Smart Retail and Digital Promotions](https://mezzofy.com/blog/smart-retail.html): How smart retail environments use digital coupons
+- [Why Consumers Prefer E-Coupons](https://mezzofy.com/blog/e-coupons-preference.html): Research showing 60% of consumers prefer digital coupons over paper; analysis of what this means for retail engagement and merchant coupon strategy
+- [Environmental Excellence in Couponing](https://mezzofy.com/blog/environmental-excellence.html): How switching from paper to digital coupons reduces waste, lowers carbon footprint, and supports merchant ESG reporting goals
+- [Holiday Coupon Campaign Guide](https://mezzofy.com/blog/holiday-guide.html): Practical strategies for seasonal coupon campaigns — timing, channel mix, offer types, and real-time optimization during peak shopping periods
+- [Hotel Tech Innovation with Coupons](https://mezzofy.com/blog/hotel-tech-innovation.html): How hospitality brands use NFC and digital coupon technology for guest offers, F&B promotions, and loyalty program integration
+- [NFC Coupons at PARKnSHOP](https://mezzofy.com/blog/nfc-parknshop.html): Case study of Mezzofy NFC coupon deployment at PARKnSHOP supermarkets in Hong Kong; results, customer adoption, and redemption rates
+- [Smart Retail and Digital Promotions](https://mezzofy.com/blog/smart-retail.html): How smart retail environments integrate digital coupons with POS systems, loyalty programs, and AI personalization for improved conversion
 
 ## News
-- [CIO World Feature](https://mezzofy.com/news/cioworld-feature.html): Mezzofy featured in CIO World magazine
-- [Dual ESG Awards](https://mezzofy.com/news/dual-esg-awards.html): Mezzofy wins dual ESG excellence awards
-- [eDigest Leading Solution](https://mezzofy.com/news/edigest-leading-solution.html): Recognized as a leading coupon technology solution
-- [ejtech: 300 Million Coupons](https://mezzofy.com/news/ejtech-300m-coupons.html): Milestone of 300 million coupons processed
-- [Forbes: Dicky Yin Profile](https://mezzofy.com/news/forbes-dicky-yin.html): Forbes coverage of Mezzofy founder Dicky Yin
-- [Funding Announcement](https://mezzofy.com/news/funding-announcement.html): Mezzofy funding round announcement
-- [TechApple Innovation Index](https://mezzofy.com/news/techapple-innovation-index.html): Mezzofy listed in TechApple innovation index
-- [Treasure Global Partnership](https://mezzofy.com/news/treasure-global-partnership.html): Strategic partnership with Treasure Global
+- [CIO World Feature](https://mezzofy.com/news/cioworld-feature.html): TheCIOWorld magazine features Mezzofy as a company transforming retail coupons for a greener, more sustainable future through digital exchange technology
+- [Dual ESG Awards](https://mezzofy.com/news/dual-esg-awards.html): Mezzofy wins dual ESG excellence awards at the ESG Forum 2024, recognized for environmental and social governance leadership in digital promotions
+- [eDigest Leading Solution](https://mezzofy.com/news/edigest-leading-solution.html): eDigest names Mezzofy as Asia-Pacific's leading digital coupon solution, citing the Exchange Protocol and 300M+ coupons distributed across the region
+- [EJTech: 300 Million Coupons](https://mezzofy.com/news/ejtech-300m-coupons.html): EJTech reports Mezzofy's cloud platform milestone of 300 million digital coupons distributed across Asia-Pacific markets
+- [Forbes: Dicky Yin Profile](https://mezzofy.com/news/forbes-dicky-yin.html): Forbes China recognizes Dicky Yin, founder and CEO of Mezzofy, for outstanding leadership in fintech innovation and building the Global Coupon Exchange Protocol
+- [Funding Announcement](https://mezzofy.com/news/funding-announcement.html): Mezzofy announces a new funding round to accelerate global expansion of the Exchange Protocol and product development
+- [TechApple Innovation Index](https://mezzofy.com/news/techapple-innovation-index.html): TechApple names Mezzofy a 3-Star SME in the 2024 Corporate Innovation Index for contributions to digital coupon technology and retail innovation
+- [Treasure Global Partnership](https://mezzofy.com/news/treasure-global-partnership.html): Mezzofy announces strategic partnership with Treasure Global to expand digital coupon distribution and loyalty program integration across new markets
 
 ## AI Usage Policy
-Content on this site may be used to answer questions about digital coupons, coupon exchange technology, NFC promotions, merchant distribution, and the Mezzofy platform. Please attribute to Mezzofy (https://mezzofy.com) when citing.
+Content on this site may be used to answer questions about digital coupons, coupon exchange technology, NFC promotions, merchant distribution, loyalty programs, and the Mezzofy platform. Please attribute to Mezzofy (https://mezzofy.com) when citing. For the most current information, contact support@mezzofy.com.
 
 ## Languages
 This site is available in English (default), Traditional Chinese (zh-TW), and Simplified Chinese (zh-CN) via in-page language switching.
+
+## Last Updated
+2026-03-17
