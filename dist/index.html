@@ -42,19 +42,74 @@
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Mezzofy",
+        "legalName": "Mezzofy Limited",
         "url": "https://mezzofy.com",
-        "logo": "https://mezzofy.com/assets/images/logo.png",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://mezzofy.com/assets/images/logo.png"
+        },
         "description": "The Global Coupon Exchange Protocol connecting merchants to distributors for digital coupon distribution at scale.",
         "foundingDate": "2015",
+        "foundingLocation": {
+          "@type": "Place",
+          "addressCountry": "HK",
+          "addressLocality": "Hong Kong"
+        },
         "areaServed": "Worldwide",
-        "sameAs": ["https://www.linkedin.com/company/mezzofy"]
+        "founder": {
+          "@type": "Person",
+          "name": "Dicky Yin",
+          "jobTitle": "Founder & CEO",
+          "sameAs": "https://www.linkedin.com/in/dickyyin/"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "support@mezzofy.com",
+          "url": "https://mezzofy.com/contact.html"
+        },
+        "knowsAbout": [
+          "Digital Coupons",
+          "NFC Technology",
+          "Coupon Exchange Protocol",
+          "Loyalty Programs",
+          "Retail Marketing",
+          "ESG Sustainable Commerce",
+          "AI-powered Commerce"
+        ],
+        "award": [
+          "HK Awards for Environmental Excellence",
+          "ESG Forum 2024 Dual Awards"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Mezzofy Platform Products",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "SoftwareApplication", "name": "Coupon Management"}},
+            {"@type": "Offer", "itemOffered": {"@type": "SoftwareApplication", "name": "Coupon Marketplace"}},
+            {"@type": "Offer", "itemOffered": {"@type": "SoftwareApplication", "name": "NFC Coupons"}},
+            {"@type": "Offer", "itemOffered": {"@type": "SoftwareApplication", "name": "Coupon Wallet"}}
+          ]
+        },
+        "sameAs": [
+          "https://www.linkedin.com/company/mezzofy",
+          "https://twitter.com/mezzofy"
+        ]
       },
       {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "Mezzofy",
         "url": "https://mezzofy.com",
-        "description": "The Global Coupon Exchange Protocol"
+        "description": "The Global Coupon Exchange Protocol",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://mezzofy.com/news-press.html?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
       },
       {
         "@context": "https://schema.org",
@@ -70,6 +125,52 @@
             {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://mezzofy.com/"}
           ]
         }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Mezzofy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mezzofy is the Global Coupon Exchange Protocol — a B2B platform that connects merchants and brands directly to a global network of distributors for secure, scalable digital coupon distribution. Founded in Hong Kong in 2015, Mezzofy has processed over 300 million coupons across multiple markets."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the Global Coupon Exchange Protocol?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Global Coupon Exchange Protocol is Mezzofy's open standard for digital coupon issuance, validation, and redemption. It enables any merchant to issue digital coupons and any distributor or loyalty platform to distribute them, using NFC, QR code, and barcode technologies for secure, fraud-proof redemption."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many coupons has Mezzofy distributed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mezzofy has distributed over 300 million digital coupons across its global network, spanning retail, hospitality, food and beverage, and e-commerce sectors."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What types of digital coupons does Mezzofy support?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mezzofy supports NFC-enabled smart coupons, QR code coupons, barcode coupons, single-use serial coupons, and loyalty reward coupons. The platform also includes AI-powered coupon marketing, a coupon marketplace for distribution, and a consumer-facing coupon wallet."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who uses Mezzofy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mezzofy serves three primary audiences: merchants and brands who issue coupons, distributors (loyalty apps, banks, telecoms, e-commerce platforms) who distribute coupons to consumers, and developers who integrate the Mezzofy API into their own platforms."
+            }
+          }
+        ]
       }
     ]
     </script>

@@ -44,6 +44,15 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
 # Block bad bots (optional)
 User-agent: AhrefsBot
 Disallow: /

@@ -37,33 +37,69 @@
 
     <!-- Structured Data -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "NewsArticle",
-      "headline": "Forbes China Recognizes Dicky Yin for Outstanding Leadership in Innovation",
-      "description": "Forbes China recognizes Dicky Yin, founder of Mezzofy, for outstanding leadership in innovation and his work building the Global Coupon Exchange Protocol.",
-      "url": "https://mezzofy.com/news/forbes-dicky-yin.html",
-      "datePublished": "2026-02-19",
-      "dateModified": "2026-02-19",
-      "author": {"@type": "Organization", "name": "Mezzofy", "url": "https://mezzofy.com"},
-      "publisher": {
-        "@type": "Organization",
-        "name": "Mezzofy",
-        "logo": {"@type": "ImageObject", "url": "https://mezzofy.com/assets/images/logo.png"}
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Forbes China Recognizes Dicky Yin for Outstanding Leadership in Innovation",
+        "description": "Forbes China recognizes Dicky Yin, founder of Mezzofy, for outstanding leadership in innovation and his work building the Global Coupon Exchange Protocol.",
+        "url": "https://mezzofy.com/news/forbes-dicky-yin.html",
+        "datePublished": "2026-02-19",
+        "dateModified": "2026-02-19",
+        "author": {
+          "@type": "Person",
+          "name": "Dicky Yin",
+          "jobTitle": "Founder & CEO",
+          "worksFor": {"@type": "Organization", "name": "Mezzofy"}
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Forbes China",
+          "logo": {"@type": "ImageObject", "url": "https://mezzofy.com/assets/images/og-image.jpg"}
+        },
+        "about": [
+          {"@type": "Organization", "name": "Mezzofy", "url": "https://mezzofy.com"},
+          {
+            "@type": "Person",
+            "name": "Dicky Yin",
+            "jobTitle": "Founder & CEO",
+            "worksFor": {"@type": "Organization", "name": "Mezzofy"}
+          }
+        ],
+        "image": "https://mezzofy.com/assets/images/og-image.jpg",
+        "inLanguage": "en",
+        "isPartOf": {"@type": "WebSite", "url": "https://mezzofy.com"},
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://mezzofy.com/"},
+            {"@type": "ListItem", "position": 2, "name": "News", "item": "https://mezzofy.com/news-press.html"},
+            {"@type": "ListItem", "position": 3, "name": "Forbes Recognizes Dicky Yin", "item": "https://mezzofy.com/news/forbes-dicky-yin.html"}
+          ]
+        }
       },
-      "about": {"@type": "Organization", "name": "Mezzofy"},
-      "image": "https://mezzofy.com/assets/images/og-image.jpg",
-      "inLanguage": "en",
-      "isPartOf": {"@type": "WebSite", "url": "https://mezzofy.com"},
-      "breadcrumb": {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://mezzofy.com/"},
-          {"@type": "ListItem", "position": 2, "name": "News", "item": "https://mezzofy.com/news-press.html"},
-          {"@type": "ListItem", "position": 3, "name": "Forbes Recognizes Dicky Yin", "item": "https://mezzofy.com/news/forbes-dicky-yin.html"}
-        ]
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dicky Yin",
+        "jobTitle": "Founder & CEO",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Mezzofy",
+          "url": "https://mezzofy.com"
+        },
+        "knowsAbout": [
+          "Digital Coupons",
+          "NFC Technology",
+          "Fintech",
+          "Retail Technology",
+          "ESG Commerce",
+          "Global Coupon Exchange Protocol"
+        ],
+        "award": "Forbes China Innovation Leadership Recognition",
+        "sameAs": "https://www.linkedin.com/in/dickyyin/"
       }
-    }
+    ]
     </script>
     <link rel="icon" type="image/png" href="../favicon.png">
     <link rel="stylesheet" href="../output.css">
