@@ -240,11 +240,11 @@
       "title": "Our Mission",
       "nameOrigin": {
         "title": "Name Origin",
-        "description": "<span class=\"font-semibold text-primary-orange\">'Mezzo'</span> (Italian for 'medium') combined with <span class=\"font-semibold text-primary-orange\">'-fy'</span> (meaning 'to make')—reflecting our mission to build the intelligent medium that transforms digital promotions into secure, tokenized assets, connecting merchants and distributors worldwide."
+        "description": "<span class=\"font-semibold text-primary-orange\">'Mezzo'</span> (Italian for 'medium') combined with <span class=\"font-semibold text-primary-orange\">'-fy'</span> (meaning 'to make')—reflecting our mission to build the intelligent medium that transforms digital coupons into secure, tokenized assets, connecting merchants and distributors worldwide."
       },
       "corePurpose": {
         "title": "Core Purpose",
-        "description": "Mezzofy is the <span class=\"font-semibold text-primary-orange\">AI-powered Exchange Protocol</span> that standardizes digital promotions into secure, fraud-proof assets—connecting coupon Supply directly to Demand through a machine-readable clearinghouse built for the next generation of commerce."
+        "description": "Mezzofy is the <span class=\"font-semibold text-primary-orange\">AI-powered Exchange Protocol</span> that standardizes digital coupons into secure, fraud-proof assets—connecting coupon Supply directly to Demand through a machine-readable clearinghouse built for the next generation of commerce."
       },
       "keyObjectives": {
         "title": "Key Objectives",
@@ -272,6 +272,38 @@
     },
     "awards": {
       "title": "Recognition & Awards"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know about Mezzofy and the Global Coupon Exchange Protocol",
+      "q1": {
+        "question": "What is Mezzofy?",
+        "answer": "Mezzofy is the Global Coupon Exchange Protocol — an AI-powered, tokenized infrastructure that connects coupon and voucher Supply directly to Demand. Founded in 2015 in Hong Kong, Mezzofy standardizes digital coupons into secure, fraud-proof assets, enabling merchants and distributors worldwide to create, exchange, and redeem coupons at scale."
+      },
+      "q2": {
+        "question": "What is the Global Coupon Exchange Protocol?",
+        "answer": "The Global Coupon Exchange Protocol is Mezzofy's proprietary standard that transforms digital coupons into unique, tokenized digital assets. It provides a machine-readable clearinghouse for coupon creation, distribution, validation, and redemption — eliminating fraud, fragmentation, and high costs associated with traditional coupon platforms."
+      },
+      "q3": {
+        "question": "Who founded Mezzofy and when?",
+        "answer": "Mezzofy was founded by Dicky Yin in 2015 in Hong Kong. Yin, a fintech entrepreneur specializing in digital coupons, NFC technology, and coupon exchange protocols, built Mezzofy to solve the fragmentation and security challenges in the global digital coupons industry."
+      },
+      "q4": {
+        "question": "What industries and markets does Mezzofy serve?",
+        "answer": "Mezzofy serves multinational brands across retail, beauty, hospitality, finance, and entertainment sectors. The platform connects merchants and distributors in global markets, supporting coupon campaigns at scale for brands ranging from luxury retailers to fast-food chains and financial institutions."
+      },
+      "q5": {
+        "question": "What awards has Mezzofy received?",
+        "answer": "Mezzofy has received recognition for innovation and sustainability, including the HK Awards for Environmental Excellence and dual ESG Forum 2024 awards. These honors reflect Mezzofy's commitment to reducing paper waste through digital coupon infrastructure and advancing environmental, social, and governance (ESG) standards."
+      },
+      "q6": {
+        "question": "How does Mezzofy differ from traditional coupon software?",
+        "answer": "Unlike traditional coupon SaaS tools focused on features, Mezzofy is an Exchange Protocol built for network effects. Every promotion is tokenized into a unique, fraud-proof digital asset through the Mezzofy Coupon Standard — providing AI-native, machine-readable infrastructure as the standard interface for the next generation of autonomous AI commerce."
+      },
+      "q7": {
+        "question": "How does Mezzofy support environmental sustainability?",
+        "answer": "Mezzofy advances sustainability by replacing paper coupons with digital, tokenized alternatives — reducing physical waste across retail and hospitality supply chains. This commitment earned Mezzofy the HK Awards for Environmental Excellence and ESG Forum 2024 recognition, demonstrating measurable environmental impact alongside commercial performance."
+      }
     },
     "brands": {
       "title": "Trusted by Leading Brands",

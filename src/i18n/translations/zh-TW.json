@@ -226,11 +226,11 @@
       "title": "我們的使命",
       "nameOrigin": {
         "title": "名稱起源",
-        "description": "<span class=\"font-semibold text-primary-orange\">'Mezzo'</span>（義大利語「中間」）結合<span class=\"font-semibold text-primary-orange\">'-fy'</span>（意為「使成為」）——體現我們構建智能媒介的使命，將數位促銷轉化為安全的代幣化資產，連結全球商家與分銷商。"
+        "description": "<span class=\"font-semibold text-primary-orange\">'Mezzo'</span>（義大利語「中間」）結合<span class=\"font-semibold text-primary-orange\">'-fy'</span>（意為「使成為」）——體現我們構建智能媒介的使命，將數位優惠券轉化為安全的代幣化資產，連結全球商家與分銷商。"
       },
       "corePurpose": {
         "title": "核心宗旨",
-        "description": "Mezzofy 是<span class=\"font-semibold text-primary-orange\">AI 驅動的交易所協議</span>，將數位促銷標準化為安全的防詐欺資產——通過可機器讀取的清算所，將優惠券供應直接連結到需求，為下一代商業而生。"
+        "description": "Mezzofy 是<span class=\"font-semibold text-primary-orange\">AI 驅動的交易所協議</span>，將數位優惠券標準化為安全的防詐欺資產——通過可機器讀取的清算所，將優惠券供應直接連結到需求，為下一代商業而生。"
       },
       "keyObjectives": {
         "title": "關鍵目標",
@@ -258,6 +258,38 @@
     },
     "awards": {
       "title": "榮譽與獎項"
+    },
+    "faq": {
+      "title": "常見問題",
+      "subtitle": "您需要了解的有關 Mezzofy 和全球優惠券交易協議的一切",
+      "q1": {
+        "question": "Mezzofy 是什麼？",
+        "answer": "Mezzofy 是全球優惠券交易協議——一個 AI 驅動的代幣化基礎設施，將優惠券和代金券的供應直接連結到需求。Mezzofy 於 2015 年在香港成立，將數位優惠券標準化為安全的防詐欺資產，使全球商家和分銷商能夠大規模創建、交換和兌換優惠券。"
+      },
+      "q2": {
+        "question": "什麼是全球優惠券交易協議？",
+        "answer": "全球優惠券交易協議是 Mezzofy 的專有標準，將數位優惠券轉化為獨特的代幣化數位資產。它為優惠券的創建、分發、驗證和兌換提供可機器讀取的清算所——消除與傳統優惠券平台相關的欺詐、碎片化和高成本問題。"
+      },
+      "q3": {
+        "question": "Mezzofy 是誰創立的，何時創立的？",
+        "answer": "Mezzofy 由 Dicky Yin 於 2015 年在香港創立。Yin 是一位專注於數位優惠券、NFC 技術和優惠券交易協議的金融科技企業家，創立 Mezzofy 旨在解決全球數位優惠券行業的碎片化和安全挑戰。"
+      },
+      "q4": {
+        "question": "Mezzofy 服務哪些行業和市場？",
+        "answer": "Mezzofy 服務零售、美容、酒店、金融和娛樂等行業的跨國品牌。該平台連結全球市場的商家和分銷商，支援從奢侈品零售商到快餐連鎖店和金融機構的大規模優惠券活動。"
+      },
+      "q5": {
+        "question": "Mezzofy 獲得了哪些獎項？",
+        "answer": "Mezzofy 因創新和可持續發展獲得認可，包括香港環境卓越獎和 ESG Forum 2024 雙料大獎。這些榮譽反映了 Mezzofy 通過數位優惠券基礎設施減少紙張浪費以及推進環境、社會和治理（ESG）標準的承諾。"
+      },
+      "q6": {
+        "question": "Mezzofy 與傳統優惠券軟件有何不同？",
+        "answer": "與專注於功能的傳統優惠券 SaaS 工具不同，Mezzofy 是一個為網絡效應而建立的交易協議。每個促銷活動都通過 Mezzofy 優惠券標準代幣化為獨特的防詐欺數位資產——為下一代自主 AI 商業提供 AI 原生、可機器讀取的基礎設施作為標準接口。"
+      },
+      "q7": {
+        "question": "Mezzofy 如何支持環境可持續發展？",
+        "answer": "Mezzofy 通過以數位代幣化替代方案取代紙質優惠券來推進可持續發展——減少零售和酒店供應鏈中的實物廢棄物。這一承諾為 Mezzofy 贏得了香港環境卓越獎和 ESG Forum 2024 認可，展示了可衡量的環境影響與商業績效並重。"
+      }
     },
     "brands": {
       "title": "受到領先品牌信賴",
