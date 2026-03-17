@@ -2395,29 +2395,37 @@
   "articles": {
     "news": {
       "cioworldFeature": {
+        "title": "TheCIOWorld 报道 Mezzofy：为更环保的未来转型优惠券",
         "headings": {
           "nfcInnovation": "通过 NFC 技术重新定义数字优惠券",
           "ecoFriendly": "环保优惠券营销，共创绿色未来"
         }
       },
       "dualEsgAwards": {
+        "title": "Mezzofy 在 2024 年 ESG 可持续发展论坛荣获双奖",
         "headings": {
           "recognition": "2024年可持续发展论坛荣获双重ESG认可",
           "environmental": "以数字优惠券取代纸质，减少环境足迹"
         }
       },
+      "edigestLeadingSolution": {
+        "title": "eDigest 独家报道：亚太区领先电子优惠券解决方案"
+      },
       "ejtech300mCoupons": {
+        "title": "EJTech 报道：Mezzofy 云平台在亚太地区分发 3 亿张电子优惠券",
         "headings": {
           "cloudPlatform": "云平台获认可为数字优惠券领导者",
           "distribution": "三亿优惠券：横跨亚太的环保多渠道分发"
         }
       },
       "forbesDickyYin": {
+        "title": "Forbes 中国版表彰 Dicky Yin 在创新领域的卓越领导力",
         "headings": {
           "recognition": "《福布斯》中国表彰 Dicky Yin 卓越创新领导力"
         }
       },
       "fundingAnnouncement": {
+        "title": "Mezzofy 完成 200 万美元 Pre-Series A 融资轮",
         "headings": {
           "funding": "Mezzofy 完成 200 万美元 Pre-Series A 融资",
           "market": "目标锁定 297 亿美元全球数字优惠券市场",
@@ -2425,17 +2433,39 @@
         }
       },
       "techappleInnovationIndex": {
+        "title": "TechApple 报道：Mezzofy 在 2024 企业创新指数中获评三星中小企",
         "headings": {
           "recognition": "Mezzofy 获评2024年企业创新指数三星中小企",
           "transformation": "推动香港跨行业数字化转型"
         }
       },
       "treasureGlobalPartnership": {
+        "title": "Mezzofy 与 Treasure Global 合作加速马来西亚电子优惠券扩张",
         "headings": {
           "partnership": "Mezzofy与Treasure Global携手拓展马来西亚数字优惠券市场",
           "scale": "横跨 15 个全球市场交易额达 400 亿美元",
           "platform": "优惠券即服务平台推动营收增长"
         }
+      }
+    },
+    "blog": {
+      "nfcParknshop": {
+        "title": "Mezzofy 助品牌设置优惠券到240间百佳 NFC 标签，全程代办、无需协调"
+      },
+      "eCouponsPreference": {
+        "title": "60% 消费者偏好电子优惠券：对数字时代零售业的意义"
+      },
+      "environmentalExcellence": {
+        "title": "香港环境卓越大奖 — 以电子优惠券降低成本并保护树木"
+      },
+      "hotelTechInnovation": {
+        "title": "为何科技创新是酒店成功的关键"
+      },
+      "holidayGuide": {
+        "title": "假日季节优惠券指南 — 掌握最后冲刺的假日销售旺季"
+      },
+      "smartRetail": {
+        "title": "科技主导的智慧零售 — NFC 优惠券驱动冲动购买"
       }
     }
   }

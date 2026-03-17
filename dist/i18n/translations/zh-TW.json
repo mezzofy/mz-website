@@ -385,7 +385,65 @@
       "blog": "部落格",
       "news": "新聞"
     },
-    "readMore": "閱讀更多 →"
+    "readMore": "閱讀更多 →",
+    "articles": {
+      "nfcParknshop": {
+        "title": "Mezzofy 助品牌設置優惠券到240 間百佳 NFC 標籤，全程代辦、無需協調",
+        "description": "透過 NFC 技術簡化 FMCG 品牌與百佳超市合作的推廣流程，消除協調複雜性。"
+      },
+      "treasureGlobal": {
+        "title": "Mezzofy 與 Treasure Global 達成合作",
+        "description": "與 Treasure Global Inc. 達成戰略合作，加速馬來西亞電子優惠券擴張，預計每年帶來 200-400 萬美元的持續收入。"
+      },
+      "eCouponsPreference": {
+        "title": "60% 消費者更偏好電子優惠券",
+        "description": "60% 的消費者偏好電子優惠券，預示購物行為的重大轉變。配備 NFC 和 AI 的電子優惠券正在改變零售業。"
+      },
+      "environmentalExcellence": {
+        "title": "香港環境卓越大獎",
+        "description": "透過電子優惠券降低成本並保護樹木。每年超過 1360 億張紙質優惠券消耗 500 萬棵樹。數位化可降低 70% 開支。"
+      },
+      "techappleInnovation": {
+        "title": "Mezzofy 在 2024 企業創新指數中獲評三星中小企",
+        "description": "TechApple 報道 Mezzofy 在 2024 企業創新指數中因電子優惠券貢獻獲評三星中小企。"
+      },
+      "dualEsgAwards": {
+        "title": "在 ESG 論壇 2024 斬獲雙獎",
+        "description": "Mezzofy 在 ESG 論壇 2024 榮獲傑出 ESG 企業獎及可持續發展企業認證。"
+      },
+      "fundingAnnouncement": {
+        "title": "完成 200 萬美元 Pre-Series A 融資輪",
+        "description": "Mezzofy 完成由 Isola Capital 領投的 200 萬美元 Pre-Series A 融資，支持全球擴張及 Web3 產品開發。"
+      },
+      "holidayGuide": {
+        "title": "假日季節優惠券指南",
+        "description": "以快速優惠券方案把握最後衝刺的假日銷售旺季。2022 年假日零售銷售額達 9430-9600 億美元。"
+      },
+      "smartRetail": {
+        "title": "科技主導的智慧零售",
+        "description": "NFC 技術改變零售動態。研究顯示 73% 的受訪者會進行衝動購買，平均每月衝動消費超過 314 美元。"
+      },
+      "cioworldFeature": {
+        "title": "為更環保的未來轉型優惠券",
+        "description": "TheCIOWorld 報道 Mezzofy 創新的 NFC 點觸獲取電子優惠券及整合錢包功能，打造可持續電子行銷。"
+      },
+      "ejtech300m": {
+        "title": "逾 3 億張電子優惠券覆蓋亞太區",
+        "description": "EJTech 報道 Mezzofy 雲端平台在亞太地區分發超過 3 億張電子優惠券，革新客戶互動方式。"
+      },
+      "edigestLeading": {
+        "title": "亞太區領先電子優惠券解決方案",
+        "description": "eDigest 獨家報道 Mezzofy 作為領先電子優惠券平台，變革亞太區優惠券管理。"
+      },
+      "forbesDickyYin": {
+        "title": "Forbes 表彰 Dicky Yin 的卓越領導力",
+        "description": "Forbes China 報道 Mezzofy 行政總裁 Dicky Yin 在創新領域的卓越領導力，引領電子優惠券行業變革。"
+      },
+      "hotelTechInnovation": {
+        "title": "為何科技創新是酒店成功的關鍵",
+        "description": "67% 的旅客期望個人化體驗。酒店必須採用 NFC、聊天機器人及 AI 驅動的個性化服務以提升收入及忠誠度。"
+      }
+    }
   },
   "investors": {
     "hero": {
@@ -2315,29 +2373,37 @@
   "articles": {
     "news": {
       "cioworldFeature": {
+        "title": "TheCIOWorld 報道 Mezzofy：為更環保的未來轉型優惠券",
         "headings": {
           "nfcInnovation": "透過 NFC 技術重新定義數位優惠券",
           "ecoFriendly": "環保優惠券行銷，共創綠色未來"
         }
       },
       "dualEsgAwards": {
+        "title": "Mezzofy 在 2024 年 ESG 可持續發展論壇榮獲雙獎",
         "headings": {
           "recognition": "2024 年可持續發展論壇榮獲雙重 ESG 認可",
           "environmental": "以數位優惠券取代紙本，降低環境足跡"
         }
       },
+      "edigestLeadingSolution": {
+        "title": "eDigest 獨家報道：亞太區領先電子優惠券解決方案"
+      },
       "ejtech300mCoupons": {
+        "title": "EJTech 報道：Mezzofy 雲端平台在亞太地區分發 3 億張電子優惠券",
         "headings": {
           "cloudPlatform": "雲端平台獲認可為數位優惠券領導者",
           "distribution": "三億優惠券：橫跨亞太的環保多渠道分發"
         }
       },
       "forbesDickyYin": {
+        "title": "Forbes 中國版表彰 Dicky Yin 在創新領域的卓越領導力",
         "headings": {
           "recognition": "《福布斯》中國表彰 Dicky Yin 卓越創新領導力"
         }
       },
       "fundingAnnouncement": {
+        "title": "Mezzofy 完成 200 萬美元 Pre-Series A 融資輪",
         "headings": {
           "funding": "Mezzofy 完成 200 萬美元 Pre-Series A 融資",
           "market": "目標鎖定 297 億美元全球數位優惠券市場",
@@ -2345,17 +2411,39 @@
         }
       },
       "techappleInnovationIndex": {
+        "title": "TechApple 報道：Mezzofy 在 2024 企業創新指數中獲評三星中小企",
         "headings": {
           "recognition": "Mezzofy 獲評 2024 年企業創新指數三星中小企",
           "transformation": "推動香港跨界別數碼化轉型"
         }
       },
       "treasureGlobalPartnership": {
+        "title": "Mezzofy 與 Treasure Global 合作加速馬來西亞電子優惠券擴張",
         "headings": {
           "partnership": "Mezzofy 與 Treasure Global 攜手拓展馬來西亞數位優惠券市場",
           "scale": "橫跨 15 個全球市場交易額達 400 億美元",
           "platform": "優惠券即服務平台推動營收增長"
         }
+      }
+    },
+    "blog": {
+      "nfcParknshop": {
+        "title": "Mezzofy 助品牌設置優惠券到240 間百佳 NFC 標籤，全程代辦、無需協調"
+      },
+      "eCouponsPreference": {
+        "title": "60% 消費者偏好電子優惠券：對數位時代零售業的意義"
+      },
+      "environmentalExcellence": {
+        "title": "香港環境卓越大獎 — 以電子優惠券降低成本並保護樹木"
+      },
+      "hotelTechInnovation": {
+        "title": "為何科技創新是酒店成功的關鍵"
+      },
+      "holidayGuide": {
+        "title": "假日季節優惠券指南 — 掌握最後衝刺的假日銷售旺季"
+      },
+      "smartRetail": {
+        "title": "科技主導的智慧零售 — NFC 優惠券驅動衝動購買"
       }
     }
   }
