@@ -246,15 +246,15 @@
       "title": "我们的使命",
       "nameOrigin": {
         "title": "名称起源",
-        "description": "<span class=\"font-semibold text-primary-orange\">'Mezzo'</span>（意大利语「中间」）结合<span class=\"font-semibold text-primary-orange\">'-fy'</span>（意为「为你」）——体现我们通过尖端优惠券解决方案连接企业与顾客的奉献精神。"
+        "description": "<span class=\"font-semibold text-primary-orange\">'Mezzo'</span>（意大利语「中间」）结合<span class=\"font-semibold text-primary-orange\">'-fy'</span>（意为「使成为」）——体现我们构建智能媒介的使命，将数字促销转化为安全的代币化资产，连接全球商家与分销商。"
       },
       "corePurpose": {
         "title": "核心宗旨",
-        "description": "Mezzofy 不仅仅是开发数字优惠券或应用程序，而是定位为<span class=\"font-semibold text-primary-orange\">优惠券营销基础设施</span>的先驱，使创建、分享、兑换和测量变得容易。"
+        "description": "Mezzofy 是<span class=\"font-semibold text-primary-orange\">AI 驱动的交易所协议</span>，将数字促销标准化为安全的防欺诈资产——通过可机器读取的清算所，将优惠券供应直接连接到需求，为下一代商业而生。"
       },
       "keyObjectives": {
         "title": "关键目标",
-        "description": "我们旨在<span class=\"text-primary-orange font-semibold\">提升精神</span>、<span class=\"text-primary-orange font-semibold\">建立有意义的连接</span>、<span class=\"text-primary-orange font-semibold\">释放创造力</span>和<span class=\"text-primary-orange font-semibold\">实现专注</span>，通过促进商家与消费者之间的互动，让生活更加充满活力。"
+        "description": "我们在三大支柱上构建未来：<span class=\"text-primary-orange font-semibold\">网络效应优先于功能</span>，专注于安全结算和通过连接创造真实价值；<span class=\"text-primary-orange font-semibold\">AI 原生基础设施</span>，使我们的数据可机器读取，服务下一代自主 AI 购物代理；以及<span class=\"text-primary-orange font-semibold\">无与伦比的安全性</span>，通过 Mezzofy 优惠券标准确保每项促销都是唯一的防欺诈数字资产。"
       }
     },
     "performance": {
