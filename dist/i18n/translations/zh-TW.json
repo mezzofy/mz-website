@@ -2279,5 +2279,52 @@
       "merchantLink": "透過商家入口提交 →",
       "partnerLink": "透過合作夥伴入口提交 →"
     }
+  },
+  "articles": {
+    "news": {
+      "cioworldFeature": {
+        "headings": {
+          "nfcInnovation": "透過 NFC 技術重新定義數位優惠券",
+          "ecoFriendly": "環保優惠券行銷，共創綠色未來"
+        }
+      },
+      "dualEsgAwards": {
+        "headings": {
+          "recognition": "2024 年可持續發展論壇榮獲雙重 ESG 認可",
+          "environmental": "以數位優惠券取代紙本，降低環境足跡"
+        }
+      },
+      "ejtech300mCoupons": {
+        "headings": {
+          "cloudPlatform": "雲端平台獲認可為數位優惠券領導者",
+          "distribution": "三億優惠券：橫跨亞太的環保多渠道分發"
+        }
+      },
+      "forbesDickyYin": {
+        "headings": {
+          "recognition": "《福布斯》中國表彰 Dicky Yin 卓越創新領導力"
+        }
+      },
+      "fundingAnnouncement": {
+        "headings": {
+          "funding": "Mezzofy 完成 200 萬美元 Pre-Series A 融資",
+          "market": "目標鎖定 297 億美元全球數位優惠券市場",
+          "traction": "橫跨 15 個市場管理 4 億枚優惠券"
+        }
+      },
+      "techappleInnovationIndex": {
+        "headings": {
+          "recognition": "Mezzofy 獲評 2024 年企業創新指數三星中小企",
+          "transformation": "推動香港跨界別數碼化轉型"
+        }
+      },
+      "treasureGlobalPartnership": {
+        "headings": {
+          "partnership": "Mezzofy 與 Treasure Global 攜手拓展馬來西亞數位優惠券市場",
+          "scale": "橫跨 15 個全球市場交易額達 400 億美元",
+          "platform": "優惠券即服務平台推動營收增長"
+        }
+      }
+    }
   }
 }

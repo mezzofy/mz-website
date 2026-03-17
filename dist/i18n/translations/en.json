@@ -2414,5 +2414,52 @@
       "merchantLink": "Submit via Merchant Portal →",
       "partnerLink": "Submit via Partner Portal →"
     }
+  },
+  "articles": {
+    "news": {
+      "cioworldFeature": {
+        "headings": {
+          "nfcInnovation": "Redefining Digital Coupons with NFC Technology",
+          "ecoFriendly": "Eco-Friendly Coupon Marketing for a Greener Future"
+        }
+      },
+      "dualEsgAwards": {
+        "headings": {
+          "recognition": "Dual ESG Recognition at Sustainable Development Forum 2024",
+          "environmental": "Replacing Paper Coupons to Reduce Environmental Footprint"
+        }
+      },
+      "ejtech300mCoupons": {
+        "headings": {
+          "cloudPlatform": "Cloud-Based Platform Recognized for Digital Coupon Leadership",
+          "distribution": "300 Million Coupons: Eco-Friendly Multi-Channel Distribution Across APAC"
+        }
+      },
+      "forbesDickyYin": {
+        "headings": {
+          "recognition": "Forbes China Honors Dicky Yin for Outstanding Leadership in Innovation"
+        }
+      },
+      "fundingAnnouncement": {
+        "headings": {
+          "funding": "Mezzofy Secures USD 2 Million Pre-Series A Funding Round",
+          "market": "Targeting a USD 29.7 Billion Global Digital Coupon Market",
+          "traction": "400 Million Coupons Managed Across 15 Markets"
+        }
+      },
+      "techappleInnovationIndex": {
+        "headings": {
+          "recognition": "Mezzofy Named 3-Star SME in 2024 Corporate Innovation Index",
+          "transformation": "Driving Cross-Sector Digital Transformation in Hong Kong"
+        }
+      },
+      "treasureGlobalPartnership": {
+        "headings": {
+          "partnership": "Mezzofy and Treasure Global Partner to Expand Digital Coupons in Malaysia",
+          "scale": "USD 40 Billion in Transactions Across 15 Global Markets",
+          "platform": "Coupon-as-a-Service Platform Driving Revenue Growth"
+        }
+      }
+    }
   }
 }

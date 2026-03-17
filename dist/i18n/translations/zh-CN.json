@@ -2359,5 +2359,52 @@
       "merchantLink": "通过商家入口提交 →",
       "partnerLink": "通过合作伙伴入口提交 →"
     }
+  },
+  "articles": {
+    "news": {
+      "cioworldFeature": {
+        "headings": {
+          "nfcInnovation": "通过 NFC 技术重新定义数字优惠券",
+          "ecoFriendly": "环保优惠券营销，共创绿色未来"
+        }
+      },
+      "dualEsgAwards": {
+        "headings": {
+          "recognition": "2024年可持续发展论坛荣获双重ESG认可",
+          "environmental": "以数字优惠券取代纸质，减少环境足迹"
+        }
+      },
+      "ejtech300mCoupons": {
+        "headings": {
+          "cloudPlatform": "云平台获认可为数字优惠券领导者",
+          "distribution": "三亿优惠券：横跨亚太的环保多渠道分发"
+        }
+      },
+      "forbesDickyYin": {
+        "headings": {
+          "recognition": "《福布斯》中国表彰 Dicky Yin 卓越创新领导力"
+        }
+      },
+      "fundingAnnouncement": {
+        "headings": {
+          "funding": "Mezzofy 完成 200 万美元 Pre-Series A 融资",
+          "market": "目标锁定 297 亿美元全球数字优惠券市场",
+          "traction": "横跨 15 个市场管理 4 亿枚优惠券"
+        }
+      },
+      "techappleInnovationIndex": {
+        "headings": {
+          "recognition": "Mezzofy 获评2024年企业创新指数三星中小企",
+          "transformation": "推动香港跨行业数字化转型"
+        }
+      },
+      "treasureGlobalPartnership": {
+        "headings": {
+          "partnership": "Mezzofy与Treasure Global携手拓展马来西亚数字优惠券市场",
+          "scale": "横跨 15 个全球市场交易额达 400 亿美元",
+          "platform": "优惠券即服务平台推动营收增长"
+        }
+      }
+    }
   }
 }
