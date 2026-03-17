@@ -177,7 +177,7 @@
         "title": "面向未來的資產",
         "description": "您的促銷被代幣化，為二級市場和新金融工具（RWA 連結）開啟了可能性。"
       },
-      "cta": "了解更多"
+      "cta": "探索商戶解決方案"
     },
     "distributors": {
       "title": "分銷商：取得全球最安全、最具意向性的優惠券庫存",
@@ -198,7 +198,7 @@
         "title": "精準分銷",
         "description": "消費為您的渠道量身定制的庫存：忠誠度與人力資源用於內部福利，AI 代理 API 用於程式化消費。"
       },
-      "cta": "了解更多"
+      "cta": "探索分銷商解決方案"
     },
     "tokenization": {
       "title": "交易核心：商務與安全的交匯處",
@@ -588,22 +588,22 @@
       "management": {
         "title": "管理系統",
         "description": "優惠券生命週期管理的企業級基礎設施",
-        "learnMore": "了解更多 →"
+        "learnMore": "探索優惠券管理系統 →"
       },
       "nfc": {
         "title": "優惠券 NFC",
         "description": "實體零售接觸點，支援輕觸下載",
-        "learnMore": "了解更多 →"
+        "learnMore": "探索 NFC 即觸即兌 →"
       },
       "marketing": {
         "title": "優惠券行銷",
         "description": "將行銷費用轉化為收入來源",
-        "learnMore": "了解更多 →"
+        "learnMore": "探索優惠券行銷工具 →"
       },
       "wallet": {
         "title": "優惠券錢包",
         "description": "多平台客戶體驗層",
-        "learnMore": "了解更多 →"
+        "learnMore": "查看數位錢包功能 →"
       }
     },
     "benefits": {
@@ -693,7 +693,7 @@
       "marketplace": {
         "title": "優惠券市集",
         "description": "來自全球商家的經過驗證、高品質優惠券庫存",
-        "link": "了解更多 →"
+        "link": "瀏覽優惠券交易市場 →"
       },
       "bridgeApi": {
         "title": "橋接 API",
@@ -703,7 +703,7 @@
       "wallet": {
         "title": "優惠券錢包 <span class=\"text-xs font-normal text-medium-grey\">(白標)</span>",
         "description": "品牌化優惠券收集體驗，兌換率提升 40% 以上",
-        "link": "了解更多 →"
+        "link": "探索白牌數位錢包 →"
       }
     },
     "benefits": {

@@ -191,7 +191,7 @@
         "title": "Future-Proof Asset",
         "description": "Your promotions are tokenized, opening up possibilities for secondary markets and new financial instruments (RWA Linkage)."
       },
-      "cta": "Learn More"
+      "cta": "Explore Merchant Solutions"
     },
     "distributors": {
       "title": "For Distributors: Access the World's Most Secure, High-Intent Coupon Inventory",
@@ -212,7 +212,7 @@
         "title": "Targeted Distribution",
         "description": "Consume inventory tailored for your channels: Loyalty & HR for internal benefits, and the AI Agent API for programmatic consumption."
       },
-      "cta": "Learn More"
+      "cta": "Explore Distributor Solutions"
     },
     "tokenization": {
       "title": "The Exchange Core: Where Commerce Meets Security",
@@ -602,22 +602,22 @@
       "management": {
         "title": "Management System",
         "description": "Enterprise infrastructure for coupon lifecycle management",
-        "learnMore": "Learn More →"
+        "learnMore": "Explore Coupon Management →"
       },
       "nfc": {
         "title": "Coupon NFC",
         "description": "Physical retail touchpoints with tap-to-download",
-        "learnMore": "Learn More →"
+        "learnMore": "Discover NFC Tap-to-Redeem →"
       },
       "marketing": {
         "title": "Coupon Marketing",
         "description": "Turn marketing expense into revenue stream",
-        "learnMore": "Learn More →"
+        "learnMore": "Explore Coupon Marketing Tools →"
       },
       "wallet": {
         "title": "Coupon Wallet",
         "description": "Multi-platform customer experience layer",
-        "learnMore": "Learn More →"
+        "learnMore": "See Digital Wallet Features →"
       }
     },
     "benefits": {
@@ -707,7 +707,7 @@
       "marketplace": {
         "title": "Coupon Marketplace",
         "description": "Verified, high-quality coupon inventory from merchants worldwide",
-        "link": "Learn More →"
+        "link": "Browse the Coupon Marketplace →"
       },
       "bridgeApi": {
         "title": "Bridge API",
@@ -717,7 +717,7 @@
       "wallet": {
         "title": "Coupon Wallet <span class=\"text-xs font-normal text-medium-grey\">(White-label)</span>",
         "description": "Branded coupon collection experience with 40%+ redemption increase",
-        "link": "Learn More →"
+        "link": "Explore White-Label Wallet →"
       }
     },
     "benefits": {
