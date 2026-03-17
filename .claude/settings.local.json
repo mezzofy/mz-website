@@ -56,7 +56,8 @@
       "Bash(for file:*)",
       "Bash(do echo:*)",
       "Read(//c/Mezzofy/workspace/mz-website/**)",
-      "Bash(for f:*)"
+      "Bash(for f:*)",
+      "Bash(__NEW_LINE_0d3da55e26e24c8c__ done:*)"
     ],
     "deny": [],
     "ask": []
