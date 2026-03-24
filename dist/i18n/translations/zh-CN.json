@@ -59,7 +59,7 @@
         "news": "新闻与媒体",
         "investors": "投资者"
       },
-      "copyright": "© 2025 Mezzofy. 版权所有。"
+      "copyright": "© 2026 Mezzofy. 版权所有。"
     },
     "buttons": {
       "getStarted": "开始使用",
@@ -198,7 +198,8 @@
       "description": "使用实时、经过验证的优惠增强您的忠诚度计划、银行应用程序或企业人力资源门户，无需承担库存采购的财务风险。",
       "benefit1": {
         "title": "无风险集成",
-        "description": "免费访问，通过 Bridge API 无缝集成。立即将标准化优惠拉入您的平台。"
+        "description": "免费访问，通过 Bridge API 无缝集成。立即将标准化优惠拉入您的平台。",
+        "kyc": "注册账户并使用交易所需进行 KYC 身份验证。"
       },
       "benefit2": {
         "title": "现金流保护",
@@ -213,6 +214,48 @@
         "description": "消费为您的渠道量身定制的库存：忠诚度与人力资源用于内部福利，AI 代理 API 用于程序化消费。"
       },
       "cta": "探索分销商解决方案"
+    },
+    "developers": {
+      "eyebrow": "开发者专区",
+      "title": "基于交易协议进行开发",
+      "description": "通过以开发者为先的 REST API、多语言 SDK 及完整的优惠券功能，将优惠券整合到任何平台。",
+      "api": {
+        "title": "API",
+        "description": "具备 OAuth 2.0 和实时事件 Webhook 支持的 RESTful API"
+      },
+      "sdk": {
+        "title": "SDK",
+        "description": "适用于所有主要平台的官方 SDK — 以惯用库缩短集成时间"
+      },
+      "functions": {
+        "title": "优惠券功能",
+        "description": "从发行到跨渠道兑换验证的完整生命周期控制"
+      },
+      "cta": "查看 API 文档及开始使用"
+    },
+    "aiCommerce": {
+      "eyebrow": "AI 商务",
+      "title": "AI 代理的优惠券基础设施",
+      "description": "当 ChatGPT、Gemini 或 Kimi 推荐优惠时，它来自 Mezzofy 交易所——代币化、防欺诈，随时可兑换。每周超过 9 亿 AI 用户。您的商户库存。一次集成。",
+      "acp": {
+        "badge": "已上线 · 2025 年 9 月",
+        "title": "ChatGPT — 代理商务协议 (ACP)",
+        "description": "用户寻求优惠 → ChatGPT 查询 Mezzofy → 消费者在聊天中通过即时结账兑换",
+        "stat": "每周用户"
+      },
+      "ucp": {
+        "badge": "已宣布 · 2026 年 1 月",
+        "title": "Google Gemini — 通用商务协议 (UCP)",
+        "description": "优惠券被索引至 Google 购物图，并在搜索、地图、购物和 Assistant 中显示",
+        "stat": "商品图"
+      },
+      "mcp": {
+        "badge": "扩展中",
+        "title": "Kimi 及区域 AI 代理 — MCP / REST API",
+        "description": "通过 Moonshot AI 的 Kimi 和中国移动合作关系，进入中国大陆、香港和台湾市场",
+        "stat": "市场进入"
+      },
+      "cta": "探索 AI 商务"
     },
     "tokenization": {
       "title": "交易核心：商务与安全的交汇处",

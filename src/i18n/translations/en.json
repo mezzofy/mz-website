@@ -59,7 +59,7 @@
         "news": "News & Press",
         "investors": "Investors"
       },
-      "copyright": "© 2025 Mezzofy. All rights reserved."
+      "copyright": "© 2026 Mezzofy. All rights reserved."
     },
     "buttons": {
       "getStarted": "Get Started",
@@ -198,7 +198,8 @@
       "description": "Enhance your loyalty program, banking app, or corporate HR portal with real-time, verified deals without the financial risk of inventory purchasing.",
       "benefit1": {
         "title": "Risk-Free Integration",
-        "description": "Free to Access and seamless integration via the Bridge API. Instantly pull standardized deals into your platform."
+        "description": "Free to Access and seamless integration via the Bridge API. Instantly pull standardized deals into your platform.",
+        "kyc": "KYC verification is required to register an account and access the Exchange."
       },
       "benefit2": {
         "title": "Cash Flow Protection",
@@ -213,6 +214,48 @@
         "description": "Consume inventory tailored for your channels: Loyalty & HR for internal benefits, and the AI Agent API for programmatic consumption."
       },
       "cta": "Explore Distributor Solutions"
+    },
+    "developers": {
+      "eyebrow": "For Developers",
+      "title": "Build on the Exchange Protocol",
+      "description": "Integrate coupon functionality into any platform with a developer-first REST API, multi-language SDKs, and comprehensive coupon functions.",
+      "api": {
+        "title": "API",
+        "description": "RESTful API with OAuth 2.0 and webhook support for real-time events"
+      },
+      "sdk": {
+        "title": "SDK",
+        "description": "Official SDKs for every major platform — reduce integration time with idiomatic libraries"
+      },
+      "functions": {
+        "title": "Coupon Functions",
+        "description": "Full lifecycle control from issuance to redemption validation across all channels"
+      },
+      "cta": "View API Docs & Get Started"
+    },
+    "aiCommerce": {
+      "eyebrow": "For AI Commerce",
+      "title": "The Coupon Infrastructure for AI Agents",
+      "description": "When ChatGPT, Gemini, or Kimi recommend a deal, it comes from the Mezzofy Exchange — tokenized, fraud-proof, and ready to redeem. 900M+ weekly AI users. Your merchant inventory. One integration.",
+      "acp": {
+        "badge": "LIVE · SEP 2025",
+        "title": "ChatGPT — Agentic Commerce Protocol (ACP)",
+        "description": "User asks for a deal → ChatGPT queries Mezzofy → consumer redeems via Instant Checkout inside chat",
+        "stat": "weekly users"
+      },
+      "ucp": {
+        "badge": "ANNOUNCED · JAN 2026",
+        "title": "Google Gemini — Universal Commerce Protocol (UCP)",
+        "description": "Coupons indexed in Google Shopping Graph and surfaced across Search, Maps, Shopping, and Assistant",
+        "stat": "item graph"
+      },
+      "mcp": {
+        "badge": "EXPANDING",
+        "title": "Kimi & Regional AI Agents — MCP / REST API",
+        "description": "Access mainland China, Hong Kong, and Taiwan via Moonshot AI's Kimi through MCP and China Mobile partnership",
+        "stat": "market access"
+      },
+      "cta": "Explore AI Commerce"
     },
     "tokenization": {
       "title": "The Exchange Core: Where Commerce Meets Security",

@@ -478,7 +478,7 @@
                 <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black mb-6" data-i18n="home.protocol.title">
                     The Future of Promotions is Secure, Standardized, and Tokenized
                 </h2>
-                <p class="text-lg sm:text-xl text-dark-grey max-w-4xl mx-auto" data-i18n="home.protocol.description">
+                <p class="text-lg sm:text-xl text-dark-grey max-w-6xl mx-auto" data-i18n="home.protocol.description">
                     Traditional digital promotions are failing due to fragmentation, high costs, and security risks. We eliminate the obsolete SaaS model and replace it with a high-liquidity, high-performance Exchange Protocol.
                 </p>
             </div>
@@ -541,10 +541,6 @@
             <!-- Ecosystem Diagram Placeholder -->
             <div class="bg-light-grey rounded-xl p-12 mb-12">
                 <div class="max-w-4xl mx-auto">
-                    <p class="text-center text-medium-grey mb-8 italic" data-i18n="home.ecosystem.diagram">
-                        [Visual Diagram: Product Ecosystem Layers showing the relationship between Core Infrastructure → Distribution Channels → Consumer Experience → Strategy]
-                    </p>
-
                     <!-- Product Layers Description -->
                     <div class="grid md:grid-cols-2 gap-8">
                         <!-- Layer 1: Core Infrastructure -->
@@ -621,7 +617,6 @@
                             <span data-i18n="home.ecosystem.retail.item3">Wallet</span>
                         </li>
                     </ul>
-                    <a href="#contact" class="text-primary-orange hover:underline text-sm font-semibold" data-i18n="home.ecosystem.contactSales">Contact Sales →</a>
                 </div>
 
                 <!-- Bundle 2: Revenue Maximizer -->
@@ -648,7 +643,6 @@
                             <span data-i18n="home.ecosystem.revenue.item3">Marketplace</span>
                         </li>
                     </ul>
-                    <a href="#contact" class="text-primary-orange hover:underline text-sm font-semibold" data-i18n="home.ecosystem.contactSales">Contact Sales →</a>
                 </div>
 
                 <!-- Bundle 3: Distribution Partner -->
@@ -675,7 +669,6 @@
                             <span data-i18n="home.ecosystem.partner.item3">Wallet (White-label)</span>
                         </li>
                     </ul>
-                    <a href="#contact" class="text-primary-orange hover:underline text-sm font-semibold" data-i18n="home.ecosystem.contactSales">Contact Sales →</a>
                 </div>
 
                 <!-- Bundle 4: Enterprise Complete -->
@@ -702,7 +695,6 @@
                             <span data-i18n="home.ecosystem.enterprise.item3">Dedicated Support</span>
                         </li>
                     </ul>
-                    <a href="#contact" class="text-primary-orange hover:underline text-sm font-semibold" data-i18n="home.ecosystem.contactSales">Contact Sales →</a>
                 </div>
             </div>
         </div>
@@ -778,6 +770,12 @@
                     <p class="text-dark-grey" data-i18n="home.distributors.benefit1.description">
                         Free to Access and seamless integration via the Bridge API. Instantly pull standardized deals into your platform.
                     </p>
+                    <p class="mt-3 text-sm text-medium-grey flex items-start gap-1.5" data-i18n="home.distributors.benefit1.kyc">
+                        <svg class="w-4 h-4 mt-0.5 shrink-0 text-primary-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                        <span>KYC verification is required to register an account and access the Exchange.</span>
+                    </p>
                 </div>
 
                 <!-- Benefit 2 -->
@@ -806,6 +804,152 @@
             </div>
             <div class="text-center mt-10">
                 <a href="for-distributors.html" class="btn-primary inline-block" data-i18n="home.distributors.cta">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Developers Section -->
+    <section id="developers" class="bg-primary-black text-white">
+        <div class="section-container">
+            <div class="text-center mb-10">
+                <p class="text-primary-orange text-xs font-mono font-semibold tracking-widest uppercase mb-3" data-i18n="home.developers.eyebrow">For Developers</p>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4" data-i18n="home.developers.title">
+                    Build on the Exchange Protocol
+                </h2>
+                <p class="text-lg text-gray-300 max-w-3xl mx-auto" data-i18n="home.developers.description">
+                    Integrate coupon functionality into any platform with a developer-first REST API, multi-language SDKs, and comprehensive coupon functions.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 mb-10">
+                <!-- API -->
+                <div class="bg-gray-900 border border-gray-700 hover:border-primary-orange rounded-xl p-6 transition-colors duration-200">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background-color: rgba(255,107,53,0.12);">
+                            <svg class="w-5 h-5 text-primary-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-white" data-i18n="home.developers.api.title">API</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-4" data-i18n="home.developers.api.description">RESTful API with OAuth 2.0 and webhook support for real-time events</p>
+                    <ul class="space-y-2 font-mono text-xs">
+                        <li><span class="text-primary-orange">→</span> <span class="text-gray-300">Bridge API</span></li>
+                        <li><span class="text-primary-orange">→</span> <span class="text-gray-300">Management API</span></li>
+                        <li><span class="text-primary-orange">→</span> <span class="text-gray-300">AI Agent API</span></li>
+                    </ul>
+                </div>
+
+                <!-- SDK -->
+                <div class="bg-gray-900 border border-gray-700 hover:border-primary-orange rounded-xl p-6 transition-colors duration-200">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background-color: rgba(255,107,53,0.12);">
+                            <svg class="w-5 h-5 text-primary-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-white" data-i18n="home.developers.sdk.title">SDK</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-4" data-i18n="home.developers.sdk.description">Official SDKs for every major platform — reduce integration time with idiomatic libraries</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-800 text-gray-300 font-mono text-xs px-2 py-1 rounded">JS/TS</span>
+                        <span class="bg-gray-800 text-gray-300 font-mono text-xs px-2 py-1 rounded">Python</span>
+                        <span class="bg-gray-800 text-gray-300 font-mono text-xs px-2 py-1 rounded">PHP</span>
+                        <span class="bg-gray-800 text-gray-300 font-mono text-xs px-2 py-1 rounded">iOS</span>
+                        <span class="bg-gray-800 text-gray-300 font-mono text-xs px-2 py-1 rounded">Android</span>
+                        <span class="bg-gray-800 text-gray-300 font-mono text-xs px-2 py-1 rounded">React Native</span>
+                    </div>
+                </div>
+
+                <!-- Coupon Functions -->
+                <div class="bg-gray-900 border border-gray-700 hover:border-primary-orange rounded-xl p-6 transition-colors duration-200">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background-color: rgba(255,107,53,0.12);">
+                            <svg class="w-5 h-5 text-primary-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-white" data-i18n="home.developers.functions.title">Coupon Functions</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-4" data-i18n="home.developers.functions.description">Full lifecycle control from issuance to redemption validation across all channels</p>
+                    <ul class="space-y-2 font-mono text-xs">
+                        <li><span class="text-primary-orange">→</span> <span class="text-gray-300">coupon.issue()</span></li>
+                        <li><span class="text-primary-orange">→</span> <span class="text-gray-300">coupon.validate()</span></li>
+                        <li><span class="text-primary-orange">→</span> <span class="text-gray-300">inventory.query()</span></li>
+                        <li><span class="text-primary-orange">→</span> <span class="text-gray-300">campaign.manage()</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="for-developers.html" class="btn-primary inline-block" data-i18n="home.developers.cta">View API Docs &amp; Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- For AI Commerce Section -->
+    <section id="ai-commerce" class="bg-white">
+        <div class="section-container">
+            <div class="text-center mb-10">
+                <p class="text-primary-orange text-xs font-mono font-semibold tracking-widest uppercase mb-3" data-i18n="home.aiCommerce.eyebrow">For AI Commerce</p>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black mb-4" data-i18n="home.aiCommerce.title">
+                    The Coupon Infrastructure for AI Agents
+                </h2>
+                <p class="text-lg text-dark-grey max-w-3xl mx-auto" data-i18n="home.aiCommerce.description">
+                    When ChatGPT, Gemini, or Kimi recommend a deal, it comes from the Mezzofy Exchange — tokenized, fraud-proof, and ready to redeem. 900M+ weekly AI users. Your merchant inventory. One integration.
+                </p>
+            </div>
+
+            <!-- Three Protocols -->
+            <div class="space-y-4 mb-10">
+                <!-- ChatGPT ACP -->
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-5 rounded-xl border border-gray-100 hover:border-primary-orange hover:shadow-sm transition-all duration-200">
+                    <div class="flex-shrink-0">
+                        <span class="bg-primary-orange text-white text-xs font-bold px-3 py-1.5 rounded-full whitespace-nowrap" data-i18n="home.aiCommerce.acp.badge">LIVE · SEP 2025</span>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h3 class="font-bold text-primary-black" data-i18n="home.aiCommerce.acp.title">ChatGPT — Agentic Commerce Protocol (ACP)</h3>
+                        <p class="text-sm text-medium-grey mt-0.5" data-i18n="home.aiCommerce.acp.description">User asks for a deal → ChatGPT queries Mezzofy → consumer redeems via Instant Checkout inside chat</p>
+                    </div>
+                    <div class="flex-shrink-0 text-right sm:text-right">
+                        <div class="text-2xl font-bold text-primary-orange">900M+</div>
+                        <div class="text-xs text-medium-grey" data-i18n="home.aiCommerce.acp.stat">weekly users</div>
+                    </div>
+                </div>
+
+                <!-- Google Gemini UCP -->
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-5 rounded-xl border border-gray-100 hover:border-primary-orange hover:shadow-sm transition-all duration-200">
+                    <div class="flex-shrink-0">
+                        <span class="bg-primary-black text-white text-xs font-bold px-3 py-1.5 rounded-full whitespace-nowrap" data-i18n="home.aiCommerce.ucp.badge">ANNOUNCED · JAN 2026</span>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h3 class="font-bold text-primary-black" data-i18n="home.aiCommerce.ucp.title">Google Gemini — Universal Commerce Protocol (UCP)</h3>
+                        <p class="text-sm text-medium-grey mt-0.5" data-i18n="home.aiCommerce.ucp.description">Coupons indexed in Google Shopping Graph and surfaced across Search, Maps, Shopping, and Assistant</p>
+                    </div>
+                    <div class="flex-shrink-0 text-right sm:text-right">
+                        <div class="text-2xl font-bold text-primary-orange">45B</div>
+                        <div class="text-xs text-medium-grey" data-i18n="home.aiCommerce.ucp.stat">item graph</div>
+                    </div>
+                </div>
+
+                <!-- Kimi MCP -->
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-5 rounded-xl border border-gray-100 hover:border-primary-orange hover:shadow-sm transition-all duration-200">
+                    <div class="flex-shrink-0">
+                        <span class="text-xs font-bold px-3 py-1.5 rounded-full whitespace-nowrap border border-gray-300 text-medium-grey" data-i18n="home.aiCommerce.mcp.badge">EXPANDING</span>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h3 class="font-bold text-primary-black" data-i18n="home.aiCommerce.mcp.title">Kimi &amp; Regional AI Agents — MCP / REST API</h3>
+                        <p class="text-sm text-medium-grey mt-0.5" data-i18n="home.aiCommerce.mcp.description">Access mainland China, Hong Kong, and Taiwan via Moonshot AI's Kimi through MCP and China Mobile partnership</p>
+                    </div>
+                    <div class="flex-shrink-0 text-right sm:text-right">
+                        <div class="text-2xl font-bold text-primary-orange">CN+</div>
+                        <div class="text-xs text-medium-grey" data-i18n="home.aiCommerce.mcp.stat">market access</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="for-ai-commerce.html" class="btn-primary inline-block" data-i18n="home.aiCommerce.cta">Explore AI Commerce</a>
             </div>
         </div>
     </section>
@@ -924,7 +1068,7 @@
             </div>
 
             <div class="border-t border-gray-700 pt-8 text-center text-sm">
-                <p data-i18n="common.footer.copyright">&copy; 2024 Mezzofy. All rights reserved.</p>
+                <p data-i18n="common.footer.copyright">&copy; 2026 Mezzofy. All rights reserved.</p>
             </div>
         </div>
     </footer>

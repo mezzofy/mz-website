@@ -57,7 +57,10 @@
       "Bash(do echo:*)",
       "Read(//c/Mezzofy/workspace/mz-website/**)",
       "Bash(for f:*)",
-      "Bash(__NEW_LINE_0d3da55e26e24c8c__ done:*)"
+      "Bash(__NEW_LINE_0d3da55e26e24c8c__ done:*)",
+      "Bash(firecrawl scrape:*)",
+      "Bash(npx firecrawl-cli:*)",
+      "Bash(npx --yes firecrawl-cli@latest scrape \"https://mezzofy.github.io/mz-website/dist/for-developers.html\" --only-main-content -o .firecrawl/for-developers.md)"
     ],
     "deny": [],
     "ask": []
