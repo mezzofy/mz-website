@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Real-time system status for Mezzofy services — Merchant Portal, Marketplace Portal, Coupon Engine, and Coupon NFC.">
+    <meta name="theme-color" content="#FF6B35">
+    <title>System Status | Mezzofy</title>
+
+    <!-- SEO Core -->
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mezzofy.com/status.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type"        content="website">
+    <meta property="og:title"       content="System Status | Mezzofy">
+    <meta property="og:description" content="Real-time health status for all Mezzofy systems.">
+    <meta property="og:url"         content="https://mezzofy.com/status.html">
+    <meta property="og:image"       content="https://mezzofy.com/assets/images/og-image.jpg">
+    <meta property="og:site_name"   content="Mezzofy">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-orange': '#FF6B35',
+                        'primary-black': '#1A1A1A',
+                        'light-grey': '#F5F5F5',
+                        'medium-grey': '#757575',
+                        'dark-grey': '#424242'
+                    },
+                    fontFamily: {
+                        mono: ['JetBrains Mono', 'Fira Code', 'Courier New', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- JetBrains Mono for terminal aesthetic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Navigation component classes */
+        .dropdown { position: relative; }
+        .dropdown-trigger {
+            display: flex; align-items: center; gap: 4px;
+            font-size: 0.875rem; font-weight: 500;
+            padding: 0.25rem 0;
+            background: none; border: none; cursor: pointer;
+        }
+        .dropdown-menu {
+            display: none; position: absolute; top: calc(100% + 8px); left: 50%;
+            transform: translateX(-50%); background: white;
+            border-radius: 0.5rem; box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+            min-width: 200px; z-index: 100; overflow: hidden;
+        }
+        .dropdown:hover .dropdown-menu { display: block; }
+        .dropdown-item {
+            display: block; padding: 0.625rem 1rem;
+            font-size: 0.875rem; color: #424242;
+            transition: background 0.15s, color 0.15s;
+        }
+        .dropdown-item:hover { background: #F5F5F5; color: #FF6B35; }
+        .mobile-dropdown-trigger {
+            width: 100%; display: flex; justify-content: space-between; align-items: center;
+            padding: 0.625rem 0; font-size: 0.9375rem; font-weight: 500;
+            background: none; border: none; cursor: pointer; color: #1A1A1A;
+        }
+        .mobile-dropdown-menu { display: none; padding-left: 1rem; }
+        .mobile-dropdown-menu.active { display: block; }
+        .mobile-dropdown-trigger .chevron.rotated { transform: rotate(180deg); }
+
+        /* Footer */
+        .btn-primary {
+            background-color: #FF6B35; color: white;
+            padding: 0.75rem 1.5rem; border-radius: 0.5rem;
+            font-weight: 600; display: inline-block;
+            transition: background-color 0.2s;
+        }
+        .btn-primary:hover { background-color: #e65a2b; }
+
+        /* Status page specific */
+        @keyframes pulse-ring {
+            0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+        }
+        @keyframes pulse-ring-amber {
+            0% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(245, 158, 11, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
+        }
+        @keyframes pulse-ring-red {
+            0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+        .pulse-green { animation: pulse-ring 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite; }
+        .pulse-amber { animation: pulse-ring-amber 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite; }
+        .pulse-red { animation: pulse-ring-red 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite; }
+        .live-blink { animation: blink 1.5s ease-in-out infinite; }
+
+        .status-bar-segment {
+            height: 6px;
+            border-radius: 2px;
+            flex: 1;
+            margin: 0 1px;
+            transition: opacity 0.2s;
+        }
+
+        .system-card {
+            background: white;
+            border: 1px solid #E5E7EB;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+        .system-card:hover {
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+            transform: translateY(-2px);
+        }
+        .system-card-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid #F3F4F6;
+        }
+        .system-card-body {
+            padding: 1.5rem;
+            background: #FAFAFA;
+        }
+
+        .metric-chip {
+            display: inline-flex; align-items: center; gap: 4px;
+            background: #F3F4F6; border-radius: 6px;
+            padding: 0.25rem 0.625rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem; color: #424242; font-weight: 500;
+        }
+
+        .incident-row {
+            display: flex; align-items: flex-start; gap: 12px;
+            padding: 1rem 0;
+            border-bottom: 1px solid #F3F4F6;
+        }
+        .incident-row:last-child { border-bottom: none; }
+
+        .timeline-dot {
+            width: 10px; height: 10px; border-radius: 50%;
+            flex-shrink: 0; margin-top: 5px;
+        }
+
+        /* Overall status banner states */
+        .banner-operational { background: linear-gradient(135deg, #065f46, #047857); }
+        .banner-degraded { background: linear-gradient(135deg, #92400e, #b45309); }
+        .banner-outage { background: linear-gradient(135deg, #7f1d1d, #991b1b); }
+
+        /* Uptime bar */
+        .uptime-day {
+            width: 8px; height: 28px; border-radius: 2px;
+            flex-shrink: 0; cursor: pointer;
+            transition: opacity 0.15s;
+        }
+        .uptime-day:hover { opacity: 0.7; }
+
+        @media (max-width: 640px) {
+            .uptime-day { width: 4px; }
+        }
+
+        /* Scroll indicator */
+        .section-container-status {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+    </style>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="output.css">
+
+    <!-- i18n Script -->
+    <script src="i18n/i18n.js"></script>
+</head>
+<body class="bg-white text-dark-grey i18n-loading">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <img src="assets/images/logo.png" alt="Mezzofy Logo" class="h-8 md:h-10">
+                        <span class="md:hidden text-xl font-bold text-primary-black">MEZZOFY</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <!-- Solutions Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.solutions">Solutions</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="for-merchants.html" class="dropdown-item" data-i18n="common.nav.merchantSolution">I'm a Merchant</a>
+                            <a href="for-distributors.html" class="dropdown-item" data-i18n="common.nav.distributorSolution">I'm a Distributor</a>
+                            <a href="for-developers.html" class="dropdown-item" data-i18n="common.nav.developerSolution">I'm a Developer</a>
+                            <a href="for-ai-commerce.html" class="dropdown-item" data-i18n="common.nav.aiCommerceSolution">AI Commerce</a>
+                        </div>
+                    </div>
+
+                    <!-- Products Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.products">Products</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="coupon-management.html" class="dropdown-item" data-i18n="common.nav.managementSystem">Coupon Management System</a>
+                            <a href="coupon-marketplace.html" class="dropdown-item" data-i18n="common.nav.marketplace">Coupon Marketplace</a>
+                            <a href="coupon-nfc.html" class="dropdown-item" data-i18n="common.nav.nfc">Coupon NFC</a>
+                            <a href="coupon-marketing.html" class="dropdown-item" data-i18n="common.nav.marketing">Coupon Marketing</a>
+                            <a href="coupon-wallet.html" class="dropdown-item" data-i18n="common.nav.wallet">Coupon Wallet</a>
+                            <a href="coupon-serial.html" class="dropdown-item" data-i18n="common.nav.serial">Coupon Serial</a>
+                        </div>
+                    </div>
+
+                    <!-- Developer Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.developer">Developer</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="api-doc.html" class="dropdown-item" data-i18n="common.nav.apiDoc">API Documentation</a>
+                            <a href="api-use-case.html" class="dropdown-item" data-i18n="common.nav.apiUseCase">API Use Case</a>
+                        </div>
+                    </div>
+
+                    <!-- Resources Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.resources">Resources</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="coupon-playbook.html" class="dropdown-item" data-i18n="common.nav.playbook">Coupon Playbook</a>
+                            <a href="support.html" class="dropdown-item" data-i18n="common.nav.support">Support</a>
+                        </div>
+                    </div>
+
+                    <!-- Company Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.company">Company</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="about.html" class="dropdown-item" data-i18n="common.nav.aboutUs">About Us</a>
+                            <a href="contact.html" class="dropdown-item" data-i18n="common.nav.contactUs">Contact Us</a>
+                            <a href="news-press.html" class="dropdown-item" data-i18n="common.nav.newsPress">News &amp; Press</a>
+                            <a href="investors.html" class="dropdown-item" data-i18n="common.nav.investors">Investors</a>
+                        </div>
+                    </div>
+
+                    <!-- Language Toggle Desktop -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <svg class="w-5 h-5 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+                            </svg>
+                            <span id="current-lang-desktop">English</span>
+                            <svg class="w-4 h-4 inline ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item lang-option" data-lang="en">English</a>
+                            <a href="#" class="dropdown-item lang-option" data-lang="zh-TW">繁體中文</a>
+                            <a href="#" class="dropdown-item lang-option" data-lang="zh-CN">简体中文</a>
+                        </div>
+                    </div>
+
+                    <a href="contact.html" class="btn-primary" data-i18n="common.nav.getStarted">Get Started</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-primary-black focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-1">
+                <!-- Language Toggle Mobile -->
+                <div class="mobile-dropdown border-b border-gray-200 pb-2 mb-2">
+                    <button class="mobile-dropdown-trigger" data-dropdown="language">
+                        <span class="flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+                            </svg>
+                            <span id="current-lang-mobile">English</span>
+                        </span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="language">
+                        <a href="#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange lang-option" data-lang="en">English</a>
+                        <a href="#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange lang-option" data-lang="zh-TW">繁體中文</a>
+                        <a href="#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange lang-option" data-lang="zh-CN">简体中文</a>
+                    </div>
+                </div>
+
+                <!-- Solutions Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" data-dropdown="solutions">
+                        <span data-i18n="common.nav.solutions">Solutions</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="solutions">
+                        <a href="for-merchants.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.merchantSolution">I'm a Merchant</a>
+                        <a href="for-distributors.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.distributorSolution">I'm a Distributor</a>
+                        <a href="for-developers.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.developerSolution">I'm a Developer</a>
+                        <a href="for-ai-commerce.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.aiCommerceSolution">AI Commerce</a>
+                    </div>
+                </div>
+
+                <!-- Products Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" data-dropdown="products">
+                        <span data-i18n="common.nav.products">Products</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="products">
+                        <a href="coupon-management.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.managementSystem">Coupon Management System</a>
+                        <a href="coupon-marketplace.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.marketplace">Coupon Marketplace</a>
+                        <a href="coupon-nfc.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.nfc">Coupon NFC</a>
+                        <a href="coupon-marketing.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.marketing">Coupon Marketing</a>
+                        <a href="coupon-wallet.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.wallet">Coupon Wallet</a>
+                        <a href="coupon-serial.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.serial">Coupon Serial</a>
+                    </div>
+                </div>
+
+                <!-- Developer Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" data-dropdown="developer">
+                        <span data-i18n="common.nav.developer">Developer</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="developer">
+                        <a href="api-doc.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.apiDoc">API Documentation</a>
+                        <a href="api-use-case.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.apiUseCase">API Use Case</a>
+                    </div>
+                </div>
+
+                <!-- Resources Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" data-dropdown="resources">
+                        <span data-i18n="common.nav.resources">Resources</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="resources">
+                        <a href="coupon-playbook.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.playbook">Coupon Playbook</a>
+                        <a href="support.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.support">Support</a>
+                    </div>
+                </div>
+
+                <!-- Company Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" data-dropdown="company">
+                        <span data-i18n="common.nav.company">Company</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="company">
+                        <a href="about.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.aboutUs">About Us</a>
+                        <a href="contact.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.contactUs">Contact Us</a>
+                        <a href="news-press.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.newsPress">News &amp; Press</a>
+                        <a href="investors.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.investors">Investors</a>
+                    </div>
+                </div>
+
+                <a href="contact.html" class="block py-2 text-primary-orange font-semibold" data-i18n="common.nav.getStarted">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- OVERALL STATUS BANNER                           -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section id="status-banner" class="pt-16">
+        <div class="banner-operational py-10">
+            <div class="section-container-status text-center">
+                <div class="flex items-center justify-center gap-3 mb-2">
+                    <span id="banner-dot" class="inline-block w-4 h-4 rounded-full bg-green-400 pulse-green"></span>
+                    <h1 id="banner-title" class="text-2xl sm:text-3xl font-bold text-white">All Systems Operational</h1>
+                </div>
+                <p id="last-updated" class="text-green-200 text-sm font-mono mt-1">Last checked: —</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- SYSTEM STATUS CARDS                             -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section class="py-12 bg-light-grey">
+        <div class="section-container-status">
+
+            <!-- Section label -->
+            <div class="flex items-center justify-between mb-6">
+                <h2 class="text-sm font-mono font-semibold text-medium-grey uppercase tracking-widest">Current Status</h2>
+                <span class="flex items-center gap-1.5 text-xs font-mono text-green-600 bg-green-50 border border-green-200 rounded-full px-3 py-1">
+                    <span class="live-blink inline-block w-2 h-2 rounded-full bg-green-500"></span>
+                    LIVE
+                </span>
+            </div>
+
+            <!-- System cards grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+                <!-- Card 1: Merchant Portal -->
+                <div class="system-card" id="card-merchant">
+                    <div class="system-card-header">
+                        <div class="flex items-start justify-between gap-3">
+                            <div class="flex items-center gap-3">
+                                <!-- Icon -->
+                                <div class="w-10 h-10 rounded-lg bg-orange-50 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5 text-primary-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-2 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-primary-black text-base leading-tight">Merchant Portal</h3>
+                                    <p class="text-xs text-medium-grey mt-0.5">Coupon issuance &amp; management dashboard</p>
+                                </div>
+                            </div>
+                            <!-- Status badge -->
+                            <span id="badge-merchant" class="flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold whitespace-nowrap bg-green-100 text-green-800">
+                                <span class="w-1.5 h-1.5 rounded-full bg-green-500 pulse-green inline-block"></span>
+                                Operational
+                            </span>
+                        </div>
+                    </div>
+                    <div class="system-card-body">
+                        <!-- Metrics row -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="metric-chip">
+                                <svg class="w-3 h-3 text-green-500" fill="currentColor" viewBox="0 0 8 8"><circle cx="4" cy="4" r="3"/></svg>
+                                <span id="resp-merchant">— ms</span>
+                            </span>
+                            <span class="metric-chip">
+                                <svg class="w-3 h-3 text-medium-grey" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                                <span id="uptime-merchant">99.98%</span> uptime
+                            </span>
+                        </div>
+                        <!-- 90-day uptime bar -->
+                        <div>
+                            <p class="text-xs text-medium-grey font-mono mb-2">90-day availability</p>
+                            <div id="bar-merchant" class="flex gap-px"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Marketplace Portal -->
+                <div class="system-card" id="card-marketplace">
+                    <div class="system-card-header">
+                        <div class="flex items-start justify-between gap-3">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-lg bg-orange-50 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5 text-primary-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-primary-black text-base leading-tight">Marketplace Portal</h3>
+                                    <p class="text-xs text-medium-grey mt-0.5">Digital coupon exchange &amp; inventory</p>
+                                </div>
+                            </div>
+                            <span id="badge-marketplace" class="flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold whitespace-nowrap bg-green-100 text-green-800">
+                                <span class="w-1.5 h-1.5 rounded-full bg-green-500 pulse-green inline-block"></span>
+                                Operational
+                            </span>
+                        </div>
+                    </div>
+                    <div class="system-card-body">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="metric-chip">
+                                <svg class="w-3 h-3 text-green-500" fill="currentColor" viewBox="0 0 8 8"><circle cx="4" cy="4" r="3"/></svg>
+                                <span id="resp-marketplace">— ms</span>
+                            </span>
+                            <span class="metric-chip">
+                                <svg class="w-3 h-3 text-medium-grey" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                                <span id="uptime-marketplace">99.95%</span> uptime
+                            </span>
+                        </div>
+                        <div>
+                            <p class="text-xs text-medium-grey font-mono mb-2">90-day availability</p>
+                            <div id="bar-marketplace" class="flex gap-px"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Coupon Engine -->
+                <div class="system-card" id="card-engine">
+                    <div class="system-card-header">
+                        <div class="flex items-start justify-between gap-3">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-lg bg-orange-50 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5 text-primary-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-primary-black text-base leading-tight">Coupon Engine</h3>
+                                    <p class="text-xs text-medium-grey mt-0.5">Tokenization, issuance &amp; validation API</p>
+                                </div>
+                            </div>
+                            <span id="badge-engine" class="flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold whitespace-nowrap bg-green-100 text-green-800">
+                                <span class="w-1.5 h-1.5 rounded-full bg-green-500 pulse-green inline-block"></span>
+                                Operational
+                            </span>
+                        </div>
+                    </div>
+                    <div class="system-card-body">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="metric-chip">
+                                <svg class="w-3 h-3 text-green-500" fill="currentColor" viewBox="0 0 8 8"><circle cx="4" cy="4" r="3"/></svg>
+                                <span id="resp-engine">— ms</span>
+                            </span>
+                            <span class="metric-chip">
+                                <svg class="w-3 h-3 text-medium-grey" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                                <span id="uptime-engine">100%</span> uptime
+                            </span>
+                        </div>
+                        <div>
+                            <p class="text-xs text-medium-grey font-mono mb-2">90-day availability</p>
+                            <div id="bar-engine" class="flex gap-px"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Coupon NFC -->
+                <div class="system-card" id="card-nfc">
+                    <div class="system-card-header">
+                        <div class="flex items-start justify-between gap-3">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-lg bg-orange-50 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5 text-primary-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.14 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-primary-black text-base leading-tight">Coupon NFC</h3>
+                                    <p class="text-xs text-medium-grey mt-0.5">NFC tap-to-redeem infrastructure</p>
+                                </div>
+                            </div>
+                            <span id="badge-nfc" class="flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold whitespace-nowrap bg-green-100 text-green-800">
+                                <span class="w-1.5 h-1.5 rounded-full bg-green-500 pulse-green inline-block"></span>
+                                Operational
+                            </span>
+                        </div>
+                    </div>
+                    <div class="system-card-body">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="metric-chip">
+                                <svg class="w-3 h-3 text-green-500" fill="currentColor" viewBox="0 0 8 8"><circle cx="4" cy="4" r="3"/></svg>
+                                <span id="resp-nfc">— ms</span>
+                            </span>
+                            <span class="metric-chip">
+                                <svg class="w-3 h-3 text-medium-grey" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                                <span id="uptime-nfc">99.99%</span> uptime
+                            </span>
+                        </div>
+                        <div>
+                            <p class="text-xs text-medium-grey font-mono mb-2">90-day availability</p>
+                            <div id="bar-nfc" class="flex gap-px"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /grid -->
+
+            <!-- Legend -->
+            <div class="flex items-center gap-6 mt-5 text-xs font-mono text-medium-grey">
+                <span class="flex items-center gap-1.5"><span class="inline-block w-3 h-3 rounded-sm bg-green-500"></span> Operational</span>
+                <span class="flex items-center gap-1.5"><span class="inline-block w-3 h-3 rounded-sm bg-amber-400"></span> Degraded</span>
+                <span class="flex items-center gap-1.5"><span class="inline-block w-3 h-3 rounded-sm bg-red-500"></span> Outage</span>
+                <span class="flex items-center gap-1.5"><span class="inline-block w-3 h-3 rounded-sm bg-gray-300"></span> No data</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- INCIDENT HISTORY                                -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section class="py-12 bg-white">
+        <div class="section-container-status">
+
+            <h2 class="text-sm font-mono font-semibold text-medium-grey uppercase tracking-widest mb-6">Incident History</h2>
+
+            <!-- Past 30 days: no incidents -->
+            <div class="system-card mb-4">
+                <div class="px-6 py-5">
+                    <div class="flex items-center gap-3 mb-1">
+                        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span class="font-semibold text-primary-black">No incidents in the last 30 days</span>
+                    </div>
+                    <p class="text-sm text-medium-grey ml-8">All systems have been fully operational. Older incidents are listed below.</p>
+                </div>
+            </div>
+
+            <!-- Incident items -->
+            <div class="system-card">
+                <div class="px-6 py-2">
+
+                    <div class="incident-row">
+                        <div class="timeline-dot bg-amber-400 mt-1.5"></div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex flex-wrap items-center gap-2 mb-1">
+                                <span class="text-xs font-mono bg-amber-50 text-amber-700 border border-amber-200 rounded px-2 py-0.5">DEGRADED</span>
+                                <span class="font-semibold text-sm text-primary-black">Marketplace Portal — Elevated API Latency</span>
+                            </div>
+                            <p class="text-sm text-dark-grey mb-1.5">Response times increased by 3× for inventory query endpoints during peak trading hours. Root cause: database connection pool exhaustion under high concurrent load. Resolved by scaling connection pool capacity.</p>
+                            <span class="text-xs font-mono text-medium-grey">Mar 8, 2026 · 14:22 – 15:47 UTC · Duration: 1h 25m</span>
+                        </div>
+                    </div>
+
+                    <div class="incident-row">
+                        <div class="timeline-dot bg-amber-400 mt-1.5"></div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex flex-wrap items-center gap-2 mb-1">
+                                <span class="text-xs font-mono bg-amber-50 text-amber-700 border border-amber-200 rounded px-2 py-0.5">DEGRADED</span>
+                                <span class="font-semibold text-sm text-primary-black">Coupon Engine — Increased Validation Errors</span>
+                            </div>
+                            <p class="text-sm text-dark-grey mb-1.5">A subset of NFC-issued coupons reported validation failures during redemption. Affected approximately 0.3% of transactions. Traced to a malformed token signature in one batch. Patch deployed without downtime.</p>
+                            <span class="text-xs font-mono text-medium-grey">Feb 19, 2026 · 09:11 – 10:03 UTC · Duration: 52m</span>
+                        </div>
+                    </div>
+
+                    <div class="incident-row">
+                        <div class="timeline-dot bg-red-500 mt-1.5"></div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex flex-wrap items-center gap-2 mb-1">
+                                <span class="text-xs font-mono bg-red-50 text-red-700 border border-red-200 rounded px-2 py-0.5">OUTAGE</span>
+                                <span class="font-semibold text-sm text-primary-black">Merchant Portal — Scheduled Maintenance Overrun</span>
+                            </div>
+                            <p class="text-sm text-dark-grey mb-1.5">Planned infrastructure migration extended beyond the maintenance window due to an unexpected schema migration dependency. Portal was unavailable for an additional 38 minutes beyond the scheduled window.</p>
+                            <span class="text-xs font-mono text-medium-grey">Jan 31, 2026 · 02:00 – 04:38 UTC · Duration: 2h 38m (planned: 2h)</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- SUBSCRIBE NOTICE                                -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section class="py-10 bg-light-grey border-t border-gray-200">
+        <div class="section-container-status text-center">
+            <p class="text-sm text-dark-grey mb-1">Experiencing an issue not reflected here?</p>
+            <a href="contact.html" class="inline-flex items-center gap-1.5 text-sm font-semibold text-primary-orange hover:underline">
+                Contact Support
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-black text-gray-300 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="lg:col-span-1">
+                    <h3 class="text-2xl font-bold text-primary-orange mb-4">Mezzofy</h3>
+                    <p class="text-sm mb-4" data-i18n="common.footer.tagline">Building the future of coupon infrastructure through the Mezzofy Exchange Protocol.</p>
+                </div>
+
+                <!-- Solutions -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.solutions.title">Solutions</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="for-merchants.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.merchants">For Merchants</a></li>
+                        <li><a href="for-distributors.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.distributors">For Distributors</a></li>
+                        <li><a href="for-developers.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.developers">For Developers</a></li>
+                        <li><a href="for-ai-commerce.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.aiCommerce">For AI Commerce</a></li>
+                        <li><a href="index.html#product-ecosystem" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.ecosystem">Product Ecosystem</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.products.title">Products</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="coupon-management.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.management">Management</a></li>
+                        <li><a href="coupon-marketplace.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.marketplace">Marketplace</a></li>
+                        <li><a href="coupon-nfc.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.nfc">NFC</a></li>
+                        <li><a href="coupon-marketing.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.marketing">Marketing</a></li>
+                        <li><a href="coupon-wallet.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.wallet">Wallet</a></li>
+                        <li><a href="coupon-serial.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.serial">Serial</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.resources.title">Resources</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="coupon-playbook.html" class="hover:text-white transition-colors" data-i18n="common.footer.resources.playbook">Coupon Playbook</a></li>
+                        <li><a href="api-doc.html" class="hover:text-white transition-colors" data-i18n="common.footer.resources.apiDoc">API Documentation</a></li>
+                        <li><a href="api-use-case.html" class="hover:text-white transition-colors" data-i18n="common.footer.resources.apiUseCase">API Use Case</a></li>
+                        <li><a href="support.html" class="hover:text-white transition-colors" data-i18n="common.footer.resources.support">Support</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.company.title">Company</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="about.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.about">About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.contact">Contact Us</a></li>
+                        <li><a href="news-press.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.news">News &amp; Press</a></li>
+                        <li><a href="investors.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.investors">Investors</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8 text-center text-sm">
+                <p data-i18n="common.footer.copyright">&copy; 2026 Mezzofy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+    <script>
+    // ═══════════════════════════════════════════════════
+    // STATUS PAGE — LIVE INDICATOR LOGIC
+    // ═══════════════════════════════════════════════════
+
+    // System definitions
+    const SYSTEMS = [
+        {
+            key: 'merchant',
+            name: 'Merchant Portal',
+            status: 'operational',    // 'operational' | 'degraded' | 'outage' | 'maintenance'
+            responseMs: 118,
+            uptime: '99.98%',
+            // 90-day history: 0=no data, 1=operational, 2=degraded, 3=outage
+            history: (function() {
+                const h = new Array(90).fill(1);
+                // Jan 31 outage — ~day 52 from today (Mar 24)
+                h[88] = 3; h[87] = 3;
+                return h;
+            })()
+        },
+        {
+            key: 'marketplace',
+            name: 'Marketplace Portal',
+            status: 'operational',
+            responseMs: 143,
+            uptime: '99.95%',
+            history: (function() {
+                const h = new Array(90).fill(1);
+                // Mar 8 degraded — ~day 16 from today
+                h[16] = 2;
+                return h;
+            })()
+        },
+        {
+            key: 'engine',
+            name: 'Coupon Engine',
+            status: 'operational',
+            responseMs: 42,
+            uptime: '100%',
+            history: (function() {
+                const h = new Array(90).fill(1);
+                // Feb 19 degraded — ~day 33
+                h[33] = 2;
+                return h;
+            })()
+        },
+        {
+            key: 'nfc',
+            name: 'Coupon NFC',
+            status: 'operational',
+            responseMs: 67,
+            uptime: '99.99%',
+            history: new Array(90).fill(1)
+        }
+    ];
+
+    const STATUS_CONFIG = {
+        operational: {
+            label: 'Operational',
+            badgeClass: 'bg-green-100 text-green-800',
+            dotClass: 'bg-green-500 pulse-green',
+            barColor: '#22c55e'
+        },
+        degraded: {
+            label: 'Degraded',
+            badgeClass: 'bg-amber-100 text-amber-800',
+            dotClass: 'bg-amber-400 pulse-amber',
+            barColor: '#f59e0b'
+        },
+        outage: {
+            label: 'Outage',
+            badgeClass: 'bg-red-100 text-red-800',
+            dotClass: 'bg-red-500 pulse-red',
+            barColor: '#ef4444'
+        },
+        maintenance: {
+            label: 'Maintenance',
+            badgeClass: 'bg-blue-100 text-blue-800',
+            dotClass: 'bg-blue-400',
+            barColor: '#60a5fa'
+        }
+    };
+
+    function historyColor(val) {
+        if (val === 0) return '#D1D5DB';
+        if (val === 1) return '#22c55e';
+        if (val === 2) return '#f59e0b';
+        if (val === 3) return '#ef4444';
+        return '#D1D5DB';
+    }
+
+    function buildUptimeBar(containerId, history) {
+        const container = document.getElementById(containerId);
+        if (!container) return;
+        container.innerHTML = '';
+        history.forEach(function(val, idx) {
+            const day = document.createElement('div');
+            day.className = 'uptime-day';
+            day.style.backgroundColor = historyColor(val);
+            // Tooltip-style title
+            const daysAgo = history.length - 1 - idx;
+            day.title = daysAgo === 0 ? 'Today' : daysAgo + ' days ago';
+            container.appendChild(day);
+        });
+    }
+
+    function updateSystemCard(system) {
+        const cfg = STATUS_CONFIG[system.status] || STATUS_CONFIG.operational;
+
+        // Badge
+        const badge = document.getElementById('badge-' + system.key);
+        if (badge) {
+            badge.className = 'flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold whitespace-nowrap ' + cfg.badgeClass;
+            badge.innerHTML = '<span class="w-1.5 h-1.5 rounded-full inline-block ' + cfg.dotClass + '"></span>' + cfg.label;
+        }
+
+        // Response time
+        const resp = document.getElementById('resp-' + system.key);
+        if (resp) resp.textContent = system.responseMs + ' ms';
+
+        // Uptime
+        const upt = document.getElementById('uptime-' + system.key);
+        if (upt) upt.textContent = system.uptime;
+
+        // Uptime bar
+        buildUptimeBar('bar-' + system.key, system.history);
+    }
+
+    function updateOverallBanner() {
+        const banner = document.getElementById('status-banner');
+        const bannerTitle = document.getElementById('banner-title');
+        const bannerDot = document.getElementById('banner-dot');
+
+        const hasOutage    = SYSTEMS.some(s => s.status === 'outage');
+        const hasDegraded  = SYSTEMS.some(s => s.status === 'degraded');
+        const hasMaintenance = SYSTEMS.some(s => s.status === 'maintenance');
+
+        const div = banner ? banner.querySelector('div') : null;
+
+        if (hasOutage) {
+            if (div) { div.className = div.className.replace(/banner-\w+/, ''); div.classList.add('banner-outage'); }
+            if (bannerTitle) bannerTitle.textContent = 'Service Disruption Detected';
+            if (bannerDot) { bannerDot.className = 'inline-block w-4 h-4 rounded-full bg-red-400 pulse-red'; }
+        } else if (hasDegraded) {
+            if (div) { div.className = div.className.replace(/banner-\w+/, ''); div.classList.add('banner-degraded'); }
+            if (bannerTitle) bannerTitle.textContent = 'Partial System Degradation';
+            if (bannerDot) { bannerDot.className = 'inline-block w-4 h-4 rounded-full bg-amber-400 pulse-amber'; }
+        } else if (hasMaintenance) {
+            if (div) div.style.background = 'linear-gradient(135deg, #1e3a5f, #1e40af)';
+            if (bannerTitle) bannerTitle.textContent = 'Scheduled Maintenance in Progress';
+            if (bannerDot) bannerDot.className = 'inline-block w-4 h-4 rounded-full bg-blue-400';
+        } else {
+            if (div) { div.classList.add('banner-operational'); }
+            if (bannerTitle) bannerTitle.textContent = 'All Systems Operational';
+            if (bannerDot) bannerDot.className = 'inline-block w-4 h-4 rounded-full bg-green-400 pulse-green';
+        }
+    }
+
+    function updateTimestamp() {
+        const el = document.getElementById('last-updated');
+        if (!el) return;
+        const now = new Date();
+        const pad = n => String(n).padStart(2, '0');
+        el.textContent = 'Last checked: ' +
+            now.getFullYear() + '-' + pad(now.getMonth()+1) + '-' + pad(now.getDate()) + ' ' +
+            pad(now.getHours()) + ':' + pad(now.getMinutes()) + ':' + pad(now.getSeconds()) + ' UTC';
+    }
+
+    function init() {
+        SYSTEMS.forEach(updateSystemCard);
+        updateOverallBanner();
+        updateTimestamp();
+    }
+
+    // Simulate live response-time fluctuation (cosmetic only)
+    function tickResponseTimes() {
+        SYSTEMS.forEach(function(system) {
+            const el = document.getElementById('resp-' + system.key);
+            if (!el) return;
+            if (system.status !== 'operational') return;
+            const jitter = Math.round((Math.random() - 0.5) * 20);
+            el.textContent = Math.max(10, system.responseMs + jitter) + ' ms';
+        });
+        updateTimestamp();
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        init();
+        setInterval(tickResponseTimes, 5000);
+    });
+    </script>
+
+</body>
+</html>
