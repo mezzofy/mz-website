@@ -94,13 +94,13 @@
     "hero": {
       "title": "THE <span class=\"text-primary-orange\">INTELLIGENT EXCHANGE</span> FOR DIGITAL VALUE",
       "subtitle": "Connecting Merchants and Distributors Through Secure, Tokenized Digital Commerce",
-      "description": "Mezzofy is the AI-powered, tokenized protocol that connects coupon/voucher <strong>Supply</strong> directly to <strong>Demand</strong> — ensuring fraud-free validation and maximized redemption worldwide.",
+      "description": "Mezzofy is the digital coupon exchange protocol — powering coupons, vouchers, and gift vouchers through a single tokenized infrastructure.",
       "ctaMerchants": "List Your Inventory: Start Selling",
-      "ctaDistributors": "Access Deals: Find Partners"
+      "ctaDistributors": "Access Inventory: Find Partners"
     },
     "protocol": {
-      "title": "The Future of Promotions is Secure, Standardized, and Tokenized",
-      "description": "Traditional digital promotions are failing due to fragmentation, high costs, and security risks. We eliminate the obsolete SaaS model and replace it with a high-liquidity, high-performance Exchange Protocol.",
+      "title": "The Future of Digital Coupons is Secure, Standardized, and Tokenized",
+      "description": "Traditional digital coupon distribution is failing due to fragmentation, high costs, and security risks. We eliminate the obsolete SaaS model and replace it with a high-liquidity, high-performance Exchange Protocol.",
       "network": {
         "title": "From Tool to Network",
         "description": "We focus on network effects and secure settlement, not just features. Build real value through connections."
@@ -111,7 +111,7 @@
       },
       "security": {
         "title": "Unrivaled Security",
-        "description": "Every promotion is standardized into the Mezzofy Coupon Standard, a proprietary protocol that guarantees unique, fraud-proof digital assets."
+        "description": "Every digital coupon is standardized into the Mezzofy Coupon Standard, a proprietary protocol that guarantees unique, fraud-proof digital assets."
       }
     },
     "ecosystem": {
@@ -134,7 +134,7 @@
         "title": "Consumer Experience",
         "description": "Customer-facing coupon collection",
         "item1": "Multi-platform access",
-        "item2": "Unique coupon/voucher identity"
+        "item2": "Unique digital coupon identity"
       },
       "strategy": {
         "title": "Strategy & Enablement",
@@ -189,16 +189,16 @@
       },
       "benefit4": {
         "title": "Future-Proof Asset",
-        "description": "Your promotions are tokenized, opening up possibilities for secondary markets and new financial instruments (RWA Linkage)."
+        "description": "Your digital coupons are tokenized, opening up possibilities for secondary markets and new financial instruments (RWA Linkage)."
       },
       "cta": "Explore Merchant Solutions"
     },
     "distributors": {
       "title": "For Distributors: Access the World's Most Secure, High-Intent Coupon Inventory",
-      "description": "Enhance your loyalty program, banking app, or corporate HR portal with real-time, verified deals without the financial risk of inventory purchasing.",
+      "description": "Enhance your loyalty program, banking app, or corporate HR portal with real-time, verified digital coupon inventory — without the financial risk of upfront purchasing.",
       "benefit1": {
         "title": "Risk-Free Integration",
-        "description": "Free to Access and seamless integration via the Bridge API. Instantly pull standardized deals into your platform.",
+        "description": "Free to Access and seamless integration via the Bridge API. Instantly pull verified digital coupons into your platform.",
         "kyc": "KYC verification is required to register an account and access the Exchange."
       },
       "benefit2": {
@@ -262,7 +262,7 @@
       "description": "Our Layer 2 Core transforms simple promotional codes into unique, trackable digital assets.",
       "component1": {
         "title": "Standardization & Tokenization",
-        "description": "Every voucher is tokenized upon ingestion, converting it into a secure, single-use digital asset (NFT/fungible instrument)."
+        "description": "Every digital coupon is tokenized upon ingestion, converting it into a secure, single-use digital asset (NFT/fungible instrument)."
       },
       "component2": {
         "title": "Asset Linkage",
