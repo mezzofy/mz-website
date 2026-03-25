@@ -430,7 +430,7 @@
                                 </div>
                                 <div>
                                     <h3 class="font-bold text-primary-black text-base leading-tight">Merchant Portal</h3>
-                                    <p class="text-xs text-medium-grey mt-0.5">Coupon issuance &amp; management dashboard</p>
+                                    <p class="text-xs text-medium-grey mt-0.5">Coupon management system</p>
                                 </div>
                             </div>
                             <!-- Status badge -->
@@ -454,7 +454,7 @@
                         </div>
                         <!-- 90-day uptime bar -->
                         <div>
-                            <p class="text-xs text-medium-grey font-mono mb-2">90-day availability</p>
+                            <p class="text-xs text-medium-grey font-mono mb-2">30-day availability</p>
                             <div id="bar-merchant" class="flex gap-px"></div>
                         </div>
                     </div>
@@ -493,7 +493,7 @@
                             </span>
                         </div>
                         <div>
-                            <p class="text-xs text-medium-grey font-mono mb-2">90-day availability</p>
+                            <p class="text-xs text-medium-grey font-mono mb-2">30-day availability</p>
                             <div id="bar-marketplace" class="flex gap-px"></div>
                         </div>
                     </div>
@@ -533,7 +533,7 @@
                             </span>
                         </div>
                         <div>
-                            <p class="text-xs text-medium-grey font-mono mb-2">90-day availability</p>
+                            <p class="text-xs text-medium-grey font-mono mb-2">30-day availability</p>
                             <div id="bar-engine" class="flex gap-px"></div>
                         </div>
                     </div>
@@ -572,7 +572,7 @@
                             </span>
                         </div>
                         <div>
-                            <p class="text-xs text-medium-grey font-mono mb-2">90-day availability</p>
+                            <p class="text-xs text-medium-grey font-mono mb-2">30-day availability</p>
                             <div id="bar-nfc" class="flex gap-px"></div>
                         </div>
                     </div>
@@ -752,13 +752,9 @@
             status: 'operational',    // 'operational' | 'degraded' | 'outage' | 'maintenance'
             responseMs: 118,
             uptime: '99.98%',
-            // 90-day history: 0=no data, 1=operational, 2=degraded, 3=outage
-            history: (function() {
-                const h = new Array(90).fill(1);
-                // Jan 31 outage — ~day 52 from today (Mar 24)
-                h[88] = 3; h[87] = 3;
-                return h;
-            })()
+            // 30-day history: 0=no data, 1=operational, 2=degraded, 3=outage
+            history: new Array(30).fill(1)
+            // Jan 31 outage was ~53 days ago — outside 30-day window
         },
         {
             key: 'marketplace',
@@ -767,9 +763,9 @@
             responseMs: 143,
             uptime: '99.95%',
             history: (function() {
-                const h = new Array(90).fill(1);
-                // Mar 8 degraded — ~day 16 from today
-                h[16] = 2;
+                const h = new Array(30).fill(1);
+                // Mar 8 degraded — 17 days ago; idx = 30-1-17 = 12
+                h[12] = 2;
                 return h;
             })()
         },
@@ -779,12 +775,8 @@
             status: 'operational',
             responseMs: 42,
             uptime: '100%',
-            history: (function() {
-                const h = new Array(90).fill(1);
-                // Feb 19 degraded — ~day 33
-                h[33] = 2;
-                return h;
-            })()
+            history: new Array(30).fill(1)
+            // Feb 19 degraded was ~34 days ago — outside 30-day window
         },
         {
             key: 'nfc',
@@ -792,7 +784,7 @@
             status: 'operational',
             responseMs: 67,
             uptime: '99.99%',
-            history: new Array(90).fill(1)
+            history: new Array(30).fill(1)
         }
     ];
 
