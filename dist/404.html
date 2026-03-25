@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Page not found - Mezzofy">
-    <meta name="theme-color" content="#FF6B35">
-    <title>404 – Page Not Found | Mezzofy</title>
+    <meta name="description" content="Page not found — Mezzofy">
+    <meta name="robots" content="noindex, follow">
+    <title>404 — Page Not Found | Mezzofy</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -16,95 +17,403 @@
                         'primary-black': '#1A1A1A',
                         'light-grey': '#F5F5F5',
                         'medium-grey': '#757575',
-                        'dark-grey': '#424242'
+                        'dark-grey': '#424242',
+                        'paper': '#FDF6EC',
+                        'paper-dark': '#F0E6D3',
                     }
                 }
             }
         }
     </script>
+
+    <!-- Playfair Display (editorial/classic) + JetBrains Mono (serial numbers) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
     <style>
-        .section-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 4rem 1.5rem;
+        /* ── Navigation reuse ── */
+        .dropdown { position: relative; }
+        .dropdown-trigger {
+            display: flex; align-items: center; gap: 4px;
+            font-size: 0.875rem; font-weight: 500;
+            padding: 0.25rem 0;
+            background: none; border: none; cursor: pointer;
         }
+        .dropdown-menu {
+            display: none; position: absolute; top: calc(100% + 8px); left: 50%;
+            transform: translateX(-50%); background: white;
+            border-radius: 0.5rem; box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+            min-width: 200px; z-index: 100; overflow: hidden;
+        }
+        .dropdown:hover .dropdown-menu { display: block; }
+        .dropdown-item {
+            display: block; padding: 0.625rem 1rem;
+            font-size: 0.875rem; color: #424242;
+            transition: background 0.15s, color 0.15s;
+        }
+        .dropdown-item:hover { background: #F5F5F5; color: #FF6B35; }
+        .mobile-dropdown-trigger {
+            width: 100%; display: flex; justify-content: space-between; align-items: center;
+            padding: 0.625rem 0; font-size: 0.9375rem; font-weight: 500;
+            background: none; border: none; cursor: pointer; color: #1A1A1A;
+        }
+        .mobile-dropdown-menu { display: none; padding-left: 1rem; }
+        .mobile-dropdown-menu.active { display: block; }
         .btn-primary {
-            background-color: #FF6B35;
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 0.5rem;
-            font-weight: 600;
-            display: inline-block;
+            background-color: #FF6B35; color: white;
+            padding: 0.75rem 1.5rem; border-radius: 0.5rem;
+            font-weight: 600; display: inline-block;
             transition: background-color 0.2s;
         }
-        .btn-primary:hover {
-            background-color: #e65a2b;
+        .btn-primary:hover { background-color: #e65a2b; }
+
+        /* ── Page base ── */
+        html, body { height: 100%; }
+        body {
+            background-color: #FDF6EC;
+            font-family: 'JetBrains Mono', monospace;
         }
-        .btn-secondary {
-            background-color: white;
+
+        /* Grain overlay — mimics paper texture */
+        body::before {
+            content: '';
+            position: fixed; inset: 0; z-index: 0; pointer-events: none;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+            background-repeat: repeat;
+            background-size: 128px 128px;
+            opacity: 0.5;
+        }
+
+        /* ── Main content wrapper ── */
+        .page-body {
+            min-height: calc(100vh - 64px);
+            padding-top: 64px; /* nav height */
+            display: flex; flex-direction: column;
+        }
+
+        /* ── Coupon animations ── */
+        @keyframes coupon-enter {
+            from { opacity: 0; transform: translateY(32px) rotate(-1deg); }
+            to   { opacity: 1; transform: translateY(0) rotate(0deg); }
+        }
+        @keyframes void-stamp {
+            0%   { opacity: 0; transform: rotate(-18deg) scale(2.5); }
+            60%  { opacity: 1; transform: rotate(-18deg) scale(0.95); }
+            75%  { transform: rotate(-18deg) scale(1.04); }
+            100% { opacity: 1; transform: rotate(-18deg) scale(1); }
+        }
+        @keyframes stamp-blur-out {
+            from { filter: blur(3px); }
+            to   { filter: blur(0); }
+        }
+        @keyframes fade-up {
+            from { opacity: 0; transform: translateY(12px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        .coupon-wrapper {
+            animation: coupon-enter 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
+        }
+
+        .coupon {
+            background: #FDF6EC;
+            border: 1.5px solid #D4B896;
+            border-radius: 6px;
+            box-shadow:
+                0 0 0 4px #FDF6EC,
+                0 0 0 5px #D4B896,
+                0 20px 60px rgba(26, 26, 26, 0.18),
+                0 4px 16px rgba(26, 26, 26, 0.08);
+            position: relative;
+            overflow: visible;
+            max-width: 660px;
+            width: 100%;
+        }
+
+        /* Perforated notches top & bottom */
+        .coupon::before, .coupon::after {
+            content: '';
+            position: absolute;
+            left: 180px;
+            width: 20px; height: 10px;
+            background: #FDF6EC;
+            border-left: 1.5px solid #D4B896;
+            border-right: 1.5px solid #D4B896;
+            z-index: 2;
+        }
+        .coupon::before { top: -1px; border-radius: 0 0 10px 10px; border-top: none; }
+        .coupon::after  { bottom: -1px; border-radius: 10px 10px 0 0; border-bottom: none; }
+
+        /* Perforated divider line */
+        .perforation {
+            position: absolute;
+            left: 190px;
+            top: 0; bottom: 0;
+            width: 1px;
+            background-image: repeating-linear-gradient(
+                to bottom,
+                #C4A882 0px,
+                #C4A882 5px,
+                transparent 5px,
+                transparent 10px
+            );
+            z-index: 1;
+        }
+
+        /* Stub (left narrow section) */
+        .coupon-stub {
+            width: 190px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2.5rem 1rem;
+            position: relative;
+        }
+
+        .coupon-stub-number {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 700;
+            font-size: clamp(3.5rem, 10vw, 5.5rem);
+            line-height: 1;
+            color: #1A1A1A;
+            letter-spacing: -0.04em;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            transform: rotate(180deg);
+        }
+
+        .coupon-stub-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.55rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: #A08060;
+            margin-top: 0.75rem;
+        }
+
+        /* Main body */
+        .coupon-body {
+            flex: 1;
+            padding: 2.5rem 2.5rem 2.5rem 2.75rem;
+            position: relative;
+        }
+
+        /* Header bar */
+        .coupon-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1.25rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid #D4B896;
+        }
+
+        .coupon-brand {
+            font-family: 'Playfair Display', serif;
+            font-weight: 900;
+            font-size: 1.05rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
             color: #FF6B35;
-            padding: 0.75rem 1.5rem;
-            border-radius: 0.5rem;
-            font-weight: 600;
-            display: inline-block;
-            border: 2px solid #FF6B35;
-            transition: all 0.2s;
         }
-        .btn-secondary:hover {
-            background-color: #FF6B35;
-            color: white;
+
+        .coupon-serial {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.6rem;
+            color: #A08060;
+            letter-spacing: 0.12em;
+        }
+
+        /* Main headline */
+        .coupon-headline {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            line-height: 1.15;
+            color: #1A1A1A;
+            margin-bottom: 0.5rem;
+        }
+
+        .coupon-subline {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            color: #A08060;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            margin-bottom: 1.25rem;
+        }
+
+        .coupon-desc {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.775rem;
+            color: #5C4A35;
+            line-height: 1.75;
+            margin-bottom: 1.5rem;
+            max-width: 320px;
+        }
+
+        /* Terms row at bottom */
+        .coupon-terms {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.55rem;
+            color: #B09070;
+            letter-spacing: 0.05em;
+            line-height: 1.6;
+            border-top: 1px dashed #D4B896;
+            padding-top: 0.75rem;
+            margin-top: 1rem;
+        }
+
+        /* ── VOID stamp ── */
+        .void-stamp {
+            position: absolute;
+            top: 50%;
+            left: 54%;
+            transform: rotate(-18deg) translate(-50%, -50%);
+            transform-origin: center;
+
+            font-family: 'Playfair Display', serif;
+            font-weight: 900;
+            font-style: italic;
+            font-size: clamp(4rem, 12vw, 6.5rem);
+            letter-spacing: -0.02em;
+            color: transparent;
+            -webkit-text-stroke: 4px rgba(200, 30, 30, 0.82);
+
+            pointer-events: none;
+            user-select: none;
+            z-index: 10;
+            white-space: nowrap;
+
+            text-shadow:
+                0 0 1px rgba(200,30,30,0.3),
+                2px  2px 0px rgba(200,30,30,0.08),
+                -1px -1px 0px rgba(200,30,30,0.06),
+                3px  -1px 0px rgba(200,30,30,0.04);
+
+            opacity: 0;
+            animation:
+                void-stamp 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.85s both,
+                stamp-blur-out 0.3s ease 0.85s both;
+        }
+
+        /* ── CTAs ── */
+        .cta-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            animation: fade-up 0.5s ease 1.2s both;
+        }
+
+        .cta-primary {
+            display: inline-flex; align-items: center; gap: 6px;
+            background: #1A1A1A; color: #FDF6EC;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem; font-weight: 700;
+            letter-spacing: 0.12em; text-transform: uppercase;
+            padding: 0.6rem 1.25rem;
+            border-radius: 3px;
+            transition: background 0.2s, transform 0.15s;
+            text-decoration: none;
+        }
+        .cta-primary:hover { background: #FF6B35; transform: translateY(-1px); }
+
+        .cta-secondary {
+            display: inline-flex; align-items: center; gap: 6px;
+            background: transparent; color: #5C4A35;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem; font-weight: 700;
+            letter-spacing: 0.12em; text-transform: uppercase;
+            padding: 0.6rem 1.25rem;
+            border-radius: 3px;
+            border: 1.5px solid #C4A882;
+            transition: border-color 0.2s, color 0.2s, transform 0.15s;
+            text-decoration: none;
+        }
+        .cta-secondary:hover { border-color: #FF6B35; color: #FF6B35; transform: translateY(-1px); }
+
+        /* Barcode strip decoration */
+        .barcode {
+            display: flex;
+            align-items: flex-end;
+            gap: 2px;
+            height: 32px;
+            margin-top: 0.5rem;
+        }
+        .barcode-bar {
+            width: 2px;
+            background: #1A1A1A;
+            opacity: 0.7;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 600px) {
+            .coupon { max-width: 95vw; }
+            .coupon-stub { display: none; }
+            .coupon::before, .coupon::after, .perforation { display: none; }
+            .coupon-body { padding: 1.75rem; }
+            .void-stamp { font-size: 3.5rem; left: 60%; top: 30%; }
+        }
+
+        /* Decorative background ruled lines */
+        .bg-rules {
+            position: fixed; inset: 0; z-index: 0; pointer-events: none;
+            background-image:
+                repeating-linear-gradient(
+                    0deg,
+                    transparent,
+                    transparent 39px,
+                    rgba(180, 140, 100, 0.06) 39px,
+                    rgba(180, 140, 100, 0.06) 40px
+                );
         }
     </style>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="shortcut icon" href="favicon.png">
     <link rel="stylesheet" href="output.css">
-
-    <!-- i18n Script -->
     <script src="i18n/i18n.js"></script>
 </head>
-<body class="bg-white text-primary-black i18n-loading">
+<body class="i18n-loading">
 
-    <!-- Navigation -->
+    <!-- Background ruled paper lines -->
+    <div class="bg-rules" aria-hidden="true"></div>
+
+    <!-- ══════════════════════════════════════════════════ -->
+    <!-- NAVIGATION                                         -->
+    <!-- ══════════════════════════════════════════════════ -->
     <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-md z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <!-- Logo -->
                 <div class="flex items-center">
                     <a href="index.html" class="flex items-center gap-2">
                         <img src="assets/images/logo.png" alt="Mezzofy Logo" class="h-8 md:h-10">
-                        <span class="md:hidden text-xl font-bold text-primary-black">MEZZOFY</span>
+                        <span class="md:hidden text-xl font-bold text-primary-black" style="font-family: system-ui, sans-serif;">MEZZOFY</span>
                     </a>
                 </div>
 
-                <!-- Desktop Navigation -->
+                <!-- Desktop nav -->
                 <div class="hidden md:flex items-center space-x-6">
-                    <!-- Solutions Dropdown -->
                     <div class="dropdown">
                         <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
                             <span data-i18n="common.nav.solutions">Solutions</span>
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="dropdown-menu">
                             <a href="for-merchants.html" class="dropdown-item" data-i18n="common.nav.merchantSolution">I'm a Merchant</a>
                             <a href="for-distributors.html" class="dropdown-item" data-i18n="common.nav.distributorSolution">I'm a Distributor</a>
                             <a href="for-developers.html" class="dropdown-item" data-i18n="common.nav.developerSolution">I'm a Developer</a>
-                                                    <a href="for-ai-commerce.html" class="dropdown-item" data-i18n="common.nav.aiCommerceSolution">AI Commerce</a>
+                            <a href="for-ai-commerce.html" class="dropdown-item" data-i18n="common.nav.aiCommerceSolution">AI Commerce</a>
                         </div>
                     </div>
-
-                    <!-- Products Dropdown -->
                     <div class="dropdown">
                         <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
                             <span data-i18n="common.nav.products">Products</span>
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="dropdown-menu">
                             <a href="coupon-management.html" class="dropdown-item" data-i18n="common.nav.managementSystem">Coupon Management System</a>
@@ -115,42 +424,30 @@
                             <a href="coupon-serial.html" class="dropdown-item" data-i18n="common.nav.serial">Coupon Serial</a>
                         </div>
                     </div>
-
-                    <!-- Developer Dropdown -->
                     <div class="dropdown">
                         <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
                             <span data-i18n="common.nav.developer">Developer</span>
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="dropdown-menu">
                             <a href="api-doc.html" class="dropdown-item" data-i18n="common.nav.apiDoc">API Documentation</a>
                             <a href="api-use-case.html" class="dropdown-item" data-i18n="common.nav.apiUseCase">API Use Case</a>
                         </div>
                     </div>
-
-                    <!-- Resources Dropdown -->
                     <div class="dropdown">
                         <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
                             <span data-i18n="common.nav.resources">Resources</span>
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="dropdown-menu">
                             <a href="coupon-playbook.html" class="dropdown-item" data-i18n="common.nav.playbook">Coupon Playbook</a>
                             <a href="support.html" class="dropdown-item" data-i18n="common.nav.support">Support</a>
                         </div>
                     </div>
-
-                    <!-- Company Dropdown -->
                     <div class="dropdown">
                         <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
                             <span data-i18n="common.nav.company">Company</span>
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="dropdown-menu">
                             <a href="about.html" class="dropdown-item" data-i18n="common.nav.aboutUs">About Us</a>
@@ -160,16 +457,12 @@
                         </div>
                     </div>
 
-                    <!-- Language Toggle Desktop -->
+                    <!-- Language -->
                     <div class="dropdown">
                         <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
-                            <svg class="w-5 h-5 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
-                            </svg>
+                            <svg class="w-5 h-5 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
                             <span id="current-lang-desktop">English</span>
-                            <svg class="w-4 h-4 inline ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
+                            <svg class="w-4 h-4 inline ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="dropdown-menu">
                             <a href="#" class="dropdown-item lang-option" data-lang="en">English</a>
@@ -181,32 +474,25 @@
                     <a href="contact.html" class="btn-primary" data-i18n="common.nav.getStarted">Get Started</a>
                 </div>
 
-                <!-- Mobile Menu Button -->
+                <!-- Mobile toggle -->
                 <div class="md:hidden">
                     <button id="mobile-menu-button" class="text-primary-black focus:outline-none">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
                     </button>
                 </div>
             </div>
         </div>
 
-        <!-- Mobile Menu -->
+        <!-- Mobile menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
             <div class="px-4 pt-2 pb-4 space-y-1">
-                <!-- Language Toggle Mobile -->
                 <div class="mobile-dropdown border-b border-gray-200 pb-2 mb-2">
                     <button class="mobile-dropdown-trigger" data-dropdown="language">
                         <span class="flex items-center gap-2">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
-                            </svg>
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
                             <span id="current-lang-mobile">English</span>
                         </span>
-                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                     </button>
                     <div class="mobile-dropdown-menu" data-menu="language">
                         <a href="#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange lang-option" data-lang="en">English</a>
@@ -214,31 +500,17 @@
                         <a href="#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange lang-option" data-lang="zh-CN">简体中文</a>
                     </div>
                 </div>
-
-                <!-- Solutions Mobile Dropdown -->
                 <div class="mobile-dropdown">
-                    <button class="mobile-dropdown-trigger" data-dropdown="solutions">
-                        <span data-i18n="common.nav.solutions">Solutions</span>
-                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
+                    <button class="mobile-dropdown-trigger" data-dropdown="solutions"><span data-i18n="common.nav.solutions">Solutions</span><svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
                     <div class="mobile-dropdown-menu" data-menu="solutions">
                         <a href="for-merchants.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.merchantSolution">I'm a Merchant</a>
                         <a href="for-distributors.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.distributorSolution">I'm a Distributor</a>
                         <a href="for-developers.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.developerSolution">I'm a Developer</a>
-                                            <a href="for-ai-commerce.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.aiCommerceSolution">AI Commerce</a>
+                        <a href="for-ai-commerce.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.aiCommerceSolution">AI Commerce</a>
                     </div>
                 </div>
-
-                <!-- Products Mobile Dropdown -->
                 <div class="mobile-dropdown">
-                    <button class="mobile-dropdown-trigger" data-dropdown="products">
-                        <span data-i18n="common.nav.products">Products</span>
-                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
+                    <button class="mobile-dropdown-trigger" data-dropdown="products"><span data-i18n="common.nav.products">Products</span><svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
                     <div class="mobile-dropdown-menu" data-menu="products">
                         <a href="coupon-management.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.managementSystem">Coupon Management System</a>
                         <a href="coupon-marketplace.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.marketplace">Coupon Marketplace</a>
@@ -248,43 +520,8 @@
                         <a href="coupon-serial.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.serial">Coupon Serial</a>
                     </div>
                 </div>
-
-                <!-- Developer Mobile Dropdown -->
                 <div class="mobile-dropdown">
-                    <button class="mobile-dropdown-trigger" data-dropdown="developer">
-                        <span data-i18n="common.nav.developer">Developer</span>
-                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
-                    <div class="mobile-dropdown-menu" data-menu="developer">
-                        <a href="api-doc.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.apiDoc">API Documentation</a>
-                        <a href="api-use-case.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.apiUseCase">API Use Case</a>
-                    </div>
-                </div>
-
-                <!-- Resources Mobile Dropdown -->
-                <div class="mobile-dropdown">
-                    <button class="mobile-dropdown-trigger" data-dropdown="resources">
-                        <span data-i18n="common.nav.resources">Resources</span>
-                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
-                    <div class="mobile-dropdown-menu" data-menu="resources">
-                        <a href="coupon-playbook.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.playbook">Coupon Playbook</a>
-                        <a href="support.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.support">Support</a>
-                    </div>
-                </div>
-
-                <!-- Company Mobile Dropdown -->
-                <div class="mobile-dropdown">
-                    <button class="mobile-dropdown-trigger" data-dropdown="company">
-                        <span data-i18n="common.nav.company">Company</span>
-                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
+                    <button class="mobile-dropdown-trigger" data-dropdown="company"><span data-i18n="common.nav.company">Company</span><svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
                     <div class="mobile-dropdown-menu" data-menu="company">
                         <a href="about.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.aboutUs">About Us</a>
                         <a href="contact.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.contactUs">Contact Us</a>
@@ -292,117 +529,175 @@
                         <a href="investors.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.investors">Investors</a>
                     </div>
                 </div>
-
                 <a href="contact.html" class="block py-2 text-primary-orange font-semibold" data-i18n="common.nav.getStarted">Get Started</a>
             </div>
         </div>
     </nav>
 
-    <!-- 404 Hero Section -->
-    <section class="pt-32 pb-20 bg-gradient-to-br from-primary-black via-gray-900 to-primary-black min-h-screen flex items-center">
-        <div class="section-container w-full">
-            <div class="max-w-3xl mx-auto text-center">
-                <!-- 404 Number -->
-                <div class="text-8xl sm:text-9xl font-bold text-primary-orange mb-4 leading-none">404</div>
+    <!-- ══════════════════════════════════════════════════ -->
+    <!-- MAIN — VOID COUPON                                 -->
+    <!-- ══════════════════════════════════════════════════ -->
+    <main class="page-body relative z-10">
+        <div class="flex-1 flex flex-col items-center justify-center px-4 py-16 sm:py-24">
 
-                <!-- Heading -->
-                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6" data-i18n="notFound.hero.title">
-                    Page Not Found
-                </h1>
+            <!-- Eyebrow -->
+            <p class="text-xs font-mono tracking-widest uppercase text-amber-700 mb-8 opacity-70"
+               style="animation: fade-up 0.4s ease 0.05s both;">
+                ERROR · REF#MZ-404-VOID
+            </p>
 
-                <!-- Message -->
-                <p class="text-lg sm:text-xl text-gray-300 mb-10 max-w-xl mx-auto" data-i18n="notFound.hero.description">
-                    Sorry, the page you're looking for doesn't exist or has been moved. Let's get you back on track.
-                </p>
+            <!-- The coupon card -->
+            <div class="coupon-wrapper w-full flex justify-center">
+                <div class="coupon flex">
 
-                <!-- Actions -->
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="index.html" class="btn-primary text-center" data-i18n="notFound.cta.home">
-                        Back to Homepage
-                    </a>
-                    <a href="contact.html" class="btn-secondary text-center" data-i18n="notFound.cta.support">
-                        Contact Support
-                    </a>
-                </div>
+                    <!-- Perforated divider line -->
+                    <div class="perforation" aria-hidden="true"></div>
+
+                    <!-- LEFT STUB -->
+                    <div class="coupon-stub">
+                        <div class="coupon-stub-number">404</div>
+                        <div class="coupon-stub-label">NOT REDEEMABLE</div>
+                    </div>
+
+                    <!-- RIGHT BODY -->
+                    <div class="coupon-body">
+
+                        <!-- VOID stamp overlay -->
+                        <div class="void-stamp" aria-hidden="true">VOID</div>
+
+                        <!-- Header -->
+                        <div class="coupon-header">
+                            <span class="coupon-brand">Mezzofy Exchange</span>
+                            <span class="coupon-serial">SN · MZ-404-00000000</span>
+                        </div>
+
+                        <!-- Content -->
+                        <div class="coupon-headline">
+                            Page Not Found.
+                        </div>
+                        <div class="coupon-subline">COUPON EXPIRED · URL CANNOT BE REDEEMED</div>
+
+                        <p class="coupon-desc">
+                            The URL you requested does not exist<br>
+                            on the Mezzofy Exchange Protocol.<br>
+                            This coupon has been voided.
+                        </p>
+
+                        <!-- CTAs -->
+                        <div class="cta-group">
+                            <a href="index.html" class="cta-primary">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                                Return Home
+                            </a>
+                            <a href="coupon-marketplace.html" class="cta-secondary">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                                Browse Marketplace
+                            </a>
+                            <a href="contact.html" class="cta-secondary">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                Get Support
+                            </a>
+                        </div>
+
+                        <!-- Barcode + terms -->
+                        <div class="coupon-terms">
+                            <div class="barcode" aria-hidden="true" id="barcode"></div>
+                            <div class="mt-2">
+                                Valid only for existing URLs · Non-transferable · No cash value ·
+                                Mezzofy Exchange Protocol, 2026
+                            </div>
+                        </div>
+
+                    </div><!-- /coupon-body -->
+                </div><!-- /coupon -->
+            </div><!-- /coupon-wrapper -->
+
+            <!-- Subtle link row below -->
+            <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mt-10"
+                 style="animation: fade-up 0.5s ease 1.4s both;">
+                <a href="for-merchants.html" class="text-xs font-mono text-amber-700 hover:text-primary-orange transition-colors opacity-60 hover:opacity-100">For Merchants</a>
+                <span class="text-amber-300 text-xs" aria-hidden="true">·</span>
+                <a href="for-distributors.html" class="text-xs font-mono text-amber-700 hover:text-primary-orange transition-colors opacity-60 hover:opacity-100">For Distributors</a>
+                <span class="text-amber-300 text-xs" aria-hidden="true">·</span>
+                <a href="for-developers.html" class="text-xs font-mono text-amber-700 hover:text-primary-orange transition-colors opacity-60 hover:opacity-100">For Developers</a>
+                <span class="text-amber-300 text-xs" aria-hidden="true">·</span>
+                <a href="about.html" class="text-xs font-mono text-amber-700 hover:text-primary-orange transition-colors opacity-60 hover:opacity-100">About Mezzofy</a>
             </div>
+
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="bg-primary-black text-gray-300 pt-16 pb-8 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
-                <!-- Company Info -->
-                <div class="lg:col-span-1">
-                    <h3 class="text-2xl font-bold text-primary-orange mb-4">Mezzofy</h3>
-                    <p class="text-sm mb-4" data-i18n="common.footer.tagline">Building the future of coupon infrastructure through the Mezzofy Exchange Protocol.</p>
-                </div>
-
-                <!-- Solutions -->
-                <div>
-                    <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.solutions.title">Solutions</h3>
-                    <ul class="space-y-2 text-gray-300">
-                        <li><a href="for-merchants.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.merchants">For Merchants</a></li>
-                        <li><a href="for-distributors.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.distributors">For Distributors</a></li>
-                        <li><a href="for-developers.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.developers">For Developers</a></li>
-                                                <li><a href="for-ai-commerce.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.aiCommerce">For AI Commerce</a></li>
-                        <li><a href="index.html#product-ecosystem" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.ecosystem">Product Ecosystem</a></li>
-                    </ul>
-                </div>
-
-                <!-- Products -->
-                <div>
-                    <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.products.title">Products</h3>
-                    <ul class="space-y-2 text-gray-300">
-                        <li><a href="coupon-management.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.management">Management</a></li>
-                        <li><a href="coupon-marketplace.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.marketplace">Marketplace</a></li>
-                        <li><a href="coupon-nfc.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.nfc">NFC</a></li>
-                        <li><a href="coupon-marketing.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.marketing">Marketing</a></li>
-                        <li><a href="coupon-wallet.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.wallet">Wallet</a></li>
+        <!-- ════════════════════ FOOTER ════════════════════ -->
+        <footer class="bg-primary-black text-gray-300 pt-16 pb-8 relative z-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+                    <div class="lg:col-span-1">
+                        <h3 class="text-2xl font-bold text-primary-orange mb-4" style="font-family: system-ui, sans-serif;">Mezzofy</h3>
+                        <p class="text-sm mb-4" data-i18n="common.footer.tagline">Building the future of coupon infrastructure through the Mezzofy Exchange Protocol.</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.solutions.title">Solutions</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><a href="for-merchants.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.merchants">For Merchants</a></li>
+                            <li><a href="for-distributors.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.distributors">For Distributors</a></li>
+                            <li><a href="for-developers.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.developers">For Developers</a></li>
+                            <li><a href="for-ai-commerce.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.aiCommerce">For AI Commerce</a></li>
+                            <li><a href="index.html#product-ecosystem" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.ecosystem">Product Ecosystem</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.products.title">Products</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><a href="coupon-management.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.management">Management</a></li>
+                            <li><a href="coupon-marketplace.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.marketplace">Marketplace</a></li>
+                            <li><a href="coupon-nfc.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.nfc">NFC</a></li>
+                            <li><a href="coupon-marketing.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.marketing">Marketing</a></li>
+                            <li><a href="coupon-wallet.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.wallet">Wallet</a></li>
                             <li><a href="coupon-serial.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.serial">Serial</a></li>
-                    </ul>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.resources.title">Resources</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><a href="coupon-playbook.html" class="hover:text-white transition-colors" data-i18n="common.footer.resources.playbook">Coupon Playbook</a></li>
+                            <li><a href="api-doc.html" class="hover:text-white transition-colors" data-i18n="common.footer.resources.apiDoc">API Documentation</a></li>
+                            <li><a href="api-use-case.html" class="hover:text-white transition-colors" data-i18n="common.footer.resources.apiUseCase">API Use Case</a></li>
+                            <li><a href="support.html" class="hover:text-white transition-colors" data-i18n="common.footer.resources.support">Support</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.company.title">Company</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li><a href="about.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.about">About Us</a></li>
+                            <li><a href="contact.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.contact">Contact Us</a></li>
+                            <li><a href="news-press.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.news">News &amp; Press</a></li>
+                            <li><a href="investors.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.investors">Investors</a></li>
+                        </ul>
+                    </div>
                 </div>
-
-                <!-- Resources -->
-                <div>
-                    <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.resources.title">Resources</h3>
-                    <ul class="space-y-2 text-gray-300">
-                        <li><a href="coupon-playbook.html" class="hover:text-white transition-colors" data-i18n="common.footer.resources.playbook">Coupon Playbook</a></li>
-                        <li><a href="api-doc.html" class="hover:text-white transition-colors" data-i18n="common.footer.resources.apiDoc">API Documentation</a></li>
-                        <li><a href="api-use-case.html" class="hover:text-white transition-colors" data-i18n="common.footer.resources.apiUseCase">API Use Case</a></li>
-                        <li><a href="support.html" class="hover:text-white transition-colors" data-i18n="common.footer.resources.support">Support</a></li>
-                    </ul>
-                </div>
-
-                <!-- Company -->
-                <div>
-                    <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.company.title">Company</h3>
-                    <ul class="space-y-2 text-gray-300">
-                        <li><a href="about.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.about">About Us</a></li>
-                        <li><a href="contact.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.contact">Contact Us</a></li>
-                        <li><a href="news-press.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.news">News &amp; Press</a></li>
-                        <li><a href="investors.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.investors">Investors</a></li>
-                    </ul>
+                <div class="border-t border-gray-700 pt-8 text-center text-sm">
+                    <p data-i18n="common.footer.copyright">&copy; 2026 Mezzofy. All rights reserved.</p>
                 </div>
             </div>
+        </footer>
+    </main>
 
-            <div class="border-t border-gray-700 pt-8 text-center text-sm">
-                <p data-i18n="common.footer.copyright">&copy; 2024 Mezzofy. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <script src="js/main.js"></script>
 
-    <!-- Mobile Menu Toggle Script -->
     <script>
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+    // Generate a decorative barcode from fixed bar pattern
+    (function() {
+        var container = document.getElementById('barcode');
+        if (!container) return;
+        var pattern = [2,1,3,1,2,2,1,1,3,2,1,2,1,1,2,3,1,1,2,1,3,2,1,2,1,1,2,1,3,1,2,2,1,1,3];
+        pattern.forEach(function(w, i) {
+            var bar = document.createElement('div');
+            bar.className = 'barcode-bar';
+            bar.style.width = w + 'px';
+            bar.style.height = (16 + (i % 3) * 5) + 'px';
+            container.appendChild(bar);
         });
+    })();
     </script>
 
-    <!-- Main JS -->
-    <script src="js/main.js"></script>
 </body>
 </html>

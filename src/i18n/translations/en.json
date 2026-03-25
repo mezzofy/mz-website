@@ -2443,7 +2443,7 @@
       "title": "We're Here to Help — <span class=\"text-primary-orange\">24/7</span>",
       "subtitle": "<span class=\"text-primary-orange font-semibold\">Dedicated support</span> for merchants, distributors, partners, and end users across the Mezzofy platform. Our team is available around the clock to ensure your <span class=\"text-primary-orange font-semibold\">business never stops</span>.",
       "ctaMerchant": "Merchant Portal",
-      "ctaPartner": "Partner Portal"
+      "ctaPartner": "Distributor Portal"
     },
     "reach": {
       "title": "How to Reach Us",
@@ -2455,10 +2455,10 @@
         "cta": "Access Merchant Portal"
       },
       "partner": {
-        "badge": "For Partners",
-        "title": "Partner Portal",
-        "desc": "Demand-side partners and distributors can manage support requests, review SLAs, and escalate issues through the Partner Portal.",
-        "cta": "Access Partner Portal"
+        "badge": "For Distributors",
+        "title": "Distributor Portal",
+        "desc": "Distributors can manage support requests, review SLAs, track inventory issues, and escalate tickets through the Distributor Portal.",
+        "cta": "Access Distributor Portal"
       },
       "email": {
         "title": "Email Support",
@@ -2511,7 +2511,7 @@
       "description": "What happens after you submit a support request.",
       "step1": {
         "title": "Submit",
-        "desc": "Submit your request via the Merchant Portal, Partner Portal, or email. Include your account ID, a clear description, and any screenshots or logs."
+        "desc": "Submit your request via the Merchant Portal, Distributor Portal, or email. Include your account ID, a clear description, and any screenshots or logs."
       },
       "step2": {
         "title": "Acknowledge",
@@ -2539,7 +2539,7 @@
       "placeholder": "Type your question...",
       "send": "Send",
       "merchantLink": "Submit via Merchant Portal →",
-      "partnerLink": "Submit via Partner Portal →"
+      "partnerLink": "Submit via Distributor Portal →"
     }
   },
   "articles": {

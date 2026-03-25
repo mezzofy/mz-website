@@ -2330,7 +2330,7 @@
       "title": "全天候为您提供帮助 — <span class=\"text-primary-orange\">24/7</span>",
       "subtitle": "<span class=\"text-primary-orange font-semibold\">专属支持</span>服务商、经销商、合作伙伴及 Mezzofy 平台上的终端用户。我们的团队全天候待命，确保您的<span class=\"text-primary-orange font-semibold\">业务不间断</span>。",
       "ctaMerchant": "商家入口",
-      "ctaPartner": "合作伙伴入口"
+      "ctaPartner": "经销商入口"
     },
     "reach": {
       "title": "如何联系我们",
@@ -2342,10 +2342,10 @@
         "cta": "访问商家入口"
       },
       "partner": {
-        "badge": "合作伙伴专用",
-        "title": "合作伙伴入口",
-        "desc": "需求端合作伙伴及经销商可通过合作伙伴入口管理支持请求、查看 SLA 及升级问题。",
-        "cta": "访问合作伙伴入口"
+        "badge": "经销商专用",
+        "title": "经销商入口",
+        "desc": "经销商可通过经销商入口管理支持请求、查看 SLA、跟踪库存问题及升级工单。",
+        "cta": "访问经销商入口"
       },
       "email": {
         "title": "电子邮件支持",
@@ -2398,7 +2398,7 @@
       "description": "提交支持请求后的处理步骤。",
       "step1": {
         "title": "提交",
-        "desc": "通过商家入口、合作伙伴入口或电子邮件提交请求。请附上您的账号 ID、清晰的问题描述及任何截图或日志。"
+        "desc": "通过商家入口、经销商入口或电子邮件提交请求。请附上您的账号 ID、清晰的问题描述及任何截图或日志。"
       },
       "step2": {
         "title": "确认",
@@ -2426,7 +2426,7 @@
       "placeholder": "输入您的问题...",
       "send": "发送",
       "merchantLink": "通过商家入口提交 →",
-      "partnerLink": "通过合作伙伴入口提交 →"
+      "partnerLink": "通过经销商入口提交 →"
     }
   },
   "articles": {
