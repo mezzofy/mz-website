@@ -60,7 +60,9 @@
       "Bash(__NEW_LINE_0d3da55e26e24c8c__ done:*)",
       "Bash(firecrawl scrape:*)",
       "Bash(npx firecrawl-cli:*)",
-      "Bash(npx --yes firecrawl-cli@latest scrape \"https://mezzofy.github.io/mz-website/dist/for-developers.html\" --only-main-content -o .firecrawl/for-developers.md)"
+      "Bash(npx --yes firecrawl-cli@latest scrape \"https://mezzofy.github.io/mz-website/dist/for-developers.html\" --only-main-content -o .firecrawl/for-developers.md)",
+      "Bash(/tmp/seo_audit_report.txt:*)",
+      "Read(//tmp/**)"
     ],
     "deny": [],
     "ask": []
