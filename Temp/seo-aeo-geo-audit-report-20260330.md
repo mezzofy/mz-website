@@ -301,7 +301,7 @@ Sitemap now cleanly reflects only indexable pages — conflicting signals elimin
 
 ## Updated Action Plan
 
-### ✅ This Sprint — Completed
+### ✅ Completed Sprints
 
 | Priority | Action | Pages | Score Impact |
 |:--------:|--------|:-----:|-------------|
@@ -309,22 +309,25 @@ Sitemap now cleanly reflects only indexable pages — conflicting signals elimin
 | ~~🟠 4~~ | ~~Add FAQPage schema to 8 news articles~~ | ~~8 pages~~ | ✅ Done — AEO maxed on all news |
 | ~~🟠 5~~ | ~~Add FAQPage + contact FAQ content to contact.html~~ | ~~1 page~~ | ✅ Done — +16 pts on contact |
 | ~~🟠 6~~ | ~~Remove api-doc + api-use-case from sitemap.xml~~ | ~~sitemap~~ | ✅ Done — conflict resolved |
+| ~~🟠 1~~ | ~~Full SEO/AEO on status.html (hreflang, Twitter, WebPage JSON-LD, FAQPage)~~ | ~~1 page~~ | ✅ Done — score 55→75 |
+| ~~🟠 2~~ | ~~dateModified on 6 blog articles~~ | ~~6 pages~~ | ✅ Already present — no action needed |
+| ~~🟡 3~~ | ~~Fix og:url on index.html + canonical + hreflang from `/index.html` → `/`~~ | ~~1 page~~ | ✅ Done — canonical URL now correct |
+| ~~🟡 5~~ | ~~Add `mentions` to dual-esg-awards + treasure-global-partnership~~ | ~~2 pages~~ | ✅ Done — entity graph enriched |
 
 ### Next Sprint — High
 | 🟠 4 | Add FAQPage schema to 8 news articles (3-5 Q&A each) | 8 pages | +8 AEO per page ≈ +1.5 site avg |
 | 🟠 5 | Add FAQPage + contact FAQ content to contact.html | 1 page | H1 resolved |
 | 🟠 6 | Remove api-doc + api-use-case from sitemap.xml | sitemap | Removes conflicting signals |
 
-### Next Sprint — High (Priority Order)
+### Next Sprint (Priority Order)
 
 | Priority | Action | Pages |
 |:--------:|--------|:-----:|
-| 🟠 1 | Full SEO/AEO implementation on status.html (hreflang, Twitter, FAQPage, JSON-LD) | 1 page |
-| 🟠 2 | Add `dateModified` to all 6 blog articles Article schemas | 6 pages |
-| 🟡 3 | Fix og:url on index.html from `/index.html` → `/` | 1 page |
-| 🟡 4 | Add `og:image:alt` to all pages | 35 pages |
-| 🟡 5 | Add `mentions` to dual-esg-awards + treasure-global-partnership NewsArticle | 2 pages |
-| 🟡 6 | Add Bytespider + PetalBot to robots.txt AI crawler section | robots.txt |
+| 🟡 1 | Add `og:image:alt` to all pages | 35 pages |
+| 🟡 2 | Add Bytespider + PetalBot to robots.txt AI crawler section | robots.txt |
+| 🟡 3 | Add `wordCount` property to all 6 Article schemas | 6 pages |
+| 🟢 4 | Add `foundingDate`, `foundingLocation` to Organization schema (index.html) | 1 page |
+| 🟢 5 | Verify 5 blog articles sharing `datePublished: 2026-02-19` — confirm accuracy | 5 pages |
 
 ### Backlog
 
@@ -345,7 +348,8 @@ Sitemap now cleanly reflects only indexable pages — conflicting signals elimin
 | 2026-03-30 (session 1) | 81 | 74 | 72 | 76 | Major SEO/AEO implementation complete |
 | 2026-03-30 (session 2) | 82 | 75 | 74 | 78 | Stubs noindexed; sameAs fixed; news dateModified; for-merchants SpeakableSpec |
 | **2026-03-30 (session 3)** | **82** | **90** | **86** | **85** | **SpeakableSpec on 33/35; FAQPage on all key pages; sitemap conflict resolved** |
-| **Target (next sprint)** | 84 | 92 | 88 | **88** | After status.html full implementation + dateModified on blog |
+| **2026-03-30 (session 4)** | **83** | **91** | **87** | **86** | **status.html full SEO/AEO; og:url fixed on index; mentions on 2 news articles** |
+| **Target (next sprint)** | 84 | 92 | 88 | **88** | After og:image:alt on all pages + robots.txt AI crawler additions |
 
 ---
 
