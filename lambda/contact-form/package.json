@@ -1,0 +1,18 @@
+{
+  "name": "mezzofy-contact-form",
+  "version": "1.0.0",
+  "description": "AWS Lambda handler — routes Mezzofy contact form submissions via SES",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@aws-sdk/client-ses": "^3.0.0"
+  },
+  "notes": [
+    "On Lambda Node.js 18+ runtime, @aws-sdk/client-ses is available natively.",
+    "You only need to bundle it if deploying to Node.js 16 or earlier.",
+    "To deploy: zip index.js (+ node_modules if needed) and upload to Lambda.",
+    "See README.md in this directory for full deployment instructions."
+  ]
+}

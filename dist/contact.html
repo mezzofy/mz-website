@@ -546,17 +546,13 @@
 
                 <!--
                     ╔══════════════════════════════════════════════════════════════╗
-                    ║  CONTACT FORM — Formspree Setup (one-time, 5 minutes)       ║
+                    ║  CONTACT FORM — AWS SES + Lambda                            ║
                     ║                                                              ║
-                    ║  1. Go to https://formspree.io and sign up / log in         ║
-                    ║     with hello@mezzofy.com                                  ║
-                    ║  2. Click "New Form" → set name "Mezzofy Contact"           ║
-                    ║     → set recipient to hello@mezzofy.com                    ║
-                    ║  3. Copy your form ID (e.g. "xpznydqr")                    ║
-                    ║  4. Replace  YOUR_FORM_ID  below (in the <script> near      ║
-                    ║     the bottom of this file) with your actual form ID       ║
+                    ║  Backend code: lambda/contact-form/index.js                 ║
+                    ║  Deploy guide: lambda/contact-form/README.md                ║
                     ║                                                              ║
-                    ║  Free tier: 50 submissions / month — no credit card needed  ║
+                    ║  After deploying, replace YOUR_API_GATEWAY_URL in the       ║
+                    ║  <script> near the bottom of this file.                     ║
                     ╚══════════════════════════════════════════════════════════════╝
                 -->
                 <form id="contact-form" class="space-y-6" novalidate>
@@ -764,19 +760,16 @@
         </div>
     </footer>
 
-    <!-- Contact Form — Formspree AJAX submission -->
+    <!-- Contact Form — AWS SES + Lambda submission -->
     <script>
     (function () {
         // ─────────────────────────────────────────────────────────────────────
-        // ⚙️  CONFIGURATION — replace YOUR_FORM_ID with your Formspree form ID
-        //    Setup steps:
-        //      1. Register / log in at https://formspree.io with hello@mezzofy.com
-        //      2. Click "New Form" → name it "Mezzofy Contact" → recipient: hello@mezzofy.com
-        //      3. Copy the form ID shown (e.g. "xpznydqr")
-        //      4. Replace YOUR_FORM_ID below with that ID
+        // ⚙️  CONFIGURATION
+        //    After deploying the Lambda + API Gateway (see lambda/contact-form/README.md),
+        //    replace YOUR_API_GATEWAY_URL with your API Gateway Invoke URL, e.g.:
+        //      'https://abc123xyz.execute-api.ap-east-1.amazonaws.com/contact'
         // ─────────────────────────────────────────────────────────────────────
-        var FORMSPREE_ID = 'YOUR_FORM_ID';
-        var ENDPOINT = 'https://formspree.io/f/' + FORMSPREE_ID;
+        var API_ENDPOINT = 'YOUR_API_GATEWAY_URL/contact';
 
         var form      = document.getElementById('contact-form');
         var submitBtn = document.getElementById('contact-submit-btn');
@@ -830,21 +823,32 @@
             submitBtn.disabled = true;
             submitBtn.textContent = 'Sending…';
 
-            fetch(ENDPOINT, {
+            // Collect form fields into a plain object (sent as JSON to Lambda)
+            var payload = {
+                name   : (form.querySelector('#name').value    || '').trim(),
+                email  : (form.querySelector('#email').value   || '').trim(),
+                company: (form.querySelector('#company').value || '').trim(),
+                phone  : (form.querySelector('#phone').value   || '').trim(),
+                subject: (form.querySelector('#subject').value || '').trim(),
+                message: (form.querySelector('#message').value || '').trim(),
+                _gotcha: (form.querySelector('[name="_gotcha"]').value || ''),
+            };
+
+            fetch(API_ENDPOINT, {
                 method : 'POST',
-                body   : new FormData(form),
-                headers: { 'Accept': 'application/json' }
+                body   : JSON.stringify(payload),
+                headers: { 'Content-Type': 'application/json' },
             })
             .then(function (res) {
-                if (res.ok) {
-                    form.reset();
-                    successEl.classList.remove('hidden');
-                    successEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                } else {
-                    return res.json().then(function (json) {
+                return res.json().then(function (json) {
+                    if (res.ok && json.ok) {
+                        form.reset();
+                        successEl.classList.remove('hidden');
+                        successEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    } else {
                         throw new Error(json.error || 'Server error');
-                    });
-                }
+                    }
+                });
             })
             .catch(function () {
                 errorEl.classList.remove('hidden');
