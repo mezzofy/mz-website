@@ -55,6 +55,56 @@
     }
     </script>
 
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How can I contact Mezzofy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can contact Mezzofy by filling out the contact form on this page, by emailing hello@mezzofy.com, or by reaching out through our LinkedIn page. Our team typically responds within one business day."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I become a Mezzofy merchant partner?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "To become a Mezzofy merchant partner, fill in the contact form and select 'Merchant Partnership' as your inquiry type. Our partnerships team will contact you to discuss onboarding, integration options, and campaign setup on the Mezzofy coupon exchange platform."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can distributors access the Mezzofy coupon marketplace?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Distributors can apply for access to the Mezzofy coupon marketplace by submitting a distributor inquiry through the contact form. Mezzofy will review your distribution network and connect you with available coupon inventory from merchant partners."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is Mezzofy headquartered?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mezzofy is headquartered in Hong Kong and operates across the Asia-Pacific region, connecting merchants and distributors through its Global Coupon Exchange Protocol."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Mezzofy offer technical API support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Mezzofy provides technical API support for developers integrating with the Coupon Exchange Protocol. Submit a developer inquiry through the contact form and our technical team will assist with API documentation, sandbox access, and integration guidance."
+          }
+        }
+      ]
+    }
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -123,6 +173,10 @@
     <link rel="shortcut icon" href="favicon.png">
     <link rel="stylesheet" href="output.css">
 
+    <!-- SpeakableSpecification -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebPage","url":"https://mezzofy.com/contact.html","speakable":{"@type":"SpeakableSpecification","cssSelector":["h1","h2"]}}
+    </script>
     <!-- i18n Script -->
     <script src="i18n/i18n.js"></script>
 </head>

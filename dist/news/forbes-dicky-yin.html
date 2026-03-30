@@ -101,8 +101,47 @@
       }
     ]
     </script>
+
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why did Forbes China recognize Dicky Yin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Forbes China recognized Dicky Yin, Founder and CEO of Mezzofy, for outstanding leadership in innovation. He was honored for building the Global Coupon Exchange Protocol — a platform that has processed over 300 million digital coupons across Asia-Pacific and pioneered the digitization of the retail coupon industry."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is Dicky Yin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dicky Yin is the Founder and CEO of Mezzofy, the company behind the Global Coupon Exchange Protocol. He founded Mezzofy in Hong Kong in 2015 with a vision to digitize and tokenize the global coupon industry. He was recognized by Forbes China for his innovative leadership in fintech and retail technology."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Mezzofy's background and founding story?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mezzofy was founded in Hong Kong in 2015 by Dicky Yin. The company was created to solve the inefficiency of paper-based coupon systems by building a digital exchange protocol connecting merchants, distributors, and consumers. Since founding, Mezzofy has grown to process hundreds of millions of coupons across Asia-Pacific."
+          }
+        }
+      ]
+    }
+    </script>
+
     <link rel="icon" type="image/png" href="../favicon.png">
     <link rel="stylesheet" href="../output.css">
+<!-- SpeakableSpecification -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"NewsArticle","url":"https://mezzofy.com/news/forbes-dicky-yin.html","speakable":{"@type":"SpeakableSpecification","cssSelector":["h1","h2"]}}
+    </script>
 <!-- i18n Script -->
     <script src="../i18n/i18n.js"></script>
 </head>
@@ -353,6 +392,7 @@
                     <div class="bg-primary-orange/10 border-l-4 border-primary-orange p-6 rounded-lg mt-8">
                         <p class="text-lg font-semibold text-primary-black mb-2" data-i18n="articles.news.forbesDickyYin.callout.heading">Read the Full Forbes China Article</p>
                         <p class="text-dark-grey" data-i18n="articles.news.forbesDickyYin.callout.text">Learn more about Dicky Yin's leadership philosophy and Mezzofy's mission.</p>
+                        <a href="https://www.forbeschina.com" rel="nofollow noopener noreferrer" target="_blank" class="inline-block mt-3 text-primary-orange font-semibold hover:underline">Read on Forbes China →</a>
                     </div>
                 </div>
 
