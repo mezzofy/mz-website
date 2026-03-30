@@ -11,6 +11,12 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://mezzofy.com/status.html">
 
+    <!-- hreflang -->
+    <link rel="alternate" hreflang="en"        href="https://mezzofy.com/status.html">
+    <link rel="alternate" hreflang="zh-TW"     href="https://mezzofy.com/status.html">
+    <link rel="alternate" hreflang="zh-CN"     href="https://mezzofy.com/status.html">
+    <link rel="alternate" hreflang="x-default" href="https://mezzofy.com/status.html">
+
     <!-- Open Graph -->
     <meta property="og:type"        content="website">
     <meta property="og:title"       content="System Status | Mezzofy">
@@ -18,6 +24,13 @@
     <meta property="og:url"         content="https://mezzofy.com/status.html">
     <meta property="og:image"       content="https://mezzofy.com/assets/images/og-image.jpg">
     <meta property="og:site_name"   content="Mezzofy">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card"        content="summary_large_image">
+    <meta name="twitter:title"       content="System Status | Mezzofy">
+    <meta name="twitter:description" content="Real-time health status for all Mezzofy services — Merchant Portal, Marketplace Portal, Coupon Engine, and NFC systems.">
+    <meta name="twitter:image"       content="https://mezzofy.com/assets/images/og-image.jpg">
+    <meta name="twitter:site"        content="@mezzofy">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -148,6 +161,60 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="shortcut icon" href="favicon.png">
     <link rel="stylesheet" href="output.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "System Status | Mezzofy",
+      "description": "Real-time system status for Mezzofy services — Merchant Portal, Marketplace Portal, Coupon Engine, and Coupon NFC.",
+      "url": "https://mezzofy.com/status.html",
+      "isPartOf": {"@type": "WebSite", "name": "Mezzofy", "url": "https://mezzofy.com"},
+      "publisher": {"@type": "Organization", "name": "Mezzofy", "url": "https://mezzofy.com"},
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://mezzofy.com/"},
+          {"@type": "ListItem", "position": 2, "name": "System Status", "item": "https://mezzofy.com/status.html"}
+        ]
+      }
+    }
+    </script>
+
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How can I check if Mezzofy services are operational?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Visit the Mezzofy System Status page at mezzofy.com/status.html for real-time health information on all Mezzofy services, including the Merchant Portal, Marketplace Portal, Coupon Engine, and Coupon NFC system."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What Mezzofy services are monitored on the status page?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Mezzofy status page monitors four core services: the Merchant Portal (coupon creation and management), the Marketplace Portal (coupon distribution network), the Coupon Engine (issuance and redemption processing), and the Coupon NFC system (NFC-based contactless coupon activation)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I do if a Mezzofy service is experiencing an outage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If a Mezzofy service shows degraded performance or an outage, contact Mezzofy support via mezzofy.com/support.html. Incident updates and resolution timelines are posted in real time on the status page."
+          }
+        }
+      ]
+    }
+    </script>
 
     <!-- SpeakableSpecification -->
     <script type="application/ld+json">
