@@ -14,7 +14,7 @@
       "managementSystem": "优惠券管理系统",
       "marketplace": "优惠券市场",
       "nfc": "优惠券 NFC",
-      "marketing": "优惠券营销",
+      "marketing": "优惠券活动",
       "wallet": "优惠券钱包",
       "serial": "优惠券序列号",
       "apiDoc": "API 文档",
@@ -41,7 +41,7 @@
         "management": "管理",
         "marketplace": "市场",
         "nfc": "NFC",
-        "marketing": "营销",
+        "marketing": "活动",
         "wallet": "钱包",
         "serial": "序列号"
       },
@@ -697,7 +697,7 @@
       },
       "step2": {
         "title": "分发",
-        "description": "通过<a href=\"coupon-nfc.html\" class=\"text-primary-orange hover:underline\">NFC</a>、<a href=\"coupon-marketing.html\" class=\"text-primary-orange hover:underline\">营销</a>、<a href=\"coupon-marketplace.html\" class=\"text-primary-orange hover:underline\">市集</a>部署"
+        "description": "通过<a href=\"coupon-nfc.html\" class=\"text-primary-orange hover:underline\">NFC</a>、<a href=\"coupon-campaign.html\" class=\"text-primary-orange hover:underline\">营销</a>、<a href=\"coupon-marketplace.html\" class=\"text-primary-orange hover:underline\">市集</a>部署"
       },
       "step3": {
         "title": "优化",

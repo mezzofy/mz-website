@@ -141,7 +141,7 @@ tailwind.config.js    # Theme configuration (custom colors)
 |----------|:-----:|-------|
 | **Core** | 3 | index.html, about.html, contact.html |
 | **Solutions** | 3 | for-merchants.html, for-distributors.html, for-developers.html |
-| **Products** | 6 | coupon-management.html, coupon-marketplace.html, coupon-nfc.html, coupon-marketing.html, coupon-wallet.html, coupon-playbook.html |
+| **Products** | 6 | coupon-management.html, coupon-marketplace.html, coupon-nfc.html, coupon-campaign.html, coupon-wallet.html, coupon-playbook.html |
 | **Corporate** | 3 | investors.html, news-press.html, nfc-user-guide.html |
 | **Blog** | 6 | dist/blog/*.html (e-coupons-preference, environmental-excellence, holiday-guide, hotel-tech-innovation, nfc-parknshop, smart-retail) |
 | **News** | 8 | dist/news/*.html (cioworld-feature, dual-esg-awards, edigest-leading-solution, ejtech-300m-coupons, forbes-dicky-yin, funding-announcement, techapple-innovation-index, treasure-global-partnership) |
@@ -314,7 +314,7 @@ The website includes a comprehensive translation system supporting multiple lang
 **Pages with i18n (30/30):**
 - Core: index.html, about.html, contact.html
 - Solutions: for-distributors.html (reference implementation), for-merchants.html, for-developers.html
-- Products: coupon-management.html, coupon-marketplace.html, coupon-nfc.html, coupon-marketing.html, coupon-wallet.html, coupon-playbook.html
+- Products: coupon-management.html, coupon-marketplace.html, coupon-nfc.html, coupon-campaign.html, coupon-wallet.html, coupon-playbook.html
 - Corporate: nfc-user-guide.html, news-press.html
 - Blog: All 6 articles (nfc-parknshop, e-coupons-preference, environmental-excellence, holiday-guide, hotel-tech-innovation, smart-retail)
 - News: All 8 articles (cioworld-feature, dual-esg-awards, edigest-leading-solution, ejtech-300m-coupons, forbes-dicky-yin, funding-announcement, techapple-innovation-index, treasure-global-partnership)

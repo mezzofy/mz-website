@@ -153,7 +153,7 @@ MCP server configuration fixed for Windows. Shadcn MCP server now loads correctl
 - ✅ Verified and completed i18n for all 6 product pages → `coupon-*.html` + `i18n/translations/*.json`
   - coupon-management.html: 0 missing keys (already complete)
   - coupon-nfc.html: 0 missing keys (already complete)
-  - coupon-marketing.html: 0 missing keys (already complete)
+  - coupon-campaign.html: 0 missing keys (already complete)
   - coupon-playbook.html: 0 missing keys (already complete)
   - coupon-marketplace.html: Fixed 1 missing key (`marketplace.hero.imageAlt`) in all 3 JSON files
   - coupon-wallet.html: Full i18n implementation — added 120 data-i18n attributes + 82 wallet.* translation keys to all 3 JSON files; fixed 3 wrong nav key names (common.nav.about/contact/news → aboutUs/contactUs/newsPress); added all missing footer data-i18n attributes

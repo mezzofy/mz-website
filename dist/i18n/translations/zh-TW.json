@@ -14,7 +14,7 @@
       "managementSystem": "優惠券管理系統",
       "marketplace": "優惠券市場",
       "nfc": "優惠券 NFC",
-      "marketing": "優惠券行銷",
+      "marketing": "優惠券活動",
       "wallet": "優惠券錢包",
       "serial": "優惠券序號",
       "apiDoc": "API 文檔",
@@ -41,7 +41,7 @@
         "management": "管理",
         "marketplace": "市場",
         "nfc": "NFC",
-        "marketing": "行銷",
+        "marketing": "活動",
         "wallet": "錢包",
         "serial": "序號"
       },
@@ -677,7 +677,7 @@
       },
       "step2": {
         "title": "分發",
-        "description": "透過<a href=\"coupon-nfc.html\" class=\"text-primary-orange hover:underline\">NFC</a>、<a href=\"coupon-marketing.html\" class=\"text-primary-orange hover:underline\">行銷</a>、<a href=\"coupon-marketplace.html\" class=\"text-primary-orange hover:underline\">市集</a>部署"
+        "description": "透過<a href=\"coupon-nfc.html\" class=\"text-primary-orange hover:underline\">NFC</a>、<a href=\"coupon-campaign.html\" class=\"text-primary-orange hover:underline\">行銷</a>、<a href=\"coupon-marketplace.html\" class=\"text-primary-orange hover:underline\">市集</a>部署"
       },
       "step3": {
         "title": "優化",

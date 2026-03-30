@@ -14,7 +14,7 @@
       "managementSystem": "Coupon Management System",
       "marketplace": "Coupon Marketplace",
       "nfc": "Coupon NFC",
-      "marketing": "Coupon Marketing",
+      "marketing": "Coupon Campaign",
       "wallet": "Coupon Wallet",
       "serial": "Coupon Serial",
       "apiDoc": "API Documentation",
@@ -41,7 +41,7 @@
         "management": "Management",
         "marketplace": "Marketplace",
         "nfc": "NFC",
-        "marketing": "Marketing",
+        "marketing": "Campaign",
         "wallet": "Wallet",
         "serial": "Serial"
       },
@@ -691,7 +691,7 @@
       },
       "step2": {
         "title": "DISTRIBUTE",
-        "description": "Deploy via <a href=\"coupon-nfc.html\" class=\"text-primary-orange hover:underline\">NFC</a>, <a href=\"coupon-marketing.html\" class=\"text-primary-orange hover:underline\">Marketing</a>, <a href=\"coupon-marketplace.html\" class=\"text-primary-orange hover:underline\">Marketplace</a>"
+        "description": "Deploy via <a href=\"coupon-nfc.html\" class=\"text-primary-orange hover:underline\">NFC</a>, <a href=\"coupon-campaign.html\" class=\"text-primary-orange hover:underline\">Marketing</a>, <a href=\"coupon-marketplace.html\" class=\"text-primary-orange hover:underline\">Marketplace</a>"
       },
       "step3": {
         "title": "OPTIMIZE",
@@ -737,7 +737,7 @@
         "learnMore": "Discover NFC Tap-to-Redeem →"
       },
       "marketing": {
-        "title": "Coupon Marketing",
+        "title": "Coupon Campaign",
         "description": "Turn marketing expense into revenue stream",
         "learnMore": "Explore Coupon Marketing Tools →"
       },
@@ -1489,7 +1489,7 @@
         "description": "Create and manage inventory before listing on marketplace"
       },
       "marketing": {
-        "title": "+ Coupon Marketing",
+        "title": "+ Coupon Campaign",
         "description": "Sell your marketplace inventory directly to consumers"
       },
       "bridgeApi": {
@@ -2286,7 +2286,7 @@
         "description": "Tap-to-wallet functionality for physical retail"
       },
       "marketing": {
-        "title": "+ Coupon Marketing",
+        "title": "+ Coupon Campaign",
         "description": "Purchased vouchers automatically added to wallet"
       },
       "marketplace": {

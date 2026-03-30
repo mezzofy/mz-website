@@ -62,7 +62,9 @@
       "Bash(npx firecrawl-cli:*)",
       "Bash(npx --yes firecrawl-cli@latest scrape \"https://mezzofy.github.io/mz-website/dist/for-developers.html\" --only-main-content -o .firecrawl/for-developers.md)",
       "Bash(/tmp/seo_audit_report.txt:*)",
-      "Read(//tmp/**)"
+      "Read(//tmp/**)",
+      "Bash(git mv:*)",
+      "Bash(/dev/null grep:*)"
     ],
     "deny": [],
     "ask": []
