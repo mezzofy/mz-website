@@ -2313,11 +2313,11 @@
     },
     "hero": {
       "badge": "COUPON SERIAL",
-      "title": "YOUR <span class=\"text-primary-orange\">UNIQUE SERIAL</span> FOR INSTANT REDEMPTION",
+      "title": "YOUR <span class=\"text-primary-orange\">UNIQUE SERIAL</span> FOR REDEMPTION",
       "subtitle": "Every coupon on the Mezzofy platform carries a unique, <span class=\"text-primary-orange font-semibold\">tamper-proof serial number</span>. Customers present their serial to redeem at any participating merchant <span class=\"text-primary-orange font-semibold\">seamlessly</span>.",
       "getStarted": "Get Started",
       "exploreFeatures": "Explore Features",
-      "imageAlt": "Coupon Serial Voucher Display"
+      "imageAlt": "Coupon Serial Coupon Display"
     },
     "platforms": {
       "title": "Save & Present Anywhere",
@@ -2340,9 +2340,9 @@
       }
     },
     "features": {
-      "title": "Everything a Digital Voucher Needs",
+      "title": "Everything a Digital Coupon Needs",
       "voucherIdentity": {
-        "title": "Voucher Identity",
+        "title": "Coupon Identity",
         "item1": "Globally unique 16-character alphanumeric serial",
         "item2": "Tamper-proof cryptographic signing via Mezzofy Protocol",
         "item3": "QR code and barcode representation included",
@@ -2402,12 +2402,12 @@
       }
     },
     "transferFeature": {
-      "title": "Give the Gift of a Voucher",
-      "description": "Coupon Serial supports peer-to-peer transfer. Customers can gift or resell their voucher to another person. The transfer is fully traceable — the serial remains valid under the new owner, perfect for gift cards, promotions, and loyalty rewards."
+      "title": "Give the Gift of a Coupon",
+      "description": "Coupon Serial supports peer-to-peer transfer. Customers can gift or resell their coupon to another person. The transfer is fully traceable — the serial remains valid under the new owner, perfect for gift cards, promotions, and loyalty rewards."
     },
     "ecosystem": {
       "title": "Works Seamlessly with the Mezzofy Ecosystem",
-      "subtitle": "Coupon Serial integrates with other Mezzofy products to create a complete voucher lifecycle",
+      "subtitle": "Coupon Serial integrates with other Mezzofy products to create a complete coupon lifecycle",
       "wallet": {
         "title": "+ Coupon Wallet",
         "description": "Save serials directly into Coupon Wallet for organized storage across all vouchers"
@@ -2427,7 +2427,7 @@
       "button": "Contact Sales for Bundle Pricing"
     },
     "footerCta": {
-      "title": "Ready to Issue Your First Serial Voucher?",
+      "title": "Ready to Issue Your First Serial Coupon?",
       "subtitle": "Join merchants and distributors who trust Mezzofy to manage digital vouchers at scale",
       "getStarted": "Get Started Now",
       "requestDemo": "Request Demo"
