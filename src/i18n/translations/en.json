@@ -1516,8 +1516,8 @@
     },
     "hero": {
       "label": "NFC DISTRIBUTION NETWORK",
-      "title": "Power Your Spaces with the Mezzofy NFC Network",
-      "subtitle": "Become a distribution node connecting merchant offers to your captive audience through tap-activated NFC technology",
+      "title": "POWER YOUR <span class=\"text-primary-orange\">SPACES</span> WITH THE <span class=\"text-primary-orange\">NFC</span> NETWORK",
+      "subtitle": "Become a <span class=\"text-primary-orange font-semibold\">distribution node</span> connecting merchant coupons directly to your <span class=\"text-primary-orange font-semibold\">captive audience</span> through seamless tap-activated NFC technology — and earn recurring revenue.",
       "becomePartner": "Become a Channel Partner",
       "viewPartnerTypes": "View Partner Types",
       "imageAlt": "NFC Distribution Network"
