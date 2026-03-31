@@ -2187,8 +2187,8 @@
     },
     "hero": {
       "badge": "COUPON WALLET",
-      "title": "YOUR DIGITAL WALLET FOR <span class=\"text-primary-orange\">COUPONS</span>",
-      "subtitle": "Multi-platform coupon collection experience <span class=\"text-primary-orange font-semibold\">improving redemption rates 40%+</span>. Cross-device sync and smart organization powered by the Mezzofy Exchange Protocol, available as <span class=\"text-primary-orange font-semibold\">white-label or API integration</span>.",
+      "title": "YOUR DIGITAL <span class=\"text-primary-orange\">WALLET</span> FOR COUPONS",
+      "subtitle": "Multi-platform coupon collection experience <span class=\"text-primary-orange font-semibold\">improving redemption rates 40%+</span>. Cross-device sync and smart organization, available as <span class=\"text-primary-orange font-semibold\">white-label or API integration</span>.",
       "getStarted": "Get Started",
       "exploreFeatures": "Explore Features"
     },
