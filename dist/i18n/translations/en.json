@@ -1125,8 +1125,8 @@
     },
     "hero": {
       "label": "COUPON MANAGEMENT",
-      "title": "YOUR INFRASTRUCTURE FOR <span class=\"text-primary-orange\">COUPON</span>",
-      "description": "Enterprise-grade infrastructure for coupon lifecycle management. The foundational layer of the Mezzofy Exchange Protocol, built with <span class=\"text-primary-orange font-semibold\">first-party data control</span> and <span class=\"text-primary-orange font-semibold\">real-time modification</span> capabilities.",
+      "title": "YOUR <span class=\"text-primary-orange\">INFRASTRUCTURE</span> FOR COUPON",
+      "description": "Enterprise-grade infrastructure for <span class=\"text-primary-orange font-semibold\">coupon lifecycle management</span>. The foundational layer of the Mezzofy Exchange Protocol, built with <span class=\"text-primary-orange font-semibold\">first-party data control</span> and <span class=\"text-primary-orange font-semibold\">real-time modification</span> capabilities.",
       "startTrial": "Start Free Trial",
       "exploreFeatures": "Explore Features",
       "imageAlt": "Coupon Management Platform"
