@@ -1373,8 +1373,8 @@
     },
     "hero": {
       "label": "COUPON MARKETPLACE",
-      "title": "GLOBAL EXCHANGE HUB FOR DIGITAL COUPONS",
-      "description": "The only secure peer-to-peer coupon exchange enabling B2B, B2C, and C2C transactions. Built on tokenization technology to create a secondary market for digital promotions with fraud-proof validation.",
+      "title": "GLOBAL <span class=\"text-primary-orange\">EXCHANGE HUB</span> FOR COUPONS",
+      "description": "The only <span class=\"text-primary-orange font-semibold\">secure peer-to-peer</span> coupon exchange enabling B2B, B2C, and C2C transactions. Built on <span class=\"text-primary-orange font-semibold\">tokenization technology</span> to create a secondary market for digital coupons with fraud-proof validation.",
       "listInventory": "List Your Inventory",
       "exploreMarketplace": "Explore Marketplace"
     },
