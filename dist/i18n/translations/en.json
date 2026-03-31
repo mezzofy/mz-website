@@ -2313,8 +2313,8 @@
     },
     "hero": {
       "badge": "COUPON SERIAL",
-      "title": "YOUR UNIQUE VOUCHER SERIAL FOR INSTANT REDEMPTION",
-      "subtitle": "Every coupon on the Mezzofy platform carries a unique, tamper-proof serial number. Customers present their serial to redeem at any participating merchant — works with <span class=\"text-primary-orange font-semibold\">Apple Wallet, Google Pay, Samsung Wallet</span>, and any web browser.",
+      "title": "YOUR <span class=\"text-primary-orange\">UNIQUE SERIAL</span> FOR INSTANT REDEMPTION",
+      "subtitle": "Every coupon on the Mezzofy platform carries a unique, <span class=\"text-primary-orange font-semibold\">tamper-proof serial number</span>. Customers present their serial to redeem at any participating merchant <span class=\"text-primary-orange font-semibold\">seamlessly</span>.",
       "getStarted": "Get Started",
       "exploreFeatures": "Explore Features",
       "imageAlt": "Coupon Serial Voucher Display"
