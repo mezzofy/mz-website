@@ -715,22 +715,22 @@
       "management": {
         "title": "管理系統",
         "description": "優惠券生命週期管理的企業級基礎設施",
-        "learnMore": "探索優惠券管理系統 →"
+        "learnMore": "探索優惠券管理系統"
       },
       "nfc": {
         "title": "優惠券 NFC",
         "description": "實體零售接觸點，支援輕觸下載",
-        "learnMore": "探索 NFC 即觸即兌 →"
+        "learnMore": "探索 NFC 即觸即兌"
       },
       "marketing": {
         "title": "優惠券行銷",
         "description": "將行銷費用轉化為收入來源",
-        "learnMore": "探索優惠券行銷工具 →"
+        "learnMore": "探索優惠券行銷工具"
       },
       "wallet": {
         "title": "優惠券錢包",
         "description": "多平台客戶體驗層",
-        "learnMore": "查看數位錢包功能 →"
+        "learnMore": "查看數位錢包功能"
       }
     },
     "benefits": {

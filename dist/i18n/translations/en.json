@@ -729,22 +729,22 @@
       "management": {
         "title": "Management System",
         "description": "Enterprise infrastructure for coupon lifecycle management",
-        "learnMore": "Explore Coupon Management →"
+        "learnMore": "Explore Coupon Management"
       },
       "nfc": {
         "title": "Coupon NFC",
         "description": "Physical retail touchpoints with tap-to-download",
-        "learnMore": "Discover NFC Tap-to-Redeem →"
+        "learnMore": "Discover NFC Tap-to-Redeem"
       },
       "marketing": {
         "title": "Coupon Campaign",
         "description": "Turn marketing expense into revenue stream",
-        "learnMore": "Explore Coupon Marketing Tools →"
+        "learnMore": "Explore Coupon Marketing Tools"
       },
       "wallet": {
         "title": "Coupon Wallet",
         "description": "Multi-platform customer experience layer",
-        "learnMore": "See Digital Wallet Features →"
+        "learnMore": "See Digital Wallet Features"
       }
     },
     "benefits": {

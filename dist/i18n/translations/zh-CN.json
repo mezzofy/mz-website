@@ -735,22 +735,22 @@
       "management": {
         "title": "管理系统",
         "description": "优惠券生命周期管理的企业级基础设施",
-        "learnMore": "探索优惠券管理系统 →"
+        "learnMore": "探索优惠券管理系统"
       },
       "nfc": {
         "title": "优惠券 NFC",
         "description": "实体零售接触点，支持轻触下载",
-        "learnMore": "探索 NFC 即触即兑 →"
+        "learnMore": "探索 NFC 即触即兑"
       },
       "marketing": {
         "title": "优惠券营销",
         "description": "将营销费用转化为收入来源",
-        "learnMore": "探索优惠券营销工具 →"
+        "learnMore": "探索优惠券营销工具"
       },
       "wallet": {
         "title": "优惠券钱包",
         "description": "多平台客户体验层",
-        "learnMore": "查看数字钱包功能 →"
+        "learnMore": "查看数字钱包功能"
       }
     },
     "benefits": {
