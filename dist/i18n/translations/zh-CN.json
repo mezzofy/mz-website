@@ -697,7 +697,8 @@
       },
       "step2": {
         "title": "分发",
-        "description": "通过<a href=\"coupon-nfc.html\" class=\"text-primary-orange hover:underline\">NFC</a>、<a href=\"coupon-campaign.html\" class=\"text-primary-orange hover:underline\">营销</a>、<a href=\"coupon-marketplace.html\" class=\"text-primary-orange hover:underline\">市集</a>部署"
+        "description": "通过<a href=\"coupon-nfc.html\" class=\"text-primary-orange hover:underline\">NFC</a>、<a href=\"coupon-campaign.html\" class=\"text-primary-orange hover:underline\">营销</a>、<a href=\"coupon-marketplace.html\" class=\"text-primary-orange hover:underline\">市集</a>部署",
+        "channels": "<span class=\"px-3 py-1 bg-light-grey rounded-full text-xs font-semibold text-dark-grey\">Email</span><span class=\"px-3 py-1 bg-light-grey rounded-full text-xs font-semibold text-dark-grey\">SMS</span><span class=\"px-3 py-1 bg-light-grey rounded-full text-xs font-semibold text-dark-grey\">Chat</span><span class=\"px-3 py-1 bg-primary-orange rounded-full text-xs font-semibold text-white\">API</span>"
       },
       "step3": {
         "title": "优化",
