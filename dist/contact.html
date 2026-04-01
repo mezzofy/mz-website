@@ -546,13 +546,14 @@
 
                 <!--
                     ╔══════════════════════════════════════════════════════════════╗
-                    ║  CONTACT FORM — AWS SES + Lambda                            ║
+                    ║  CONTACT FORM — Mezzofy AI Assistant API                    ║
                     ║                                                              ║
-                    ║  Backend code: lambda/contact-form/index.js                 ║
-                    ║  Deploy guide: lambda/contact-form/README.md                ║
+                    ║  Backend: mz-ai-assistant/server/app/api/contact.py         ║
+                    ║  Sends to: hello@mezzofy.com via MS Graph (Microsoft 365)   ║
+                    ║  Endpoint: POST https://api.mezzofy.com/contact             ║
                     ║                                                              ║
-                    ║  After deploying, replace YOUR_API_GATEWAY_URL in the       ║
-                    ║  <script> near the bottom of this file.                     ║
+                    ║  CORS: add mezzofy.com to CORS_ALLOWED_ORIGINS env var      ║
+                    ║        on the AI Assistant server.                          ║
                     ╚══════════════════════════════════════════════════════════════╝
                 -->
                 <form id="contact-form" class="space-y-6" novalidate>
@@ -760,16 +761,22 @@
         </div>
     </footer>
 
-    <!-- Contact Form — AWS SES + Lambda submission -->
+    <!-- Contact Form — Mezzofy AI Assistant API (MS Graph / Microsoft 365) -->
     <script>
     (function () {
         // ─────────────────────────────────────────────────────────────────────
         // ⚙️  CONFIGURATION
-        //    After deploying the Lambda + API Gateway (see lambda/contact-form/README.md),
-        //    replace YOUR_API_GATEWAY_URL with your API Gateway Invoke URL, e.g.:
-        //      'https://abc123xyz.execute-api.ap-east-1.amazonaws.com/contact'
+        //    Endpoint: POST /contact on the Mezzofy AI Assistant FastAPI server.
+        //    Handler:  mz-ai-assistant/server/app/api/contact.py
+        //    Emails are sent to hello@mezzofy.com via MS Graph (Microsoft 365).
+        //
+        //    Production:  https://api.mezzofy.com/contact
+        //    Local dev:   http://localhost:8000/contact
+        //
+        //    CORS: ensure CORS_ALLOWED_ORIGINS env var on the AI Assistant server
+        //          includes https://mezzofy.com and https://mezzofy.github.io
         // ─────────────────────────────────────────────────────────────────────
-        var API_ENDPOINT = 'YOUR_API_GATEWAY_URL/contact';
+        var API_ENDPOINT = 'https://api.mezzofy.com/contact';
 
         var form      = document.getElementById('contact-form');
         var submitBtn = document.getElementById('contact-submit-btn');
