@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -275,7 +275,7 @@
                         </div>
                     </div>
 
-                    <a href="#reach" class="btn-primary" data-i18n="common.nav.getStarted">Get Started</a>
+                    <a href="contact.html" class="btn-primary" data-i18n="common.nav.getStarted">Get Started</a>
                 </div>
 
                 <!-- Mobile Menu Button -->
@@ -390,7 +390,7 @@
                     </div>
                 </div>
 
-                <a href="#reach" class="block py-2 text-primary-orange font-semibold" data-i18n="common.nav.getStarted">Get Started</a>
+                <a href="contact.html" class="block py-2 text-primary-orange font-semibold" data-i18n="common.nav.getStarted">Get Started</a>
             </div>
         </div>
     </nav>
@@ -843,37 +843,6 @@
         </div>
     </footer>
 
-    <!-- SECTION 7: Floating AI Chat Widget -->
-    <button id="ai-chat-toggle" class="fixed bottom-6 right-6 z-50 bg-primary-orange text-white rounded-full px-5 py-3 shadow-lg flex items-center gap-2 hover:bg-dark-orange transition-colors">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
-        </svg>
-        <span data-i18n="support.aiChat.buttonLabel">Ask Mezzofy AI</span>
-    </button>
-
-    <div id="ai-chat-modal" class="hidden fixed bottom-20 right-6 z-50 w-80 bg-white rounded-xl shadow-2xl border border-gray-200">
-        <div class="bg-primary-orange text-white p-4 rounded-t-xl flex justify-between items-center">
-            <h3 class="font-bold" data-i18n="support.aiChat.title">Mezzofy Support Assistant</h3>
-            <button id="ai-chat-close" class="text-white text-2xl leading-none hover:text-white/80 transition-colors">&times;</button>
-        </div>
-        <div class="p-4">
-            <p class="text-sm text-gray-600 mb-4" data-i18n="support.aiChat.subtitle">Get instant answers to common questions or submit a support ticket.</p>
-            <!-- TODO: Connect to AI Agent API endpoint and Merchant/Distributor Portal ticket creation API -->
-            <div class="border border-gray-200 rounded-lg flex mb-3">
-                <input type="text" data-i18n-placeholder="support.aiChat.placeholder" placeholder="Type your question..." class="flex-1 p-3 rounded-l-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary-orange/20">
-                <button class="bg-primary-orange text-white px-4 rounded-r-lg hover:bg-dark-orange transition-colors font-medium text-sm" data-i18n="support.aiChat.send">Send</button>
-            </div>
-            <a href="#" class="block text-sm text-primary-orange text-center hover:underline" data-i18n="support.aiChat.merchantLink">
-                <!-- TODO: Replace href with Merchant Portal URL -->
-                Submit via Merchant Portal →
-            </a>
-            <a href="#" class="block mt-1 text-sm text-primary-orange text-center hover:underline" data-i18n="support.aiChat.partnerLink">
-                <!-- TODO: Replace href with Distributor Portal URL -->
-                Submit via Distributor Portal →
-            </a>
-        </div>
-    </div>
-
     <!-- Mobile Menu Toggle Script -->
     <script>
         const mobileMenuButton = document.getElementById('mobile-menu-button');
@@ -881,16 +850,6 @@
 
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
-        });
-    </script>
-
-    <!-- AI Chat Widget Script -->
-    <script>
-        document.getElementById('ai-chat-toggle').addEventListener('click', () => {
-            document.getElementById('ai-chat-modal').classList.toggle('hidden');
-        });
-        document.getElementById('ai-chat-close').addEventListener('click', () => {
-            document.getElementById('ai-chat-modal').classList.add('hidden');
         });
     </script>
 
