@@ -1992,7 +1992,7 @@
   },
   "aiCommerce": {
     "hero": {
-      "subtitle": "Mezzofy is the supply layer that AI shopping agents query in real time. When ChatGPT, Gemini, or Kimi recommend a deal, it comes from the Mezzofy Exchange — tokenized, fraud-proof, and ready to redeem. 900M+ weekly AI users. Your merchant inventory. One integration.",
+      "subtitle": "Mezzofy is the supply layer that AI shopping agents query in real time. When an LLM recommends a deal, it comes from the Mezzofy Exchange — tokenized, fraud-proof, and ready to redeem. 900M+ weekly AI users. Your merchant inventory. One integration.",
       "primaryCta": "Become an AI Supply Partner",
       "secondaryCta": "Explore Integration Protocols"
     },
