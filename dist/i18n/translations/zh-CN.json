@@ -10,16 +10,16 @@
       "merchantSolution": "我是商家",
       "distributorSolution": "我是分销商",
       "developerSolution": "我是开发者",
-      "aiCommerceSolution": "AI 电商",
-      "managementSystem": "优惠券管理系统",
-      "marketplace": "优惠券市场",
-      "nfc": "优惠券 NFC",
-      "marketing": "优惠券活动",
-      "wallet": "优惠券钱包",
-      "serial": "优惠券序列号",
+      "aiCommerceSolution": "AI 电商 (Beta)",
+      "managementSystem": "电子券管理系统",
+      "marketplace": "电子券市场",
+      "nfc": "电子券 NFC",
+      "marketing": "电子券活动",
+      "wallet": "电子券钱包",
+      "serial": "电子券序列号",
       "apiDoc": "API 文档",
       "apiUseCase": "API 使用案例",
-      "playbook": "优惠券指南",
+      "playbook": "电子券指南",
       "support": "支持",
       "aboutUs": "关于我们",
       "contactUs": "联系我们",
@@ -27,7 +27,7 @@
       "investors": "投资者"
     },
     "footer": {
-      "tagline": "通过 Mezzofy 交易协议，打造优惠券基础设施的未来。",
+      "tagline": "通过 Mezzofy 交易协议，打造电子券基础设施的未来。",
       "solutions": {
         "title": "解决方案",
         "merchants": "商家方案",
@@ -47,7 +47,7 @@
       },
       "resources": {
         "title": "资源",
-        "playbook": "优惠券指南",
+        "playbook": "电子券指南",
         "apiDoc": "API 文档",
         "apiUseCase": "API 使用案例",
         "support": "支持"
@@ -94,7 +94,7 @@
     "hero": {
       "title": "电子票券<span class=\"text-primary-orange\">智能交换</span>平台",
       "subtitle": "以安全、代币化的数字商务，连接商家与经销商",
-      "description": "Mezzofy 是数字优惠券交换协议 — 通过单一代币化基础设施，支持优惠券、兑换券及礼品券。",
+      "description": "Mezzofy 是数字电子券交换协议 — 通过单一代币化基础设施，支持电子券、兑换券及礼品券。",
       "ctaMerchants": "列出您的库存：开始销售",
       "ctaDistributors": "访问库存：寻找合作伙伴"
     },
@@ -111,28 +111,28 @@
       },
       "security": {
         "title": "无与伦比的安全性",
-        "description": "每张电子券都被标准化为 Mezzofy 优惠券标准，这是一个专有协议，保证独特、防欺诈的数字资产。"
+        "description": "每张电子券都被标准化为 Mezzofy 电子券标准，这是一个专有协议，保证独特、防欺诈的数字资产。"
       }
     },
     "ecosystem": {
       "title": "从愿景到产品：Mezzofy 生态系统",
-      "description": "我们的交易协议为完整的产品套件提供动力，旨在在整个优惠券生命周期中执行我们的基础设施愿景",
+      "description": "我们的交易协议为完整的产品套件提供动力，旨在在整个电子券生命周期中执行我们的基础设施愿景",
       "diagram": "[视觉图表：产品生态系统层级，显示核心基础设施 → 分销渠道 → 消费者体验 → 策略之间的关系]",
       "coreInfra": {
         "title": "核心基础设施",
-        "description": "创建和交换优惠券的基础产品",
+        "description": "创建和交换电子券的基础产品",
         "item1": "后端运营",
         "item2": "交易层"
       },
       "distribution": {
         "title": "分销渠道",
-        "description": "多渠道优惠券分销选项",
+        "description": "多渠道电子券分销选项",
         "item1": "实体零售接触点",
         "item2": "电子商务销售"
       },
       "consumer": {
         "title": "消费者体验",
-        "description": "面向客户的优惠券收集",
+        "description": "面向客户的电子券收集",
         "item1": "多平台访问",
         "item2": "唯一凭证序列号"
       },
@@ -151,7 +151,7 @@
       },
       "revenue": {
         "title": "收益最大化",
-        "description": "适用于将优惠券作为收入来源销售的商家",
+        "description": "适用于将电子券作为收入来源销售的商家",
         "item1": "管理",
         "item2": "营销",
         "item3": "市场"
@@ -173,7 +173,7 @@
       "contactSales": "联系业务 →"
     },
     "merchants": {
-      "title": "商家方案：将优惠券负债转化为高性能数字资产",
+      "title": "商家方案：将电子券负债转化为高性能数字资产",
       "description": "免费加入交易所，立即获得全球分销渠道。您只需在成功完成销售和兑换时付费。",
       "benefit1": {
         "title": "零前期成本",
@@ -207,7 +207,7 @@
       },
       "benefit3": {
         "title": "标准化质量",
-        "description": "所有优惠券都遵守 Mezzofy 优惠券标准，消除欺诈风险，确保为您的客户提供完美的兑换体验。"
+        "description": "所有电子券都遵守 Mezzofy 电子券标准，消除欺诈风险，确保为您的客户提供完美的兑换体验。"
       },
       "benefit4": {
         "title": "精准分销",
@@ -218,7 +218,7 @@
     "developers": {
       "eyebrow": "开发者专区",
       "title": "基于交易协议进行开发",
-      "description": "通过以开发者为先的 REST API、多语言 SDK 及完整的优惠券功能，将优惠券整合到任何平台。",
+      "description": "通过以开发者为先的 REST API、多语言 SDK 及完整的电子券功能，将电子券整合到任何平台。",
       "api": {
         "title": "API",
         "description": "具备 OAuth 2.0 和实时事件 Webhook 支持的 RESTful API"
@@ -228,14 +228,14 @@
         "description": "适用于所有主要平台的官方 SDK — 以惯用库缩短集成时间"
       },
       "functions": {
-        "title": "优惠券功能",
+        "title": "电子券功能",
         "description": "从发行到跨渠道兑换验证的完整生命周期控制"
       },
       "cta": "查看 API 文档及开始使用"
     },
     "aiCommerce": {
       "eyebrow": "AI 商务",
-      "title": "AI 代理的优惠券基础设施",
+      "title": "AI 代理的电子券基础设施",
       "description": "当 ChatGPT、Gemini 或 Kimi 推荐优惠时，它来自 Mezzofy 交易所——代币化、防欺诈，随时可兑换。每周超过 9 亿 AI 用户。您的商户库存。一次集成。",
       "acp": {
         "badge": "已上线 · 2025 年 9 月",
@@ -246,7 +246,7 @@
       "ucp": {
         "badge": "已宣布 · 2026 年 1 月",
         "title": "Google Gemini — 通用商务协议 (UCP)",
-        "description": "优惠券被索引至 Google 购物图，并在搜索、地图、购物和 Assistant 中显示",
+        "description": "电子券被索引至 Google 购物图，并在搜索、地图、购物和 Assistant 中显示",
         "stat": "商品图"
       },
       "mcp": {
@@ -266,7 +266,7 @@
       },
       "component2": {
         "title": "资产连接",
-        "description": "我们为将这些资产连接到实体资产（RWA）创建基础，将数字优惠券市场扩展到快速增长的 Web3/DeFi 资产空间。"
+        "description": "我们为将这些资产连接到实体资产（RWA）创建基础，将数字电子券市场扩展到快速增长的 Web3/DeFi 资产空间。"
       },
       "component3": {
         "title": "清算所",
@@ -283,28 +283,28 @@
   "about": {
     "hero": {
       "title": "关于公司",
-      "subtitle": "通过<span class=\"text-primary-orange\">智能优惠券的力量</span>连接企业与客户"
+      "subtitle": "通过<span class=\"text-primary-orange\">智能电子券的力量</span>连接企业与客户"
     },
     "mission": {
       "title": "我们的使命",
       "nameOrigin": {
         "title": "名称起源",
-        "description": "<span class=\"font-semibold text-primary-orange\">'Mezzo'</span>（意大利语「中间」）结合<span class=\"font-semibold text-primary-orange\">'-fy'</span>（意为「使成为」）——体现我们构建智能媒介的使命，将电子优惠券转化为安全的代币化资产，连接全球商家与分销商。"
+        "description": "<span class=\"font-semibold text-primary-orange\">'Mezzo'</span>（意大利语「中间」）结合<span class=\"font-semibold text-primary-orange\">'-fy'</span>（意为「使成为」）——体现我们构建智能媒介的使命，将电子电子券转化为安全的代币化资产，连接全球商家与分销商。"
       },
       "corePurpose": {
         "title": "核心宗旨",
-        "description": "Mezzofy 是<span class=\"font-semibold text-primary-orange\">AI 驱动的交易所协议</span>，将电子优惠券标准化为安全的防欺诈资产——通过可机器读取的清算所，将优惠券供应直接连接到需求，为下一代商业而生。"
+        "description": "Mezzofy 是<span class=\"font-semibold text-primary-orange\">AI 驱动的交易所协议</span>，将电子电子券标准化为安全的防欺诈资产——通过可机器读取的清算所，将电子券供应直接连接到需求，为下一代商业而生。"
       },
       "keyObjectives": {
         "title": "关键目标",
-        "description": "我们在三大支柱上构建未来：<span class=\"text-primary-orange font-semibold\">网络效应优先于功能</span>，专注于安全结算和通过连接创造真实价值；<span class=\"text-primary-orange font-semibold\">AI 原生基础设施</span>，使我们的数据可机器读取，服务下一代自主 AI 购物代理；以及<span class=\"text-primary-orange font-semibold\">无与伦比的安全性</span>，通过 Mezzofy 优惠券标准确保每张优惠券都是唯一的防欺诈电子资产。"
+        "description": "我们在三大支柱上构建未来：<span class=\"text-primary-orange font-semibold\">网络效应优先于功能</span>，专注于安全结算和通过连接创造真实价值；<span class=\"text-primary-orange font-semibold\">AI 原生基础设施</span>，使我们的数据可机器读取，服务下一代自主 AI 购物代理；以及<span class=\"text-primary-orange font-semibold\">无与伦比的安全性</span>，通过 Mezzofy 电子券标准确保每张电子券都是唯一的防欺诈电子资产。"
       }
     },
     "performance": {
       "title": "大规模性能",
       "metric1": {
         "value": "数百万",
-        "label": "处理的优惠券"
+        "label": "处理的电子券"
       },
       "metric2": {
         "value": "数十亿",
@@ -324,34 +324,34 @@
     },
     "faq": {
       "title": "常见问题",
-      "subtitle": "您需要了解的有关 Mezzofy 和全球优惠券交易协议的一切",
+      "subtitle": "您需要了解的有关 Mezzofy 和全球电子券交易协议的一切",
       "q1": {
         "question": "Mezzofy 是什么？",
-        "answer": "Mezzofy 是全球优惠券交易协议——一个 AI 驱动的代币化基础设施，将优惠券和代金券的供应直接连接到需求。Mezzofy 于 2015 年在香港成立，将电子优惠券标准化为安全的防欺诈资产，使全球商家和分销商能够大规模创建、交换和兑换优惠券。"
+        "answer": "Mezzofy 是全球电子券交易协议——一个 AI 驱动的代币化基础设施，将电子券和代金券的供应直接连接到需求。Mezzofy 于 2015 年在香港成立，将电子电子券标准化为安全的防欺诈资产，使全球商家和分销商能够大规模创建、交换和兑换电子券。"
       },
       "q2": {
-        "question": "什么是全球优惠券交易协议？",
-        "answer": "全球优惠券交易协议是 Mezzofy 的专有标准，将电子优惠券转化为独特的代币化电子资产。它为优惠券的创建、分发、验证和兑换提供可机器读取的清算所——消除与传统优惠券平台相关的欺诈、碎片化和高成本问题。"
+        "question": "什么是全球电子券交易协议？",
+        "answer": "全球电子券交易协议是 Mezzofy 的专有标准，将电子电子券转化为独特的代币化电子资产。它为电子券的创建、分发、验证和兑换提供可机器读取的清算所——消除与传统电子券平台相关的欺诈、碎片化和高成本问题。"
       },
       "q3": {
         "question": "Mezzofy 是谁创立的，何时创立的？",
-        "answer": "Mezzofy 由 Dicky 于 2015 年在香港创立。Dicky 是一位专注于电子优惠券、NFC 技术和优惠券交易协议的金融科技企业家，创立 Mezzofy 旨在解决全球电子优惠券行业的碎片化和安全挑战。"
+        "answer": "Mezzofy 由 Dicky 于 2015 年在香港创立。Dicky 是一位专注于电子电子券、NFC 技术和电子券交易协议的金融科技企业家，创立 Mezzofy 旨在解决全球电子电子券行业的碎片化和安全挑战。"
       },
       "q4": {
         "question": "Mezzofy 服务哪些行业和市场？",
-        "answer": "Mezzofy 服务零售、美容、酒店、金融和娱乐等行业的跨国品牌。该平台连接全球市场的商家和分销商，支持从奢侈品零售商到快餐连锁店和金融机构的大规模优惠券活动。"
+        "answer": "Mezzofy 服务零售、美容、酒店、金融和娱乐等行业的跨国品牌。该平台连接全球市场的商家和分销商，支持从奢侈品零售商到快餐连锁店和金融机构的大规模电子券活动。"
       },
       "q5": {
         "question": "Mezzofy 获得了哪些奖项？",
-        "answer": "Mezzofy 因创新和可持续发展获得认可，包括香港环境卓越奖和 ESG Forum 2024 双料大奖。这些荣誉反映了 Mezzofy 通过电子优惠券基础设施减少纸张浪费以及推进环境、社会和治理（ESG）标准的承诺。"
+        "answer": "Mezzofy 因创新和可持续发展获得认可，包括香港环境卓越奖和 ESG Forum 2024 双料大奖。这些荣誉反映了 Mezzofy 通过电子电子券基础设施减少纸张浪费以及推进环境、社会和治理（ESG）标准的承诺。"
       },
       "q6": {
-        "question": "Mezzofy 与传统优惠券软件有何不同？",
-        "answer": "与专注于功能的传统优惠券 SaaS 工具不同，Mezzofy 是一个为网络效应而建立的交易协议。每张优惠券都通过 Mezzofy 优惠券标准代币化为独特的防欺诈电子资产——为下一代自主 AI 商业提供 AI 原生、可机器读取的基础设施作为标准接口。"
+        "question": "Mezzofy 与传统电子券软件有何不同？",
+        "answer": "与专注于功能的传统电子券 SaaS 工具不同，Mezzofy 是一个为网络效应而建立的交易协议。每张电子券都通过 Mezzofy 电子券标准代币化为独特的防欺诈电子资产——为下一代自主 AI 商业提供 AI 原生、可机器读取的基础设施作为标准接口。"
       },
       "q7": {
         "question": "Mezzofy 如何支持环境可持续发展？",
-        "answer": "Mezzofy 通过以电子代币化替代方案取代纸质优惠券来推进可持续发展——减少零售和酒店供应链中的实物废弃物。这一承诺为 Mezzofy 赢得了香港环境卓越奖和 ESG Forum 2024 认可，展示了可衡量的环境影响与商业绩效并重。"
+        "answer": "Mezzofy 通过以电子代币化替代方案取代纸质电子券来推进可持续发展——减少零售和酒店供应链中的实物废弃物。这一承诺为 Mezzofy 赢得了香港环境卓越奖和 ESG Forum 2024 认可，展示了可衡量的环境影响与商业绩效并重。"
       }
     },
     "brands": {
@@ -451,24 +451,24 @@
     "readMore": "阅读更多 →",
     "articles": {
       "nfcParknshop": {
-        "title": "Mezzofy 助品牌设置优惠券到240 间百佳 NFC 标签",
+        "title": "Mezzofy 助品牌设置电子券到240 间百佳 NFC 标签",
         "description": "通过 NFC 技术简化与百佳合作的快消品牌促销流程，消除协调复杂性。"
       },
       "treasureGlobal": {
         "title": "Mezzofy 与 Treasure Global 建立合作伙伴关系",
-        "description": "与 Treasure Global Inc. 策略合作，加速马来西亚数字优惠券扩展，预计年度经常性收入达 200-400 万美元。"
+        "description": "与 Treasure Global Inc. 策略合作，加速马来西亚数字电子券扩展，预计年度经常性收入达 200-400 万美元。"
       },
       "eCouponsPreference": {
-        "title": "60% 的消费者偏好电子优惠券",
-        "description": "60% 的消费者偏好电子优惠券，显示购物行为的重大转变。配备 NFC 和 AI 的数字优惠券正在改变零售业。"
+        "title": "60% 的消费者偏好电子电子券",
+        "description": "60% 的消费者偏好电子电子券，显示购物行为的重大转变。配备 NFC 和 AI 的数字电子券正在改变零售业。"
       },
       "environmentalExcellence": {
         "title": "香港环保卓越奖",
-        "description": "使用数字优惠券降低成本并保护树木。每年超过 1,360 亿张纸质优惠券摧毁 500 万棵树。数字化可减少 70% 的开支。"
+        "description": "使用数字电子券降低成本并保护树木。每年超过 1,360 亿张纸质电子券摧毁 500 万棵树。数字化可减少 70% 的开支。"
       },
       "techappleInnovation": {
         "title": "Mezzofy 荣获 2024 年企业创新指数三星中小企业",
-        "description": "TechApple 报道 Mezzofy 在 2024 年企业创新指数中荣获三星中小企业，表彰其在数字优惠券领域的贡献。"
+        "description": "TechApple 报道 Mezzofy 在 2024 年企业创新指数中荣获三星中小企业，表彰其在数字电子券领域的贡献。"
       },
       "dualEsgAwards": {
         "title": "在 2024 ESG 论坛获得双奖",
@@ -479,28 +479,28 @@
         "description": "Mezzofy 由 Isola Capital 领投完成 200 万美元 A 轮前融资，以支持全球扩展和 web3 产品开发。"
       },
       "holidayGuide": {
-        "title": "假期优惠券指南",
-        "description": "使用快速优惠券解决方案掌握假期销售高峰。2022 年假期零售销售额达 9,430-9,600 亿美元。"
+        "title": "假期电子券指南",
+        "description": "使用快速电子券解决方案掌握假期销售高峰。2022 年假期零售销售额达 9,430-9,600 亿美元。"
       },
       "smartRetail": {
         "title": "技术主导的智能零售",
         "description": "NFC 技术改变零售动态。研究显示 73% 的受访者会进行冲动购买，平均每月冲动消费超过 314 美元。"
       },
       "cioworldFeature": {
-        "title": "为更绿色的未来转变优惠券",
-        "description": "TheCIOWorld 报道 Mezzofy 的创新 NFC 轻触即得优惠券和整合钱包功能，实现可持续的数字营销。"
+        "title": "为更绿色的未来转变电子券",
+        "description": "TheCIOWorld 报道 Mezzofy 的创新 NFC 轻触即得电子券和整合钱包功能，实现可持续的数字营销。"
       },
       "ejtech300m": {
-        "title": "亚太地区 3 亿张数字优惠券",
-        "description": "EJTech 报道 Mezzofy 的云平台在亚太地区分发超过 3 亿张数字优惠券，改变客户参与方式。"
+        "title": "亚太地区 3 亿张数字电子券",
+        "description": "EJTech 报道 Mezzofy 的云平台在亚太地区分发超过 3 亿张数字电子券，改变客户参与方式。"
       },
       "edigestLeading": {
-        "title": "亚太地区领先的数字优惠券解决方案",
-        "description": "eDigest 独家报道 Mezzofy 作为亚太地区领先的数字优惠券平台，改变优惠券管理。"
+        "title": "亚太地区领先的数字电子券解决方案",
+        "description": "eDigest 独家报道 Mezzofy 作为亚太地区领先的数字电子券平台，改变电子券管理。"
       },
       "forbesDickyYin": {
         "title": "Forbes 表彰 Dicky Yin 的领导力",
-        "description": "Forbes 中国版报道 Mezzofy 执行长 Dicky Yin 在创新领域的杰出领导力，改变数字优惠券产业。"
+        "description": "Forbes 中国版报道 Mezzofy 执行长 Dicky Yin 在创新领域的杰出领导力，改变数字电子券产业。"
       },
       "hotelTechInnovation": {
         "title": "为什么技术创新是酒店成功的关键",
@@ -516,7 +516,7 @@
     "intro": {
       "label": "投资者",
       "title": "与我们一起革新数字商务",
-      "description": "在 Mezzofy，我们正在重新定义企业如何通过创新的数字优惠券解决方案与客户互动。随着我们持续扩展和创新，我们诚邀志同道合的投资者和合作伙伴探索与我们合作的机会。让我们一起革新企业与客户连接的方式，开启新的增长可能性。",
+      "description": "在 Mezzofy，我们正在重新定义企业如何通过创新的数字电子券解决方案与客户互动。随着我们持续扩展和创新，我们诚邀志同道合的投资者和合作伙伴探索与我们合作的机会。让我们一起革新企业与客户连接的方式，开启新的增长可能性。",
       "cta": "联系我们"
     },
     "cases": {
@@ -524,24 +524,24 @@
       "description": "探索 Mezzofy 如何推动数字商务创新，并与全球领先品牌建立合作伙伴关系。",
       "card1": {
         "tag": "博客",
-        "title": "Mezzofy 助品牌设置优惠券到240间百佳 NFC 标签，全程代办、无需协调",
+        "title": "Mezzofy 助品牌设置电子券到240间百佳 NFC 标签，全程代办、无需协调",
         "description": "通过 NFC 技术简化 FMCG 品牌与百佳超市合作的推广流程，消除协调复杂性。",
         "link": "阅读更多 →"
       },
       "card2": {
         "tag": "新闻",
-        "title": "Mezzofy 与 Treasure Global 合作加速马来西亚电子优惠券扩张",
-        "description": "与 Treasure Global Inc. 达成战略合作，加速马来西亚电子优惠券扩张，预计每年带来 200-400 万美元的持续收入。",
+        "title": "Mezzofy 与 Treasure Global 合作加速马来西亚电子电子券扩张",
+        "description": "与 Treasure Global Inc. 达成战略合作，加速马来西亚电子电子券扩张，预计每年带来 200-400 万美元的持续收入。",
         "link": "阅读更多 →"
       }
     },
     "marketOpportunity": {
       "title": "市场机会",
-      "subtitle": "数字优惠券和忠诚度市场规模庞大且快速增长，存在显著的效率提升空间。",
+      "subtitle": "数字电子券和忠诚度市场规模庞大且快速增长，存在显著的效率提升空间。",
       "source": "资料来源：2024年产业报告",
       "card1": {
         "title": "全球市场规模",
-        "description": "2024年数字优惠券兑换市场价值，由移动优先的消费者行为和零售数字转型所驱动。"
+        "description": "2024年数字电子券兑换市场价值，由移动优先的消费者行为和零售数字转型所驱动。"
       },
       "card2": {
         "title": "市场增长率",
@@ -549,22 +549,22 @@
       },
       "card3": {
         "title": "总潜在市场",
-        "description": "全球忠诚度和奖励计划市场，代表数字优惠券基础设施和交换协议的完整机会。"
+        "description": "全球忠诚度和奖励计划市场，代表数字电子券基础设施和交换协议的完整机会。"
       },
       "card4": {
         "title": "年度欺诈损失",
-        "description": "优惠券欺诈、伪造兑换和促销滥用造成的全球损失——我们基于区块链的安全协议所解决的关键问题。"
+        "description": "电子券欺诈、伪造兑换和促销滥用造成的全球损失——我们基于区块链的安全协议所解决的关键问题。"
       }
     },
     "whyInvest": {
       "title": "为什么投资 Mezzofy？",
       "highlight1": {
         "title": "市场领导地位",
-        "description": "作为数字优惠券基础设施领域的先驱，我们已经建立了最全面的平台，连接全球商家、分销商和消费者。"
+        "description": "作为数字电子券基础设施领域的先驱，我们已经建立了最全面的平台，连接全球商家、分销商和消费者。"
       },
       "highlight2": {
         "title": "经过验证的技术",
-        "description": "我们安全、可扩展的平台已处理价值数十亿的数百万张优惠券，拥有业界领先的防欺诈和实时验证功能。"
+        "description": "我们安全、可扩展的平台已处理价值数十亿的数百万张电子券，拥有业界领先的防欺诈和实时验证功能。"
       },
       "highlight3": {
         "title": "蓝筹合作伙伴",
@@ -582,9 +582,9 @@
       "link": "查看生态系统"
     },
     "hero": {
-      "title": "终极<span class=\"text-primary-orange\">优惠券指南</span>",
-      "subtitle": "适用于各个成长阶段的智能优惠券策略",
-      "description": "<span class=\"text-primary-orange font-semibold\">策略框架</span>将优惠券策略与客户生命周期阶段对齐。提供<span class=\"text-primary-orange font-semibold\">吸引、激发和保留</span>阶段最佳实践的教育资源，使用 Mezzofy 交易协议。",
+      "title": "终极<span class=\"text-primary-orange\">电子券指南</span>",
+      "subtitle": "适用于各个成长阶段的智能电子券策略",
+      "description": "<span class=\"text-primary-orange font-semibold\">策略框架</span>将电子券策略与客户生命周期阶段对齐。提供<span class=\"text-primary-orange font-semibold\">吸引、激发和保留</span>阶段最佳实践的教育资源，使用 Mezzofy 交易协议。",
       "requestDemo": "申请演示",
       "exploreStrategies": "探索策略"
     },
@@ -597,62 +597,62 @@
       },
       "brandedCatalog": {
         "title": "品牌目录",
-        "description": "通过精选的优惠券目录展示您的产品，突出您的品牌形象和价值主张。"
+        "description": "通过精选的电子券目录展示您的产品，突出您的品牌形象和价值主张。"
       },
       "socialSharing": {
-        "title": "社交分享优惠券",
-        "description": "通过激励客户在社交媒体上与他们的网络分享独家优惠券，扩大您的触及范围。"
+        "title": "社交分享电子券",
+        "description": "通过激励客户在社交媒体上与他们的网络分享独家电子券，扩大您的触及范围。"
       },
       "messenger": {
-        "title": "通讯软件优惠券",
-        "description": "通过消息平台直接与客户互动，提供个性化的优惠券，感觉既独特又即时。"
+        "title": "通讯软件电子券",
+        "description": "通过消息平台直接与客户互动，提供个性化的电子券，感觉既独特又即时。"
       }
     },
     "stage2": {
       "title": "激发兴趣并推动行动",
       "subtitle": "鼓励发现、建立信任并吸引客户",
       "survey": {
-        "title": "调查优惠券",
-        "description": "收集有价值的客户洞察，同时用优惠券奖励参与，创造双赢的互动机会。"
+        "title": "调查电子券",
+        "description": "收集有价值的客户洞察，同时用电子券奖励参与，创造双赢的互动机会。"
       },
       "freeTrial": {
-        "title": "免费试用优惠券",
+        "title": "免费试用电子券",
         "description": "通过提供无风险试用来降低进入门槛，让客户亲身体验您的产品或服务。"
       },
       "wallet": {
-        "title": "优惠券钱包",
-        "description": "通过允许客户在集中式钱包中保存多张优惠券以供将来使用，建立期待并鼓励重复访问。"
+        "title": "电子券钱包",
+        "description": "通过允许客户在集中式钱包中保存多张电子券以供将来使用，建立期待并鼓励重复访问。"
       },
       "chained": {
-        "title": "连锁优惠券",
-        "description": "创建渐进式旅程，每次优惠券兑换都会解锁下一个，引导客户浏览您的产品线。"
+        "title": "连锁电子券",
+        "description": "创建渐进式旅程，每次电子券兑换都会解锁下一个，引导客户浏览您的产品线。"
       }
     },
     "stage3": {
       "title": "让客户持续回访",
       "subtitle": "建立长期关系，将客户转变为忠实拥护者",
       "luckyDraw": {
-        "title": "幸运抽奖优惠券",
+        "title": "幸运抽奖电子券",
         "description": "通过随机奖励抽奖增加兴奋感和游戏化，保持客户的参与度和热情。"
       },
       "bundle": {
-        "title": "组合折扣优惠券",
+        "title": "组合折扣电子券",
         "description": "通过为相互补充的产品组合提供有吸引力的折扣，增加平均订单价值。"
       },
       "occasion": {
-        "title": "场合优惠券",
+        "title": "场合电子券",
         "description": "通过庆祝生日、周年纪念和特殊时刻提供个性化优惠，加强情感联系。"
       },
       "valueBoost": {
-        "title": "价值提升优惠券",
-        "description": "通过基于购买金额或频率增加价值的分级优惠券来奖励忠诚度并鼓励更高消费。"
+        "title": "价值提升电子券",
+        "description": "通过基于购买金额或频率增加价值的分级电子券来奖励忠诚度并鼓励更高消费。"
       }
     },
     "whyMezzofy": {
       "title": "为什么企业选择 Mezzofy",
       "efficient": {
         "title": "高效",
-        "description": "无缝且灵活的优惠券创建和管理 - 几分钟内完成，而非数小时"
+        "description": "无缝且灵活的电子券创建和管理 - 几分钟内完成，而非数小时"
       },
       "firstParty": {
         "title": "第一方数据",
@@ -665,17 +665,17 @@
     },
     "ecosystem": {
       "title": "与 Mezzofy 生态系统无缝配合",
-      "description": "优惠券指南与其他 Mezzofy 产品整合，创建完整的解决方案",
+      "description": "电子券指南与其他 Mezzofy 产品整合，创建完整的解决方案",
       "product1": "使用我们的基础设施实施指南策略",
       "product2": "执行指南中的店内激活策略",
-      "product3": "通过优惠券销售将指南策略变现",
+      "product3": "通过电子券销售将指南策略变现",
       "recommended": "💡 推荐：所有套装均包含",
       "recommendedDesc": "指南作为战略指导包含在内，用于最大化任何 Mezzofy 产品组合",
       "contactSales": "联系销售获取套装价格"
     },
     "footerCta": {
-      "title": "通过正确的优惠券策略吸引、转化和保留客户",
-      "description": "准备好使用智能优惠券策略转变您的客户获取和保留了吗？",
+      "title": "通过正确的电子券策略吸引、转化和保留客户",
+      "description": "准备好使用智能电子券策略转变您的客户获取和保留了吗？",
       "contactUs": "联系我们开始",
       "scheduleDemo": "预约演示"
     }
@@ -683,14 +683,14 @@
   "merchants": {
     "hero": {
       "tagline": "商家专区",
-      "title": "将优惠券负债转化为<span class=\"text-primary-orange\">高效能数字资产</span>",
+      "title": "将电子券负债转化为<span class=\"text-primary-orange\">高效能数字资产</span>",
       "subtitle": "加入使用 Mezzofy 交换协议的商家行列，最大化触及率、控制力和收益",
       "listInventory": "列出您的库存",
       "viewBundles": "查看产品组合"
     },
     "journey": {
-      "title": "您的优惠券成功之旅",
-      "description": "商家如何在优惠券生命周期中善用 Mezzofy 交换协议",
+      "title": "您的电子券成功之旅",
+      "description": "商家如何在电子券生命周期中善用 Mezzofy 交换协议",
       "step1": {
         "title": "创建",
         "description": "使用<a href=\"coupon-management.html\" class=\"text-primary-orange hover:underline\">管理系统</a>建立活动，掌控第一方数据"
@@ -718,14 +718,14 @@
       "midMarket": {
         "title": "中型商家",
         "size": "10-100 个据点",
-        "description": "将优惠券作为收入来源的商家",
+        "description": "将电子券作为收入来源的商家",
         "bundle": "→ 收益最大化组合",
         "contactSales": "联系销售 →"
       },
       "small": {
         "title": "小型商家与初创企业",
         "size": "1-10 个据点",
-        "description": "开始使用数字优惠券，轻松简单",
+        "description": "开始使用数字电子券，轻松简单",
         "bundle": "→ 入门套装",
         "contactSales": "联系销售 →"
       }
@@ -735,21 +735,21 @@
       "description": "探索我们为商家量身打造的完整产品套件",
       "management": {
         "title": "管理系统",
-        "description": "优惠券生命周期管理的企业级基础设施",
-        "learnMore": "探索优惠券管理系统"
+        "description": "电子券生命周期管理的企业级基础设施",
+        "learnMore": "探索电子券管理系统"
       },
       "nfc": {
-        "title": "优惠券 NFC",
+        "title": "电子券 NFC",
         "description": "实体零售接触点，支持轻触下载",
         "learnMore": "探索 NFC 即触即兑"
       },
       "marketing": {
-        "title": "优惠券营销",
+        "title": "电子券营销",
         "description": "将营销费用转化为收入来源",
-        "learnMore": "探索优惠券营销工具"
+        "learnMore": "探索电子券营销工具"
       },
       "wallet": {
-        "title": "优惠券钱包",
+        "title": "电子券钱包",
         "description": "多平台客户体验层",
         "learnMore": "查看数字钱包功能"
       }
@@ -758,7 +758,7 @@
       "title": "商家选择 Mezzofy 的理由",
       "zeroUpfront": {
         "title": "零前期成本",
-        "description": "仅在优惠券兑换时付费。无设置费或每月最低消费。"
+        "description": "仅在电子券兑换时付费。无设置费或每月最低消费。"
       },
       "flexibleControl": {
         "title": "灵活控制",
@@ -774,17 +774,17 @@
       }
     },
     "footerCta": {
-      "title": "准备好转变您的优惠券策略了吗？",
-      "description": "加入信任 Mezzofy 为其数字优惠券基础设施提供动力的领先商家",
-      "getStarted": "列出您的第一张优惠券",
+      "title": "准备好转变您的电子券策略了吗？",
+      "description": "加入信任 Mezzofy 为其数字电子券基础设施提供动力的领先商家",
+      "getStarted": "列出您的第一张电子券",
       "talkToSales": "查看所有产品"
     }
   },
   "distributors": {
     "hero": {
       "tagline": "经销商专区",
-      "title": "访问全球最<span class=\"text-primary-orange\">安全、高意图</span>的优惠券库存",
-      "subtitle": "使用 Mezzofy 交换协议的优惠券，增强您的会员计划、银行应用程序或企业门户",
+      "title": "访问全球最<span class=\"text-primary-orange\">安全、高意图</span>的电子券库存",
+      "subtitle": "使用 Mezzofy 交换协议的电子券，增强您的会员计划、银行应用程序或企业门户",
       "accessDeals": "访问优惠",
       "viewApiDoc": "查看 API 文档",
       "buyer": {
@@ -795,8 +795,8 @@
       }
     },
     "journey": {
-      "title": "您的优质优惠券经销之路",
-      "description": "三个简单步骤，将经过验证的高价值优惠券库存整合到您的平台",
+      "title": "您的优质电子券经销之路",
+      "description": "三个简单步骤，将经过验证的高价值电子券库存整合到您的平台",
       "step1": {
         "title": "来源",
         "description": "浏览<a href=\"coupon-marketplace.html\" class=\"text-primary-orange hover:underline\">市场</a>库存，获取来自经过验证商家的精选优惠"
@@ -812,7 +812,7 @@
     },
     "types": {
       "title": "为您的分销模式量身打造",
-      "description": "无论您是会员计划、企业福利平台或渠道合作伙伴，Mezzofy 都能为您的优惠券分销策略提供动力",
+      "description": "无论您是会员计划、企业福利平台或渠道合作伙伴，Mezzofy 都能为您的电子券分销策略提供动力",
       "loyalty": {
         "title": "会员计划",
         "subtitle": "银行、电信、航空和零售",
@@ -839,9 +839,9 @@
       "title": "为您的分销提供动力的产品",
       "description": "专为经销商和渠道合作伙伴设计的核心 Mezzofy 产品",
       "marketplace": {
-        "title": "优惠券市场",
-        "description": "来自全球商家的经过验证、高品质优惠券库存",
-        "link": "浏览优惠券交易市场 →"
+        "title": "电子券市场",
+        "description": "来自全球商家的经过验证、高品质电子券库存",
+        "link": "浏览电子券交易市场 →"
       },
       "bridgeApi": {
         "title": "桥接 API",
@@ -849,14 +849,14 @@
         "link": "查看文档 →"
       },
       "wallet": {
-        "title": "优惠券钱包 <span class=\"text-xs font-normal text-medium-grey\">(白标)</span>",
-        "description": "品牌化优惠券收集体验，兑换率提升 40% 以上",
+        "title": "电子券钱包 <span class=\"text-xs font-normal text-medium-grey\">(白标)</span>",
+        "description": "品牌化电子券收集体验，兑换率提升 40% 以上",
         "link": "探索白牌数字钱包 →"
       }
     },
     "benefits": {
       "title": "为什么经销商选择 Mezzofy",
-      "description": "使 Mezzofy 交换协议成为优惠券分销值得信赖选择的优势",
+      "description": "使 Mezzofy 交换协议成为电子券分销值得信赖选择的优势",
       "riskFree": {
         "title": "零风险整合",
         "description": "无需预付库存投资。访问市场优惠而无需购买或持有库存。仅在用户兑换时付款。",
@@ -873,9 +873,9 @@
       },
       "standardized": {
         "title": "标准化品质",
-        "description": "市场上的每张优惠券都符合严格的品质标准。经过验证的商家、明确的条款和防欺诈代币化确保可靠性。",
+        "description": "市场上的每张电子券都符合严格的品质标准。经过验证的商家、明确的条款和防欺诈代币化确保可靠性。",
         "point1": "商家验证和审查",
-        "point2": "机器可读的优惠券标准",
+        "point2": "机器可读的电子券标准",
         "point3": "自动化欺诈检测"
       },
       "targeted": {
@@ -885,10 +885,10 @@
         "point2": "类别和垂直筛选",
         "point3": "价值层级细分"
       },
-      "subtitle": "建立在Mezzofy交易所协议上——安全、防欺诈优惠券基础设施的全球标准",
+      "subtitle": "建立在Mezzofy交易所协议上——安全、防欺诈电子券基础设施的全球标准",
       "fraud": {
         "title": "防欺诈库存",
-        "desc": "每张优惠券都经过HMAC签名和协议验证。为您的分发网络提供零假冒风险。"
+        "desc": "每张电子券都经过HMAC签名和协议验证。为您的分发网络提供零假冒风险。"
       },
       "api": {
         "title": "免费API访问",
@@ -896,15 +896,15 @@
       },
       "global": {
         "title": "全球标准",
-        "desc": "符合ISO标准的优惠券格式。以标准化库存跨境运营，在全球任何地方均可使用。"
+        "desc": "符合ISO标准的电子券格式。以标准化库存跨境运营，在全球任何地方均可使用。"
       },
       "custody": {
-        "title": "Mezzofy优惠券托管",
+        "title": "Mezzofy电子券托管",
         "desc": "Mezzofy作为所有库存的可信托管机构。商户和买家均受到协议层面的托管保护。"
       }
     },
     "footerCta": {
-      "title": "准备好访问优质优惠券库存了吗？",
+      "title": "准备好访问优质电子券库存了吗？",
       "description": "加入领先的会员计划、企业福利平台和渠道合作伙伴，通过 Mezzofy 交换协议分销经过验证的优惠",
       "button": "访问市场库存"
     },
@@ -935,7 +935,7 @@
     "buyer": {
       "badge": "库存买家",
       "title": "采购、分发与盈利",
-      "subtitle": "访问来自数百家商户的经核实优惠券库存，通过您的平台分发并从每次成功兑换中获得收益。",
+      "subtitle": "访问来自数百家商户的经核实电子券库存，通过您的平台分发并从每次成功兑换中获得收益。",
       "whoFor": "适合对象",
       "howWorks": "运作方式",
       "who": {
@@ -949,7 +949,7 @@
         },
         "telcos": {
           "title": "电信公司及数字钱包",
-          "desc": "以品牌优惠券和独家优惠提升您的手机应用程序价值"
+          "desc": "以品牌电子券和独家优惠提升您的手机应用程序价值"
         }
       },
       "step1": {
@@ -960,18 +960,18 @@
       "step2": {
         "label": "采购",
         "title": "浏览及获取库存",
-        "desc": "向经核实的商户直接购买或寄售优惠券库存，涵盖多个类别"
+        "desc": "向经核实的商户直接购买或寄售电子券库存，涵盖多个类别"
       },
       "step3": {
         "label": "分发",
         "title": "向您的受众部署",
-        "desc": "通过您的忠诚度应用程序、人力资源门户或Mezzofy白标钱包推送优惠券，并从每次兑换中获益"
+        "desc": "通过您的忠诚度应用程序、人力资源门户或Mezzofy白标钱包推送电子券，并从每次兑换中获益"
       },
       "acquisition": {
         "title": "获取选项",
         "upfront": {
           "title": "预付购买",
-          "desc": "直接获取优惠券库存。完整所有权，最大控制，无限利润潜力。",
+          "desc": "直接获取电子券库存。完整所有权，最大控制，无限利润潜力。",
           "point1": "完整库存所有权",
           "point2": "设定您自己的零售价格和利润",
           "point3": "适合高交易量忠诚度计划"
@@ -986,21 +986,21 @@
       },
       "pricing": {
         "title": "定价结构",
-        "col1": "优惠券类型",
+        "col1": "电子券类型",
         "col2": "费用触发",
         "col3": "费用公式",
         "col4": "示例",
         "row1": {
-          "type": "数字优惠券",
+          "type": "数字电子券",
           "trigger": "成功兑换时",
           "formula": "面值的X%",
-          "example": "$10优惠券 → $X费用"
+          "example": "$10电子券 → $X费用"
         },
         "row2": {
-          "type": "NFC优惠券",
+          "type": "NFC电子券",
           "trigger": "成功兑换时",
           "formula": "面值的X%",
-          "example": "$10 NFC优惠券 → $X费用"
+          "example": "$10 NFC电子券 → $X费用"
         },
         "row3": {
           "type": "礼品券",
@@ -1020,7 +1020,7 @@
         "title": "可选附加项目",
         "wallet": {
           "title": "白标钱包",
-          "desc": "部署由Mezzofy基础设施驱动的自有品牌优惠券钱包"
+          "desc": "部署由Mezzofy基础设施驱动的自有品牌电子券钱包"
         },
         "analytics": {
           "title": "分析仪表板",
@@ -1035,21 +1035,21 @@
     "partner": {
       "badge": "分发合作伙伴",
       "title": "授权我们的平台并获得收益",
-      "subtitle": "集成我们的Bridge API，通过您自己的平台分发经核实的优惠券。无库存风险，经常性收益模式。",
+      "subtitle": "集成我们的Bridge API，通过您自己的平台分发经核实的电子券。无库存风险，经常性收益模式。",
       "whoFor": "适合对象",
       "howWorks": "运作方式",
       "who": {
         "hr": {
           "title": "人力资源及福利平台",
-          "desc": "为您的员工福利生态系统添加优惠券分发功能，产生新的经常性收益"
+          "desc": "为您的员工福利生态系统添加电子券分发功能，产生新的经常性收益"
         },
         "nfc": {
           "title": "NFC及POS合作伙伴",
-          "desc": "将安全的NFC优惠券发行和兑换集成到您的终端或支付基础设施中"
+          "desc": "将安全的NFC电子券发行和兑换集成到您的终端或支付基础设施中"
         },
         "local": {
           "title": "本地商业网络",
-          "desc": "以Mezzofy驱动的品牌优惠券市场汇聚本地商户和消费者"
+          "desc": "以Mezzofy驱动的品牌电子券市场汇聚本地商户和消费者"
         }
       },
       "step1": {
@@ -1060,12 +1060,12 @@
       "step2": {
         "label": "集成",
         "title": "通过API连接",
-        "desc": "使用我们的RESTful Bridge API将优惠券发行、分发和兑换集成到您现有的平台中"
+        "desc": "使用我们的RESTful Bridge API将电子券发行、分发和兑换集成到您现有的平台中"
       },
       "step3": {
         "label": "盈利",
         "title": "获得收益分成",
-        "desc": "获得通过您的分发网络处理的每笔优惠券交易的X%收益分成，每月支付"
+        "desc": "获得通过您的分发网络处理的每笔电子券交易的X%收益分成，每月支付"
       },
       "pricing": {
         "title": "合作伙伴费用结构",
@@ -1093,12 +1093,12 @@
         "title": "作为合作伙伴您能做什么"
       },
       "cap1": {
-        "title": "通过API发行优惠券",
-        "desc": "以程序方式大规模创建和分发优惠券至您的网络"
+        "title": "通过API发行电子券",
+        "desc": "以程序方式大规模创建和分发电子券至您的网络"
       },
       "cap2": {
         "title": "安全验证和兑换",
-        "desc": "HMAC签名的NFC优惠券在每个兑换点防止欺诈"
+        "desc": "HMAC签名的NFC电子券在每个兑换点防止欺诈"
       },
       "cap3": {
         "title": "白标您的品牌",
@@ -1131,21 +1131,21 @@
       "link": "查看生态系统"
     },
     "hero": {
-      "label": "优惠券管理",
-      "title": "您的优惠券<span class=\"text-primary-orange\">基础架构</span>",
-      "description": "企业级优惠券生命周期管理基础架构。Mezzofy 交换协议的基础层，具备<span class=\"text-primary-orange font-semibold\">第一方数据控制</span>和<span class=\"text-primary-orange font-semibold\">实时修改</span>能力。",
+      "label": "电子券管理",
+      "title": "您的电子券<span class=\"text-primary-orange\">基础架构</span>",
+      "description": "企业级电子券生命周期管理基础架构。Mezzofy 交换协议的基础层，具备<span class=\"text-primary-orange font-semibold\">第一方数据控制</span>和<span class=\"text-primary-orange font-semibold\">实时修改</span>能力。",
       "startTrial": "开始免费试用",
       "exploreFeatures": "探索功能",
-      "imageAlt": "优惠券管理平台"
+      "imageAlt": "电子券管理平台"
     },
     "howItWorks": {
       "title": "运作方式",
       "step1": {
         "title": "设置活动",
-        "description": "建立符合您特定业务目标和客户目标的优惠券营销计划"
+        "description": "建立符合您特定业务目标和客户目标的电子券营销计划"
       },
       "step2": {
-        "title": "创建优惠券",
+        "title": "创建电子券",
         "description": "选择格式并按人口统计和位置细分受众，以进行有针对性的分发"
       },
       "step3": {
@@ -1157,9 +1157,9 @@
       "title": "强大功能",
       "flexible": {
         "title": "灵活且动态的产品",
-        "item1": "多种优惠券类型和格式可供选择",
+        "item1": "多种电子券类型和格式可供选择",
         "item2": "个性化和位置定向功能",
-        "item3": "品牌优惠券目录",
+        "item3": "品牌电子券目录",
         "item4": "可分享和可转让选项",
         "item5": "客户友善（无需应用程序）",
         "item6": "移动设备或 Mezzofy 钱包整合"
@@ -1182,7 +1182,7 @@
     "testimonials": {
       "title": "业界领导者信赖",
       "maxims": {
-        "quote": "自 2016 年以来与 Mezzofy 的合作伙伴关系简化了我们的优惠券操作并增强了客户参与度。",
+        "quote": "自 2016 年以来与 Mezzofy 的合作伙伴关系简化了我们的电子券操作并增强了客户参与度。",
         "company": "美心集团",
         "since": "自 2016 年"
       },
@@ -1213,18 +1213,18 @@
     },
     "ecosystem": {
       "title": "与 Mezzofy 生态系统无缝整合",
-      "description": "优惠券管理系统与其他 Mezzofy 产品整合，创建完整解决方案",
+      "description": "电子券管理系统与其他 Mezzofy 产品整合，创建完整解决方案",
       "nfc": {
-        "title": "+ 优惠券 NFC",
-        "description": "为您管理的优惠券添加实体零售接触点"
+        "title": "+ 电子券 NFC",
+        "description": "为您管理的电子券添加实体零售接触点"
       },
       "marketplace": {
-        "title": "+ 优惠券市场",
+        "title": "+ 电子券市场",
         "description": "通过 B2B 渠道分发您管理的库存"
       },
       "wallet": {
-        "title": "+ 优惠券钱包",
-        "description": "为客户提供有组织的优惠券存储"
+        "title": "+ 电子券钱包",
+        "description": "为客户提供有组织的电子券存储"
       },
       "bundle": {
         "title": "💡 推荐套装：零售卓越套装",
@@ -1233,8 +1233,8 @@
       }
     },
     "footerCta": {
-      "title": "准备好改变您的优惠券策略了吗？",
-      "description": "加入业界领导者，立即开始创建强大的优惠券活动",
+      "title": "准备好改变您的电子券策略了吗？",
+      "description": "加入业界领导者，立即开始创建强大的电子券活动",
       "getStarted": "立即开始",
       "contactSales": "联系销售人员"
     }
@@ -1243,41 +1243,41 @@
     "hero": {
       "tagline": "开发者专区",
       "headline": "在 <span class=\"text-primary-orange\">Mezzofy 交换协议</span>上构建",
-      "description": "使用我们的开发者优先 API 和 SDK 集成优惠券功能",
+      "description": "使用我们的开发者优先 API 和 SDK 集成电子券功能",
       "viewApiDocs": "查看 API 文档",
       "getApiKey": "获取 API 密钥"
     },
     "useCases": {
       "heading": "您可以构建什么",
-      "description": "使用 Mezzofy 交换协议为您的应用程序或服务添加优惠券超能力",
+      "description": "使用 Mezzofy 交换协议为您的应用程序或服务添加电子券超能力",
       "integrate": {
-        "title": "集成优惠券",
-        "description": "将优惠券发现和兑换嵌入您现有的应用程序或服务"
+        "title": "集成电子券",
+        "description": "将电子券发现和兑换嵌入您现有的应用程序或服务"
       },
       "distribution": {
         "title": "分销平台",
-        "description": "为会员计划或企业福利平台建立优惠券市场"
+        "description": "为会员计划或企业福利平台建立电子券市场"
       },
       "aiAgents": {
         "title": "AI 购物代理",
         "description": "让自主代理为用户发现并应用最优惠的优惠"
       },
       "wallets": {
-        "title": "优惠券钱包",
-        "description": "建立消费者可以存储和管理优惠券的品牌体验"
+        "title": "电子券钱包",
+        "description": "建立消费者可以存储和管理电子券的品牌体验"
       }
     },
     "apiProducts": {
       "heading": "API 产品与 SDK",
       "description": "选择最适合您使用案例的集成层级",
       "management": {
-        "title": "优惠券管理",
-        "description": "建立、管理和追踪优惠券活动",
+        "title": "电子券管理",
+        "description": "建立、管理和追踪电子券活动",
         "link": "了解更多"
       },
       "bridge": {
         "title": "桥接 API",
-        "description": "从市场提取经过验证的优惠券",
+        "description": "从市场提取经过验证的电子券",
         "link": "了解更多"
       },
       "aiAgent": {
@@ -1287,7 +1287,7 @@
       },
       "wallet": {
         "title": "钱包 API",
-        "description": "建立品牌优惠券钱包体验",
+        "description": "建立品牌电子券钱包体验",
         "link": "了解更多"
       }
     },
@@ -1300,7 +1300,7 @@
       },
       "standard": {
         "title": "标准化数据",
-        "description": "机器可读的优惠券格式，适用于 AI 与自动化"
+        "description": "机器可读的电子券格式，适用于 AI 与自动化"
       },
       "oauth": {
         "title": "OAuth 2.0",
@@ -1322,8 +1322,8 @@
     "quickStart": {
       "heading": "快速开始",
       "description": "只需几行代码即可开始使用 Mezzofy API",
-      "exampleTitle": "示例：获取可用优惠券",
-      "note": "这个示例从市场中提取可用的优惠券。请参阅我们的完整 API 文档以了解更多端点与功能。",
+      "exampleTitle": "示例：获取可用电子券",
+      "note": "这个示例从市场中提取可用的电子券。请参阅我们的完整 API 文档以了解更多端点与功能。",
       "cta": "查看完整文档"
     },
     "resources": {
@@ -1364,10 +1364,10 @@
       "company": "公司名称",
       "building": "您正在构建什么？",
       "selectUseCase": "选择您的使用案例",
-      "optionIntegration": "优惠券集成",
+      "optionIntegration": "电子券集成",
       "optionDistribution": "分销平台",
       "optionAiAgent": "AI 购物代理",
-      "optionWallet": "优惠券钱包",
+      "optionWallet": "电子券钱包",
       "optionOther": "其他",
       "projectDescription": "项目描述",
       "submit": "申请 API 访问权限",
@@ -1380,15 +1380,15 @@
       "link": "查看生态系统"
     },
     "hero": {
-      "label": "优惠券市场",
-      "title": "全球数字优惠券交换中心",
-      "description": "唯一支持 B2B、B2C 和 C2C 交易的安全点对点优惠券交换平台。基于代币化技术打造，为数字促销活动建立具防诈保护的二级市场。",
+      "label": "电子券市场",
+      "title": "全球数字电子券交换中心",
+      "description": "唯一支持 B2B、B2C 和 C2C 交易的安全点对点电子券交换平台。基于代币化技术打造，为数字促销活动建立具防诈保护的二级市场。",
       "listInventory": "刊登您的库存",
       "exploreMarketplace": "探索市场",
-      "imageAlt": "优惠券市场平台"
+      "imageAlt": "电子券市场平台"
     },
     "exchange": {
-      "title": "优惠券交换协议",
+      "title": "电子券交换协议",
       "description": "传统数字促销因破碎化、高成本和安全风险而失败。Mezzofy 消除过时模式，以高流动性、高性能的交换协议取而代之。",
       "network": {
         "title": "从工具到网络",
@@ -1396,7 +1396,7 @@
       },
       "security": {
         "title": "无与伦比的安全性",
-        "description": "每个促销活动都被标准化为 Mezzofy 优惠券标准，这是一个专有协议，保证独特、防诈的数字资产。"
+        "description": "每个促销活动都被标准化为 Mezzofy 电子券标准，这是一个专有协议，保证独特、防诈的数字资产。"
       },
       "ai": {
         "title": "AI 原生基础设施",
@@ -1405,23 +1405,23 @@
     },
     "models": {
       "title": "三种市场模式，一个平台",
-      "subtitle": "Mezzofy 支持所有交易类型的优惠券交换，建立完整的数字促销分销生态系统",
+      "subtitle": "Mezzofy 支持所有交易类型的电子券交换，建立完整的数字促销分销生态系统",
       "b2b": {
         "badge": "B2B 市场",
         "title": "企业对企业",
-        "description": "Mezzofy 作为中央交换中心，连接商家与分销商、转售商和渠道合作伙伴。刊登您的优惠券库存，立即获得全球分销网络。",
-        "benefit1": "批发分销：向分销商和转售商批量销售优惠券库存",
+        "description": "Mezzofy 作为中央交换中心，连接商家与分销商、转售商和渠道合作伙伴。刊登您的电子券库存，立即获得全球分销网络。",
+        "benefit1": "批发分销：向分销商和转售商批量销售电子券库存",
         "benefit2": "渠道合作伙伴网络：与营销平台、会员计划和联盟网络连接",
         "benefit3": "交叉促销机会：与互补企业交换库存以实现互惠",
         "benefit4": "透明定价：实时市场定价，自动结算和佣金追踪",
         "cardTitle": "商家 → 分销商",
-        "cardDescription": "将优惠券负债转化为具有全球覆盖范围的高性能数字资产"
+        "cardDescription": "将电子券负债转化为具有全球覆盖范围的高性能数字资产"
       },
       "b2c": {
         "badge": "B2C 市场",
         "title": "企业对消费者",
         "description": "通过安全、个性化的促销活动实现直接客户互动，并产生可衡量的结果。",
-        "benefit1": "直接分销：通过电子邮件、短信、社交媒体和移动应用程序向客户推送优惠券",
+        "benefit1": "直接分销：通过电子邮件、短信、社交媒体和移动应用程序向客户推送电子券",
         "benefit2": "个性化活动：针对特定客户群体提供量身定制的促销优惠",
         "benefit3": "实时分析：追踪兑换率、客户参与度和活动表现",
         "benefit4": "多渠道覆盖：通过市场、电商平台和零售合作伙伴分销",
@@ -1431,24 +1431,24 @@
       "c2c": {
         "badge": "C2C 市场",
         "title": "消费者对消费者",
-        "description": "全球首个安全的点对点优惠券交换市场。通过防诈验证转移、赠送或交易优惠券。",
-        "benefit1": "可转让优惠券：通过安全验证将优惠券赠送或转让给亲友",
-        "benefit2": "二级市场：交易或出售未使用的优惠券以最大化价值并减少浪费",
-        "benefit3": "防诈保护：区块链启发的代币化确保每张优惠券唯一且有效",
-        "benefit4": "提高兑换率：未使用的优惠券找到新主人，为商家带来实际商业价值",
+        "description": "全球首个安全的点对点电子券交换市场。通过防诈验证转移、赠送或交易电子券。",
+        "benefit1": "可转让电子券：通过安全验证将电子券赠送或转让给亲友",
+        "benefit2": "二级市场：交易或出售未使用的电子券以最大化价值并减少浪费",
+        "benefit3": "防诈保护：区块链启发的代币化确保每张电子券唯一且有效",
+        "benefit4": "提高兑换率：未使用的电子券找到新主人，为商家带来实际商业价值",
         "cardTitle": "消费者 ↔ 消费者",
-        "cardDescription": "具有防诈验证的点对点优惠券交换"
+        "cardDescription": "具有防诈验证的点对点电子券交换"
       }
     },
     "howItWorks": {
       "title": "交换机制运作方式",
       "step1": {
         "title": "刊登库存",
-        "description": "商家在 Mezzofy 交换平台上刊登优惠券库存。为您的数字资产设定定价、条款和分销偏好。"
+        "description": "商家在 Mezzofy 交换平台上刊登电子券库存。为您的数字资产设定定价、条款和分销偏好。"
       },
       "step2": {
         "title": "配对与交易",
-        "description": "我们的交换协议将供需配对。分销商、企业或消费者通过安全交易发现并获取优惠券。"
+        "description": "我们的交换协议将供需配对。分销商、企业或消费者通过安全交易发现并获取电子券。"
       },
       "step3": {
         "title": "验证与结算",
@@ -1463,7 +1463,7 @@
       },
       "fraudPrevention": {
         "title": "防诈保护",
-        "description": "具有独特数字签名的代币化优惠券"
+        "description": "具有独特数字签名的代币化电子券"
       },
       "instantSettlement": {
         "title": "即时结算",
@@ -1483,7 +1483,7 @@
       },
       "flexiblePricing": {
         "title": "灵活定价",
-        "description": "仅在优惠券被兑换时付费"
+        "description": "仅在电子券被兑换时付费"
       },
       "support24": {
         "title": "24/7 支持",
@@ -1492,13 +1492,13 @@
     },
     "ecosystem": {
       "title": "与 Mezzofy 生态系统无缝协作",
-      "description": "优惠券市场与其他 Mezzofy 产品集成，打造完整解决方案",
+      "description": "电子券市场与其他 Mezzofy 产品集成，打造完整解决方案",
       "management": {
-        "title": "+ 优惠券管理",
+        "title": "+ 电子券管理",
         "description": "在刊登到市场前建立和管理库存"
       },
       "marketing": {
-        "title": "+ 优惠券营销",
+        "title": "+ 电子券营销",
         "description": "直接向消费者销售市场库存"
       },
       "bridgeApi": {
@@ -1507,12 +1507,12 @@
       },
       "bundle": {
         "title": "想要完整平台？",
-        "description": "结合优惠券市场与管理、营销和 API 访问，发挥最大影响力",
+        "description": "结合电子券市场与管理、营销和 API 访问，发挥最大影响力",
         "cta": "联系销售人员了解套装价格"
       }
     },
     "footerCta": {
-      "title": "准备好转型您的优惠券策略了吗？",
+      "title": "准备好转型您的电子券策略了吗？",
       "description": "加入全球交换网络，为您的数字促销活动解锁新的分销渠道",
       "listInventory": "刊登您的库存",
       "accessDeals": "访问优惠"
@@ -1716,15 +1716,15 @@
       "title": "接入完整的 Mezzofy 交换生态系统",
       "description": "渠道合作伙伴连接到完整的商家到消费者基础设施",
       "marketplace": {
-        "title": "+ 优惠券市场",
+        "title": "+ 电子券市场",
         "description": "访问流经您分销节点的经过验证的商家库存"
       },
       "wallet": {
-        "title": "+ 优惠券钱包",
-        "description": "消费者在移动钱包中收集 NFC 分发的优惠券"
+        "title": "+ 电子券钱包",
+        "description": "消费者在移动钱包中收集 NFC 分发的电子券"
       },
       "management": {
-        "title": "+ 优惠券管理",
+        "title": "+ 电子券管理",
         "description": "商家创建通过合作伙伴网络分发的优惠"
       },
       "bundle": {
@@ -1735,7 +1735,7 @@
     },
     "footerCta": {
       "title": "准备好成为分销合作伙伴了吗？",
-      "description": "加入在亚太地区推动商家到消费者优惠券分销的网络",
+      "description": "加入在亚太地区推动商家到消费者电子券分销的网络",
       "becomePartner": "安排合作伙伴讨论"
     },
     "contact": {
@@ -1763,19 +1763,19 @@
     },
     "hero": {
       "label": "COUPON CAMPAIGN",
-      "title": "销售优惠券比以往更简单",
-      "description": "将优惠券营销费用转化为收入。通过无缝的支付集成和多渠道分销直接向客户销售",
+      "title": "销售电子券比以往更简单",
+      "description": "将电子券营销费用转化为收入。通过无缝的支付集成和多渠道分销直接向客户销售",
       "contactUs": "立即联系我们",
       "learnMore": "了解更多",
-      "imageAlt": "优惠券销售平台"
+      "imageAlt": "电子券销售平台"
     },
     "features": {
-      "title": "您需要的一切在线销售优惠券功能",
-      "subtitle": "从创建到付款的完整平台解决方案，专为希望最大化数字优惠券销售的商家设计",
+      "title": "您需要的一切在线销售电子券功能",
+      "subtitle": "从创建到付款的完整平台解决方案，专为希望最大化数字电子券销售的商家设计",
       "fullService": {
         "title": "全方位服务",
-        "description": "Mezzofy 管理优惠券创建，提供完整的可见性和控制权。专注于您的业务，让我们处理技术复杂性。",
-        "item1": "端到端优惠券管理",
+        "description": "Mezzofy 管理电子券创建，提供完整的可见性和控制权。专注于您的业务，让我们处理技术复杂性。",
+        "item1": "端到端电子券管理",
         "item2": "完整的可见性和控制权"
       },
       "paymentConnected": {
@@ -1791,8 +1791,8 @@
         "item2": "合作伙伴网络分销"
       },
       "onlineSales": {
-        "title": "优惠券在线销售",
-        "description": "通过即时交付和改善的现金流，充分发挥数字优惠券销售的潜力。",
+        "title": "电子券在线销售",
+        "description": "通过即时交付和改善的现金流，充分发挥数字电子券销售的潜力。",
         "item1": "即时交付给客户",
         "item2": "提前获得业务现金流",
         "item3": "提升客户忠诚度"
@@ -1802,8 +1802,8 @@
       "title": "安全。无缝。灵活",
       "subtitle": "我们的平台提供防欺诈功能和灵活的支付集成选项，专为随您的业务规模而扩展而设计",
       "authentic": {
-        "title": "真实优惠券",
-        "description": "通过安全验证技术支持的经过验证的真实数字优惠券，为客户提供零风险。"
+        "title": "真实电子券",
+        "description": "通过安全验证技术支持的经过验证的真实数字电子券，为客户提供零风险。"
       },
       "integrated": {
         "title": "完全集成",
@@ -1820,14 +1820,14 @@
     },
     "process": {
       "title": "我们管理。您赚钱",
-      "subtitle": "三个简单步骤开始在线销售您的数字优惠券",
+      "subtitle": "三个简单步骤开始在线销售您的数字电子券",
       "step1": {
         "title": "设置和创建",
-        "description": "商家填写简单的表格来设置他们的账户并创建优惠券产品。快速入门，复杂性最小。"
+        "description": "商家填写简单的表格来设置他们的账户并创建电子券产品。快速入门，复杂性最小。"
       },
       "step2": {
         "title": "在线销售",
-        "description": "多渠道分销从安全的支付处理开始。您的优惠券在所有选定的渠道上同时上线。"
+        "description": "多渠道分销从安全的支付处理开始。您的电子券在所有选定的渠道上同时上线。"
       },
       "step3": {
         "title": "获得付款和审查",
@@ -1842,8 +1842,8 @@
       "annual": "或每年 $999（节省 17%）",
       "includesTitle": "一项费用包含：",
       "item1": "账户设置 - 完整的入门协助",
-      "item2": "优惠券目录设置 - 专业的优惠券配置",
-      "item3": "优惠券设置 - 最低 $20 售价",
+      "item2": "电子券目录设置 - 专业的电子券配置",
+      "item3": "电子券设置 - 最低 $20 售价",
       "item4": "支付网关集成 - 安全处理",
       "item5": "在线支持 - 专属协助",
       "item6": "低交易费 - 有竞争力的销售费率",
@@ -1851,18 +1851,18 @@
     },
     "ecosystem": {
       "title": "与 Mezzofy 生态系统无缝协作",
-      "subtitle": "优惠券营销与其他 Mezzofy 产品集成，创建完整的解决方案",
+      "subtitle": "电子券营销与其他 Mezzofy 产品集成，创建完整的解决方案",
       "management": {
-        "title": "+ 优惠券管理",
-        "description": "您销售的优惠券的后端基础架构"
+        "title": "+ 电子券管理",
+        "description": "您销售的电子券的后端基础架构"
       },
       "marketplace": {
-        "title": "+ 优惠券市场",
+        "title": "+ 电子券市场",
         "description": "通过 B2B 分销扩展销售渠道"
       },
       "wallet": {
-        "title": "+ 优惠券钱包",
-        "description": "客户存储购买的优惠券以便轻松兑换"
+        "title": "+ 电子券钱包",
+        "description": "客户存储购买的电子券以便轻松兑换"
       },
       "bundle": {
         "title": "💡 推荐套装：收入最大化套装",
@@ -1871,8 +1871,8 @@
       }
     },
     "footerCta": {
-      "title": "准备好开始在线销售优惠券了吗？",
-      "description": "加入信任 Mezzofy 为其数字优惠券销售提供动力的领先商家行列",
+      "title": "准备好开始在线销售电子券了吗？",
+      "description": "加入信任 Mezzofy 为其数字电子券销售提供动力的领先商家行列",
       "contactUs": "立即联系我们",
       "viewDemo": "查看演示"
     }
@@ -1901,7 +1901,7 @@
     },
     "protocols": {
       "title": "三大协议，一个供应层",
-      "subtitle": "Mezzofy 通过标准化电商协议将您的商家优惠券库存开放给全球最大的 AI 平台。在 Mezzofy 交易所一次上架 = 可在三大平台发现。",
+      "subtitle": "Mezzofy 通过标准化电商协议将您的商家电子券库存开放给全球最大的 AI 平台。在 Mezzofy 交易所一次上架 = 可在三大平台发现。",
       "acp": {
         "title": "ChatGPT — 代理商电商协议",
         "badge": "已上线 · 2025 年 9 月",
@@ -1929,11 +1929,11 @@
         "description": "Gemini 的 450 亿商品购物图谱现已涵盖促销活动",
         "benefit1": {
           "title": "450 亿商品购物图谱",
-          "description": "Mezzofy 优惠券与全球最大商品目录一起被索引"
+          "description": "Mezzofy 电子券与全球最大商品目录一起被索引"
         },
         "benefit2": {
           "title": "跨平台分发",
-          "description": "优惠券出现在 Google 搜索、地图、购物和助理中"
+          "description": "电子券出现在 Google 搜索、地图、购物和助理中"
         },
         "benefit3": {
           "title": "主要伙伴支持",
@@ -1950,7 +1950,7 @@
         "description": "Moonshot AI 的 Kimi 主导中文市场",
         "benefit1": {
           "title": "中国市场准入",
-          "description": "全球最大的优惠券消费市场"
+          "description": "全球最大的电子券消费市场"
         },
         "benefit2": {
           "title": "中国移动桥梁",
@@ -1970,7 +1970,7 @@
       "title": "从商家上架到 AI 兑换的四个步骤",
       "step1": {
         "title": "上架",
-        "description": "商家通过自助供应门户在 Mezzofy 交易所上架优惠券库存。零前期费用。"
+        "description": "商家通过自助供应门户在 Mezzofy 交易所上架电子券库存。零前期费用。"
       },
       "step2": {
         "title": "索引",
@@ -1987,13 +1987,13 @@
     },
     "opportunities": {
       "title": "超越发现：AI 驱动的产品套件",
-      "subtitle": "优惠券搜索只是起点。Mezzofy 正在交易所之上构建完整的 AI 电商智能层。",
+      "subtitle": "电子券搜索只是起点。Mezzofy 正在交易所之上构建完整的 AI 电商智能层。",
       "api": {
         "title": "AI 购物代理商 API",
         "description": "Mezzofy 成为 ChatGPT（ACP）和 Gemini（UCP）的注册数据提供商。供应池中的商家可被全球 9 亿以上 AI 用户自动发现。"
       },
       "intelligence": {
-        "title": "预测性优惠券智能",
+        "title": "预测性电子券智能",
         "description": "汇总数千家商家的匿名兑换数据，建立预测模型。"
       },
       "concierge": {
@@ -2002,7 +2002,7 @@
       },
       "pricing": {
         "title": "动态定价与智能配额",
-        "description": "根据兑换速度、商家容量和时段需求自动调整优惠券可用性的 AI 引擎。"
+        "description": "根据兑换速度、商家容量和时段需求自动调整电子券可用性的 AI 引擎。"
       },
       "fraud": {
         "title": "AI 驱动的欺诈检测",
@@ -2017,14 +2017,14 @@
       "title": "市场正在实时移动",
       "stat1": "ChatGPT 每周活跃用户（来源：OpenAI，2025）",
       "stat2": "Google 购物图谱中现已包含促销活动的商品数",
-      "stat3": "2035 年全球数字优惠券市场规模，年复合增长率 18%",
+      "stat3": "2035 年全球数字电子券市场规模，年复合增长率 18%",
       "stat4": "ChatGPT 即时结账交易费——与 Mezzofy 模式相同"
     },
     "stakeholders": {
       "title": "AI 电商对您意味着什么",
       "merchants": {
         "title": "对商家而言",
-        "description": "您的优惠券一旦上架，即可被 9 亿以上 AI 用户发现",
+        "description": "您的电子券一旦上架，即可被 9 亿以上 AI 用户发现",
         "cta": "上架您的库存 →"
       },
       "distributors": {
@@ -2034,14 +2034,14 @@
       },
       "developers": {
         "title": "对开发者而言",
-        "description": "通过 ACP、UCP 或 MCP 端点集成 Mezzofy 的优惠券供应",
+        "description": "通过 ACP、UCP 或 MCP 端点集成 Mezzofy 的电子券供应",
         "cta": "探索 API 文档 →"
       }
     },
     "architecture": {
       "title": "集成架构",
       "diagram": "商家供应池",
-      "description": "通过 ACP、UCP 和 MCP 端点开放 Mezzofy 供应库存。AI 代理商实时查询。优惠券代币在兑换时验证。Mezzofy 对每次成功的 AI 推荐兑换收取交易费。一次供应上架。三个协议端点。全球 AI 分发。"
+      "description": "通过 ACP、UCP 和 MCP 端点开放 Mezzofy 供应库存。AI 代理商实时查询。电子券代币在兑换时验证。Mezzofy 对每次成功的 AI 推荐兑换收取交易费。一次供应上架。三个协议端点。全球 AI 分发。"
     },
     "footerCta": {
       "title": "AI 电商已上线。您的库存也应该上线了。",
@@ -2051,7 +2051,7 @@
     },
     "contact": {
       "title": "开始使用 AI 电商",
-      "subtitle": "告诉我们您的业务，我们将向您展示 AI 代理商如何分发您的优惠券库存",
+      "subtitle": "告诉我们您的业务，我们将向您展示 AI 代理商如何分发您的电子券库存",
       "firstName": "名字",
       "lastName": "姓氏",
       "email": "公司电子邮件",
@@ -2074,22 +2074,22 @@
       "viewEcosystem": "查看生态系统"
     },
     "hero": {
-      "badge": "优惠券钱包",
-      "title": "您的数字优惠券钱包",
-      "subtitle": "多平台优惠券收集体验，提升兑换率 40% 以上。跨设备同步和智能管理，由 Mezzofy 交易所协议驱动，可作白标或 API 集成。",
+      "badge": "电子券钱包",
+      "title": "您的数字电子券钱包",
+      "subtitle": "多平台电子券收集体验，提升兑换率 40% 以上。跨设备同步和智能管理，由 Mezzofy 交易所协议驱动，可作白标或 API 集成。",
       "getStarted": "立即开始",
       "exploreFeatures": "探索功能"
     },
     "platforms": {
       "title": "随处可用",
-      "subtitle": "根据您客户的需求选择最合适的平台。Mezzofy 优惠券钱包可在所有主要平台和设备上访问。",
+      "subtitle": "根据您客户的需求选择最合适的平台。Mezzofy 电子券钱包可在所有主要平台和设备上访问。",
       "ios": {
         "title": "iOS 移动应用",
-        "description": "原生 iPhone 和 iPad 体验，无缝集成 Apple Wallet 并支持 NFC 标签即时下载优惠券"
+        "description": "原生 iPhone 和 iPad 体验，无缝集成 Apple Wallet 并支持 NFC 标签即时下载电子券"
       },
       "android": {
         "title": "Android 移动应用",
-        "description": "优化的 Android 体验，集成 Google Pay 并具备 NFC 功能，支持点触下载优惠券"
+        "description": "优化的 Android 体验，集成 Google Pay 并具备 NFC 功能，支持点触下载电子券"
       },
       "web": {
         "title": "网页应用",
@@ -2104,16 +2104,16 @@
       "title": "强大的钱包功能",
       "organization": {
         "title": "智能管理",
-        "item1": "有效状态 - 查看可兑换优惠券",
+        "item1": "有效状态 - 查看可兑换电子券",
         "item2": "已兑换历史 - 追踪过往兑换记录",
-        "item3": "优惠券历史 - 查看过期、已作废或已转让的优惠券",
+        "item3": "电子券历史 - 查看过期、已作废或已转让的电子券",
         "item4": "智能筛选和搜索功能",
         "item5": "按到期日自动排序"
       },
       "retrieval": {
         "title": "轻松获取",
         "item1": "从 Mezzofy 平台即时同步",
-        "item2": "自动更新优惠券",
+        "item2": "自动更新电子券",
         "item3": "实时状态追踪",
         "item4": "安全云端存储",
         "item5": "跨设备同步"
@@ -2134,12 +2134,12 @@
         "description": "根据客户偏好从 iOS 应用、Android 应用、网页应用或 NFC 实体卡中选择"
       },
       "step2": {
-        "title": "获取优惠券",
-        "description": "通过自动同步即时访问 Mezzofy 平台上所有已存储的优惠券"
+        "title": "获取电子券",
+        "description": "通过自动同步即时访问 Mezzofy 平台上所有已存储的电子券"
       },
       "step3": {
         "title": "管理与兑换",
-        "description": "按状态（有效、已兑换、历史）筛选优惠券，组织并轻触兑换"
+        "description": "按状态（有效、已兑换、历史）筛选电子券，组织并轻触兑换"
       }
     },
     "integrationOptions": {
@@ -2147,7 +2147,7 @@
       "subtitle": "无论您需要完全品牌化的解决方案，还是想将钱包功能集成到现有应用程序中，我们都能满足您的需求",
       "whiteLabelSolution": {
         "title": "白标解决方案",
-        "description": "以完全的设计控制和定制功能推出您自己品牌的优惠券钱包",
+        "description": "以完全的设计控制和定制功能推出您自己品牌的电子券钱包",
         "feature1": "以您的标志和颜色完全品牌化",
         "feature2": "自定义域名和应用商店展示",
         "feature3": "完全设计控制",
@@ -2164,32 +2164,32 @@
     },
     "nfcFeature": {
       "title": "NFC 点触下载",
-      "description": "移动应用用户可以与 Mezzofy NFC 标签互动，轻触即可即时下载优惠券，无需手动输入——只需将手机点触 NFC 标签，优惠券即自动添加到钱包中。"
+      "description": "移动应用用户可以与 Mezzofy NFC 标签互动，轻触即可即时下载电子券，无需手动输入——只需将手机点触 NFC 标签，电子券即自动添加到钱包中。"
     },
     "ecosystem": {
       "title": "与 Mezzofy 生态系统无缝集成",
-      "subtitle": "优惠券钱包与其他 Mezzofy 产品集成，提供完整解决方案",
+      "subtitle": "电子券钱包与其他 Mezzofy 产品集成，提供完整解决方案",
       "nfc": {
-        "title": "+ 优惠券 NFC",
+        "title": "+ 电子券 NFC",
         "description": "在实体零售中提供点触入钱包功能"
       },
       "marketing": {
-        "title": "+ 优惠券营销",
+        "title": "+ 电子券营销",
         "description": "购买的代金券自动添加到钱包"
       },
       "marketplace": {
-        "title": "+ 优惠券市场",
+        "title": "+ 电子券市场",
         "description": "从钱包界面访问市场库存"
       }
     },
     "bundle": {
       "title": "推荐套餐：零售卓越套餐",
-      "description": "任何优惠券分发策略的必备客户体验层",
+      "description": "任何电子券分发策略的必备客户体验层",
       "button": "联系销售获取套餐定价"
     },
     "footerCta": {
       "title": "准备好推出您的数字钱包了吗？",
-      "subtitle": "加入领先品牌，为您的客户提供无缝的优惠券钱包体验",
+      "subtitle": "加入领先品牌，为您的客户提供无缝的电子券钱包体验",
       "getStarted": "立即开始",
       "requestDemo": "申请演示"
     }
@@ -2200,19 +2200,19 @@
       "viewEcosystem": "查看生态系统"
     },
     "hero": {
-      "badge": "优惠券序列号",
+      "badge": "电子券序列号",
       "title": "您的唯一凭证序列号，即时兑换",
-      "subtitle": "Mezzofy 平台上的每张优惠券都有唯一的防篡改序列号。客户可在任何合作商户出示序列号进行兑换 — 支持 <span class=\"text-primary-orange font-semibold\">Apple 钱包、Google Pay、三星钱包</span>及任何网页浏览器。",
+      "subtitle": "Mezzofy 平台上的每张电子券都有唯一的防篡改序列号。客户可在任何合作商户出示序列号进行兑换 — 支持 <span class=\"text-primary-orange font-semibold\">Apple 钱包、Google Pay、三星钱包</span>及任何网页浏览器。",
       "getStarted": "立即开始",
       "exploreFeatures": "探索功能",
-      "imageAlt": "优惠券序列号凭证显示"
+      "imageAlt": "电子券序列号凭证显示"
     },
     "platforms": {
       "title": "随处保存与出示",
       "subtitle": "客户可将唯一序列号保存至偏好的钱包，或通过安全网页链接访问 — 无需特定应用。",
       "appleWallet": {
         "title": "Apple 钱包",
-        "description": "将优惠券序列号保存至 Apple 钱包，结账时一键出示。离线可用，实时显示到期状态。"
+        "description": "将电子券序列号保存至 Apple 钱包，结账时一键出示。离线可用，实时显示到期状态。"
       },
       "googlePay": {
         "title": "Google Pay",
@@ -2247,7 +2247,7 @@
       },
       "integrationOwnership": {
         "title": "集成与所有权",
-        "item1": "若所有权尚未指定，可保存至优惠券钱包",
+        "item1": "若所有权尚未指定，可保存至电子券钱包",
         "item2": "购买或分发时 API 触发序列号生成",
         "item3": "兑换及转让事件的 Webhook 回调",
         "item4": "带有您品牌的白标序列号显示页面",
@@ -2255,10 +2255,10 @@
       }
     },
     "howItWorks": {
-      "title": "优惠券序列号如何运作",
+      "title": "电子券序列号如何运作",
       "step1": {
         "title": "收取您的序列号",
-        "description": "购买或分发后，客户通过电邮、短信或直接在 Mezzofy 优惠券钱包中收到唯一序列号。"
+        "description": "购买或分发后，客户通过电邮、短信或直接在 Mezzofy 电子券钱包中收到唯一序列号。"
       },
       "step2": {
         "title": "保存或分享",
@@ -2291,27 +2291,27 @@
     },
     "transferFeature": {
       "title": "赠送凭证礼物",
-      "description": "优惠券序列号支持点对点转让。客户可将凭证作为礼物赠送或转让给他人。转让过程完全可追踪 — 序列号在新持有人名下仍然有效，非常适合礼品卡、特别优惠及忠诚度奖励。"
+      "description": "电子券序列号支持点对点转让。客户可将凭证作为礼物赠送或转让给他人。转让过程完全可追踪 — 序列号在新持有人名下仍然有效，非常适合礼品卡、特别优惠及忠诚度奖励。"
     },
     "ecosystem": {
       "title": "与 Mezzofy 生态系统无缝集成",
-      "subtitle": "优惠券序列号与其他 Mezzofy 产品集成，打造完整的凭证生命周期",
+      "subtitle": "电子券序列号与其他 Mezzofy 产品集成，打造完整的凭证生命周期",
       "wallet": {
-        "title": "+ 优惠券钱包",
-        "description": "将序列号直接保存至优惠券钱包，统一管理所有凭证"
+        "title": "+ 电子券钱包",
+        "description": "将序列号直接保存至电子券钱包，统一管理所有凭证"
       },
       "management": {
-        "title": "+ 优惠券管理",
+        "title": "+ 电子券管理",
         "description": "从中央控制台发行及管理数千个序列号，实现完整生命周期控制"
       },
       "nfc": {
-        "title": "+ 优惠券 NFC",
+        "title": "+ 电子券 NFC",
         "description": "在实体包装中嵌入序列号关联的 NFC 标签，实现点触激活体验"
       }
     },
     "bundle": {
       "title": "💡 推荐套餐：客户旅程套餐",
-      "description": "将序列号与钱包及管理系统结合，打造完整的端到端优惠券生命周期解决方案。",
+      "description": "将序列号与钱包及管理系统结合，打造完整的端到端电子券生命周期解决方案。",
       "button": "联系销售以获取套餐定价"
     },
     "footerCta": {
@@ -2350,7 +2350,7 @@
       },
       "email": {
         "title": "电子邮件支持",
-        "desc": "适用于需要协助兑换优惠券、钱包问题或一般咨询的消费者及终端用户。",
+        "desc": "适用于需要协助兑换电子券、钱包问题或一般咨询的消费者及终端用户。",
         "cta": "电子邮件支持"
       }
     },
@@ -2359,7 +2359,7 @@
       "description": "按用户类型整理的常见问题及处理方式。",
       "supply": {
         "title": "供应客户（商家）",
-        "issue1": "优惠券无法激活或显示不正确",
+        "issue1": "电子券无法激活或显示不正确",
         "issue2": "NFC 标签设置和配置问题",
         "issue3": "兑换数据差异或报表错误",
         "issue4": "API 集成失败或 Webhook 错误",
@@ -2375,10 +2375,10 @@
       },
       "partners": {
         "title": "终端用户及消费者",
-        "issue1": "结账时优惠券无法使用",
+        "issue1": "结账时电子券无法使用",
         "issue2": "钱包应用程序登录或同步问题",
         "issue3": "NFC 感应在销售点未被识别",
-        "issue4": "优惠券已过期或条款与预期不符"
+        "issue4": "电子券已过期或条款与预期不符"
       }
     },
     "sla": {
@@ -2433,27 +2433,27 @@
   "articles": {
     "news": {
       "cioworldFeature": {
-        "title": "TheCIOWorld 报道 Mezzofy：为更环保的未来转型优惠券",
+        "title": "TheCIOWorld 报道 Mezzofy：为更环保的未来转型电子券",
         "headings": {
-          "nfcInnovation": "通过 NFC 技术重新定义数字优惠券",
-          "ecoFriendly": "环保优惠券营销，共创绿色未来"
+          "nfcInnovation": "通过 NFC 技术重新定义数字电子券",
+          "ecoFriendly": "环保电子券营销，共创绿色未来"
         }
       },
       "dualEsgAwards": {
         "title": "Mezzofy 在 2024 年 ESG 可持续发展论坛荣获双奖",
         "headings": {
           "recognition": "2024年可持续发展论坛荣获双重ESG认可",
-          "environmental": "以数字优惠券取代纸质，减少环境足迹"
+          "environmental": "以数字电子券取代纸质，减少环境足迹"
         }
       },
       "edigestLeadingSolution": {
-        "title": "eDigest 独家报道：亚太区领先电子优惠券解决方案"
+        "title": "eDigest 独家报道：亚太区领先电子电子券解决方案"
       },
       "ejtech300mCoupons": {
-        "title": "EJTech 报道：Mezzofy 云平台在亚太地区分发 3 亿张电子优惠券",
+        "title": "EJTech 报道：Mezzofy 云平台在亚太地区分发 3 亿张电子电子券",
         "headings": {
-          "cloudPlatform": "云平台获认可为数字优惠券领导者",
-          "distribution": "三亿优惠券：横跨亚太的环保多渠道分发"
+          "cloudPlatform": "云平台获认可为数字电子券领导者",
+          "distribution": "三亿电子券：横跨亚太的环保多渠道分发"
         }
       },
       "forbesDickyYin": {
@@ -2466,8 +2466,8 @@
         "title": "Mezzofy 完成 200 万美元 Pre-Series A 融资轮",
         "headings": {
           "funding": "Mezzofy 完成 200 万美元 Pre-Series A 融资",
-          "market": "目标锁定 297 亿美元全球数字优惠券市场",
-          "traction": "横跨 15 个市场管理 4 亿枚优惠券"
+          "market": "目标锁定 297 亿美元全球数字电子券市场",
+          "traction": "横跨 15 个市场管理 4 亿枚电子券"
         }
       },
       "techappleInnovationIndex": {
@@ -2478,32 +2478,32 @@
         }
       },
       "treasureGlobalPartnership": {
-        "title": "Mezzofy 与 Treasure Global 合作加速马来西亚电子优惠券扩张",
+        "title": "Mezzofy 与 Treasure Global 合作加速马来西亚电子电子券扩张",
         "headings": {
-          "partnership": "Mezzofy与Treasure Global携手拓展马来西亚数字优惠券市场",
+          "partnership": "Mezzofy与Treasure Global携手拓展马来西亚数字电子券市场",
           "scale": "横跨 15 个全球市场交易额达 400 亿美元",
-          "platform": "优惠券即服务平台推动营收增长"
+          "platform": "电子券即服务平台推动营收增长"
         }
       }
     },
     "blog": {
       "nfcParknshop": {
-        "title": "Mezzofy 助品牌设置优惠券到240间百佳 NFC 标签，全程代办、无需协调"
+        "title": "Mezzofy 助品牌设置电子券到240间百佳 NFC 标签，全程代办、无需协调"
       },
       "eCouponsPreference": {
-        "title": "60% 消费者偏好电子优惠券：对数字时代零售业的意义"
+        "title": "60% 消费者偏好电子电子券：对数字时代零售业的意义"
       },
       "environmentalExcellence": {
-        "title": "香港环境卓越大奖 — 以电子优惠券降低成本并保护树木"
+        "title": "香港环境卓越大奖 — 以电子电子券降低成本并保护树木"
       },
       "hotelTechInnovation": {
         "title": "为何科技创新是酒店成功的关键"
       },
       "holidayGuide": {
-        "title": "假日季节优惠券指南 — 掌握最后冲刺的假日销售旺季"
+        "title": "假日季节电子券指南 — 掌握最后冲刺的假日销售旺季"
       },
       "smartRetail": {
-        "title": "科技主导的智慧零售 — NFC 优惠券驱动冲动购买"
+        "title": "科技主导的智慧零售 — NFC 电子券驱动冲动购买"
       }
     }
   }
