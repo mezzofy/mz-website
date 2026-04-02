@@ -113,9 +113,11 @@ class I18n {
             element.textContent = translation;
           }
         } else {
-          // Check if translation contains HTML
+          // Check if translation contains HTML — sanitize with DOMPurify before innerHTML
           if (translation.includes('<')) {
-            element.innerHTML = translation;
+            element.innerHTML = (typeof DOMPurify !== 'undefined')
+              ? DOMPurify.sanitize(translation)
+              : translation;
           } else {
             element.textContent = translation;
           }
