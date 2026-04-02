@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mezzofy powers the Global Coupon Exchange Protocol, connecting merchants to distributors for secure digital coupon distribution. Join 300M+ coupons processed.">
+    <meta name="robots" content="noindex">
+    <title>[TEST] Mezzofy — Global Coupon Exchange Protocol</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'orange': '#FF6B35',
+                        'orange-dark': '#E55A24',
+                        'orange-glow': 'rgba(255,107,53,0.15)',
+                        'ink': '#0A0A0A',
+                        'ink-2': '#111111',
+                        'ink-3': '#1A1A1A',
+                        'smoke': '#F7F7F5',
+                        'stone': '#E8E8E4',
+                        'mist': '#9A9A96',
+                        'chalk': '#FAFAF8',
+                    },
+                    fontFamily: {
+                        display: ['Bebas Neue', 'sans-serif'],
+                        body: ['Outfit', 'sans-serif'],
+                        mono: ['IBM Plex Mono', 'monospace'],
+                    },
+                    animation: {
+                        'fade-up': 'fadeUp 0.7s ease both',
+                        'fade-in': 'fadeIn 0.6s ease both',
+                        'pulse-soft': 'pulseSoft 3s ease-in-out infinite',
+                        'slide-right': 'slideRight 0.6s ease both',
+                    },
+                    keyframes: {
+                        fadeUp: { from: { opacity: '0', transform: 'translateY(24px)' }, to: { opacity: '1', transform: 'translateY(0)' } },
+                        fadeIn: { from: { opacity: '0' }, to: { opacity: '1' } },
+                        pulseSoft: { '0%,100%': { opacity: '1' }, '50%': { opacity: '0.5' } },
+                        slideRight: { from: { opacity: '0', transform: 'translateX(-20px)' }, to: { opacity: '1', transform: 'translateX(0)' } },
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="output.css">
+    <script src="i18n/i18n.js"></script>
+
+    <style>
+        *, *::before, *::after { box-sizing: border-box; }
+        body { font-family: 'Outfit', sans-serif; background: #FAFAF8; color: #1A1A1A; }
+
+        /* Nav */
+        .nav-link { font-family: 'Outfit', sans-serif; font-weight: 500; font-size: 0.875rem; color: #9A9A96; transition: color 0.2s; }
+        .nav-link:hover { color: #0A0A0A; }
+
+        /* Hero */
+        .hero-section {
+            background-image: url('assets/images/mezzofy_background.png');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.75) 60%, rgba(255,107,53,0.12) 100%);
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            border: 1px solid rgba(255,107,53,0.4);
+            background: rgba(255,107,53,0.08);
+            border-radius: 100px;
+            padding: 6px 16px;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.7rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #FF6B35;
+        }
+        .hero-badge-dot {
+            width: 6px; height: 6px;
+            background: #FF6B35;
+            border-radius: 50%;
+            animation: pulseSoft 2s ease-in-out infinite;
+        }
+        @keyframes pulseSoft { 0%,100% { opacity:1; transform:scale(1); } 50% { opacity:0.4; transform:scale(0.8); } }
+
+        .hero-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(3.5rem, 8vw, 8rem);
+            line-height: 0.92;
+            letter-spacing: 0.02em;
+            color: #ffffff;
+        }
+        .hero-title-accent { color: #FF6B35; }
+
+        .stat-card {
+            border: 1px solid rgba(255,255,255,0.08);
+            background: rgba(255,255,255,0.04);
+            backdrop-filter: blur(12px);
+            border-radius: 12px;
+            padding: 20px 24px;
+            transition: border-color 0.3s;
+        }
+        .stat-card:hover { border-color: rgba(255,107,53,0.4); }
+        .stat-number {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2.8rem;
+            line-height: 1;
+            color: #FF6B35;
+        }
+        .stat-label { font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-top: 4px; font-family: 'IBM Plex Mono', monospace; }
+
+        /* Section styles */
+        .section-pad { padding: 100px 0; }
+        .section-pad-sm { padding: 72px 0; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        /* Eyebrow */
+        .eyebrow {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.7rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: #FF6B35;
+            margin-bottom: 16px;
+        }
+
+        /* Section title */
+        .section-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            line-height: 0.95;
+            letter-spacing: 0.03em;
+            color: #0A0A0A;
+        }
+        .section-title-light { color: #ffffff; }
+        .section-title-accent { color: #FF6B35; }
+
+        /* Feature cards */
+        .feature-card-new {
+            background: #fff;
+            border: 1px solid #E8E8E4;
+            border-radius: 16px;
+            padding: 32px;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+        }
+        .feature-card-new:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            border-color: #FF6B35;
+        }
+
+        /* Icon box */
+        .icon-box {
+            width: 48px; height: 48px;
+            background: rgba(255,107,53,0.1);
+            border-radius: 12px;
+            display: flex; align-items: center; justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        /* Stats ticker */
+        .stats-ticker {
+            background: #FF6B35;
+            padding: 20px 0;
+            overflow: hidden;
+        }
+        .stats-ticker-inner {
+            display: flex;
+            gap: 64px;
+            white-space: nowrap;
+        }
+        .ticker-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.1rem;
+            letter-spacing: 0.05em;
+            color: white;
+        }
+        .ticker-dot { width: 5px; height: 5px; background: rgba(255,255,255,0.5); border-radius: 50%; }
+
+        /* Protocol comparison */
+        .compare-old {
+            background: #f0f0ec;
+            border-radius: 16px;
+            padding: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        .compare-old::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 4px;
+            background: #D0D0CC;
+        }
+        .compare-new {
+            background: #0A0A0A;
+            border-radius: 16px;
+            padding: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        .compare-new::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 4px;
+            background: #FF6B35;
+        }
+        .compare-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+        .compare-item:last-child { border-bottom: none; }
+        .compare-item-new {
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+
+        /* Product cards */
+        .product-card {
+            border: 1px solid #E8E8E4;
+            border-radius: 14px;
+            padding: 28px;
+            background: white;
+            transition: all 0.25s ease;
+            text-decoration: none;
+            display: block;
+        }
+        .product-card:hover {
+            border-color: #FF6B35;
+            box-shadow: 0 8px 32px rgba(255,107,53,0.12);
+            transform: translateY(-2px);
+        }
+        .product-tag {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.65rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            background: rgba(255,107,53,0.1);
+            color: #FF6B35;
+            padding: 3px 10px;
+            border-radius: 100px;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+
+        /* Dark card */
+        .dark-card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 14px;
+            padding: 28px;
+            transition: border-color 0.25s;
+        }
+        .dark-card:hover { border-color: rgba(255,107,53,0.5); }
+
+        /* Protocol row */
+        .protocol-row {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px 24px;
+            border: 1px solid #E8E8E4;
+            border-radius: 14px;
+            background: white;
+            transition: all 0.25s ease;
+            margin-bottom: 12px;
+        }
+        .protocol-row:hover {
+            border-color: #FF6B35;
+            box-shadow: 0 4px 20px rgba(255,107,53,0.08);
+        }
+
+        /* CTA section */
+        .cta-section {
+            background: #FF6B35;
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-section::before {
+            content: 'MEZZOFY';
+            position: absolute;
+            right: -2%;
+            top: 50%;
+            transform: translateY(-50%);
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(8rem, 18vw, 18rem);
+            letter-spacing: 0.05em;
+            color: rgba(0,0,0,0.06);
+            pointer-events: none;
+            white-space: nowrap;
+        }
+
+        /* Buttons */
+        .btn-ink {
+            background: #0A0A0A;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.9rem;
+            display: inline-block;
+            transition: background 0.2s, transform 0.15s;
+        }
+        .btn-ink:hover { background: #222; transform: translateY(-1px); }
+
+        .btn-white {
+            background: white;
+            color: #FF6B35;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.9rem;
+            display: inline-block;
+            transition: all 0.2s;
+        }
+        .btn-white:hover { background: #f0f0f0; transform: translateY(-1px); }
+
+        .btn-orange {
+            background: #FF6B35;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.9rem;
+            display: inline-block;
+            transition: background 0.2s, transform 0.15s;
+        }
+        .btn-orange:hover { background: #E55A24; transform: translateY(-1px); }
+
+        .btn-outline-white {
+            background: transparent;
+            color: white;
+            padding: 13px 28px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.9rem;
+            border: 1.5px solid rgba(255,255,255,0.3);
+            display: inline-block;
+            transition: all 0.2s;
+        }
+        .btn-outline-white:hover { border-color: white; background: rgba(255,255,255,0.06); }
+
+        /* Benefit row */
+        .benefit-row {
+            display: flex;
+            gap: 20px;
+            padding: 24px 0;
+            border-bottom: 1px solid #E8E8E4;
+        }
+        .benefit-row:last-child { border-bottom: none; }
+        .benefit-num {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3rem;
+            line-height: 1;
+            color: rgba(255,107,53,0.15);
+            min-width: 56px;
+        }
+
+        /* Animation delays */
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+        .delay-5 { animation-delay: 0.5s; }
+
+        /* Tokenization steps */
+        .token-step {
+            position: relative;
+            padding: 32px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+        }
+        .token-step-number {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 5rem;
+            line-height: 1;
+            color: rgba(255,107,53,0.2);
+            position: absolute;
+            top: 16px; right: 20px;
+        }
+
+        /* Nav overrides */
+        .nav-fixed {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            background: rgba(10,10,10,0.96);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        .nav-logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; letter-spacing: 0.08em; color: white; }
+
+        /* Dropdown overrides for dark nav */
+        .dropdown-menu-dark {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #111;
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 8px;
+            min-width: 200px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.2s ease;
+            z-index: 200;
+            margin-top: 8px;
+        }
+        .dropdown-wrap:hover .dropdown-menu-dark {
+            opacity: 1;
+            visibility: visible;
+        }
+        .dropdown-link-dark {
+            display: block;
+            padding: 10px 14px;
+            color: rgba(255,255,255,0.7);
+            font-size: 0.875rem;
+            font-weight: 500;
+            border-radius: 8px;
+            transition: all 0.15s;
+            text-decoration: none;
+        }
+        .dropdown-link-dark:hover {
+            background: rgba(255,107,53,0.1);
+            color: #FF6B35;
+        }
+        .dropdown-trigger-dark {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            color: rgba(255,255,255,0.6);
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 6px 0;
+            transition: color 0.2s;
+            font-family: 'Outfit', sans-serif;
+        }
+        .dropdown-trigger-dark:hover { color: white; }
+        .dropdown-wrap { position: relative; }
+
+        /* Mobile */
+        .mobile-menu-dark {
+            background: #111;
+            border-top: 1px solid rgba(255,255,255,0.06);
+        }
+
+        @media (max-width: 768px) {
+            .hero-title { font-size: clamp(3rem, 11vw, 5rem); }
+            .section-title { font-size: clamp(2rem, 8vw, 3rem); }
+            .section-pad { padding: 64px 0; }
+        }
+    </style>
+</head>
+<body class="i18n-loading">
+
+    <!-- Navigation -->
+    <nav class="nav-fixed">
+        <div class="container">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3">
+                    <img src="assets/images/logo.png" alt="Mezzofy Logo" class="h-8">
+                    <span class="nav-logo hidden md:block">MEZZOFY</span>
+                </a>
+
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex items-center gap-6">
+                    <div class="dropdown-wrap">
+                        <button class="dropdown-trigger-dark" data-i18n="common.nav.solutions">Solutions
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="dropdown-menu-dark">
+                            <a href="for-merchants.html" class="dropdown-link-dark" data-i18n="common.nav.merchantSolution">I'm a Merchant</a>
+                            <a href="for-distributors.html" class="dropdown-link-dark" data-i18n="common.nav.distributorSolution">I'm a Distributor</a>
+                            <a href="for-developers.html" class="dropdown-link-dark" data-i18n="common.nav.developerSolution">I'm a Developer</a>
+                            <a href="for-ai-commerce.html" class="dropdown-link-dark" data-i18n="common.nav.aiCommerceSolution">AI Commerce (Beta)</a>
+                        </div>
+                    </div>
+                    <div class="dropdown-wrap">
+                        <button class="dropdown-trigger-dark" data-i18n="common.nav.products">Products
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="dropdown-menu-dark">
+                            <a href="coupon-management.html" class="dropdown-link-dark" data-i18n="common.nav.managementSystem">Coupon Management</a>
+                            <a href="coupon-marketplace.html" class="dropdown-link-dark" data-i18n="common.nav.marketplace">Marketplace</a>
+                            <a href="coupon-nfc.html" class="dropdown-link-dark" data-i18n="common.nav.nfc">Coupon NFC</a>
+                            <a href="coupon-campaign.html" class="dropdown-link-dark" data-i18n="common.nav.marketing">Campaign</a>
+                            <a href="coupon-wallet.html" class="dropdown-link-dark" data-i18n="common.nav.wallet">Wallet</a>
+                            <a href="coupon-serial.html" class="dropdown-link-dark" data-i18n="common.nav.serial">Serial</a>
+                        </div>
+                    </div>
+                    <div class="dropdown-wrap">
+                        <button class="dropdown-trigger-dark" data-i18n="common.nav.developer">Developer
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="dropdown-menu-dark">
+                            <a href="api-doc.html" class="dropdown-link-dark" data-i18n="common.nav.apiDoc">API Documentation</a>
+                            <a href="api-use-case.html" class="dropdown-link-dark" data-i18n="common.nav.apiUseCase">API Use Case</a>
+                        </div>
+                    </div>
+                    <div class="dropdown-wrap">
+                        <button class="dropdown-trigger-dark" data-i18n="common.nav.resources">Resources
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="dropdown-menu-dark">
+                            <a href="coupon-playbook.html" class="dropdown-link-dark" data-i18n="common.nav.playbook">Coupon Playbook</a>
+                            <a href="support.html" class="dropdown-link-dark" data-i18n="common.nav.support">Support</a>
+                        </div>
+                    </div>
+                    <div class="dropdown-wrap">
+                        <button class="dropdown-trigger-dark" data-i18n="common.nav.company">Company
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="dropdown-menu-dark">
+                            <a href="about.html" class="dropdown-link-dark" data-i18n="common.nav.aboutUs">About Us</a>
+                            <a href="contact.html" class="dropdown-link-dark" data-i18n="common.nav.contactUs">Contact Us</a>
+                            <a href="news-press.html" class="dropdown-link-dark" data-i18n="common.nav.newsPress">News & Press</a>
+                            <a href="investors.html" class="dropdown-link-dark" data-i18n="common.nav.investors">Investors</a>
+                        </div>
+                    </div>
+                    <!-- Language -->
+                    <div class="dropdown-wrap">
+                        <button class="dropdown-trigger-dark gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
+                            <span id="current-lang-desktop">EN</span>
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="dropdown-menu-dark">
+                            <a href="#" class="dropdown-link-dark lang-option" data-lang="en">English</a>
+                            <a href="#" class="dropdown-link-dark lang-option" data-lang="zh-TW">繁體中文</a>
+                            <a href="#" class="dropdown-link-dark lang-option" data-lang="zh-CN">简体中文</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn-orange text-sm py-2.5 px-5" data-i18n="common.nav.getStarted">Get Started</a>
+                </div>
+
+                <!-- Mobile button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden mobile-menu-dark">
+            <div class="container py-4 space-y-1">
+                <div class="mobile-dropdown border-b border-white/10 pb-3 mb-3">
+                    <button class="mobile-dropdown-trigger text-white/70" data-dropdown="language">
+                        <span class="flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
+                            <span id="current-lang-mobile">English</span>
+                        </span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="language">
+                        <a href="#" class="block py-2 text-sm text-white/50 hover:text-orange lang-option px-2" data-lang="en">English</a>
+                        <a href="#" class="block py-2 text-sm text-white/50 hover:text-orange lang-option px-2" data-lang="zh-TW">繁體中文</a>
+                        <a href="#" class="block py-2 text-sm text-white/50 hover:text-orange lang-option px-2" data-lang="zh-CN">简体中文</a>
+                    </div>
+                </div>
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger text-white/70" data-dropdown="solutions-m">
+                        <span data-i18n="common.nav.solutions">Solutions</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="solutions-m">
+                        <a href="for-merchants.html" class="block py-2 text-sm text-white/50 hover:text-orange px-2" data-i18n="common.nav.merchantSolution">I'm a Merchant</a>
+                        <a href="for-distributors.html" class="block py-2 text-sm text-white/50 hover:text-orange px-2" data-i18n="common.nav.distributorSolution">I'm a Distributor</a>
+                        <a href="for-developers.html" class="block py-2 text-sm text-white/50 hover:text-orange px-2" data-i18n="common.nav.developerSolution">I'm a Developer</a>
+                        <a href="for-ai-commerce.html" class="block py-2 text-sm text-white/50 hover:text-orange px-2" data-i18n="common.nav.aiCommerceSolution">AI Commerce (Beta)</a>
+                    </div>
+                </div>
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger text-white/70" data-dropdown="products-m">
+                        <span data-i18n="common.nav.products">Products</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="products-m">
+                        <a href="coupon-management.html" class="block py-2 text-sm text-white/50 hover:text-orange px-2" data-i18n="common.nav.managementSystem">Coupon Management System</a>
+                        <a href="coupon-marketplace.html" class="block py-2 text-sm text-white/50 hover:text-orange px-2" data-i18n="common.nav.marketplace">Coupon Marketplace</a>
+                        <a href="coupon-nfc.html" class="block py-2 text-sm text-white/50 hover:text-orange px-2" data-i18n="common.nav.nfc">Coupon NFC</a>
+                        <a href="coupon-campaign.html" class="block py-2 text-sm text-white/50 hover:text-orange px-2" data-i18n="common.nav.marketing">Coupon Marketing</a>
+                        <a href="coupon-wallet.html" class="block py-2 text-sm text-white/50 hover:text-orange px-2" data-i18n="common.nav.wallet">Coupon Wallet</a>
+                        <a href="coupon-serial.html" class="block py-2 text-sm text-white/50 hover:text-orange px-2" data-i18n="common.nav.serial">Coupon Serial</a>
+                    </div>
+                </div>
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger text-white/70" data-dropdown="company-m">
+                        <span data-i18n="common.nav.company">Company</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="company-m">
+                        <a href="about.html" class="block py-2 text-sm text-white/50 hover:text-orange px-2" data-i18n="common.nav.aboutUs">About Us</a>
+                        <a href="contact.html" class="block py-2 text-sm text-white/50 hover:text-orange px-2" data-i18n="common.nav.contactUs">Contact Us</a>
+                        <a href="news-press.html" class="block py-2 text-sm text-white/50 hover:text-orange px-2" data-i18n="common.nav.newsPress">News & Press</a>
+                        <a href="investors.html" class="block py-2 text-sm text-white/50 hover:text-orange px-2" data-i18n="common.nav.investors">Investors</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="block py-3 text-orange font-semibold" data-i18n="common.nav.getStarted">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════════════════════ -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container relative z-10 w-full">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center pt-24 pb-16 md:pt-28 md:pb-20">
+
+                <!-- Left: Text -->
+                <div>
+                    <div class="hero-badge mb-6 animate-fade-in" style="animation-fill-mode:both;">
+                        <span class="hero-badge-dot"></span>
+                        Global Coupon Exchange Protocol
+                    </div>
+                    <h1 class="hero-title mb-6 animate-fade-up delay-1" style="animation-fill-mode:both;" data-i18n="home.hero.title">
+                        THE<br>
+                        <span class="hero-title-accent">INTELLIGENT</span><br>
+                        EXCHANGE<br>
+                        FOR DIGITAL<br>VALUE
+                    </h1>
+                    <p class="text-white/70 text-lg mb-3 animate-fade-up delay-2" style="animation-fill-mode:both; font-family:'Outfit',sans-serif;" data-i18n="home.hero.subtitle">
+                        Connecting Merchants and Distributors Through Secure, Tokenized Digital Commerce
+                    </p>
+                    <p class="text-white/50 text-base mb-10 max-w-xl animate-fade-up delay-3" style="animation-fill-mode:both; font-family:'Outfit',sans-serif;" data-i18n="home.hero.description">
+                        Mezzofy is the digital coupon exchange protocol — powering coupons, vouchers, and gift vouchers through a single tokenized infrastructure.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 animate-fade-up delay-4" style="animation-fill-mode:both;">
+                        <a href="#merchants" class="btn-orange text-center" data-i18n="home.hero.ctaMerchants">List Your Inventory</a>
+                        <a href="#distributors" class="btn-outline-white text-center" data-i18n="home.hero.ctaDistributors">Access Inventory</a>
+                    </div>
+                </div>
+
+                <!-- Right: Stats Grid -->
+                <div class="grid grid-cols-2 gap-4 animate-fade-in delay-3" style="animation-fill-mode:both;">
+                    <div class="stat-card col-span-2">
+                        <div class="stat-number">300M+</div>
+                        <div class="stat-label">COUPONS PROCESSED</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">YEARS IN MARKET</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">900M+</div>
+                        <div class="stat-label">AI USERS REACHED</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">CORE PRODUCTS</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">AI PROTOCOLS LIVE</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         STATS TICKER
+    ═══════════════════════════════════════════════════════ -->
+    <div class="stats-ticker">
+        <div class="stats-ticker-inner px-8">
+            <div class="ticker-item"><span>300M+ COUPONS PROCESSED</span><span class="ticker-dot"></span></div>
+            <div class="ticker-item"><span>FRAUD-PROOF TOKENIZATION</span><span class="ticker-dot"></span></div>
+            <div class="ticker-item"><span>ZERO UPFRONT COST FOR MERCHANTS</span><span class="ticker-dot"></span></div>
+            <div class="ticker-item"><span>NFC · QR · BARCODE · API</span><span class="ticker-dot"></span></div>
+            <div class="ticker-item"><span>AI-NATIVE INFRASTRUCTURE</span><span class="ticker-dot"></span></div>
+            <div class="ticker-item"><span>GLOBAL DISTRIBUTION NETWORK</span><span class="ticker-dot"></span></div>
+            <div class="ticker-item"><span>KYC-VERIFIED EXCHANGE</span><span class="ticker-dot"></span></div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════
+         PROTOCOL: THE OLD WAY VS MEZZOFY
+    ═══════════════════════════════════════════════════════ -->
+    <section id="protocol" class="section-pad" style="background:#FAFAF8;">
+        <div class="container">
+            <div class="text-center mb-16">
+                <p class="eyebrow">THE PROTOCOL SHIFT</p>
+                <h2 class="section-title mb-6" data-i18n="home.protocol.title">
+                    THE FUTURE OF DIGITAL COUPONS<br>
+                    IS SECURE, STANDARDIZED, <span class="section-title-accent">AND TOKENIZED</span>
+                </h2>
+                <p class="text-mist text-lg max-w-3xl mx-auto" style="font-family:'Outfit',sans-serif;" data-i18n="home.protocol.description">
+                    Traditional digital coupon distribution is failing due to fragmentation, high costs, and security risks. We replace the obsolete SaaS model with a high-liquidity Exchange Protocol.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-16">
+                <!-- Old Way -->
+                <div class="compare-old">
+                    <p class="eyebrow" style="color:#9A9A96; margin-bottom:20px;">THE OLD WAY</p>
+                    <div class="compare-item">
+                        <svg class="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                        <div>
+                            <div class="font-semibold text-ink text-sm" style="font-family:'Outfit',sans-serif;">Fragmented SaaS tools</div>
+                            <div class="text-mist text-xs mt-0.5" style="font-family:'Outfit',sans-serif;">Multiple disconnected platforms, no interoperability</div>
+                        </div>
+                    </div>
+                    <div class="compare-item">
+                        <svg class="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                        <div>
+                            <div class="font-semibold text-ink text-sm" style="font-family:'Outfit',sans-serif;">High upfront costs</div>
+                            <div class="text-mist text-xs mt-0.5" style="font-family:'Outfit',sans-serif;">Subscription fees regardless of performance</div>
+                        </div>
+                    </div>
+                    <div class="compare-item">
+                        <svg class="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                        <div>
+                            <div class="font-semibold text-ink text-sm" style="font-family:'Outfit',sans-serif;">Fraud vulnerabilities</div>
+                            <div class="text-mist text-xs mt-0.5" style="font-family:'Outfit',sans-serif;">No standardized validation — duplicate redemptions common</div>
+                        </div>
+                    </div>
+                    <div class="compare-item">
+                        <svg class="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                        <div>
+                            <div class="font-semibold text-ink text-sm" style="font-family:'Outfit',sans-serif;">AI-invisible</div>
+                            <div class="text-mist text-xs mt-0.5" style="font-family:'Outfit',sans-serif;">Not queryable by AI agents or LLM shopping layers</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mezzofy Way -->
+                <div class="compare-new">
+                    <p class="eyebrow" style="margin-bottom:20px;">THE MEZZOFY WAY</p>
+                    <div class="compare-item compare-item-new">
+                        <svg class="w-5 h-5 text-orange mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        <div>
+                            <div class="font-semibold text-white text-sm" style="font-family:'Outfit',sans-serif;" data-i18n="home.protocol.network.title">From Tool to Network</div>
+                            <div class="text-white/40 text-xs mt-0.5" style="font-family:'Outfit',sans-serif;" data-i18n="home.protocol.network.description">Network effects and secure settlement at protocol level</div>
+                        </div>
+                    </div>
+                    <div class="compare-item compare-item-new">
+                        <svg class="w-5 h-5 text-orange mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        <div>
+                            <div class="font-semibold text-white text-sm" style="font-family:'Outfit',sans-serif;">Performance-based pricing</div>
+                            <div class="text-white/40 text-xs mt-0.5" style="font-family:'Outfit',sans-serif;">Free onboarding — pay only on successful redemption</div>
+                        </div>
+                    </div>
+                    <div class="compare-item compare-item-new">
+                        <svg class="w-5 h-5 text-orange mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        <div>
+                            <div class="font-semibold text-white text-sm" style="font-family:'Outfit',sans-serif;" data-i18n="home.protocol.security.title">Unrivaled Security</div>
+                            <div class="text-white/40 text-xs mt-0.5" style="font-family:'Outfit',sans-serif;" data-i18n="home.protocol.security.description">Every coupon tokenized — unique, fraud-proof digital assets</div>
+                        </div>
+                    </div>
+                    <div class="compare-item compare-item-new">
+                        <svg class="w-5 h-5 text-orange mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        <div>
+                            <div class="font-semibold text-white text-sm" style="font-family:'Outfit',sans-serif;" data-i18n="home.protocol.ai.title">AI-Native Infrastructure</div>
+                            <div class="text-white/40 text-xs mt-0.5" style="font-family:'Outfit',sans-serif;" data-i18n="home.protocol.ai.description">Machine-readable data — standard interface for AI agents</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         PRODUCT ECOSYSTEM
+    ═══════════════════════════════════════════════════════ -->
+    <section id="product-ecosystem" style="background:white;" class="section-pad">
+        <div class="container">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div>
+                    <p class="eyebrow">THE ECOSYSTEM</p>
+                    <h2 class="section-title" data-i18n="home.ecosystem.title">
+                        FROM VISION TO PRODUCTS:<br>THE <span class="section-title-accent">MEZZOFY</span> ECOSYSTEM
+                    </h2>
+                </div>
+                <p class="text-mist max-w-sm" style="font-family:'Outfit',sans-serif;" data-i18n="home.ecosystem.description">
+                    Our Exchange Protocol powers a complete suite of products across the entire coupon lifecycle.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <!-- Management -->
+                <a href="coupon-management.html" class="product-card">
+                    <span class="product-tag">CORE INFRASTRUCTURE</span>
+                    <div class="icon-box">
+                        <svg class="w-5 h-5 text-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                    </div>
+                    <h3 class="font-bold text-ink text-lg mb-2" style="font-family:'Outfit',sans-serif;" data-i18n="common.nav.managementSystem">Coupon Management System</h3>
+                    <p class="text-mist text-sm" style="font-family:'Outfit',sans-serif;" data-i18n="home.ecosystem.coreInfra.description">Backend operations for creating and managing coupon inventory</p>
+                </a>
+
+                <!-- Marketplace -->
+                <a href="coupon-marketplace.html" class="product-card">
+                    <span class="product-tag">EXCHANGE LAYER</span>
+                    <div class="icon-box">
+                        <svg class="w-5 h-5 text-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                    </div>
+                    <h3 class="font-bold text-ink text-lg mb-2" style="font-family:'Outfit',sans-serif;" data-i18n="common.nav.marketplace">Coupon Marketplace</h3>
+                    <p class="text-mist text-sm" style="font-family:'Outfit',sans-serif;" data-i18n="home.ecosystem.coreInfra.item2">Peer-to-peer coupon exchange for B2B, B2C, and C2C</p>
+                </a>
+
+                <!-- NFC -->
+                <a href="coupon-nfc.html" class="product-card">
+                    <span class="product-tag">DISTRIBUTION</span>
+                    <div class="icon-box">
+                        <svg class="w-5 h-5 text-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/></svg>
+                    </div>
+                    <h3 class="font-bold text-ink text-lg mb-2" style="font-family:'Outfit',sans-serif;" data-i18n="common.nav.nfc">Coupon NFC</h3>
+                    <p class="text-mist text-sm" style="font-family:'Outfit',sans-serif;" data-i18n="home.ecosystem.distribution.item1">Physical retail touchpoints via NFC tap-to-redeem</p>
+                </a>
+
+                <!-- Campaign -->
+                <a href="coupon-campaign.html" class="product-card">
+                    <span class="product-tag">DISTRIBUTION</span>
+                    <div class="icon-box">
+                        <svg class="w-5 h-5 text-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"/></svg>
+                    </div>
+                    <h3 class="font-bold text-ink text-lg mb-2" style="font-family:'Outfit',sans-serif;" data-i18n="common.nav.marketing">Coupon Campaign</h3>
+                    <p class="text-mist text-sm" style="font-family:'Outfit',sans-serif;" data-i18n="home.ecosystem.distribution.item2">Multi-channel campaign management and marketing tools</p>
+                </a>
+
+                <!-- Wallet -->
+                <a href="coupon-wallet.html" class="product-card">
+                    <span class="product-tag">CONSUMER</span>
+                    <div class="icon-box">
+                        <svg class="w-5 h-5 text-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+                    </div>
+                    <h3 class="font-bold text-ink text-lg mb-2" style="font-family:'Outfit',sans-serif;" data-i18n="common.nav.wallet">Coupon Wallet</h3>
+                    <p class="text-mist text-sm" style="font-family:'Outfit',sans-serif;" data-i18n="home.ecosystem.consumer.item1">Consumer-facing multi-platform coupon collection</p>
+                </a>
+
+                <!-- Serial -->
+                <a href="coupon-serial.html" class="product-card">
+                    <span class="product-tag">CONSUMER</span>
+                    <div class="icon-box">
+                        <svg class="w-5 h-5 text-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"/></svg>
+                    </div>
+                    <h3 class="font-bold text-ink text-lg mb-2" style="font-family:'Outfit',sans-serif;" data-i18n="common.nav.serial">Coupon Serial</h3>
+                    <p class="text-mist text-sm" style="font-family:'Outfit',sans-serif;" data-i18n="home.ecosystem.consumer.item2">Unique serialized digital coupon identity per asset</p>
+                </a>
+            </div>
+
+            <!-- Bundles bar -->
+            <div class="mt-16 pt-12 border-t border-stone">
+                <h3 class="text-center text-2xl font-bold text-ink mb-10" style="font-family:'Outfit',sans-serif;" data-i18n="home.ecosystem.bundlesTitle">Recommended Product Bundles</h3>
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="border border-stone rounded-xl p-5 hover:border-orange transition-colors">
+                        <div class="font-bold text-ink text-sm mb-1" style="font-family:'Outfit',sans-serif;" data-i18n="home.ecosystem.retail.title">Retail Excellence</div>
+                        <div class="text-mist text-xs mb-3" style="font-family:'Outfit',sans-serif;" data-i18n="home.ecosystem.retail.description">Multi-location retailers</div>
+                        <div class="flex flex-wrap gap-1">
+                            <span class="text-xs bg-smoke text-mist px-2 py-0.5 rounded-full font-mono" data-i18n="home.ecosystem.retail.item1">Management</span>
+                            <span class="text-xs bg-smoke text-mist px-2 py-0.5 rounded-full font-mono" data-i18n="home.ecosystem.retail.item2">NFC</span>
+                            <span class="text-xs bg-smoke text-mist px-2 py-0.5 rounded-full font-mono" data-i18n="home.ecosystem.retail.item3">Wallet</span>
+                        </div>
+                    </div>
+                    <div class="border border-stone rounded-xl p-5 hover:border-orange transition-colors">
+                        <div class="font-bold text-ink text-sm mb-1" style="font-family:'Outfit',sans-serif;" data-i18n="home.ecosystem.revenue.title">Revenue Maximizer</div>
+                        <div class="text-mist text-xs mb-3" style="font-family:'Outfit',sans-serif;" data-i18n="home.ecosystem.revenue.description">Coupon revenue streams</div>
+                        <div class="flex flex-wrap gap-1">
+                            <span class="text-xs bg-smoke text-mist px-2 py-0.5 rounded-full font-mono" data-i18n="home.ecosystem.revenue.item1">Management</span>
+                            <span class="text-xs bg-smoke text-mist px-2 py-0.5 rounded-full font-mono" data-i18n="home.ecosystem.revenue.item2">Marketing</span>
+                            <span class="text-xs bg-smoke text-mist px-2 py-0.5 rounded-full font-mono" data-i18n="home.ecosystem.revenue.item3">Marketplace</span>
+                        </div>
+                    </div>
+                    <div class="border border-stone rounded-xl p-5 hover:border-orange transition-colors">
+                        <div class="font-bold text-ink text-sm mb-1" style="font-family:'Outfit',sans-serif;" data-i18n="home.ecosystem.partner.title">Distribution Partner</div>
+                        <div class="text-mist text-xs mb-3" style="font-family:'Outfit',sans-serif;" data-i18n="home.ecosystem.partner.description">Loyalty & HR platforms</div>
+                        <div class="flex flex-wrap gap-1">
+                            <span class="text-xs bg-smoke text-mist px-2 py-0.5 rounded-full font-mono" data-i18n="home.ecosystem.partner.item1">Marketplace</span>
+                            <span class="text-xs bg-smoke text-mist px-2 py-0.5 rounded-full font-mono" data-i18n="home.ecosystem.partner.item2">Bridge API</span>
+                            <span class="text-xs bg-smoke text-mist px-2 py-0.5 rounded-full font-mono" data-i18n="home.ecosystem.partner.item3">Wallet</span>
+                        </div>
+                    </div>
+                    <div class="border-2 border-orange rounded-xl p-5 bg-orange/5">
+                        <div class="font-bold text-ink text-sm mb-1" style="font-family:'Outfit',sans-serif;" data-i18n="home.ecosystem.enterprise.title">Enterprise Complete</div>
+                        <div class="text-mist text-xs mb-3" style="font-family:'Outfit',sans-serif;" data-i18n="home.ecosystem.enterprise.description">Large enterprise needs</div>
+                        <div class="flex flex-wrap gap-1">
+                            <span class="text-xs bg-orange/10 text-orange px-2 py-0.5 rounded-full font-mono" data-i18n="home.ecosystem.enterprise.item1">All Products</span>
+                            <span class="text-xs bg-orange/10 text-orange px-2 py-0.5 rounded-full font-mono" data-i18n="home.ecosystem.enterprise.item2">Custom Integration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         FOR MERCHANTS
+    ═══════════════════════════════════════════════════════ -->
+    <section id="merchants" style="background:#F7F7F5;" class="section-pad">
+        <div class="container">
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+                <div>
+                    <p class="eyebrow">FOR MERCHANTS</p>
+                    <h2 class="section-title mb-6" data-i18n="home.merchants.title">
+                        TURN COUPON LIABILITIES INTO<br><span class="section-title-accent">HIGH-PERFORMING</span><br>DIGITAL ASSETS
+                    </h2>
+                    <p class="text-mist text-lg mb-10" style="font-family:'Outfit',sans-serif;" data-i18n="home.merchants.description">
+                        Join the Exchange for free and gain instant access to global distribution channels. You only pay when a sale is successfully made and redeemed.
+                    </p>
+                    <a href="for-merchants.html" class="btn-orange" data-i18n="home.merchants.cta">Learn More</a>
+                </div>
+                <div>
+                    <div class="benefit-row">
+                        <div class="benefit-num">01</div>
+                        <div>
+                            <h3 class="font-bold text-ink text-lg mb-1" style="font-family:'Outfit',sans-serif;" data-i18n="home.merchants.benefit1.title">Zero Upfront Cost</h3>
+                            <p class="text-mist text-sm" style="font-family:'Outfit',sans-serif;" data-i18n="home.merchants.benefit1.description">Free onboarding. Pay only a small transaction fee upon final, successful redemption.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-row">
+                        <div class="benefit-num">02</div>
+                        <div>
+                            <h3 class="font-bold text-ink text-lg mb-1" style="font-family:'Outfit',sans-serif;" data-i18n="home.merchants.benefit2.title">Flexible Control</h3>
+                            <p class="text-mist text-sm" style="font-family:'Outfit',sans-serif;" data-i18n="home.merchants.benefit2.description">Use our Bridge API with your existing CMS, or our free Mezzofy CMS. You dictate the rules.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-row">
+                        <div class="benefit-num">03</div>
+                        <div>
+                            <h3 class="font-bold text-ink text-lg mb-1" style="font-family:'Outfit',sans-serif;" data-i18n="home.merchants.benefit3.title">Global Footprint</h3>
+                            <p class="text-mist text-sm" style="font-family:'Outfit',sans-serif;" data-i18n="home.merchants.benefit3.description">Instantly expose your inventory to our B2B marketplace, channel partners, and NFC Network.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-row">
+                        <div class="benefit-num">04</div>
+                        <div>
+                            <h3 class="font-bold text-ink text-lg mb-1" style="font-family:'Outfit',sans-serif;" data-i18n="home.merchants.benefit4.title">Future-Proof Asset</h3>
+                            <p class="text-mist text-sm" style="font-family:'Outfit',sans-serif;" data-i18n="home.merchants.benefit4.description">Your coupons are tokenized, opening possibilities for secondary markets and RWA linkage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         FOR DISTRIBUTORS
+    ═══════════════════════════════════════════════════════ -->
+    <section id="distributors" style="background:white;" class="section-pad">
+        <div class="container">
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+                <div class="order-2 lg:order-1">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="feature-card-new sm:col-span-2">
+                            <div class="icon-box">
+                                <svg class="w-5 h-5 text-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                            </div>
+                            <h3 class="font-bold text-ink text-lg mb-2" style="font-family:'Outfit',sans-serif;" data-i18n="home.distributors.benefit1.title">Risk-Free Integration</h3>
+                            <p class="text-mist text-sm mb-3" style="font-family:'Outfit',sans-serif;" data-i18n="home.distributors.benefit1.description">Free to access. Seamless integration via Bridge API. Pull verified coupons instantly.</p>
+                            <p class="text-xs text-orange font-mono">KYC verification required to access Exchange</p>
+                        </div>
+                        <div class="feature-card-new">
+                            <h3 class="font-bold text-ink text-base mb-2" style="font-family:'Outfit',sans-serif;" data-i18n="home.distributors.benefit2.title">Cash Flow Protection</h3>
+                            <p class="text-mist text-sm" style="font-family:'Outfit',sans-serif;" data-i18n="home.distributors.benefit2.description">Consignment model — partial deposit for large enterprises, bulk charged on redemption.</p>
+                        </div>
+                        <div class="feature-card-new">
+                            <h3 class="font-bold text-ink text-base mb-2" style="font-family:'Outfit',sans-serif;" data-i18n="home.distributors.benefit3.title">Standardized Quality</h3>
+                            <p class="text-mist text-sm" style="font-family:'Outfit',sans-serif;" data-i18n="home.distributors.benefit3.description">All coupons adhere to Mezzofy Coupon Standard — fraud-proof, perfect redemption.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <p class="eyebrow">FOR DISTRIBUTORS</p>
+                    <h2 class="section-title mb-6" data-i18n="home.distributors.title">
+                        ACCESS THE WORLD'S MOST<br><span class="section-title-accent">SECURE</span><br>COUPON INVENTORY
+                    </h2>
+                    <p class="text-mist text-lg mb-10" style="font-family:'Outfit',sans-serif;" data-i18n="home.distributors.description">
+                        Enhance your loyalty program, banking app, or corporate HR portal with real-time, verified digital coupon inventory.
+                    </p>
+                    <a href="for-distributors.html" class="btn-ink" data-i18n="home.distributors.cta">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         FOR DEVELOPERS
+    ═══════════════════════════════════════════════════════ -->
+    <section id="developers" style="background:#0A0A0A;" class="section-pad">
+        <div class="container">
+            <div class="text-center mb-14">
+                <p class="eyebrow" data-i18n="home.developers.eyebrow">For Developers</p>
+                <h2 class="section-title section-title-light mb-4" data-i18n="home.developers.title">
+                    BUILD ON THE<br><span style="color:#FF6B35;">EXCHANGE PROTOCOL</span>
+                </h2>
+                <p class="text-white/50 max-w-2xl mx-auto" style="font-family:'Outfit',sans-serif;" data-i18n="home.developers.description">
+                    Integrate coupon functionality into any platform with a developer-first REST API, multi-language SDKs, and comprehensive coupon functions.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-5 mb-10">
+                <div class="dark-card">
+                    <div class="flex items-center gap-3 mb-5">
+                        <div class="w-9 h-9 rounded-lg flex items-center justify-center" style="background:rgba(255,107,53,0.12);">
+                            <svg class="w-4 h-4 text-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                        </div>
+                        <h3 class="text-white font-bold" style="font-family:'Outfit',sans-serif;" data-i18n="home.developers.api.title">API</h3>
+                    </div>
+                    <p class="text-white/40 text-sm mb-5" style="font-family:'Outfit',sans-serif;" data-i18n="home.developers.api.description">RESTful API with OAuth 2.0 and webhook support for real-time events</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-2"><span class="text-orange font-mono text-xs">→</span><span class="text-white/60 font-mono text-xs">Bridge API</span></div>
+                        <div class="flex items-center gap-2"><span class="text-orange font-mono text-xs">→</span><span class="text-white/60 font-mono text-xs">Management API</span></div>
+                        <div class="flex items-center gap-2"><span class="text-orange font-mono text-xs">→</span><span class="text-white/60 font-mono text-xs">AI Agent API</span></div>
+                    </div>
+                </div>
+
+                <div class="dark-card">
+                    <div class="flex items-center gap-3 mb-5">
+                        <div class="w-9 h-9 rounded-lg flex items-center justify-center" style="background:rgba(255,107,53,0.12);">
+                            <svg class="w-4 h-4 text-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+                        </div>
+                        <h3 class="text-white font-bold" style="font-family:'Outfit',sans-serif;" data-i18n="home.developers.sdk.title">SDK</h3>
+                    </div>
+                    <p class="text-white/40 text-sm mb-5" style="font-family:'Outfit',sans-serif;" data-i18n="home.developers.sdk.description">Official SDKs for every major platform — idiomatic libraries</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-white/5 text-white/50 font-mono text-xs px-2 py-1 rounded">JS/TS</span>
+                        <span class="bg-white/5 text-white/50 font-mono text-xs px-2 py-1 rounded">Python</span>
+                        <span class="bg-white/5 text-white/50 font-mono text-xs px-2 py-1 rounded">PHP</span>
+                        <span class="bg-white/5 text-white/50 font-mono text-xs px-2 py-1 rounded">iOS</span>
+                        <span class="bg-white/5 text-white/50 font-mono text-xs px-2 py-1 rounded">Android</span>
+                        <span class="bg-white/5 text-white/50 font-mono text-xs px-2 py-1 rounded">React Native</span>
+                    </div>
+                </div>
+
+                <div class="dark-card">
+                    <div class="flex items-center gap-3 mb-5">
+                        <div class="w-9 h-9 rounded-lg flex items-center justify-center" style="background:rgba(255,107,53,0.12);">
+                            <svg class="w-4 h-4 text-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"/></svg>
+                        </div>
+                        <h3 class="text-white font-bold" style="font-family:'Outfit',sans-serif;" data-i18n="home.developers.functions.title">Coupon Functions</h3>
+                    </div>
+                    <p class="text-white/40 text-sm mb-5" style="font-family:'Outfit',sans-serif;" data-i18n="home.developers.functions.description">Full lifecycle control from issuance to redemption validation</p>
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-2"><span class="text-orange font-mono text-xs">→</span><span class="text-white/60 font-mono text-xs">coupon.issue()</span></div>
+                        <div class="flex items-center gap-2"><span class="text-orange font-mono text-xs">→</span><span class="text-white/60 font-mono text-xs">coupon.validate()</span></div>
+                        <div class="flex items-center gap-2"><span class="text-orange font-mono text-xs">→</span><span class="text-white/60 font-mono text-xs">inventory.query()</span></div>
+                        <div class="flex items-center gap-2"><span class="text-orange font-mono text-xs">→</span><span class="text-white/60 font-mono text-xs">campaign.manage()</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="for-developers.html" class="btn-orange" data-i18n="home.developers.cta">View API Docs &amp; Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         AI COMMERCE
+    ═══════════════════════════════════════════════════════ -->
+    <section id="ai-commerce" style="background:white;" class="section-pad">
+        <div class="container">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <p class="eyebrow" data-i18n="home.aiCommerce.eyebrow">For AI Commerce</p>
+                    <h2 class="section-title mb-6" data-i18n="home.aiCommerce.title">
+                        THE COUPON INFRASTRUCTURE<br>FOR <span class="section-title-accent">AI AGENTS</span>
+                    </h2>
+                    <p class="text-mist text-lg mb-10" style="font-family:'Outfit',sans-serif;" data-i18n="home.aiCommerce.description">
+                        When an LLM recommends a deal, it comes from the Mezzofy Exchange — tokenized, fraud-proof, and ready to redeem.
+                    </p>
+                    <a href="for-ai-commerce.html" class="btn-orange" data-i18n="home.aiCommerce.cta">Explore AI Commerce</a>
+                </div>
+
+                <div class="space-y-3">
+                    <div class="protocol-row">
+                        <span class="bg-orange text-white text-xs font-bold px-3 py-1.5 rounded-full whitespace-nowrap font-mono" data-i18n="home.aiCommerce.acp.badge">LIVE · SEP 2025</span>
+                        <div class="flex-1">
+                            <div class="font-bold text-ink text-sm" style="font-family:'Outfit',sans-serif;" data-i18n="home.aiCommerce.acp.title">ChatGPT — Agentic Commerce Protocol (ACP)</div>
+                            <div class="text-mist text-xs mt-0.5" style="font-family:'Outfit',sans-serif;" data-i18n="home.aiCommerce.acp.description">Instant Checkout inside chat</div>
+                        </div>
+                        <div class="text-right">
+                            <div class="font-display text-orange text-2xl">900M+</div>
+                            <div class="text-mist text-xs font-mono" data-i18n="home.aiCommerce.acp.stat">weekly users</div>
+                        </div>
+                    </div>
+                    <div class="protocol-row">
+                        <span class="bg-ink text-white text-xs font-bold px-3 py-1.5 rounded-full whitespace-nowrap font-mono" data-i18n="home.aiCommerce.ucp.badge">ANNOUNCED · JAN 2026</span>
+                        <div class="flex-1">
+                            <div class="font-bold text-ink text-sm" style="font-family:'Outfit',sans-serif;" data-i18n="home.aiCommerce.ucp.title">Google Gemini — Universal Commerce Protocol (UCP)</div>
+                            <div class="text-mist text-xs mt-0.5" style="font-family:'Outfit',sans-serif;" data-i18n="home.aiCommerce.ucp.description">Shopping Graph, Maps, Search, Assistant</div>
+                        </div>
+                        <div class="text-right">
+                            <div class="font-display text-orange text-2xl">45B</div>
+                            <div class="text-mist text-xs font-mono" data-i18n="home.aiCommerce.ucp.stat">item graph</div>
+                        </div>
+                    </div>
+                    <div class="protocol-row">
+                        <span class="border border-stone text-mist text-xs font-bold px-3 py-1.5 rounded-full whitespace-nowrap font-mono" data-i18n="home.aiCommerce.mcp.badge">EXPANDING</span>
+                        <div class="flex-1">
+                            <div class="font-bold text-ink text-sm" style="font-family:'Outfit',sans-serif;" data-i18n="home.aiCommerce.mcp.title">Kimi &amp; Regional AI — MCP / REST API</div>
+                            <div class="text-mist text-xs mt-0.5" style="font-family:'Outfit',sans-serif;" data-i18n="home.aiCommerce.mcp.description">CN + HK + TW market access</div>
+                        </div>
+                        <div class="text-right">
+                            <div class="font-display text-orange text-2xl">CN+</div>
+                            <div class="text-mist text-xs font-mono" data-i18n="home.aiCommerce.mcp.stat">market access</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         TOKENIZATION
+    ═══════════════════════════════════════════════════════ -->
+    <section id="tokenization" style="background:#0A0A0A;" class="section-pad">
+        <div class="container">
+            <div class="text-center mb-14">
+                <p class="eyebrow">EXCHANGE CORE</p>
+                <h2 class="section-title section-title-light mb-4" data-i18n="home.tokenization.title">
+                    WHERE COMMERCE<br>MEETS <span style="color:#FF6B35;">SECURITY</span>
+                </h2>
+                <p class="text-white/40 max-w-2xl mx-auto" style="font-family:'Outfit',sans-serif;" data-i18n="home.tokenization.description">
+                    Our Layer 2 Core transforms simple promotional codes into unique, trackable digital assets.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-5">
+                <div class="token-step">
+                    <span class="token-step-number">1</span>
+                    <div class="icon-box" style="background:rgba(255,107,53,0.15); margin-bottom:16px;">
+                        <svg class="w-5 h-5 text-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/></svg>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-3" style="font-family:'Outfit',sans-serif;" data-i18n="home.tokenization.component1.title">Standardization &amp; Tokenization</h3>
+                    <p class="text-white/40 text-sm" style="font-family:'Outfit',sans-serif;" data-i18n="home.tokenization.component1.description">Every digital coupon is tokenized upon ingestion, converting it into a secure, single-use digital asset.</p>
+                </div>
+                <div class="token-step">
+                    <span class="token-step-number">2</span>
+                    <div class="icon-box" style="background:rgba(255,107,53,0.15); margin-bottom:16px;">
+                        <svg class="w-5 h-5 text-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-3" style="font-family:'Outfit',sans-serif;" data-i18n="home.tokenization.component2.title">Asset Linkage</h3>
+                    <p class="text-white/40 text-sm" style="font-family:'Outfit',sans-serif;" data-i18n="home.tokenization.component2.description">Foundation for linking to Real-World Assets (RWA), expanding into the Web3/DeFi asset space.</p>
+                </div>
+                <div class="token-step">
+                    <span class="token-step-number">3</span>
+                    <div class="icon-box" style="background:rgba(255,107,53,0.15); margin-bottom:16px;">
+                        <svg class="w-5 h-5 text-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-3" style="font-family:'Outfit',sans-serif;" data-i18n="home.tokenization.component3.title">Clearinghouse</h3>
+                    <p class="text-white/40 text-sm" style="font-family:'Outfit',sans-serif;">The core manages all consignment, financial reconciliation, and fraudless validation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         FINAL CTA
+    ═══════════════════════════════════════════════════════ -->
+    <section class="cta-section section-pad-sm">
+        <div class="container relative z-10">
+            <div class="max-w-3xl">
+                <h2 class="font-display text-white mb-4" style="font-family:'Bebas Neue',sans-serif; font-size:clamp(2.5rem,6vw,5rem); line-height:0.95; letter-spacing:0.03em;">
+                    READY TO JOIN THE EXCHANGE?
+                </h2>
+                <p class="text-white/80 text-lg mb-8" style="font-family:'Outfit',sans-serif;">
+                    List your inventory as a merchant, access verified coupons as a distributor, or integrate via API as a developer.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="contact.html" class="btn-ink text-center">Get Started Today</a>
+                    <a href="for-merchants.html" class="btn-white text-center">Learn About Merchants</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
+         FOOTER
+    ═══════════════════════════════════════════════════════ -->
+    <footer style="background:#0A0A0A; color:rgba(255,255,255,0.4);" class="pt-16 pb-8">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+                <div class="lg:col-span-1">
+                    <div class="font-display text-orange text-2xl mb-4" style="font-family:'Bebas Neue',sans-serif; letter-spacing:0.08em;">MEZZOFY</div>
+                    <p class="text-sm" style="font-family:'Outfit',sans-serif;" data-i18n="common.footer.tagline">Building the future of coupon infrastructure through the Mezzofy Exchange Protocol.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-white text-sm mb-4" style="font-family:'Outfit',sans-serif;" data-i18n="common.footer.solutions.title">Solutions</h3>
+                    <ul class="space-y-2 text-sm" style="font-family:'Outfit',sans-serif;">
+                        <li><a href="for-merchants.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.merchants">For Merchants</a></li>
+                        <li><a href="for-distributors.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.distributors">For Distributors</a></li>
+                        <li><a href="for-developers.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.developers">For Developers</a></li>
+                        <li><a href="for-ai-commerce.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.aiCommerce">For AI Commerce</a></li>
+                        <li><a href="index.html#product-ecosystem" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.ecosystem">Product Ecosystem</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-white text-sm mb-4" style="font-family:'Outfit',sans-serif;" data-i18n="common.footer.products.title">Products</h3>
+                    <ul class="space-y-2 text-sm" style="font-family:'Outfit',sans-serif;">
+                        <li><a href="coupon-management.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.management">Management</a></li>
+                        <li><a href="coupon-marketplace.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.marketplace">Marketplace</a></li>
+                        <li><a href="coupon-nfc.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.nfc">NFC</a></li>
+                        <li><a href="coupon-campaign.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.marketing">Marketing</a></li>
+                        <li><a href="coupon-wallet.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.wallet">Wallet</a></li>
+                        <li><a href="coupon-serial.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.serial">Serial</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-white text-sm mb-4" style="font-family:'Outfit',sans-serif;" data-i18n="common.footer.resources.title">Resources</h3>
+                    <ul class="space-y-2 text-sm" style="font-family:'Outfit',sans-serif;">
+                        <li><a href="coupon-playbook.html" class="hover:text-white transition-colors" data-i18n="common.footer.resources.playbook">Coupon Playbook</a></li>
+                        <li><a href="api-doc.html" class="hover:text-white transition-colors" data-i18n="common.footer.resources.apiDoc">API Documentation</a></li>
+                        <li><a href="api-use-case.html" class="hover:text-white transition-colors" data-i18n="common.footer.resources.apiUseCase">API Use Case</a></li>
+                        <li><a href="support.html" class="hover:text-white transition-colors" data-i18n="common.footer.resources.support">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-white text-sm mb-4" style="font-family:'Outfit',sans-serif;" data-i18n="common.footer.company.title">Company</h3>
+                    <ul class="space-y-2 text-sm" style="font-family:'Outfit',sans-serif;">
+                        <li><a href="about.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.about">About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.contact">Contact Us</a></li>
+                        <li><a href="news-press.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.news">News & Press</a></li>
+                        <li><a href="investors.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.investors">Investors</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t pt-8 text-center text-xs" style="border-color:rgba(255,255,255,0.06); font-family:'Outfit',sans-serif;">
+                <p data-i18n="common.footer.copyright">&copy; 2026 Mezzofy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
