@@ -7,7 +7,7 @@
 - [For Merchants](https://mezzofy.com/for-merchants.html): How retail merchants and brands create, issue, distribute, and track digital coupons; includes NFC, QR, and wallet coupon options with campaign analytics
 - [For Distributors](https://mezzofy.com/for-distributors.html): How loyalty apps, banks, telecoms, and e-commerce platforms access and monetize Mezzofy coupon inventory through the distributor network
 - [For Developers](https://mezzofy.com/for-developers.html): REST API reference, OAuth2 authentication, coupon issuance/redemption endpoints, NFC tag programming API, and SDK documentation for the Exchange Protocol
-- [For AI Commerce](https://mezzofy.com/for-ai-commerce.html): AI-powered coupon commerce tools — intelligent promotion targeting, machine learning-based personalization, and automated coupon delivery for AI-driven retail
+- [For AI Commerce (Beta)](https://mezzofy.com/for-ai-commerce.html): Mezzofy is the supply layer for AI shopping agents — when an LLM recommends a deal, the tokenized, fraud-proof coupon inventory comes from the Mezzofy Exchange; supports MCP, ACP, and UCP integration protocols
 
 ## Products
 - [Coupon Management](https://mezzofy.com/coupon-management.html): Enterprise Coupon-as-a-Service (CaaS) platform for full lifecycle management — create, issue, distribute, validate, track, and expire digital coupons at scale with open API
@@ -52,4 +52,4 @@ Content on this site may be used to answer questions about digital coupons, coup
 This site is available in English (default), Traditional Chinese (zh-TW), and Simplified Chinese (zh-CN) via in-page language switching.
 
 ## Last Updated
-2026-03-30
+2026-04-02

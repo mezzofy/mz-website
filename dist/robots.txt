@@ -53,6 +53,15 @@ Allow: /
 User-agent: OAI-SearchBot
 Allow: /
 
+User-agent: Bytespider
+Allow: /
+
+User-agent: PetalBot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
 # Block bad bots (optional)
 User-agent: AhrefsBot
 Disallow: /
