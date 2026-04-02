@@ -66,7 +66,17 @@
       "Bash(git mv:*)",
       "Bash(/dev/null grep:*)",
       "Read(//c/Mezzofy/workspace//**)",
-      "Read(//c/Mezzofy//**)"
+      "Read(//c/Mezzofy//**)",
+      "Bash(grep -v '^#$')",
+      "Bash(/tmp/check_links.sh:*)",
+      "Bash(bash /tmp/check_links.sh)",
+      "Bash(/tmp/full_audit.sh:*)",
+      "Bash(bash /tmp/full_audit.sh)",
+      "Bash(/tmp/complete_audit.sh:*)",
+      "Bash(bash /tmp/complete_audit.sh)",
+      "Bash(do)",
+      "Bash(echo \"=== $f ===\")",
+      "Read(//c/Mezzofy/workspace/mz-website/dist/blog/**)"
     ],
     "deny": [],
     "ask": []
