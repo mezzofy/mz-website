@@ -87,7 +87,8 @@
       "Bash(if grep:*)",
       "Bash(then)",
       "Bash(echo \"FOUND: $key\")",
-      "Bash(else)"
+      "Bash(else)",
+      "Bash(bash /tmp/parse_html.sh)"
     ],
     "deny": [],
     "ask": []
