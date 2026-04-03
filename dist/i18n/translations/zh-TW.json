@@ -677,8 +677,7 @@
       },
       "step2": {
         "title": "分發",
-        "description": "透過<a href=\"coupon-nfc.html\" class=\"text-primary-orange hover:underline\">NFC</a>、<a href=\"coupon-campaign.html\" class=\"text-primary-orange hover:underline\">行銷</a>、<a href=\"coupon-marketplace.html\" class=\"text-primary-orange hover:underline\">市集</a>部署",
-        "channels": "<span class=\"px-3 py-1 bg-light-grey rounded-full text-xs font-semibold text-dark-grey\">Email</span><span class=\"px-3 py-1 bg-light-grey rounded-full text-xs font-semibold text-dark-grey\">SMS</span><span class=\"px-3 py-1 bg-light-grey rounded-full text-xs font-semibold text-dark-grey\">Chat</span><span class=\"px-3 py-1 bg-primary-orange rounded-full text-xs font-semibold text-white\">API</span>"
+        "description": "透過<a href=\"coupon-nfc.html\" class=\"text-primary-orange hover:underline\">NFC</a>、<a href=\"coupon-campaign.html\" class=\"text-primary-orange hover:underline\">行銷</a>、<a href=\"coupon-marketplace.html\" class=\"text-primary-orange hover:underline\">市集</a>部署"
       },
       "step3": {
         "title": "優化",
@@ -705,7 +704,7 @@
       "small": {
         "title": "小型商家與新創企業",
         "size": "1-10 個據點",
-        "description": "開始使用數位電子券，輕鬆簡單",
+        "description": "開始使用數位電子券",
         "bundle": "→ 入門套裝",
         "contactSales": "聯繫銷售 →"
       }
@@ -716,22 +715,22 @@
       "management": {
         "title": "管理系統",
         "description": "電子券生命週期管理的企業級基礎設施",
-        "learnMore": "探索電子券管理系統"
+        "learnMore": "探索電子券管理系統 →"
       },
       "nfc": {
         "title": "電子券 NFC",
         "description": "實體零售接觸點，支援輕觸下載",
-        "learnMore": "探索 NFC 即觸即兌"
+        "learnMore": "探索 NFC 即觸即兌 →"
       },
       "marketing": {
         "title": "電子券行銷",
         "description": "將行銷費用轉化為收入來源",
-        "learnMore": "探索電子券行銷工具"
+        "learnMore": "探索電子券行銷工具 →"
       },
       "wallet": {
         "title": "電子券錢包",
         "description": "多平台客戶體驗層",
-        "learnMore": "查看數位錢包功能"
+        "learnMore": "查看數位錢包功能 →"
       }
     },
     "benefits": {

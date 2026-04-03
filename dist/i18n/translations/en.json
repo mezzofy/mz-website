@@ -236,7 +236,7 @@
     "aiCommerce": {
       "eyebrow": "For AI Commerce",
       "title": "The Coupon Infrastructure for AI Agents",
-      "description": "When ChatGPT, Gemini, or Kimi recommend a deal, it comes from the Mezzofy Exchange — tokenized, fraud-proof, and ready to redeem. 900M+ weekly AI users. Your merchant inventory. One integration.",
+      "description": "When an LLM recommends a deal, it comes from the Mezzofy Exchange — tokenized, fraud-proof, and ready to redeem. 900M+ weekly AI users. Your merchant inventory. One integration.",
       "acp": {
         "badge": "LIVE · SEP 2025",
         "title": "ChatGPT — Agentic Commerce Protocol (ACP)",
@@ -2546,57 +2546,28 @@
   "articles": {
     "news": {
       "cioworldFeature": {
-        "title": "TheCIOWorld Features Mezzofy: Transforming Coupons for a Greener Future",
-        "headings": {
-          "nfcInnovation": "Redefining Digital Coupons with NFC Technology",
-          "ecoFriendly": "Eco-Friendly Coupon Marketing for a Greener Future"
-        }
+        "title": "TheCIOWorld Features Mezzofy: Transforming Coupons for a Greener Future"
       },
       "dualEsgAwards": {
-        "title": "Mezzofy Honored with Dual Awards at the ESG and Sustainable Development Forum 2024",
-        "headings": {
-          "recognition": "Dual ESG Recognition at Sustainable Development Forum 2024",
-          "environmental": "Replacing Paper Coupons to Reduce Environmental Footprint"
-        }
+        "title": "Mezzofy Honored with Dual Awards at the ESG and Sustainable Development Forum 2024"
       },
       "edigestLeadingSolution": {
         "title": "eDigest Exclusive: Asia-Pacific's Leading Digital Coupon Solution"
       },
       "ejtech300mCoupons": {
-        "title": "EJTech Highlights: Mezzofy's Cloud Platform Distributes 300M Digital Coupons Across APAC",
-        "headings": {
-          "cloudPlatform": "Cloud-Based Platform Recognized for Digital Coupon Leadership",
-          "distribution": "300 Million Coupons: Eco-Friendly Multi-Channel Distribution Across APAC"
-        }
+        "title": "EJTech Highlights: Mezzofy's Cloud Platform Distributes 300M Digital Coupons Across APAC"
       },
       "forbesDickyYin": {
-        "title": "Forbes China Recognizes Dicky Yin for Outstanding Leadership in Innovation",
-        "headings": {
-          "recognition": "Forbes China Honors Dicky Yin for Outstanding Leadership in Innovation"
-        }
+        "title": "Forbes China Recognizes Dicky Yin for Outstanding Leadership in Innovation"
       },
       "fundingAnnouncement": {
-        "title": "Mezzofy Raised USD 2 Million Pre-Series A Funding Round",
-        "headings": {
-          "funding": "Mezzofy Secures USD 2 Million Pre-Series A Funding Round",
-          "market": "Targeting a USD 29.7 Billion Global Digital Coupon Market",
-          "traction": "400 Million Coupons Managed Across 15 Markets"
-        }
+        "title": "Mezzofy Raised USD 2 Million Pre-Series A Funding Round"
       },
       "techappleInnovationIndex": {
-        "title": "TechApple Features: Mezzofy Recognized as 3-Star SME in 2024 Corporate Innovation Index",
-        "headings": {
-          "recognition": "Mezzofy Named 3-Star SME in 2024 Corporate Innovation Index",
-          "transformation": "Driving Cross-Sector Digital Transformation in Hong Kong"
-        }
+        "title": "TechApple Features: Mezzofy Recognized as 3-Star SME in 2024 Corporate Innovation Index"
       },
       "treasureGlobalPartnership": {
-        "title": "Mezzofy Partners with Treasure Global to Accelerate Digital Coupon Expansion in Malaysia",
-        "headings": {
-          "partnership": "Mezzofy and Treasure Global Partner to Expand Digital Coupons in Malaysia",
-          "scale": "USD 40 Billion in Transactions Across 15 Global Markets",
-          "platform": "Coupon-as-a-Service Platform Driving Revenue Growth"
-        }
+        "title": "Mezzofy Partners with Treasure Global to Accelerate Digital Coupon Expansion in Malaysia"
       }
     },
     "blog": {
