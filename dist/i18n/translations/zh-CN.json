@@ -2506,5 +2506,32 @@
         "title": "科技主导的智慧零售 — NFC 电子券驱动冲动购买"
       }
     }
+  },
+  "campaign": {
+    "types": {
+      "title": "10+ 活动类型。一个平台。",
+      "subtitle": "Mezzofy 赋予营销与销售团队灵活执行各类活动的能力——所有功能集于一个统一平台。",
+      "single": "单一优惠",
+      "singleDesc": "一张优惠券，一笔交易",
+      "bundle": "组合优惠",
+      "bundleDesc": "组合多项优惠",
+      "event": "活动促销",
+      "eventDesc": "限时活动营销",
+      "ticketing": "票务系统",
+      "ticketingDesc": "入场券与通行证",
+      "luckyDraw": "幸运抽奖",
+      "luckyDrawDesc": "游戏化促销活动",
+      "card": "储值卡",
+      "cardDesc": "会员卡与预付卡",
+      "gift": "礼品券",
+      "giftDesc": "礼品券与奖励",
+      "deals": "特惠优惠",
+      "dealsDesc": "闪购与折扣优惠",
+      "private": "私人优惠",
+      "privateDesc": "独家会员礼遇",
+      "more": "更多类型",
+      "moreDesc": "自定义活动类型",
+      "cta": "探索所有活动类型"
+    }
   }
 }

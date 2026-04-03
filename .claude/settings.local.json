@@ -76,7 +76,18 @@
       "Bash(bash /tmp/complete_audit.sh)",
       "Bash(do)",
       "Bash(echo \"=== $f ===\")",
-      "Read(//c/Mezzofy/workspace/mz-website/dist/blog/**)"
+      "Read(//c/Mezzofy/workspace/mz-website/dist/blog/**)",
+      "Bash(grep -E \"<.{1,20}>\" /c/Mezzofy/workspace/mz-website/dist/i18n/translations/en.json)",
+      "Bash(openssl dgst:*)",
+      "Bash(openssl enc:*)",
+      "Bash(sha512sum)",
+      "Bash(xxd -r -p)",
+      "Bash(xxd)",
+      "Bash(for key:*)",
+      "Bash(if grep:*)",
+      "Bash(then)",
+      "Bash(echo \"FOUND: $key\")",
+      "Bash(else)"
     ],
     "deny": [],
     "ask": []

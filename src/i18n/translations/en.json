@@ -2590,5 +2590,32 @@
         "title": "Tech-led Smart Retail - NFC Coupons Driving Impulse Purchases"
       }
     }
+  },
+  "campaign": {
+    "types": {
+      "title": "10+ Campaign Types. One Platform.",
+      "subtitle": "Mezzofy empowers marketing and sales teams to run any type of campaign — all from a single, unified platform.",
+      "single": "Single",
+      "singleDesc": "One voucher, one deal",
+      "bundle": "Bundle",
+      "bundleDesc": "Group deals together",
+      "event": "Event",
+      "eventDesc": "Time-limited campaigns",
+      "ticketing": "Ticketing",
+      "ticketingDesc": "Entry passes & access",
+      "luckyDraw": "Lucky Draw",
+      "luckyDrawDesc": "Gamified promotions",
+      "card": "Card",
+      "cardDesc": "Loyalty & prepaid cards",
+      "gift": "Gift",
+      "giftDesc": "Gift vouchers & rewards",
+      "deals": "Deals",
+      "dealsDesc": "Flash & discount deals",
+      "private": "Private",
+      "privateDesc": "Exclusive member offers",
+      "more": "And More",
+      "moreDesc": "Custom campaign types",
+      "cta": "Explore All Campaign Types"
+    }
   }
 }
