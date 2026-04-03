@@ -113,11 +113,9 @@ class I18n {
             element.textContent = translation;
           }
         } else {
-          // Check if translation contains HTML — sanitize with DOMPurify before innerHTML
+          // Check if translation contains HTML
           if (translation.includes('<')) {
-            element.innerHTML = (typeof DOMPurify !== 'undefined')
-              ? DOMPurify.sanitize(translation)
-              : translation;
+            element.innerHTML = translation;
           } else {
             element.textContent = translation;
           }
@@ -165,7 +163,7 @@ class I18n {
         value = value[k];
       } else {
         console.warn(`Translation key not found: ${key}`);
-        return null; // Return null so HTML fallback content is preserved
+        return key; // Return key as fallback
       }
     }
 

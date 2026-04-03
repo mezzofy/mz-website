@@ -5,8 +5,10 @@
   "scripts": {
     "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify && npm run copy-i18n && npm run copy-js",
-    "copy-i18n": "xcopy /E /I /Y src\\i18n dist\\i18n",
-    "copy-js": "if not exist dist\\js mkdir dist\\js && xcopy /Y src\\js\\*.js dist\\js"
+    "copy-i18n": "cp -r src/i18n dist/",
+    "copy-js": "mkdir -p dist/js && cp src/js/*.js dist/js/",
+    "upload": "aws s3 sync dist/ s3://mz-website-v3/release-v3/ --delete",
+    "deploy": "npm run upload && ./scripts/deploy-amplify.sh"
   },
   "keywords": [
     "mezzofy",
