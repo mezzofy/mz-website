@@ -425,56 +425,101 @@
     </section>
 
     <!-- Merchant Journey Section -->
-    <section class="bg-white">
+    <section class="bg-white overflow-hidden">
         <div class="section-container">
+            <!-- Section Header -->
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-bold text-primary-black mb-6" data-i18n="merchants.journey.title">
-                    How Does Mezzofy Help Merchants Succeed with Digital Coupons?
+                <span class="inline-block text-xs font-bold tracking-widest text-primary-orange uppercase mb-4 px-3 py-1 bg-primary-orange/8 rounded-full border border-primary-orange/20" data-i18n="merchants.hero.tagline">FOR MERCHANTS</span>
+                <h2 class="text-3xl md:text-5xl font-bold text-primary-black mb-6 leading-tight" data-i18n="merchants.journey.title">
+                    How Does Mezzofy Help Merchants<br class="hidden md:block"> Succeed with Digital Coupons?
                 </h2>
-                <p class="text-base sm:text-lg text-dark-grey leading-relaxed max-w-4xl mx-auto mb-3" data-i18n="merchants.definition">Mezzofy is a digital coupon exchange platform that helps merchants create, distribute, and monetize digital coupons across 15+ Asia-Pacific markets. Using the Mezzofy Exchange Protocol, merchants eliminate coupon liabilities, reach new customers through NFC, marketplace, and digital channels, and generate revenue on every successful redemption — with zero upfront fees.</p>
-                <p class="text-sm text-medium-grey max-w-3xl mx-auto" data-i18n="merchants.journey.description">
-                    How merchants leverage the Mezzofy Exchange Protocol across the coupon lifecycle
-                </p>
+                <p class="text-base sm:text-lg text-dark-grey leading-relaxed max-w-3xl mx-auto mb-2" data-i18n="merchants.definition">Mezzofy is a digital coupon exchange platform that helps merchants create, distribute, and monetize digital coupons across 15+ Asia-Pacific markets. Using the Mezzofy Exchange Protocol, merchants eliminate coupon liabilities, reach new customers through NFC, marketplace, and digital channels, and generate revenue on every successful redemption — with zero upfront fees.</p>
+                <p class="text-sm text-medium-grey max-w-2xl mx-auto" data-i18n="merchants.journey.description">How merchants leverage the Mezzofy Exchange Protocol across the coupon lifecycle</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Step 1: CREATE -->
-                <div class="feature-card text-center">
-                    <div class="w-16 h-16 bg-primary-orange rounded-full flex items-center justify-center mx-auto mb-6">
-                        <span class="text-3xl font-bold text-white">1</span>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4 text-primary-black" data-i18n="merchants.journey.step1.title">CREATE</h3>
-                    <p class="text-dark-grey mb-4 leading-relaxed" data-i18n="merchants.journey.step1.description">
-                        Use <a href="coupon-management.html" class="text-primary-orange hover:underline">Management System</a> to build campaigns with first-party data control
-                    </p>
-                </div>
+            <!-- Journey Steps — connected flow -->
+            <div class="relative">
+                <!-- Connector line (desktop only) -->
+                <div class="hidden md:block absolute top-14 left-[calc(16.666%+2rem)] right-[calc(16.666%+2rem)] h-px bg-gradient-to-r from-primary-orange/30 via-primary-orange to-primary-orange/30 z-0"></div>
 
-                <!-- Step 2: DISTRIBUTE -->
-                <div class="feature-card text-center">
-                    <div class="w-16 h-16 bg-primary-orange rounded-full flex items-center justify-center mx-auto mb-6">
-                        <span class="text-3xl font-bold text-white">2</span>
+                <div class="grid md:grid-cols-3 gap-6 lg:gap-10 relative z-10">
+                    <!-- Step 1: CREATE -->
+                    <div class="group relative bg-white border border-gray-100 rounded-2xl p-8 pt-6 text-center shadow-sm hover:shadow-xl hover:border-primary-orange/30 transition-all duration-300 hover:-translate-y-1">
+                        <!-- Ghost number background -->
+                        <span class="absolute top-4 right-5 text-7xl font-black text-gray-100 select-none leading-none group-hover:text-primary-orange/10 transition-colors duration-300">1</span>
+                        <!-- Step badge -->
+                        <div class="relative z-10 flex flex-col items-center">
+                            <div class="w-14 h-14 bg-primary-orange rounded-full flex items-center justify-center mb-5 shadow-lg shadow-primary-orange/30 group-hover:scale-110 transition-transform duration-300">
+                                <!-- Pencil/create icon -->
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m-4-8h8M3 21h18"/>
+                                </svg>
+                            </div>
+                            <div class="mb-1">
+                                <span class="text-xs font-bold tracking-widest text-medium-grey uppercase">Step 1</span>
+                            </div>
+                            <h3 class="text-xl font-black text-primary-black mb-3 tracking-wide" data-i18n="merchants.journey.step1.title">CREATE</h3>
+                            <p class="text-dark-grey text-sm leading-relaxed" data-i18n="merchants.journey.step1.description">
+                                Use <a href="coupon-management.html" class="text-primary-orange font-semibold hover:underline">Management System</a> to build campaigns with first-party data control
+                            </p>
+                            <div class="mt-4 flex flex-wrap justify-center gap-2">
+                                <span class="px-3 py-1 bg-light-grey rounded-full text-xs font-semibold text-dark-grey">Templates</span>
+                                <span class="px-3 py-1 bg-light-grey rounded-full text-xs font-semibold text-dark-grey">Targeting</span>
+                                <span class="px-3 py-1 bg-primary-orange/10 border border-primary-orange/30 rounded-full text-xs font-semibold text-primary-orange">Tokenized</span>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 text-primary-black" data-i18n="merchants.journey.step2.title">DISTRIBUTE</h3>
-                    <p class="text-dark-grey mb-4 leading-relaxed" data-i18n="merchants.journey.step2.description">
-                        Deploy via <a href="coupon-nfc.html" class="text-primary-orange hover:underline">NFC</a>, <a href="coupon-campaign.html" class="text-primary-orange hover:underline">Marketing</a>, <a href="coupon-marketplace.html" class="text-primary-orange hover:underline">Marketplace</a>
-                    </p>
-                    <div class="flex flex-wrap justify-center gap-2" data-i18n="merchants.journey.step2.channels">
-                        <span class="px-3 py-1 bg-light-grey rounded-full text-xs font-semibold text-dark-grey">Email</span>
-                        <span class="px-3 py-1 bg-light-grey rounded-full text-xs font-semibold text-dark-grey">SMS</span>
-                        <span class="px-3 py-1 bg-light-grey rounded-full text-xs font-semibold text-dark-grey">Chat</span>
-                        <span class="px-3 py-1 bg-primary-orange rounded-full text-xs font-semibold text-white">API</span>
-                    </div>
-                </div>
 
-                <!-- Step 3: OPTIMIZE -->
-                <div class="feature-card text-center">
-                    <div class="w-16 h-16 bg-primary-orange rounded-full flex items-center justify-center mx-auto mb-6">
-                        <span class="text-3xl font-bold text-white">3</span>
+                    <!-- Step 2: DISTRIBUTE -->
+                    <div class="group relative bg-primary-orange rounded-2xl p-8 pt-6 text-center shadow-md shadow-primary-orange/25 hover:shadow-xl hover:shadow-primary-orange/35 transition-all duration-300 hover:-translate-y-1">
+                        <span class="absolute top-4 right-5 text-7xl font-black text-white/10 select-none leading-none">2</span>
+                        <div class="relative z-10 flex flex-col items-center">
+                            <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-5 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                <!-- Share/distribute icon -->
+                                <svg class="w-6 h-6 text-primary-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/>
+                                </svg>
+                            </div>
+                            <div class="mb-1">
+                                <span class="text-xs font-bold tracking-widest text-white/70 uppercase">Step 2</span>
+                            </div>
+                            <h3 class="text-xl font-black text-white mb-3 tracking-wide" data-i18n="merchants.journey.step2.title">DISTRIBUTE</h3>
+                            <p class="text-white/85 text-sm leading-relaxed" data-i18n="merchants.journey.step2.description">
+                                Deploy via <a href="coupon-nfc.html" class="text-white font-semibold underline decoration-white/40 hover:decoration-white">NFC</a>, <a href="coupon-campaign.html" class="text-white font-semibold underline decoration-white/40 hover:decoration-white">Marketing</a>, <a href="coupon-marketplace.html" class="text-white font-semibold underline decoration-white/40 hover:decoration-white">Marketplace</a>
+                            </p>
+                            <div class="mt-4 flex flex-wrap justify-center gap-2" data-i18n="merchants.journey.step2.channels">
+                                <span class="px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white">Email</span>
+                                <span class="px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white">SMS</span>
+                                <span class="px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white">Chat</span>
+                                <span class="px-3 py-1 bg-white rounded-full text-xs font-bold text-primary-orange">API</span>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4 text-primary-black" data-i18n="merchants.journey.step3.title">OPTIMIZE</h3>
-                    <p class="text-dark-grey mb-4 leading-relaxed" data-i18n="merchants.journey.step3.description">
-                        Track with <a href="coupon-playbook.html" class="text-primary-orange hover:underline">Playbook</a> strategies, analyze with <a href="coupon-wallet.html" class="text-primary-orange hover:underline">Wallet</a> insights
-                    </p>
+
+                    <!-- Step 3: OPTIMIZE -->
+                    <div class="group relative bg-white border border-gray-100 rounded-2xl p-8 pt-6 text-center shadow-sm hover:shadow-xl hover:border-primary-orange/30 transition-all duration-300 hover:-translate-y-1">
+                        <span class="absolute top-4 right-5 text-7xl font-black text-gray-100 select-none leading-none group-hover:text-primary-orange/10 transition-colors duration-300">3</span>
+                        <div class="relative z-10 flex flex-col items-center">
+                            <div class="w-14 h-14 bg-primary-orange rounded-full flex items-center justify-center mb-5 shadow-lg shadow-primary-orange/30 group-hover:scale-110 transition-transform duration-300">
+                                <!-- Analytics icon -->
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                </svg>
+                            </div>
+                            <div class="mb-1">
+                                <span class="text-xs font-bold tracking-widest text-medium-grey uppercase">Step 3</span>
+                            </div>
+                            <h3 class="text-xl font-black text-primary-black mb-3 tracking-wide" data-i18n="merchants.journey.step3.title">OPTIMIZE</h3>
+                            <p class="text-dark-grey text-sm leading-relaxed" data-i18n="merchants.journey.step3.description">
+                                Track with <a href="coupon-playbook.html" class="text-primary-orange font-semibold hover:underline">Playbook</a> strategies, analyze with <a href="coupon-wallet.html" class="text-primary-orange font-semibold hover:underline">Wallet</a> insights
+                            </p>
+                            <div class="mt-4 flex flex-wrap justify-center gap-2">
+                                <span class="px-3 py-1 bg-light-grey rounded-full text-xs font-semibold text-dark-grey">A/B Test</span>
+                                <span class="px-3 py-1 bg-light-grey rounded-full text-xs font-semibold text-dark-grey">Analytics</span>
+                                <span class="px-3 py-1 bg-primary-orange/10 border border-primary-orange/30 rounded-full text-xs font-semibold text-primary-orange">Real-time</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
