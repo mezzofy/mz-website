@@ -2559,7 +2559,8 @@
         "callout": {
           "heading": "Read the Full Article",
           "text": "Visit CIOWorld to learn more about Mezzofy's vision for eco-friendly digital coupons."
-        }
+        },
+        "quickAnswer": "Mezzofy uses NFC tap-to-get coupons and integrated wallet functionality to help businesses replace paper coupons with eco-friendly digital alternatives, reducing environmental impact while improving customer engagement."
       },
       "dualEsgAwards": {
         "title": "Mezzofy Honored with Dual Awards at the ESG and Sustainable Development Forum 2024",
@@ -2572,7 +2573,8 @@
           "forum": "Business leaders and sustainability experts convened to discuss ESG trends and integrating Sustainable Development Goals into operations. As a digital coupon platform, Mezzofy reduces environmental impact by replacing paper coupons with digital alternatives, thereby cutting paper waste.",
           "commitment": "The awards reinforce the company's commitment to environmental responsibility and leadership in sustainability. Mr. Tse Chin-wan, Hong Kong SAR Government's Secretary for Environment and Ecology, emphasized business importance in advancing sustainability initiatives.",
           "future": "Mezzofy continues developing solutions benefiting both environment and society. This achievement builds upon Mezzofy's earlier ESG certification."
-        }
+        },
+        "quickAnswer": "Mezzofy received dual ESG recognition at the Sustainable Development Forum 2024, earning the Outstanding ESG Enterprise Award and Sustainable Development Enterprise Certificate for eliminating paper coupon waste."
       },
       "edigestLeadingSolution": {
         "title": "eDigest Exclusive: Asia-Pacific's Leading Digital Coupon Solution",
@@ -2587,7 +2589,8 @@
           "innovative": "The platform distinguishes itself through accessibility and comprehensive features. Businesses can design and deploy digital coupons without requiring extensive technical expertise. The system accommodates multiple coupon formats, including discounts, gift vouchers, and promotional offers, supporting varied marketing approaches.",
           "expanding": "Mezzofy maintains operations across multiple Asia-Pacific countries and has facilitated issuance and management of over <span class=\"font-semibold text-primary-orange\">300 million digital coupons</span>. This extensive reach demonstrates platform scalability and dependability, positioning it as a preferred selection for businesses seeking to strengthen promotional initiatives.",
           "commitment": "The company continues investing in research and development to introduce new features and integrations. By emphasizing innovation, Mezzofy provides businesses with contemporary tools for effective customer engagement and growth acceleration."
-        }
+        },
+        "quickAnswer": "Mezzofy is Asia-Pacific's leading digital coupon platform, having managed over 300 million digital coupons across multiple markets with cloud-based CaaS infrastructure."
       },
       "ejtech300mCoupons": {
         "title": "EJTech Highlights: Mezzofy's Cloud Platform Distributes 300M Digital Coupons Across APAC",
@@ -2600,7 +2603,8 @@
           "platform": "The platform enables businesses to \"create and distribute eco-friendly, paperless coupons efficiently, tapping into a wide range of industries.\" The solution supports direct customer outreach via email, SMS, and social media channels while reducing paper consumption.",
           "scale": "According to EJTech, <span class=\"font-semibold text-primary-orange\">\"With over 300 million digital coupons already distributed,\"</span> Mezzofy demonstrates significant market traction in reshaping how companies connect with consumers sustainably and cost-effectively.",
           "milestone": "This milestone represents a major achievement in the digital transformation of promotional marketing across the Asia-Pacific region. The platform's ability to handle such massive scale while maintaining efficiency and eco-friendliness sets a new standard for the industry."
-        }
+        },
+        "quickAnswer": "Mezzofy's cloud platform has distributed over 300 million eco-friendly digital coupons across Asia-Pacific, enabling businesses to reach customers via email, SMS, and social media."
       },
       "forbesDickyYin": {
         "title": "Forbes China Recognizes Dicky Yin for Outstanding Leadership in Innovation",
@@ -2621,7 +2625,8 @@
         "callout": {
           "heading": "Read the Full Forbes China Article",
           "text": "Learn more about Dicky Yin's leadership philosophy and Mezzofy's mission."
-        }
+        },
+        "quickAnswer": "Forbes China recognized Mezzofy CEO Dicky Yin for outstanding leadership in innovation, honoring his work transforming the digital coupon sector with sustainable, transferable digital coupons."
       },
       "fundingAnnouncement": {
         "title": "Mezzofy Raised USD 2 Million Pre-Series A Funding Round",
@@ -2639,7 +2644,8 @@
         "quote": {
           "text": "\"The growth of digital payments and e-commerce drives the rise of digital coupons. We addressed this by making digital coupons transferable.\"",
           "attribution": "— Dicky Ying, CEO"
-        }
+        },
+        "quickAnswer": "Mezzofy raised USD 2 million Pre-Series A funding to expand globally, managing 400 million digital coupons across 15 markets for nearly 100 Asian brands including Maxim's, Starbucks, Shell, and Hyatt."
       },
       "techappleInnovationIndex": {
         "title": "TechApple Features: Mezzofy Recognized as 3-Star SME in 2024 Corporate Innovation Index",
@@ -2652,7 +2658,8 @@
           "recognition": "This marked the inaugural year SMEs received evaluation. Thirty-seven organizations achieved star ratings, with <span class=\"font-semibold text-primary-orange\">Mezzofy (Hong Kong) Limited earning three stars</span> \"for its digital couponing contributions.\"",
           "collaboration": "Backed by the Hong Kong government and CUHK's APIB, the initiative promotes cross-sector collaboration and digital transformation. It furnishes data for policymakers while recognizing enterprises propelling economic progress through originality and adaptability.",
           "future": "The index continues encouraging enterprises of all dimensions to adopt innovative approaches and strengthen their competitive positions, establishing Hong Kong's trajectory as a worldwide innovation powerhouse."
-        }
+        },
+        "quickAnswer": "Mezzofy earned 3-star recognition in the 2024 Corporate Innovation Index, recognized for digital couponing contributions to Hong Kong's innovation ecosystem as an inaugural SME recipient."
       },
       "treasureGlobalPartnership": {
         "title": "Mezzofy Partners with Treasure Global to Accelerate Digital Coupon Expansion in Malaysia",
@@ -2670,8 +2677,10 @@
         "quote": {
           "text": "\"Treasure Global's strong presence and market insight make them a great partner to scale our solution in Malaysia.\"",
           "attribution": "— Dicky Ying, CEO of Mezzofy"
-        }
-      }
+        },
+        "quickAnswer": "Mezzofy partnered with Treasure Global as exclusive distributor in Malaysia, targeting USD 2–4 million in annual recurring revenue within the first year of the Asia-Pacific expansion."
+      },
+      "quickAnswerLabel": "Quick Answer"
     },
     "blog": {
       "nfcParknshop": {
