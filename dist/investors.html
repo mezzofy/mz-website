@@ -165,6 +165,38 @@
     <link rel="shortcut icon" href="favicon.png">
     <link rel="stylesheet" href="output.css">
 
+    <!-- Organization + FundingRound Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Mezzofy",
+      "alternateName": "Mezzofy (Hong Kong) Limited",
+      "url": "https://mezzofy.com",
+      "logo": "https://mezzofy.com/assets/images/logo.png",
+      "description": "Mezzofy is the Global Coupon Exchange Protocol — a digital coupon infrastructure platform managing over 400 million coupons across 15 Asia-Pacific markets for nearly 100 brands.",
+      "foundingDate": "2017",
+      "areaServed": ["HK", "SG", "MY", "TW", "CN", "JP", "KR", "TH", "PH", "AU"],
+      "knowsAbout": ["Digital Coupons", "Coupon Management", "NFC Technology", "Retail Technology", "Coupon Exchange Protocol"],
+      "sameAs": ["https://www.linkedin.com/company/mezzofy"],
+      "funding": {
+        "@type": "Grant",
+        "name": "Pre-Series A Funding Round",
+        "description": "USD 2 million Pre-Series A funding round completed September 2024 to support global expansion and Web3 product development.",
+        "amount": {
+          "@type": "MonetaryAmount",
+          "currency": "USD",
+          "value": 2000000
+        },
+        "funder": [
+          {"@type": "Organization", "name": "Isola Capital IPVF VII"},
+          {"@type": "Organization", "name": "Ooosh Tech Lab"},
+          {"@type": "Organization", "name": "Hong Kong ITVF (Innovation and Technology Venture Fund)"}
+        ]
+      }
+    }
+    </script>
+
     <!-- SpeakableSpecification -->
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"WebPage","url":"https://mezzofy.com/investors.html","speakable":{"@type":"SpeakableSpecification","cssSelector":["h1","h2"]}}

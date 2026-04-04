@@ -668,8 +668,9 @@
       "listInventory": "列出您的庫存",
       "viewBundles": "查看產品組合"
     },
+    "definition": "Mezzofy 是一個數碼優惠券交換平台，協助商家在亞太 15 個以上市場創建、分發及變現數碼優惠券。透過 Mezzofy 交換協議，商家可消除優惠券負債，透過 NFC、市集及數碼渠道開拓新客戶，並在每次成功兌換時獲得收益——零前期費用。",
     "journey": {
-      "title": "您的電子券成功之旅",
+      "title": "Mezzofy 如何協助商家在數碼優惠券領域取得成功？",
       "description": "商家如何在電子券生命週期中善用 Mezzofy 交換協議",
       "step1": {
         "title": "創建",
@@ -734,7 +735,7 @@
       }
     },
     "benefits": {
-      "title": "商家選擇 Mezzofy 的理由",
+      "title": "為何商家選擇 Mezzofy？",
       "zeroUpfront": {
         "title": "零前期成本",
         "description": "僅在電子券兌換時付費。無設置費或每月最低消費。"
@@ -913,7 +914,7 @@
     },
     "buyer": {
       "badge": "庫存買家",
-      "title": "採購、分發與盈利",
+      "title": "分銷商如何採購電子券庫存並獲取收益？",
       "subtitle": "存取來自數百家商戶的經核實電子券庫存，透過您的平台分發並從每次成功兌換中獲得收益。",
       "whoFor": "適合對象",
       "howWorks": "運作方式",
@@ -1013,7 +1014,7 @@
     },
     "partner": {
       "badge": "分發合作夥伴",
-      "title": "授權我們的平台並獲得收益",
+      "title": "如何授權 Mezzofy 平台以建立您的分發網絡？",
       "subtitle": "整合我們的Bridge API，透過您自己的平台分發經核實的電子券。無庫存風險，經常性收益模式。",
       "whoFor": "適合對象",
       "howWorks": "運作方式",
@@ -1227,7 +1228,7 @@
       "getApiKey": "取得 API 金鑰"
     },
     "useCases": {
-      "heading": "您可以建構什麼",
+      "heading": "您可以用 Mezzofy API 建構什麼？",
       "description": "使用 Mezzofy 交換協定為您的應用程式或服務添加電子券超能力",
       "integrate": {
         "title": "整合電子券",
@@ -1271,7 +1272,7 @@
       }
     },
     "features": {
-      "heading": "為開發者建構",
+      "heading": "Mezzofy 為開發者提供哪些技術功能？",
       "description": "我們的平台提供現代開發者期望的工具和彈性",
       "rest": {
         "title": "RESTful API",
@@ -2409,7 +2410,9 @@
   },
   "articles": {
     "news": {
+      "quickAnswerLabel": "快速解答",
       "cioworldFeature": {
+        "quickAnswer": "Mezzofy 利用 NFC 輕觸領取優惠券及整合電子錢包功能，協助企業以環保數碼替代品取代紙本優惠券，在降低環境影響的同時提升顧客互動。",
         "title": "TheCIOWorld 專題報導 Mezzofy：以科技打造更環保的優惠券未來",
         "headings": {
           "nfcInnovation": "以 NFC 技術重新定義數碼優惠券",
@@ -2426,6 +2429,7 @@
         }
       },
       "dualEsgAwards": {
+        "quickAnswer": "Mezzofy 於 2024 可持續發展論壇榮獲雙料 ESG 殊榮，憑藉消除紙本優惠券廢棄物的成就，獲頒「傑出 ESG 企業獎」及「可持續發展企業認證」。",
         "title": "Mezzofy 榮獲「ESG 及可持續發展論壇暨頒獎典禮 2024」雙項殊榮",
         "headings": {
           "recognition": "2024 可持續發展論壇雙料 ESG 殊榮",
@@ -2439,6 +2443,7 @@
         }
       },
       "edigestLeadingSolution": {
+        "quickAnswer": "Mezzofy 是亞太區領先的數碼優惠券平台，透過雲端 CaaS 基礎設施在多個市場管理逾 3 億張數碼優惠券。",
         "title": "eDigest 獨家報導：亞太區領先數碼優惠券解決方案",
         "headings": {
           "pioneering": "開創亞太區數碼優惠券解決方案先河",
@@ -2454,6 +2459,7 @@
         }
       },
       "ejtech300mCoupons": {
+        "quickAnswer": "Mezzofy 的雲端平台已在亞太區分發逾 3 億張環保數碼優惠券，讓企業透過電子郵件、短訊及社交媒體觸及顧客。",
         "title": "EJTech 報導：Mezzofy 雲端平台於亞太區分發逾 3 億張數碼優惠券",
         "headings": {
           "cloudPlatform": "雲端平台獲認可為數碼優惠券行業領導者",
@@ -2467,6 +2473,7 @@
         }
       },
       "forbesDickyYin": {
+        "quickAnswer": "Forbes China 表彰 Mezzofy 行政總裁尹健強在創新領域的傑出領導力，肯定其以可持續可轉讓數碼優惠券革新行業的貢獻。",
         "title": "Forbes China 表彰 Dicky Yin 在創新領域的傑出領導力",
         "headings": {
           "recognition": "Forbes China 表彰 Dicky Yin 在創新領域的傑出領導力",
@@ -2488,6 +2495,7 @@
         }
       },
       "fundingAnnouncement": {
+        "quickAnswer": "Mezzofy 完成 200 萬美元 Pre-Series A 融資以拓展全球業務，在 15 個市場管理 4 億張數碼優惠券，服務客戶涵蓋美心、星巴克、殼牌及凱悅等近 100 個亞洲品牌。",
         "title": "Mezzofy 完成 200 萬美元 Pre-Series A 融資輪",
         "headings": {
           "funding": "Mezzofy 完成 200 萬美元 Pre-Series A 融資輪",
@@ -2506,6 +2514,7 @@
         }
       },
       "techappleInnovationIndex": {
+        "quickAnswer": "Mezzofy 於 2024 企業創新指數獲評 3 星，作為首屆中小企評核的入選者，憑藉數碼優惠券對香港創新生態系統的貢獻獲得認可。",
         "title": "TechApple 報導：Mezzofy 於 2024 企業創新指數獲評 3 星中小企",
         "headings": {
           "recognition": "Mezzofy 於 2024 企業創新指數獲評 3 星中小企",
@@ -2519,6 +2528,7 @@
         }
       },
       "treasureGlobalPartnership": {
+        "quickAnswer": "Mezzofy 與 Treasure Global 合作成為馬來西亞獨家分銷商，目標在亞太區擴張首年實現 200 至 400 萬美元年度經常性收入。",
         "title": "Mezzofy 與 Treasure Global 合作，加速數碼優惠券於馬來西亞的擴張",
         "headings": {
           "partnership": "Mezzofy 與 Treasure Global 合作，拓展馬來西亞數碼優惠券業務",
@@ -2541,11 +2551,11 @@
       "nfcParknshop": {
         "title": "Mezzofy 助品牌設置電子券到240 間百佳 NFC 標籤，全程代辦、無需協調",
         "headings": {
-          "introduction": "簡介",
-          "challenges": "挑戰概述",
-          "service": "服務方案",
-          "benefits": "核心優勢",
-          "applications": "目標應用場景"
+          "introduction": "Mezzofy 的百佳 NFC 優惠券服務如何運作？",
+          "challenges": "品牌在零售促銷中面臨哪些挑戰？",
+          "service": "一站式服務如何消除繁瑣流程？",
+          "benefits": "NFC 優惠券分發有哪些核心優勢？",
+          "applications": "哪些企業適合使用此服務？"
         },
         "paragraphs": {
           "intro": "對於許多快消品及消費品牌而言，透過實體零售渠道執行推廣活動涉及大量協調工作及程序複雜性。",
@@ -2567,11 +2577,11 @@
       "eCouponsPreference": {
         "title": "60% 消費者偏好電子優惠券：數碼時代零售業的啟示",
         "headings": {
-          "rise": "電子優惠券的崛起",
-          "footTraffic": "帶動客流量與銷售額",
-          "nfc": "NFC 技術：簡化核銷流程",
-          "ai": "AI 個人化推薦",
-          "location": "位置化行銷"
+          "rise": "為何 60% 消費者偏好電子優惠券？",
+          "footTraffic": "數碼優惠券如何帶動客流量與銷售額？",
+          "nfc": "NFC 技術如何簡化優惠券核銷？",
+          "ai": "AI 如何提升數碼優惠券個人化？",
+          "location": "位置化行銷如何提升核銷率？"
         },
         "paragraphs": {
           "rise": "「60% 消費者偏好電子優惠券」這一數據標誌著購物行為的深刻轉變。數碼優惠券已成為企業關鍵的互動工具，尤其在結合 NFC 及 AI 技術後更為突出。這一偏好反映了消費者對便捷、快速及個人化購物體驗的渴望。",
@@ -2587,11 +2597,11 @@
       "environmentalExcellence": {
         "title": "香港環保卓越計劃 — 以數碼優惠券節省成本、保護森林",
         "headings": {
-          "impact": "紙本優惠券的環境影響",
-          "waste": "廢物問題",
-          "business": "數碼解決方案的商業優勢",
-          "demand": "消費者對可持續選擇的需求",
-          "implementation": "實施步驟"
+          "impact": "紙本優惠券對環境有何影響？",
+          "waste": "紙本優惠券浪費問題有多嚴重？",
+          "business": "數碼優惠券提供哪些商業優勢？",
+          "demand": "消費者為何需要可持續優惠券選擇？",
+          "implementation": "企業如何轉型至數碼優惠券？"
         },
         "paragraphs": {
           "impact": "全球每年分發逾 1,360 億張紙本優惠券，摧毀約 500 萬棵樹木。造紙業是空氣、水源及土壤的第三大工業污染源。傳統優惠券系統的環境代價遠超簡單物流——它對地球自然資源及生態系統造成沉重負擔。",
@@ -2619,13 +2629,13 @@
       "hotelTechInnovation": {
         "title": "科技創新為何是酒店成功的關鍵",
         "headings": {
-          "challenges": "行業挑戰",
-          "travelers": "旅客的期望",
-          "nfc": "NFC 技術提升賓客體驗",
+          "challenges": "酒店業今日面臨哪些主要挑戰？",
+          "travelers": "現代旅客真正期望什麼？",
+          "nfc": "NFC 技術如何提升酒店賓客體驗？",
           "success": "真實成功案例",
-          "chatbots": "聊天機器人推動位置化互動",
-          "ai": "AI 驅動個人化服務",
-          "urgency": "轉型的迫切性"
+          "chatbots": "聊天機器人如何推動位置化互動？",
+          "ai": "AI 驅動個人化服務如何運作？",
+          "urgency": "酒店為何必須立即採用科技？"
         },
         "paragraphs": {
           "challenges": "酒店及旅遊業面臨顧客忠誠度下降及激烈競爭等重大挑戰。在競爭日趨激烈的市場中，款待業企業必須透過卓越體驗及創新服務來脫穎而出，以留住客源並建立長期關係。",
@@ -2650,12 +2660,12 @@
       "holidayGuide": {
         "title": "假日優惠券指南：掌握最後衝刺的假日銷售旺季",
         "headings": {
-          "opportunity": "假日零售的商機",
-          "misconception": "破除最後時刻的迷思",
-          "capitalizing": "把握剩餘機遇",
-          "strategies": "假日成功的數碼優惠券策略",
-          "tactics": "迅速而精準的行銷戰術",
-          "guidance": "全面假日指引"
+          "opportunity": "假日零售商機有多大？",
+          "misconception": "現在開始假日優惠券活動是否為時已晚？",
+          "capitalizing": "如何捕獲最後時刻的假日購物者？",
+          "strategies": "哪些數碼優惠券策略最適合假日銷售？",
+          "tactics": "哪些行銷戰術最快帶來假日成效？",
+          "guidance": "如何制定全面的假日優惠券策略？"
         },
         "paragraphs": {
           "opportunity": "根據美國零售聯合會（NRF）數據，2022 年假日零售銷售額高達 9,430 至 9,600 億美元。這些驚人數字凸顯了在假日旺季最大化銷售額的重要性——這是消費者年度支出高峰期，充滿戰略性零售商把握的機遇。",
@@ -2680,11 +2690,11 @@
       "smartRetail": {
         "title": "科技驅動智慧零售：NFC 優惠券促進衝動購買",
         "headings": {
-          "landscape": "零售業的演變格局",
-          "nfc": "NFC 技術締造無縫體驗",
-          "impulse": "衝動購買的商機",
-          "strategies": "NFC 優惠券成功的智慧策略",
-          "transformative": "變革潛力"
+          "landscape": "科技如何改變零售業格局？",
+          "nfc": "NFC 技術如何締造無縫購物體驗？",
+          "impulse": "NFC 優惠券如何促進衝動購買？",
+          "strategies": "NFC 優惠券成功的最佳策略有哪些？",
+          "transformative": "NFC 零售的變革潛力是什麼？"
         },
         "subheadings": {
           "location": "策略性位置",
