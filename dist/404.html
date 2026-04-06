@@ -60,10 +60,8 @@
 
         /* ── Page base ── */
         html, body { height: 100%; }
-        body {
-            background-color: #FDF6EC;
-            font-family: 'JetBrains Mono', monospace;
-        }
+        body { background-color: #FDF6EC; }
+        .page-body { font-family: 'JetBrains Mono', monospace; }
 
         /* Grain overlay — mimics paper texture */
         body::before {
@@ -382,8 +380,8 @@
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
                     <a href="index.html" class="flex items-center gap-2">
-                        <img src="assets/images/logo.png" alt="Mezzofy Logo" class="h-8 md:h-10">
-                        <span class="md:hidden text-xl font-bold text-primary-black" style="font-family: system-ui, sans-serif;">MEZZOFY</span>
+                        <img src="assets/images/logo.png" data-i18n-alt="common.logo.alt" alt="Mezzofy Logo" class="h-8 md:h-10">
+                        <span class="md:hidden text-xl font-bold text-primary-black">MEZZOFY</span>
                     </a>
                 </div>
 
@@ -448,12 +446,16 @@
                         </div>
                     </div>
 
-                    <!-- Language -->
+                    <!-- Language Toggle Dropdown -->
                     <div class="dropdown">
-                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
-                            <svg class="w-5 h-5 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors" id="lang-toggle-desktop">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+                            </svg>
                             <span id="current-lang-desktop">English</span>
-                            <svg class="w-4 h-4 inline ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
                         </button>
                         <div class="dropdown-menu">
                             <a href="#" class="dropdown-item lang-option" data-lang="en">English</a>
@@ -511,8 +513,42 @@
                         <a href="coupon-serial.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.serial">Coupon Serial</a>
                     </div>
                 </div>
+                <!-- Developer Mobile Dropdown -->
                 <div class="mobile-dropdown">
-                    <button class="mobile-dropdown-trigger" data-dropdown="company"><span data-i18n="common.nav.company">Company</span><svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
+                    <button class="mobile-dropdown-trigger" data-dropdown="developer">
+                        <span data-i18n="common.nav.developer">Developer</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="developer">
+                        <a href="api-doc.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.apiDoc">API Documentation</a>
+                        <a href="api-use-case.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.apiUseCase">API Use Case</a>
+                    </div>
+                </div>
+
+                <!-- Resources Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" data-dropdown="resources">
+                        <span data-i18n="common.nav.resources">Resources</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="resources">
+                        <a href="coupon-playbook.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.playbook">Coupon Playbook</a>
+                        <a href="support.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.support">Support</a>
+                    </div>
+                </div>
+
+                <!-- Company Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" data-dropdown="company">
+                        <span data-i18n="common.nav.company">Company</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
                     <div class="mobile-dropdown-menu" data-menu="company">
                         <a href="about.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.aboutUs">About Us</a>
                         <a href="contact.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.contactUs">Contact Us</a>
@@ -622,7 +658,7 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
                     <div class="lg:col-span-1">
-                        <h3 class="text-2xl font-bold text-primary-orange mb-4" style="font-family: system-ui, sans-serif;">Mezzofy</h3>
+                        <h3 class="text-2xl font-bold text-primary-orange mb-4">Mezzofy</h3>
                         <p class="text-sm mb-4" data-i18n="common.footer.tagline">Building the future of coupon infrastructure through the Mezzofy Exchange Protocol.</p>
                     <!-- Social Media -->
                     <div class="flex gap-3 mt-4 flex-wrap">
