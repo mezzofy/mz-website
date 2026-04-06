@@ -59,7 +59,7 @@ npm run build
 aws s3 mb s3://mezzofy-website --region us-east-1
 
 # 3. Enable static website hosting
-aws s3 website s3://mezzofy-website --index-document index.html --error-document index.html
+aws s3 website s3://mezzofy-website --index-document index.html --error-document 404.html
 
 # 4. Upload files
 aws s3 sync dist/ s3://mezzofy-website --delete
@@ -96,7 +96,7 @@ aws s3 mb s3://mezzofy-website --region ap-southeast-1
 ```bash
 aws s3 website s3://mezzofy-website \
   --index-document index.html \
-  --error-document index.html
+  --error-document 404.html
 ```
 
 **Note:** Using `index.html` as error document enables client-side routing fallback.
