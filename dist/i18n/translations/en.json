@@ -357,6 +357,10 @@
       "description": "Whether you are a merchant looking for maximum performance or a distributor seeking high-intent inventory, the Mezzofy Exchange Protocol is the indispensable infrastructure you need.",
       "contactSales": "Contact Sales (Enterprise)",
       "developerDocs": "Developer Docs (API Access)"
+    },
+    "social": {
+      "title": "Follow Mezzofy",
+      "description": "Stay connected for the latest updates, product news, and insights."
     }
   },
   "contact": {

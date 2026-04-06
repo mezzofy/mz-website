@@ -363,6 +363,10 @@
       "description": "无论您是寻求最高性能的商家，还是寻求高意向库存的分销商，Mezzofy 交易协议都是您不可或缺的基础设施。",
       "contactSales": "联系业务（企业）",
       "developerDocs": "开发者文档（API 访问）"
+    },
+    "social": {
+      "title": "关注 Mezzofy",
+      "description": "关注我们，获取最新动态、产品资讯与行业见解。"
     }
   },
   "contact": {

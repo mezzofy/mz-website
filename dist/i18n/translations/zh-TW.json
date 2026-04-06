@@ -343,6 +343,10 @@
       "description": "無論您是尋求最高性能的商家，還是尋求高意向庫存的分銷商，Mezzofy 交易協議都是您不可或缺的基礎設施。",
       "contactSales": "聯絡業務（企業）",
       "developerDocs": "開發者文件（API 訪問）"
+    },
+    "social": {
+      "title": "追蹤 Mezzofy",
+      "description": "關注我們，獲取最新動態、產品資訊與行業見解。"
     }
   },
   "contact": {
