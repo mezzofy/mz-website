@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Mezzofy — Hero UI Test (Alternative)</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Cormorant Garamond (editorial serif) + DM Sans (body) + DM Mono (labels) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        /* ── Design Tokens ─────────────────────────── */
+        :root {
+            --orange:      #FF6B35;
+            --orange-dark: #e65a2b;
+            --black:       #080808;
+            --white:       #ffffff;
+            --text-muted:  rgba(255,255,255,0.55);
+            --text-faint:  rgba(255,255,255,0.30);
+            --border:      rgba(255,255,255,0.08);
+            --nav-h:       64px;
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            background: var(--black);
+            color: var(--white);
+            font-family: 'DM Sans', sans-serif;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+
+        /* ── MINIMAL NAV ────────────────────────────── */
+        .nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            height: var(--nav-h);
+            background: rgba(8,8,8,0.94);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom: 1px solid var(--border);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+        }
+        .nav-inner {
+            max-width: 1340px;
+            margin: 0 auto;
+            padding: 0 2.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+        .nav-logo img { height: 30px; }
+        .nav-logo-text {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.95rem;
+            font-weight: 500;
+            letter-spacing: 0.18em;
+            color: var(--white);
+        }
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+        }
+        .nav-link {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .nav-link:hover  { color: var(--white); }
+        .nav-link.active { color: var(--orange); font-weight: 600; }
+        .nav-cta {
+            background: var(--orange);
+            color: white;
+            padding: 0.45rem 1.3rem;
+            border-radius: 3px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-decoration: none;
+            letter-spacing: 0.04em;
+            transition: background 0.2s, transform 0.15s;
+        }
+        .nav-cta:hover { background: var(--orange-dark); transform: translateY(-1px); }
+
+
+        /* ── HERO SHELL ─────────────────────────────── */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            padding-top: var(--nav-h);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            overflow: hidden;
+        }
+
+        /* Subtle dot-grid texture */
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: radial-gradient(circle, rgba(255,255,255,0.035) 1px, transparent 1px);
+            background-size: 44px 44px;
+            pointer-events: none;
+        }
+
+        /* Right-panel radial orange glow */
+        .hero::after {
+            content: '';
+            position: absolute;
+            right: 0; top: 0;
+            width: 55%; height: 100%;
+            background: radial-gradient(ellipse at 68% 48%, rgba(255,107,53,0.11) 0%, transparent 68%);
+            pointer-events: none;
+        }
+
+        /* Giant ghost watermark behind everything */
+        .hero-watermark {
+            position: absolute;
+            bottom: -5vw;
+            left: -2vw;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 23vw;
+            font-weight: 700;
+            letter-spacing: -0.04em;
+            line-height: 0.88;
+            color: transparent;
+            -webkit-text-stroke: 1px rgba(255,107,53,0.045);
+            user-select: none;
+            pointer-events: none;
+            white-space: nowrap;
+        }
+
+        /* Vertical side-label (editorial touch) */
+        .hero-sidetag {
+            position: absolute;
+            left: 1.25rem;
+            top: 50%;
+            transform: translateY(-50%) rotate(-90deg);
+            transform-origin: center center;
+            font-family: 'DM Mono', monospace;
+            font-size: 0.6rem;
+            letter-spacing: 0.28em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.15);
+            white-space: nowrap;
+            z-index: 5;
+            display: none; /* show only on xl */
+        }
+
+
+        /* ── LEFT CONTENT PANEL ─────────────────────── */
+        .hero-left {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 5rem 3rem 8rem 7rem;
+        }
+
+        /* Eyebrow line + label */
+        .eyebrow {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 2.5rem;
+            opacity: 0;
+            animation: slideUp 0.65s cubic-bezier(0.22, 1, 0.36, 1) 0.15s forwards;
+        }
+        .eyebrow-line {
+            width: 38px;
+            height: 1.5px;
+            background: var(--orange);
+            flex-shrink: 0;
+        }
+        .eyebrow-text {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.67rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--orange);
+        }
+
+        /* Main H1 — editorial serif */
+        .hero-h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(3.8rem, 5.2vw, 7rem);
+            font-weight: 700;
+            line-height: 1.0;
+            letter-spacing: -0.025em;
+            margin-bottom: 2rem;
+            opacity: 0;
+            animation: slideUp 0.65s cubic-bezier(0.22, 1, 0.36, 1) 0.3s forwards;
+        }
+        .line-thin    { font-weight: 300; opacity: 0.5; display: block; }
+        .line-orange  { font-style: italic; color: var(--orange); display: block; }
+        .line-bold    { font-weight: 700; display: block; }
+
+        /* Horizontal rule divider */
+        .hero-rule {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 1.75rem;
+            opacity: 0;
+            animation: slideUp 0.65s cubic-bezier(0.22, 1, 0.36, 1) 0.43s forwards;
+        }
+        .rule-bar {
+            width: 52px;
+            height: 1.5px;
+            background: linear-gradient(to right, var(--orange), rgba(255,107,53,0.1));
+            flex-shrink: 0;
+        }
+        .rule-label {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.63rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--text-faint);
+        }
+
+        /* Subtext */
+        .hero-sub {
+            font-size: 1.05rem;
+            line-height: 1.85;
+            color: var(--text-muted);
+            max-width: 420px;
+            margin-bottom: 2.75rem;
+            font-weight: 300;
+            opacity: 0;
+            animation: slideUp 0.65s cubic-bezier(0.22, 1, 0.36, 1) 0.55s forwards;
+        }
+        .hero-sub strong {
+            color: rgba(255,255,255,0.85);
+            font-weight: 500;
+        }
+
+        /* CTA buttons */
+        .hero-actions {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-bottom: 3.5rem;
+            opacity: 0;
+            animation: slideUp 0.65s cubic-bezier(0.22, 1, 0.36, 1) 0.68s forwards;
+        }
+        .btn-primary {
+            background: var(--orange);
+            color: white;
+            padding: 0.82rem 2.1rem;
+            border-radius: 3px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: inline-block;
+            transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+        }
+        .btn-primary:hover {
+            background: var(--orange-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(255,107,53,0.38);
+        }
+        .btn-ghost {
+            background: transparent;
+            color: rgba(255,255,255,0.65);
+            padding: 0.82rem 2.1rem;
+            border-radius: 3px;
+            border: 1px solid rgba(255,255,255,0.16);
+            font-weight: 500;
+            font-size: 0.85rem;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: inline-block;
+            transition: border-color 0.2s, color 0.2s, transform 0.15s;
+        }
+        .btn-ghost:hover {
+            border-color: var(--orange);
+            color: var(--orange);
+            transform: translateY(-2px);
+        }
+
+        /* Stats row */
+        .hero-stats {
+            display: flex;
+            align-items: flex-start;
+            gap: 0;
+            opacity: 0;
+            animation: slideUp 0.65s cubic-bezier(0.22, 1, 0.36, 1) 0.82s forwards;
+        }
+        .stat {
+            padding-right: 2rem;
+            margin-right: 2rem;
+            border-right: 1px solid var(--border);
+        }
+        .stat:last-child {
+            border-right: none;
+            margin-right: 0;
+            padding-right: 0;
+        }
+        .stat-val {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1;
+            color: var(--white);
+        }
+        .stat-val sup {
+            font-size: 1.1rem;
+            color: var(--orange);
+            vertical-align: super;
+        }
+        .stat-lbl {
+            margin-top: 5px;
+            font-family: 'DM Mono', monospace;
+            font-size: 0.61rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: var(--text-faint);
+        }
+
+
+        /* ── RIGHT PANEL / VISUALIZATION ───────────── */
+        .hero-right {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 4rem 8rem 2rem;
+        }
+
+        .viz-wrap {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        /* Floating info cards */
+        .viz-card {
+            position: absolute;
+            background: rgba(18,18,18,0.85);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.09);
+            border-radius: 8px;
+            padding: 0.7rem 1rem;
+            font-family: 'DM Mono', monospace;
+            font-size: 0.75rem;
+            z-index: 20;
+            pointer-events: none;
+        }
+        .viz-card-label {
+            font-size: 0.58rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--text-faint);
+            margin-bottom: 4px;
+        }
+        .viz-card-value { color: var(--orange); }
+
+        .card-tl {
+            top: 6%;
+            right: -2%;
+            animation: floatY 4s ease-in-out infinite;
+        }
+        .card-br {
+            bottom: 6%;
+            left: -2%;
+            animation: floatY 4s ease-in-out 2s infinite;
+        }
+        .card-br .viz-card-value { color: rgba(255,255,255,0.6); }
+
+
+        /* ── BOTTOM RECOGNITION STRIP ───────────────── */
+        .hero-strip {
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            border-top: 1px solid var(--border);
+            padding: 0.9rem 7rem;
+            display: flex;
+            align-items: center;
+            gap: 0;
+            z-index: 20;
+            opacity: 0;
+            animation: slideUp 0.65s cubic-bezier(0.22, 1, 0.36, 1) 1s forwards;
+        }
+        .strip-tag {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.6rem;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: var(--text-faint);
+            white-space: nowrap;
+            padding-right: 2rem;
+            border-right: 1px solid var(--border);
+            margin-right: 2rem;
+        }
+        .strip-items {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .strip-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.76rem;
+            color: rgba(255,255,255,0.38);
+            white-space: nowrap;
+        }
+        .strip-dot {
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: var(--orange);
+            opacity: 0.55;
+            flex-shrink: 0;
+        }
+
+
+        /* ── ANIMATIONS ────────────────────────────── */
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes floatY {
+            0%, 100% { transform: translateY(0); }
+            50%       { transform: translateY(-9px); }
+        }
+        /* SVG node breathing */
+        @keyframes breathe {
+            0%, 100% { opacity: 0.7; }
+            50%       { opacity: 1; }
+        }
+        .n1 { animation: breathe 2.8s ease-in-out 0s    infinite; }
+        .n2 { animation: breathe 2.8s ease-in-out 0.55s infinite; }
+        .n3 { animation: breathe 2.8s ease-in-out 1.1s  infinite; }
+
+
+        /* ── TEST FOOTER ────────────────────────────── */
+        .test-footer {
+            background: var(--black);
+            border-top: 1px dashed rgba(255,107,53,0.2);
+            padding: 1.25rem 2rem;
+            text-align: center;
+        }
+        .test-footer p {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.65rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: rgba(255,107,53,0.35);
+        }
+
+
+        /* ── RESPONSIVE ─────────────────────────────── */
+        @media (min-width: 1280px) {
+            .hero-sidetag { display: block; }
+        }
+
+        @media (max-width: 1080px) {
+            .hero {
+                grid-template-columns: 1fr;
+                min-height: auto;
+                padding-bottom: 5rem;
+            }
+            .hero-right   { display: none; }
+            .hero-left    { padding: 4rem 2.5rem 5rem 2.5rem; }
+            .hero-strip   { padding: 0.9rem 2.5rem; }
+            .strip-items  { gap: 1.25rem; }
+            .strip-item:nth-child(n+4) { display: none; }
+        }
+
+        @media (max-width: 640px) {
+            .hero-h1        { font-size: 3.4rem; }
+            .hero-left      { padding: 3rem 1.5rem 5rem 1.5rem; }
+            .nav-links      { display: none; }
+            .hero-stats     { flex-wrap: wrap; gap: 1.25rem; }
+            .stat           { border-right: none; margin-right: 1.5rem; padding-right: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ── NAVIGATION (simplified) ──────────────── -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/images/logo.png" alt="Mezzofy logo">
+                <span class="nav-logo-text">MEZZOFY</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html"        class="nav-link">Home</a>
+                <a href="for-merchants.html" class="nav-link">Solutions</a>
+                <a href="coupon-management.html" class="nav-link">Products</a>
+                <a href="about.html"         class="nav-link active">About</a>
+                <a href="contact.html"       class="nav-cta">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ══════════════════════════════════════════════════ -->
+    <!--  ALTERNATIVE HERO SECTION                         -->
+    <!-- ══════════════════════════════════════════════════ -->
+    <section class="hero" aria-label="About Mezzofy — Protocol Exchange">
+
+        <!-- Ghost watermark text -->
+        <div class="hero-watermark" aria-hidden="true">MZF</div>
+
+        <!-- Vertical editorial side-tag -->
+        <span class="hero-sidetag" aria-hidden="true">The Global Coupon Exchange Protocol — Est. 2015</span>
+
+
+        <!-- ── LEFT: TEXT CONTENT ────────────────── -->
+        <div class="hero-left">
+
+            <div class="eyebrow">
+                <div class="eyebrow-line"></div>
+                <span class="eyebrow-text">Est. 2015 · Hong Kong · Global Protocol</span>
+            </div>
+
+            <h1 class="hero-h1">
+                <span class="line-thin">Built to</span>
+                <span class="line-orange">Connect</span>
+                <span class="line-bold">Supply &amp; Demand</span>
+            </h1>
+
+            <div class="hero-rule">
+                <div class="rule-bar"></div>
+                <span class="rule-label">About the Company</span>
+            </div>
+
+            <p class="hero-sub">
+                Mezzofy is the <strong>AI-powered clearinghouse</strong> standardizing digital
+                coupons into secure, tokenized assets — connecting merchants and distributors
+                worldwide through the Global Coupon Exchange Protocol.
+            </p>
+
+            <div class="hero-actions">
+                <a href="contact.html" class="btn-primary">Get in Touch</a>
+                <a href="index.html"   class="btn-ghost">Explore the Protocol</a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-val">300M<sup>+</sup></div>
+                    <div class="stat-lbl">Coupons Issued</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-val">2015</div>
+                    <div class="stat-lbl">Founded</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-val">50<sup>+</sup></div>
+                    <div class="stat-lbl">Countries</div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ── RIGHT: PROTOCOL VISUALIZATION ────── -->
+        <div class="hero-right" aria-hidden="true">
+            <div class="viz-wrap">
+
+                <!-- Floating status card — top right -->
+                <div class="viz-card card-tl">
+                    <div class="viz-card-label">Protocol Status</div>
+                    <span class="viz-card-value">● Live &amp; Operating</span>
+                </div>
+
+                <!-- Floating network card — bottom left -->
+                <div class="viz-card card-br">
+                    <div class="viz-card-label">Network Coverage</div>
+                    <span class="viz-card-value">50+ Countries</span>
+                </div>
+
+                <!--
+                    SVG: Supply → Mezzofy → Demand
+                    Animated orange flow dots travel along curved paths,
+                    representing the real-time exchange of coupon assets.
+                -->
+                <svg viewBox="0 0 500 500" width="100%" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                     style="filter:drop-shadow(0 0 50px rgba(255,107,53,0.07));">
+
+                    <defs>
+                        <!-- Center node gradient -->
+                        <radialGradient id="cg" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%"   stop-color="#FF6B35" stop-opacity="0.95"/>
+                            <stop offset="100%" stop-color="#c94e22" stop-opacity="0.75"/>
+                        </radialGradient>
+
+                        <!-- Orange dot glow -->
+                        <filter id="dotGlow" x="-100%" y="-100%" width="300%" height="300%">
+                            <feGaussianBlur stdDeviation="4" result="b"/>
+                            <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+                        </filter>
+
+                        <!-- Soft center glow -->
+                        <filter id="hubGlow" x="-60%" y="-60%" width="220%" height="220%">
+                            <feGaussianBlur stdDeviation="10" result="b"/>
+                            <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+                        </filter>
+
+                        <!-- Gradient for inbound lines (left → center) -->
+                        <linearGradient id="lgIn" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%"   stop-color="rgba(255,255,255,0.15)"/>
+                            <stop offset="100%" stop-color="rgba(255,107,53,0.45)"/>
+                        </linearGradient>
+
+                        <!-- Gradient for outbound lines (center → right) -->
+                        <linearGradient id="lgOut" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%"   stop-color="rgba(255,107,53,0.45)"/>
+                            <stop offset="100%" stop-color="rgba(255,255,255,0.15)"/>
+                        </linearGradient>
+                    </defs>
+
+                    <!-- ── Column labels ── -->
+                    <text x="90"  y="90" text-anchor="middle" fill="rgba(255,255,255,0.22)"
+                          font-size="8.5" font-family="DM Mono, monospace" letter-spacing="2">SUPPLY</text>
+                    <line x1="52" y1="100" x2="128" y2="100" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+
+                    <text x="250" y="90" text-anchor="middle" fill="rgba(255,107,53,0.45)"
+                          font-size="8.5" font-family="DM Mono, monospace" letter-spacing="2">PROTOCOL</text>
+                    <line x1="200" y1="100" x2="300" y2="100" stroke="rgba(255,107,53,0.15)" stroke-width="0.5"/>
+
+                    <text x="410" y="90" text-anchor="middle" fill="rgba(255,255,255,0.22)"
+                          font-size="8.5" font-family="DM Mono, monospace" letter-spacing="2">DEMAND</text>
+                    <line x1="372" y1="100" x2="448" y2="100" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+
+
+                    <!-- ── Connection paths (Supply → Hub) ── -->
+                    <path id="p-lc1" d="M 90,155 Q 165,202 250,250" fill="none" stroke="url(#lgIn)" stroke-width="1.2"/>
+                    <path id="p-lc2" d="M 90,250 L 250,250"          fill="none" stroke="url(#lgIn)" stroke-width="1.2"/>
+                    <path id="p-lc3" d="M 90,345 Q 165,298 250,250" fill="none" stroke="url(#lgIn)" stroke-width="1.2"/>
+
+                    <!-- ── Connection paths (Hub → Demand) ── -->
+                    <path id="p-cr1" d="M 250,250 Q 335,202 410,155" fill="none" stroke="url(#lgOut)" stroke-width="1.2"/>
+                    <path id="p-cr2" d="M 250,250 L 410,250"          fill="none" stroke="url(#lgOut)" stroke-width="1.2"/>
+                    <path id="p-cr3" d="M 250,250 Q 335,298 410,345" fill="none" stroke="url(#lgOut)" stroke-width="1.2"/>
+
+
+                    <!-- ── LEFT NODES (Supply / Merchants) ── -->
+                    <!-- Node aura rings -->
+                    <circle cx="90" cy="155" r="38" fill="rgba(255,255,255,0.015)"/>
+                    <circle cx="90" cy="250" r="38" fill="rgba(255,255,255,0.015)"/>
+                    <circle cx="90" cy="345" r="38" fill="rgba(255,255,255,0.015)"/>
+
+                    <!-- Node circles -->
+                    <circle cx="90" cy="155" r="27" fill="rgba(20,20,20,0.7)" stroke="rgba(255,255,255,0.18)" stroke-width="1" class="n1"/>
+                    <circle cx="90" cy="250" r="27" fill="rgba(20,20,20,0.7)" stroke="rgba(255,255,255,0.18)" stroke-width="1" class="n2"/>
+                    <circle cx="90" cy="345" r="27" fill="rgba(20,20,20,0.7)" stroke="rgba(255,255,255,0.18)" stroke-width="1" class="n3"/>
+
+                    <!-- Node store icon (simplified SVG paths) -->
+                    <!-- Merchant icon: shop/storefront -->
+                    <g transform="translate(90,155)" opacity="0.65">
+                        <rect x="-9" y="-4" width="18" height="12" rx="1" fill="none" stroke="white" stroke-width="1.3"/>
+                        <rect x="-5" y="2"  width="5"  height="6"  rx="0.5" fill="white"/>
+                        <line x1="-9" y1="-4" x2="-12" y2="-8" stroke="white" stroke-width="1.3"/>
+                        <line x1="9"  y1="-4" x2="12"  y2="-8" stroke="white" stroke-width="1.3"/>
+                        <line x1="-12" y1="-8" x2="12" y2="-8" stroke="white" stroke-width="1.3"/>
+                    </g>
+                    <g transform="translate(90,250)" opacity="0.65">
+                        <rect x="-9" y="-4" width="18" height="12" rx="1" fill="none" stroke="white" stroke-width="1.3"/>
+                        <rect x="-5" y="2"  width="5"  height="6"  rx="0.5" fill="white"/>
+                        <line x1="-9" y1="-4" x2="-12" y2="-8" stroke="white" stroke-width="1.3"/>
+                        <line x1="9"  y1="-4" x2="12"  y2="-8" stroke="white" stroke-width="1.3"/>
+                        <line x1="-12" y1="-8" x2="12" y2="-8" stroke="white" stroke-width="1.3"/>
+                    </g>
+                    <g transform="translate(90,345)" opacity="0.65">
+                        <rect x="-9" y="-4" width="18" height="12" rx="1" fill="none" stroke="white" stroke-width="1.3"/>
+                        <rect x="-5" y="2"  width="5"  height="6"  rx="0.5" fill="white"/>
+                        <line x1="-9" y1="-4" x2="-12" y2="-8" stroke="white" stroke-width="1.3"/>
+                        <line x1="9"  y1="-4" x2="12"  y2="-8" stroke="white" stroke-width="1.3"/>
+                        <line x1="-12" y1="-8" x2="12" y2="-8" stroke="white" stroke-width="1.3"/>
+                    </g>
+
+
+                    <!-- ── CENTER HUB (Mezzofy) ── -->
+                    <!-- Outer pulse rings (SVG animateTransform) -->
+                    <circle cx="250" cy="250" r="72" fill="none" stroke="rgba(255,107,53,0.12)" stroke-width="1">
+                        <animate attributeName="r"       values="70;92;70"      dur="2.8s" repeatCount="indefinite"/>
+                        <animate attributeName="opacity" values="0.35;0.05;0.35" dur="2.8s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="250" cy="250" r="60" fill="none" stroke="rgba(255,107,53,0.18)" stroke-width="1">
+                        <animate attributeName="r"       values="58;78;58"      dur="2.8s" repeatCount="indefinite" begin="0.4s"/>
+                        <animate attributeName="opacity" values="0.5;0.1;0.5"   dur="2.8s" repeatCount="indefinite" begin="0.4s"/>
+                    </circle>
+
+                    <!-- Hub fill -->
+                    <circle cx="250" cy="250" r="52" fill="url(#cg)" filter="url(#hubGlow)"/>
+                    <!-- Hub border -->
+                    <circle cx="250" cy="250" r="52" fill="none" stroke="rgba(255,107,53,0.7)" stroke-width="1.5"/>
+
+                    <!-- Hub label -->
+                    <text x="250" y="243" text-anchor="middle" fill="white" opacity="0.95"
+                          font-size="11" font-family="DM Mono, monospace" font-weight="500" letter-spacing="3">MEZZO</text>
+                    <text x="250" y="261" text-anchor="middle" fill="white" opacity="0.95"
+                          font-size="11" font-family="DM Mono, monospace" font-weight="500" letter-spacing="5">FY</text>
+
+
+                    <!-- ── RIGHT NODES (Demand / Distributors) ── -->
+                    <!-- Node auras -->
+                    <circle cx="410" cy="155" r="38" fill="rgba(255,255,255,0.015)"/>
+                    <circle cx="410" cy="250" r="38" fill="rgba(255,255,255,0.015)"/>
+                    <circle cx="410" cy="345" r="38" fill="rgba(255,255,255,0.015)"/>
+
+                    <!-- Node circles -->
+                    <circle cx="410" cy="155" r="27" fill="rgba(20,20,20,0.7)" stroke="rgba(255,255,255,0.18)" stroke-width="1" class="n2"/>
+                    <circle cx="410" cy="250" r="27" fill="rgba(20,20,20,0.7)" stroke="rgba(255,255,255,0.18)" stroke-width="1" class="n3"/>
+                    <circle cx="410" cy="345" r="27" fill="rgba(20,20,20,0.7)" stroke="rgba(255,255,255,0.18)" stroke-width="1" class="n1"/>
+
+                    <!-- Distributor icon: person/user -->
+                    <g transform="translate(410,155)" opacity="0.65">
+                        <circle cx="0" cy="-6" r="5" fill="none" stroke="white" stroke-width="1.3"/>
+                        <path d="M -9,8 C -9,0 9,0 9,8" fill="none" stroke="white" stroke-width="1.3"/>
+                    </g>
+                    <g transform="translate(410,250)" opacity="0.65">
+                        <circle cx="0" cy="-6" r="5" fill="none" stroke="white" stroke-width="1.3"/>
+                        <path d="M -9,8 C -9,0 9,0 9,8" fill="none" stroke="white" stroke-width="1.3"/>
+                    </g>
+                    <g transform="translate(410,345)" opacity="0.65">
+                        <circle cx="0" cy="-6" r="5" fill="none" stroke="white" stroke-width="1.3"/>
+                        <path d="M -9,8 C -9,0 9,0 9,8" fill="none" stroke="white" stroke-width="1.3"/>
+                    </g>
+
+
+                    <!-- ── ANIMATED FLOW DOTS: Supply → Hub ── -->
+                    <circle r="3.5" fill="#FF6B35" filter="url(#dotGlow)">
+                        <animateMotion dur="2.4s" repeatCount="indefinite" begin="0s">
+                            <mpath xlink:href="#p-lc1"/>
+                        </animateMotion>
+                    </circle>
+                    <circle r="3.5" fill="#FF6B35" filter="url(#dotGlow)">
+                        <animateMotion dur="2.4s" repeatCount="indefinite" begin="0.55s">
+                            <mpath xlink:href="#p-lc2"/>
+                        </animateMotion>
+                    </circle>
+                    <circle r="3.5" fill="#FF6B35" filter="url(#dotGlow)">
+                        <animateMotion dur="2.4s" repeatCount="indefinite" begin="1.1s">
+                            <mpath xlink:href="#p-lc3"/>
+                        </animateMotion>
+                    </circle>
+
+                    <!-- ── ANIMATED FLOW DOTS: Hub → Demand ── -->
+                    <circle r="3.5" fill="#FF6B35" filter="url(#dotGlow)">
+                        <animateMotion dur="2.4s" repeatCount="indefinite" begin="1.2s">
+                            <mpath xlink:href="#p-cr1"/>
+                        </animateMotion>
+                    </circle>
+                    <circle r="3.5" fill="#FF6B35" filter="url(#dotGlow)">
+                        <animateMotion dur="2.4s" repeatCount="indefinite" begin="1.75s">
+                            <mpath xlink:href="#p-cr2"/>
+                        </animateMotion>
+                    </circle>
+                    <circle r="3.5" fill="#FF6B35" filter="url(#dotGlow)">
+                        <animateMotion dur="2.4s" repeatCount="indefinite" begin="2.3s">
+                            <mpath xlink:href="#p-cr3"/>
+                        </animateMotion>
+                    </circle>
+
+
+                    <!-- ── Node sub-labels ── -->
+                    <text x="90"  y="405" text-anchor="middle" fill="rgba(255,255,255,0.16)"
+                          font-size="8" font-family="DM Mono, monospace" letter-spacing="1">MERCHANTS</text>
+                    <text x="250" y="328" text-anchor="middle" fill="rgba(255,107,53,0.28)"
+                          font-size="7.5" font-family="DM Mono, monospace" letter-spacing="1.5">EXCHANGE LAYER</text>
+                    <text x="410" y="405" text-anchor="middle" fill="rgba(255,255,255,0.16)"
+                          font-size="8" font-family="DM Mono, monospace" letter-spacing="1">DISTRIBUTORS</text>
+
+                </svg>
+            </div>
+        </div>
+
+
+        <!-- ── BOTTOM RECOGNITION STRIP ─────────── -->
+        <div class="hero-strip">
+            <span class="strip-tag">Recognition</span>
+            <div class="strip-items">
+                <div class="strip-item">
+                    <div class="strip-dot"></div>
+                    <span>HK Environmental Excellence Award</span>
+                </div>
+                <div class="strip-item">
+                    <div class="strip-dot"></div>
+                    <span>ESG Forum 2024 Dual Awards</span>
+                </div>
+                <div class="strip-item">
+                    <div class="strip-dot"></div>
+                    <span>Forbes — Dicky Yin Feature</span>
+                </div>
+                <div class="strip-item">
+                    <div class="strip-dot"></div>
+                    <span>CIO World Coverage</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- ══ END HERO ══ -->
+
+
+    <!-- Test preview indicator -->
+    <div class="test-footer">
+        <p>◆ &nbsp; about_test.html — Hero Section UI Alternative &nbsp; ◆</p>
+    </div>
+
+</body>
+</html>
