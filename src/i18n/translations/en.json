@@ -2887,5 +2887,28 @@
       "moreDesc": "Custom campaign types",
       "cta": "Explore All Campaign Types"
     }
+  },
+  "notFound": {
+    "eyebrow": "ERROR · REF#MZ-404-VOID",
+    "stub": {
+      "label": "NOT REDEEMABLE"
+    },
+    "coupon": {
+      "headline": "Page Not Found.",
+      "subline": "COUPON EXPIRED · URL CANNOT BE REDEEMED",
+      "description": "The URL you requested does not exist<br>on the Mezzofy Exchange Protocol.<br>This coupon has been voided.",
+      "terms": "Valid only for existing URLs · Non-transferable · No cash value · Mezzofy Exchange Protocol, 2026"
+    },
+    "cta": {
+      "home": "Return Home",
+      "marketplace": "Browse Marketplace",
+      "support": "Get Support"
+    },
+    "links": {
+      "merchants": "For Merchants",
+      "distributors": "For Distributors",
+      "developers": "For Developers",
+      "about": "About Mezzofy"
+    }
   }
 }

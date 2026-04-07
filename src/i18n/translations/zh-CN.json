@@ -2773,5 +2773,28 @@
       "moreDesc": "自定义活动类型",
       "cta": "探索所有活动类型"
     }
+  },
+  "notFound": {
+    "eyebrow": "错误 · 编号#MZ-404-VOID",
+    "stub": {
+      "label": "不可兑换"
+    },
+    "coupon": {
+      "headline": "找不到页面。",
+      "subline": "优惠券已失效 · 此网址无法兑换",
+      "description": "您请求的网址不存在<br>于 Mezzofy 兑换协议中。<br>此优惠券已作废。",
+      "terms": "仅适用于现有网址 · 不可转让 · 无现金价值 · Mezzofy 兑换协议，2026"
+    },
+    "cta": {
+      "home": "返回首页",
+      "marketplace": "浏览市集",
+      "support": "获取支持"
+    },
+    "links": {
+      "merchants": "商家专区",
+      "distributors": "分销商专区",
+      "developers": "开发者专区",
+      "about": "关于 Mezzofy"
+    }
   }
 }

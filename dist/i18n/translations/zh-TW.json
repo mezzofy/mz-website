@@ -2752,5 +2752,28 @@
       "moreDesc": "自訂活動類型",
       "cta": "探索所有活動類型"
     }
+  },
+  "notFound": {
+    "eyebrow": "錯誤 · 編號#MZ-404-VOID",
+    "stub": {
+      "label": "不可兌換"
+    },
+    "coupon": {
+      "headline": "找不到頁面。",
+      "subline": "優惠券已失效 · 此網址無法兌換",
+      "description": "您所要求的網址不存在<br>於 Mezzofy 兌換協定中。<br>此優惠券已作廢。",
+      "terms": "僅適用於現有網址 · 不可轉讓 · 無現金價值 · Mezzofy 兌換協定，2026"
+    },
+    "cta": {
+      "home": "返回首頁",
+      "marketplace": "瀏覽市集",
+      "support": "取得支援"
+    },
+    "links": {
+      "merchants": "商家專區",
+      "distributors": "分銷商專區",
+      "developers": "開發者專區",
+      "about": "關於 Mezzofy"
+    }
   }
 }

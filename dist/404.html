@@ -568,7 +568,8 @@
 
             <!-- Eyebrow -->
             <p class="text-xs font-mono tracking-widest uppercase text-amber-700 mb-8 opacity-70"
-               style="animation: fade-up 0.4s ease 0.05s both;">
+               style="animation: fade-up 0.4s ease 0.05s both;"
+               data-i18n="notFound.eyebrow">
                 ERROR · REF#MZ-404-VOID
             </p>
 
@@ -582,7 +583,7 @@
                     <!-- LEFT STUB -->
                     <div class="coupon-stub">
                         <div class="coupon-stub-number">404</div>
-                        <div class="coupon-stub-label">NOT REDEEMABLE</div>
+                        <div class="coupon-stub-label" data-i18n="notFound.stub.label">NOT REDEEMABLE</div>
                     </div>
 
                     <!-- RIGHT BODY -->
@@ -598,12 +599,12 @@
                         </div>
 
                         <!-- Content -->
-                        <div class="coupon-headline">
+                        <div class="coupon-headline" data-i18n="notFound.coupon.headline">
                             Page Not Found.
                         </div>
-                        <div class="coupon-subline">COUPON EXPIRED · URL CANNOT BE REDEEMED</div>
+                        <div class="coupon-subline" data-i18n="notFound.coupon.subline">COUPON EXPIRED · URL CANNOT BE REDEEMED</div>
 
-                        <p class="coupon-desc">
+                        <p class="coupon-desc" data-i18n="notFound.coupon.description">
                             The URL you requested does not exist<br>
                             on the Mezzofy Exchange Protocol.<br>
                             This coupon has been voided.
@@ -613,22 +614,22 @@
                         <div class="cta-group">
                             <a href="index.html" class="cta-primary">
                                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
-                                Return Home
+                                <span data-i18n="notFound.cta.home">Return Home</span>
                             </a>
                             <a href="coupon-marketplace.html" class="cta-secondary">
                                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
-                                Browse Marketplace
+                                <span data-i18n="notFound.cta.marketplace">Browse Marketplace</span>
                             </a>
                             <a href="contact.html" class="cta-secondary">
                                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                                Get Support
+                                <span data-i18n="notFound.cta.support">Get Support</span>
                             </a>
                         </div>
 
                         <!-- Barcode + terms -->
                         <div class="coupon-terms">
                             <div class="barcode" aria-hidden="true" id="barcode"></div>
-                            <div class="mt-2">
+                            <div class="mt-2" data-i18n="notFound.coupon.terms">
                                 Valid only for existing URLs · Non-transferable · No cash value ·
                                 Mezzofy Exchange Protocol, 2026
                             </div>
@@ -641,13 +642,13 @@
             <!-- Subtle link row below -->
             <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mt-10"
                  style="animation: fade-up 0.5s ease 1.4s both;">
-                <a href="for-merchants.html" class="text-xs font-mono text-amber-700 hover:text-primary-orange transition-colors opacity-60 hover:opacity-100">For Merchants</a>
+                <a href="for-merchants.html" class="text-xs font-mono text-amber-700 hover:text-primary-orange transition-colors opacity-60 hover:opacity-100" data-i18n="notFound.links.merchants">For Merchants</a>
                 <span class="text-amber-300 text-xs" aria-hidden="true">·</span>
-                <a href="for-distributors.html" class="text-xs font-mono text-amber-700 hover:text-primary-orange transition-colors opacity-60 hover:opacity-100">For Distributors</a>
+                <a href="for-distributors.html" class="text-xs font-mono text-amber-700 hover:text-primary-orange transition-colors opacity-60 hover:opacity-100" data-i18n="notFound.links.distributors">For Distributors</a>
                 <span class="text-amber-300 text-xs" aria-hidden="true">·</span>
-                <a href="for-developers.html" class="text-xs font-mono text-amber-700 hover:text-primary-orange transition-colors opacity-60 hover:opacity-100">For Developers</a>
+                <a href="for-developers.html" class="text-xs font-mono text-amber-700 hover:text-primary-orange transition-colors opacity-60 hover:opacity-100" data-i18n="notFound.links.developers">For Developers</a>
                 <span class="text-amber-300 text-xs" aria-hidden="true">·</span>
-                <a href="about.html" class="text-xs font-mono text-amber-700 hover:text-primary-orange transition-colors opacity-60 hover:opacity-100">About Mezzofy</a>
+                <a href="about.html" class="text-xs font-mono text-amber-700 hover:text-primary-orange transition-colors opacity-60 hover:opacity-100" data-i18n="notFound.links.about">About Mezzofy</a>
             </div>
 
         </div>
