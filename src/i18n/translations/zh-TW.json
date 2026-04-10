@@ -681,7 +681,7 @@
       },
       "step2": {
         "title": "分發",
-        "description": "透過<a href=\"coupon-nfc.html\" class=\"text-primary-orange hover:underline\">NFC</a>、<a href=\"coupon-campaign.html\" class=\"text-primary-orange hover:underline\">行銷</a>、<a href=\"coupon-marketplace.html\" class=\"text-primary-orange hover:underline\">市集</a>部署"
+        "description": "透過<a href=\"coupon-nfc.html\" class=\"text-white font-semibold underline\">NFC</a>、<a href=\"coupon-campaign.html\" class=\"text-white font-semibold underline\">行銷</a>、<a href=\"coupon-marketplace.html\" class=\"text-white font-semibold underline\">市集</a>部署"
       },
       "step3": {
         "title": "優化",

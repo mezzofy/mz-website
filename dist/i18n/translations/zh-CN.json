@@ -702,7 +702,7 @@
       },
       "step2": {
         "title": "分发",
-        "description": "通过<a href=\"coupon-nfc.html\" class=\"text-primary-orange hover:underline\">NFC</a>、<a href=\"coupon-campaign.html\" class=\"text-primary-orange hover:underline\">营销</a>、<a href=\"coupon-marketplace.html\" class=\"text-primary-orange hover:underline\">市集</a>部署"
+        "description": "通过<a href=\"coupon-nfc.html\" class=\"text-white font-semibold underline\">NFC</a>、<a href=\"coupon-campaign.html\" class=\"text-white font-semibold underline\">营销</a>、<a href=\"coupon-marketplace.html\" class=\"text-white font-semibold underline\">市集</a>部署"
       },
       "step3": {
         "title": "优化",

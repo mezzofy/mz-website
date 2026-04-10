@@ -696,8 +696,8 @@
       },
       "step2": {
         "title": "DISTRIBUTE",
-        "description": "Deploy via <a href=\"coupon-nfc.html\" class=\"text-primary-orange hover:underline\">NFC</a>, <a href=\"coupon-campaign.html\" class=\"text-primary-orange hover:underline\">Marketing</a>, <a href=\"coupon-marketplace.html\" class=\"text-primary-orange hover:underline\">Marketplace</a>",
-        "channels": "<span class=\"px-3 py-1 bg-light-grey rounded-full text-xs font-semibold text-dark-grey\">Email</span><span class=\"px-3 py-1 bg-light-grey rounded-full text-xs font-semibold text-dark-grey\">SMS</span><span class=\"px-3 py-1 bg-light-grey rounded-full text-xs font-semibold text-dark-grey\">Chat</span><span class=\"px-3 py-1 bg-primary-orange rounded-full text-xs font-semibold text-white\">API</span>"
+        "description": "Deploy via <a href=\"coupon-nfc.html\" class=\"text-white font-semibold underline\">NFC</a>, <a href=\"coupon-campaign.html\" class=\"text-white font-semibold underline\">Marketing</a>, <a href=\"coupon-marketplace.html\" class=\"text-white font-semibold underline\">Marketplace</a>",
+        "channels": "<span class=\"px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white\">Email</span><span class=\"px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white\">SMS</span><span class=\"px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white\">Chat</span><span class=\"px-3 py-1 bg-white rounded-full text-xs font-bold text-primary-orange\">API</span>"
       },
       "step3": {
         "title": "OPTIMIZE",
