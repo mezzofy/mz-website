@@ -88,7 +88,12 @@
       "Bash(then)",
       "Bash(echo \"FOUND: $key\")",
       "Bash(else)",
-      "Bash(bash /tmp/parse_html.sh)"
+      "Bash(bash /tmp/parse_html.sh)",
+      "Bash(Get-ChildItem -Path \"C:\\\\mezzofy\\\\workspace\\\\mz-website\\\\dist\" -Name -Filter \"*.html\" -File)",
+      "Bash(Select-Object -First 50)",
+      "PowerShell(Test-Path *)",
+      "Bash(Remove-Item *)",
+      "Bash(git restore *)"
     ],
     "deny": [],
     "ask": []
