@@ -686,9 +686,8 @@
       "listInventory": "List Your Inventory",
       "viewBundles": "View Product Bundles"
     },
-    "definition": "Mezzofy is a digital coupon exchange platform that helps merchants create, distribute, and monetize digital coupons across 15+ Asia-Pacific markets. Using the Mezzofy Exchange Protocol, merchants eliminate coupon liabilities, reach new customers through NFC, marketplace, and digital channels, and generate revenue on every successful redemption — with zero upfront fees.",
     "journey": {
-      "title": "How Does Mezzofy Help Merchants Succeed with Digital Coupons?",
+      "title": "Your Journey to Coupon Success",
       "description": "How merchants leverage the Mezzofy Exchange Protocol across the coupon lifecycle",
       "step1": {
         "title": "CREATE",
@@ -754,7 +753,7 @@
       }
     },
     "benefits": {
-      "title": "Why Do Merchants Choose Mezzofy?",
+      "title": "Why Merchants Choose Mezzofy",
       "zeroUpfront": {
         "title": "Zero Upfront Cost",
         "description": "Pay only when coupons are redeemed. No setup fees or monthly minimums."
@@ -933,7 +932,7 @@
     },
     "buyer": {
       "badge": "INVENTORY BUYER",
-      "title": "How Do Distributors Source Coupon Inventory and Earn Revenue?",
+      "title": "Source, Distribute, and Earn",
       "subtitle": "Access verified coupon inventory from hundreds of merchants. Distribute through your platform and generate revenue on every successful redemption.",
       "whoFor": "Who This Is For",
       "howWorks": "How It Works",
@@ -1033,7 +1032,7 @@
     },
     "partner": {
       "badge": "DISTRIBUTION PARTNER",
-      "title": "How Can You Licence the Mezzofy Platform to Build Your Distribution Network?",
+      "title": "Licence Our Platform and Earn Revenue",
       "subtitle": "Integrate our Bridge API and distribute verified coupons through your own platform. No inventory risk, recurring revenue model.",
       "whoFor": "Who This Is For",
       "howWorks": "How It Works",
@@ -1247,7 +1246,7 @@
       "getApiKey": "Get API Key"
     },
     "useCases": {
-      "heading": "What Can You Build with the Mezzofy API?",
+      "heading": "What You Can Build",
       "description": "Add coupon superpowers to your application or service with the Mezzofy Exchange Protocol",
       "integrate": {
         "title": "Integrate Coupons",
@@ -1291,7 +1290,7 @@
       }
     },
     "features": {
-      "heading": "What Technical Features Does Mezzofy Offer Developers?",
+      "heading": "Built for Developers",
       "description": "Our platform provides the tools and flexibility modern developers expect",
       "rest": {
         "title": "RESTful API",
@@ -2550,9 +2549,7 @@
   },
   "articles": {
     "news": {
-      "quickAnswerLabel": "Quick Answer",
       "cioworldFeature": {
-        "quickAnswer": "Mezzofy uses NFC tap-to-get coupons and integrated wallet functionality to help businesses replace paper coupons with eco-friendly digital alternatives, reducing environmental impact while improving customer engagement.",
         "title": "TheCIOWorld Features Mezzofy: Transforming Coupons for a Greener Future",
         "headings": {
           "nfcInnovation": "Redefining Digital Coupons with NFC Technology",
@@ -2566,10 +2563,10 @@
         "callout": {
           "heading": "Read the Full Article",
           "text": "Visit CIOWorld to learn more about Mezzofy's vision for eco-friendly digital coupons."
-        }
+        },
+        "quickAnswer": "Mezzofy uses NFC tap-to-get coupons and integrated wallet functionality to help businesses replace paper coupons with eco-friendly digital alternatives, reducing environmental impact while improving customer engagement."
       },
       "dualEsgAwards": {
-        "quickAnswer": "Mezzofy received dual ESG recognition at the Sustainable Development Forum 2024, earning the Outstanding ESG Enterprise Award and Sustainable Development Enterprise Certificate for eliminating paper coupon waste.",
         "title": "Mezzofy Honored with Dual Awards at the ESG and Sustainable Development Forum 2024",
         "headings": {
           "recognition": "Dual ESG Recognition at Sustainable Development Forum 2024",
@@ -2580,10 +2577,10 @@
           "forum": "Business leaders and sustainability experts convened to discuss ESG trends and integrating Sustainable Development Goals into operations. As a digital coupon platform, Mezzofy reduces environmental impact by replacing paper coupons with digital alternatives, thereby cutting paper waste.",
           "commitment": "The awards reinforce the company's commitment to environmental responsibility and leadership in sustainability. Mr. Tse Chin-wan, Hong Kong SAR Government's Secretary for Environment and Ecology, emphasized business importance in advancing sustainability initiatives.",
           "future": "Mezzofy continues developing solutions benefiting both environment and society. This achievement builds upon Mezzofy's earlier ESG certification."
-        }
+        },
+        "quickAnswer": "Mezzofy received dual ESG recognition at the Sustainable Development Forum 2024, earning the Outstanding ESG Enterprise Award and Sustainable Development Enterprise Certificate for eliminating paper coupon waste."
       },
       "edigestLeadingSolution": {
-        "quickAnswer": "Mezzofy is Asia-Pacific's leading digital coupon platform, having managed over 300 million digital coupons across multiple markets with cloud-based CaaS infrastructure.",
         "title": "eDigest Exclusive: Asia-Pacific's Leading Digital Coupon Solution",
         "headings": {
           "pioneering": "Pioneering Digital Coupon Solutions in Asia-Pacific",
@@ -2596,10 +2593,10 @@
           "innovative": "The platform distinguishes itself through accessibility and comprehensive features. Businesses can design and deploy digital coupons without requiring extensive technical expertise. The system accommodates multiple coupon formats, including discounts, gift vouchers, and promotional offers, supporting varied marketing approaches.",
           "expanding": "Mezzofy maintains operations across multiple Asia-Pacific countries and has facilitated issuance and management of over <span class=\"font-semibold text-primary-orange\">300 million digital coupons</span>. This extensive reach demonstrates platform scalability and dependability, positioning it as a preferred selection for businesses seeking to strengthen promotional initiatives.",
           "commitment": "The company continues investing in research and development to introduce new features and integrations. By emphasizing innovation, Mezzofy provides businesses with contemporary tools for effective customer engagement and growth acceleration."
-        }
+        },
+        "quickAnswer": "Mezzofy is Asia-Pacific's leading digital coupon platform, having managed over 300 million digital coupons across multiple markets with cloud-based CaaS infrastructure."
       },
       "ejtech300mCoupons": {
-        "quickAnswer": "Mezzofy's cloud platform has distributed over 300 million eco-friendly digital coupons across Asia-Pacific, enabling businesses to reach customers via email, SMS, and social media.",
         "title": "EJTech Highlights: Mezzofy's Cloud Platform Distributes 300M Digital Coupons Across APAC",
         "headings": {
           "cloudPlatform": "Cloud-Based Platform Recognized for Digital Coupon Leadership",
@@ -2610,10 +2607,10 @@
           "platform": "The platform enables businesses to \"create and distribute eco-friendly, paperless coupons efficiently, tapping into a wide range of industries.\" The solution supports direct customer outreach via email, SMS, and social media channels while reducing paper consumption.",
           "scale": "According to EJTech, <span class=\"font-semibold text-primary-orange\">\"With over 300 million digital coupons already distributed,\"</span> Mezzofy demonstrates significant market traction in reshaping how companies connect with consumers sustainably and cost-effectively.",
           "milestone": "This milestone represents a major achievement in the digital transformation of promotional marketing across the Asia-Pacific region. The platform's ability to handle such massive scale while maintaining efficiency and eco-friendliness sets a new standard for the industry."
-        }
+        },
+        "quickAnswer": "Mezzofy's cloud platform has distributed over 300 million eco-friendly digital coupons across Asia-Pacific, enabling businesses to reach customers via email, SMS, and social media."
       },
       "forbesDickyYin": {
-        "quickAnswer": "Forbes China recognized Mezzofy CEO Dicky Yin for outstanding leadership in innovation, honoring his work transforming the digital coupon sector with sustainable, transferable digital coupons.",
         "title": "Forbes China Recognizes Dicky Yin for Outstanding Leadership in Innovation",
         "headings": {
           "recognition": "Forbes China Honors Dicky Yin for Outstanding Leadership in Innovation",
@@ -2632,10 +2629,10 @@
         "callout": {
           "heading": "Read the Full Forbes China Article",
           "text": "Learn more about Dicky Yin's leadership philosophy and Mezzofy's mission."
-        }
+        },
+        "quickAnswer": "Forbes China recognized Mezzofy CEO Dicky Yin for outstanding leadership in innovation, honoring his work transforming the digital coupon sector with sustainable, transferable digital coupons."
       },
       "fundingAnnouncement": {
-        "quickAnswer": "Mezzofy raised USD 2 million Pre-Series A funding to expand globally, managing 400 million digital coupons across 15 markets for nearly 100 Asian brands including Maxim's, Starbucks, Shell, and Hyatt.",
         "title": "Mezzofy Raised USD 2 Million Pre-Series A Funding Round",
         "headings": {
           "funding": "Mezzofy Secures USD 2 Million Pre-Series A Funding Round",
@@ -2651,10 +2648,10 @@
         "quote": {
           "text": "\"The growth of digital payments and e-commerce drives the rise of digital coupons. We addressed this by making digital coupons transferable.\"",
           "attribution": "— Dicky Ying, CEO"
-        }
+        },
+        "quickAnswer": "Mezzofy raised USD 2 million Pre-Series A funding to expand globally, managing 400 million digital coupons across 15 markets for nearly 100 Asian brands including Maxim's, Starbucks, Shell, and Hyatt."
       },
       "techappleInnovationIndex": {
-        "quickAnswer": "Mezzofy earned 3-star recognition in the 2024 Corporate Innovation Index, recognized for digital couponing contributions to Hong Kong's innovation ecosystem as an inaugural SME recipient.",
         "title": "TechApple Features: Mezzofy Recognized as 3-Star SME in 2024 Corporate Innovation Index",
         "headings": {
           "recognition": "Mezzofy Named 3-Star SME in 2024 Corporate Innovation Index",
@@ -2665,10 +2662,10 @@
           "recognition": "This marked the inaugural year SMEs received evaluation. Thirty-seven organizations achieved star ratings, with <span class=\"font-semibold text-primary-orange\">Mezzofy (Hong Kong) Limited earning three stars</span> \"for its digital couponing contributions.\"",
           "collaboration": "Backed by the Hong Kong government and CUHK's APIB, the initiative promotes cross-sector collaboration and digital transformation. It furnishes data for policymakers while recognizing enterprises propelling economic progress through originality and adaptability.",
           "future": "The index continues encouraging enterprises of all dimensions to adopt innovative approaches and strengthen their competitive positions, establishing Hong Kong's trajectory as a worldwide innovation powerhouse."
-        }
+        },
+        "quickAnswer": "Mezzofy earned 3-star recognition in the 2024 Corporate Innovation Index, recognized for digital couponing contributions to Hong Kong's innovation ecosystem as an inaugural SME recipient."
       },
       "treasureGlobalPartnership": {
-        "quickAnswer": "Mezzofy partnered with Treasure Global as exclusive distributor in Malaysia, targeting USD 2–4 million in annual recurring revenue within the first year of the Asia-Pacific expansion.",
         "title": "Mezzofy Partners with Treasure Global to Accelerate Digital Coupon Expansion in Malaysia",
         "headings": {
           "partnership": "Mezzofy and Treasure Global Partner to Expand Digital Coupons in Malaysia",
@@ -2684,18 +2681,20 @@
         "quote": {
           "text": "\"Treasure Global's strong presence and market insight make them a great partner to scale our solution in Malaysia.\"",
           "attribution": "— Dicky Ying, CEO of Mezzofy"
-        }
-      }
+        },
+        "quickAnswer": "Mezzofy partnered with Treasure Global as exclusive distributor in Malaysia, targeting USD 2–4 million in annual recurring revenue within the first year of the Asia-Pacific expansion."
+      },
+      "quickAnswerLabel": "Quick Answer"
     },
     "blog": {
       "nfcParknshop": {
         "title": "Mezzofy Helps Brands Set Up Coupons at 240 ParknShop NFC Tags",
         "headings": {
-          "introduction": "How Does Mezzofy's PARKnSHOP NFC Service Work?",
-          "challenges": "What Challenges Do Brands Face with Retail Promotions?",
-          "service": "How Does the One-Stop Service Eliminate Complexity?",
-          "benefits": "What Are the Key Benefits of NFC Coupon Distribution?",
-          "applications": "Who Should Use This Service?"
+          "introduction": "Introduction",
+          "challenges": "Challenges Outlined",
+          "service": "Service Solution",
+          "benefits": "Key Benefits",
+          "applications": "Target Applications"
         },
         "paragraphs": {
           "intro": "For many FMCG and consumer goods brands, executing promotional activities through physical retail channels involves substantial coordination and procedural complexity.",
@@ -2717,11 +2716,11 @@
       "eCouponsPreference": {
         "title": "60% of Consumers Prefer E-Coupons: What This Means for Retail in the Digital Age",
         "headings": {
-          "rise": "Why Do 60% of Consumers Prefer E-Coupons?",
-          "footTraffic": "How Do Digital Coupons Drive Foot Traffic and Sales?",
-          "nfc": "How Does NFC Technology Streamline Coupon Redemption?",
-          "ai": "How Does AI Improve Digital Coupon Personalization?",
-          "location": "How Does Location-Based Marketing Boost Redemption?"
+          "rise": "The Rise of E-Coupons",
+          "footTraffic": "Driving Foot Traffic and Sales",
+          "nfc": "NFC Technology: Streamlining Redemption",
+          "ai": "AI-Powered Personalization",
+          "location": "Location-Based Marketing"
         },
         "paragraphs": {
           "rise": "The statistic that \"60% of consumers prefer e-coupons\" signals a transformative shift in shopping behaviors. Digital coupons have become critical engagement tools for businesses, particularly when enhanced with NFC and AI technologies. This preference reflects consumers' desire for convenience, speed, and personalized shopping experiences in an increasingly digital retail landscape.",
@@ -2737,11 +2736,11 @@
       "environmentalExcellence": {
         "title": "HK Awards for Environmental Excellence - Cut Costs & Save Trees with Digital Coupons",
         "headings": {
-          "impact": "What Is the Environmental Impact of Paper Coupons?",
-          "waste": "Why Is Paper Coupon Waste Such a Big Problem?",
-          "business": "What Business Advantages Do Digital Coupons Offer?",
-          "demand": "Why Are Consumers Demanding Sustainable Coupon Options?",
-          "implementation": "How Can Your Business Switch to Digital Coupons?"
+          "impact": "The Environmental Impact of Paper Coupons",
+          "waste": "The Waste Problem",
+          "business": "Business Advantages of Digital Solutions",
+          "demand": "Consumer Demand for Sustainable Options",
+          "implementation": "Implementation Steps"
         },
         "paragraphs": {
           "impact": "Over 136 billion paper coupons are distributed globally annually, destroying approximately 5 million trees. Paper production ranks as the third-largest industrial polluter of air, water, and soil. The environmental cost of traditional coupon systems extends far beyond simple logistics—it represents a significant burden on our planet's natural resources and ecosystems.",
@@ -2769,13 +2768,13 @@
       "hotelTechInnovation": {
         "title": "Why Tech Innovation is Key to Hotel Success",
         "headings": {
-          "challenges": "What Are the Key Challenges Hotels Face Today?",
-          "travelers": "What Do Today's Travelers Really Want?",
-          "nfc": "How Does NFC Technology Enhance Hotel Guest Experiences?",
+          "challenges": "Industry Challenges",
+          "travelers": "What Travelers Want",
+          "nfc": "NFC Technology for Enhanced Guest Experiences",
           "success": "Real Success Story",
-          "chatbots": "How Do Chatbots Drive Location-Based Engagement?",
-          "ai": "How Does AI-Driven Personalization Work for Hotels?",
-          "urgency": "Why Must Hotels Adopt Technology Now?"
+          "chatbots": "Chatbots for Location-Based Engagement",
+          "ai": "AI-Driven Personalization",
+          "urgency": "The Urgency for Adaptation"
         },
         "paragraphs": {
           "challenges": "The hotel and travel industry faces significant challenges including diminishing customer loyalty and fierce competition. In an increasingly crowded marketplace, hospitality businesses must differentiate themselves through superior experiences and innovative service delivery to retain customers and build long-term relationships.",
@@ -2800,12 +2799,12 @@
       "holidayGuide": {
         "title": "Holiday Season Coupon Guide - Mastering the Last-Minute Holiday Sales Surge",
         "headings": {
-          "opportunity": "How Big Is the Holiday Retail Opportunity?",
-          "misconception": "Is It Too Late to Start Holiday Coupon Campaigns?",
-          "capitalizing": "How Do You Capture Last-Minute Holiday Shoppers?",
-          "strategies": "What Digital Coupon Strategies Work Best for Holiday Sales?",
-          "tactics": "Which Marketing Tactics Drive the Fastest Holiday Results?",
-          "guidance": "How Do You Build a Comprehensive Holiday Coupon Strategy?"
+          "opportunity": "The Holiday Retail Opportunity",
+          "misconception": "Breaking the Last-Minute Misconception",
+          "capitalizing": "Capitalizing on Remaining Opportunities",
+          "strategies": "Digital Coupon Strategies for Holiday Success",
+          "tactics": "Swift and Strategic Marketing Tactics",
+          "guidance": "Comprehensive Holiday Guidance"
         },
         "paragraphs": {
           "opportunity": "Holiday retail sales soared to $943-960 billion during 2022 according to the National Retail Federation (NRF). These staggering figures underscore the critical importance of maximizing sales during the holiday season—a period when consumer spending reaches its annual peak and opportunities abound for strategic retailers.",
@@ -2830,11 +2829,11 @@
       "smartRetail": {
         "title": "Tech-led Smart Retail - NFC Coupons Driving Impulse Purchases",
         "headings": {
-          "landscape": "How Is Technology Changing the Retail Landscape?",
-          "nfc": "How Does NFC Technology Create Seamless Shopping Experiences?",
-          "impulse": "How Do NFC Coupons Drive Impulse Purchases?",
-          "strategies": "What Are the Smartest Strategies for NFC Coupon Success?",
-          "transformative": "What Is the Transformative Potential of NFC Retail?"
+          "landscape": "The Evolving Retail Landscape",
+          "nfc": "NFC Technology for Seamless Experiences",
+          "impulse": "The Impulse Purchase Opportunity",
+          "strategies": "Smart Strategies for NFC Coupon Success",
+          "transformative": "The Transformative Potential"
         },
         "subheadings": {
           "location": "Strategic Location",

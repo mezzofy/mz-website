@@ -56,3 +56,5 @@ coverage/
 # Editor backup files
 *.bak
 *.orig
+*.2024backup
+*.backup-*
