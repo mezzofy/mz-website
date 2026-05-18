@@ -193,6 +193,7 @@
     </script>
     <!-- i18n Script -->
     <script src="i18n/i18n.js"></script>
+<script src="/js/analytics.js" defer></script>
 </head>
 <body class="bg-white text-primary-black i18n-loading">
     
@@ -282,7 +283,7 @@
                         </button>
                         <div class="dropdown-menu">
                             <a href="about.html" class="dropdown-item" data-i18n="common.nav.aboutUs">About Us</a>
-                            <a href="contact.html" class="dropdown-item" data-i18n="common.nav.contactUs">Contact Us</a>
+                            <a href="contact.html" class="dropdown-item" data-cta="contact" data-i18n="common.nav.contactUs">Contact Us</a>
                             <a href="news-press.html" class="dropdown-item" data-i18n="common.nav.newsPress">News & Press</a>
                             <a href="investors.html" class="dropdown-item" data-i18n="common.nav.investors">Investors</a>
                         </div>
@@ -306,7 +307,7 @@
                         </div>
                     </div>
 
-                    <a href="contact.html" class="btn-primary" data-i18n="common.nav.getStarted">Get Started</a>
+                    <a href="contact.html" class="btn-primary" data-cta="signup" data-i18n="common.nav.getStarted">Get Started</a>
                 </div>
 
                 <!-- Mobile Menu Button -->
@@ -415,13 +416,13 @@
                     </button>
                     <div class="mobile-dropdown-menu" data-menu="company">
                         <a href="about.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.aboutUs">About Us</a>
-                        <a href="contact.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.contactUs">Contact Us</a>
+                        <a href="contact.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-cta="contact" data-i18n="common.nav.contactUs">Contact Us</a>
                         <a href="news-press.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.newsPress">News & Press</a>
                         <a href="investors.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.investors">Investors</a>
                     </div>
                 </div>
 
-                <a href="contact.html" class="block py-2 text-primary-orange font-semibold" data-i18n="common.nav.getStarted">Get Started</a>
+                <a href="contact.html" class="block py-2 text-primary-orange font-semibold" data-cta="signup" data-i18n="common.nav.getStarted">Get Started</a>
             </div>
         </div>
     </nav>
@@ -439,8 +440,8 @@
                     Integrate coupon functionality with our developer-first API and SDKs
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="api-doc.html" class="btn-primary inline-block text-center" data-i18n="developers.hero.viewApiDocs">View API Docs</a>
-                    <a href="contact.html" class="btn-secondary inline-block text-center bg-white/10 text-white border-white hover:bg-white/20" data-i18n="developers.hero.getApiKey">Get API Key</a>
+                    <a href="api-doc.html" class="btn-primary inline-block text-center" data-cta="learn-more" data-i18n="developers.hero.viewApiDocs">View API Docs</a>
+                    <a href="contact.html" class="btn-secondary inline-block text-center bg-white/10 text-white border-white hover:bg-white/20" data-cta="signup" data-i18n="developers.hero.getApiKey">Get API Key</a>
                 </div>
             </div>
         </div>
@@ -703,7 +704,7 @@ console.log(<span style="color: #98C379;">'Campaign created:'</span>, campaign.i
                     <p class="text-dark-grey mb-4" data-i18n="developers.quickStart.note">
                         This is a simplified example. Full documentation includes authentication, error handling, webhooks, and advanced features.
                     </p>
-                    <a href="api-doc.html" class="btn-primary" data-i18n="developers.quickStart.cta">View Full Documentation</a>
+                    <a href="api-doc.html" class="btn-primary" data-cta="learn-more" data-i18n="developers.quickStart.cta">View Full Documentation</a>
                 </div>
             </div>
         </div>
@@ -865,7 +866,7 @@ console.log(<span style="color: #98C379;">'Campaign created:'</span>, campaign.i
                     <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.company.title">Company</h3>
                     <ul class="space-y-2 text-gray-300">
                         <li><a href="about.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.about">About Us</a></li>
-                        <li><a href="contact.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.contact">Contact Us</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors" data-cta="contact" data-i18n="common.footer.company.contact">Contact Us</a></li>
                         <li><a href="news-press.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.news">News & Press</a></li>
                         <li><a href="investors.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.investors">Investors</a></li>
                     </ul>
