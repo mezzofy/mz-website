@@ -10,7 +10,7 @@
 (function () {
   'use strict';
 
-  var BEACON_URL = 'https://api.mezzofy.com/analytics/collect';
+  var BEACON_URL = 'https://assistant.mezzofy.com/analytics/collect';
 
   // ── Identity ──────────────────────────────────────────────────────────────
 
