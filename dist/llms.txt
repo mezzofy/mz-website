@@ -1,6 +1,6 @@
 # Mezzofy — Global Coupon Exchange Protocol
 
-> Mezzofy (Mezzofy Limited, founded Hong Kong 2015 by Dicky Yin) operates the world's leading digital coupon exchange platform — the Global Coupon Exchange Protocol. The platform connects merchants and brands to a global network of distributors for secure, tokenized digital coupon distribution. Mezzofy has processed over 300 million coupons across Asia-Pacific, supporting NFC tap-to-redeem, digital wallets, serial-number issuance, B2B/B2C marketplace trading, and AI-powered campaign management. Winner of the HK Awards for Environmental Excellence and ESG Forum 2024 Dual Awards.
+> Mezzofy (Mezzofy Limited, founded Hong Kong 2015 by Dicky Ying) operates the world's leading digital coupon exchange platform — the Global Coupon Exchange Protocol. The platform connects merchants and brands to a global network of distributors for secure, tokenized digital coupon distribution. Mezzofy has processed over 300 million coupons across Asia-Pacific, supporting NFC tap-to-redeem, digital wallets, serial-number issuance, B2B/B2C marketplace trading, and AI-powered campaign management. Winner of the HK Awards for Environmental Excellence and ESG Forum 2024 Dual Awards.
 
 ## Core Platform
 - [Homepage](https://mezzofy.com/): Overview of the Global Coupon Exchange Protocol, platform value proposition for merchants and distributors, and key statistics (300M+ coupons, global reach)
@@ -23,7 +23,7 @@
 - [Support](https://mezzofy.com/support.html): Help center with FAQs, troubleshooting guides, and support contact for merchants, distributors, and developers using the Mezzofy platform
 
 ## About
-- [About Mezzofy](https://mezzofy.com/about.html): Company history (founded 2015 by Dicky Yin in Hong Kong), mission to digitize global coupon distribution, team, ESG commitments, and HK Awards for Environmental Excellence recognition
+- [About Mezzofy](https://mezzofy.com/about.html): Company history (founded 2015 by Dicky Ying in Hong Kong), mission to digitize global coupon distribution, team, ESG commitments, and HK Awards for Environmental Excellence recognition
 - [News & Press](https://mezzofy.com/news-press.html): Latest awards, media coverage, analyst recognition, and strategic partnership announcements from Mezzofy
 - [Investors](https://mezzofy.com/investors.html): Investment overview, company growth milestones (300M+ coupons), market opportunity in digital promotions, and investor contact information
 
@@ -40,7 +40,7 @@
 - [Dual ESG Awards](https://mezzofy.com/news/dual-esg-awards.html): Mezzofy wins dual ESG excellence awards at the ESG Forum 2024, recognized for environmental and social governance leadership in digital promotions
 - [eDigest Leading Solution](https://mezzofy.com/news/edigest-leading-solution.html): eDigest names Mezzofy as Asia-Pacific's leading digital coupon solution, citing the Exchange Protocol and 300M+ coupons distributed across the region
 - [EJTech: 300 Million Coupons](https://mezzofy.com/news/ejtech-300m-coupons.html): EJTech reports Mezzofy's cloud platform milestone of 300 million digital coupons distributed across Asia-Pacific markets
-- [Forbes: Dicky Yin Profile](https://mezzofy.com/news/forbes-dicky-yin.html): Forbes China recognizes Dicky Yin, founder and CEO of Mezzofy, for outstanding leadership in fintech innovation and building the Global Coupon Exchange Protocol
+- [Forbes: Dicky Ying Profile](https://mezzofy.com/news/forbes-dicky-yin.html): Forbes China recognizes Dicky Ying, founder and CEO of Mezzofy, for outstanding leadership in fintech innovation and building the Global Coupon Exchange Protocol
 - [Funding Announcement](https://mezzofy.com/news/funding-announcement.html): Mezzofy announces a new funding round to accelerate global expansion of the Exchange Protocol and product development
 - [TechApple Innovation Index](https://mezzofy.com/news/techapple-innovation-index.html): TechApple names Mezzofy a 3-Star SME in the 2024 Corporate Innovation Index for contributions to digital coupon technology and retail innovation
 - [Treasure Global Partnership](https://mezzofy.com/news/treasure-global-partnership.html): Mezzofy announces strategic partnership with Treasure Global to expand digital coupon distribution and loyalty program integration across new markets

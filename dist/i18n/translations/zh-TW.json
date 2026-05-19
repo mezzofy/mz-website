@@ -2551,6 +2551,33 @@
       "quickAnswerLabel": "快速解答"
     },
     "blog": {
+      "aiCouponPromotion": {
+        "title": "人工智能與智能優惠券如何幫助企業獲取、互動並留住客戶",
+        "headings": {
+          "introduction": "AI 驅動的優惠券營銷如何運作？",
+          "challenges": "面臨的挑戰",
+          "solution": "智能優惠券解決方案",
+          "benefits": "AI 驅動優惠券的核心優勢是什麼？",
+          "applications": "適用場景",
+          "contact": {
+            "heading": "聯絡我們",
+            "info": "<a href=\"mailto:hello@mezzofy.com\" class=\"text-primary-orange hover:underline\">hello@mezzofy.com</a> | WhatsApp: <a href=\"https://wa.me/85294802246\" rel=\"nofollow noopener noreferrer\" class=\"text-primary-orange hover:underline\">9480 2246</a>"
+          }
+        },
+        "paragraphs": {
+          "intro": "對許多企業而言，優惠券仍然是最有效的促銷工具之一——但傳統方式往往依賴大規模發放、固定折扣，並且難以洞察顧客行為。",
+          "challenges": "文章指出常見痛點：如何在不影响利潤的情況下製作吸引廣泛受眾的優惠、跨渠道管理兌換、手動細分客戶名單，以及衡量真實廣告投資回報率。許多企業還面臨優惠券欺詐、重複兌換，以及印刷或分發實體券的營運成本。",
+          "solution": "Mezzofy 將人工智能融入優惠券生命週期的每個階段——從創建、分發到兌換和分析。企業設定活動目標後，平台會根據購買歷史、瀏覽行為和實時客戶信號自動生成個性化優惠。電子優惠券可通過短訊、電郵、App 推送或 NFC 觸點發送，每次兌換都在集中儀表板中追蹤。",
+          "benefitsIntro": "平台具備以下優勢：",
+          "applications": "該方案適用於電商再營銷、新客戶入職流程、忠誠度計劃充值、季節性閃購，以及希望將線下客流與數字互動相結合的實體連鎖品牌。"
+        },
+        "benefits": {
+          "conversionRate": "與向整個數據庫發送的統一直減相比，個性化優惠可帶來<span class=\"font-semibold text-primary-orange\">3 倍的轉換率提升</span>",
+          "reEngagement": "<span class=\"font-semibold text-primary-orange\">自動化再互動活動</span>可挽回 15–20% 超過 90 天未購買的流失客戶",
+          "fraudReduction": "<span class=\"font-semibold text-primary-orange\">實時欺詐檢測與唯一序號</span>可將非法兌換減少 90% 以上",
+          "costReduction": "數碼化分發時，單張優惠券的分發成本可降至<span class=\"font-semibold text-primary-orange\">0.05 美元以下</span>，消除印刷與物流開銷"
+        }
+      },
       "nfcParknshop": {
         "title": "Mezzofy 助品牌設置電子券到240 間百佳 NFC 標籤，全程代辦、無需協調",
         "headings": {
