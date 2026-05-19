@@ -399,7 +399,7 @@
                 <strong data-i18n="support.status.operational">Operational</strong>
                 <span class="text-white/60">|</span>
                 <a href="status.html"
-                   class="hover:underline flex items-center gap-1">
+                   class="hover:underline flex items-center gap-1" data-cta="status">
                     <span data-i18n="support.status.viewLive">View Live Status</span>
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
@@ -420,8 +420,8 @@
                     <span class="text-primary-orange font-semibold">Dedicated support</span> for merchants, distributors, partners, and end users across the Mezzofy platform. Our team is available around the clock to ensure your <span class="text-primary-orange font-semibold">business never stops</span>.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <a href="#reach" class="btn-primary w-full sm:w-auto text-center" data-i18n="support.hero.ctaMerchant">Merchant Portal</a>
-                    <a href="#reach" class="btn-secondary w-full sm:w-auto text-center bg-white/10 text-white border-white hover:bg-white/20" data-i18n="support.hero.ctaPartner">Distributor Portal</a>
+                    <a href="#reach" class="btn-primary w-full sm:w-auto text-center" data-cta="portal" data-i18n="support.hero.ctaMerchant">Merchant Portal</a>
+                    <a href="#reach" class="btn-secondary w-full sm:w-auto text-center bg-white/10 text-white border-white hover:bg-white/20" data-cta="portal" data-i18n="support.hero.ctaPartner">Distributor Portal</a>
                 </div>
             </div>
         </div>
@@ -450,7 +450,7 @@
                     <p class="text-dark-grey mb-6 text-sm leading-relaxed" data-i18n="support.reach.merchant.desc">
                         Supply-side customers can submit and track support requests directly through the Merchant Portal. Access ticketing and documentation.
                     </p>
-                    <a href="https://platform.mezzofy.com" target="_blank" rel="noopener" class="btn-primary text-center block" data-i18n="support.reach.merchant.cta">
+                    <a href="https://platform.mezzofy.com" target="_blank" rel="noopener" class="btn-primary text-center block" data-cta="portal" data-i18n="support.reach.merchant.cta">
                         Access Merchant Portal
                     </a>
                 </div>
@@ -467,7 +467,7 @@
                     <p class="text-dark-grey mb-6 text-sm leading-relaxed" data-i18n="support.reach.partner.desc">
                         Distributors can manage support requests, review SLAs, track inventory issues, and escalate tickets through the Distributor Portal.
                     </p>
-                    <a href="https://platform.mezzofy.com" target="_blank" rel="noopener" class="btn-primary text-center block" data-i18n="support.reach.partner.cta">
+                    <a href="https://platform.mezzofy.com" target="_blank" rel="noopener" class="btn-primary text-center block" data-cta="portal" data-i18n="support.reach.partner.cta">
                         Access Distributor Portal
                     </a>
                 </div>
@@ -484,7 +484,7 @@
                         For consumers and end users who need assistance with coupon redemption, wallet issues, or general inquiries.
                     </p>
                     <p class="text-primary-orange font-semibold text-sm mb-6">support@mezzofy.com</p>
-                    <a href="mailto:support@mezzofy.com" class="btn-primary text-center block" data-i18n="support.reach.email.cta">
+                    <a href="mailto:support@mezzofy.com" class="btn-primary text-center block" data-cta="contact" data-i18n="support.reach.email.cta">
                         Email Support
                     </a>
                 </div>
@@ -769,8 +769,8 @@
                     Our team is available 24/7 to help you resolve any issues with the Mezzofy platform.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <a href="contact.html" class="btn-primary w-full sm:w-auto text-center" data-i18n="support.footerCta.contactUs">Contact Support</a>
-                    <a href="https://mezzofy.freshdesk.com/support/home" target="_blank" rel="noopener" class="btn-secondary w-full sm:w-auto text-center bg-white/10 text-white border-white hover:bg-white/20" data-i18n="support.footerCta.viewDocs">View Documentation</a>
+                    <a href="contact.html" class="btn-primary w-full sm:w-auto text-center" data-cta="contact" data-i18n="support.footerCta.contactUs">Contact Support</a>
+                    <a href="https://mezzofy.freshdesk.com/support/home" target="_blank" rel="noopener" class="btn-secondary w-full sm:w-auto text-center bg-white/10 text-white border-white hover:bg-white/20" data-cta="learn-more" data-i18n="support.footerCta.viewDocs">View Documentation</a>
                 </div>
             </div>
 
