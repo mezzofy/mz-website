@@ -1,0 +1,24 @@
+# Compiled output — Kimi only needs to READ/EDIT these, not index all assets
+dist/images/
+dist/output.css
+dist/*.css
+dist/*.js
+dist/*.map
+
+# Build tooling — never relevant to website edits
+node_modules/
+.git/
+package-lock.json
+
+# Large binary assets
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.ico
+*.webp
+*.woff
+*.woff2
+*.ttf
+*.eot
