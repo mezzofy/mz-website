@@ -1,3 +1,7 @@
+/* Arabic webfont (Cairo). unicode-range in the css2 response means the Arabic
+   binary is only fetched when Arabic glyphs actually render — free for en/zh users. */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -86,3 +90,65 @@ body.i18n-ready {
 body {
   transition: opacity 0.2s;
 }
+
+/* ==========================================================================
+   RTL (Arabic) support
+   All rules are scoped to [dir="rtl"], so they are completely inert for the
+   LTR languages (en, zh-TW, zh-CN) — zero regression risk. This block is
+   emitted after @tailwind utilities, so it wins the cascade over the base
+   directional utilities it overrides.
+   Flexbox/grid inline axis mirrors natively under dir="rtl"; the rules below
+   cover only asymmetric spacing, positioning, alignment, borders and radius
+   that Tailwind's physical utilities don't flip on their own.
+   ========================================================================== */
+
+/* Arabic-friendly typography */
+[dir="rtl"] {
+  font-family: 'Cairo', 'Noto Sans Arabic', system-ui, -apple-system, sans-serif;
+}
+
+/* Default text alignment follows reading direction */
+html[dir="rtl"] body,
+[dir="rtl"] .text-left { text-align: right; }
+[dir="rtl"] .text-right { text-align: left; }
+[dir="rtl"] .md\:text-left { text-align: right; }
+[dir="rtl"] .sm\:text-right { text-align: left; }
+
+/* Margin flips (values actually used: ml-1/2/8, ml-auto, mr-1/2) */
+[dir="rtl"] .ml-1 { margin-left: 0; margin-right: 0.25rem; }
+[dir="rtl"] .ml-2 { margin-left: 0; margin-right: 0.5rem; }
+[dir="rtl"] .ml-8 { margin-left: 0; margin-right: 2rem; }
+[dir="rtl"] .ml-auto { margin-left: 0; margin-right: auto; }
+[dir="rtl"] .mr-1 { margin-right: 0; margin-left: 0.25rem; }
+[dir="rtl"] .mr-2 { margin-right: 0; margin-left: 0.5rem; }
+
+/* Padding flips (values actually used: pl-4, pl-6) */
+[dir="rtl"] .pl-4 { padding-left: 0; padding-right: 1rem; }
+[dir="rtl"] .pl-6 { padding-left: 0; padding-right: 1.5rem; }
+
+/* space-x reversal: flip the reverse flag rather than re-declaring margins */
+[dir="rtl"] .space-x-6 > :not([hidden]) ~ :not([hidden]) { --tw-space-x-reverse: 1; }
+
+/* Absolute/relative positioning flips (values actually used) */
+[dir="rtl"] .left-1 { left: auto; right: 0.25rem; }
+[dir="rtl"] .left-3 { left: auto; right: 0.75rem; }
+[dir="rtl"] .left-4 { left: auto; right: 1rem; }
+[dir="rtl"] .right-0 { right: auto; left: 0; }
+[dir="rtl"] .right-3 { right: auto; left: 0.75rem; }
+[dir="rtl"] .right-5 { right: auto; left: 1.25rem; }
+
+/* Directional borders */
+[dir="rtl"] .border-l { border-left-width: 0; border-right-width: 1px; }
+[dir="rtl"] .border-r { border-right-width: 0; border-left-width: 1px; }
+
+/* Directional radius */
+[dir="rtl"] .rounded-r-lg {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+/* Custom component overrides */
+[dir="rtl"] .dropdown-menu { left: auto; right: 0; }
+[dir="rtl"] .mobile-dropdown-menu { padding-left: 0; padding-right: 1rem; }

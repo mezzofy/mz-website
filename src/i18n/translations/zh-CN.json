@@ -701,7 +701,8 @@
       },
       "step2": {
         "title": "分发",
-        "description": "通过<a href=\"coupon-nfc.html\" class=\"text-white font-semibold underline\">NFC</a>、<a href=\"coupon-campaign.html\" class=\"text-white font-semibold underline\">营销</a>、<a href=\"coupon-marketplace.html\" class=\"text-white font-semibold underline\">市集</a>部署"
+        "description": "通过<a href=\"coupon-nfc.html\" class=\"text-white font-semibold underline\">NFC</a>、<a href=\"coupon-campaign.html\" class=\"text-white font-semibold underline\">营销</a>、<a href=\"coupon-marketplace.html\" class=\"text-white font-semibold underline\">市集</a>部署",
+        "channels": "<span class=\"px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white\">邮件</span><span class=\"px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white\">SMS</span><span class=\"px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white\">聊天</span><span class=\"px-3 py-1 bg-white rounded-full text-xs font-bold text-primary-orange\">API</span>"
       },
       "step3": {
         "title": "优化",
@@ -781,7 +782,8 @@
       "description": "加入信任 Mezzofy 为其数字电子券基础设施提供动力的领先商家",
       "getStarted": "列出您的第一张电子券",
       "talkToSales": "查看所有产品"
-    }
+    },
+    "definition": "Mezzofy 是一个数字优惠券交换平台，帮助商户在 15 个以上的亚太市场中创建、分发优惠券并从中获利。通过 Mezzofy 交换协议，商户可消除优惠券负债，通过 NFC、市场与数字渠道触达新客户，并在每次成功兑换时创造收益——且无需任何前期费用。"
   },
   "distributors": {
     "hero": {
@@ -1388,7 +1390,7 @@
       "description": "唯一支持 B2B、B2C 和 C2C 交易的安全点对点电子券交换平台。基于代币化技术打造，为数字促销活动建立具防诈保护的二级市场。",
       "listInventory": "刊登您的库存",
       "exploreMarketplace": "探索市场",
-      "imageAlt": "电子券市场平台"
+      "imageAlt": "优惠券交换网络可视化"
     },
     "exchange": {
       "title": "电子券交换协议",
@@ -2081,7 +2083,8 @@
       "title": "您的数字电子券钱包",
       "subtitle": "多平台电子券收集体验，提升兑换率 40% 以上。跨设备同步和智能管理，由 Mezzofy 交易所协议驱动，可作白标或 API 集成。",
       "getStarted": "立即开始",
-      "exploreFeatures": "探索功能"
+      "exploreFeatures": "探索功能",
+      "imageAlt": "优惠券钱包平台"
     },
     "platforms": {
       "title": "随处可用",

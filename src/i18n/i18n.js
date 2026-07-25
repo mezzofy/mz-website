@@ -12,7 +12,8 @@ class I18n {
     this.currentLang = 'en';
     this.defaultLang = 'en';
     this.translations = {};
-    this.supportedLanguages = ['en', 'zh-TW', 'zh-CN'];
+    this.supportedLanguages = ['en', 'zh-TW', 'zh-CN', 'ar'];
+    this.rtlLanguages = ['ar'];
     this.storageKey = 'mezzofy_language';
   }
 
@@ -36,8 +37,9 @@ class I18n {
     // 6. Apply translations to page
     this.applyTranslations();
 
-    // 7. Update HTML lang attribute
+    // 7. Update HTML lang + dir attributes
     document.documentElement.setAttribute('lang', this.currentLang);
+    this.applyDirection(this.currentLang);
 
     // 8. Remove loading class to prevent FOUC
     document.body.classList.remove('i18n-loading');
@@ -80,6 +82,7 @@ class I18n {
     this.saveLanguage(lang);
     this.applyTranslations();
     document.documentElement.setAttribute('lang', lang);
+    this.applyDirection(lang);
 
     // Update URL parameter
     this.updateUrlLanguage(lang);
@@ -243,12 +246,25 @@ class I18n {
     return this.currentLang;
   }
 
+  // Is the given (or current) language right-to-left?
+  isRTL(lang = this.currentLang) {
+    return this.rtlLanguages.includes(lang);
+  }
+
+  // Apply text direction to the document (rtl for Arabic, ltr otherwise)
+  applyDirection(lang) {
+    const dir = this.isRTL(lang) ? 'rtl' : 'ltr';
+    document.documentElement.setAttribute('dir', dir);
+    document.documentElement.classList.toggle('rtl', dir === 'rtl');
+  }
+
   // Get language display name
   getLanguageName(lang) {
     const names = {
       'en': 'English',
       'zh-TW': '繁體中文',
-      'zh-CN': '简体中文'
+      'zh-CN': '简体中文',
+      'ar': 'العربية'
     };
     return names[lang] || lang;
   }

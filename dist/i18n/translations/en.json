@@ -776,7 +776,8 @@
       "description": "Join leading merchants who trust Mezzofy to power their digital coupon infrastructure",
       "getStarted": "List Your First Coupon",
       "talkToSales": "View All Products"
-    }
+    },
+    "definition": "Mezzofy is a digital coupon exchange platform that helps merchants create, distribute, and monetize digital coupons across 15+ Asia-Pacific markets. Using the Mezzofy Exchange Protocol, merchants eliminate coupon liabilities, reach new customers through NFC, marketplace, and digital channels, and generate revenue on every successful redemption — with zero upfront fees."
   },
   "distributors": {
     "hero": {
@@ -1381,7 +1382,8 @@
       "title": "GLOBAL <span class=\"text-primary-orange\">EXCHANGE HUB</span> FOR COUPONS",
       "description": "The only <span class=\"text-primary-orange font-semibold\">secure peer-to-peer</span> coupon exchange enabling B2B, B2C, and C2C transactions. Built on <span class=\"text-primary-orange font-semibold\">tokenization technology</span> to create a secondary market for digital coupons with fraud-proof validation.",
       "listInventory": "List Your Inventory",
-      "exploreMarketplace": "Explore Marketplace"
+      "exploreMarketplace": "Explore Marketplace",
+      "imageAlt": "Coupon Exchange Network Visualization"
     },
     "exchange": {
       "title": "The Coupon Exchange Protocol",
@@ -2195,7 +2197,8 @@
       "title": "YOUR DIGITAL <span class=\"text-primary-orange\">WALLET</span> FOR COUPONS",
       "subtitle": "Multi-platform coupon collection experience <span class=\"text-primary-orange font-semibold\">improving redemption rates 40%+</span>. Cross-device sync and smart organization, available as <span class=\"text-primary-orange font-semibold\">white-label or API integration</span>.",
       "getStarted": "Get Started",
-      "exploreFeatures": "Explore Features"
+      "exploreFeatures": "Explore Features",
+      "imageAlt": "Coupon Wallet Platform"
     },
     "platforms": {
       "title": "Available Everywhere You Need It",
