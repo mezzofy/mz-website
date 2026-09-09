@@ -34,6 +34,17 @@ MCP server configuration fixed for Windows. Shadcn MCP server now loads correctl
 
 ## Recently Completed (Last 7 Days)
 
+**2026-09-09 (Operator App Legal Pages — Terms of Use + Privacy Policy):**
+- ✅ Created Singapore-law legal docs for the Operator App (used by Merchant staff for coupon redemption & distribution) → `dist/legal/operator/terms-of-use.html`, `dist/legal/operator/privacy-policy.html`
+  - Design: "legal instrument" identity — monospace apparatus (§ clause numbers + `EFFECTIVE · VERSION · GOVERNING LAW: SINGAPORE · APPLIES TO` masthead), sticky scroll-synced clause index, single brand-orange accent; brand nav/footer reused with `../../` paths
+  - Terms = 16 clauses; Privacy = 15 clauses (PDPA-aligned); doc-switch chips, print, breadcrumb, print stylesheet, reduced-motion + RTL (logical properties), WCAG focus-visible
+  - i18n: new `operatorLegal` namespace added to EN, zh-TW, zh-CN, ar (src + dist); line endings preserved (CRLF for en/zh, LF for ar). 165 data-i18n keys, 0 missing across all 4 languages
+  - ⚠️ PENDING (user): replace placeholder `[Mezzofy Singapore entity name] (UEN: __________)` with the registered Singapore entity + UEN before publishing; legal review recommended. Contact = support@mezzofy.com
+  - Deliberately NOT added to nav/sitemap.xml — pages are referenced from inside the Operator App
+  - ✅ Follow-up: pages always open in English (page-local override of i18n saved/browser detection; `?lang=` deep links + selector still honored)
+  - ✅ Follow-up: site header (nav) and footer removed — pages are chrome-less for in-app embedding (`--nav` collapsed to 0; breadcrumb + masthead retained).
+  - ✅ Follow-up: added a compact inline language toggle (EN / 繁體中文 / 简体中文 / العربية) to the masthead, replacing the selector lost with the header. Reuses the existing `lang-option` hook in `js/main.js` (no new JS/i18n keys); active language highlighted automatically.
+
 **2026-02-25 (Coupon Marketplace Hero Title Rephrase):**
 - ✅ Reduced hero title by one word on coupon-marketplace.html → `dist/coupon-marketplace.html:335`
   - Impact: More direct and authoritative hero headline
