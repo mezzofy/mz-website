@@ -2844,7 +2844,7 @@
       "switchTerms": "使用条款",
       "switchPrivacy": "隐私政策",
       "print": "打印",
-      "entity": "[Mezzofy Singapore entity name] (UEN: __________)",
+      "entity": "Mezzofy (Singapore) Pte Ltd",
       "contactEmail": "support@mezzofy.com",
       "noticeTitle": "开始之前"
     },
@@ -2899,7 +2899,7 @@
       "t15Body": "<p>我们可能不时更新本条款。作出重大变更时，我们将更新本页所示的生效日期，并在适当情况下于应用程序内或通过您所属商户通知您。变更生效后您继续使用本应用程序，即表示您接受更新后的条款。</p>",
       "t16Toc": "管辖法律与联系",
       "t16Title": "管辖法律及联系方式",
-      "t16Body": "<p>本条款受新加坡共和国法律管辖，任何因本条款引起或与之相关的争议，均由新加坡法院拥有专属管辖权。</p><p>本应用程序由 <strong>[Mezzofy Singapore entity name] (UEN: __________)</strong> 发布。如对本条款有任何疑问，请联系 <a href=\"mailto:support@mezzofy.com\">support@mezzofy.com</a>。</p>"
+      "t16Body": "<p>本条款受新加坡共和国法律管辖，任何因本条款引起或与之相关的争议，均由新加坡法院拥有专属管辖权。</p><p>本应用程序由 <strong>Mezzofy (Singapore) Pte Ltd</strong> 发布。如对本条款有任何疑问，请联系 <a href=\"mailto:support@mezzofy.com\">support@mezzofy.com</a>。</p>"
     },
     "privacy": {
       "docTitle": "隐私政策",
@@ -2949,7 +2949,7 @@
       "p14Body": "<p>我们可能不时更新本隐私政策。作出重大变更时，我们将更新本页所示的生效日期，并在适当情况下于应用程序内或通过您所属商户通知您。请定期查阅本页。</p>",
       "p15Toc": "数据保护主管与联系",
       "p15Title": "数据保护主管、管辖法律及联系方式",
-      "p15Body": "<p>本政策受新加坡共和国法律及 PDPA 管辖。本应用程序由 <strong>[Mezzofy Singapore entity name] (UEN: __________)</strong> 发布。</p><p>如欲联系我们的数据保护主管，或查询本政策或您的个人数据，请电邮至 <a href=\"mailto:support@mezzofy.com\">support@mezzofy.com</a>。</p>"
+      "p15Body": "<p>本政策受新加坡共和国法律及 PDPA 管辖。本应用程序由 <strong>Mezzofy (Singapore) Pte Ltd</strong> 发布。</p><p>如欲联系我们的数据保护主管，或查询本政策或您的个人数据，请电邮至 <a href=\"mailto:support@mezzofy.com\">support@mezzofy.com</a>。</p>"
     }
   }
 }

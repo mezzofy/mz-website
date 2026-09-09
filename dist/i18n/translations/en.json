@@ -2958,7 +2958,7 @@
       "switchTerms": "Terms of Use",
       "switchPrivacy": "Privacy Policy",
       "print": "Print",
-      "entity": "[Mezzofy Singapore entity name] (UEN: __________)",
+      "entity": "Mezzofy (Singapore) Pte Ltd",
       "contactEmail": "support@mezzofy.com",
       "noticeTitle": "Before you begin"
     },
@@ -3013,7 +3013,7 @@
       "t15Body": "<p>We may update these Terms from time to time. When we make material changes we will update the effective date shown on this page and, where appropriate, notify you in the App or through your Merchant. Your continued use of the App after changes take effect means you accept the updated Terms.</p>",
       "t16Toc": "Governing law & contact",
       "t16Title": "Governing law & contact",
-      "t16Body": "<p>These Terms are governed by the laws of the Republic of Singapore, and the courts of Singapore have exclusive jurisdiction over any dispute arising out of or in connection with them.</p><p>The App is published by <strong>[Mezzofy Singapore entity name] (UEN: __________)</strong>. For questions about these Terms, contact <a href=\"mailto:support@mezzofy.com\">support@mezzofy.com</a>.</p>"
+      "t16Body": "<p>These Terms are governed by the laws of the Republic of Singapore, and the courts of Singapore have exclusive jurisdiction over any dispute arising out of or in connection with them.</p><p>The App is published by <strong>Mezzofy (Singapore) Pte Ltd</strong>. For questions about these Terms, contact <a href=\"mailto:support@mezzofy.com\">support@mezzofy.com</a>.</p>"
     },
     "privacy": {
       "docTitle": "Privacy Policy",
@@ -3063,7 +3063,7 @@
       "p14Body": "<p>We may update this Privacy Policy from time to time. When we make material changes we will update the effective date shown on this page and, where appropriate, notify you in the App or through your Merchant. Please review this page periodically.</p>",
       "p15Toc": "DPO & contact",
       "p15Title": "Data Protection Officer, governing law & contact",
-      "p15Body": "<p>This Policy is governed by the laws of the Republic of Singapore and the PDPA. The App is published by <strong>[Mezzofy Singapore entity name] (UEN: __________)</strong>.</p><p>To contact our Data Protection Officer or ask about this Policy or your personal data, email <a href=\"mailto:support@mezzofy.com\">support@mezzofy.com</a>.</p>"
+      "p15Body": "<p>This Policy is governed by the laws of the Republic of Singapore and the PDPA. The App is published by <strong>Mezzofy (Singapore) Pte Ltd</strong>.</p><p>To contact our Data Protection Officer or ask about this Policy or your personal data, email <a href=\"mailto:support@mezzofy.com\">support@mezzofy.com</a>.</p>"
     }
   }
 }
