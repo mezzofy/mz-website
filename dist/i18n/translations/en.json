@@ -8,14 +8,14 @@
       "company": "Company",
       "getStarted": "Get Started",
       "merchantSolution": "I'm a Merchant",
-      "distributorSolution": "I'm a Distributor",
-      "developerSolution": "I'm a Developer",
+      "distributorSolution": "I'm a Buyer",
+      "developerSolution": "I'm an Integrator",
       "aiCommerceSolution": "AI Commerce (Beta)",
       "managementSystem": "Coupon Management System",
       "marketplace": "Coupon Marketplace",
       "nfc": "Coupon NFC",
       "marketing": "Coupon Campaign",
-      "wallet": "Coupon Wallet",
+      "wallet": "Vault",
       "serial": "Pass",
       "apiDoc": "API Documentation",
       "apiUseCase": "API Use Case",
@@ -31,8 +31,8 @@
       "solutions": {
         "title": "Solutions",
         "merchants": "For Merchants",
-        "distributors": "For Distributors",
-        "developers": "For Developers",
+        "distributors": "For Buyers",
+        "developers": "For Integrators",
         "aiCommerce": "For AI Commerce",
         "ecosystem": "Product Ecosystem"
       },
@@ -42,7 +42,7 @@
         "marketplace": "Marketplace",
         "nfc": "NFC",
         "marketing": "Campaign",
-        "wallet": "Wallet",
+        "wallet": "Vault",
         "serial": "Pass"
       },
       "resources": {

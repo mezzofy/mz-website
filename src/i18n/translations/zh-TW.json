@@ -8,14 +8,14 @@
       "company": "公司",
       "getStarted": "開始使用",
       "merchantSolution": "我是商家",
-      "distributorSolution": "我是分銷商",
-      "developerSolution": "我是開發者",
+      "distributorSolution": "我是買家",
+      "developerSolution": "我是整合商",
       "aiCommerceSolution": "AI 電商 (Beta)",
       "managementSystem": "電子券管理系統",
       "marketplace": "電子券市場",
       "nfc": "電子券 NFC",
       "marketing": "電子券活動",
-      "wallet": "電子券錢包",
+      "wallet": "Vault",
       "serial": "Pass",
       "apiDoc": "API 文檔",
       "apiUseCase": "API 使用案例",
@@ -31,8 +31,8 @@
       "solutions": {
         "title": "解決方案",
         "merchants": "商家方案",
-        "distributors": "分銷商方案",
-        "developers": "開發者方案",
+        "distributors": "買家方案",
+        "developers": "整合商方案",
         "aiCommerce": "AI 電商方案",
         "ecosystem": "產品生態系統"
       },
@@ -42,7 +42,7 @@
         "marketplace": "市場",
         "nfc": "NFC",
         "marketing": "活動",
-        "wallet": "錢包",
+        "wallet": "Vault",
         "serial": "Pass"
       },
       "resources": {

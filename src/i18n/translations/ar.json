@@ -8,14 +8,14 @@
       "company": "الشركة",
       "getStarted": "ابدأ الآن",
       "merchantSolution": "أنا تاجر",
-      "distributorSolution": "أنا موزّع",
-      "developerSolution": "أنا مطوّر",
+      "distributorSolution": "أنا مشترٍ",
+      "developerSolution": "أنا جهة تكامل",
       "aiCommerceSolution": "تجارة الذكاء الاصطناعي (تجريبي)",
       "managementSystem": "نظام إدارة القسائم",
       "marketplace": "سوق القسائم",
       "nfc": "قسائم NFC",
       "marketing": "حملة القسائم",
-      "wallet": "محفظة القسائم",
+      "wallet": "Vault",
       "serial": "Pass",
       "apiDoc": "وثائق API",
       "apiUseCase": "حالة استخدام API",
@@ -31,8 +31,8 @@
       "solutions": {
         "title": "الحلول",
         "merchants": "للتجّار",
-        "distributors": "للموزّعين",
-        "developers": "للمطوّرين",
+        "distributors": "للمشترين",
+        "developers": "لجهات التكامل",
         "aiCommerce": "لتجارة الذكاء الاصطناعي",
         "ecosystem": "منظومة المنتجات"
       },
@@ -42,7 +42,7 @@
         "marketplace": "السوق",
         "nfc": "NFC",
         "marketing": "الحملة",
-        "wallet": "المحفظة",
+        "wallet": "Vault",
         "serial": "Pass"
       },
       "resources": {
