@@ -70,39 +70,46 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "What APIs does Mezzofy provide for developers?",
+            "name": "Who owns the merchant relationship in a Mezzofy integration?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Mezzofy provides a REST API and SDKs for coupon issuance, redemption validation, inventory queries, and campaign management. The API supports OAuth2 authentication and returns JSON responses. SDKs are available for common platforms."
+              "text": "The integration partner does. Your commercial terms with your merchants remain yours; Mezzofy handles coupon (Pass) validation, consumer support and settlement, and does not contact your merchants directly without your say-so."
             }
           },
           {
             "@type": "Question",
-            "name": "How do I integrate Mezzofy's coupon system into my application?",
+            "name": "Does each merchant sign separately with Mezzofy?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Developers integrate Mezzofy by registering for API credentials, installing the SDK or calling the REST API directly, implementing OAuth2 authentication, and using the coupon issuance and redemption endpoints. Full documentation and sandbox environment are available."
+              "text": "No. One partnership agreement covers all the merchants on your platform. They opt in through your interface and inherit the terms, with no separate contract or integration."
             }
           },
           {
             "@type": "Question",
-            "name": "Does Mezzofy support NFC coupon integration for developers?",
+            "name": "How does an integrator earn revenue from coupons on Mezzofy?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Mezzofy's NFC integration enables developers to write coupon tokens to NFC tags using HMAC authentication. The API handles NFC coupon creation, tag programming instructions, and redemption validation at point-of-sale terminals."
+              "text": "Partners earn a revenue share on every Charge Pass sold through their platform, settled at the point of sale rather than at redemption, so earnings do not depend on whether the customer reaches the counter. The share percentage is set in the partnership agreement."
             }
           },
           {
             "@type": "Question",
-            "name": "What is the Mezzofy Exchange Protocol?",
+            "name": "How long does certification take?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The Mezzofy Exchange Protocol is a secure, tokenized standard for creating, distributing, and redeeming digital coupons across multiple platforms and channels. It enables merchants, distributors, and developers to interoperate through a single API and shared coupon inventory layer."
+              "text": "Typically two to three weeks from a working sandbox integration. Mezzofy tests coupon issuance, redemption, failure handling and settlement reconciliation before production keys are issued."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What protocols does the Mezzofy integration API support?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Both REST and MCP, against a sandbox provided on signup. The same endpoints power coupon issuance, distribution, validation and per-merchant settlement reporting that the marketplace runs on."
             }
           }
         ]
-      }
-    },
+      },
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
@@ -178,6 +185,50 @@
             font-size: 0.875rem;
             line-height: 1.5;
         }
+
+        /* ===== v2 shared components (site palette) ===== */
+        .hero-badge { display:inline-flex; align-items:center; gap:8px; border:1px solid rgba(255,107,53,0.45); background:rgba(255,107,53,0.12); border-radius:100px; padding:6px 16px; font-family:'IBM Plex Mono',monospace; font-size:0.68rem; letter-spacing:0.13em; text-transform:uppercase; color:#FF6B35; }
+        .hero-badge-dot { width:6px; height:6px; background:#FF6B35; border-radius:50%; animation:pulseDot 2s ease-in-out infinite; }
+        @keyframes pulseDot { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.4;transform:scale(.8)} }
+        .stat-card { border:1px solid rgba(255,255,255,0.09); background:rgba(255,255,255,0.05); backdrop-filter:blur(14px); border-radius:12px; padding:18px 22px; transition:border-color .3s; }
+        .stat-card:hover { border-color:rgba(255,107,53,0.45); }
+        .stat-number { font-size:2.4rem; line-height:1; font-weight:800; color:#FF6B35; }
+        .stat-label { font-family:'IBM Plex Mono',monospace; font-size:0.72rem; letter-spacing:0.10em; color:rgba(255,255,255,0.55); margin-top:5px; text-transform:uppercase; }
+        /* Pass stub */
+        .pass-stub { position:relative; background:#fff; color:#1a1a1a; border:1px solid rgba(26,26,26,0.10); border-radius:16px; padding:30px 26px 26px; box-shadow:0 24px 60px -20px rgba(0,0,0,0.45); width:100%; max-width:520px; overflow:hidden; }
+        .pass-stub::before { content:''; position:absolute; top:0; left:0; right:0; height:5px; background:#FF6B35; }
+        .pass-stub__issuer { font-family:'IBM Plex Mono',monospace; font-size:0.72rem; letter-spacing:0.06em; text-transform:uppercase; color:#808080; }
+        .pass-stub__value { font-size:3rem; line-height:1.05; font-weight:800; color:#1a1a1a; margin:8px 0 10px; }
+        .pass-stub__terms { font-size:0.9rem; color:#4a4a4a; }
+        .pass-perf { position:relative; margin:20px -26px; border-top:2px dashed rgba(26,26,26,0.18); }
+        .pass-perf::before, .pass-perf::after { content:''; position:absolute; top:-11px; width:20px; height:20px; border-radius:50%; background:#fff; box-shadow:inset 0 0 0 1px rgba(26,26,26,0.10); }
+        .pass-perf::before { left:-10px; } .pass-perf::after { right:-10px; }
+        .pass-stub__code { font-family:'IBM Plex Mono',monospace; font-size:0.88rem; letter-spacing:0.04em; color:#1a1a1a; }
+        .pass-stamp { position:absolute; right:20px; bottom:18px; font-family:'IBM Plex Mono',monospace; font-weight:700; font-size:0.76rem; letter-spacing:0.12em; text-transform:uppercase; color:#FF6B35; border:2px solid #FF6B35; border-radius:6px; padding:4px 10px; transform:rotate(-8deg); opacity:.92; }
+        .pass-stamp--paid { color:#1a7a3d; border-color:#1a7a3d; }
+        /* Steps */
+        .step-card { background:#fff; border-radius:12px; padding:24px; box-shadow:0 1px 3px rgba(0,0,0,0.08); border-top:3px solid #FF6B35; }
+        .step-num { display:inline-flex; align-items:center; justify-content:center; width:32px; height:32px; border-radius:50%; background:rgba(255,107,53,0.12); color:#FF6B35; font-family:'IBM Plex Mono',monospace; font-weight:700; margin-bottom:12px; }
+        .step-card h3 { font-size:1rem; font-weight:700; color:#1a1a1a; margin-bottom:8px; }
+        .step-card p { font-size:0.9rem; color:#4a4a4a; }
+        /* Calculator */
+        .calc-panel { background:#fff; border:1px solid rgba(26,26,26,0.10); border-radius:16px; padding:26px; }
+        .ctrl { margin-bottom:18px; }
+        .ctrl-head { display:flex; justify-content:space-between; align-items:baseline; gap:10px; margin-bottom:6px; }
+        .ctrl-head label { font-size:0.9rem; color:#4a4a4a; }
+        .ctrl-val { font-family:'IBM Plex Mono',monospace; font-weight:700; color:#FF6B35; white-space:nowrap; }
+        .ind-tag { font-family:'IBM Plex Mono',monospace; font-size:0.6rem; letter-spacing:0.08em; text-transform:uppercase; color:#808080; border:1px solid rgba(26,26,26,0.2); border-radius:100px; padding:1px 7px; margin-left:4px; }
+        .v2-range { width:100%; accent-color:#FF6B35; cursor:pointer; }
+        .v2-table { width:100%; border-collapse:collapse; }
+        .v2-table td { padding:12px 6px; border-bottom:1px solid rgba(26,26,26,0.10); font-size:0.95rem; color:#4a4a4a; }
+        .calc-amt { text-align:right; font-family:'IBM Plex Mono',monospace; font-weight:700; color:#1a1a1a; white-space:nowrap; }
+        .calc-table tr.calc-total td { border-top:2px solid rgba(26,26,26,0.15); border-bottom:0; font-weight:700; color:#1a1a1a; font-size:1.05rem; }
+        .mode-note { background:#fff; border-left:4px solid #FF6B35; border-radius:0 12px 12px 0; padding:20px 24px; color:#4a4a4a; }
+        .mode-note strong { color:#1a1a1a; }
+        /* FAQ */
+        .faq-item { background:#fff; border:1px solid rgba(26,26,26,0.10); border-radius:12px; padding:20px 24px; }
+        .faq-item h3 { font-weight:700; color:#1a1a1a; margin-bottom:6px; }
+        .faq-item p { color:#4a4a4a; font-size:0.95rem; }
     </style>
 
     <!-- Favicon -->
@@ -239,9 +290,8 @@
                             <a href="coupon-management.html" class="dropdown-item" data-i18n="common.nav.managementSystem">Coupon Management System</a>
                             <a href="coupon-marketplace.html" class="dropdown-item" data-i18n="common.nav.marketplace">Coupon Marketplace</a>
                             <a href="coupon-nfc.html" class="dropdown-item" data-i18n="common.nav.nfc">Coupon NFC</a>
-                            <a href="coupon-campaign.html" class="dropdown-item" data-i18n="common.nav.marketing">Coupon Marketing</a>
                             <a href="coupon-wallet.html" class="dropdown-item" data-i18n="common.nav.wallet">Coupon Wallet</a>
-                            <a href="coupon-serial.html" class="dropdown-item" data-i18n="common.nav.serial">Coupon Serial</a>
+                            <a href="coupon-pass.html" class="dropdown-item" data-i18n="common.nav.serial">Pass</a>
                         </div>
                     </div>
 
@@ -374,9 +424,8 @@
                         <a href="coupon-management.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.managementSystem">Coupon Management System</a>
                         <a href="coupon-marketplace.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.marketplace">Coupon Marketplace</a>
                         <a href="coupon-nfc.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.nfc">Coupon NFC</a>
-                        <a href="coupon-campaign.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.marketing">Coupon Marketing</a>
                         <a href="coupon-wallet.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.wallet">Coupon Wallet</a>
-                        <a href="coupon-serial.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.serial">Coupon Serial</a>
+                        <a href="coupon-pass.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.serial">Pass</a>
                     </div>
                 </div>
 
@@ -429,377 +478,194 @@
         </div>
     </nav>
 
+    <!-- ============================================================ -->
+    <!-- FOR INTEGRATORS v2 BODY — content from temp/04-for-integrators.md -->
+    <!-- Header/nav (above) and footer (below) intentionally unchanged  -->
+    <!-- File stays for-developers.html; rename to for-integrators.html -->
+    <!-- + 301 + nav updates are a later coordinated task.             -->
+    <!-- ============================================================ -->
+
     <!-- Hero Section -->
-    <section class="pt-32 pb-20 relative" style="background-image:url('assets/images/for_developer.png');background-size:cover;background-position:center;background-repeat:no-repeat;">
-        <div class="absolute inset-0 bg-primary-black/70"></div>
+    <section id="hero-section" class="pt-32 pb-20 relative" style="background-image:url('assets/images/for_developer.png');background-size:cover;background-position:center;background-repeat:no-repeat;">
+        <div class="absolute inset-0 bg-primary-black/75"></div>
         <div class="relative z-10 section-container">
-            <div class="max-w-6xl mx-auto text-center">
-                <p class="text-primary-orange text-lg font-semibold mb-4" data-i18n="developers.hero.tagline">FOR DEVELOPERS</p>
-                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-6" data-i18n="developers.hero.headline">
-                    Build on the <span class="text-primary-orange">Mezzofy Exchange Protocol</span>
-                </h1>
-                <p class="text-lg sm:text-xl text-gray-100 mb-10 max-w-4xl mx-auto" data-i18n="developers.hero.description">
-                    Integrate coupon functionality with our developer-first API and SDKs
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="api-doc.html" class="btn-primary inline-block text-center" data-cta="learn-more" data-i18n="developers.hero.viewApiDocs">View API Docs</a>
-                    <a href="contact.html" class="btn-secondary inline-block text-center bg-white/10 text-white border-white hover:bg-white/20" data-cta="signup" data-i18n="developers.hero.getApiKey">Get API Key</a>
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div>
+                    <div class="hero-badge mb-6"><span class="hero-badge-dot"></span><span data-i18n="integrators.v2.hero.badge">Partner programme</span></div>
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-6" data-i18n="integrators.v2.hero.title">
+                        One integration. Every merchant on your platform.
+                    </h1>
+                    <p class="hero-description text-lg sm:text-xl text-gray-100 mb-10 max-w-xl" data-i18n="integrators.v2.hero.subtitle">
+                        Your merchants already trust you with their transactions. Give them coupon issuance and redemption without asking them to build, buy or learn anything, and earn a share every time a Pass sells through your platform.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="contact.html" class="btn-primary inline-block text-center" data-cta="signup"><span data-i18n="integrators.v2.hero.ctaPartner">Partner with us</span></a>
+                        <a href="api-doc.html" class="btn-secondary inline-block text-center bg-white/10 text-white border-white hover:bg-white/20" data-cta="learn-more"><span data-i18n="integrators.v2.hero.ctaApi">Read the API docs</span></a>
+                    </div>
+                </div>
+                <div class="flex justify-center lg:justify-end">
+                    <div class="pass-stub" role="img" aria-label="Sample Pass inherited by every merchant on your platform">
+                        <div class="pass-stub__issuer"><span data-i18n="integrators.v2.pass.issuerLabel">Issuer</span> · <span data-i18n="integrators.v2.pass.hero.issuer">Your platform</span></div>
+                        <div class="pass-stub__value" data-i18n="integrators.v2.pass.hero.value">1 &rarr; all</div>
+                        <div class="pass-stub__terms"><span class="font-semibold" data-i18n="integrators.v2.pass.termsLabel">Terms</span>: <span data-i18n="integrators.v2.pass.hero.terms">Every merchant on your system inherits it.</span></div>
+                        <div class="pass-perf"></div>
+                        <div class="pass-stub__code"><span data-i18n="integrators.v2.pass.codeLabel">Code</span>: <span data-i18n="integrators.v2.pass.hero.code">REST · MCP</span></div>
+                        <span class="pass-stamp" data-i18n="integrators.v2.pass.hero.stamp">CONNECTED</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Developer Use Cases -->
-    <section class="bg-white">
+    <!-- What one integration reaches (dark band) -->
+    <section id="reach" class="bg-primary-black text-white">
         <div class="section-container">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-bold text-primary-black mb-4" data-i18n="developers.useCases.heading">
-                    What Can You Build with the Mezzofy API?
-                </h2>
-                <p class="text-lg text-dark-grey max-w-3xl mx-auto" data-i18n="developers.useCases.description">
-                    The Mezzofy Exchange Protocol enables developers to integrate coupon functionality into any application or platform
-                </p>
+            <div class="text-center mb-14">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-5" data-i18n="integrators.v2.reach.title">What one integration reaches</h2>
+                <p class="text-lg text-white/60 max-w-3xl mx-auto" data-i18n="integrators.v2.reach.description">Connect once, and your merchants sit inside all of it.</p>
             </div>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="stat-card"><div class="stat-number" data-i18n="integrators.v2.reach.stat1Value">1,240</div><div class="stat-label" data-i18n="integrators.v2.reach.stat1Label">Merchants on the exchange</div></div>
+                <div class="stat-card"><div class="stat-number" data-i18n="integrators.v2.reach.stat2Value">86,400</div><div class="stat-label" data-i18n="integrators.v2.reach.stat2Label">Redemptions monthly</div></div>
+                <div class="stat-card"><div class="stat-number" data-i18n="integrators.v2.reach.stat3Value">3</div><div class="stat-label" data-i18n="integrators.v2.reach.stat3Label">Live markets</div></div>
+                <div class="stat-card"><div class="stat-number" data-i18n="integrators.v2.reach.stat4Value">2</div><div class="stat-label" data-i18n="integrators.v2.reach.stat4Label">Protocols, REST and MCP</div></div>
+            </div>
+        </div>
+    </section>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Use Case 1: Integrate Coupon Functionality -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="developers.useCases.integrate.title">Integrate Coupons</h3>
-                    <p class="text-dark-grey text-sm mb-4" data-i18n="developers.useCases.integrate.description">Add coupon creation, distribution, and redemption to existing apps</p>
+    <!-- What it adds (plain) -->
+    <section id="adds" class="bg-white">
+        <div class="section-container">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black" data-i18n="integrators.v2.adds.title">What it adds, depending on what you build</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-light-grey rounded-xl p-8 border-t-4 border-primary-orange">
+                    <h3 class="text-lg font-bold text-primary-black mb-3" data-i18n="integrators.v2.adds.pos.title">POS platforms</h3>
+                    <p class="text-dark-grey" data-i18n="integrators.v2.adds.pos.desc">Redemption happens at the till your merchants already use. No new hardware, no staff retraining, and coupon capability becomes a reason to stay on your system.</p>
                 </div>
-
-                <!-- Use Case 2: Build Custom Distribution Channels -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="developers.useCases.distribution.title">Custom Distribution</h3>
-                    <p class="text-dark-grey text-sm mb-4" data-i18n="developers.useCases.distribution.description">Create specialized platforms for specific industries or use cases</p>
+                <div class="bg-light-grey rounded-xl p-8 border-t-4 border-primary-orange">
+                    <h3 class="text-lg font-bold text-primary-black mb-3" data-i18n="integrators.v2.adds.loyalty.title">Loyalty and rewards</h3>
+                    <p class="text-dark-grey" data-i18n="integrators.v2.adds.loyalty.desc">Members exchange points against live merchant supply instead of a fixed catalogue that never changes. Your redemption rates stop being a function of catalogue fatigue.</p>
                 </div>
-
-                <!-- Use Case 3: AI Shopping Agents -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="developers.useCases.aiAgents.title">AI Shopping Agents</h3>
-                    <p class="text-dark-grey text-sm mb-4" data-i18n="developers.useCases.aiAgents.description">Build intelligent assistants for coupon discovery and application</p>
-                </div>
-
-                <!-- Use Case 4: White-label Wallet Implementations -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="developers.useCases.wallets.title">White-label Wallets</h3>
-                    <p class="text-dark-grey text-sm mb-4" data-i18n="developers.useCases.wallets.description">Embed branded coupon wallet functionality in your mobile apps</p>
+                <div class="bg-light-grey rounded-xl p-8 border-t-4 border-primary-orange">
+                    <h3 class="text-lg font-bold text-primary-black mb-3" data-i18n="integrators.v2.adds.payment.title">Payment gateways</h3>
+                    <p class="text-dark-grey" data-i18n="integrators.v2.adds.payment.desc">Attach verified offers to transactions your merchants already process through you. A new line on the same rails.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- API Products -->
-    <section class="bg-light-grey">
+    <!-- How the partnership works (light band) -->
+    <section id="how" class="bg-light-grey">
         <div class="section-container">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black mb-6" data-i18n="developers.apiProducts.heading">
-                    API Products & SDKs
-                </h2>
-                <p class="text-lg sm:text-xl text-dark-grey max-w-3xl mx-auto" data-i18n="developers.apiProducts.description">
-                    Complete suite of APIs and SDKs for every development need
-                </p>
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black" data-i18n="integrators.v2.how.title">How the partnership works</h2>
             </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Bridge API -->
-                <div class="feature-card border-2 border-primary-orange/20 hover:border-primary-orange">
-                    <h3 class="text-lg font-bold text-primary-black mb-3" data-i18n="developers.apiProducts.bridge.title">Bridge API</h3>
-                    <p class="text-sm text-dark-grey mb-4" data-i18n="developers.apiProducts.bridge.description">Access marketplace inventory and distribute coupons through your platform</p>
-                    <div class="text-xs text-medium-grey mb-3 font-mono">GET /marketplace/coupons</div>
-                    <a href="#api-docs" class="text-primary-orange hover:underline text-sm font-semibold" data-i18n="developers.apiProducts.bridge.link">View Docs →</a>
-                </div>
-
-                <!-- Management API -->
-                <div class="feature-card border-2 border-primary-orange/20 hover:border-primary-orange">
-                    <h3 class="text-lg font-bold text-primary-black mb-3" data-i18n="developers.apiProducts.management.title">Management API</h3>
-                    <p class="text-sm text-dark-grey mb-4" data-i18n="developers.apiProducts.management.description">Create and manage coupon campaigns programmatically</p>
-                    <div class="text-xs text-medium-grey mb-3 font-mono">POST /coupons/create</div>
-                    <a href="#api-docs" class="text-primary-orange hover:underline text-sm font-semibold" data-i18n="developers.apiProducts.management.link">View Docs →</a>
-                </div>
-
-                <!-- AI Agent API -->
-                <div class="feature-card border-2 border-primary-orange/20 hover:border-primary-orange">
-                    <h3 class="text-lg font-bold text-primary-black mb-3" data-i18n="developers.apiProducts.aiAgent.title">AI Agent API</h3>
-                    <p class="text-sm text-dark-grey mb-4" data-i18n="developers.apiProducts.aiAgent.description">Enable AI agents to discover and apply coupons on behalf of users</p>
-                    <div class="text-xs text-medium-grey mb-3 font-mono">GET /ai/discover</div>
-                    <a href="#api-docs" class="text-primary-orange hover:underline text-sm font-semibold" data-i18n="developers.apiProducts.aiAgent.link">View Docs →</a>
-                </div>
-
-                <!-- Wallet SDK -->
-                <div class="feature-card border-2 border-primary-orange/20 hover:border-primary-orange">
-                    <h3 class="text-lg font-bold text-primary-black mb-3" data-i18n="developers.apiProducts.wallet.title">Wallet SDK</h3>
-                    <p class="text-sm text-dark-grey mb-4" data-i18n="developers.apiProducts.wallet.description">Mobile SDK for embedding wallet functionality in iOS and Android apps</p>
-                    <div class="text-xs text-medium-grey mb-3 font-mono">iOS • Android • React Native</div>
-                    <a href="#api-docs" class="text-primary-orange hover:underline text-sm font-semibold" data-i18n="developers.apiProducts.wallet.link">View Docs →</a>
-                </div>
+            <div class="grid md:grid-cols-3 gap-6 mb-8">
+                <div class="step-card"><span class="step-num">1</span><h3 data-i18n="integrators.v2.how.step1Title">Connect once</h3><p data-i18n="integrators.v2.how.step1Desc">REST or MCP, against a sandbox you get on signup. Certification before you go live in production.</p></div>
+                <div class="step-card"><span class="step-num">2</span><h3 data-i18n="integrators.v2.how.step2Title">Your merchants inherit the capability</h3><p data-i18n="integrators.v2.how.step2Desc">One agreement covers the merchants on your platform. They do not each sign separately, and they do not each integrate.</p></div>
+                <div class="step-card"><span class="step-num">3</span><h3 data-i18n="integrators.v2.how.step3Title">You earn on every Pass sold</h3><p data-i18n="integrators.v2.how.step3Desc">Revenue share settled at the point of sale rather than at redemption, so your earnings do not depend on whether a customer turns up at the counter.</p></div>
             </div>
+            <div class="mode-note" data-i18n="integrators.v2.how.note"><strong>Support stays where the relationship is.</strong> You keep the merchant relationship and the commercial terms with them. Mezzofy handles Pass validation, consumer support and settlement.</div>
         </div>
     </section>
 
-    <!-- Technical Features -->
-    <section class="bg-white">
+    <!-- Revenue illustrator (plain) -->
+    <section id="earn" class="bg-white">
         <div class="section-container">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black mb-6" data-i18n="developers.features.heading">
-                    What Technical Features Does Mezzofy Offer Developers?
-                </h2>
-                <p class="text-lg sm:text-xl text-dark-grey max-w-3xl mx-auto" data-i18n="developers.features.description">
-                    Built with modern architecture and developer experience in mind
-                </p>
+            <div class="text-center mb-10">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black mb-5" data-i18n="integrators.v2.earn.title">What your platform could earn</h2>
+                <p class="text-lg sm:text-xl text-dark-grey max-w-3xl mx-auto" data-i18n="integrators.v2.earn.description">Start from your merchant base and see the monthly share. The revenue share itself is set in the partnership agreement — the slider shows the range we work in.</p>
             </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- RESTful API Architecture -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-bold text-primary-black mb-3" data-i18n="developers.features.rest.title">RESTful API Architecture</h3>
-                    <p class="text-dark-grey text-sm" data-i18n="developers.features.rest.description">
-                        Clean, predictable endpoints following REST best practices. JSON request/response format with intuitive resource modeling.
-                    </p>
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+                <!-- controls -->
+                <div class="calc-panel">
+                    <div class="ctrl"><div class="ctrl-head"><label for="ig-m" data-i18n="integrators.v2.earn.mLabel">Merchants on your platform</label><span class="ctrl-val" data-value-for="ig-m"></span></div><input id="ig-m" class="v2-range" type="range" min="100" max="50000" value="2000" step="100" data-fmt="count"></div>
+                    <div class="ctrl"><div class="ctrl-head"><label for="ig-act" data-i18n="integrators.v2.earn.actLabel">Share that activate Passes</label><span class="ctrl-val" data-value-for="ig-act"></span></div><input id="ig-act" class="v2-range" type="range" min="5" max="60" value="25" step="5" data-fmt="pct"></div>
+                    <div class="ctrl"><div class="ctrl-head"><label for="ig-n" data-i18n="integrators.v2.earn.nLabel">Charge Passes sold per active merchant, monthly</label><span class="ctrl-val" data-value-for="ig-n"></span></div><input id="ig-n" class="v2-range" type="range" min="5" max="300" value="40" step="5" data-fmt="count"></div>
+                    <div class="ctrl"><div class="ctrl-head"><label for="ig-face" data-i18n="integrators.v2.earn.faceLabel">Average face value</label><span class="ctrl-val" data-value-for="ig-face"></span></div><input id="ig-face" class="v2-range" type="range" min="5" max="200" value="35" step="5" data-fmt="usd"></div>
+                    <div class="ctrl"><div class="ctrl-head"><label for="ig-share"><span data-i18n="integrators.v2.earn.shareLabel">Your share of the Mezzofy fee</span> <span class="ind-tag" data-i18n="integrators.v2.earn.indicative">indicative</span></label><span class="ctrl-val" data-value-for="ig-share"></span></div><input id="ig-share" class="v2-range" type="range" min="10" max="50" value="25" step="5" data-fmt="pct"></div>
                 </div>
-
-                <!-- Webhook Support -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.437L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-bold text-primary-black mb-3" data-i18n="developers.features.webhooks.title">Webhook Support</h3>
-                    <p class="text-dark-grey text-sm" data-i18n="developers.features.webhooks.description">
-                        Real-time notifications for coupon status changes, redemptions, and inventory updates via configurable webhooks.
-                    </p>
-                </div>
-
-                <!-- OAuth 2.0 Authentication -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-bold text-primary-black mb-3" data-i18n="developers.features.oauth.title">OAuth 2.0 Authentication</h3>
-                    <p class="text-dark-grey text-sm" data-i18n="developers.features.oauth.description">
-                        Industry-standard OAuth 2.0 authentication with API key management and granular permission scopes.
-                    </p>
-                </div>
-
-                <!-- Comprehensive SDKs -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-bold text-primary-black mb-3" data-i18n="developers.features.sdks.title">Comprehensive SDKs</h3>
-                    <p class="text-dark-grey text-sm" data-i18n="developers.features.sdks.description">
-                        Official SDKs for JavaScript/TypeScript, Python, PHP, and more. Reduce integration time with idiomatic libraries.
-                    </p>
-                </div>
-
-                <!-- Real-time Data Sync -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-bold text-primary-black mb-3" data-i18n="developers.features.realtime.title">Real-time Data Sync</h3>
-                    <p class="text-dark-grey text-sm" data-i18n="developers.features.realtime.description">
-                        WebSocket support for real-time inventory updates and coupon status changes. Keep your app always in sync.
-                    </p>
-                </div>
-
-                <!-- Machine-readable Standard -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-bold text-primary-black mb-3" data-i18n="developers.features.standard.title">Machine-readable Standard</h3>
-                    <p class="text-dark-grey text-sm" data-i18n="developers.features.standard.description">
-                        Standardized coupon data format optimized for AI consumption and programmatic processing. OpenAPI 3.0 compliant.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Quick Start Code Sample -->
-    <section id="api-docs" class="bg-light-grey">
-        <div class="section-container">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black mb-6" data-i18n="developers.quickStart.heading">
-                    Quick Start
-                </h2>
-                <p class="text-lg sm:text-xl text-dark-grey max-w-3xl mx-auto" data-i18n="developers.quickStart.description">
-                    Get started with the Mezzofy API in minutes
-                </p>
-            </div>
-
-            <div class="max-w-4xl mx-auto">
-                <!-- Code Example Tabs Placeholder -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <div class="bg-primary-black text-white px-6 py-3 flex items-center gap-4">
-                        <span class="font-semibold" data-i18n="developers.quickStart.exampleTitle">Quick Start Example</span>
-                        <div class="flex gap-2 ml-auto">
-                            <button class="px-3 py-1 bg-primary-orange rounded text-sm">JavaScript</button>
-                            <button class="px-3 py-1 bg-dark-grey/50 rounded text-sm hover:bg-dark-grey">Python</button>
-                            <button class="px-3 py-1 bg-dark-grey/50 rounded text-sm hover:bg-dark-grey">PHP</button>
+                <!-- readout + preview -->
+                <div class="calc-panel">
+                    <table class="v2-table calc-table mb-4">
+                        <tbody>
+                            <tr><td data-i18n="integrators.v2.earn.rowActive">Active merchants</td><td class="calc-amt" id="g-active"></td></tr>
+                            <tr><td data-i18n="integrators.v2.earn.rowSold">Passes sold through you, monthly</td><td class="calc-amt" id="g-sold"></td></tr>
+                            <tr><td data-i18n="integrators.v2.earn.rowFace">Face value moving through your platform</td><td class="calc-amt" id="g-faceval"></td></tr>
+                            <tr><td data-i18n="integrators.v2.earn.rowPool">Mezzofy fee pool, 10% of face</td><td class="calc-amt" id="g-pool"></td></tr>
+                            <tr class="calc-total"><td data-i18n="integrators.v2.earn.rowShare">Your monthly share</td><td class="calc-amt" id="g-share"></td></tr>
+                        </tbody>
+                    </table>
+                    <p class="text-sm text-medium-grey mb-6" data-i18n="integrators.v2.earn.settledNote">Settled to you on sale, not on redemption</p>
+                    <div class="flex justify-center mb-6">
+                        <div class="pass-stub" role="img" aria-label="Partner settlement statement for the month">
+                            <div class="pass-stub__issuer"><span data-i18n="integrators.v2.pass.issuerLabel">Issuer</span> · <span data-i18n="integrators.v2.pass.paid.issuer">Partner settlement</span></div>
+                            <div class="pass-stub__value" id="ig-pass-value" data-i18n="integrators.v2.pass.paid.value">$17,500</div>
+                            <div class="pass-stub__terms"><span class="font-semibold" data-i18n="integrators.v2.pass.termsLabel">Terms</span>: <span id="ig-pass-terms" data-i18n="integrators.v2.pass.paid.terms">This month, across 500 active merchants.</span></div>
+                            <div class="pass-perf"></div>
+                            <div class="pass-stub__code"><span data-i18n="integrators.v2.pass.codeLabel">Code</span>: <span data-i18n="integrators.v2.pass.paid.code">Monthly statement</span></div>
+                            <span class="pass-stamp pass-stamp--paid" data-i18n="integrators.v2.pass.paid.stamp">PAID</span>
                         </div>
                     </div>
-                    <div class="code-block">
-<span style="color: #888;">// Initialize the Mezzofy client</span>
-<span style="color: #FF6B35;">const</span> mezzofy = <span style="color: #FF6B35;">require</span>(<span style="color: #98C379;">'@mezzofy/sdk'</span>);
-
-<span style="color: #FF6B35;">const</span> client = <span style="color: #FF6B35;">new</span> mezzofy.Client({
-  apiKey: <span style="color: #98C379;">'your_api_key_here'</span>,
-  environment: <span style="color: #98C379;">'production'</span>
-});
-
-<span style="color: #888;">// Fetch available coupons from marketplace</span>
-<span style="color: #FF6B35;">const</span> coupons = <span style="color: #FF6B35;">await</span> client.marketplace.getCoupons({
-  category: <span style="color: #98C379;">'retail'</span>,
-  location: <span style="color: #98C379;">'US'</span>,
-  minValue: <span style="color: #D19A66;">10</span>
-});
-
-<span style="color: #888;">// Create a new coupon campaign</span>
-<span style="color: #FF6B35;">const</span> campaign = <span style="color: #FF6B35;">await</span> client.coupons.create({
-  title: <span style="color: #98C379;">'Summer Sale - 20% Off'</span>,
-  discount: { type: <span style="color: #98C379;">'percentage'</span>, value: <span style="color: #D19A66;">20</span> },
-  validUntil: <span style="color: #98C379;">'2024-08-31'</span>,
-  redemptionLimit: <span style="color: #D19A66;">1000</span>
-});
-
-console.log(<span style="color: #98C379;">'Campaign created:'</span>, campaign.id);
-                    </div>
-                </div>
-
-                <div class="mt-8 text-center">
-                    <p class="text-dark-grey mb-4" data-i18n="developers.quickStart.note">
-                        This is a simplified example. Full documentation includes authentication, error handling, webhooks, and advanced features.
-                    </p>
-                    <a href="api-doc.html" class="btn-primary" data-cta="learn-more" data-i18n="developers.quickStart.cta">View Full Documentation</a>
+                    <div class="mode-note" data-i18n="integrators.v2.earn.zeroFeeNote"><strong>Zero Fee Passes are not in this number.</strong> They carry no merchant fee, so partner share on them is settled separately from the consumer verification fee. Ask about it in scoping.</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Developer Resources -->
-    <section class="bg-white">
+    <!-- What you get (light band) -->
+    <section id="get" class="bg-light-grey">
         <div class="section-container">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black mb-6" data-i18n="developers.resources.heading">
-                    Developer Resources
-                </h2>
-                <p class="text-lg sm:text-xl text-dark-grey max-w-3xl mx-auto" data-i18n="developers.resources.description">
-                    Everything you need to build successfully on Mezzofy
-                </p>
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black" data-i18n="integrators.v2.get.title">What you get</h2>
             </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- API Documentation -->
-                <div class="feature-card border-2 border-primary-orange/20 hover:border-primary-orange text-center">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4 mx-auto">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.753 0-3.332.477-4.5 1.253"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-primary-black mb-3" data-i18n="developers.resources.documentation.title">API Documentation</h3>
-                    <p class="text-dark-grey text-sm mb-4" data-i18n="developers.resources.documentation.description">
-                        Comprehensive API reference with interactive examples and detailed endpoint descriptions
-                    </p>
-                    <a href="api-doc.html" class="text-primary-orange hover:underline text-sm font-semibold" data-i18n="developers.resources.documentation.link">View Docs →</a>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-8 border-t-4 border-primary-orange">
+                    <h3 class="text-lg font-bold text-primary-black mb-3" data-i18n="integrators.v2.get.sandbox.title">Sandbox on signup</h3>
+                    <p class="text-dark-grey" data-i18n="integrators.v2.get.sandbox.desc">Full test environment with sample merchants and Passes. No commercial commitment to start building.</p>
                 </div>
-
-                <!-- SDK Downloads -->
-                <div class="feature-card border-2 border-primary-orange/20 hover:border-primary-orange text-center">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4 mx-auto">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-primary-black mb-3" data-i18n="developers.resources.sdks.title">SDK Downloads</h3>
-                    <p class="text-dark-grey text-sm mb-4" data-i18n="developers.resources.sdks.description">
-                        Official libraries for JavaScript, Python, PHP, Ruby, and more available via package managers
-                    </p>
-                    <a href="api-doc.html" class="text-primary-orange hover:underline text-sm font-semibold" data-i18n="developers.resources.sdks.link">Get SDKs →</a>
+                <div class="bg-white rounded-xl p-8 border-t-4 border-primary-orange">
+                    <h3 class="text-lg font-bold text-primary-black mb-3" data-i18n="integrators.v2.get.issuance.title">Issuance and redemption</h3>
+                    <p class="text-dark-grey" data-i18n="integrators.v2.get.issuance.desc">Create, distribute and validate Passes. The same endpoints the marketplace runs on.</p>
                 </div>
-
-                <!-- Community Support -->
-                <div class="feature-card border-2 border-primary-orange/20 hover:border-primary-orange text-center">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4 mx-auto">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-primary-black mb-3" data-i18n="developers.resources.community.title">Community Support</h3>
-                    <p class="text-dark-grey text-sm mb-4" data-i18n="developers.resources.community.description">
-                        Join our developer community on Discord. Get help, share projects, and connect with other builders
-                    </p>
-                    <a href="api-doc.html" class="text-primary-orange hover:underline text-sm font-semibold" data-i18n="developers.resources.community.link">Join Discord →</a>
-                </div>
-
-                <!-- Technical Blog -->
-                <div class="feature-card border-2 border-primary-orange/20 hover:border-primary-orange text-center">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4 mx-auto">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-primary-black mb-3" data-i18n="developers.resources.blog.title">Technical Blog</h3>
-                    <p class="text-dark-grey text-sm mb-4" data-i18n="developers.resources.blog.description">
-                        Deep dives, tutorials, and best practices from our engineering team and developer community
-                    </p>
-                    <a href="api-doc.html" class="text-primary-orange hover:underline text-sm font-semibold" data-i18n="developers.resources.blog.link">Read Blog →</a>
+                <div class="bg-white rounded-xl p-8 border-t-4 border-primary-orange">
+                    <h3 class="text-lg font-bold text-primary-black mb-3" data-i18n="integrators.v2.get.settlement.title">Settlement reporting</h3>
+                    <p class="text-dark-grey" data-i18n="integrators.v2.get.settlement.desc">Per-merchant and per-Pass reconciliation, so your finance team can see exactly what earned what.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="bg-gradient-to-r from-primary-orange to-orange-600 text-white">
+    <!-- Questions partners ask (plain) -->
+    <section id="faq" class="bg-white">
+        <div class="section-container">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black" data-i18n="integrators.v2.faq.title">Questions partners ask</h2>
+            </div>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="faq-item"><h3 data-i18n="integrators.v2.faq.q1">Who owns the merchant relationship?</h3><p data-i18n="integrators.v2.faq.a1">You do. Your commercial terms with your merchants are yours. Mezzofy handles Pass validation, consumer support and settlement, and never contacts your merchants directly without your say-so.</p></div>
+                <div class="faq-item"><h3 data-i18n="integrators.v2.faq.q2">Does each merchant sign with Mezzofy?</h3><p data-i18n="integrators.v2.faq.a2">No. One partnership agreement covers the merchants on your platform. They opt in through your interface and inherit the terms.</p></div>
+                <div class="faq-item"><h3 data-i18n="integrators.v2.faq.q3">How long is certification?</h3><p data-i18n="integrators.v2.faq.a3">Typically two to three weeks from a working sandbox integration. We test issuance, redemption, failure handling and settlement reconciliation before production keys are issued.</p></div>
+                <div class="faq-item"><h3 data-i18n="integrators.v2.faq.q4">Is the partnership exclusive?</h3><p data-i18n="integrators.v2.faq.a4">Not by default. Exclusivity in a market or category is available against volume commitments and is priced accordingly.</p></div>
+                <div class="faq-item"><h3 data-i18n="integrators.v2.faq.q5">What if a merchant on my platform refuses a valid Pass?</h3><p data-i18n="integrators.v2.faq.a5">The customer is credited automatically, and the merchant is flagged. Repeated refusals suspend their listing. We will tell you before it reaches that point.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Closing CTA band -->
+    <section id="closing" class="bg-gradient-to-br from-primary-black to-gray-900 text-white">
         <div class="section-container text-center">
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6" data-i18n="developers.cta.heading">
-                Start Building Today
-            </h2>
-            <p class="text-xl mb-8 max-w-3xl mx-auto" data-i18n="developers.cta.description">
-                Get your API key and start integrating coupon functionality into your applications in minutes
-            </p>
-            <a href="contact.html" class="bg-white text-primary-orange px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors inline-block" data-i18n="developers.cta.button">
-                Get API Key
-            </a>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-5" data-i18n="integrators.v2.closing.title">Start in the sandbox today.</h2>
+            <p class="text-lg sm:text-xl text-orange-200 max-w-3xl mx-auto mb-10" data-i18n="integrators.v2.closing.description">No commercial commitment to begin building. Terms when you are ready to go live.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="api-doc.html" class="btn-secondary inline-block bg-white/10 text-white border-white hover:bg-white/20" data-cta="learn-more"><span data-i18n="integrators.v2.closing.ctaApi">Read the API docs</span></a>
+                <a href="contact.html" class="btn-primary inline-block" data-cta="signup"><span data-i18n="integrators.v2.closing.ctaPartner">Partner with us</span></a>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-primary-black text-gray-300 pt-16 pb-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
@@ -846,9 +712,8 @@ console.log(<span style="color: #98C379;">'Campaign created:'</span>, campaign.i
                         <li><a href="coupon-management.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.management">Management</a></li>
                         <li><a href="coupon-marketplace.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.marketplace">Marketplace</a></li>
                         <li><a href="coupon-nfc.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.nfc">NFC</a></li>
-                        <li><a href="coupon-campaign.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.marketing">Marketing</a></li>
                         <li><a href="coupon-wallet.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.wallet">Wallet</a></li>
-                            <li><a href="coupon-serial.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.serial">Serial</a></li>
+                            <li><a href="coupon-pass.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.serial">Pass</a></li>
                     </ul>
                 </div>
 
@@ -882,5 +747,44 @@ console.log(<span style="color: #98C379;">'Campaign created:'</span>, campaign.i
     </footer>
 
     <script src="js/main.js"></script>
+    <!-- For Integrators v2: front-end-only revenue illustrator (post nowhere) -->
+    <script>
+      (function () {
+        var $ = function (id) { return document.getElementById(id); };
+        var val = function (id) { var el = $(id); return el ? parseFloat(el.value) : 0; };
+        var usd0 = function (n) { return '$' + Math.round(n).toLocaleString('en-US'); };
+        var intc = function (n) { return Math.round(n).toLocaleString('en-US'); };
+        function fmtCtrl(el) {
+          var v = parseFloat(el.value), f = el.getAttribute('data-fmt');
+          if (f === 'usd') return '$' + intc(v);
+          if (f === 'pct') return v + '%';
+          if (f === 'count') return intc(v);
+          return String(v);
+        }
+        document.querySelectorAll('.v2-range').forEach(function (el) {
+          var out = document.querySelector('[data-value-for="' + el.id + '"]');
+          function upd() { if (out) out.textContent = fmtCtrl(el); }
+          el.addEventListener('input', function () { upd(); recalc(); });
+          el._upd = upd;
+        });
+        function recalc() {
+          document.querySelectorAll('.v2-range').forEach(function (el) { if (el._upd) el._upd(); });
+          var m = val('ig-m'), act = val('ig-act'), n = val('ig-n'), face = val('ig-face'), share = val('ig-share');
+          var active = Math.round(m * act / 100);
+          var sold = active * n;
+          var faceVal = sold * face;
+          var pool = faceVal * 0.10;
+          var yourShare = pool * (share / 100);
+          $('g-active').textContent = intc(active);
+          $('g-sold').textContent = intc(sold);
+          $('g-faceval').textContent = usd0(faceVal);
+          $('g-pool').textContent = usd0(pool);
+          $('g-share').textContent = usd0(yourShare);
+          if ($('ig-pass-value')) $('ig-pass-value').textContent = usd0(yourShare);
+          if ($('ig-pass-terms')) $('ig-pass-terms').textContent = 'This month, across ' + intc(active) + ' active merchants.';
+        }
+        recalc();
+      })();
+    </script>
 </body>
 </html>

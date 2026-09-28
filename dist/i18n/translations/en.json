@@ -16,7 +16,7 @@
       "nfc": "Coupon NFC",
       "marketing": "Coupon Campaign",
       "wallet": "Coupon Wallet",
-      "serial": "Coupon Serial",
+      "serial": "Pass",
       "apiDoc": "API Documentation",
       "apiUseCase": "API Use Case",
       "playbook": "Coupon Playbook",
@@ -43,7 +43,7 @@
         "nfc": "NFC",
         "marketing": "Campaign",
         "wallet": "Wallet",
-        "serial": "Serial"
+        "serial": "Pass"
       },
       "resources": {
         "title": "Resources",
@@ -271,6 +271,200 @@
       "component3": {
         "title": "Clearinghouse",
         "description": "The core manages all consignment, financial reconciliation, and fraudless validation."
+      }
+    },
+    "v2": {
+      "hero": {
+        "badge": "Live in Hong Kong, Singapore and Malaysia",
+        "title": "Every offer is real, and can only be used once.",
+        "subtitle": "Mezzofy issues tokenised Passes that cannot be faked, copied or reused, and connects the merchants who create them to the platforms that put them in front of customers.",
+        "ctaList": "List your offers free",
+        "ctaAccess": "Access inventory"
+      },
+      "pass": {
+        "issuerLabel": "Issuer",
+        "termsLabel": "Terms",
+        "codeLabel": "Code",
+        "sample": {
+          "issuer": "Kopi Lane, Bugis",
+          "value": "25% off",
+          "terms": "Weekdays, 2–5pm. Minimum spend $12.",
+          "code": "MZF-7K4Q-8813",
+          "stamp": "CONSUMED"
+        },
+        "demo": {
+          "issuer": "Mezzofy demo",
+          "value": "20% off",
+          "terms": "Any participating merchant. No minimum spend.",
+          "code": "MZF-DEMO-0000",
+          "stamp": "SAMPLE"
+        }
+      },
+      "exchange": {
+        "title": "The exchange, right now",
+        "description": "Liquidity is what makes a marketplace work. These figures update monthly.",
+        "stat1Value": "1,240",
+        "stat1Label": "Active merchants",
+        "stat2Value": "86,400",
+        "stat2Label": "Passes redeemed monthly",
+        "stat3Value": "14",
+        "stat3Label": "Merchant categories",
+        "stat4Value": "3",
+        "stat4Label": "Live markets",
+        "chip1": "Food and beverage",
+        "chip2": "Retail",
+        "chip3": "Hotels",
+        "chip4": "Spa and wellness",
+        "chip5": "Attractions",
+        "chip6": "Grocery",
+        "chip7": "Health and fitness",
+        "chip8": "and 7 more"
+      },
+      "waysIn": {
+        "title": "Three ways in",
+        "description": "Each side of the exchange has its own page. Start where you fit.",
+        "merchants": {
+          "label": "Sellers",
+          "title": "Merchants",
+          "description": "List free and reach every buyer on the exchange. Zero Fee Passes are created by our AI and placed for you, or run your own issuance.",
+          "stat": "<strong>86,400</strong> redemptions a month to reach",
+          "link": "For merchants"
+        },
+        "buyers": {
+          "label": "Buyers",
+          "title": "Buyers",
+          "description": "Banks, telcos and benefits platforms sourcing verified inventory by API — and consumers browsing the marketplace directly.",
+          "stat": "<strong>14 categories</strong> across three markets",
+          "link": "For buyers"
+        },
+        "integrators": {
+          "label": "Partners",
+          "title": "Integrators",
+          "description": "POS, loyalty and payment platforms. One integration gives every merchant on your system coupon issuance and redemption.",
+          "stat": "Revenue share on <strong>every Pass sold</strong>",
+          "link": "For integrators"
+        }
+      },
+      "guarantee": {
+        "title": "How the guarantee works",
+        "description": "One primitive, however it is presented to the customer.",
+        "pass": {
+          "title": "Issued as a Pass",
+          "description": "Tokenised at creation with a unique code, traceable through its whole life. One standard, seven ways to present it.",
+          "link": "Explore Passes"
+        },
+        "vault": {
+          "title": "Held in a Vault",
+          "description": "Every Pass a customer owns sits in one place, ready to present — alongside the balance they spend on verified offers.",
+          "link": "Explore Vault"
+        },
+        "consumed": {
+          "title": "Consumed once",
+          "description": "Validated at the counter and immediately spent. A copy will not validate, and a Pass that was never issued does not exist."
+        },
+        "chip1": "Coupon",
+        "chip2": "Voucher",
+        "chip3": "Deal",
+        "chip4": "Ticket",
+        "chip5": "Reward",
+        "chip6": "Card",
+        "chip7": "Token"
+      },
+      "demo": {
+        "title": "Try one for yourself",
+        "description": "Send yourself a real Pass and see what a customer sees — the code, the terms, and the moment it is consumed. Nothing to install, and we will not add you to anything.",
+        "emailLabel": "Email address",
+        "emailPlaceholder": "you@company.com",
+        "cta": "Send me a Pass",
+        "confirm": "Done — your demo Pass is on its way. Check your inbox.",
+        "note": "One demo Pass per address. Valid for seven days at any participating merchant."
+      },
+      "channels": {
+        "title": "Supply meets demand, through six channels",
+        "description": "One listing reaches every channel it is eligible for. What a merchant pays depends on which channel a Pass goes through, not on a plan.",
+        "merchantsNode": {
+          "title": "Merchants",
+          "sub": "List free, honour at the counter"
+        },
+        "mezzofyNode": {
+          "title": "Mezzofy",
+          "sub": "Tokenise, validate, settle"
+        },
+        "gridNode": {
+          "title": "Six channels"
+        },
+        "thChannel": "Channel",
+        "thReaches": "Reaches",
+        "thPays": "Who pays",
+        "own": {
+          "name": "Own",
+          "reaches": "Your own list, off the exchange",
+          "pays": "Merchant pays usage"
+        },
+        "b2c": {
+          "name": "B2C",
+          "reaches": "Consumers on the marketplace",
+          "pays": "Consumer pays"
+        },
+        "b2b": {
+          "name": "B2B",
+          "reaches": "Banks, telcos, HR platforms by API",
+          "pays": "Buyer pays"
+        },
+        "ai": {
+          "name": "AI Commerce",
+          "reaches": "AI shopping assistants, Mezzofy checkout",
+          "pays": "Consumer pays"
+        },
+        "nfc": {
+          "name": "NFC Network",
+          "reaches": "Tap points in malls and offices",
+          "pays": "Free to merchants"
+        },
+        "partners": {
+          "name": "Partners",
+          "reaches": "Partner-run private surfaces",
+          "pays": "Next phase"
+        },
+        "zeroFee": "Zero Fee Passes are free to the merchant on every channel they reach.",
+        "integratorNote": "Integrators feed the supply side. POS, loyalty and payment platforms bring their merchants in through one integration, and earn on every Pass sold.",
+        "integratorLink": "For integrators",
+        "pricingNote": "Mezzofy never takes title. Listing is free and there is no subscription. What you pay depends on the type of Pass and where it goes.",
+        "pricingLink": "See pricing"
+      },
+      "takeFurther": {
+        "title": "Take it further",
+        "description": "Read how other operators built liquidity, or put an hour in the diary and we will walk through your case.",
+        "playbook": {
+          "title": "The coupon exchange playbook",
+          "description": "Forty pages on building a coupon programme that people actually redeem — written from what we see across the exchange, not from a template.",
+          "ch1": "Why most coupon programmes fail at the counter",
+          "ch2": "Setting discount limits that protect your margin",
+          "ch3": "Choosing between free listing and selling value",
+          "ch4": "Redemption operations for multi-outlet businesses",
+          "ch5": "What enterprise buyers look for in inventory",
+          "emailLabel": "Email address",
+          "emailPlaceholder": "you@company.com",
+          "cta": "Send me the PDF",
+          "confirm": "Thanks — the playbook PDF is on its way to your inbox."
+        },
+        "booking": {
+          "title": "Book an hour with us",
+          "description": "A working session rather than a pitch. Bring your numbers and we will show you what the exchange would do with them.",
+          "dateLabel": "Choose a date",
+          "slotLabel": "Pick a slot",
+          "slot1": "9:00–10:00",
+          "slot2": "10:00–11:00",
+          "slot3": "11:00–12:00",
+          "slot4": "2:00–3:00",
+          "slot5": "3:00–4:00",
+          "slot6": "4:00–5:00",
+          "slotsNote": "Monday to Friday. One-hour blocks.",
+          "emailLabel": "Email address",
+          "emailPlaceholder": "you@company.com",
+          "cta": "Book the slot",
+          "confirm": "Booked — we will send a calendar invite to your email."
+        }
       }
     }
   },
@@ -777,7 +971,230 @@
       "getStarted": "List Your First Coupon",
       "talkToSales": "View All Products"
     },
-    "definition": "Mezzofy is a digital coupon exchange platform that helps merchants create, distribute, and monetize digital coupons across 15+ Asia-Pacific markets. Using the Mezzofy Exchange Protocol, merchants eliminate coupon liabilities, reach new customers through NFC, marketplace, and digital channels, and generate revenue on every successful redemption — with zero upfront fees."
+    "definition": "Mezzofy is a digital coupon exchange platform that helps merchants create, distribute, and monetize digital coupons across 15+ Asia-Pacific markets. Using the Mezzofy Exchange Protocol, merchants eliminate coupon liabilities, reach new customers through NFC, marketplace, and digital channels, and generate revenue on every successful redemption — with zero upfront fees.",
+    "v2": {
+      "hero": {
+        "badge": "Free to list, no subscription",
+        "title": "Customers who were never coming in anyway.",
+        "subtitle": "Put your offers where 86,400 monthly redemptions already happen. You decide how far you will go on price. We handle everything between creating the offer and the moment someone hands it over at your counter.",
+        "ctaStart": "Start selling free",
+        "ctaPricing": "See merchant pricing"
+      },
+      "pass": {
+        "issuerLabel": "Issuer",
+        "termsLabel": "Terms",
+        "codeLabel": "Code",
+        "hero": {
+          "issuer": "Your business",
+          "value": "$5 off",
+          "terms": "Minimum spend $30. Valid 30 days.",
+          "code": "Created by AI Coupon",
+          "stamp": "FREE"
+        },
+        "zero": {
+          "issuer": "Your business",
+          "value": "20% off",
+          "terms": "No minimum spend. Valid 30 days.",
+          "stamp": "FREE"
+        },
+        "charge": {
+          "issuer": "Your business",
+          "value": "$50 voucher",
+          "terms": "Bought for $40. Valid 6 months.",
+          "stamp": "SOLD"
+        },
+        "own": {
+          "issuer": "Your business, your list",
+          "value": "$20 off",
+          "terms": "Sent to your customers. Not listed on the exchange.",
+          "stamp": "PRIVATE"
+        }
+      },
+      "reach": {
+        "title": "Who your offers reach",
+        "description": "This is the demand you are listing into. It is the only number that matters before you decide how to price.",
+        "stat1Value": "86,400",
+        "stat1Label": "Redemptions monthly",
+        "stat2Value": "4",
+        "stat2Label": "Channels, one listing",
+        "stat3Value": "3",
+        "stat3Label": "Live markets",
+        "stat4Value": "$0",
+        "stat4Label": "To list",
+        "chip1": "B2C marketplace",
+        "chip2": "Enterprise buyer apps",
+        "chip3": "NFC tap points",
+        "chip4": "AI shopping assistants"
+      },
+      "ways": {
+        "title": "Three ways to sell, priced by what the offer is for",
+        "description": "Pick one, or run all three side by side. Each keeps its own inventory. Choose one to see how it works and what it would produce.",
+        "zero": {
+          "label": "Easiest start",
+          "title": "Zero Fee Passes, created by AI",
+          "description": "You set the limits. Our AI creates discount offers inside them and places them across the exchange. You honour them at the counter.",
+          "row1k": "You pay",
+          "row1v": "Nothing",
+          "row2k": "You collect",
+          "row2v": "Nothing",
+          "row3k": "Bank account",
+          "row3v": "Not needed"
+        },
+        "charge": {
+          "label": "Sell value",
+          "title": "Charge Passes",
+          "description": "You set the voucher value and the discount. We sell it on the marketplace and to enterprise buyers, and pay you when it is redeemed.",
+          "row1k": "Mezzofy fee",
+          "row1v": "10%",
+          "row2k": "You receive",
+          "row2v": "90% on redemption",
+          "row3k": "If it expires unused",
+          "row3v": "Split 50/50"
+        },
+        "own": {
+          "label": "Your own list",
+          "title": "Own channel",
+          "description": "Issue to customers you already have — email, messaging, your own app. Nothing goes on the exchange.",
+          "row1k": "Allocation",
+          "row1v": "from $0.013",
+          "row2k": "Distribution",
+          "row2v": "from $0.013",
+          "row3k": "Redemption",
+          "row3v": "from $0.064"
+        }
+      },
+      "limits": {
+        "title": "Set your limits once. The network does the rest.",
+        "description": "Most platforms ask you to build a campaign and pay to run it. Zero Fee works the other way around.",
+        "tabZero": "Zero Fee Passes",
+        "tabCharge": "Charge Passes",
+        "tabOwn": "Own channel",
+        "zero": {
+          "step1Title": "You set the box",
+          "step1Desc": "Discount range, minimum spend, monthly quota, daily cap, and whether offers are limited to off-peak hours. These are hard ceilings the AI cannot pass.",
+          "step2Title": "AI Coupon creates the offers",
+          "step2Desc": "It chooses the depth, the timing and the volume inside your limits, and issues each one as a tokenised Pass.",
+          "step3Title": "The network delivers them",
+          "step3Desc": "Marketplace, NFC tap points in malls and offices, enterprise buyer apps, and AI shopping assistants. Nothing for you to build.",
+          "step4Title": "You redeem at the counter",
+          "step4Desc": "Your staff validate in the Operator App, or through your POS if you have integrated. The Pass is spent and cannot be used again.",
+          "note": "<strong>What you give up is margin on that sale. Nothing else.</strong> No creation fee, no distribution fee, no redemption fee, no bank details. The customer pays a small fee for the guarantee that the offer is real, and that is what funds the exchange."
+        },
+        "charge": {
+          "step1Title": "You set the value and the discount",
+          "step1Desc": "Choose the face value of the voucher, how much the customer saves, how long it stays valid, and how many you will release each month.",
+          "step2Title": "We list and sell it",
+          "step2Desc": "Your voucher goes to the B2C marketplace and into the B2B pool where banks, telcos and benefits platforms draw from it. We handle payment and support.",
+          "step3Title": "The customer pays and receives the Pass",
+          "step3Desc": "It lands in their Vault, tokenised and single-use. Mezzofy keeps 10%, which covers card processing, the platform and any partner who distributed it.",
+          "step4Title": "You redeem, and we pay you",
+          "step4Desc": "You receive 90% of face value once the Pass is redeemed. If it is sold but expires unused, the remaining value is split evenly between you and Mezzofy.",
+          "note": "<strong>You are paid on redemption, not on sale.</strong> Money reaches you when the customer actually walks in. A bank account and full verification are required, because Mezzofy is paying you."
+        },
+        "own": {
+          "step1Title": "You create the Pass",
+          "step1Desc": "Build it yourself in the portal — value, terms, artwork, validity. Allocation is charged per Pass created, whether or not you send it.",
+          "step2Title": "You choose who gets it",
+          "step2Desc": "Upload your own list or pick a segment. Nothing is listed on the exchange and no other buyer can see it.",
+          "step3Title": "You send it",
+          "step3Desc": "Email, SMS, WhatsApp, QR export or your own app through the API. Distribution is charged per Pass sent. Messaging fees are passed through at cost.",
+          "step4Title": "You redeem at the counter",
+          "step4Desc": "Same Operator App and POS integration as every other Pass. Redemption is charged per Pass validated, and billed monthly to your card.",
+          "note": "<strong>This is the one place you pay Mezzofy directly.</strong> Own channel is metered software for your own distribution, so allocation and distribution are charged whether or not anything is redeemed. Rates fall as your annual volume rises."
+        }
+      },
+      "calc": {
+        "title": "Set the box, and see what comes out",
+        "description": "These are the limits from step one. Move them and watch what AI Coupon would be allowed to create for your business.",
+        "zero": {
+          "segPct": "Percent off",
+          "segAmt": "Amount off",
+          "loLabel": "Lowest discount",
+          "hiLabel": "Highest discount",
+          "minLabel": "Minimum spend to qualify",
+          "expLabel": "Valid for",
+          "quotaLabel": "Monthly quota",
+          "capLabel": "Daily cap",
+          "offpeakLabel": "Off-peak only, Monday to Thursday 2–5pm",
+          "offerLabel": "One of the offers your limits would allow",
+          "showAnother": "Show another the AI could create"
+        },
+        "charge": {
+          "faceLabel": "Voucher face value",
+          "discLabel": "Customer saves",
+          "expLabel": "Valid for",
+          "qtyLabel": "Released each month",
+          "enterpriseLabel": "Offer to enterprise buyers as well as the marketplace",
+          "readoutTitle": "On one voucher",
+          "paysLabel": "Customer pays",
+          "feeLabel": "Mezzofy fee, 10% of face",
+          "receiveLabel": "You receive on redemption",
+          "unusedLabel": "If sold but never redeemed"
+        },
+        "own": {
+          "madeLabel": "Passes created each month",
+          "sentLabel": "Share you actually send",
+          "redLabel": "Share redeemed",
+          "faceLabel": "Pass value on the face",
+          "readoutTitle": "Your monthly bill, Tier 1",
+          "allocLabel": "Allocation",
+          "distLabel": "Distribution",
+          "redeemLabel": "Redemption",
+          "totalLabel": "Total, billed to your card"
+        }
+      },
+      "system": {
+        "title": "Whichever way you sell, it runs through one system",
+        "description": "The Coupon Management System is the heart of it. Every Pass you issue, from any of the three routes, is created, tracked, redeemed and reconciled in the same place. You learn one dashboard.",
+        "routeZeroT": "Zero Fee Passes",
+        "routeZeroS": "created by AI Coupon",
+        "routeChargeT": "Charge Passes",
+        "routeChargeS": "sold on the exchange",
+        "routeOwnT": "Own channel",
+        "routeOwnS": "sent to your list",
+        "coreTag": "The heart of it",
+        "coreTitle": "Core: Coupon Management System",
+        "coreDesc": "One inventory per route, one view of all of them. Limits, quotas, outlets and staff live here.",
+        "capRedeemT": "Redeem",
+        "capRedeemS": "Operator App or your POS",
+        "capTrackT": "Track",
+        "capTrackS": "every Pass, live",
+        "capReconcileT": "Reconcile",
+        "capReconcileS": "per Pass, per outlet, per route",
+        "note": "CMS is included with every account. You only pay for it when you use it for your own distribution.",
+        "link": "See the Coupon Management System →"
+      },
+      "golive": {
+        "title": "Before you go live",
+        "description": "Two things to set up. Both take a few minutes.",
+        "outletsTitle": "Register your outlets",
+        "outletsDesc": "Add every location where your Passes can be redeemed. A Pass presented at an unregistered outlet will not validate. Enable and disable outlets individually at any time.",
+        "redeemTitle": "Choose how you redeem",
+        "redeemDesc": "Free Operator App on iOS and Android — staff scan or key in the code. Or validate through your existing POS using our API, so nobody learns anything new.",
+        "callout": "Run a test redemption at each outlet before going live. A customer turned away with a valid Pass is the worst outcome for both of us. They paid for the guarantee that it would work."
+      },
+      "faq": {
+        "title": "Questions merchants ask",
+        "q1": "Can the AI discount more than I can afford?",
+        "a1": "No. It cannot exceed the discount ceiling, the monthly quota or the daily cap you set. Those are enforced by the system, not guidelines.",
+        "q2": "What if I want to stop?",
+        "a2": "Pause from your dashboard and creation stops immediately. Passes already issued stay valid until they expire, because a customer has already paid for the guarantee that they work.",
+        "q3": "Do I need a bank account?",
+        "a3": "Only if you sell Charge Passes, where we pay you. Zero Fee and own channel need no bank details.",
+        "q4": "Can I see what was created?",
+        "a4": "Every Pass, its limits, its status and its redemption history are in your dashboard in real time.",
+        "q5": "What if a Pass will not validate at my counter?",
+        "a5": "Check the outlet is registered and the Pass is inside its validity window. If it still fails, the customer is credited automatically and you are not charged. Nobody argues at the till.",
+        "q6": "How quickly am I paid on Charge Passes?",
+        "a6": "Redemptions settle on a fixed cycle to your registered bank account, with a statement per Pass. The cycle is stated in your agreement."
+      },
+      "closing": {
+        "title": "List today. Nothing to pay, nothing to build.",
+        "description": "Set your limits in a few minutes and your first Pass can be live this afternoon.",
+        "ctaPricing": "See merchant pricing",
+        "ctaStart": "Start selling free"
+      }
+    }
   },
   "distributors": {
     "hero": {
@@ -1752,6 +2169,80 @@
       "message": "Message",
       "messagePlaceholder": "Tell us about your distribution partnership goals...",
       "submit": "Request Partnership Discussion"
+    },
+    "v2": {
+      "hero": {
+        "badge": "Network in build. Nodes and merchants both wanted.",
+        "title": "Tap points where people already are.",
+        "subtitle": "A physical distribution network for the exchange. Partners host tap points in malls, lobbies and offices; any merchant in the pool flows through them; a customer taps and the Pass lands in their Vault.",
+        "ctaHost": "Host a tap point",
+        "ctaSupply": "Supply the network"
+      },
+      "passLabels": {
+        "issuerLabel": "Issuer",
+        "termsLabel": "Terms",
+        "codeLabel": "Code"
+      },
+      "heroPass": {
+        "issuer": "Tap point · Level 2 atrium",
+        "value": "20% off",
+        "terms": "Any tenant on this floor. Today only.",
+        "code": "MZF-NFC-L2-0928",
+        "stamp": "TAPPED"
+      },
+      "network": {
+        "title": "The network today",
+        "description": "Small and real beats large and unverifiable. These update as nodes go live.",
+        "stat1Value": "38",
+        "stat1Label": "Tap points live",
+        "stat2Value": "6",
+        "stat2Label": "Partner sites",
+        "stat3Value": "2",
+        "stat3Label": "Markets",
+        "stat4Value": "Q4",
+        "stat4Label": "Next expansion"
+      },
+      "node": {
+        "title": "Not a merchant product. A network node.",
+        "description": "The old model tied one tag to one merchant. The network ties every tap point to the whole pool, so a merchant leaving changes nothing for the node.",
+        "old": {
+          "label": "Retired",
+          "title": "The old way",
+          "diagramAlt": "One tag tied to one merchant; when the merchant leaves the tag goes dead",
+          "lead": "One tag, one merchant, one fee.",
+          "text": "When the merchant churned, the tag went dead and the fee stopped. Value never exceeded that merchant's own foot traffic."
+        },
+        "now": {
+          "label": "Live",
+          "title": "How it works now",
+          "diagramAlt": "A shared supply pool of merchants feeding several tap points; merchants come and go while the nodes stay live",
+          "lead": "Many merchants, many nodes, no merchant fee.",
+          "text": "A partner hosts the tap point. Any merchant in the pool flows through it, routed by AI Coupon. One leaves, another has already joined, and every node stays live. Each new node makes every merchant more valuable — and the reverse."
+        }
+      },
+      "join": {
+        "title": "Two ways to join",
+        "host": {
+          "label": "Host",
+          "title": "Malls, property, HR and offices",
+          "desc": "You provide the surface: entrances, directories, lift lobbies, pantries. Mezzofy provides the tags, the inventory and the redemption rails. You share in the revenue on every Pass that moves through your site, and your visitors or staff get a reason to come back.",
+          "callout": "Zero tech burden on you. Revenue share on Passes sold through your nodes."
+        },
+        "supply": {
+          "label": "Supply",
+          "title": "Merchants near a node",
+          "desc": "List on the exchange and your offers appear at tap points around you automatically. Zero Fee Passes cost you nothing; Charge Passes follow the usual 10%. Off-peak targeting works especially well here — a lunch offer at an office lobby at 11:45.",
+          "callout": "Nothing to install. Set your limits once."
+        },
+        "noteLead": "For customers, one growing network of physical places to collect verified offers.",
+        "noteText": "That is what makes a tap point worth hosting, and it is why the network is built with partners rather than sold to them."
+      },
+      "closing": {
+        "title": "Bring a site. We will bring the merchants.",
+        "description": "Pilot a floor before you commit a building.",
+        "ctaMerchant": "I am a merchant",
+        "ctaHost": "Host a tap point"
+      }
     }
   },
   "marketing": {
@@ -3064,6 +3555,765 @@
       "p15Toc": "DPO & contact",
       "p15Title": "Data Protection Officer, governing law & contact",
       "p15Body": "<p>This Policy is governed by the laws of the Republic of Singapore and the PDPA. The App is published by <strong>Mezzofy (Singapore) Pte Ltd</strong>.</p><p>To contact our Data Protection Officer or ask about this Policy or your personal data, email <a href=\"mailto:support@mezzofy.com\">support@mezzofy.com</a>.</p>"
+    }
+  },
+  "buyers": {
+    "v2": {
+      "hero": {
+        "badge": "1,240 merchants across 14 categories",
+        "title": "Inventory your customers can actually use.",
+        "subtitle": "Every Pass is validated before it reaches your app. No dead codes, no duplicate claims, no support tickets from customers turned away at a counter. Source it, distribute it, and swap whatever you do not use.",
+        "ctaTalk": "Talk to us",
+        "ctaApi": "Read the API docs"
+      },
+      "pass": {
+        "issuerLabel": "Issuer",
+        "termsLabel": "Terms",
+        "codeLabel": "Code",
+        "hero": {
+          "issuer": "Drawn from the B2B pool",
+          "value": "2,500",
+          "terms": "Passes reserved. Dining, Singapore.",
+          "code": "Redemption base",
+          "stamp": "RESERVED"
+        },
+        "pool": {
+          "issuer": "Reserved for your programme",
+          "value": "5,000",
+          "terms": "Passes, avg $40. Dining, Singapore.",
+          "code": "MZF-POOL-0001",
+          "stamp": "RESERVED"
+        }
+      },
+      "strip": {
+        "title": "Not buying for a company?",
+        "text": "Browse verified deals on the marketplace, tap an NFC point, or ask an AI assistant. Everything you claim lands in your Vault.",
+        "cta": "Browse deals"
+      },
+      "pool": {
+        "title": "What is in the pool today",
+        "description": "Supply you can draw against right now, not a projection.",
+        "stat1Value": "1,240",
+        "stat1Label": "Verified merchants",
+        "stat2Value": "14",
+        "stat2Label": "Categories",
+        "stat3Value": "86,400",
+        "stat3Label": "Redemptions monthly",
+        "stat4Value": "99.9%",
+        "stat4Label": "Validation uptime",
+        "chip1": "Food and beverage",
+        "chip2": "Retail",
+        "chip3": "Hotels",
+        "chip4": "Spa and wellness",
+        "chip5": "Attractions",
+        "chip6": "Grocery",
+        "chip7": "Health and fitness",
+        "chip8": "and 7 more"
+      },
+      "model": {
+        "title": "Model a commitment before you make one",
+        "description": "Two ways to buy. Move the numbers and see what you pay, what you use, and what happens to the rest.",
+        "segBase": "Redemption base",
+        "segFull": "Full purchase",
+        "descBase": "Discounted upfront against the quantity you commit to. Settlement follows actual redemption.",
+        "descFull": "Bought outright at your commitment discount. Unredeemed Passes follow the expiry terms in your agreement.",
+        "qtyLabel": "Passes committed",
+        "faceLabel": "Average face value",
+        "discLabel": "Commitment discount",
+        "rrLabel": "Share you expect to be redeemed",
+        "rowCommitted": "Face value committed",
+        "rowUpfront": "You pay upfront",
+        "rowRedeemed": "Expected to be redeemed",
+        "rowRestBase": "Unredeemed, swappable at full value",
+        "rowRestFull": "Unredeemed value, per your agreement",
+        "poolTitle": "What sits in your pool",
+        "noteBase": "<strong>Undistributed Passes can be swapped.</strong> If a merchant's inventory does not suit your campaign after all, exchange it for another seller's at the same value. Your commitment is to the exchange, not to one merchant.",
+        "noteFull": "<strong>Full purchase settles now.</strong> You own the allocation outright at the commitment discount; unredeemed Passes follow the expiry and rollover terms set in your agreement."
+      },
+      "distribute": {
+        "title": "Two ways to put it in front of your customers",
+        "api": {
+          "title": "Draw by API",
+          "desc": "Pull from your reserved pool into your own app. Your customers never see Mezzofy. Validation happens on our side, redemption happens at the merchant.",
+          "note": "REST and MCP. Sandbox on signup."
+        },
+        "direct": {
+          "title": "Use Pass and Vault directly",
+          "desc": "Build nothing. Distribute Passes to your customers, who store them in a Vault and present them at the counter. Useful for pilots and short campaigns.",
+          "note": "Live in days rather than sprints."
+        }
+      },
+      "guarantee": {
+        "title": "Why the guarantee matters to a regulated buyer",
+        "single": {
+          "title": "Single use, enforced",
+          "desc": "Every Pass is tokenised and consumed on validation. A duplicate does not work, so promotion abuse does not reach your customers."
+        },
+        "verified": {
+          "title": "Verified at source",
+          "desc": "Merchants are onboarded and verified before their inventory enters the pool. You are not distributing scraped offers."
+        },
+        "trail": {
+          "title": "Full redemption trail",
+          "desc": "Every issuance, draw and redemption is recorded and reconcilable, which is what your finance and audit teams will ask for."
+        },
+        "note": "Security documentation, uptime commitments and data residency options are provided during procurement.",
+        "link": "Request the pack →"
+      },
+      "faq": {
+        "title": "Questions buyers ask",
+        "q1": "How long does integration take?",
+        "a1": "Pass and Vault direct needs no build and can be live in days. API integration is typically two to four weeks including certification, with a sandbox from day one.",
+        "q2": "Who handles a customer whose Pass will not validate?",
+        "a2": "Mezzofy does. Every Pass carries a guarantee, and a failed redemption is credited back automatically. Your support team is not in the loop unless you want to be.",
+        "q3": "Can I get inventory nobody else has?",
+        "a3": "Yes. Exclusive allocations and co-branded Passes are available against volume commitments. Ask during scoping.",
+        "q4": "What reporting do I receive?",
+        "a4": "Draw, distribution and redemption per Pass, per merchant and per campaign, reconcilable to settlement. Available in the portal and by API.",
+        "q5": "What happens to full-purchase Passes that expire unused?",
+        "a5": "On redemption base they can be swapped. On full purchase, expiry terms are set in your agreement. Ask about rollover credit before you choose full purchase."
+      },
+      "closing": {
+        "title": "Bring a programme. We will size it.",
+        "description": "An hour with your numbers and ours. No deck.",
+        "ctaBook": "Book an hour",
+        "ctaTalk": "Talk to us"
+      }
+    }
+  },
+  "integrators": {
+    "v2": {
+      "hero": {
+        "badge": "Partner programme",
+        "title": "One integration. Every merchant on your platform.",
+        "subtitle": "Your merchants already trust you with their transactions. Give them coupon issuance and redemption without asking them to build, buy or learn anything, and earn a share every time a Pass sells through your platform.",
+        "ctaPartner": "Partner with us",
+        "ctaApi": "Read the API docs"
+      },
+      "pass": {
+        "issuerLabel": "Issuer",
+        "termsLabel": "Terms",
+        "codeLabel": "Code",
+        "hero": {
+          "issuer": "Your platform",
+          "value": "1 → all",
+          "terms": "Every merchant on your system inherits it.",
+          "code": "REST · MCP",
+          "stamp": "CONNECTED"
+        },
+        "paid": {
+          "issuer": "Partner settlement",
+          "value": "$17,500",
+          "terms": "This month, across 500 active merchants.",
+          "code": "Monthly statement",
+          "stamp": "PAID"
+        }
+      },
+      "reach": {
+        "title": "What one integration reaches",
+        "description": "Connect once, and your merchants sit inside all of it.",
+        "stat1Value": "1,240",
+        "stat1Label": "Merchants on the exchange",
+        "stat2Value": "86,400",
+        "stat2Label": "Redemptions monthly",
+        "stat3Value": "3",
+        "stat3Label": "Live markets",
+        "stat4Value": "2",
+        "stat4Label": "Protocols, REST and MCP"
+      },
+      "adds": {
+        "title": "What it adds, depending on what you build",
+        "pos": {
+          "title": "POS platforms",
+          "desc": "Redemption happens at the till your merchants already use. No new hardware, no staff retraining, and coupon capability becomes a reason to stay on your system."
+        },
+        "loyalty": {
+          "title": "Loyalty and rewards",
+          "desc": "Members exchange points against live merchant supply instead of a fixed catalogue that never changes. Your redemption rates stop being a function of catalogue fatigue."
+        },
+        "payment": {
+          "title": "Payment gateways",
+          "desc": "Attach verified offers to transactions your merchants already process through you. A new line on the same rails."
+        }
+      },
+      "how": {
+        "title": "How the partnership works",
+        "step1Title": "Connect once",
+        "step1Desc": "REST or MCP, against a sandbox you get on signup. Certification before you go live in production.",
+        "step2Title": "Your merchants inherit the capability",
+        "step2Desc": "One agreement covers the merchants on your platform. They do not each sign separately, and they do not each integrate.",
+        "step3Title": "You earn on every Pass sold",
+        "step3Desc": "Revenue share settled at the point of sale rather than at redemption, so your earnings do not depend on whether a customer turns up at the counter.",
+        "note": "<strong>Support stays where the relationship is.</strong> You keep the merchant relationship and the commercial terms with them. Mezzofy handles Pass validation, consumer support and settlement."
+      },
+      "earn": {
+        "title": "What your platform could earn",
+        "description": "Start from your merchant base and see the monthly share. The revenue share itself is set in the partnership agreement — the slider shows the range we work in.",
+        "mLabel": "Merchants on your platform",
+        "actLabel": "Share that activate Passes",
+        "nLabel": "Charge Passes sold per active merchant, monthly",
+        "faceLabel": "Average face value",
+        "shareLabel": "Your share of the Mezzofy fee",
+        "indicative": "indicative",
+        "rowActive": "Active merchants",
+        "rowSold": "Passes sold through you, monthly",
+        "rowFace": "Face value moving through your platform",
+        "rowPool": "Mezzofy fee pool, 10% of face",
+        "rowShare": "Your monthly share",
+        "settledNote": "Settled to you on sale, not on redemption",
+        "zeroFeeNote": "<strong>Zero Fee Passes are not in this number.</strong> They carry no merchant fee, so partner share on them is settled separately from the consumer verification fee. Ask about it in scoping."
+      },
+      "get": {
+        "title": "What you get",
+        "sandbox": {
+          "title": "Sandbox on signup",
+          "desc": "Full test environment with sample merchants and Passes. No commercial commitment to start building."
+        },
+        "issuance": {
+          "title": "Issuance and redemption",
+          "desc": "Create, distribute and validate Passes. The same endpoints the marketplace runs on."
+        },
+        "settlement": {
+          "title": "Settlement reporting",
+          "desc": "Per-merchant and per-Pass reconciliation, so your finance team can see exactly what earned what."
+        }
+      },
+      "faq": {
+        "title": "Questions partners ask",
+        "q1": "Who owns the merchant relationship?",
+        "a1": "You do. Your commercial terms with your merchants are yours. Mezzofy handles Pass validation, consumer support and settlement, and never contacts your merchants directly without your say-so.",
+        "q2": "Does each merchant sign with Mezzofy?",
+        "a2": "No. One partnership agreement covers the merchants on your platform. They opt in through your interface and inherit the terms.",
+        "q3": "How long is certification?",
+        "a3": "Typically two to three weeks from a working sandbox integration. We test issuance, redemption, failure handling and settlement reconciliation before production keys are issued.",
+        "q4": "Is the partnership exclusive?",
+        "a4": "Not by default. Exclusivity in a market or category is available against volume commitments and is priced accordingly.",
+        "q5": "What if a merchant on my platform refuses a valid Pass?",
+        "a5": "The customer is credited automatically, and the merchant is flagged. Repeated refusals suspend their listing. We will tell you before it reaches that point."
+      },
+      "closing": {
+        "title": "Start in the sandbox today.",
+        "description": "No commercial commitment to begin building. Terms when you are ready to go live.",
+        "ctaApi": "Read the API docs",
+        "ctaPartner": "Partner with us"
+      }
+    }
+  },
+  "products": {
+    "v2": {
+      "hero": {
+        "badge": "Five products, one guarantee",
+        "title": "Everything the exchange runs on.",
+        "subtitle": "Each product does one job. Together they take an offer from creation to the moment it is consumed at a counter, with the same guarantee the whole way."
+      },
+      "pass": {
+        "label": "The unit",
+        "title": "Pass",
+        "desc": "The tokenised, single-use primitive every offer is issued as. One standard, seven presentations.",
+        "link": "Explore Pass"
+      },
+      "vault": {
+        "label": "For customers",
+        "title": "Vault",
+        "desc": "Where a customer keeps every Pass they own, and the prepaid balance they spend on verified offers.",
+        "link": "Explore Vault"
+      },
+      "ai": {
+        "label": "The engine",
+        "title": "AI Coupon",
+        "desc": "Creates offers inside limits a merchant sets, and places them across the exchange. Powers Zero Fee.",
+        "link": "Explore AI Coupon"
+      },
+      "nfc": {
+        "label": "The network",
+        "title": "NFC Coupon",
+        "desc": "Tap points in malls, lobbies and offices, hosted by partners. Any merchant in the pool flows through them.",
+        "link": "Explore NFC Coupon"
+      },
+      "cms": {
+        "label": "For merchants",
+        "title": "Coupon Management System",
+        "desc": "Issue to your own customers, off the exchange. Metered, private, and the same redemption tools.",
+        "link": "Explore the CMS"
+      }
+    }
+  },
+  "pass": {
+    "v2": {
+      "closing": {
+        "title": "Every offer, issued as a Pass.",
+        "description": "One standard, seven ways to present it — tokenised, single-use, and honoured at the counter. List free on the exchange, or issue to your own customers.",
+        "ctaApi": "Read the API docs",
+        "ctaStart": "List your offers free"
+      },
+      "hero": {
+        "title": "One primitive. Seven presentations.",
+        "subtitle": "A Pass is a tokenised entitlement with a unique code, issued once, held by one person, and consumed on validation. Whether it looks like a coupon, a ticket or a reward, the standard underneath is the same.",
+        "ctaStandard": "Read the standard",
+        "ctaApi": "API reference"
+      },
+      "passLabels": {
+        "issuerLabel": "Issuer",
+        "termsLabel": "Terms",
+        "codeLabel": "Code"
+      },
+      "heroPass": {
+        "issuer": "Any issuer",
+        "value": "Pass",
+        "terms": "Unique. Single-use. Cannot be copied.",
+        "code": "MZF-XXXX-XXXX",
+        "stamp": "CONSUMED"
+      },
+      "standard": {
+        "title": "The Mezzofy Pass Standard",
+        "description": "Three properties, enforced by the system rather than promised in terms.",
+        "unique": {
+          "title": "Unique",
+          "desc": "Every Pass carries its own serial, minted at issuance and traceable through its whole life. No two are alike, so a duplicate does not exist to be presented."
+        },
+        "single": {
+          "title": "Single-use",
+          "desc": "Validation consumes the Pass. It cannot be presented twice, screenshotted and reused, or forwarded after redemption. The exception is Card, which draws down instead."
+        },
+        "fraud": {
+          "title": "Fraud-proof",
+          "desc": "A Pass that was not issued by the exchange will not validate. Scraped codes, generated codes and expired offers are rejected at the counter, not discovered afterwards."
+        }
+      },
+      "lifecycle": {
+        "title": "Lifecycle",
+        "issued": {
+          "t": "Issued",
+          "d": "By merchant, AI Coupon, or a loyalty programme"
+        },
+        "held": {
+          "t": "Held",
+          "d": "In a Vault, bound to one person"
+        },
+        "presented": {
+          "t": "Presented",
+          "d": "At a registered outlet"
+        },
+        "validated": {
+          "t": "Validated",
+          "d": "Once. Then spent."
+        },
+        "settled": {
+          "t": "Settled",
+          "d": "Merchant paid, records reconciled"
+        }
+      },
+      "explorer": {
+        "title": "Seven presentations, and where each can go",
+        "description": "Pick one to see it, how it is spent, whether it transfers, and where it can go. Transferability is a property of the Pass, not an assumption about the type.",
+        "chipsLabel": "Presented as",
+        "rowSpent": "How it is spent",
+        "rowTransfer": "Can it be transferred",
+        "rowCreated": "Created by",
+        "rowWhere": "Where it can go"
+      },
+      "types": {
+        "coupon": {
+          "name": "Coupon",
+          "blurb": "A discount off the bill. The commonest Pass on the exchange, and the one AI Coupon creates for merchants who list free.",
+          "spent": "Consumed once",
+          "transfer": "No",
+          "created": "Merchant or AI Coupon",
+          "where": "All channels",
+          "pass": {
+            "issuer": "Kopi Lane, Bugis",
+            "value": "25% off",
+            "terms": "Minimum spend $30. Valid 30 days.",
+            "code": "MZF-7K4Q-8813",
+            "stamp": "CONSUMED"
+          }
+        },
+        "voucher": {
+          "name": "Voucher",
+          "blurb": "A prepaid value voucher sold on the marketplace and to enterprise buyers, paying the merchant on redemption.",
+          "spent": "Consumed once",
+          "transfer": "No",
+          "created": "Merchant (Charge Pass)",
+          "where": "Marketplace, B2B buyers",
+          "pass": {
+            "issuer": "Your business",
+            "value": "$50 voucher",
+            "terms": "Bought for $40. Valid 6 months.",
+            "code": "MZF-9T2M-5540",
+            "stamp": "SOLD"
+          }
+        },
+        "deal": {
+          "name": "Deal",
+          "blurb": "A marketplace offer a consumer buys into, redeemed once at the counter.",
+          "spent": "Consumed once",
+          "transfer": "No",
+          "created": "Merchant",
+          "where": "B2C marketplace",
+          "pass": {
+            "issuer": "Bistro Nine",
+            "value": "1-for-1 main",
+            "terms": "Dine-in, weekdays. Valid 60 days.",
+            "code": "MZF-3D5P-1180",
+            "stamp": "CONSUMED"
+          }
+        },
+        "ticket": {
+          "name": "Ticket",
+          "blurb": "An admission or entry Pass. Often transferable, so it can be gifted before it is used.",
+          "spent": "Consumed once",
+          "transfer": "Yes",
+          "created": "Venue or merchant",
+          "where": "Marketplace, own channel",
+          "pass": {
+            "issuer": "Harbour Museum",
+            "value": "Admit one",
+            "terms": "Any open day this season.",
+            "code": "MZF-8T1C-4402",
+            "stamp": "CONSUMED"
+          }
+        },
+        "reward": {
+          "name": "Reward",
+          "blurb": "A loyalty reward issued to members against points or status, honoured at participating merchants.",
+          "spent": "Consumed once",
+          "transfer": "No",
+          "created": "Loyalty programme",
+          "where": "B2B, own channel",
+          "pass": {
+            "issuer": "Your rewards",
+            "value": "Free coffee",
+            "terms": "Members only. One per member.",
+            "code": "MZF-2R6H-9310",
+            "stamp": "CONSUMED"
+          }
+        },
+        "card": {
+          "name": "Card",
+          "blurb": "A stored-value card. The exception to single-use — it draws down with each visit until the balance is gone.",
+          "spent": "Draws down per use",
+          "transfer": "Yes",
+          "created": "Merchant",
+          "where": "Marketplace, own channel",
+          "pass": {
+            "issuer": "Your business",
+            "value": "$100 balance",
+            "terms": "Spend across visits until depleted.",
+            "code": "MZF-5C0V-7729",
+            "stamp": "ACTIVE"
+          }
+        },
+        "token": {
+          "name": "Token",
+          "blurb": "The raw tokenised entitlement, issued by API with rules set at issuance. The base every other presentation builds on.",
+          "spent": "Consumed once",
+          "transfer": "Configurable",
+          "created": "API issuance",
+          "where": "All channels",
+          "pass": {
+            "issuer": "Any issuer",
+            "value": "Tokenised entitlement",
+            "terms": "Programmatic. Rules set at issuance.",
+            "code": "MZF-1T9K-6650",
+            "stamp": "ISSUED"
+          }
+        }
+      },
+      "dev": {
+        "title": "What a Pass looks like to a developer",
+        "description": "The same object whether it came from the marketplace, an enterprise draw, or a tap point.",
+        "ctaApi": "API reference",
+        "ctaPartner": "Partner with us"
+      }
+    }
+  },
+  "vault": {
+    "v2": {
+      "closing": {
+        "title": "Everything they own, in one Vault.",
+        "description": "Give your customers one place to hold and present every Pass, alongside the balance they spend on verified offers. Available white-label to enterprise buyers.",
+        "ctaBuyers": "For buyers",
+        "ctaApp": "Get the app"
+      },
+      "hero": {
+        "title": "Every Pass you own, in one place.",
+        "subtitle": "Vault is where a customer keeps what they have claimed, bought or been given — and the prepaid balance they spend on verified offers. Present from it at any registered outlet.",
+        "ctaApp": "Get the app",
+        "ctaBrowse": "Browse deals"
+      },
+      "preview": {
+        "balanceLabel": "Balance",
+        "balanceValue": "$37.40",
+        "balanceTag": "closed loop",
+        "item1text": "25% off — Kopi Lane, Bugis · until 10 Oct",
+        "item1state": "READY",
+        "item2text": "$50 voucher — Harbour Grill · until Mar 2027",
+        "item2state": "READY",
+        "item3text": "Night cruise — Sat 26 Sep, seat G12",
+        "item3state": "SAT",
+        "item4text": "Free coffee — Redeemed 4 Sep",
+        "item4state": "USED"
+      },
+      "separate": {
+        "title": "Two things, kept separate on purpose",
+        "description": "Balance goes down. The Vault fills up. Money only ever moves one way — unless a Pass fails to validate, in which case it comes straight back."
+      },
+      "balance": {
+        "panelLabel": "Balance (spent down)",
+        "title": "Balance",
+        "meterValue": "$37.40",
+        "meterNote": "of a $100 top-up, ≈ 1,200 claims left at 3¢",
+        "rule1": "Spend only on Mezzofy Passes",
+        "rule2": "Not transferable between people",
+        "rule3": "No cash-out",
+        "arrow1": "A few cents per claim",
+        "arrow1sub": "Balance → Vault",
+        "arrow2": "Credited back",
+        "arrow2sub": "if a Pass will not validate"
+      },
+      "vault": {
+        "panelLabel": "Vault (where things stay)",
+        "title": "Vault",
+        "item1text": "25% off — Kopi Lane, Bugis · until 10 Oct",
+        "item1state": "READY",
+        "item2text": "$50 voucher — Harbour Grill · until Mar 2027",
+        "item2state": "READY",
+        "item3text": "Night cruise — Sat 26 Sep, seat G12",
+        "item3state": "SAT",
+        "item4text": "$100 card — Sabai Spa · drawn down each visit",
+        "item4state": "$62.50 LEFT",
+        "item5text": "Free coffee — Redeemed 4 Sep",
+        "item5state": "USED",
+        "note": "Every Pass shows its terms, its expiry, and its state. Present from here at the counter; it is validated live and consumed once. Cards draw down instead."
+      },
+      "why": {
+        "title": "Why not one wallet?",
+        "text": "A vault is a place things stay. A balance is something you spend down. Keeping them apart keeps the mental model honest for the customer, and keeps the stored-value component clearly identified for the people who regulate it."
+      },
+      "claim": {
+        "title": "How a claim works",
+        "find": {
+          "t": "Find",
+          "d": "Marketplace, tap point, or AI assistant"
+        },
+        "claim": {
+          "t": "Claim",
+          "d": "A few cents from balance"
+        },
+        "hold": {
+          "t": "Hold",
+          "d": "Lands in the Vault, ready"
+        },
+        "present": {
+          "t": "Present",
+          "d": "Validated once at the counter"
+        },
+        "credit": {
+          "t": "Or credit back",
+          "d": "If it will not validate, balance is restored"
+        },
+        "buyersNote": "Vault is available to enterprise buyers as a white-label component, so their customers hold Passes without ever seeing Mezzofy.",
+        "buyersLink": "For buyers →"
+      }
+    }
+  },
+  "aicoupon": {
+    "v2": {
+      "hero": {
+        "title": "Set the limits. The AI does the rest.",
+        "subtitle": "AI Coupon creates discount offers for a merchant inside boundaries the merchant sets, and places them across the exchange. It is the engine behind Zero Fee Passes and the NFC network, and it never exceeds a limit it was given.",
+        "ctaSetup": "Set it up as a merchant",
+        "ctaSee": "See what it creates"
+      },
+      "passLabels": {
+        "issuerLabel": "Issuer",
+        "termsLabel": "Terms",
+        "codeLabel": "Code"
+      },
+      "heroPass": {
+        "issuer": "Created by AI Coupon",
+        "value": "15% off",
+        "terms": "Tue–Thu, 2–5pm. Minimum spend $25.",
+        "code": "MZF-2Q8R-4471",
+        "stamp": "FREE"
+      },
+      "boxPass": {
+        "issuer": "Created by AI Coupon",
+        "value": "15% off",
+        "terms": "Tue 11:40. Min spend $25. Valid 30 days.",
+        "code": "MZF-2Q8R-4471",
+        "stamp": "FREE"
+      },
+      "box": {
+        "title": "The merchant builds the box. The AI works inside it.",
+        "description": "Solid walls are set by the merchant and cannot be crossed. Everything dotted is a choice the AI made inside them, for one real Pass.",
+        "latch": "Running · pause is one tap",
+        "wallTag": "Merchant walls",
+        "wallTop": "Discount 10% – 30% · Valid 30 days · Min spend $25",
+        "wallBottom": "Quota 500 / month · 25 / day · Hours Tue–Thu, 2–5pm · Outlets 3 registered",
+        "pick1lead": "Picked 15%",
+        "pick1sub": "inside 10–30%",
+        "pick2lead": "Placed at NFC lobby",
+        "pick2sub": "not the marketplace",
+        "pick3lead": "Released Tue 11:40",
+        "pick3sub": "one of 25 today",
+        "pick4lead": "Shown to office workers",
+        "pick4sub": "near the outlet",
+        "oneOf": "One of 500 this month. The 501st is not created.",
+        "wallsTitle": "The merchant sets the walls",
+        "wall1": "Maximum discount, by type",
+        "wall2": "Minimum spend to qualify",
+        "wall3": "How long each Pass is valid",
+        "wall4": "Monthly quota and daily cap",
+        "wall5": "Days and hours it can be used",
+        "wall6": "Which outlets accept it",
+        "wall7": "Whether it is running at all",
+        "picksTitle": "The AI picks inside them",
+        "aipick1": "The exact discount on each Pass",
+        "aipick2": "When to release, and how many that day",
+        "aipick3": "Which channel to place it in",
+        "aipick4": "Which customers see it",
+        "aipick5": "How to shift volume toward off-peak hours when allowed",
+        "learnsTitle": "What it learns from.",
+        "learnsText": "Redemption patterns across the exchange, time of day, location, category demand and the merchant's own history. What it never does is set the merchant's boundaries — those are typed in by a person."
+      },
+      "offers": {
+        "title": "Two offer types to start",
+        "pctLabel": "Percent off",
+        "pctTitle": "10% to 50%",
+        "pctDesc": "Scales with the bill. The merchant sets a range; the AI picks a point inside it for each Pass. Suits variable basket sizes.",
+        "amtLabel": "Amount off",
+        "amtTitle": "$1 to $100",
+        "amtDesc": "Fixed value per Pass. Minimum spend is required, and the system enforces a floor so a discount can never exceed a set share of the bill.",
+        "note": "Product-specific offers arrive with POS integration, where the item data already lives. Tickets are never AI-generated: capacity is real and finite."
+      },
+      "guardrails": {
+        "title": "Guardrails, not guidelines",
+        "ceilings": {
+          "t": "Hard ceilings",
+          "d": "Quota, cap and depth are enforced in the system. The AI has no override."
+        },
+        "preview": {
+          "t": "Preview mode",
+          "d": "New merchants approve the first campaigns before anything is issued. Automation follows trust."
+        },
+        "kill": {
+          "t": "Kill switch",
+          "d": "Pause stops creation instantly. Passes already issued stay valid until expiry, because a customer paid for that guarantee."
+        }
+      },
+      "closing": {
+        "title": "Free for the merchant, start to finish.",
+        "description": "No creation, distribution or redemption fee. The customer pays a few cents for the guarantee, and that funds the exchange.",
+        "ctaHow": "How merchants use it",
+        "ctaSetup": "Set up AI Coupon"
+      }
+    }
+  },
+  "cms": {
+    "v2": {
+      "hero": {
+        "title": "Your customers. Your Passes. Off the exchange.",
+        "subtitle": "CMS is for merchants who already have an audience and want to issue to it directly — email, messaging, their own app. Nothing is listed on the marketplace, no other buyer sees it, and you pay only for what you use.",
+        "ctaStart": "Start with CMS",
+        "ctaCompare": "Compare with listing free"
+      },
+      "passLabels": {
+        "issuerLabel": "Issuer",
+        "termsLabel": "Terms",
+        "codeLabel": "Code"
+      },
+      "heroPass": {
+        "issuer": "Your business, your list",
+        "value": "$10 off",
+        "terms": "Members only. Valid to end of month.",
+        "code": "MZF-6H1D-7702",
+        "stamp": "PRIVATE"
+      },
+      "flow": {
+        "title": "Create, send, redeem, reconcile",
+        "create": {
+          "t": "Create",
+          "d": "Any Pass type, your artwork, your terms. Templates for the common cases, full control when you need it. Bulk import for lists you already hold."
+        },
+        "send": {
+          "t": "Send",
+          "d": "Email, SMS and WhatsApp built in. QR export for print. API for your own app. Messaging costs pass through at cost."
+        },
+        "redeem": {
+          "t": "Redeem",
+          "d": "The same Operator App and POS integration every Pass uses. Registered outlets only. Every validation is live and single-use."
+        },
+        "reconcile": {
+          "t": "Reconcile",
+          "d": "Issued, sent, redeemed, expired — per Pass, per campaign, per outlet. Exportable, and billed against the same numbers."
+        }
+      },
+      "meter": {
+        "title": "Metered, and it gets cheaper as you grow",
+        "description": "Three charges, each per Pass. Your tier is set by annual volume and applies automatically.",
+        "thCharge": "Charge",
+        "thRate": "From, per Pass",
+        "allocLabel": "Allocation, per Pass created",
+        "allocRate": "from $0.013",
+        "distLabel": "Distribution, per Pass sent",
+        "distRate": "from $0.013",
+        "redeemLabel": "Redemption, per Pass validated",
+        "redeemRate": "from $0.064",
+        "note": "Billed monthly to a card on file. Allocation and distribution are charged whether or not a Pass is redeemed. Local price points are set per market.",
+        "link": "Work out your monthly bill →"
+      },
+      "fork": {
+        "title": "When CMS is the right choice, and when it is not",
+        "description": "It comes down to which customers you are trying to reach. The ones you already have go one way. The ones you do not have yet go the other.",
+        "centre": "Your business",
+        "centreSub": "one account, both routes",
+        "cms": {
+          "routeLabel": "Customers you already have → CMS",
+          "title": "CMS",
+          "tag": "Private · metered",
+          "step1lead": "Your list",
+          "step1sub": "members, staff, past customers",
+          "step2lead": "You create the Pass",
+          "step2sub": "your artwork, your terms",
+          "step3lead": "You send it",
+          "chip1": "Email",
+          "chip2": "SMS",
+          "chip3": "WhatsApp",
+          "chip4": "QR",
+          "chip5": "Your app",
+          "use1": "You want to reward a list privately",
+          "use2": "Member or staff programmes should not be public",
+          "use3": "You need full control of artwork, copy and timing",
+          "use4": "You need Passes inside your own app"
+        },
+        "exchange": {
+          "routeLabel": "Customers you do not have yet → The exchange",
+          "title": "The exchange",
+          "tag": "Free to list",
+          "step1lead": "Set your limits",
+          "step1sub": "or your voucher value",
+          "step2lead": "AI Coupon creates and places",
+          "step2sub": "or we list what you made",
+          "step3lead": "Buyers find it",
+          "chip1": "Marketplace",
+          "chip2": "Enterprise apps",
+          "chip3": "Tap points",
+          "chip4": "AI assistants",
+          "use1": "You want new customers, not existing ones",
+          "use2": "You would rather not build campaigns — Zero Fee is automatic",
+          "use3": "You want to sell vouchers to enterprise buyers",
+          "use4": "You are near a tap point and want walk-ins"
+        },
+        "noteLead": "Most merchants run both.",
+        "noteText": "CMS for the list they have, the exchange for the customers they do not. The two inventories never mix, so a private member offer cannot leak onto the marketplace."
+      },
+      "closing": {
+        "title": "Start with your first 500 free.",
+        "description": "No card needed until you send your first paid distribution.",
+        "ctaThree": "See all three ways to sell",
+        "ctaStart": "Start with CMS"
+      }
     }
   }
 }

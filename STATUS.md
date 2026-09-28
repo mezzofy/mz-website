@@ -34,6 +34,111 @@ MCP server configuration fixed for Windows. Shadcn MCP server now loads correctl
 
 ## Recently Completed (Last 7 Days)
 
+**2026-09-11 (Hid retired `coupon-campaign.html` / Coupon Marketing):**
+- ✅ Removed the "Coupon Marketing" menu item from header (desktop + mobile) and footer on ALL pages (incl. blog/news `../coupon-campaign.html` variants and the page's own active-nav indicator) — 0 links remain. Removed the 2 body "Related Product" cards on coupon-marketplace + coupon-playbook that linked to it.
+- ✅ Page hidden (not deleted): `noindex, follow`, removed from `sitemap.xml` + `llms.txt`. Still reachable by direct URL (200) but out of nav + search. Unused i18n keys (common.nav.marketing etc.) left in place, harmless.
+- Optional next: 301 `coupon-campaign.html → coupon-management.html` (merge into CMS per README) — needs Infra.
+
+**2026-09-11 (URL rename: `coupon-serial.html` → `coupon-pass.html`):**
+- ✅ New page `dist/coupon-pass.html` (the Pass product page). Kept "coupon" in the slug for SEO (chosen over bare `pass.html`). Updated its `<title>`, meta, OG/Twitter, canonical, hreflang, and JSON-LD (WebPage + SoftwareApplication + breadcrumb "Coupon Pass") to Pass-focused, keyword-rich copy.
+- ✅ Re-linked **37 HTML files** (all internal links: nav ×2, footer, homepage "Explore Passes", products Pass card, closing CTAs, blog/news) → `coupon-pass.html`. Updated `sitemap.xml` (loc + hreflang) and `llms.txt`.
+- ✅ `coupon-serial.html` replaced with a tiny **client-side redirect stub** (meta refresh + canonical → coupon-pass) so the old URL doesn't 404 in the interim.
+- ⚠️ **BLOCKING INFRA HANDOFF:** a real **301 redirect** `coupon-serial.html → coupon-pass.html` must be set at CloudFront/S3 (outside webmaster scope). The stub is only an interim client-side fallback. Once the 301 is live, the stub can be deleted.
+- Verified: JSON-LD valid, sitemap well-formed, 0 remaining internal links to the old URL, both URLs serve 200.
+
+
+**2026-09-11 (Nav rebrand "Coupon Serial" → "Passes" + homepage guarantee links):**
+- ✅ Renamed the "Coupon Serial" product **label** to **"Passes"** site-wide: i18n values `common.nav.serial` + `common.footer.products.serial` → "Passes" (all 4 langs, src+dist) + HTML fallback text in 38 pages (114 spots: desktop nav, mobile nav, footer). The coupon-serial page's `<title>`/meta/OG keep "Coupon Serial" for SEO (unchanged). File is still `coupon-serial.html` (link targets unchanged).
+- ✅ Homepage guarantee cards: added "Explore Passes →" link (→ coupon-serial.html) to "Issued as a Pass" and "Explore Vault →" link (→ coupon-wallet.html) to "Held in a Vault". New i18n keys `home.v2.guarantee.pass.link` / `vault.link` (4 langs, src+dist).
+- No rebuild needed (label/key text + existing utility classes only). Optional follow-up: coupon-serial breadcrumb JSON-LD name still reads "Coupon Serial".
+- **Correction (same day):** menu label changed from "Passes" → **"Pass"** (singular, per user) — `common.nav.serial` + `common.footer.products.serial` in all 4 langs + 114 HTML fallback spots. The two homepage guarantee-card CTA translations (`home.v2.guarantee.pass.link`="Explore Passes", `vault.link`="Explore Vault") were already present and correct; a screenshot showing raw key strings was a stale browser cache of en.json — the local server confirmed it serves the correct values. Hard-refresh (Ctrl+Shift+R) to see them.
+
+**2026-09-11 (Content revamp COMPLETE — all 10 `temp/*.md` pages done):** index, for-merchants, for-buyers(→for-distributors.html), for-integrators(→for-developers.html), products (new), pass(→coupon-serial.html), vault(→coupon-wallet.html), ai-coupon (new), nfc(→coupon-nfc.html), coupon-management. All: body-only rebuilds keeping nav/footer/head-SEO; per-page `*.v2` i18n namespaces (en real, zh-TW/zh-CN/ar English placeholders) in src+dist, 0 missing keys; front-end-only calculators/explorers via inline `<script>` (main.js/i18n.js never touched); shared v2 components in each page's inline `<style>`. Fixed pre-existing malformed JSON-LD on for-developers, coupon-serial(clean), coupon-wallet, coupon-nfc, coupon-management; removed FAQPage where the on-page FAQ was dropped. **Still pending: live browser QA (Chrome ext not connected), real zh/ar translations, page renames + 301s + nav links, placeholder metrics.**
+
+**2026-09-11 (Product: Coupon Management — `coupon-management.html` rebuilt from `temp/10-product-coupon-management.md`):**
+- ✅ Replaced body (nav+footer untouched; dropped banner) with 5 sections → Hero + Pass stub (PRIVATE) · "Create, send, redeem, reconcile" (4 steps) · metered tier table (allocation/distribution/redemption "from" rates) · **CMS-vs-exchange fork** (Your business → CMS route vs exchange route, each with steps/chips/use-cases) + "most merchants run both" note · closing CTA
+  - i18n: new top-level `cms` namespace, `cms.v2.*` (76 keys) × 4 langs, 0 missing; removed FAQPage + fixed stray-`}` JSON-LD (now WebPage + SoftwareApplication, valid)
+
+**2026-09-11 (Product: NFC Coupon — `coupon-nfc.html` rebuilt from `temp/09-product-nfc-coupon.md`):**
+- ✅ Replaced body (nav + footer untouched; dropped protocol banner) with 5 sections → `dist/coupon-nfc.html`
+  - Hero + Pass stub (TAPPED) · "The network today" stats (dark: 38/6/2/Q4) · "Not a merchant product. A network node." — **old-vs-now topology diagrams** (inline SVG: one dead tag→merchant vs a shared pool feeding many tap points) · "Two ways to join" (Host / Supply) + customer note · closing CTA
+  - i18n: `nfc.v2.*` nested under the existing `nfc` namespace (50 keys) across four languages, src+dist; 0 missing
+  - **SEO fixes:** removed FAQPage JSON-LD (no on-page FAQ) + fixed the same pre-existing stray-`}` malformation. JSON-LD now WebPage + SoftwareApplication, valid. Diagrams have `<title>`/aria-label descriptions.
+  - Static page (no JS). ⏳ Pending: live browser QA
+
+**2026-09-11 (Product: AI Coupon — NEW `ai-coupon.html` created from `temp/08-product-ai-coupon.md`):**
+- ✅ New page `dist/ai-coupon.html` — nav/footer cloned from an existing page, fresh head (WebPage + SoftwareApplication JSON-LD, valid). 5 sections: hero + Pass stub · **"The box" infographic** (merchant solid walls top/bottom, dotted AI picks + the one Pass it created inside, "one of 500…") + walls/AI-picks lists + "what it learns from" note · two offer types (percent / amount) · guardrails (3 cards) · closing CTA
+  - i18n: new top-level `aicoupon` namespace, `aicoupon.v2.*` (67 keys) across four languages, src+dist; 0 missing
+  - Added to `dist/sitemap.xml` (priority 0.8). Not nav-linked (header deferred)
+  - **Resolves the page-05 dangling link:** `products.html`'s AI Coupon card now points to a real `ai-coupon.html`
+  - Static page (no JS). ⏳ Pending: live browser QA
+
+**2026-09-11 (Product: Vault — `coupon-wallet.html` rebuilt from `temp/07-product-vault.md`):**
+- ✅ Replaced body (nav + footer untouched; dropped old protocol banner) with 3 sections → `dist/coupon-wallet.html`
+  - Hero + Vault preview stub (balance + held Passes with state badges) · **Balance-vs-Vault infographic** (vertical gauge at 37%, spend rules, one-way + credit-back arrows, vs the Vault item list with READY/SAT/USED/$LEFT badges) + "Why not one wallet?" note · "How a claim works" 5-step flow + For-buyers link
+  - Static page (no JS needed). New components: vault-stub, balance gauge, state badges
+  - i18n: new top-level `vault` namespace, `vault.v2.*` (56 keys) across four languages, src+dist; 0 missing
+  - **SEO fixes:** removed the FAQPage JSON-LD (no on-page FAQ) AND fixed the same pre-existing stray-`}` JSON-LD malformation this template had (SoftwareApplication was mis-nested). JSON-LD now WebPage + SoftwareApplication, valid.
+  - Note: file stays `coupon-wallet.html`; `vault.html` rename deferred
+  - ⏳ Pending: live browser QA — Chrome extension not connected
+
+**2026-09-11 (Product: Pass — `coupon-serial.html` rebuilt from `temp/06-product-pass.md`):**
+- ✅ Replaced body (nav + footer untouched; dropped the old orange "protocol context" banner) with 5 sections → `dist/coupon-serial.html`
+  - Hero + Pass stub · "The Mezzofy Pass Standard" (Unique / Single-use / Fraud-proof) · Lifecycle 5-step flow · **7-type explorer** (Coupon/Voucher/Deal/Ticket/Reward/Card/Token) · developer JSON sample + CTAs
+  - Type explorer (inline JS, no main.js change): clicking a chip re-points every `[data-ptype-field]` element's `data-i18n` to `pass.v2.types.<type>.<field>` then calls `window.i18n.applyTranslations()` — so all 7 types stay fully translatable with compact HTML; stamp colour swaps per type
+  - i18n: new top-level `pass` namespace, `pass.v2.*` (119 keys incl. all 7 types × 11 fields) across four languages, src+dist; verified 0 missing for both static and JS-referenced keys
+  - **SEO fix:** removed the FAQPage JSON-LD (the new page has no on-page FAQ, so the schema would mismatch); JSON-LD now WebPage + SoftwareApplication, valid. Title/meta keep coupon keywords.
+  - Note: file stays `coupon-serial.html`; `pass.html` rename deferred
+  - ⏳ Pending: live browser QA (type explorer, language/RTL, responsive) — Chrome extension not connected
+
+**2026-09-11 (Products hub — NEW `products.html` created from `temp/05-products-hub.md`):**
+- ✅ New page `dist/products.html` — branded hero + 5 product cards (Pass, Vault, AI Coupon, NFC Coupon, Coupon Management System). Nav + footer cloned verbatim from an existing page so they match the site exactly; fresh head (SEO meta, canonical, hreflang, OG/Twitter, WebPage + BreadcrumbList + ItemList JSON-LD)
+  - i18n: new top-level `products` namespace, `products.v2.*` (23 keys) across all four language files (src+dist); 0 missing
+  - Added to `dist/sitemap.xml` (priority 0.8, hreflang alternates)
+  - **Not yet linked from nav** (header edits deferred per instruction) — the Products dropdown already lists the individual products, so this hub is the README's "optional" page
+  - Card links use current filenames: Pass→coupon-serial.html, Vault→coupon-wallet.html, NFC→coupon-nfc.html, CMS→coupon-management.html. **AI Coupon card → `ai-coupon.html` which does not exist yet** (created in page 08) — this link 404s until page 08 is built.
+  - ⏳ Pending: live browser QA — Chrome extension not connected
+
+**2026-09-11 (For Integrators revamp — `for-developers.html` rebuilt from `temp/04-for-integrators.md`):**
+- ✅ Replaced all body sections (nav + footer untouched) with 8 new sections → `dist/for-developers.html`
+  - Hero + Pass stub · "What one integration reaches" stats (dark) · "What it adds" (POS / loyalty / payment) · "How the partnership works" (3 steps + note) · **revenue illustrator** · "What you get" (3 cards) · FAQ (5 Q&A) · closing CTA
+  - Revenue illustrator (front-end only, inline JS): active = merchants×activation, sold = active×perMerchant, face total = sold×face, fee pool = 10% of face, your share = pool×indicative%. Matches MD example (2,000 / 25% / 40 / $35 / 25% → 500 active, 20,000 sold, $700,000 face, $70,000 pool, **$17,500** share). PAID Pass preview + share slider marked "indicative".
+  - i18n: **new top-level `integrators` namespace** with `integrators.v2.*` (80 keys) across all four language files in `src/`+`dist/`; every HTML key resolves in every language, 0 missing
+  - Head **FAQPage JSON-LD** rewritten to 5 integrator Q&A — and **fixed a pre-existing malformed JSON-LD** (a stray `}` had mis-nested the `SoftwareApplication` object, so the whole block failed to parse). Now 3 valid objects (WebPage/FAQPage/SoftwareApplication).
+  - **Note:** file stays `for-developers.html`; `for-integrators.html` rename + 301 + nav updates deferred. Title/meta keep coupon+developer keywords.
+  - ⏳ Pending: live browser QA — Chrome extension not connected this session
+
+**2026-09-11 (For Buyers revamp — `for-distributors.html` rebuilt from `temp/03-for-buyers.md`):**
+- ✅ Replaced all body sections (nav + footer untouched) with 8 new sections → `dist/for-distributors.html`
+  - Hero + Pass stub · consumer strip · "What is in the pool today" stats (dark) · **commitment calculator** (segmented Redemption base / Full purchase) · "Two ways to distribute" (API / Pass+Vault) · "Why the guarantee matters" (3 points) · FAQ (5 Q&A) · closing CTA
+  - Calculator (front-end only, inline JS): committed = qty×face, upfront = committed×(1−disc), expected redeemed = committed×rr, unredeemed = committed×(1−rr). Reproduces MD example (5,000 × $40, 8%, 70% → $200,000 / $184,000 / $140,000 / $60,000). Segmented control swaps the last-row label + note (swappable vs per-agreement); pool Pass preview updates live.
+  - i18n: **new top-level `buyers` namespace** with `buyers.v2.*` (88 keys, per README naming), added to all four language files in `src/`+`dist/` (en real; zh-TW/zh-CN/ar placeholders); every HTML key resolves in every language, 0 missing
+  - Head **FAQPage JSON-LD** updated to 5 buyer Q&A (AEO, "coupon"/"distributor" keywords kept); one `<h1>`, `#hero-section`/`.hero-description` Speakable hooks; old ═ section banners removed
+  - **Note:** file stays `for-distributors.html`. The README's `for-buyers.html` rename + 301 + cross-site nav updates is deferred to a later coordinated task; title/meta keep the coupon+distributor keywords in the meantime
+  - ⏳ Pending: live browser QA (calculator, segmented control, language/RTL, responsive) — Chrome extension not connected this session
+
+**2026-09-11 (For Merchants revamp — `for-merchants.html` rebuilt from `temp/02-for-merchants.md`):**
+- ✅ Replaced all body sections (nav + footer untouched) with 9 new sections → `dist/for-merchants.html`
+  - Hero + Pass stub · "Who your offers reach" stats (dark) · "Three ways to sell" (clickable mode selector) · "Set your limits once" steps+note · **interactive calculator** · "one system" CMS hub · "Before you go live" · FAQ (6 Q&A) · closing CTA
+  - **Three selling modes** (Zero Fee / Charge / Own channel) share one selector — the three cards and a segmented tab both drive steps, note, calculator controls, readout and Pass preview via one inline-JS state machine (front-end only, posts nowhere)
+  - Calculators reproduce the MD's documented figures: Charge $50/20% → pays $40, fee $5, receive $45, unused $22.50; Own Tier-1 800/80%/40% → $20.80 + $16.64 + $65.54 = $102.98; Zero Fee generates a sample Pass within the set limits with a "show another" shuffle
+  - i18n: `merchants.v2.*` namespace, **175 keys** to all four language files in `src/`+`dist/` (en real; zh-TW/zh-CN/ar = English placeholders); verified every HTML key resolves in every language, 0 missing
+  - Updated head **FAQPage JSON-LD** to the 6 new merchant Q&A (AEO); kept `<title>`/meta "coupon"+"merchant" keywords, one `<h1>`, `#hero-section`/`.hero-description` Speakable hooks
+  - Tailwind rebuilt; no `main.js`/`i18n.js` changes; v2 confined to top-level `merchants` namespace (fixed an insertion that first landed in a nested `common.*.merchants`)
+  - ⏳ Pending: live browser QA (mode switching, calculator interaction, language/RTL, responsive) — Chrome extension not connected this session
+  - Impact: Step 2 of the 10-page revamp (`temp/00-README.md`). Own-channel rate floors ($0.013/$0.064) shown on cards; calculator uses Tier-1 rates. Placeholder metrics + real zh/ar translations pending.
+
+**2026-09-11 (Homepage content revamp — `index.html` rebuilt from `temp/01-homepage.md`):**
+- ✅ Replaced all body sections (nav + footer untouched) with the new 7-section marketplace/exchange story → `dist/index.html`
+  - Sections: Hero + Pass-preview stub · "The exchange, right now" stats (dark band) · "Three ways in" (Merchants/Buyers/Integrators) · "How the guarantee works" · "Try one for yourself" demo-Pass · "Supply meets demand, through six channels" · "Take it further" (playbook + booking)
+  - New in-palette components added to the page `<style>`: Pass stub (perforation + CONSUMED/SAMPLE stamp), chips, channel infographic + grid table, booking slot buttons, v2 inputs, on-screen form confirms
+  - Front-end-only inline `<script>` wires demo-Pass / playbook / booking confirmations + single-slot selection (post nowhere)
+  - i18n: new `home.v2.*` namespace, 136 keys added to **all four** language files (`en` real; `zh-TW`/`zh-CN`/`ar` = English placeholders) in both `src/` and `dist/` — verified every HTML key resolves in every language (i18n.js returns the literal key on a miss, so placeholders are required)
+  - Kept "coupon" in `<title>`/meta/JSON-LD; one `<h1>`; `#hero-section` + `.hero-description` Speakable hooks preserved
+  - `npm run` Tailwind rebuild done (`dist/output.css`); no `main.js`/`i18n.js` changes
+  - ⏳ **Pending:** live browser QA (language switching, RTL for `ar`, responsive, form confirms) — Chrome extension was not connected this session
+  - Impact: Step 1 of the 10-page site content revamp (`temp/00-README.md`). Placeholder metrics (1,240 / 86,400 / 14 / 3, 40-page playbook) to be replaced before launch; real zh/ar translations and page renames are later steps.
+
 **2026-09-09 (Operator App Legal Pages — Terms of Use + Privacy Policy):**
 - ✅ Created Singapore-law legal docs for the Operator App (used by Merchant staff for coupon redemption & distribution) → `dist/legal/operator/terms-of-use.html`, `dist/legal/operator/privacy-policy.html`
   - Design: "legal instrument" identity — monospace apparatus (§ clause numbers + `EFFECTIVE · VERSION · GOVERNING LAW: SINGAPORE · APPLIES TO` masthead), sticky scroll-synced clause index, single brand-orange accent; brand nav/footer reused with `../../` paths

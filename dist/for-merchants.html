@@ -74,34 +74,50 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "What is Mezzofy for merchants?",
+            "name": "Can the AI discount more than a merchant can afford?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Mezzofy is the Global Coupon Exchange Protocol that lets merchants create, distribute, and track digital coupons at scale. Merchants connect to a network of distributors through a secure, tokenized platform to maximize coupon reach and redemption rates."
+              "text": "No. Mezzofy's Zero Fee coupons cannot exceed the discount ceiling, monthly quota or daily cap the merchant sets. These limits are enforced by the system, not treated as guidelines, so AI-created coupon offers always stay within budget."
             }
           },
           {
             "@type": "Question",
-            "name": "How do merchants distribute digital coupons on Mezzofy?",
+            "name": "Do merchants need a bank account to sell coupons on Mezzofy?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Merchants create digital coupons through Mezzofy's management system, set distribution rules, expiry dates, and redemption limits, then distribute them to partner distributors via the Mezzofy Marketplace. Redemptions are tracked in real time through the analytics dashboard."
+              "text": "Only merchants selling Charge Passes need a bank account, because Mezzofy pays them on redemption. Zero Fee coupons and own-channel distribution require no bank details."
             }
           },
           {
             "@type": "Question",
-            "name": "What types of coupons can merchants issue on the Mezzofy platform?",
+            "name": "How are merchants paid for coupons sold on Mezzofy?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Mezzofy supports QR code coupons, NFC tap-to-redeem coupons, serial number coupons, and digital wallet coupons. Merchants can issue single-use or multi-use coupons with custom redemption rules, expiry dates, and geo-targeting."
+              "text": "For Charge Passes, the merchant receives 90% of face value once the coupon is redeemed and Mezzofy keeps 10%. If a sold coupon expires unused, the remaining value is split evenly between the merchant and Mezzofy. Redemptions settle on a fixed cycle to the merchant's registered bank account."
             }
           },
           {
             "@type": "Question",
-            "name": "How does Mezzofy help merchants reduce coupon fraud?",
+            "name": "What does it cost to list digital coupons on Mezzofy?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Mezzofy uses a tokenized protocol where each coupon has a unique cryptographic identifier. The system validates redemptions in real time, preventing duplicate redemptions and unauthorized copies. NFC coupons add HMAC authentication for physical retail security."
+              "text": "Listing is free with no subscription. Zero Fee coupons cost the merchant nothing, Charge Passes carry a 10% fee taken on redemption, and own-channel distribution is metered software charged per coupon allocated, distributed and redeemed, with rates that fall as volume rises."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens if a Mezzofy coupon will not validate at the counter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The merchant should check that the outlet is registered and the coupon is within its validity window. If it still fails, the customer is credited automatically and the merchant is not charged."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can merchants stop issuing coupons at any time?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Merchants can pause from the dashboard and creation stops immediately. Coupons already issued stay valid until they expire, because the customer has already paid for the guarantee that they work."
             }
           }
         ]
@@ -152,6 +168,85 @@
             background-color: #FF6B35;
             color: white;
         }
+
+        /* ===== v2 shared components (site palette) ===== */
+        .hero-badge { display:inline-flex; align-items:center; gap:8px; border:1px solid rgba(255,107,53,0.45); background:rgba(255,107,53,0.12); border-radius:100px; padding:6px 16px; font-family:'IBM Plex Mono',monospace; font-size:0.68rem; letter-spacing:0.13em; text-transform:uppercase; color:#FF6B35; }
+        .hero-badge-dot { width:6px; height:6px; background:#FF6B35; border-radius:50%; animation:pulseDot 2s ease-in-out infinite; }
+        @keyframes pulseDot { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.4;transform:scale(.8)} }
+        .stat-card { border:1px solid rgba(255,255,255,0.09); background:rgba(255,255,255,0.05); backdrop-filter:blur(14px); border-radius:12px; padding:18px 22px; transition:border-color .3s; }
+        .stat-card:hover { border-color:rgba(255,107,53,0.45); }
+        .stat-number { font-size:2.4rem; line-height:1; font-weight:800; color:#FF6B35; }
+        .stat-label { font-family:'IBM Plex Mono',monospace; font-size:0.72rem; letter-spacing:0.10em; color:rgba(255,255,255,0.55); margin-top:5px; text-transform:uppercase; }
+        .pill-label { display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:0.66rem; letter-spacing:0.14em; text-transform:uppercase; color:#FF6B35; margin-bottom:10px; }
+        .chip-row { display:flex; flex-wrap:wrap; gap:8px; }
+        .chip { display:inline-flex; align-items:center; border:1px solid rgba(26,26,26,0.14); background:#fff; color:#4a4a4a; border-radius:100px; padding:6px 14px; font-size:0.82rem; line-height:1; }
+        .chip--dark { border-color:rgba(255,255,255,0.18); background:rgba(255,255,255,0.05); color:rgba(255,255,255,0.85); }
+        /* Pass stub */
+        .pass-stub { position:relative; background:#fff; color:#1a1a1a; border:1px solid rgba(26,26,26,0.10); border-radius:16px; padding:30px 26px 26px; box-shadow:0 24px 60px -20px rgba(0,0,0,0.45); width:100%; max-width:520px; overflow:hidden; }
+        .pass-stub::before { content:''; position:absolute; top:0; left:0; right:0; height:5px; background:#FF6B35; }
+        .pass-stub__issuer { font-family:'IBM Plex Mono',monospace; font-size:0.72rem; letter-spacing:0.06em; text-transform:uppercase; color:#808080; }
+        .pass-stub__value { font-size:3rem; line-height:1.05; font-weight:800; color:#1a1a1a; margin:8px 0 10px; }
+        .pass-stub__terms { font-size:0.9rem; color:#4a4a4a; }
+        .pass-perf { position:relative; margin:20px -26px; border-top:2px dashed rgba(26,26,26,0.18); }
+        .pass-perf::before, .pass-perf::after { content:''; position:absolute; top:-11px; width:20px; height:20px; border-radius:50%; background:#fff; box-shadow:inset 0 0 0 1px rgba(26,26,26,0.10); }
+        .pass-perf::before { left:-10px; } .pass-perf::after { right:-10px; }
+        .pass-stub__code { font-family:'IBM Plex Mono',monospace; font-size:0.88rem; letter-spacing:0.04em; color:#1a1a1a; }
+        .pass-stamp { position:absolute; right:20px; bottom:18px; font-family:'IBM Plex Mono',monospace; font-weight:700; font-size:0.76rem; letter-spacing:0.12em; text-transform:uppercase; color:#FF6B35; border:2px solid #FF6B35; border-radius:6px; padding:4px 10px; transform:rotate(-8deg); opacity:.92; }
+        .pass-stamp--sold { color:#1a7a3d; border-color:#1a7a3d; }
+        .pass-stamp--private, .pass-stamp--sample { color:#808080; border-color:#808080; }
+        /* Mode selector cards */
+        .mode-card { background:#fff; border:2px solid rgba(26,26,26,0.10); border-radius:12px; padding:24px; cursor:pointer; transition:border-color .2s, box-shadow .2s, transform .2s; width:100%; }
+        .mode-card:hover { border-color:rgba(255,107,53,0.5); transform:translateY(-3px); box-shadow:0 10px 25px 0 rgba(0,0,0,0.08); }
+        .mode-card.selected { border-color:#FF6B35; box-shadow:0 10px 30px -10px rgba(255,107,53,0.45); }
+        .price-rows > div { display:flex; justify-content:space-between; gap:12px; padding:8px 0; border-top:1px solid rgba(26,26,26,0.08); font-size:0.9rem; }
+        .price-rows > div:first-child { border-top:0; }
+        .price-rows dt { color:#808080; } .price-rows dd { color:#1a1a1a; font-weight:700; text-align:right; }
+        /* Segmented mode tabs */
+        .mode-tabs { display:inline-flex; flex-wrap:wrap; gap:6px; background:#fff; border:1px solid rgba(26,26,26,0.12); border-radius:100px; padding:6px; }
+        .mode-tab { border:0; background:transparent; color:#4a4a4a; border-radius:100px; padding:9px 18px; font-weight:600; font-size:0.9rem; cursor:pointer; transition:all .18s; }
+        .mode-tab:hover { color:#1a1a1a; }
+        .mode-tab.selected { background:#FF6B35; color:#fff; }
+        .mode-tabs.mx-auto { display:flex; justify-content:center; width:max-content; }
+        /* Step cards */
+        .step-card { background:#fff; border-radius:12px; padding:24px; box-shadow:0 1px 3px rgba(0,0,0,0.08); border-top:3px solid #FF6B35; }
+        .step-num { display:inline-flex; align-items:center; justify-content:center; width:32px; height:32px; border-radius:50%; background:rgba(255,107,53,0.12); color:#FF6B35; font-family:'IBM Plex Mono',monospace; font-weight:700; margin-bottom:12px; }
+        .step-card h3 { font-size:1rem; font-weight:700; color:#1a1a1a; margin-bottom:8px; }
+        .step-card p { font-size:0.9rem; color:#4a4a4a; }
+        .mode-note { background:#fff; border-left:4px solid #FF6B35; border-radius:0 12px 12px 0; padding:20px 24px; color:#4a4a4a; }
+        .mode-note strong { color:#1a1a1a; }
+        /* Calculator */
+        .calc-panel { background:#fff; border:1px solid rgba(26,26,26,0.10); border-radius:16px; padding:26px; }
+        .seg-control { display:inline-flex; gap:4px; background:#f5f5f5; border-radius:10px; padding:4px; }
+        .seg-btn { border:0; background:transparent; color:#4a4a4a; border-radius:8px; padding:8px 14px; font-weight:600; font-size:0.85rem; cursor:pointer; }
+        .seg-btn.selected { background:#fff; color:#1a1a1a; box-shadow:0 1px 3px rgba(0,0,0,0.12); }
+        .ctrl { margin-bottom:18px; }
+        .ctrl-head { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px; }
+        .ctrl-head label { font-size:0.9rem; color:#4a4a4a; }
+        .ctrl-val { font-family:'IBM Plex Mono',monospace; font-weight:700; color:#FF6B35; }
+        .v2-range { width:100%; accent-color:#FF6B35; cursor:pointer; }
+        .switch-row { display:flex; align-items:center; gap:10px; font-size:0.9rem; color:#4a4a4a; cursor:pointer; margin-top:6px; }
+        .switch-row input { position:absolute; opacity:0; width:0; height:0; }
+        .switch-ui { position:relative; flex:0 0 auto; width:40px; height:22px; background:rgba(26,26,26,0.20); border-radius:100px; transition:background .18s; }
+        .switch-ui::after { content:''; position:absolute; top:2px; left:2px; width:18px; height:18px; background:#fff; border-radius:50%; transition:transform .18s; }
+        .switch-row input:checked + .switch-ui { background:#FF6B35; }
+        .switch-row input:checked + .switch-ui::after { transform:translateX(18px); }
+        .switch-row input:focus-visible + .switch-ui { box-shadow:0 0 0 3px rgba(255,107,53,0.35); }
+        .calc-readout-title { font-family:'IBM Plex Mono',monospace; font-size:0.72rem; letter-spacing:0.10em; text-transform:uppercase; color:#808080; margin-bottom:14px; text-align:center; }
+        .v2-table { width:100%; border-collapse:collapse; }
+        .v2-table td { padding:12px 6px; border-bottom:1px solid rgba(26,26,26,0.10); font-size:0.95rem; color:#4a4a4a; }
+        .calc-amt { text-align:right; font-family:'IBM Plex Mono',monospace; font-weight:700; color:#1a1a1a; white-space:nowrap; }
+        .calc-detail { color:#808080; font-size:0.8rem; }
+        .calc-table tr.calc-total td { border-top:2px solid rgba(26,26,26,0.15); border-bottom:0; font-weight:700; color:#1a1a1a; }
+        /* Channel/CMS nodes */
+        .channel-node { background:#fff; border:1px solid rgba(26,26,26,0.12); border-left:4px solid #FF6B35; border-radius:12px; padding:16px 18px; }
+        .channel-node__title { font-weight:700; color:#1a1a1a; }
+        .channel-node__sub { font-size:0.85rem; color:#808080; margin-top:2px; }
+        .flow-arrow { color:#FF6B35; }
+        .cms-core { background:linear-gradient(135deg,#1a1a1a,#333); border-radius:16px; padding:28px; }
+        /* FAQ */
+        .faq-item { background:#fff; border:1px solid rgba(26,26,26,0.10); border-radius:12px; padding:20px 24px; }
+        .faq-item h3 { font-weight:700; color:#1a1a1a; margin-bottom:6px; }
+        .faq-item p { color:#4a4a4a; font-size:0.95rem; }
     </style>
 
     <!-- Favicon -->
@@ -209,9 +304,8 @@
                             <a href="coupon-management.html" class="dropdown-item" data-i18n="common.nav.managementSystem">Coupon Management System</a>
                             <a href="coupon-marketplace.html" class="dropdown-item" data-i18n="common.nav.marketplace">Coupon Marketplace</a>
                             <a href="coupon-nfc.html" class="dropdown-item" data-i18n="common.nav.nfc">Coupon NFC</a>
-                            <a href="coupon-campaign.html" class="dropdown-item" data-i18n="common.nav.marketing">Coupon Marketing</a>
                             <a href="coupon-wallet.html" class="dropdown-item" data-i18n="common.nav.wallet">Coupon Wallet</a>
-                            <a href="coupon-serial.html" class="dropdown-item" data-i18n="common.nav.serial">Coupon Serial</a>
+                            <a href="coupon-pass.html" class="dropdown-item" data-i18n="common.nav.serial">Pass</a>
                         </div>
                     </div>
 
@@ -344,9 +438,8 @@
                         <a href="coupon-management.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.managementSystem">Coupon Management System</a>
                         <a href="coupon-marketplace.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.marketplace">Coupon Marketplace</a>
                         <a href="coupon-nfc.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.nfc">Coupon NFC</a>
-                        <a href="coupon-campaign.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.marketing">Coupon Marketing</a>
                         <a href="coupon-wallet.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.wallet">Coupon Wallet</a>
-                        <a href="coupon-serial.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.serial">Coupon Serial</a>
+                        <a href="coupon-pass.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.serial">Pass</a>
                     </div>
                 </div>
 
@@ -399,344 +492,389 @@
         </div>
     </nav>
 
+    <!-- ============================================================ -->
+    <!-- FOR MERCHANTS v2 BODY — content from temp/02-for-merchants.md -->
+    <!-- Header/nav (above) and footer (below) intentionally unchanged  -->
+    <!-- ============================================================ -->
+
     <!-- Hero Section -->
-    <section class="pt-32 pb-20 relative" style="background-image:url('assets/images/for_merchant.png');background-size:cover;background-position:center;background-repeat:no-repeat;">
-        <div class="absolute inset-0 bg-primary-black/70"></div>
+    <section id="hero-section" class="pt-32 pb-20 relative" style="background-image:url('assets/images/for_merchant.png');background-size:cover;background-position:center;background-repeat:no-repeat;">
+        <div class="absolute inset-0 bg-primary-black/75"></div>
         <div class="relative z-10 section-container">
-            <div class="max-w-6xl mx-auto text-center">
-                <p class="text-primary-orange text-lg font-semibold mb-4" data-i18n="merchants.hero.tagline">FOR MERCHANTS</p>
-                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-6" data-i18n="merchants.hero.title">
-                    Turn Coupon Liabilities into <span class="text-primary-orange">High-Performing Digital Assets</span>
-                </h1>
-                <p class="text-lg sm:text-xl text-gray-100 mb-10 max-w-4xl mx-auto" data-i18n="merchants.hero.subtitle">
-                    Join merchants using the Mezzofy Exchange Protocol to maximize reach, control, and revenue
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="contact.html" class="btn-primary inline-block text-center" data-cta="signup" data-i18n="merchants.hero.listInventory">List Your Inventory</a>
-                    <a href="#bundles" class="btn-secondary inline-block text-center bg-white/10 text-white border-white hover:bg-white/20" data-cta="learn-more" data-i18n="merchants.hero.viewBundles">View Product Bundles</a>
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div>
+                    <div class="hero-badge mb-6">
+                        <span class="hero-badge-dot"></span>
+                        <span data-i18n="merchants.v2.hero.badge">Free to list, no subscription</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-6" data-i18n="merchants.v2.hero.title">
+                        Customers who were never coming in anyway.
+                    </h1>
+                    <p class="hero-description text-lg sm:text-xl text-gray-100 mb-10 max-w-xl" data-i18n="merchants.v2.hero.subtitle">
+                        Put your offers where 86,400 monthly redemptions already happen. You decide how far you will go on price. We handle everything between creating the offer and the moment someone hands it over at your counter.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="contact.html" class="btn-primary inline-block text-center" data-cta="signup">
+                            <span data-i18n="merchants.v2.hero.ctaStart">Start selling free</span>
+                        </a>
+                        <a href="#calculator" class="btn-secondary inline-block text-center bg-white/10 text-white border-white hover:bg-white/20" data-cta="learn-more">
+                            <span data-i18n="merchants.v2.hero.ctaPricing">See merchant pricing</span>
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Merchant Journey Section -->
-    <section class="bg-white overflow-hidden">
-        <div class="section-container">
-            <!-- Section Header -->
-            <div class="text-center mb-16">
-                <span class="inline-block text-xs font-bold tracking-widest text-primary-orange uppercase mb-4 px-3 py-1 bg-primary-orange/8 rounded-full border border-primary-orange/20" data-i18n="merchants.hero.tagline">FOR MERCHANTS</span>
-                <h2 class="text-3xl md:text-5xl font-bold text-primary-black mb-6 leading-tight" data-i18n="merchants.journey.title">
-                    How Does Mezzofy Help Merchants<br class="hidden md:block"> Succeed with Digital Coupons?
-                </h2>
-                <p class="text-base sm:text-lg text-dark-grey leading-relaxed max-w-3xl mx-auto mb-2" data-i18n="merchants.definition">Mezzofy is a digital coupon exchange platform that helps merchants create, distribute, and monetize digital coupons across 15+ Asia-Pacific markets. Using the Mezzofy Exchange Protocol, merchants eliminate coupon liabilities, reach new customers through NFC, marketplace, and digital channels, and generate revenue on every successful redemption — with zero upfront fees.</p>
-                <p class="text-sm text-medium-grey max-w-2xl mx-auto" data-i18n="merchants.journey.description">How merchants leverage the Mezzofy Exchange Protocol across the coupon lifecycle</p>
-            </div>
-
-            <!-- Journey Steps — connected flow -->
-            <div class="relative">
-                <!-- Connector line (desktop only) -->
-                <div class="hidden md:block absolute top-14 left-[calc(16.666%+2rem)] right-[calc(16.666%+2rem)] h-px bg-gradient-to-r from-primary-orange/30 via-primary-orange to-primary-orange/30 z-0"></div>
-
-                <div class="grid md:grid-cols-3 gap-6 lg:gap-10 relative z-10">
-                    <!-- Step 1: CREATE -->
-                    <div class="group relative bg-white border border-gray-100 rounded-2xl p-8 pt-6 text-center shadow-sm hover:shadow-xl hover:border-primary-orange/30 transition-all duration-300 hover:-translate-y-1">
-                        <!-- Ghost number background -->
-                        <span class="absolute top-4 right-5 text-7xl font-black text-gray-100 select-none leading-none group-hover:text-primary-orange/10 transition-colors duration-300">1</span>
-                        <!-- Step badge -->
-                        <div class="relative z-10 flex flex-col items-center">
-                            <div class="w-14 h-14 bg-primary-orange rounded-full flex items-center justify-center mb-5 shadow-lg shadow-primary-orange/30 group-hover:scale-110 transition-transform duration-300">
-                                <!-- Pencil/create icon -->
-                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m-4-8h8M3 21h18"/>
-                                </svg>
-                            </div>
-                            <div class="mb-1">
-                                <span class="text-xs font-bold tracking-widest text-medium-grey uppercase">Step 1</span>
-                            </div>
-                            <h3 class="text-xl font-black text-primary-black mb-3 tracking-wide" data-i18n="merchants.journey.step1.title">CREATE</h3>
-                            <p class="text-dark-grey text-sm leading-relaxed" data-i18n="merchants.journey.step1.description">
-                                Use <a href="coupon-management.html" class="text-primary-orange font-semibold hover:underline">Management System</a> to build campaigns with first-party data control
-                            </p>
-                            <div class="mt-4 flex flex-wrap justify-center gap-2">
-                                <span class="px-3 py-1 bg-light-grey rounded-full text-xs font-semibold text-dark-grey">Templates</span>
-                                <span class="px-3 py-1 bg-light-grey rounded-full text-xs font-semibold text-dark-grey">Targeting</span>
-                                <span class="px-3 py-1 bg-primary-orange/10 border border-primary-orange/30 rounded-full text-xs font-semibold text-primary-orange">Tokenized</span>
-                            </div>
+                <div class="flex justify-center lg:justify-end">
+                    <div class="pass-stub" role="img" aria-label="Sample Pass from your business, $5 off, free to create">
+                        <div class="pass-stub__issuer">
+                            <span data-i18n="merchants.v2.pass.issuerLabel">Issuer</span> · <span data-i18n="merchants.v2.pass.hero.issuer">Your business</span>
                         </div>
-                    </div>
-
-                    <!-- Step 2: DISTRIBUTE -->
-                    <div class="group relative bg-primary-orange rounded-2xl p-8 pt-6 text-center shadow-md shadow-primary-orange/25 hover:shadow-xl hover:shadow-primary-orange/35 transition-all duration-300 hover:-translate-y-1">
-                        <span class="absolute top-4 right-5 text-7xl font-black text-white/10 select-none leading-none">2</span>
-                        <div class="relative z-10 flex flex-col items-center">
-                            <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-5 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                <!-- Share/distribute icon -->
-                                <svg class="w-6 h-6 text-primary-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/>
-                                </svg>
-                            </div>
-                            <div class="mb-1">
-                                <span class="text-xs font-bold tracking-widest text-white/70 uppercase">Step 2</span>
-                            </div>
-                            <h3 class="text-xl font-black text-white mb-3 tracking-wide" data-i18n="merchants.journey.step2.title">DISTRIBUTE</h3>
-                            <p class="text-white/85 text-sm leading-relaxed" data-i18n="merchants.journey.step2.description">
-                                Deploy via <a href="coupon-nfc.html" class="text-white font-semibold underline decoration-white/40 hover:decoration-white">NFC</a>, <a href="coupon-campaign.html" class="text-white font-semibold underline decoration-white/40 hover:decoration-white">Marketing</a>, <a href="coupon-marketplace.html" class="text-white font-semibold underline decoration-white/40 hover:decoration-white">Marketplace</a>
-                            </p>
-                            <div class="mt-4 flex flex-wrap justify-center gap-2" data-i18n="merchants.journey.step2.channels">
-                                <span class="px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white">Email</span>
-                                <span class="px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white">SMS</span>
-                                <span class="px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white">Chat</span>
-                                <span class="px-3 py-1 bg-white rounded-full text-xs font-bold text-primary-orange">API</span>
-                            </div>
+                        <div class="pass-stub__value" data-i18n="merchants.v2.pass.hero.value">$5 off</div>
+                        <div class="pass-stub__terms">
+                            <span class="font-semibold" data-i18n="merchants.v2.pass.termsLabel">Terms</span>:
+                            <span data-i18n="merchants.v2.pass.hero.terms">Minimum spend $30. Valid 30 days.</span>
                         </div>
-                    </div>
-
-                    <!-- Step 3: OPTIMIZE -->
-                    <div class="group relative bg-white border border-gray-100 rounded-2xl p-8 pt-6 text-center shadow-sm hover:shadow-xl hover:border-primary-orange/30 transition-all duration-300 hover:-translate-y-1">
-                        <span class="absolute top-4 right-5 text-7xl font-black text-gray-100 select-none leading-none group-hover:text-primary-orange/10 transition-colors duration-300">3</span>
-                        <div class="relative z-10 flex flex-col items-center">
-                            <div class="w-14 h-14 bg-primary-orange rounded-full flex items-center justify-center mb-5 shadow-lg shadow-primary-orange/30 group-hover:scale-110 transition-transform duration-300">
-                                <!-- Analytics icon -->
-                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-                                </svg>
-                            </div>
-                            <div class="mb-1">
-                                <span class="text-xs font-bold tracking-widest text-medium-grey uppercase">Step 3</span>
-                            </div>
-                            <h3 class="text-xl font-black text-primary-black mb-3 tracking-wide" data-i18n="merchants.journey.step3.title">OPTIMIZE</h3>
-                            <p class="text-dark-grey text-sm leading-relaxed" data-i18n="merchants.journey.step3.description">
-                                Track with <a href="coupon-playbook.html" class="text-primary-orange font-semibold hover:underline">Playbook</a> strategies, analyze with <a href="coupon-wallet.html" class="text-primary-orange font-semibold hover:underline">Wallet</a> insights
-                            </p>
-                            <div class="mt-4 flex flex-wrap justify-center gap-2">
-                                <span class="px-3 py-1 bg-light-grey rounded-full text-xs font-semibold text-dark-grey">A/B Test</span>
-                                <span class="px-3 py-1 bg-light-grey rounded-full text-xs font-semibold text-dark-grey">Analytics</span>
-                                <span class="px-3 py-1 bg-primary-orange/10 border border-primary-orange/30 rounded-full text-xs font-semibold text-primary-orange">Real-time</span>
-                            </div>
+                        <div class="pass-perf"></div>
+                        <div class="pass-stub__code">
+                            <span data-i18n="merchants.v2.pass.codeLabel">Code</span>: <span data-i18n="merchants.v2.pass.hero.code">Created by AI Coupon</span>
                         </div>
+                        <span class="pass-stamp" data-i18n="merchants.v2.pass.hero.stamp">FREE</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Merchant Segments Section -->
-    <section id="bundles" class="bg-light-grey">
+    <!-- Who your offers reach (dark band) -->
+    <section id="reach" class="bg-primary-black text-white">
         <div class="section-container">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-bold text-primary-black mb-4" data-i18n="merchants.segments.title">
-                    Solutions for Every Merchant Size
-                </h2>
-                <p class="text-lg text-dark-grey max-w-3xl mx-auto" data-i18n="merchants.segments.description">
-                    From startups to enterprise retailers, we have the right bundle for your needs
+            <div class="text-center mb-14">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-5" data-i18n="merchants.v2.reach.title">Who your offers reach</h2>
+                <p class="text-lg text-white/60 max-w-3xl mx-auto" data-i18n="merchants.v2.reach.description">
+                    This is the demand you are listing into. It is the only number that matters before you decide how to price.
                 </p>
             </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Enterprise Retailers -->
-                <div class="feature-card border-2 border-primary-orange/20 hover:border-primary-orange transition-colors">
-                    <h3 class="text-xl font-bold text-primary-black mb-3" data-i18n="merchants.segments.enterprise.title">Enterprise Retailers</h3>
-                    <p class="text-sm text-medium-grey mb-4" data-i18n="merchants.segments.enterprise.size">100+ locations</p>
-                    <p class="text-dark-grey mb-6" data-i18n="merchants.segments.enterprise.description">Multi-location retailers with physical + digital presence</p>
-                    <h4 class="text-lg font-semibold text-primary-orange mb-3" data-i18n="merchants.segments.enterprise.bundle">→ Retail Excellence Bundle</h4>
-                    <ul class="space-y-2 text-sm text-dark-grey mb-6">
-                        <li class="flex items-start gap-2">
-                            <svg class="w-4 h-4 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>Management</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-4 h-4 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>NFC</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-4 h-4 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>Wallet</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Mid-Market Merchants -->
-                <div class="feature-card border-2 border-primary-orange/20 hover:border-primary-orange transition-colors">
-                    <h3 class="text-xl font-bold text-primary-black mb-3" data-i18n="merchants.segments.midMarket.title">Mid-Market Merchants</h3>
-                    <p class="text-sm text-medium-grey mb-4" data-i18n="merchants.segments.midMarket.size">10-100 locations</p>
-                    <p class="text-dark-grey mb-6" data-i18n="merchants.segments.midMarket.description">Merchants selling coupons as revenue stream</p>
-                    <h4 class="text-lg font-semibold text-primary-orange mb-3" data-i18n="merchants.segments.midMarket.bundle">→ Revenue Maximizer Bundle</h4>
-                    <ul class="space-y-2 text-sm text-dark-grey mb-6">
-                        <li class="flex items-start gap-2">
-                            <svg class="w-4 h-4 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>Management</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-4 h-4 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>Marketing</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-4 h-4 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>Marketplace</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Small Merchants -->
-                <div class="feature-card border-2 border-primary-orange/20 hover:border-primary-orange transition-colors">
-                    <h3 class="text-xl font-bold text-primary-black mb-3" data-i18n="merchants.segments.small.title">Small Merchants & Startups</h3>
-                    <p class="text-sm text-medium-grey mb-4" data-i18n="merchants.segments.small.size">1-10 locations</p>
-                    <p class="text-dark-grey mb-6" data-i18n="merchants.segments.small.description">Getting started with digital coupons, made simple</p>
-                    <h4 class="text-lg font-semibold text-primary-orange mb-3" data-i18n="merchants.segments.small.bundle">→ Starter Package</h4>
-                    <ul class="space-y-2 text-sm text-dark-grey mb-6">
-                        <li class="flex items-start gap-2">
-                            <svg class="w-4 h-4 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>Management</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-4 h-4 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>Wallet</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <svg class="w-4 h-4 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <span>Playbook</span>
-                        </li>
-                    </ul>
-                </div>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+                <div class="stat-card"><div class="stat-number" data-i18n="merchants.v2.reach.stat1Value">86,400</div><div class="stat-label" data-i18n="merchants.v2.reach.stat1Label">Redemptions monthly</div></div>
+                <div class="stat-card"><div class="stat-number" data-i18n="merchants.v2.reach.stat2Value">4</div><div class="stat-label" data-i18n="merchants.v2.reach.stat2Label">Channels, one listing</div></div>
+                <div class="stat-card"><div class="stat-number" data-i18n="merchants.v2.reach.stat3Value">3</div><div class="stat-label" data-i18n="merchants.v2.reach.stat3Label">Live markets</div></div>
+                <div class="stat-card"><div class="stat-number" data-i18n="merchants.v2.reach.stat4Value">$0</div><div class="stat-label" data-i18n="merchants.v2.reach.stat4Label">To list</div></div>
+            </div>
+            <div class="chip-row justify-center">
+                <span class="chip chip--dark" data-i18n="merchants.v2.reach.chip1">B2C marketplace</span>
+                <span class="chip chip--dark" data-i18n="merchants.v2.reach.chip2">Enterprise buyer apps</span>
+                <span class="chip chip--dark" data-i18n="merchants.v2.reach.chip3">NFC tap points</span>
+                <span class="chip chip--dark" data-i18n="merchants.v2.reach.chip4">AI shopping assistants</span>
             </div>
         </div>
     </section>
 
-    <!-- Products for Merchants Section -->
-    <section class="bg-white">
+    <!-- Three ways to sell (mode selector, plain) -->
+    <section id="ways" class="bg-white">
         <div class="section-container">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-bold text-primary-black mb-4" data-i18n="merchants.products.title">
-                    Products Built for Merchants
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black mb-5" data-i18n="merchants.v2.ways.title">
+                    Three ways to sell, priced by what the offer is for
                 </h2>
-                <p class="text-lg text-dark-grey max-w-3xl mx-auto" data-i18n="merchants.products.description">
-                    Explore our complete suite of merchant-focused products
+                <p class="text-lg sm:text-xl text-dark-grey max-w-3xl mx-auto" data-i18n="merchants.v2.ways.description">
+                    Pick one, or run all three side by side. Each keeps its own inventory. Choose one to see how it works and what it would produce.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Zero Fee -->
+                <button type="button" class="mode-card selected text-left" data-mode="zero" aria-pressed="true">
+                    <span class="pill-label" data-i18n="merchants.v2.ways.zero.label">Easiest start</span>
+                    <h3 class="text-lg font-bold text-primary-black mb-2" data-i18n="merchants.v2.ways.zero.title">Zero Fee Passes, created by AI</h3>
+                    <p class="text-sm text-dark-grey mb-5" data-i18n="merchants.v2.ways.zero.description">
+                        You set the limits. Our AI creates discount offers inside them and places them across the exchange. You honour them at the counter.
+                    </p>
+                    <dl class="price-rows">
+                        <div><dt data-i18n="merchants.v2.ways.zero.row1k">You pay</dt><dd data-i18n="merchants.v2.ways.zero.row1v">Nothing</dd></div>
+                        <div><dt data-i18n="merchants.v2.ways.zero.row2k">You collect</dt><dd data-i18n="merchants.v2.ways.zero.row2v">Nothing</dd></div>
+                        <div><dt data-i18n="merchants.v2.ways.zero.row3k">Bank account</dt><dd data-i18n="merchants.v2.ways.zero.row3v">Not needed</dd></div>
+                    </dl>
+                </button>
+                <!-- Charge -->
+                <button type="button" class="mode-card text-left" data-mode="charge" aria-pressed="false">
+                    <span class="pill-label" data-i18n="merchants.v2.ways.charge.label">Sell value</span>
+                    <h3 class="text-lg font-bold text-primary-black mb-2" data-i18n="merchants.v2.ways.charge.title">Charge Passes</h3>
+                    <p class="text-sm text-dark-grey mb-5" data-i18n="merchants.v2.ways.charge.description">
+                        You set the voucher value and the discount. We sell it on the marketplace and to enterprise buyers, and pay you when it is redeemed.
+                    </p>
+                    <dl class="price-rows">
+                        <div><dt data-i18n="merchants.v2.ways.charge.row1k">Mezzofy fee</dt><dd data-i18n="merchants.v2.ways.charge.row1v">10%</dd></div>
+                        <div><dt data-i18n="merchants.v2.ways.charge.row2k">You receive</dt><dd data-i18n="merchants.v2.ways.charge.row2v">90% on redemption</dd></div>
+                        <div><dt data-i18n="merchants.v2.ways.charge.row3k">If it expires unused</dt><dd data-i18n="merchants.v2.ways.charge.row3v">Split 50/50</dd></div>
+                    </dl>
+                </button>
+                <!-- Own -->
+                <button type="button" class="mode-card text-left" data-mode="own" aria-pressed="false">
+                    <span class="pill-label" data-i18n="merchants.v2.ways.own.label">Your own list</span>
+                    <h3 class="text-lg font-bold text-primary-black mb-2" data-i18n="merchants.v2.ways.own.title">Own channel</h3>
+                    <p class="text-sm text-dark-grey mb-5" data-i18n="merchants.v2.ways.own.description">
+                        Issue to customers you already have — email, messaging, your own app. Nothing goes on the exchange.
+                    </p>
+                    <dl class="price-rows">
+                        <div><dt data-i18n="merchants.v2.ways.own.row1k">Allocation</dt><dd data-i18n="merchants.v2.ways.own.row1v">from $0.013</dd></div>
+                        <div><dt data-i18n="merchants.v2.ways.own.row2k">Distribution</dt><dd data-i18n="merchants.v2.ways.own.row2v">from $0.013</dd></div>
+                        <div><dt data-i18n="merchants.v2.ways.own.row3k">Redemption</dt><dd data-i18n="merchants.v2.ways.own.row3v">from $0.064</dd></div>
+                    </dl>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Set your limits once — steps + note (light band) -->
+    <section id="how-it-works" class="bg-light-grey">
+        <div class="section-container">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black mb-5" data-i18n="merchants.v2.limits.title">
+                    Set your limits once. The network does the rest.
+                </h2>
+                <p class="text-lg sm:text-xl text-dark-grey max-w-3xl mx-auto" data-i18n="merchants.v2.limits.description">
+                    Most platforms ask you to build a campaign and pay to run it. Zero Fee works the other way around.
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Product 1: Management -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
-                        </svg>
+            <!-- Segmented mode control (shared selector) -->
+            <div class="mode-tabs mx-auto mb-10" role="tablist" aria-label="Selling mode">
+                <button type="button" class="mode-tab selected" data-mode="zero" role="tab" aria-selected="true" data-i18n="merchants.v2.limits.tabZero">Zero Fee Passes</button>
+                <button type="button" class="mode-tab" data-mode="charge" role="tab" aria-selected="false" data-i18n="merchants.v2.limits.tabCharge">Charge Passes</button>
+                <button type="button" class="mode-tab" data-mode="own" role="tab" aria-selected="false" data-i18n="merchants.v2.limits.tabOwn">Own channel</button>
+            </div>
+
+            <!-- Steps: Zero -->
+            <div data-mode-panel="zero">
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                    <div class="step-card"><span class="step-num">1</span><h3 data-i18n="merchants.v2.limits.zero.step1Title">You set the box</h3><p data-i18n="merchants.v2.limits.zero.step1Desc">Discount range, minimum spend, monthly quota, daily cap, and whether offers are limited to off-peak hours. These are hard ceilings the AI cannot pass.</p></div>
+                    <div class="step-card"><span class="step-num">2</span><h3 data-i18n="merchants.v2.limits.zero.step2Title">AI Coupon creates the offers</h3><p data-i18n="merchants.v2.limits.zero.step2Desc">It chooses the depth, the timing and the volume inside your limits, and issues each one as a tokenised Pass.</p></div>
+                    <div class="step-card"><span class="step-num">3</span><h3 data-i18n="merchants.v2.limits.zero.step3Title">The network delivers them</h3><p data-i18n="merchants.v2.limits.zero.step3Desc">Marketplace, NFC tap points in malls and offices, enterprise buyer apps, and AI shopping assistants. Nothing for you to build.</p></div>
+                    <div class="step-card"><span class="step-num">4</span><h3 data-i18n="merchants.v2.limits.zero.step4Title">You redeem at the counter</h3><p data-i18n="merchants.v2.limits.zero.step4Desc">Your staff validate in the Operator App, or through your POS if you have integrated. The Pass is spent and cannot be used again.</p></div>
+                </div>
+                <div class="mode-note" data-i18n="merchants.v2.limits.zero.note"><strong>What you give up is margin on that sale. Nothing else.</strong> No creation fee, no distribution fee, no redemption fee, no bank details. The customer pays a small fee for the guarantee that the offer is real, and that is what funds the exchange.</div>
+            </div>
+            <!-- Steps: Charge -->
+            <div data-mode-panel="charge" hidden>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                    <div class="step-card"><span class="step-num">1</span><h3 data-i18n="merchants.v2.limits.charge.step1Title">You set the value and the discount</h3><p data-i18n="merchants.v2.limits.charge.step1Desc">Choose the face value of the voucher, how much the customer saves, how long it stays valid, and how many you will release each month.</p></div>
+                    <div class="step-card"><span class="step-num">2</span><h3 data-i18n="merchants.v2.limits.charge.step2Title">We list and sell it</h3><p data-i18n="merchants.v2.limits.charge.step2Desc">Your voucher goes to the B2C marketplace and into the B2B pool where banks, telcos and benefits platforms draw from it. We handle payment and support.</p></div>
+                    <div class="step-card"><span class="step-num">3</span><h3 data-i18n="merchants.v2.limits.charge.step3Title">The customer pays and receives the Pass</h3><p data-i18n="merchants.v2.limits.charge.step3Desc">It lands in their Vault, tokenised and single-use. Mezzofy keeps 10%, which covers card processing, the platform and any partner who distributed it.</p></div>
+                    <div class="step-card"><span class="step-num">4</span><h3 data-i18n="merchants.v2.limits.charge.step4Title">You redeem, and we pay you</h3><p data-i18n="merchants.v2.limits.charge.step4Desc">You receive 90% of face value once the Pass is redeemed. If it is sold but expires unused, the remaining value is split evenly between you and Mezzofy.</p></div>
+                </div>
+                <div class="mode-note" data-i18n="merchants.v2.limits.charge.note"><strong>You are paid on redemption, not on sale.</strong> Money reaches you when the customer actually walks in. A bank account and full verification are required, because Mezzofy is paying you.</div>
+            </div>
+            <!-- Steps: Own -->
+            <div data-mode-panel="own" hidden>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                    <div class="step-card"><span class="step-num">1</span><h3 data-i18n="merchants.v2.limits.own.step1Title">You create the Pass</h3><p data-i18n="merchants.v2.limits.own.step1Desc">Build it yourself in the portal — value, terms, artwork, validity. Allocation is charged per Pass created, whether or not you send it.</p></div>
+                    <div class="step-card"><span class="step-num">2</span><h3 data-i18n="merchants.v2.limits.own.step2Title">You choose who gets it</h3><p data-i18n="merchants.v2.limits.own.step2Desc">Upload your own list or pick a segment. Nothing is listed on the exchange and no other buyer can see it.</p></div>
+                    <div class="step-card"><span class="step-num">3</span><h3 data-i18n="merchants.v2.limits.own.step3Title">You send it</h3><p data-i18n="merchants.v2.limits.own.step3Desc">Email, SMS, WhatsApp, QR export or your own app through the API. Distribution is charged per Pass sent. Messaging fees are passed through at cost.</p></div>
+                    <div class="step-card"><span class="step-num">4</span><h3 data-i18n="merchants.v2.limits.own.step4Title">You redeem at the counter</h3><p data-i18n="merchants.v2.limits.own.step4Desc">Same Operator App and POS integration as every other Pass. Redemption is charged per Pass validated, and billed monthly to your card.</p></div>
+                </div>
+                <div class="mode-note" data-i18n="merchants.v2.limits.own.note"><strong>This is the one place you pay Mezzofy directly.</strong> Own channel is metered software for your own distribution, so allocation and distribution are charged whether or not anything is redeemed. Rates fall as your annual volume rises.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator — Set the box, and see what comes out (plain) -->
+    <section id="calculator" class="bg-white">
+        <div class="section-container">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black mb-5" data-i18n="merchants.v2.calc.title">
+                    Set the box, and see what comes out
+                </h2>
+                <p class="text-lg sm:text-xl text-dark-grey max-w-3xl mx-auto" data-i18n="merchants.v2.calc.description">
+                    These are the limits from step one. Move them and watch what AI Coupon would be allowed to create for your business.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+                <!-- LEFT: controls -->
+                <div class="calc-panel">
+                    <!-- Zero controls -->
+                    <div data-mode-panel="zero">
+                        <div class="seg-control mb-6" role="group" aria-label="Discount type">
+                            <button type="button" class="seg-btn selected" data-zseg="pct" data-i18n="merchants.v2.calc.zero.segPct">Percent off</button>
+                            <button type="button" class="seg-btn" data-zseg="amt" data-i18n="merchants.v2.calc.zero.segAmt">Amount off</button>
+                        </div>
+                        <div class="ctrl"><div class="ctrl-head"><label for="r-lo" data-i18n="merchants.v2.calc.zero.loLabel">Lowest discount</label><span class="ctrl-val" data-value-for="r-lo"></span></div><input id="r-lo" class="v2-range" type="range" min="10" max="50" value="10" step="5" data-fmt="pct-or-amt"></div>
+                        <div class="ctrl"><div class="ctrl-head"><label for="r-hi" data-i18n="merchants.v2.calc.zero.hiLabel">Highest discount</label><span class="ctrl-val" data-value-for="r-hi"></span></div><input id="r-hi" class="v2-range" type="range" min="10" max="50" value="30" step="5" data-fmt="pct-or-amt"></div>
+                        <div class="ctrl"><div class="ctrl-head"><label for="r-min" data-i18n="merchants.v2.calc.zero.minLabel">Minimum spend to qualify</label><span class="ctrl-val" data-value-for="r-min"></span></div><input id="r-min" class="v2-range" type="range" min="0" max="200" value="0" step="5" data-fmt="usd"></div>
+                        <div class="ctrl"><div class="ctrl-head"><label for="r-exp" data-i18n="merchants.v2.calc.zero.expLabel">Valid for</label><span class="ctrl-val" data-value-for="r-exp"></span></div><input id="r-exp" class="v2-range" type="range" min="7" max="180" value="30" step="7" data-fmt="days"></div>
+                        <div class="ctrl"><div class="ctrl-head"><label for="r-quota" data-i18n="merchants.v2.calc.zero.quotaLabel">Monthly quota</label><span class="ctrl-val" data-value-for="r-quota"></span></div><input id="r-quota" class="v2-range" type="range" min="50" max="5000" value="500" step="50" data-fmt="count"></div>
+                        <div class="ctrl"><div class="ctrl-head"><label for="r-cap" data-i18n="merchants.v2.calc.zero.capLabel">Daily cap</label><span class="ctrl-val" data-value-for="r-cap"></span></div><input id="r-cap" class="v2-range" type="range" min="5" max="300" value="25" step="5" data-fmt="count"></div>
+                        <label class="switch-row"><input id="r-offpeak" type="checkbox"><span class="switch-ui" aria-hidden="true"></span><span data-i18n="merchants.v2.calc.zero.offpeakLabel">Off-peak only, Monday to Thursday 2–5pm</span></label>
                     </div>
-                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="merchants.products.management.title">Management System</h3>
-                    <p class="text-dark-grey text-sm mb-4" data-i18n="merchants.products.management.description">Enterprise infrastructure for coupon lifecycle management</p>
-                    <a href="coupon-management.html" class="text-primary-orange hover:underline text-sm font-semibold" data-i18n="merchants.products.management.learnMore">Learn More</a>
+                    <!-- Charge controls -->
+                    <div data-mode-panel="charge" hidden>
+                        <div class="ctrl"><div class="ctrl-head"><label for="c-face" data-i18n="merchants.v2.calc.charge.faceLabel">Voucher face value</label><span class="ctrl-val" data-value-for="c-face"></span></div><input id="c-face" class="v2-range" type="range" min="5" max="500" value="50" step="5" data-fmt="usd"></div>
+                        <div class="ctrl"><div class="ctrl-head"><label for="c-disc" data-i18n="merchants.v2.calc.charge.discLabel">Customer saves</label><span class="ctrl-val" data-value-for="c-disc"></span></div><input id="c-disc" class="v2-range" type="range" min="0" max="50" value="20" step="5" data-fmt="pct"></div>
+                        <div class="ctrl"><div class="ctrl-head"><label for="c-exp" data-i18n="merchants.v2.calc.charge.expLabel">Valid for</label><span class="ctrl-val" data-value-for="c-exp"></span></div><input id="c-exp" class="v2-range" type="range" min="1" max="24" value="6" step="1" data-fmt="months"></div>
+                        <div class="ctrl"><div class="ctrl-head"><label for="c-qty" data-i18n="merchants.v2.calc.charge.qtyLabel">Released each month</label><span class="ctrl-val" data-value-for="c-qty"></span></div><input id="c-qty" class="v2-range" type="range" min="10" max="3000" value="300" step="10" data-fmt="count"></div>
+                        <label class="switch-row"><input id="c-ent" type="checkbox" checked><span class="switch-ui" aria-hidden="true"></span><span data-i18n="merchants.v2.calc.charge.enterpriseLabel">Offer to enterprise buyers as well as the marketplace</span></label>
+                    </div>
+                    <!-- Own controls -->
+                    <div data-mode-panel="own" hidden>
+                        <div class="ctrl"><div class="ctrl-head"><label for="o-made" data-i18n="merchants.v2.calc.own.madeLabel">Passes created each month</label><span class="ctrl-val" data-value-for="o-made"></span></div><input id="o-made" class="v2-range" type="range" min="50" max="20000" value="800" step="50" data-fmt="count"></div>
+                        <div class="ctrl"><div class="ctrl-head"><label for="o-sent" data-i18n="merchants.v2.calc.own.sentLabel">Share you actually send</label><span class="ctrl-val" data-value-for="o-sent"></span></div><input id="o-sent" class="v2-range" type="range" min="0" max="100" value="80" step="5" data-fmt="pct"></div>
+                        <div class="ctrl"><div class="ctrl-head"><label for="o-red" data-i18n="merchants.v2.calc.own.redLabel">Share redeemed</label><span class="ctrl-val" data-value-for="o-red"></span></div><input id="o-red" class="v2-range" type="range" min="0" max="100" value="40" step="5" data-fmt="pct"></div>
+                        <div class="ctrl"><div class="ctrl-head"><label for="o-face" data-i18n="merchants.v2.calc.own.faceLabel">Pass value on the face</label><span class="ctrl-val" data-value-for="o-face"></span></div><input id="o-face" class="v2-range" type="range" min="5" max="200" value="20" step="5" data-fmt="usd"></div>
+                    </div>
                 </div>
 
-                <!-- Product 2: NFC -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
-                        </svg>
+                <!-- RIGHT: readout + preview -->
+                <div class="calc-panel">
+                    <!-- Zero output -->
+                    <div data-mode-panel="zero">
+                        <p class="calc-readout-title" data-i18n="merchants.v2.calc.zero.offerLabel">One of the offers your limits would allow</p>
+                        <div class="flex justify-center mb-6">
+                            <div class="pass-stub" role="img" aria-label="Example Zero Fee Pass the AI could create">
+                                <div class="pass-stub__issuer"><span data-i18n="merchants.v2.pass.issuerLabel">Issuer</span> · <span data-i18n="merchants.v2.pass.zero.issuer">Your business</span></div>
+                                <div class="pass-stub__value" id="z-value" data-i18n="merchants.v2.pass.zero.value">20% off</div>
+                                <div class="pass-stub__terms"><span class="font-semibold" data-i18n="merchants.v2.pass.termsLabel">Terms</span>: <span id="z-terms" data-i18n="merchants.v2.pass.zero.terms">No minimum spend. Valid 30 days.</span></div>
+                                <div class="pass-perf"></div>
+                                <div class="pass-stub__code"><span data-i18n="merchants.v2.pass.codeLabel">Code</span>: <span id="z-code">MZF-4B7X-2019</span></div>
+                                <span class="pass-stamp" data-i18n="merchants.v2.pass.zero.stamp">FREE</span>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="button" id="z-shuffle" class="btn-secondary inline-block" data-i18n="merchants.v2.calc.zero.showAnother">Show another the AI could create</button>
+                        </div>
                     </div>
-                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="merchants.products.nfc.title">Coupon NFC</h3>
-                    <p class="text-dark-grey text-sm mb-4" data-i18n="merchants.products.nfc.description">Physical retail touchpoints with tap-to-download</p>
-                    <a href="coupon-nfc.html" class="text-primary-orange hover:underline text-sm font-semibold" data-i18n="merchants.products.nfc.learnMore">Learn More</a>
-                </div>
-
-                <!-- Product 3: Marketing -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
+                    <!-- Charge output -->
+                    <div data-mode-panel="charge" hidden>
+                        <p class="calc-readout-title" data-i18n="merchants.v2.calc.charge.readoutTitle">On one voucher</p>
+                        <table class="v2-table calc-table mb-6">
+                            <tbody>
+                                <tr><td data-i18n="merchants.v2.calc.charge.paysLabel">Customer pays</td><td class="calc-amt" id="c-pays"></td></tr>
+                                <tr><td data-i18n="merchants.v2.calc.charge.feeLabel">Mezzofy fee, 10% of face</td><td class="calc-amt" id="c-fee"></td></tr>
+                                <tr><td data-i18n="merchants.v2.calc.charge.receiveLabel">You receive on redemption</td><td class="calc-amt" id="c-recv"></td></tr>
+                                <tr><td data-i18n="merchants.v2.calc.charge.unusedLabel">If sold but never redeemed</td><td class="calc-amt" id="c-unused"></td></tr>
+                            </tbody>
+                        </table>
+                        <div class="flex justify-center">
+                            <div class="pass-stub" role="img" aria-label="Example Charge Pass sold to a customer">
+                                <div class="pass-stub__issuer"><span data-i18n="merchants.v2.pass.issuerLabel">Issuer</span> · <span data-i18n="merchants.v2.pass.charge.issuer">Your business</span></div>
+                                <div class="pass-stub__value" id="c-value" data-i18n="merchants.v2.pass.charge.value">$50 voucher</div>
+                                <div class="pass-stub__terms"><span class="font-semibold" data-i18n="merchants.v2.pass.termsLabel">Terms</span>: <span id="c-terms" data-i18n="merchants.v2.pass.charge.terms">Bought for $40. Valid 6 months.</span></div>
+                                <div class="pass-perf"></div>
+                                <div class="pass-stub__code"><span data-i18n="merchants.v2.pass.codeLabel">Code</span>: <span>MZF-9T2M-5540</span></div>
+                                <span class="pass-stamp pass-stamp--sold" data-i18n="merchants.v2.pass.charge.stamp">SOLD</span>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="merchants.products.marketing.title">Coupon Marketing</h3>
-                    <p class="text-dark-grey text-sm mb-4" data-i18n="merchants.products.marketing.description">Turn marketing expense into revenue stream</p>
-                    <a href="coupon-campaign.html" class="text-primary-orange hover:underline text-sm font-semibold" data-i18n="merchants.products.marketing.learnMore">Learn More</a>
-                </div>
-
-                <!-- Product 4: Wallet -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
-                        </svg>
+                    <!-- Own output -->
+                    <div data-mode-panel="own" hidden>
+                        <p class="calc-readout-title" data-i18n="merchants.v2.calc.own.readoutTitle">Your monthly bill, Tier 1</p>
+                        <table class="v2-table calc-table mb-6">
+                            <tbody>
+                                <tr><td><span data-i18n="merchants.v2.calc.own.allocLabel">Allocation</span> <span class="calc-detail" id="o-alloc-d"></span></td><td class="calc-amt" id="o-alloc"></td></tr>
+                                <tr><td><span data-i18n="merchants.v2.calc.own.distLabel">Distribution</span> <span class="calc-detail" id="o-dist-d"></span></td><td class="calc-amt" id="o-dist"></td></tr>
+                                <tr><td><span data-i18n="merchants.v2.calc.own.redeemLabel">Redemption</span> <span class="calc-detail" id="o-red-d"></span></td><td class="calc-amt" id="o-redeem"></td></tr>
+                                <tr class="calc-total"><td data-i18n="merchants.v2.calc.own.totalLabel">Total, billed to your card</td><td class="calc-amt" id="o-total"></td></tr>
+                            </tbody>
+                        </table>
+                        <div class="flex justify-center">
+                            <div class="pass-stub" role="img" aria-label="Example own-channel Pass sent to your list">
+                                <div class="pass-stub__issuer"><span data-i18n="merchants.v2.pass.issuerLabel">Issuer</span> · <span data-i18n="merchants.v2.pass.own.issuer">Your business, your list</span></div>
+                                <div class="pass-stub__value" id="o-value" data-i18n="merchants.v2.pass.own.value">$20 off</div>
+                                <div class="pass-stub__terms"><span class="font-semibold" data-i18n="merchants.v2.pass.termsLabel">Terms</span>: <span data-i18n="merchants.v2.pass.own.terms">Sent to your customers. Not listed on the exchange.</span></div>
+                                <div class="pass-perf"></div>
+                                <div class="pass-stub__code"><span data-i18n="merchants.v2.pass.codeLabel">Code</span>: <span>MZF-6H1D-7702</span></div>
+                                <span class="pass-stamp pass-stamp--private" data-i18n="merchants.v2.pass.own.stamp">PRIVATE</span>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="merchants.products.wallet.title">Coupon Wallet</h3>
-                    <p class="text-dark-grey text-sm mb-4" data-i18n="merchants.products.wallet.description">Multi-platform customer experience layer</p>
-                    <a href="coupon-wallet.html" class="text-primary-orange hover:underline text-sm font-semibold" data-i18n="merchants.products.wallet.learnMore">Learn More</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Merchant Benefits Section -->
-    <section class="bg-light-grey">
+    <!-- One system — CMS hub (plain) -->
+    <section id="one-system" class="bg-white border-t border-gray-100">
         <div class="section-container">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-bold text-primary-black mb-4" data-i18n="merchants.benefits.title">
-                    Why Do Merchants Choose Mezzofy?
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black mb-5" data-i18n="merchants.v2.system.title">
+                    Whichever way you sell, it runs through one system
                 </h2>
+                <p class="text-lg sm:text-xl text-dark-grey max-w-4xl mx-auto" data-i18n="merchants.v2.system.description">
+                    The Coupon Management System is the heart of it. Every Pass you issue, from any of the three routes, is created, tracked, redeemed and reconciled in the same place. You learn one dashboard.
+                </p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Benefit 1 -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="merchants.benefits.zeroUpfront.title">Zero Upfront Cost</h3>
-                    <p class="text-dark-grey text-sm" data-i18n="merchants.benefits.zeroUpfront.description">Pay only when coupons are redeemed. No setup fees or monthly minimums.</p>
-                </div>
+            <!-- routes in -->
+            <div class="grid md:grid-cols-3 gap-4 mb-6">
+                <div class="channel-node"><div class="channel-node__title" data-i18n="merchants.v2.system.routeZeroT">Zero Fee Passes</div><div class="channel-node__sub" data-i18n="merchants.v2.system.routeZeroS">created by AI Coupon</div></div>
+                <div class="channel-node"><div class="channel-node__title" data-i18n="merchants.v2.system.routeChargeT">Charge Passes</div><div class="channel-node__sub" data-i18n="merchants.v2.system.routeChargeS">sold on the exchange</div></div>
+                <div class="channel-node"><div class="channel-node__title" data-i18n="merchants.v2.system.routeOwnT">Own channel</div><div class="channel-node__sub" data-i18n="merchants.v2.system.routeOwnS">sent to your list</div></div>
+            </div>
+            <div class="text-center flow-arrow text-2xl font-bold mb-6" aria-hidden="true">&darr;</div>
+            <!-- core -->
+            <div class="cms-core mb-6">
+                <span class="pill-label" style="color:#fff;opacity:.85;" data-i18n="merchants.v2.system.coreTag">The heart of it</span>
+                <h3 class="text-xl md:text-2xl font-bold text-white mb-2" data-i18n="merchants.v2.system.coreTitle">Core: Coupon Management System</h3>
+                <p class="text-white/75 max-w-3xl" data-i18n="merchants.v2.system.coreDesc">One inventory per route, one view of all of them. Limits, quotas, outlets and staff live here.</p>
+            </div>
+            <div class="text-center flow-arrow text-2xl font-bold mb-6" aria-hidden="true">&darr;</div>
+            <!-- capabilities out -->
+            <div class="grid md:grid-cols-3 gap-4 mb-8">
+                <div class="channel-node"><div class="channel-node__title" data-i18n="merchants.v2.system.capRedeemT">Redeem</div><div class="channel-node__sub" data-i18n="merchants.v2.system.capRedeemS">Operator App or your POS</div></div>
+                <div class="channel-node"><div class="channel-node__title" data-i18n="merchants.v2.system.capTrackT">Track</div><div class="channel-node__sub" data-i18n="merchants.v2.system.capTrackS">every Pass, live</div></div>
+                <div class="channel-node"><div class="channel-node__title" data-i18n="merchants.v2.system.capReconcileT">Reconcile</div><div class="channel-node__sub" data-i18n="merchants.v2.system.capReconcileS">per Pass, per outlet, per route</div></div>
+            </div>
+            <p class="text-center text-dark-grey">
+                <span data-i18n="merchants.v2.system.note">CMS is included with every account. You only pay for it when you use it for your own distribution.</span>
+                <a href="coupon-management.html" class="text-primary-orange font-semibold hover:text-dark-orange ml-1" data-cta="learn-more" data-i18n="merchants.v2.system.link">See the Coupon Management System &rarr;</a>
+            </p>
+        </div>
+    </section>
 
-                <!-- Benefit 2 -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="merchants.benefits.flexibleControl.title">Flexible Control</h3>
-                    <p class="text-dark-grey text-sm" data-i18n="merchants.benefits.flexibleControl.description">Real-time modification of campaigns. Full first-party data ownership.</p>
+    <!-- Before you go live (light band) -->
+    <section id="go-live" class="bg-light-grey">
+        <div class="section-container">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black mb-5" data-i18n="merchants.v2.golive.title">Before you go live</h2>
+                <p class="text-lg sm:text-xl text-dark-grey max-w-3xl mx-auto" data-i18n="merchants.v2.golive.description">Two things to set up. Both take a few minutes.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <div class="bg-white rounded-xl p-8 border-t-4 border-primary-orange">
+                    <h3 class="text-lg font-bold text-primary-black mb-3" data-i18n="merchants.v2.golive.outletsTitle">Register your outlets</h3>
+                    <p class="text-dark-grey" data-i18n="merchants.v2.golive.outletsDesc">Add every location where your Passes can be redeemed. A Pass presented at an unregistered outlet will not validate. Enable and disable outlets individually at any time.</p>
                 </div>
+                <div class="bg-white rounded-xl p-8 border-t-4 border-primary-orange">
+                    <h3 class="text-lg font-bold text-primary-black mb-3" data-i18n="merchants.v2.golive.redeemTitle">Choose how you redeem</h3>
+                    <p class="text-dark-grey" data-i18n="merchants.v2.golive.redeemDesc">Free Operator App on iOS and Android — staff scan or key in the code. Or validate through your existing POS using our API, so nobody learns anything new.</p>
+                </div>
+            </div>
+            <div class="mode-note" data-i18n="merchants.v2.golive.callout">Run a test redemption at each outlet before going live. A customer turned away with a valid Pass is the worst outcome for both of us. They paid for the guarantee that it would work.</div>
+        </div>
+    </section>
 
-                <!-- Benefit 3 -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="merchants.benefits.globalFootprint.title">Global Footprint</h3>
-                    <p class="text-dark-grey text-sm" data-i18n="merchants.benefits.globalFootprint.description">Access to 15+ markets across Asia-Pacific and growing distribution networks.</p>
-                </div>
+    <!-- Questions merchants ask (plain) -->
+    <section id="faq" class="bg-white">
+        <div class="section-container">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black" data-i18n="merchants.v2.faq.title">Questions merchants ask</h2>
+            </div>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="faq-item"><h3 data-i18n="merchants.v2.faq.q1">Can the AI discount more than I can afford?</h3><p data-i18n="merchants.v2.faq.a1">No. It cannot exceed the discount ceiling, the monthly quota or the daily cap you set. Those are enforced by the system, not guidelines.</p></div>
+                <div class="faq-item"><h3 data-i18n="merchants.v2.faq.q2">What if I want to stop?</h3><p data-i18n="merchants.v2.faq.a2">Pause from your dashboard and creation stops immediately. Passes already issued stay valid until they expire, because a customer has already paid for the guarantee that they work.</p></div>
+                <div class="faq-item"><h3 data-i18n="merchants.v2.faq.q3">Do I need a bank account?</h3><p data-i18n="merchants.v2.faq.a3">Only if you sell Charge Passes, where we pay you. Zero Fee and own channel need no bank details.</p></div>
+                <div class="faq-item"><h3 data-i18n="merchants.v2.faq.q4">Can I see what was created?</h3><p data-i18n="merchants.v2.faq.a4">Every Pass, its limits, its status and its redemption history are in your dashboard in real time.</p></div>
+                <div class="faq-item"><h3 data-i18n="merchants.v2.faq.q5">What if a Pass will not validate at my counter?</h3><p data-i18n="merchants.v2.faq.a5">Check the outlet is registered and the Pass is inside its validity window. If it still fails, the customer is credited automatically and you are not charged. Nobody argues at the till.</p></div>
+                <div class="faq-item"><h3 data-i18n="merchants.v2.faq.q6">How quickly am I paid on Charge Passes?</h3><p data-i18n="merchants.v2.faq.a6">Redemptions settle on a fixed cycle to your registered bank account, with a statement per Pass. The cycle is stated in your agreement.</p></div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Benefit 4 -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="merchants.benefits.futureProof.title">Future-Proof Asset</h3>
-                    <p class="text-dark-grey text-sm" data-i18n="merchants.benefits.futureProof.description">AI-native infrastructure ready for autonomous shopping agents.</p>
-                </div>
+    <!-- Closing CTA band -->
+    <section id="closing" class="bg-gradient-to-br from-primary-black to-gray-900 text-white">
+        <div class="section-container text-center">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-5" data-i18n="merchants.v2.closing.title">List today. Nothing to pay, nothing to build.</h2>
+            <p class="text-lg sm:text-xl text-orange-200 max-w-3xl mx-auto mb-10" data-i18n="merchants.v2.closing.description">
+                Set your limits in a few minutes and your first Pass can be live this afternoon.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#calculator" class="btn-secondary inline-block bg-white/10 text-white border-white hover:bg-white/20" data-cta="learn-more"><span data-i18n="merchants.v2.closing.ctaPricing">See merchant pricing</span></a>
+                <a href="contact.html" class="btn-primary inline-block" data-cta="signup"><span data-i18n="merchants.v2.closing.ctaStart">Start selling free</span></a>
             </div>
         </div>
     </section>
@@ -744,22 +882,8 @@
     <!-- Footer & CTA -->
     <footer class="bg-primary-black text-gray-300 pt-16 pb-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6" data-i18n="merchants.footerCta.title">
-                    Ready to Transform Your Coupon Strategy?
-                </h2>
-                <p class="text-lg sm:text-xl text-gray-100 mb-10 max-w-3xl mx-auto" data-i18n="merchants.footerCta.description">
-                    Join leading merchants who trust Mezzofy to power their digital coupon infrastructure
-                </p>
-    
-                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <a href="contact.html" class="btn-primary w-full sm:w-auto text-center" data-cta="signup" data-i18n="merchants.footerCta.getStarted">List Your First Coupon</a>
-                    <a href="index.html#product-ecosystem" class="btn-secondary w-full sm:w-auto text-center bg-white/10 text-white border-white hover:bg-white/20" data-cta="learn-more" data-i18n="merchants.footerCta.talkToSales">View All Products</a>
-                </div>
-            </div>
-
             <!-- Footer Links -->
-            <div class="border-t border-white/20 pt-12 mt-12">
+            <div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
                     <!-- Company Info -->
                     <div class="lg:col-span-1">
@@ -804,9 +928,8 @@
                             <li><a href="coupon-management.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.management">Management</a></li>
                             <li><a href="coupon-marketplace.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.marketplace">Marketplace</a></li>
                             <li><a href="coupon-nfc.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.nfc">NFC</a></li>
-                            <li><a href="coupon-campaign.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.marketing">Marketing</a></li>
                             <li><a href="coupon-wallet.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.wallet">Wallet</a></li>
-                            <li><a href="coupon-serial.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.serial">Serial</a></li>
+                            <li><a href="coupon-pass.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.serial">Pass</a></li>
                         </ul>
                     </div>
 
@@ -841,5 +964,110 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <!-- For Merchants v2: front-end-only mode selector + calculators (post nowhere) -->
+    <script>
+      (function () {
+        var $ = function (id) { return document.getElementById(id); };
+        var val = function (id) { var el = $(id); return el ? parseFloat(el.value) : 0; };
+        var usd = function (n) { return '$' + n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); };
+        var intc = function (n) { return Math.round(n).toLocaleString('en-US'); };
+
+        // ---- Mode switching (cards + tabs drive a shared state) ----
+        var mode = 'zero';
+        function setMode(m) {
+          mode = m;
+          document.querySelectorAll('[data-mode]').forEach(function (el) {
+            var on = el.getAttribute('data-mode') === m;
+            el.classList.toggle('selected', on);
+            if (el.hasAttribute('aria-pressed')) el.setAttribute('aria-pressed', on ? 'true' : 'false');
+            if (el.hasAttribute('aria-selected')) el.setAttribute('aria-selected', on ? 'true' : 'false');
+          });
+          document.querySelectorAll('[data-mode-panel]').forEach(function (el) {
+            el.hidden = el.getAttribute('data-mode-panel') !== m;
+          });
+          recalc();
+        }
+        document.querySelectorAll('[data-mode]').forEach(function (el) {
+          el.addEventListener('click', function () { setMode(el.getAttribute('data-mode')); });
+        });
+
+        // ---- Discount type segmented control (zero mode) ----
+        var zType = 'pct';
+        document.querySelectorAll('[data-zseg]').forEach(function (el) {
+          el.addEventListener('click', function () {
+            zType = el.getAttribute('data-zseg');
+            document.querySelectorAll('[data-zseg]').forEach(function (b) { b.classList.toggle('selected', b === el); });
+            recalc();
+          });
+        });
+
+        // ---- Live control value labels ----
+        function fmtCtrl(el) {
+          var v = parseFloat(el.value), f = el.getAttribute('data-fmt');
+          if (f === 'usd') return usd(v).replace('.00', '');
+          if (f === 'pct') return v + '%';
+          if (f === 'days') return v + (v === 1 ? ' day' : ' days');
+          if (f === 'months') return v + (v === 1 ? ' month' : ' months');
+          if (f === 'count') return intc(v);
+          if (f === 'pct-or-amt') return zType === 'amt' ? ('$' + v) : (v + '%');
+          return String(v);
+        }
+        document.querySelectorAll('.v2-range').forEach(function (el) {
+          var out = document.querySelector('[data-value-for="' + el.id + '"]');
+          function upd() { if (out) out.textContent = fmtCtrl(el); }
+          el.addEventListener('input', function () { upd(); recalc(); });
+          el._upd = upd;
+        });
+
+        // ---- Random code helper ----
+        function code() {
+          var a = 'ABCDEFGHJKLMNPQRSTUVWXYZ0123456789', p = function (n) { var s = ''; for (var i = 0; i < n; i++) s += a[Math.floor(Math.random() * a.length)]; return s; };
+          return 'MZF-' + p(4) + '-' + p(4);
+        }
+
+        // ---- Recalculate everything for the active mode ----
+        function recalc() {
+          document.querySelectorAll('.v2-range').forEach(function (el) { if (el._upd) el._upd(); });
+
+          if (mode === 'zero') {
+            var lo = val('r-lo'), hi = val('r-hi');
+            if (lo > hi) { hi = lo; $('r-hi').value = hi; var o = document.querySelector('[data-value-for="r-hi"]'); if (o) o.textContent = fmtCtrl($('r-hi')); }
+            var steps = [], s = lo; while (s <= hi) { steps.push(s); s += 5; }
+            var pick = steps[Math.floor(Math.random() * steps.length)];
+            var min = val('r-min'), exp = val('r-exp'), off = $('r-offpeak').checked;
+            $('z-value').textContent = zType === 'amt' ? ('$' + pick + ' off') : (pick + '% off');
+            var t = (min > 0 ? ('Minimum spend $' + min + '. ') : 'No minimum spend. ') + 'Valid ' + exp + ' days.' + (off ? ' Off-peak only.' : '');
+            $('z-terms').textContent = t;
+          } else if (mode === 'charge') {
+            var face = val('c-face'), disc = val('c-disc'), cexp = val('c-exp');
+            var pays = face * (1 - disc / 100), fee = face * 0.10, recv = face * 0.90, unused = face * 0.45;
+            $('c-pays').textContent = usd(pays);
+            $('c-fee').textContent = usd(fee);
+            $('c-recv').textContent = usd(recv);
+            $('c-unused').textContent = usd(unused) + ' to you';
+            $('c-value').textContent = '$' + face + ' voucher';
+            $('c-terms').textContent = 'Bought for ' + usd(pays).replace('.00', '') + '. Valid ' + cexp + (cexp === 1 ? ' month.' : ' months.');
+          } else if (mode === 'own') {
+            var made = val('o-made'), sentPct = val('o-sent'), redPct = val('o-red'), oface = val('o-face');
+            var sent = made * sentPct / 100, redeemed = sent * redPct / 100;
+            var RA = 0.026, RD = 0.026, RR = 0.256; // Tier 1 rates
+            var alloc = made * RA, dist = sent * RD, redeem = redeemed * RR;
+            $('o-alloc').textContent = usd(alloc);
+            $('o-dist').textContent = usd(dist);
+            $('o-redeem').textContent = usd(redeem);
+            $('o-total').textContent = usd(alloc + dist + redeem);
+            $('o-alloc-d').textContent = '· ' + intc(made) + ' created';
+            $('o-dist-d').textContent = '· ' + intc(sent) + ' sent';
+            $('o-red-d').textContent = '· ' + intc(redeemed) + ' validated';
+            $('o-value').textContent = '$' + oface + ' off';
+          }
+        }
+
+        var shuffle = $('z-shuffle');
+        if (shuffle) shuffle.addEventListener('click', function () { if ($('z-code')) $('z-code').textContent = code(); recalc(); });
+
+        setMode('zero');
+      })();
+    </script>
 </body>
 </html>
