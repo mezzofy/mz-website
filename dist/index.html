@@ -297,7 +297,7 @@
         .pass-stub--wide { max-width:520px; }
         .pass-stub--wide .pass-stub__value { font-size:3rem; }
         /* Channel infographic nodes */
-        .channel-node { background:#fff; border:1px solid rgba(26,26,26,0.12); border-left:4px solid #FF6B35; border-radius:12px; padding:18px 20px; }
+        .channel-node { background:#fff; border:1px solid rgba(26,26,26,0.12); border-top:3px solid #FF6B35; border-radius:12px; padding:18px 20px; }
         .channel-node__title { font-weight:700; color:#1a1a1a; }
         .channel-node__sub { font-size:0.85rem; color:#808080; margin-top:2px; }
         .flow-arrow { color:#FF6B35; }
@@ -344,7 +344,72 @@
             .anim-fade-up, .anim-fade-in { animation:none; opacity:1; transform:none; }
             html { scroll-behavior:auto; }
         }
+
+        /* ===== UI/UX refresh (design-taste pass) — palette + fonts unchanged ===== */
+        /* Hero: an intentional dark canvas with a single brand glow and a faint
+           ticket-grid texture, replacing the busy stock photo. A solid base gives
+           crisp white type and strong contrast instead of text-over-photo. */
+        .hero-bg {
+            background:
+                radial-gradient(1100px 620px at 80% 26%, rgba(255,107,53,0.18), transparent 62%),
+                radial-gradient(760px 520px at 6% 90%, rgba(255,107,53,0.07), transparent 55%),
+                #0b0b0d;
+        }
+        .hero-bg::after {
+            content:''; position:absolute; inset:0; pointer-events:none;
+            background-image: radial-gradient(rgba(255,255,255,0.055) 1px, transparent 1.5px);
+            background-size: 26px 26px;
+            -webkit-mask-image: linear-gradient(to bottom, #000 0%, transparent 86%);
+            mask-image: linear-gradient(to bottom, #000 0%, transparent 86%);
+        }
+
+        /* Hero + dark-band body copy: explicit rgba so contrast never depends on a
+           Tailwind opacity utility being present in the compiled build. */
+        .hero-subtitle { color: rgba(255,255,255,0.82); }
+        .exchange-desc { color: rgba(255,255,255,0.68); }
+
+        /* Section header: one deliberate treatment. A short brand rule anchors each
+           section and breaks the flat, everything-centered rhythm. */
+        .section-head__kicker {
+            display:inline-block; width:44px; height:3px; border-radius:2px;
+            background:#FF6B35; margin-bottom:22px;
+        }
+
+        /* Scroll reveal — restrained, purposeful, honours reduced-motion. */
+        .reveal { opacity:0; transform:translateY(22px);
+            transition:opacity .55s cubic-bezier(.22,.68,0,1.05), transform .55s cubic-bezier(.22,.68,0,1.05); }
+        .reveal.is-visible { opacity:1; transform:none; }
+
+        /* "Three ways in" — de-templatised: numbered, animated top accent on hover,
+           no eyebrow, no side-stripe. Reads as an ordered set, not identical boxes. */
+        .ways-card { position:relative; overflow:hidden; }
+        .ways-card::before {
+            content:''; position:absolute; top:0; left:0; right:0; height:3px;
+            background:#FF6B35; transform:scaleX(0); transform-origin:left;
+            transition:transform .25s cubic-bezier(0.23,1,0.32,1);
+        }
+        .ways-card:hover::before, .ways-card:focus-within::before { transform:scaleX(1); }
+        .ways-index {
+            display:block; font-family:'IBM Plex Mono',monospace; font-weight:700;
+            font-size:0.82rem; letter-spacing:0.08em; color:#FF6B35; margin-bottom:14px;
+        }
+        /* Clean stat line replacing the banned border-left side-stripe. */
+        .stat-inline { border-top:1px solid rgba(26,26,26,0.10); padding-top:14px;
+            margin-bottom:20px; color:#4a4a4a; font-size:0.95rem; }
+        .stat-inline strong { color:#1a1a1a; }
+
+        /* Note cards: a restrained top hairline accent instead of a side-stripe. */
+        .note-card { border-top:3px solid #FF6B35; }
+
+        /* Button + slot press feedback (design-taste: subtle :active scale). */
+        .btn-primary:active, .btn-secondary:active, .slot-btn:active { transform:scale(0.97); }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity:1; transform:none; transition:none; }
+            .ways-card::before { transition:none; }
+            .btn-primary:active, .btn-secondary:active, .slot-btn:active { transform:none; }
+        }
     </style>
+    <noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
     <script src="i18n/i18n.js"></script>
 <script src="/js/analytics.js" defer></script>
 </head>
@@ -586,9 +651,8 @@
     <!-- ============================================================ -->
 
     <!-- Hero Section -->
-    <section id="hero-section" class="relative min-h-screen flex items-start" style="background-image:url('assets/images/mezzofy_background.png');background-size:cover;background-position:center;background-repeat:no-repeat;">
-        <div class="hero-index-overlay"></div>
-        <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16 md:pt-36 md:pb-24">
+    <section id="hero-section" class="hero-bg relative min-h-screen flex items-center">
+        <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16 md:pt-32 md:pb-24">
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
                 <!-- Left: Text content -->
@@ -600,7 +664,7 @@
                     <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 anim-fade-up delay-1" data-i18n="home.v2.hero.title">
                         Every offer is real, and can only be used once.
                     </h1>
-                    <p class="hero-description text-lg sm:text-xl text-white/75 mb-10 max-w-xl anim-fade-up delay-2" data-i18n="home.v2.hero.subtitle">
+                    <p class="hero-description text-lg sm:text-xl hero-subtitle mb-10 max-w-xl anim-fade-up delay-2" data-i18n="home.v2.hero.subtitle">
                         Mezzofy issues tokenised Passes that cannot be faked, copied or reused, and connects the merchants who create them to the platforms that put them in front of customers.
                     </p>
                     <!-- Dual CTAs -->
@@ -640,16 +704,17 @@
     <!-- The exchange, right now (dark band) -->
     <section id="exchange" class="bg-primary-black text-white">
         <div class="section-container">
-            <div class="text-center mb-14">
+            <div class="text-center mb-14 reveal">
+                <span class="section-head__kicker" aria-hidden="true"></span>
                 <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-5" data-i18n="home.v2.exchange.title">
                     The exchange, right now
                 </h2>
-                <p class="text-lg text-white/60 max-w-3xl mx-auto" data-i18n="home.v2.exchange.description">
+                <p class="text-lg exchange-desc max-w-3xl mx-auto" data-i18n="home.v2.exchange.description">
                     Liquidity is what makes a marketplace work. These figures update monthly.
                 </p>
             </div>
 
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10 reveal">
                 <div class="stat-card">
                     <div class="stat-number" data-i18n="home.v2.exchange.stat1Value">1,240</div>
                     <div class="stat-label" data-i18n="home.v2.exchange.stat1Label">Active merchants</div>
@@ -684,7 +749,8 @@
     <!-- Three ways in (plain) -->
     <section id="ways-in" class="bg-white">
         <div class="section-container">
-            <div class="text-center mb-16">
+            <div class="text-center mb-16 reveal">
+                <span class="section-head__kicker" aria-hidden="true"></span>
                 <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black mb-5" data-i18n="home.v2.waysIn.title">
                     Three ways in
                 </h2>
@@ -693,15 +759,15 @@
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-3 gap-8 reveal">
                 <!-- Merchants -->
-                <div class="feature-card flex flex-col">
-                    <span class="pill-label" data-i18n="home.v2.waysIn.merchants.label">Sellers</span>
+                <div class="feature-card ways-card flex flex-col">
+                    <span class="ways-index" aria-hidden="true">01</span>
                     <h3 class="text-xl font-bold text-primary-black mb-3" data-i18n="home.v2.waysIn.merchants.title">Merchants</h3>
                     <p class="text-dark-grey mb-5 flex-grow" data-i18n="home.v2.waysIn.merchants.description">
                         List free and reach every buyer on the exchange. Zero Fee Passes are created by our AI and placed for you, or run your own issuance.
                     </p>
-                    <div class="border-l-4 border-primary-orange pl-4 mb-5 text-dark-grey" data-i18n="home.v2.waysIn.merchants.stat">
+                    <div class="stat-inline" data-i18n="home.v2.waysIn.merchants.stat">
                         <strong>86,400</strong> redemptions a month to reach
                     </div>
                     <a href="for-merchants.html" class="text-primary-orange font-semibold hover:text-dark-orange inline-flex items-center gap-1" data-cta="learn-more">
@@ -710,13 +776,13 @@
                 </div>
 
                 <!-- Buyers -->
-                <div class="feature-card flex flex-col">
-                    <span class="pill-label" data-i18n="home.v2.waysIn.buyers.label">Buyers</span>
+                <div class="feature-card ways-card flex flex-col">
+                    <span class="ways-index" aria-hidden="true">02</span>
                     <h3 class="text-xl font-bold text-primary-black mb-3" data-i18n="home.v2.waysIn.buyers.title">Buyers</h3>
                     <p class="text-dark-grey mb-5 flex-grow" data-i18n="home.v2.waysIn.buyers.description">
                         Banks, telcos and benefits platforms sourcing verified inventory by API — and consumers browsing the marketplace directly.
                     </p>
-                    <div class="border-l-4 border-primary-orange pl-4 mb-5 text-dark-grey" data-i18n="home.v2.waysIn.buyers.stat">
+                    <div class="stat-inline" data-i18n="home.v2.waysIn.buyers.stat">
                         <strong>14 categories</strong> across three markets
                     </div>
                     <a href="for-distributors.html" class="text-primary-orange font-semibold hover:text-dark-orange inline-flex items-center gap-1" data-cta="learn-more">
@@ -725,13 +791,13 @@
                 </div>
 
                 <!-- Integrators -->
-                <div class="feature-card flex flex-col">
-                    <span class="pill-label" data-i18n="home.v2.waysIn.integrators.label">Partners</span>
+                <div class="feature-card ways-card flex flex-col">
+                    <span class="ways-index" aria-hidden="true">03</span>
                     <h3 class="text-xl font-bold text-primary-black mb-3" data-i18n="home.v2.waysIn.integrators.title">Integrators</h3>
                     <p class="text-dark-grey mb-5 flex-grow" data-i18n="home.v2.waysIn.integrators.description">
                         POS, loyalty and payment platforms. One integration gives every merchant on your system coupon issuance and redemption.
                     </p>
-                    <div class="border-l-4 border-primary-orange pl-4 mb-5 text-dark-grey" data-i18n="home.v2.waysIn.integrators.stat">
+                    <div class="stat-inline" data-i18n="home.v2.waysIn.integrators.stat">
                         Revenue share on <strong>every Pass sold</strong>
                     </div>
                     <a href="for-developers.html" class="text-primary-orange font-semibold hover:text-dark-orange inline-flex items-center gap-1" data-cta="learn-more">
@@ -745,7 +811,8 @@
     <!-- How the guarantee works (light band) -->
     <section id="guarantee" class="bg-light-grey">
         <div class="section-container">
-            <div class="text-center mb-16">
+            <div class="text-center mb-16 reveal">
+                <span class="section-head__kicker" aria-hidden="true"></span>
                 <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black mb-5" data-i18n="home.v2.guarantee.title">
                     How the guarantee works
                 </h2>
@@ -754,7 +821,7 @@
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-3 gap-8 reveal">
                 <!-- Stage 1: Issued as a Pass -->
                 <div class="stage">
                     <div class="stage-index" aria-hidden="true">1</div>
@@ -803,9 +870,10 @@
     <!-- Try one for yourself (plain) -->
     <section id="try-a-pass" class="bg-white">
         <div class="section-container">
-            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center reveal">
                 <!-- Left: copy + form -->
                 <div>
+                    <span class="section-head__kicker" aria-hidden="true"></span>
                     <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black mb-5" data-i18n="home.v2.demo.title">
                         Try one for yourself
                     </h2>
@@ -853,7 +921,8 @@
     <!-- Supply meets demand, through six channels (light band) -->
     <section id="channels" class="bg-light-grey">
         <div class="section-container">
-            <div class="text-center mb-14">
+            <div class="text-center mb-14 reveal">
+                <span class="section-head__kicker" aria-hidden="true"></span>
                 <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black mb-5" data-i18n="home.v2.channels.title">
                     Supply meets demand, through six channels
                 </h2>
@@ -932,8 +1001,8 @@
                 Zero Fee Passes are free to the merchant on every channel they reach.
             </p>
 
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="bg-white rounded-xl p-6 border-l-4 border-primary-orange">
+            <div class="grid md:grid-cols-2 gap-6 reveal">
+                <div class="note-card bg-white rounded-xl p-6">
                     <p class="text-dark-grey" data-i18n="home.v2.channels.integratorNote">
                         Integrators feed the supply side. POS, loyalty and payment platforms bring their merchants in through one integration, and earn on every Pass sold.
                     </p>
@@ -941,7 +1010,7 @@
                         <span data-i18n="home.v2.channels.integratorLink">For integrators</span> <span aria-hidden="true">&rarr;</span>
                     </a>
                 </div>
-                <div class="bg-white rounded-xl p-6 border-l-4 border-primary-orange">
+                <div class="note-card bg-white rounded-xl p-6">
                     <p class="text-dark-grey" data-i18n="home.v2.channels.pricingNote">
                         Mezzofy never takes title. Listing is free and there is no subscription. What you pay depends on the type of Pass and where it goes.
                     </p>
@@ -956,7 +1025,8 @@
     <!-- Take it further (plain) -->
     <section id="take-further" class="bg-white">
         <div class="section-container">
-            <div class="text-center mb-16">
+            <div class="text-center mb-16 reveal">
+                <span class="section-head__kicker" aria-hidden="true"></span>
                 <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black mb-5" data-i18n="home.v2.takeFurther.title">
                     Take it further
                 </h2>
@@ -965,7 +1035,7 @@
                 </p>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-8">
+            <div class="grid lg:grid-cols-2 gap-8 reveal">
                 <!-- Playbook -->
                 <div class="feature-card">
                     <h3 class="text-xl md:text-2xl font-bold text-primary-black mb-3" data-i18n="home.v2.takeFurther.playbook.title">
@@ -1158,6 +1228,24 @@
             for (var j = 0; j < slotButtons.length; j++) slotButtons[j].classList.remove('selected');
             this.classList.add('selected');
           });
+        }
+
+        // Scroll reveal — purposeful section entrance, disabled for reduced-motion
+        // and gracefully degraded (everything visible) if IntersectionObserver is absent.
+        var reveals = document.querySelectorAll('.reveal');
+        var prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (prefersReduced || !('IntersectionObserver' in window)) {
+          for (var r = 0; r < reveals.length; r++) reveals[r].classList.add('is-visible');
+        } else {
+          var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                io.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+          for (var k = 0; k < reveals.length; k++) io.observe(reveals[k]);
         }
       })();
     </script>

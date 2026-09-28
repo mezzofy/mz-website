@@ -34,6 +34,13 @@ MCP server configuration fixed for Windows. Shadcn MCP server now loads correctl
 
 ## Recently Completed (Last 7 Days)
 
+**2026-09-28 (Frontend visual QA sweep — Playwright, finally unblocked):**
+- ✅ QA'd all 10 revamped pages at desktop + mobile (390px). Every page: **0 raw i18n keys, 0 i18n warnings**, 1 `<h1>`, only the known localhost analytics-CORS console noise.
+- ✅ **Interactive logic verified functionally** (drove via JS, checked outputs): for-merchants 3-mode calculators exact (Charge $40/$5/$45/$22.50, Own **$102.98**, Zero shuffle works); for-distributors commitment calc exact ($200k/$184k/$140k/$60k) + base/full toggle; for-developers revenue calc exact (500/20k/$700k/$70k/**$17,500**); coupon-pass **7-type explorer** all variants resolve with correct stamp colors (0 raw keys after cycling). Confirmed products→coupon-pass link, wallet 520px stub + new closing CTA, ai-coupon hero-520/box-355 override (picks column healthy 328px), nfc 2 SVG diagrams, cms fork + footer-CTA removed + "Pass"/no-"Marketing" footer.
+- 🐛 **Found + fixed one real mobile bug:** `for-merchants` `.mode-tabs` segmented control used `width:max-content` → 39px horizontal overflow at 390px. Fixed with `max-width:100%` (pill now wraps cleanly); re-verified 0 overflow. Inline CSS, no rebuild.
+- Note (pre-existing, not fixed): the `.reveal` scroll-in system (main.js) leaves sections `opacity:0` until IntersectionObserver fires — a JS failure would hide content; worth a fallback + reduced-motion check. (This is also why fullPage screenshots look blank — captures don't scroll.)
+
+
 **2026-09-11 (Hid retired `coupon-campaign.html` / Coupon Marketing):**
 - ✅ Removed the "Coupon Marketing" menu item from header (desktop + mobile) and footer on ALL pages (incl. blog/news `../coupon-campaign.html` variants and the page's own active-nav indicator) — 0 links remain. Removed the 2 body "Related Product" cards on coupon-marketplace + coupon-playbook that linked to it.
 - ✅ Page hidden (not deleted): `noindex, follow`, removed from `sitemap.xml` + `llms.txt`. Still reachable by direct URL (200) but out of nav + search. Unused i18n keys (common.nav.marketing etc.) left in place, harmless.
