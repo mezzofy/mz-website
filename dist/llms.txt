@@ -5,15 +5,15 @@
 ## Core Platform
 - [Homepage](https://mezzofy.com/): Overview of the Global Coupon Exchange Protocol, platform value proposition for merchants and distributors, and key statistics (300M+ coupons, global reach)
 - [For Merchants](https://mezzofy.com/for-merchants.html): How retail merchants and brands create, issue, distribute, and track digital coupons; includes NFC, QR, and wallet coupon options with campaign analytics
-- [For Distributors](https://mezzofy.com/for-distributors.html): How loyalty apps, banks, telecoms, and e-commerce platforms access and monetize Mezzofy coupon inventory through the distributor network
-- [For Developers](https://mezzofy.com/for-developers.html): REST API reference, OAuth2 authentication, coupon issuance/redemption endpoints, NFC tag programming API, and SDK documentation for the Exchange Protocol
+- [For Distributors](https://mezzofy.com/for-buyers.html): How loyalty apps, banks, telecoms, and e-commerce platforms access and monetize Mezzofy coupon inventory through the distributor network
+- [For Developers](https://mezzofy.com/for-integrators.html): REST API reference, OAuth2 authentication, coupon issuance/redemption endpoints, NFC tag programming API, and SDK documentation for the Exchange Protocol
 - [For AI Commerce (Beta)](https://mezzofy.com/for-ai-commerce.html): Mezzofy is the supply layer for AI shopping agents — when an LLM recommends a deal, the tokenized, fraud-proof coupon inventory comes from the Mezzofy Exchange; supports MCP, ACP, and UCP integration protocols
 
 ## Products
 - [Coupon Management](https://mezzofy.com/coupon-management.html): Enterprise Coupon-as-a-Service (CaaS) platform for full lifecycle management — create, issue, distribute, validate, track, and expire digital coupons at scale with open API
 - [Coupon Marketplace](https://mezzofy.com/coupon-marketplace.html): Global B2B/B2C/C2C digital coupon exchange hub where merchants list inventory and distributors purchase or claim coupons; supports wholesale and retail pricing tiers
 - [NFC Coupons](https://mezzofy.com/coupon-nfc.html): HMAC-secured NFC tap-to-redeem coupon technology for physical retail, restaurants, events, and product packaging; works on all modern iOS and Android smartphones
-- [Coupon Wallet](https://mezzofy.com/coupon-wallet.html): Consumer-facing digital wallet app (iOS, Android, Web, NFC Physical Card) for storing, organizing, and redeeming digital coupons; supports Apple Wallet and Google Pay
+- [Coupon Wallet](https://mezzofy.com/vault.html): Consumer-facing digital wallet app (iOS, Android, Web, NFC Physical Card) for storing, organizing, and redeeming digital coupons; supports Apple Wallet and Google Pay
 - [Coupon Pass](https://mezzofy.com/coupon-pass.html): The tokenised, single-use coupon Pass — one standard presented seven ways (coupon, voucher, deal, ticket, reward, card, token), unique and fraud-proof
 
 ## Resources

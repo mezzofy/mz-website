@@ -240,7 +240,7 @@
       "acp": {
         "badge": "مباشر · سبتمبر 2025",
         "title": "ChatGPT — بروتوكول التجارة الوكيلة (ACP)",
-        "description": "يطلب المستخدم عرضًا ← يستعلم ChatGPT من Mezzofy ← يسترد المستهلك عبر الدفع الفوري داخل المحادثة",
+        "description": "يطلب المستخدم عرضًا ← يستعلم ChatGPT من Mezzofy ← ويعيد قسيمة مطابقة ليستردها المستهلك",
         "stat": "مستخدمون أسبوعيون"
       },
       "ucp": {
@@ -275,195 +275,195 @@
     },
     "v2": {
       "hero": {
-        "badge": "Live in Hong Kong, Singapore and Malaysia",
-        "title": "Every offer is real, and can only be used once.",
-        "subtitle": "Mezzofy issues tokenised Passes that cannot be faked, copied or reused, and connects the merchants who create them to the platforms that put them in front of customers.",
-        "ctaList": "List your offers free",
-        "ctaAccess": "Access inventory"
+        "badge": "متاح الآن في هونغ كونغ وسنغافورة وماليزيا",
+        "title": "كل عرض حقيقي، ولا يمكن استخدامه إلا مرة واحدة.",
+        "subtitle": "تُصدر Mezzofy بطاقات Pass مرمّزة لا يمكن تزييفها أو نسخها أو إعادة استخدامها، وتربط التجّار الذين ينشئونها بالمنصّات التي تعرضها أمام العملاء.",
+        "ctaList": "أدرِج عروضك مجانًا",
+        "ctaAccess": "الوصول إلى المخزون"
       },
       "pass": {
-        "issuerLabel": "Issuer",
-        "termsLabel": "Terms",
-        "codeLabel": "Code",
+        "issuerLabel": "الجهة المُصدِرة",
+        "termsLabel": "الشروط",
+        "codeLabel": "الرمز",
         "sample": {
           "issuer": "Kopi Lane, Bugis",
-          "value": "25% off",
-          "terms": "Weekdays, 2–5pm. Minimum spend $12.",
+          "value": "خصم 25%",
+          "terms": "أيام الأسبوع، 2–5 مساءً. حد أدنى للإنفاق $12.",
           "code": "MZF-7K4Q-8813",
-          "stamp": "CONSUMED"
+          "stamp": "مُستهلَكة"
         },
         "demo": {
-          "issuer": "Mezzofy demo",
-          "value": "20% off",
-          "terms": "Any participating merchant. No minimum spend.",
+          "issuer": "عرض Mezzofy التجريبي",
+          "value": "خصم 20%",
+          "terms": "أي تاجر مشارك. بلا حد أدنى للإنفاق.",
           "code": "MZF-DEMO-0000",
-          "stamp": "SAMPLE"
+          "stamp": "عيّنة"
         }
       },
       "exchange": {
-        "title": "The exchange, right now",
-        "description": "Liquidity is what makes a marketplace work. These figures update monthly.",
+        "title": "التبادل، الآن",
+        "description": "السيولة هي ما يجعل السوق ينجح. تُحدَّث هذه الأرقام شهريًا.",
         "stat1Value": "1,240",
-        "stat1Label": "Active merchants",
+        "stat1Label": "تجّار نشِطون",
         "stat2Value": "86,400",
-        "stat2Label": "Passes redeemed monthly",
+        "stat2Label": "بطاقات Pass تُسترد شهريًا",
         "stat3Value": "14",
-        "stat3Label": "Merchant categories",
+        "stat3Label": "فئات التجّار",
         "stat4Value": "3",
-        "stat4Label": "Live markets",
-        "chip1": "Food and beverage",
-        "chip2": "Retail",
-        "chip3": "Hotels",
-        "chip4": "Spa and wellness",
-        "chip5": "Attractions",
-        "chip6": "Grocery",
-        "chip7": "Health and fitness",
-        "chip8": "and 7 more"
+        "stat4Label": "أسواق نشِطة",
+        "chip1": "الأطعمة والمشروبات",
+        "chip2": "التجزئة",
+        "chip3": "الفنادق",
+        "chip4": "المنتجعات والعافية",
+        "chip5": "المعالم السياحية",
+        "chip6": "البقالة",
+        "chip7": "الصحة واللياقة",
+        "chip8": "و7 فئات أخرى"
       },
       "waysIn": {
-        "title": "Three ways in",
-        "description": "Each side of the exchange has its own page. Start where you fit.",
+        "title": "ثلاث طرق للدخول",
+        "description": "لكل جانب من التبادل صفحته الخاصة. ابدأ من حيث تنتمي.",
         "merchants": {
-          "label": "Sellers",
-          "title": "Merchants",
-          "description": "List free and reach every buyer on the exchange. Zero Fee Passes are created by our AI and placed for you, or run your own issuance.",
-          "stat": "<strong>86,400</strong> redemptions a month to reach",
-          "link": "For merchants"
+          "label": "البائعون",
+          "title": "التجّار",
+          "description": "أدرِج مجانًا وصِل إلى كل مشترٍ على التبادل. تُنشئ بطاقات Passes بدون رسوم بواسطة الذكاء الاصطناعي لدينا وتُوضع نيابةً عنك، أو أدِر إصدارك الخاص.",
+          "stat": "<strong>86,400</strong> عملية استرداد شهريًا للوصول إليها",
+          "link": "للتجّار"
         },
         "buyers": {
-          "label": "Buyers",
-          "title": "Buyers",
-          "description": "Banks, telcos and benefits platforms sourcing verified inventory by API — and consumers browsing the marketplace directly.",
-          "stat": "<strong>14 categories</strong> across three markets",
-          "link": "For buyers"
+          "label": "المشترون",
+          "title": "المشترون",
+          "description": "البنوك وشركات الاتصالات ومنصّات المزايا التي تستمد مخزونًا موثّقًا عبر API — والمستهلكون الذين يتصفّحون السوق مباشرةً.",
+          "stat": "<strong>14 فئة</strong> عبر ثلاثة أسواق",
+          "link": "للمشترين"
         },
         "integrators": {
-          "label": "Partners",
-          "title": "Integrators",
-          "description": "POS, loyalty and payment platforms. One integration gives every merchant on your system coupon issuance and redemption.",
-          "stat": "Revenue share on <strong>every Pass sold</strong>",
-          "link": "For integrators"
+          "label": "الشركاء",
+          "title": "جهات التكامل",
+          "description": "منصّات نقاط البيع والولاء والدفع. تكامل واحد يمنح كل تاجر على نظامك إصدار القسائم واستردادها.",
+          "stat": "حصة من الإيرادات على <strong>كل Pass يُباع</strong>",
+          "link": "لجهات التكامل"
         }
       },
       "guarantee": {
-        "title": "How the guarantee works",
-        "description": "One primitive, however it is presented to the customer.",
+        "title": "كيف يعمل الضمان",
+        "description": "وحدة أساسية واحدة، مهما اختلفت طريقة عرضها على العميل.",
         "pass": {
-          "title": "Issued as a Pass",
-          "description": "Tokenised at creation with a unique code, traceable through its whole life. One standard, seven ways to present it.",
-          "link": "Explore Passes"
+          "title": "يُصدَر كـ Pass",
+          "description": "مرمّز عند الإنشاء برمز فريد، وقابل للتتبّع طوال حياته. معيار واحد، وسبع طرق لعرضه.",
+          "link": "استكشف بطاقات Pass"
         },
         "vault": {
-          "title": "Held in a Vault",
-          "description": "Every Pass a customer owns sits in one place, ready to present — alongside the balance they spend on verified offers.",
-          "link": "Explore Vault"
+          "title": "محفوظ في Vault",
+          "description": "كل Pass يملكه العميل يقع في مكان واحد، جاهز للعرض — إلى جانب الرصيد الذي ينفقه على العروض الموثّقة.",
+          "link": "استكشف Vault"
         },
         "consumed": {
-          "title": "Consumed once",
-          "description": "Validated at the counter and immediately spent. A copy will not validate, and a Pass that was never issued does not exist."
+          "title": "يُستهلَك مرة واحدة",
+          "description": "يُتحقَّق منه عند الصندوق ويُنفَق فورًا. النسخة لن تُقبَل، وأي Pass لم يُصدَر أصلًا لا وجود له."
         },
-        "chip1": "Coupon",
-        "chip2": "Voucher",
-        "chip3": "Deal",
-        "chip4": "Ticket",
-        "chip5": "Reward",
-        "chip6": "Card",
-        "chip7": "Token"
+        "chip1": "قسيمة",
+        "chip2": "سند",
+        "chip3": "صفقة",
+        "chip4": "تذكرة",
+        "chip5": "مكافأة",
+        "chip6": "بطاقة",
+        "chip7": "توكن"
       },
       "demo": {
-        "title": "Try one for yourself",
-        "description": "Send yourself a real Pass and see what a customer sees — the code, the terms, and the moment it is consumed. Nothing to install, and we will not add you to anything.",
-        "emailLabel": "Email address",
+        "title": "جرّب واحدة بنفسك",
+        "description": "أرسِل إلى نفسك Pass حقيقيًا وشاهد ما يراه العميل — الرمز والشروط ولحظة استهلاكه. لا شيء لتثبيته، ولن نضيفك إلى أي شيء.",
+        "emailLabel": "البريد الإلكتروني",
         "emailPlaceholder": "you@company.com",
-        "cta": "Send me a Pass",
-        "confirm": "Done — your demo Pass is on its way. Check your inbox.",
-        "note": "One demo Pass per address. Valid for seven days at any participating merchant."
+        "cta": "أرسِل لي Pass",
+        "confirm": "تم — Pass التجريبي في طريقه إليك. تحقّق من بريدك الوارد.",
+        "note": "Pass تجريبي واحد لكل عنوان. صالح لسبعة أيام لدى أي تاجر مشارك."
       },
       "channels": {
-        "title": "Supply meets demand, through six channels",
-        "description": "One listing reaches every channel it is eligible for. What a merchant pays depends on which channel a Pass goes through, not on a plan.",
+        "title": "يلتقي العرض بالطلب عبر ست قنوات",
+        "description": "إدراج واحد يصل إلى كل قناة يكون مؤهلاً لها. ما يدفعه التاجر يعتمد على القناة التي يمرّ بها الـ Pass، لا على خطة اشتراك.",
         "merchantsNode": {
-          "title": "Merchants",
-          "sub": "List free, honour at the counter"
+          "title": "التجّار",
+          "sub": "أدرِج مجانًا، والوفاء عند الصندوق"
         },
         "mezzofyNode": {
           "title": "Mezzofy",
-          "sub": "Tokenise, validate, settle"
+          "sub": "الترميز والتحقق والتسوية"
         },
         "gridNode": {
-          "title": "Six channels"
+          "title": "ست قنوات"
         },
-        "thChannel": "Channel",
-        "thReaches": "Reaches",
-        "thPays": "Who pays",
+        "thChannel": "القناة",
+        "thReaches": "تصل إلى",
+        "thPays": "من يدفع",
         "own": {
-          "name": "Own",
-          "reaches": "Your own list, off the exchange",
-          "pays": "Merchant pays usage"
+          "name": "الخاصة",
+          "reaches": "قائمتك الخاصة، خارج التبادل",
+          "pays": "التاجر يدفع مقابل الاستخدام"
         },
         "b2c": {
           "name": "B2C",
-          "reaches": "Consumers on the marketplace",
-          "pays": "Consumer pays"
+          "reaches": "المستهلكون في السوق",
+          "pays": "المستهلك يدفع"
         },
         "b2b": {
           "name": "B2B",
-          "reaches": "Banks, telcos, HR platforms by API",
-          "pays": "Buyer pays"
+          "reaches": "البنوك وشركات الاتصالات ومنصّات الموارد البشرية عبر API",
+          "pays": "المشتري يدفع"
         },
         "ai": {
-          "name": "AI Commerce",
-          "reaches": "AI shopping assistants, Mezzofy checkout",
-          "pays": "Consumer pays"
+          "name": "تجارة الذكاء الاصطناعي",
+          "reaches": "مساعدو التسوّق بالذكاء الاصطناعي، ودفع Mezzofy",
+          "pays": "المستهلك يدفع"
         },
         "nfc": {
-          "name": "NFC Network",
-          "reaches": "Tap points in malls and offices",
-          "pays": "Free to merchants"
+          "name": "شبكة NFC",
+          "reaches": "نقاط نقر في المراكز التجارية والمكاتب",
+          "pays": "مجاني للتجّار"
         },
         "partners": {
-          "name": "Partners",
-          "reaches": "Partner-run private surfaces",
-          "pays": "Next phase"
+          "name": "الشركاء",
+          "reaches": "أسطح خاصة يديرها الشركاء",
+          "pays": "المرحلة التالية"
         },
-        "zeroFee": "Zero Fee Passes are free to the merchant on every channel they reach.",
-        "integratorNote": "Integrators feed the supply side. POS, loyalty and payment platforms bring their merchants in through one integration, and earn on every Pass sold.",
-        "integratorLink": "For integrators",
-        "pricingNote": "Mezzofy never takes title. Listing is free and there is no subscription. What you pay depends on the type of Pass and where it goes.",
-        "pricingLink": "See pricing"
+        "zeroFee": "بطاقات Passes بدون رسوم مجانية للتاجر على كل قناة تصل إليها.",
+        "integratorNote": "تُغذّي جهات التكامل جانب العرض. تُدخِل منصّات نقاط البيع والولاء والدفع تجّارها عبر تكامل واحد، وتكسب على كل Pass يُباع.",
+        "integratorLink": "لجهات التكامل",
+        "pricingNote": "لا تمتلك Mezzofy الملكية أبدًا. الإدراج مجاني ولا يوجد اشتراك. ما تدفعه يعتمد على نوع الـ Pass ووجهته.",
+        "pricingLink": "اطّلع على الأسعار"
       },
       "takeFurther": {
-        "title": "Take it further",
-        "description": "Read how other operators built liquidity, or put an hour in the diary and we will walk through your case.",
+        "title": "خذها أبعد من ذلك",
+        "description": "اقرأ كيف بنى مشغّلون آخرون السيولة، أو خصّص ساعة في جدولك وسنستعرض حالتك معك.",
         "playbook": {
-          "title": "The coupon exchange playbook",
-          "description": "Forty pages on building a coupon programme that people actually redeem — written from what we see across the exchange, not from a template.",
-          "ch1": "Why most coupon programmes fail at the counter",
-          "ch2": "Setting discount limits that protect your margin",
-          "ch3": "Choosing between free listing and selling value",
-          "ch4": "Redemption operations for multi-outlet businesses",
-          "ch5": "What enterprise buyers look for in inventory",
-          "emailLabel": "Email address",
+          "title": "دليل تبادل القسائم",
+          "description": "أربعون صفحة عن بناء برنامج قسائم يستردّه الناس فعلًا — مكتوبة من واقع ما نراه عبر التبادل، لا من قالب جاهز.",
+          "ch1": "لماذا تفشل معظم برامج القسائم عند الصندوق",
+          "ch2": "ضبط حدود الخصم التي تحمي هامش ربحك",
+          "ch3": "الاختيار بين الإدراج المجاني وبيع القيمة",
+          "ch4": "عمليات الاسترداد للأنشطة متعددة المنافذ",
+          "ch5": "ما يبحث عنه المشترون المؤسسيون في المخزون",
+          "emailLabel": "البريد الإلكتروني",
           "emailPlaceholder": "you@company.com",
-          "cta": "Send me the PDF",
-          "confirm": "Thanks — the playbook PDF is on its way to your inbox."
+          "cta": "أرسِل لي ملف PDF",
+          "confirm": "شكرًا — ملف الدليل PDF في طريقه إلى بريدك الوارد."
         },
         "booking": {
-          "title": "Book an hour with us",
-          "description": "A working session rather than a pitch. Bring your numbers and we will show you what the exchange would do with them.",
-          "dateLabel": "Choose a date",
-          "slotLabel": "Pick a slot",
+          "title": "احجز ساعة معنا",
+          "description": "جلسة عمل لا عرض ترويجي. أحضِر أرقامك وسنُريك ما سيفعله التبادل بها.",
+          "dateLabel": "اختر تاريخًا",
+          "slotLabel": "اختر موعدًا",
           "slot1": "9:00–10:00",
           "slot2": "10:00–11:00",
           "slot3": "11:00–12:00",
           "slot4": "2:00–3:00",
           "slot5": "3:00–4:00",
           "slot6": "4:00–5:00",
-          "slotsNote": "Monday to Friday. One-hour blocks.",
-          "emailLabel": "Email address",
+          "slotsNote": "من الاثنين إلى الجمعة. فترات من ساعة واحدة.",
+          "emailLabel": "البريد الإلكتروني",
           "emailPlaceholder": "you@company.com",
-          "cta": "Book the slot",
-          "confirm": "Booked — we will send a calendar invite to your email."
+          "cta": "احجز الموعد",
+          "confirm": "تم الحجز — سنرسل دعوة تقويم إلى بريدك الإلكتروني."
         }
       }
     }
@@ -894,7 +894,7 @@
       },
       "step3": {
         "title": "التحسين",
-        "description": "تتبّع باستراتيجيات <a href=\"coupon-playbook.html\" class=\"text-primary-orange hover:underline\">الدليل</a>، وحلّل برؤى <a href=\"coupon-wallet.html\" class=\"text-primary-orange hover:underline\">المحفظة</a>"
+        "description": "تتبّع باستراتيجيات <a href=\"coupon-playbook.html\" class=\"text-primary-orange hover:underline\">الدليل</a>، وحلّل برؤى <a href=\"vault.html\" class=\"text-primary-orange hover:underline\">المحفظة</a>"
       }
     },
     "segments": {
@@ -974,225 +974,225 @@
     "definition": "Mezzofy هي منصة لتبادل القسائم الرقمية تساعد التجّار على إنشاء القسائم الرقمية وتوزيعها وتحقيق الأرباح منها في أكثر من 15 سوقاً في منطقة آسيا والمحيط الهادئ. وباستخدام بروتوكول Mezzofy للتبادل، يتخلّص التجّار من التزامات القسائم، ويصلون إلى عملاء جدد عبر NFC والسوق والقنوات الرقمية، ويحقّقون إيرادات مع كل عملية استرداد ناجحة — دون أي رسوم مُقدّمة.",
     "v2": {
       "hero": {
-        "badge": "Free to list, no subscription",
-        "title": "Customers who were never coming in anyway.",
-        "subtitle": "Put your offers where 86,400 monthly redemptions already happen. You decide how far you will go on price. We handle everything between creating the offer and the moment someone hands it over at your counter.",
-        "ctaStart": "Start selling free",
-        "ctaPricing": "See merchant pricing"
+        "badge": "الإدراج مجاني، بلا اشتراك",
+        "title": "عملاء لم يكونوا قادمين على أي حال.",
+        "subtitle": "ضع عروضك حيث تحدث 86,400 عملية استرداد شهريًا بالفعل. أنت تقرّر إلى أي مدى ستذهب في السعر. ونحن نتولّى كل شيء بين إنشاء العرض ولحظة تسليمه عند صندوقك.",
+        "ctaStart": "ابدأ البيع مجانًا",
+        "ctaPricing": "اطّلع على أسعار التجّار"
       },
       "pass": {
-        "issuerLabel": "Issuer",
-        "termsLabel": "Terms",
-        "codeLabel": "Code",
+        "issuerLabel": "الجهة المُصدِرة",
+        "termsLabel": "الشروط",
+        "codeLabel": "الرمز",
         "hero": {
-          "issuer": "Your business",
-          "value": "$5 off",
-          "terms": "Minimum spend $30. Valid 30 days.",
-          "code": "Created by AI Coupon",
-          "stamp": "FREE"
+          "issuer": "نشاطك التجاري",
+          "value": "خصم $5",
+          "terms": "حد أدنى للإنفاق $30. صالح 30 يومًا.",
+          "code": "أنشأها AI Coupon",
+          "stamp": "مجاني"
         },
         "zero": {
-          "issuer": "Your business",
-          "value": "20% off",
-          "terms": "No minimum spend. Valid 30 days.",
-          "stamp": "FREE"
+          "issuer": "نشاطك التجاري",
+          "value": "خصم 20%",
+          "terms": "بلا حد أدنى للإنفاق. صالح 30 يومًا.",
+          "stamp": "مجاني"
         },
         "charge": {
-          "issuer": "Your business",
-          "value": "$50 voucher",
-          "terms": "Bought for $40. Valid 6 months.",
-          "stamp": "SOLD"
+          "issuer": "نشاطك التجاري",
+          "value": "سند بقيمة $50",
+          "terms": "اشتُري بـ $40. صالح 6 أشهر.",
+          "stamp": "مُباع"
         },
         "own": {
-          "issuer": "Your business, your list",
-          "value": "$20 off",
-          "terms": "Sent to your customers. Not listed on the exchange.",
-          "stamp": "PRIVATE"
+          "issuer": "نشاطك التجاري، قائمتك",
+          "value": "خصم $20",
+          "terms": "يُرسَل إلى عملائك. غير مُدرَج على التبادل.",
+          "stamp": "خاص"
         }
       },
       "reach": {
-        "title": "Who your offers reach",
-        "description": "This is the demand you are listing into. It is the only number that matters before you decide how to price.",
+        "title": "من تصل إليهم عروضك",
+        "description": "هذا هو الطلب الذي تُدرِج فيه. وهو الرقم الوحيد المهم قبل أن تقرّر التسعير.",
         "stat1Value": "86,400",
-        "stat1Label": "Redemptions monthly",
+        "stat1Label": "عمليات استرداد شهريًا",
         "stat2Value": "4",
-        "stat2Label": "Channels, one listing",
+        "stat2Label": "قنوات، بإدراج واحد",
         "stat3Value": "3",
-        "stat3Label": "Live markets",
+        "stat3Label": "أسواق نشِطة",
         "stat4Value": "$0",
-        "stat4Label": "To list",
-        "chip1": "B2C marketplace",
-        "chip2": "Enterprise buyer apps",
-        "chip3": "NFC tap points",
-        "chip4": "AI shopping assistants"
+        "stat4Label": "للإدراج",
+        "chip1": "سوق B2C",
+        "chip2": "تطبيقات المشترين المؤسسيين",
+        "chip3": "نقاط نقر NFC",
+        "chip4": "مساعدو التسوّق بالذكاء الاصطناعي"
       },
       "ways": {
-        "title": "Three ways to sell, priced by what the offer is for",
-        "description": "Pick one, or run all three side by side. Each keeps its own inventory. Choose one to see how it works and what it would produce.",
+        "title": "ثلاث طرق للبيع، تُسعَّر حسب الغرض من العرض",
+        "description": "اختر واحدة، أو شغّل الثلاث جنبًا إلى جنب. لكل منها مخزونها الخاص. اختر واحدة لترى كيف تعمل وما ستنتجه.",
         "zero": {
-          "label": "Easiest start",
-          "title": "Zero Fee Passes, created by AI",
-          "description": "You set the limits. Our AI creates discount offers inside them and places them across the exchange. You honour them at the counter.",
-          "row1k": "You pay",
-          "row1v": "Nothing",
-          "row2k": "You collect",
-          "row2v": "Nothing",
-          "row3k": "Bank account",
-          "row3v": "Not needed"
+          "label": "أسهل بداية",
+          "title": "بطاقات Passes بدون رسوم، يُنشئها الذكاء الاصطناعي",
+          "description": "أنت تضع الحدود. يُنشئ ذكاؤنا الاصطناعي عروض خصم ضمنها ويضعها عبر التبادل. وأنت تفي بها عند الصندوق.",
+          "row1k": "أنت تدفع",
+          "row1v": "لا شيء",
+          "row2k": "أنت تحصّل",
+          "row2v": "لا شيء",
+          "row3k": "حساب بنكي",
+          "row3v": "غير مطلوب"
         },
         "charge": {
-          "label": "Sell value",
-          "title": "Charge Passes",
-          "description": "You set the voucher value and the discount. We sell it on the marketplace and to enterprise buyers, and pay you when it is redeemed.",
-          "row1k": "Mezzofy fee",
+          "label": "بيع القيمة",
+          "title": "بطاقات Passes مدفوعة",
+          "description": "أنت تحدّد قيمة السند والخصم. نبيعه في السوق وللمشترين المؤسسيين، وندفع لك عند استرداده.",
+          "row1k": "رسوم Mezzofy",
           "row1v": "10%",
-          "row2k": "You receive",
-          "row2v": "90% on redemption",
-          "row3k": "If it expires unused",
-          "row3v": "Split 50/50"
+          "row2k": "أنت تستلم",
+          "row2v": "90% عند الاسترداد",
+          "row3k": "إذا انتهت صلاحيته دون استخدام",
+          "row3v": "يُقسَّم مناصفةً 50/50"
         },
         "own": {
-          "label": "Your own list",
-          "title": "Own channel",
-          "description": "Issue to customers you already have — email, messaging, your own app. Nothing goes on the exchange.",
-          "row1k": "Allocation",
-          "row1v": "from $0.013",
-          "row2k": "Distribution",
-          "row2v": "from $0.013",
-          "row3k": "Redemption",
-          "row3v": "from $0.064"
+          "label": "قائمتك الخاصة",
+          "title": "القناة الخاصة",
+          "description": "أصدِر لعملائك الحاليين — البريد الإلكتروني، والرسائل، وتطبيقك الخاص. لا شيء يذهب إلى التبادل.",
+          "row1k": "التخصيص",
+          "row1v": "من $0.013",
+          "row2k": "التوزيع",
+          "row2v": "من $0.013",
+          "row3k": "الاسترداد",
+          "row3v": "من $0.064"
         }
       },
       "limits": {
-        "title": "Set your limits once. The network does the rest.",
-        "description": "Most platforms ask you to build a campaign and pay to run it. Zero Fee works the other way around.",
-        "tabZero": "Zero Fee Passes",
-        "tabCharge": "Charge Passes",
-        "tabOwn": "Own channel",
+        "title": "اضبط حدودك مرة واحدة. والشبكة تتولّى الباقي.",
+        "description": "تطلب منك معظم المنصّات بناء حملة والدفع لتشغيلها. تعمل خدمة بدون رسوم بالعكس تمامًا.",
+        "tabZero": "بطاقات Passes بدون رسوم",
+        "tabCharge": "بطاقات Passes مدفوعة",
+        "tabOwn": "القناة الخاصة",
         "zero": {
-          "step1Title": "You set the box",
-          "step1Desc": "Discount range, minimum spend, monthly quota, daily cap, and whether offers are limited to off-peak hours. These are hard ceilings the AI cannot pass.",
-          "step2Title": "AI Coupon creates the offers",
-          "step2Desc": "It chooses the depth, the timing and the volume inside your limits, and issues each one as a tokenised Pass.",
-          "step3Title": "The network delivers them",
-          "step3Desc": "Marketplace, NFC tap points in malls and offices, enterprise buyer apps, and AI shopping assistants. Nothing for you to build.",
-          "step4Title": "You redeem at the counter",
-          "step4Desc": "Your staff validate in the Operator App, or through your POS if you have integrated. The Pass is spent and cannot be used again.",
-          "note": "<strong>What you give up is margin on that sale. Nothing else.</strong> No creation fee, no distribution fee, no redemption fee, no bank details. The customer pays a small fee for the guarantee that the offer is real, and that is what funds the exchange."
+          "step1Title": "أنت تحدّد الإطار",
+          "step1Desc": "نطاق الخصم، والحد الأدنى للإنفاق، والحصة الشهرية، والحد اليومي، وما إذا كانت العروض مقصورة على ساعات خارج الذروة. هذه سقوف صارمة لا يمكن للذكاء الاصطناعي تجاوزها.",
+          "step2Title": "AI Coupon يُنشئ العروض",
+          "step2Desc": "يختار العمق والتوقيت والحجم ضمن حدودك، ويُصدر كلًّا منها كـ Pass مرمّز.",
+          "step3Title": "الشبكة توصّلها",
+          "step3Desc": "السوق، ونقاط نقر NFC في المراكز التجارية والمكاتب، وتطبيقات المشترين المؤسسيين، ومساعدو التسوّق بالذكاء الاصطناعي. لا شيء عليك بناؤه.",
+          "step4Title": "أنت تستردّ عند الصندوق",
+          "step4Desc": "يتحقّق موظفوك في تطبيق المشغِّل، أو عبر نقطة بيعك إذا كنت قد أجريت التكامل. يُستهلَك الـ Pass ولا يمكن استخدامه مرة أخرى.",
+          "note": "<strong>ما تتنازل عنه هو هامش الربح على تلك المبيعة. لا شيء غير ذلك.</strong> بلا رسوم إنشاء، ولا رسوم توزيع، ولا رسوم استرداد، ولا بيانات بنكية. يدفع العميل رسمًا صغيرًا مقابل ضمان أن العرض حقيقي، وهذا ما يموّل التبادل."
         },
         "charge": {
-          "step1Title": "You set the value and the discount",
-          "step1Desc": "Choose the face value of the voucher, how much the customer saves, how long it stays valid, and how many you will release each month.",
-          "step2Title": "We list and sell it",
-          "step2Desc": "Your voucher goes to the B2C marketplace and into the B2B pool where banks, telcos and benefits platforms draw from it. We handle payment and support.",
-          "step3Title": "The customer pays and receives the Pass",
-          "step3Desc": "It lands in their Vault, tokenised and single-use. Mezzofy keeps 10%, which covers card processing, the platform and any partner who distributed it.",
-          "step4Title": "You redeem, and we pay you",
-          "step4Desc": "You receive 90% of face value once the Pass is redeemed. If it is sold but expires unused, the remaining value is split evenly between you and Mezzofy.",
-          "note": "<strong>You are paid on redemption, not on sale.</strong> Money reaches you when the customer actually walks in. A bank account and full verification are required, because Mezzofy is paying you."
+          "step1Title": "أنت تحدّد القيمة والخصم",
+          "step1Desc": "اختر القيمة الاسمية للسند، ومقدار ما يوفّره العميل، ومدة صلاحيته، وعددها التي ستطرحها كل شهر.",
+          "step2Title": "نحن نُدرجه ونبيعه",
+          "step2Desc": "يذهب سندك إلى سوق B2C وإلى مجمّع B2B حيث تستمد منه البنوك وشركات الاتصالات ومنصّات المزايا. نتولّى الدفع والدعم.",
+          "step3Title": "العميل يدفع ويستلم الـ Pass",
+          "step3Desc": "يصل إلى Vault الخاص به، مرمّزًا وللاستخدام مرة واحدة. تحتفظ Mezzofy بـ 10%، تغطّي معالجة البطاقة والمنصّة وأي شريك وزّعه.",
+          "step4Title": "أنت تستردّ، ونحن ندفع لك",
+          "step4Desc": "تستلم 90% من القيمة الاسمية بمجرد استرداد الـ Pass. وإذا بيع لكنه انتهت صلاحيته دون استخدام، تُقسَّم القيمة المتبقية بالتساوي بينك وبين Mezzofy.",
+          "note": "<strong>يُدفع لك عند الاسترداد، لا عند البيع.</strong> تصلك الأموال عندما يدخل العميل فعلًا. يلزم حساب بنكي وتحقّق كامل، لأن Mezzofy هي التي تدفع لك."
         },
         "own": {
-          "step1Title": "You create the Pass",
-          "step1Desc": "Build it yourself in the portal — value, terms, artwork, validity. Allocation is charged per Pass created, whether or not you send it.",
-          "step2Title": "You choose who gets it",
-          "step2Desc": "Upload your own list or pick a segment. Nothing is listed on the exchange and no other buyer can see it.",
-          "step3Title": "You send it",
-          "step3Desc": "Email, SMS, WhatsApp, QR export or your own app through the API. Distribution is charged per Pass sent. Messaging fees are passed through at cost.",
-          "step4Title": "You redeem at the counter",
-          "step4Desc": "Same Operator App and POS integration as every other Pass. Redemption is charged per Pass validated, and billed monthly to your card.",
-          "note": "<strong>This is the one place you pay Mezzofy directly.</strong> Own channel is metered software for your own distribution, so allocation and distribution are charged whether or not anything is redeemed. Rates fall as your annual volume rises."
+          "step1Title": "أنت تُنشئ الـ Pass",
+          "step1Desc": "ابنِه بنفسك في البوابة — القيمة، والشروط، والتصميم، والصلاحية. يُحتسَب التخصيص لكل Pass يُنشأ، سواء أرسلته أم لا.",
+          "step2Title": "أنت تختار من يحصل عليه",
+          "step2Desc": "ارفع قائمتك الخاصة أو اختر شريحة. لا شيء يُدرَج على التبادل ولا يمكن لأي مشترٍ آخر رؤيته.",
+          "step3Title": "أنت ترسله",
+          "step3Desc": "البريد الإلكتروني، وSMS، وWhatsApp، وتصدير QR، أو تطبيقك الخاص عبر API. يُحتسَب التوزيع لكل Pass يُرسَل. وتُمرَّر رسوم المراسلة بسعر التكلفة.",
+          "step4Title": "أنت تستردّ عند الصندوق",
+          "step4Desc": "نفس تطبيق المشغِّل وتكامل نقطة البيع كأي Pass آخر. يُحتسَب الاسترداد لكل Pass يُتحقَّق منه، ويُفوتَر شهريًا على بطاقتك.",
+          "note": "<strong>هذا هو المكان الوحيد الذي تدفع فيه لـ Mezzofy مباشرةً.</strong> القناة الخاصة هي برمجيات مُقاسة بالاستخدام لتوزيعك الخاص، لذا يُحتسَب التخصيص والتوزيع سواء استُرد أي شيء أم لا. تنخفض الأسعار كلما ارتفع حجمك السنوي."
         }
       },
       "calc": {
-        "title": "Set the box, and see what comes out",
-        "description": "These are the limits from step one. Move them and watch what AI Coupon would be allowed to create for your business.",
+        "title": "اضبط الإطار، وشاهد ما ينتج",
+        "description": "هذه هي الحدود من الخطوة الأولى. حرّكها وشاهد ما سيُسمح لـ AI Coupon بإنشائه لنشاطك التجاري.",
         "zero": {
-          "segPct": "Percent off",
-          "segAmt": "Amount off",
-          "loLabel": "Lowest discount",
-          "hiLabel": "Highest discount",
-          "minLabel": "Minimum spend to qualify",
-          "expLabel": "Valid for",
-          "quotaLabel": "Monthly quota",
-          "capLabel": "Daily cap",
-          "offpeakLabel": "Off-peak only, Monday to Thursday 2–5pm",
-          "offerLabel": "One of the offers your limits would allow",
-          "showAnother": "Show another the AI could create"
+          "segPct": "نسبة خصم",
+          "segAmt": "مبلغ خصم",
+          "loLabel": "أدنى خصم",
+          "hiLabel": "أعلى خصم",
+          "minLabel": "الحد الأدنى للإنفاق للتأهّل",
+          "expLabel": "صالح لمدة",
+          "quotaLabel": "الحصة الشهرية",
+          "capLabel": "الحد اليومي",
+          "offpeakLabel": "خارج أوقات الذروة فقط، من الاثنين إلى الخميس 2–5 مساءً",
+          "offerLabel": "أحد العروض التي ستسمح بها حدودك",
+          "showAnother": "اعرض عرضًا آخر يمكن للذكاء الاصطناعي إنشاؤه"
         },
         "charge": {
-          "faceLabel": "Voucher face value",
-          "discLabel": "Customer saves",
-          "expLabel": "Valid for",
-          "qtyLabel": "Released each month",
-          "enterpriseLabel": "Offer to enterprise buyers as well as the marketplace",
-          "readoutTitle": "On one voucher",
-          "paysLabel": "Customer pays",
-          "feeLabel": "Mezzofy fee, 10% of face",
-          "receiveLabel": "You receive on redemption",
-          "unusedLabel": "If sold but never redeemed"
+          "faceLabel": "القيمة الاسمية للسند",
+          "discLabel": "العميل يوفّر",
+          "expLabel": "صالح لمدة",
+          "qtyLabel": "المطروح كل شهر",
+          "enterpriseLabel": "اعرضه على المشترين المؤسسيين إضافةً إلى السوق",
+          "readoutTitle": "على سند واحد",
+          "paysLabel": "العميل يدفع",
+          "feeLabel": "رسوم Mezzofy، 10% من القيمة الاسمية",
+          "receiveLabel": "تستلم عند الاسترداد",
+          "unusedLabel": "إذا بيع لكنه لم يُسترد أبدًا"
         },
         "own": {
-          "madeLabel": "Passes created each month",
-          "sentLabel": "Share you actually send",
-          "redLabel": "Share redeemed",
-          "faceLabel": "Pass value on the face",
-          "readoutTitle": "Your monthly bill, Tier 1",
-          "allocLabel": "Allocation",
-          "distLabel": "Distribution",
-          "redeemLabel": "Redemption",
-          "totalLabel": "Total, billed to your card"
+          "madeLabel": "بطاقات Pass المُنشأة كل شهر",
+          "sentLabel": "النسبة التي ترسلها فعلًا",
+          "redLabel": "النسبة المستردّة",
+          "faceLabel": "القيمة الاسمية للـ Pass",
+          "readoutTitle": "فاتورتك الشهرية، الفئة 1",
+          "allocLabel": "التخصيص",
+          "distLabel": "التوزيع",
+          "redeemLabel": "الاسترداد",
+          "totalLabel": "الإجمالي، يُفوتَر على بطاقتك"
         }
       },
       "system": {
-        "title": "Whichever way you sell, it runs through one system",
-        "description": "The Coupon Management System is the heart of it. Every Pass you issue, from any of the three routes, is created, tracked, redeemed and reconciled in the same place. You learn one dashboard.",
-        "routeZeroT": "Zero Fee Passes",
-        "routeZeroS": "created by AI Coupon",
-        "routeChargeT": "Charge Passes",
-        "routeChargeS": "sold on the exchange",
-        "routeOwnT": "Own channel",
-        "routeOwnS": "sent to your list",
-        "coreTag": "The heart of it",
-        "coreTitle": "Core: Coupon Management System",
-        "coreDesc": "One inventory per route, one view of all of them. Limits, quotas, outlets and staff live here.",
-        "capRedeemT": "Redeem",
-        "capRedeemS": "Operator App or your POS",
-        "capTrackT": "Track",
-        "capTrackS": "every Pass, live",
-        "capReconcileT": "Reconcile",
-        "capReconcileS": "per Pass, per outlet, per route",
-        "note": "CMS is included with every account. You only pay for it when you use it for your own distribution.",
-        "link": "See the Coupon Management System →"
+        "title": "أيًّا كانت طريقة بيعك، فإنها تمرّ عبر نظام واحد",
+        "description": "نظام إدارة القسائم هو قلب الأمر. كل Pass تُصدره، من أيٍّ من الطرق الثلاث، يُنشأ ويُتتبَّع ويُسترد ويُسوّى في المكان نفسه. تتعلّم لوحة تحكّم واحدة.",
+        "routeZeroT": "بطاقات Passes بدون رسوم",
+        "routeZeroS": "يُنشئها AI Coupon",
+        "routeChargeT": "بطاقات Passes مدفوعة",
+        "routeChargeS": "تُباع على التبادل",
+        "routeOwnT": "القناة الخاصة",
+        "routeOwnS": "تُرسَل إلى قائمتك",
+        "coreTag": "قلب الأمر",
+        "coreTitle": "النواة: نظام إدارة القسائم",
+        "coreDesc": "مخزون واحد لكل مسار، ورؤية واحدة لها جميعًا. الحدود والحصص والمنافذ والموظفون كلها هنا.",
+        "capRedeemT": "الاسترداد",
+        "capRedeemS": "تطبيق المشغِّل أو نقطة بيعك",
+        "capTrackT": "التتبّع",
+        "capTrackS": "كل Pass، مباشرةً",
+        "capReconcileT": "التسوية",
+        "capReconcileS": "لكل Pass، ولكل منفذ، ولكل مسار",
+        "note": "نظام إدارة القسائم مُضمَّن مع كل حساب. لا تدفع مقابله إلا عند استخدامه لتوزيعك الخاص.",
+        "link": "اطّلع على نظام إدارة القسائم →"
       },
       "golive": {
-        "title": "Before you go live",
-        "description": "Two things to set up. Both take a few minutes.",
-        "outletsTitle": "Register your outlets",
-        "outletsDesc": "Add every location where your Passes can be redeemed. A Pass presented at an unregistered outlet will not validate. Enable and disable outlets individually at any time.",
-        "redeemTitle": "Choose how you redeem",
-        "redeemDesc": "Free Operator App on iOS and Android — staff scan or key in the code. Or validate through your existing POS using our API, so nobody learns anything new.",
-        "callout": "Run a test redemption at each outlet before going live. A customer turned away with a valid Pass is the worst outcome for both of us. They paid for the guarantee that it would work."
+        "title": "قبل الإطلاق",
+        "description": "شيئان لإعدادهما. كلاهما يستغرق بضع دقائق.",
+        "outletsTitle": "سجّل منافذك",
+        "outletsDesc": "أضِف كل موقع يمكن فيه استرداد بطاقاتك. الـ Pass المُقدَّم في منفذ غير مسجّل لن يُقبَل. فعّل المنافذ وعطّلها فرديًا في أي وقت.",
+        "redeemTitle": "اختر طريقة الاسترداد",
+        "redeemDesc": "تطبيق المشغِّل المجاني على iOS وAndroid — يمسح الموظفون الرمز أو يُدخِلونه يدويًا. أو تحقّق عبر نقطة بيعك الحالية باستخدام API الخاصة بنا، فلا يتعلّم أحد شيئًا جديدًا.",
+        "callout": "أجرِ عملية استرداد تجريبية في كل منفذ قبل الإطلاق. العميل الذي يُرفَض وبحوزته Pass صالح هو أسوأ نتيجة لكلينا. لقد دفع مقابل ضمان أنه سيعمل."
       },
       "faq": {
-        "title": "Questions merchants ask",
-        "q1": "Can the AI discount more than I can afford?",
-        "a1": "No. It cannot exceed the discount ceiling, the monthly quota or the daily cap you set. Those are enforced by the system, not guidelines.",
-        "q2": "What if I want to stop?",
-        "a2": "Pause from your dashboard and creation stops immediately. Passes already issued stay valid until they expire, because a customer has already paid for the guarantee that they work.",
-        "q3": "Do I need a bank account?",
-        "a3": "Only if you sell Charge Passes, where we pay you. Zero Fee and own channel need no bank details.",
-        "q4": "Can I see what was created?",
-        "a4": "Every Pass, its limits, its status and its redemption history are in your dashboard in real time.",
-        "q5": "What if a Pass will not validate at my counter?",
-        "a5": "Check the outlet is registered and the Pass is inside its validity window. If it still fails, the customer is credited automatically and you are not charged. Nobody argues at the till.",
-        "q6": "How quickly am I paid on Charge Passes?",
-        "a6": "Redemptions settle on a fixed cycle to your registered bank account, with a statement per Pass. The cycle is stated in your agreement."
+        "title": "أسئلة يطرحها التجّار",
+        "q1": "هل يمكن للذكاء الاصطناعي أن يمنح خصمًا أكثر مما أستطيع تحمّله؟",
+        "a1": "لا. لا يمكنه تجاوز سقف الخصم أو الحصة الشهرية أو الحد اليومي الذي تحدّده. هذه يفرضها النظام، وليست إرشادات.",
+        "q2": "ماذا لو أردت التوقّف؟",
+        "a2": "أوقِفه مؤقتًا من لوحة تحكّمك وسيتوقّف الإنشاء فورًا. تبقى بطاقات Pass الصادرة بالفعل صالحة حتى انتهاء صلاحيتها، لأن العميل قد دفع بالفعل مقابل ضمان أنها تعمل.",
+        "q3": "هل أحتاج إلى حساب بنكي؟",
+        "a3": "فقط إذا بعت بطاقات Passes مدفوعة، حيث ندفع لك. لا تتطلّب خدمة بدون رسوم والقناة الخاصة أي بيانات بنكية.",
+        "q4": "هل يمكنني رؤية ما أُنشئ؟",
+        "a4": "كل Pass، وحدوده، وحالته، وسجل استرداده في لوحة تحكّمك في الوقت الفعلي.",
+        "q5": "ماذا لو لم يُقبَل Pass عند صندوقي؟",
+        "a5": "تحقّق من أن المنفذ مسجّل وأن الـ Pass ضمن فترة صلاحيته. وإذا ظل يفشل، يُقيَّد المبلغ للعميل تلقائيًا ولا يُحتسَب عليك شيء. لا أحد يجادل عند الصندوق.",
+        "q6": "ما مدى سرعة دفعي على بطاقات Passes المدفوعة؟",
+        "a6": "تُسوّى عمليات الاسترداد على دورة ثابتة إلى حسابك البنكي المسجّل، مع كشف لكل Pass. الدورة محدّدة في اتفاقيتك."
       },
       "closing": {
-        "title": "List today. Nothing to pay, nothing to build.",
-        "description": "Set your limits in a few minutes and your first Pass can be live this afternoon.",
-        "ctaPricing": "See merchant pricing",
-        "ctaStart": "Start selling free"
+        "title": "أدرِج اليوم. لا شيء لتدفعه، ولا شيء لتبنيه.",
+        "description": "اضبط حدودك في بضع دقائق ويمكن أن يكون أول Pass لك نشطًا بعد ظهر اليوم.",
+        "ctaPricing": "اطّلع على أسعار التجّار",
+        "ctaStart": "ابدأ البيع مجانًا"
       }
     }
   },
@@ -1219,11 +1219,11 @@
       },
       "step2": {
         "title": "التكامل",
-        "description": "استخدم <a href=\"for-developers.html\" class=\"text-primary-orange hover:underline\">Bridge API</a> بتكامل RESTful بسيط وحزم SDK شاملة"
+        "description": "استخدم <a href=\"for-integrators.html\" class=\"text-primary-orange hover:underline\">Bridge API</a> بتكامل RESTful بسيط وحزم SDK شاملة"
       },
       "step3": {
         "title": "التوزيع",
-        "description": "انشر عبر قنواتك مع <a href=\"coupon-wallet.html\" class=\"text-primary-orange hover:underline\">محفظة بعلامتك الخاصة</a> اختيارية"
+        "description": "انشر عبر قنواتك مع <a href=\"vault.html\" class=\"text-primary-orange hover:underline\">محفظة بعلامتك الخاصة</a> اختيارية"
       }
     },
     "types": {
@@ -2172,76 +2172,76 @@
     },
     "v2": {
       "hero": {
-        "badge": "Network in build. Nodes and merchants both wanted.",
-        "title": "Tap points where people already are.",
-        "subtitle": "A physical distribution network for the exchange. Partners host tap points in malls, lobbies and offices; any merchant in the pool flows through them; a customer taps and the Pass lands in their Vault.",
-        "ctaHost": "Host a tap point",
-        "ctaSupply": "Supply the network"
+        "badge": "الشبكة قيد الإنشاء. مطلوب عُقَد وتجّار على حدٍّ سواء.",
+        "title": "نقاط نقر حيث يوجد الناس بالفعل.",
+        "subtitle": "شبكة توزيع فعلية للتبادل. يستضيف الشركاء نقاط نقر في المراكز التجارية والبهوات والمكاتب؛ ويمرّ عبرها أي تاجر في المجمّع؛ ينقر العميل فيصل الـ Pass إلى Vault الخاص به.",
+        "ctaHost": "استضِف نقطة نقر",
+        "ctaSupply": "زوّد الشبكة"
       },
       "passLabels": {
-        "issuerLabel": "Issuer",
-        "termsLabel": "Terms",
-        "codeLabel": "Code"
+        "issuerLabel": "الجهة المُصدِرة",
+        "termsLabel": "الشروط",
+        "codeLabel": "الرمز"
       },
       "heroPass": {
-        "issuer": "Tap point · Level 2 atrium",
-        "value": "20% off",
-        "terms": "Any tenant on this floor. Today only.",
+        "issuer": "نقطة نقر · بهو الطابق 2",
+        "value": "خصم 20%",
+        "terms": "أي مستأجر في هذا الطابق. اليوم فقط.",
         "code": "MZF-NFC-L2-0928",
-        "stamp": "TAPPED"
+        "stamp": "تم النقر"
       },
       "network": {
-        "title": "The network today",
-        "description": "Small and real beats large and unverifiable. These update as nodes go live.",
+        "title": "الشبكة اليوم",
+        "description": "الصغير والحقيقي يتفوّق على الكبير غير القابل للتحقّق. تُحدَّث هذه مع تفعيل العُقَد.",
         "stat1Value": "38",
-        "stat1Label": "Tap points live",
+        "stat1Label": "نقاط نقر نشطة",
         "stat2Value": "6",
-        "stat2Label": "Partner sites",
+        "stat2Label": "مواقع الشركاء",
         "stat3Value": "2",
-        "stat3Label": "Markets",
+        "stat3Label": "أسواق",
         "stat4Value": "Q4",
-        "stat4Label": "Next expansion"
+        "stat4Label": "التوسّع التالي"
       },
       "node": {
-        "title": "Not a merchant product. A network node.",
-        "description": "The old model tied one tag to one merchant. The network ties every tap point to the whole pool, so a merchant leaving changes nothing for the node.",
+        "title": "ليست منتج تاجر. بل عقدة شبكة.",
+        "description": "ربط النموذج القديم علامة واحدة بتاجر واحد. تربط الشبكة كل نقطة نقر بالمجمّع بأكمله، فمغادرة تاجر لا تغيّر شيئًا للعقدة.",
         "old": {
-          "label": "Retired",
-          "title": "The old way",
-          "diagramAlt": "One tag tied to one merchant; when the merchant leaves the tag goes dead",
-          "lead": "One tag, one merchant, one fee.",
-          "text": "When the merchant churned, the tag went dead and the fee stopped. Value never exceeded that merchant's own foot traffic."
+          "label": "متقاعد",
+          "title": "الطريقة القديمة",
+          "diagramAlt": "علامة واحدة مرتبطة بتاجر واحد؛ وعندما يغادر التاجر تتعطّل العلامة",
+          "lead": "علامة واحدة، تاجر واحد، رسم واحد.",
+          "text": "عندما يغادر التاجر، تتعطّل العلامة ويتوقّف الرسم. لم تتجاوز القيمة قط حركة زوّار ذلك التاجر وحده."
         },
         "now": {
-          "label": "Live",
-          "title": "How it works now",
-          "diagramAlt": "A shared supply pool of merchants feeding several tap points; merchants come and go while the nodes stay live",
-          "lead": "Many merchants, many nodes, no merchant fee.",
-          "text": "A partner hosts the tap point. Any merchant in the pool flows through it, routed by AI Coupon. One leaves, another has already joined, and every node stays live. Each new node makes every merchant more valuable — and the reverse."
+          "label": "نشطة",
+          "title": "كيف تعمل الآن",
+          "diagramAlt": "مجمّع توريد مشترك من التجّار يغذّي عدة نقاط نقر؛ يأتي التجّار ويذهبون بينما تبقى العُقَد نشطة",
+          "lead": "تجّار كثيرون، عُقَد كثيرة، بلا رسوم على التاجر.",
+          "text": "يستضيف شريك نقطة النقر. يمرّ عبرها أي تاجر في المجمّع، بتوجيه من AI Coupon. يغادر أحدهم، وقد انضمّ آخر بالفعل، وتبقى كل عقدة نشطة. كل عقدة جديدة تجعل كل تاجر أكثر قيمة — والعكس صحيح."
         }
       },
       "join": {
-        "title": "Two ways to join",
+        "title": "طريقتان للانضمام",
         "host": {
-          "label": "Host",
-          "title": "Malls, property, HR and offices",
-          "desc": "You provide the surface: entrances, directories, lift lobbies, pantries. Mezzofy provides the tags, the inventory and the redemption rails. You share in the revenue on every Pass that moves through your site, and your visitors or staff get a reason to come back.",
-          "callout": "Zero tech burden on you. Revenue share on Passes sold through your nodes."
+          "label": "الاستضافة",
+          "title": "المراكز التجارية والعقارات والموارد البشرية والمكاتب",
+          "desc": "أنت توفّر السطح: المداخل، والأدلّة، وبهوات المصاعد، والمطابخ. توفّر Mezzofy العلامات والمخزون ومسارات الاسترداد. تشارك في الإيرادات على كل Pass يمرّ عبر موقعك، ويحصل زوّارك أو موظفوك على سبب للعودة.",
+          "callout": "بلا أي عبء تقني عليك. حصة من الإيرادات على بطاقات Pass المُباعة عبر عُقَدك."
         },
         "supply": {
-          "label": "Supply",
-          "title": "Merchants near a node",
-          "desc": "List on the exchange and your offers appear at tap points around you automatically. Zero Fee Passes cost you nothing; Charge Passes follow the usual 10%. Off-peak targeting works especially well here — a lunch offer at an office lobby at 11:45.",
-          "callout": "Nothing to install. Set your limits once."
+          "label": "التوريد",
+          "title": "التجّار قرب عقدة",
+          "desc": "أدرِج على التبادل وتظهر عروضك في نقاط النقر من حولك تلقائيًا. بطاقات Passes بدون رسوم لا تكلّفك شيئًا؛ وتتبع بطاقات Passes المدفوعة نسبة 10% المعتادة. يعمل الاستهداف خارج الذروة جيدًا هنا بوجه خاص — عرض غداء في بهو مكتب الساعة 11:45.",
+          "callout": "لا شيء لتثبيته. اضبط حدودك مرة واحدة."
         },
-        "noteLead": "For customers, one growing network of physical places to collect verified offers.",
-        "noteText": "That is what makes a tap point worth hosting, and it is why the network is built with partners rather than sold to them."
+        "noteLead": "للعملاء، شبكة واحدة متنامية من الأماكن الفعلية لجمع العروض الموثّقة.",
+        "noteText": "هذا ما يجعل نقطة النقر جديرة بالاستضافة، وهو سبب بناء الشبكة مع الشركاء بدلًا من بيعها لهم."
       },
       "closing": {
-        "title": "Bring a site. We will bring the merchants.",
-        "description": "Pilot a floor before you commit a building.",
-        "ctaMerchant": "I am a merchant",
-        "ctaHost": "Host a tap point"
+        "title": "أحضِر موقعًا. وسنُحضر التجّار.",
+        "description": "جرّب طابقًا قبل أن تلتزم بمبنى كامل.",
+        "ctaMerchant": "أنا تاجر",
+        "ctaHost": "استضِف نقطة نقر"
       }
     }
   },
@@ -2394,7 +2394,7 @@
       "acp": {
         "title": "ChatGPT — Agentic Commerce Protocol",
         "badge": "LIVE · SEPTEMBER 2025",
-        "description": "يسأل المستخدم 'اعثر لي على عرض لتناول الطعام قرب Bukit Bintang' → يستعلم ChatGPT عن Mezzofy API",
+        "description": "يسأل المستخدم 'اعثر لي على عرض لتناول الطعام قرب Bukit Bintang' → يستعلم ChatGPT عن Mezzofy API → ويعيد قسيمة تاجر مطابقة ليستردها المستهلك.",
         "benefit1": {
           "title": "900 مليون مستخدم أسبوعي",
           "description": "أكبر قاعدة مستخدمين للذكاء الاصطناعي عالميًا، بنية شرائية عالية"
@@ -2404,8 +2404,8 @@
           "description": "يتوافق مع هيكل إيرادات Mezzofy القائم على الأداء"
         },
         "benefit3": {
-          "title": "الدفع الفوري",
-          "description": "أكمل الاسترداد داخل واجهة الدردشة، دون التبديل بين التطبيقات"
+          "title": "واجهة API جاهزة للاسترداد",
+          "description": "تعيد Mezzofy القسائم بتنسيق مصمّم للاسترداد داخل تدفق الدردشة مع طرح الدفع عبر ACP تدريجياً."
         },
         "benefit4": {
           "title": "بلا جهد من التاجر",
@@ -3439,759 +3439,759 @@
   "buyers": {
     "v2": {
       "hero": {
-        "badge": "1,240 merchants across 14 categories",
-        "title": "Inventory your customers can actually use.",
-        "subtitle": "Every Pass is validated before it reaches your app. No dead codes, no duplicate claims, no support tickets from customers turned away at a counter. Source it, distribute it, and swap whatever you do not use.",
-        "ctaTalk": "Talk to us",
-        "ctaApi": "Read the API docs"
+        "badge": "1,240 تاجرًا عبر 14 فئة",
+        "title": "مخزون يستطيع عملاؤك استخدامه فعلًا.",
+        "subtitle": "يُتحقَّق من كل Pass قبل وصوله إلى تطبيقك. لا رموز ميتة، ولا مطالبات مكرّرة، ولا تذاكر دعم من عملاء رُفضوا عند الصندوق. استمدّه، ووزّعه، وبدّل ما لا تستخدمه.",
+        "ctaTalk": "تحدّث إلينا",
+        "ctaApi": "اقرأ وثائق API"
       },
       "pass": {
-        "issuerLabel": "Issuer",
-        "termsLabel": "Terms",
-        "codeLabel": "Code",
+        "issuerLabel": "الجهة المُصدِرة",
+        "termsLabel": "الشروط",
+        "codeLabel": "الرمز",
         "hero": {
-          "issuer": "Drawn from the B2B pool",
+          "issuer": "مستمدّ من مجمّع B2B",
           "value": "2,500",
-          "terms": "Passes reserved. Dining, Singapore.",
-          "code": "Redemption base",
-          "stamp": "RESERVED"
+          "terms": "بطاقات Pass محجوزة. مطاعم، سنغافورة.",
+          "code": "أساس الاسترداد",
+          "stamp": "محجوزة"
         },
         "pool": {
-          "issuer": "Reserved for your programme",
+          "issuer": "محجوز لبرنامجك",
           "value": "5,000",
-          "terms": "Passes, avg $40. Dining, Singapore.",
+          "terms": "بطاقات Pass، بمتوسط $40. مطاعم، سنغافورة.",
           "code": "MZF-POOL-0001",
-          "stamp": "RESERVED"
+          "stamp": "محجوزة"
         }
       },
       "strip": {
-        "title": "Not buying for a company?",
-        "text": "Browse verified deals on the marketplace, tap an NFC point, or ask an AI assistant. Everything you claim lands in your Vault.",
-        "cta": "Browse deals"
+        "title": "لا تشتري لصالح شركة؟",
+        "text": "تصفّح العروض الموثّقة في السوق، أو انقر نقطة NFC، أو اسأل مساعدًا بالذكاء الاصطناعي. كل ما تطالب به يصل إلى Vault الخاص بك.",
+        "cta": "تصفّح العروض"
       },
       "pool": {
-        "title": "What is in the pool today",
-        "description": "Supply you can draw against right now, not a projection.",
+        "title": "ما في المجمّع اليوم",
+        "description": "توريد يمكنك السحب منه الآن، لا توقّعًا.",
         "stat1Value": "1,240",
-        "stat1Label": "Verified merchants",
+        "stat1Label": "تجّار موثّقون",
         "stat2Value": "14",
-        "stat2Label": "Categories",
+        "stat2Label": "فئات",
         "stat3Value": "86,400",
-        "stat3Label": "Redemptions monthly",
+        "stat3Label": "عمليات استرداد شهريًا",
         "stat4Value": "99.9%",
-        "stat4Label": "Validation uptime",
-        "chip1": "Food and beverage",
-        "chip2": "Retail",
-        "chip3": "Hotels",
-        "chip4": "Spa and wellness",
-        "chip5": "Attractions",
-        "chip6": "Grocery",
-        "chip7": "Health and fitness",
-        "chip8": "and 7 more"
+        "stat4Label": "زمن تشغيل التحقق",
+        "chip1": "الأطعمة والمشروبات",
+        "chip2": "التجزئة",
+        "chip3": "الفنادق",
+        "chip4": "المنتجعات والعافية",
+        "chip5": "المعالم السياحية",
+        "chip6": "البقالة",
+        "chip7": "الصحة واللياقة",
+        "chip8": "و7 فئات أخرى"
       },
       "model": {
-        "title": "Model a commitment before you make one",
-        "description": "Two ways to buy. Move the numbers and see what you pay, what you use, and what happens to the rest.",
-        "segBase": "Redemption base",
-        "segFull": "Full purchase",
-        "descBase": "Discounted upfront against the quantity you commit to. Settlement follows actual redemption.",
-        "descFull": "Bought outright at your commitment discount. Unredeemed Passes follow the expiry terms in your agreement.",
-        "qtyLabel": "Passes committed",
-        "faceLabel": "Average face value",
-        "discLabel": "Commitment discount",
-        "rrLabel": "Share you expect to be redeemed",
-        "rowCommitted": "Face value committed",
-        "rowUpfront": "You pay upfront",
-        "rowRedeemed": "Expected to be redeemed",
-        "rowRestBase": "Unredeemed, swappable at full value",
-        "rowRestFull": "Unredeemed value, per your agreement",
-        "poolTitle": "What sits in your pool",
-        "noteBase": "<strong>Undistributed Passes can be swapped.</strong> If a merchant's inventory does not suit your campaign after all, exchange it for another seller's at the same value. Your commitment is to the exchange, not to one merchant.",
-        "noteFull": "<strong>Full purchase settles now.</strong> You own the allocation outright at the commitment discount; unredeemed Passes follow the expiry and rollover terms set in your agreement."
+        "title": "احسب التزامًا قبل أن تلتزم به",
+        "description": "طريقتان للشراء. حرّك الأرقام وشاهد ما تدفعه، وما تستخدمه، وما يحدث للباقي.",
+        "segBase": "أساس الاسترداد",
+        "segFull": "شراء كامل",
+        "descBase": "مخصوم مقدّمًا مقابل الكمية التي تلتزم بها. تتبع التسوية الاسترداد الفعلي.",
+        "descFull": "يُشترى بالكامل بخصم التزامك. تتبع بطاقات Pass غير المستردّة شروط انتهاء الصلاحية في اتفاقيتك.",
+        "qtyLabel": "بطاقات Pass الملتزَم بها",
+        "faceLabel": "متوسط القيمة الاسمية",
+        "discLabel": "خصم الالتزام",
+        "rrLabel": "النسبة التي تتوقّع استردادها",
+        "rowCommitted": "القيمة الاسمية الملتزَم بها",
+        "rowUpfront": "تدفع مقدّمًا",
+        "rowRedeemed": "المتوقّع استرداده",
+        "rowRestBase": "غير مستردّ، قابل للتبديل بكامل القيمة",
+        "rowRestFull": "القيمة غير المستردّة، وفق اتفاقيتك",
+        "poolTitle": "ما يقع في مجمّعك",
+        "noteBase": "<strong>يمكن تبديل بطاقات Pass غير الموزَّعة.</strong> إذا لم يناسب مخزون تاجرٍ حملتك في النهاية، بدّله بمخزون بائع آخر بالقيمة نفسها. التزامك تجاه التبادل، لا تجاه تاجر واحد.",
+        "noteFull": "<strong>الشراء الكامل يُسوّى الآن.</strong> تمتلك المخصّص بالكامل بخصم الالتزام؛ وتتبع بطاقات Pass غير المستردّة شروط انتهاء الصلاحية والترحيل المحدّدة في اتفاقيتك."
       },
       "distribute": {
-        "title": "Two ways to put it in front of your customers",
+        "title": "طريقتان لعرضه أمام عملائك",
         "api": {
-          "title": "Draw by API",
-          "desc": "Pull from your reserved pool into your own app. Your customers never see Mezzofy. Validation happens on our side, redemption happens at the merchant.",
-          "note": "REST and MCP. Sandbox on signup."
+          "title": "السحب عبر API",
+          "desc": "اسحب من مجمّعك المحجوز إلى تطبيقك الخاص. لا يرى عملاؤك Mezzofy أبدًا. يحدث التحقق من جانبنا، ويحدث الاسترداد لدى التاجر.",
+          "note": "REST وMCP. بيئة اختبار عند التسجيل."
         },
         "direct": {
-          "title": "Use Pass and Vault directly",
-          "desc": "Build nothing. Distribute Passes to your customers, who store them in a Vault and present them at the counter. Useful for pilots and short campaigns.",
-          "note": "Live in days rather than sprints."
+          "title": "استخدم Pass وVault مباشرةً",
+          "desc": "لا تبنِ شيئًا. وزّع بطاقات Pass على عملائك، الذين يحفظونها في Vault ويقدّمونها عند الصندوق. مفيد للتجارب التجريبية والحملات القصيرة.",
+          "note": "الإطلاق في أيام لا في دورات تطوير."
         }
       },
       "guarantee": {
-        "title": "Why the guarantee matters to a regulated buyer",
+        "title": "لماذا يهمّ الضمان مشتريًا خاضعًا للتنظيم",
         "single": {
-          "title": "Single use, enforced",
-          "desc": "Every Pass is tokenised and consumed on validation. A duplicate does not work, so promotion abuse does not reach your customers."
+          "title": "استخدام واحد، مفروض",
+          "desc": "كل Pass مرمّز ويُستهلَك عند التحقق. النسخة المكرّرة لا تعمل، فلا تصل إساءة استخدام العروض إلى عملائك."
         },
         "verified": {
-          "title": "Verified at source",
-          "desc": "Merchants are onboarded and verified before their inventory enters the pool. You are not distributing scraped offers."
+          "title": "موثّق من المصدر",
+          "desc": "يُسجَّل التجّار ويُوثَّقون قبل دخول مخزونهم المجمّع. أنت لا توزّع عروضًا مستخرَجة."
         },
         "trail": {
-          "title": "Full redemption trail",
-          "desc": "Every issuance, draw and redemption is recorded and reconcilable, which is what your finance and audit teams will ask for."
+          "title": "سجل استرداد كامل",
+          "desc": "كل إصدار وسحب واسترداد مُسجَّل وقابل للتسوية، وهو ما سيطلبه فريقا المالية والتدقيق لديك."
         },
-        "note": "Security documentation, uptime commitments and data residency options are provided during procurement.",
-        "link": "Request the pack →"
+        "note": "تُقدَّم وثائق الأمان والتزامات زمن التشغيل وخيارات إقامة البيانات أثناء عملية الشراء.",
+        "link": "اطلب الحزمة →"
       },
       "faq": {
-        "title": "Questions buyers ask",
-        "q1": "How long does integration take?",
-        "a1": "Pass and Vault direct needs no build and can be live in days. API integration is typically two to four weeks including certification, with a sandbox from day one.",
-        "q2": "Who handles a customer whose Pass will not validate?",
-        "a2": "Mezzofy does. Every Pass carries a guarantee, and a failed redemption is credited back automatically. Your support team is not in the loop unless you want to be.",
-        "q3": "Can I get inventory nobody else has?",
-        "a3": "Yes. Exclusive allocations and co-branded Passes are available against volume commitments. Ask during scoping.",
-        "q4": "What reporting do I receive?",
-        "a4": "Draw, distribution and redemption per Pass, per merchant and per campaign, reconcilable to settlement. Available in the portal and by API.",
-        "q5": "What happens to full-purchase Passes that expire unused?",
-        "a5": "On redemption base they can be swapped. On full purchase, expiry terms are set in your agreement. Ask about rollover credit before you choose full purchase."
+        "title": "أسئلة يطرحها المشترون",
+        "q1": "كم يستغرق التكامل؟",
+        "a1": "لا يحتاج Pass وVault المباشر إلى أي بناء ويمكن أن يكون نشطًا في أيام. يستغرق تكامل API عادةً من أسبوعين إلى أربعة أسابيع بما في ذلك الاعتماد، مع بيئة اختبار من اليوم الأول.",
+        "q2": "من يتعامل مع عميل لا يُقبَل Pass الخاص به؟",
+        "a2": "Mezzofy تفعل ذلك. يحمل كل Pass ضمانًا، ويُقيَّد الاسترداد الفاشل تلقائيًا. فريق دعمك ليس في الحلقة إلا إذا أردت ذلك.",
+        "q3": "هل يمكنني الحصول على مخزون لا يملكه غيري؟",
+        "a3": "نعم. تتوفّر مخصّصات حصرية وبطاقات Pass بعلامة مشتركة مقابل التزامات بالحجم. اسأل أثناء تحديد النطاق.",
+        "q4": "ما التقارير التي أستلمها؟",
+        "a4": "السحب والتوزيع والاسترداد لكل Pass، ولكل تاجر، ولكل حملة، قابلة للتسوية مع الدفع. متاحة في البوابة وعبر API.",
+        "q5": "ماذا يحدث لبطاقات Pass ذات الشراء الكامل التي تنتهي صلاحيتها دون استخدام؟",
+        "a5": "في أساس الاسترداد يمكن تبديلها. وفي الشراء الكامل، تُحدَّد شروط انتهاء الصلاحية في اتفاقيتك. اسأل عن رصيد الترحيل قبل اختيار الشراء الكامل."
       },
       "closing": {
-        "title": "Bring a programme. We will size it.",
-        "description": "An hour with your numbers and ours. No deck.",
-        "ctaBook": "Book an hour",
-        "ctaTalk": "Talk to us"
+        "title": "أحضِر برنامجًا. وسنحدّد حجمه.",
+        "description": "ساعة مع أرقامك وأرقامنا. بلا عرض تقديمي.",
+        "ctaBook": "احجز ساعة",
+        "ctaTalk": "تحدّث إلينا"
       }
     }
   },
   "integrators": {
     "v2": {
       "hero": {
-        "badge": "Partner programme",
-        "title": "One integration. Every merchant on your platform.",
-        "subtitle": "Your merchants already trust you with their transactions. Give them coupon issuance and redemption without asking them to build, buy or learn anything, and earn a share every time a Pass sells through your platform.",
-        "ctaPartner": "Partner with us",
-        "ctaApi": "Read the API docs"
+        "badge": "برنامج الشركاء",
+        "title": "تكامل واحد. كل تاجر على منصّتك.",
+        "subtitle": "يثق تجّارك بك بالفعل في معاملاتهم. امنحهم إصدار القسائم واستردادها دون أن تطلب منهم بناء أو شراء أو تعلّم أي شيء، واكسب حصة في كل مرة يُباع فيها Pass عبر منصّتك.",
+        "ctaPartner": "كن شريكًا معنا",
+        "ctaApi": "اقرأ وثائق API"
       },
       "pass": {
-        "issuerLabel": "Issuer",
-        "termsLabel": "Terms",
-        "codeLabel": "Code",
+        "issuerLabel": "الجهة المُصدِرة",
+        "termsLabel": "الشروط",
+        "codeLabel": "الرمز",
         "hero": {
-          "issuer": "Your platform",
-          "value": "1 → all",
-          "terms": "Every merchant on your system inherits it.",
+          "issuer": "منصّتك",
+          "value": "1 → الكل",
+          "terms": "كل تاجر على نظامك يرثه.",
           "code": "REST · MCP",
-          "stamp": "CONNECTED"
+          "stamp": "متصل"
         },
         "paid": {
-          "issuer": "Partner settlement",
+          "issuer": "تسوية الشريك",
           "value": "$17,500",
-          "terms": "This month, across 500 active merchants.",
-          "code": "Monthly statement",
-          "stamp": "PAID"
+          "terms": "هذا الشهر، عبر 500 تاجر نشط.",
+          "code": "كشف شهري",
+          "stamp": "مدفوع"
         }
       },
       "reach": {
-        "title": "What one integration reaches",
-        "description": "Connect once, and your merchants sit inside all of it.",
+        "title": "إلى أين يصل تكامل واحد",
+        "description": "اتصل مرة واحدة، ويقع تجّارك داخل ذلك كله.",
         "stat1Value": "1,240",
-        "stat1Label": "Merchants on the exchange",
+        "stat1Label": "تجّار على التبادل",
         "stat2Value": "86,400",
-        "stat2Label": "Redemptions monthly",
+        "stat2Label": "عمليات استرداد شهريًا",
         "stat3Value": "3",
-        "stat3Label": "Live markets",
+        "stat3Label": "أسواق نشِطة",
         "stat4Value": "2",
-        "stat4Label": "Protocols, REST and MCP"
+        "stat4Label": "بروتوكولان، REST وMCP"
       },
       "adds": {
-        "title": "What it adds, depending on what you build",
+        "title": "ما يضيفه، بحسب ما تبنيه",
         "pos": {
-          "title": "POS platforms",
-          "desc": "Redemption happens at the till your merchants already use. No new hardware, no staff retraining, and coupon capability becomes a reason to stay on your system."
+          "title": "منصّات نقاط البيع",
+          "desc": "يحدث الاسترداد عند الصندوق الذي يستخدمه تجّارك بالفعل. بلا أجهزة جديدة، ولا إعادة تدريب للموظفين، وتصبح قدرة القسائم سببًا للبقاء على نظامك."
         },
         "loyalty": {
-          "title": "Loyalty and rewards",
-          "desc": "Members exchange points against live merchant supply instead of a fixed catalogue that never changes. Your redemption rates stop being a function of catalogue fatigue."
+          "title": "الولاء والمكافآت",
+          "desc": "يستبدل الأعضاء النقاط بمخزون تجّار حيّ بدلًا من كتالوج ثابت لا يتغيّر أبدًا. تتوقّف معدّلات استردادك عن كونها دالّة على ملل الكتالوج."
         },
         "payment": {
-          "title": "Payment gateways",
-          "desc": "Attach verified offers to transactions your merchants already process through you. A new line on the same rails."
+          "title": "بوابات الدفع",
+          "desc": "أرفِق عروضًا موثّقة بالمعاملات التي يعالجها تجّارك بالفعل عبرك. سطر جديد على المسارات نفسها."
         }
       },
       "how": {
-        "title": "How the partnership works",
-        "step1Title": "Connect once",
-        "step1Desc": "REST or MCP, against a sandbox you get on signup. Certification before you go live in production.",
-        "step2Title": "Your merchants inherit the capability",
-        "step2Desc": "One agreement covers the merchants on your platform. They do not each sign separately, and they do not each integrate.",
-        "step3Title": "You earn on every Pass sold",
-        "step3Desc": "Revenue share settled at the point of sale rather than at redemption, so your earnings do not depend on whether a customer turns up at the counter.",
-        "note": "<strong>Support stays where the relationship is.</strong> You keep the merchant relationship and the commercial terms with them. Mezzofy handles Pass validation, consumer support and settlement."
+        "title": "كيف تعمل الشراكة",
+        "step1Title": "اتصل مرة واحدة",
+        "step1Desc": "REST أو MCP، مقابل بيئة اختبار تحصل عليها عند التسجيل. اعتماد قبل الإطلاق في بيئة الإنتاج.",
+        "step2Title": "تجّارك يرثون القدرة",
+        "step2Desc": "اتفاقية واحدة تشمل التجّار على منصّتك. لا يوقّعون كلٌّ على حدة، ولا يُجري كلٌّ منهم التكامل بنفسه.",
+        "step3Title": "تكسب على كل Pass يُباع",
+        "step3Desc": "حصة من الإيرادات تُسوّى عند نقطة البيع بدلًا من الاسترداد، فلا تعتمد أرباحك على وصول العميل إلى الصندوق.",
+        "note": "<strong>يبقى الدعم حيث العلاقة.</strong> تحتفظ بعلاقة التاجر والشروط التجارية معه. وتتولّى Mezzofy التحقق من الـ Pass ودعم المستهلك والتسوية."
       },
       "earn": {
-        "title": "What your platform could earn",
-        "description": "Start from your merchant base and see the monthly share. The revenue share itself is set in the partnership agreement — the slider shows the range we work in.",
-        "mLabel": "Merchants on your platform",
-        "actLabel": "Share that activate Passes",
-        "nLabel": "Charge Passes sold per active merchant, monthly",
-        "faceLabel": "Average face value",
-        "shareLabel": "Your share of the Mezzofy fee",
-        "indicative": "indicative",
-        "rowActive": "Active merchants",
-        "rowSold": "Passes sold through you, monthly",
-        "rowFace": "Face value moving through your platform",
-        "rowPool": "Mezzofy fee pool, 10% of face",
-        "rowShare": "Your monthly share",
-        "settledNote": "Settled to you on sale, not on redemption",
-        "zeroFeeNote": "<strong>Zero Fee Passes are not in this number.</strong> They carry no merchant fee, so partner share on them is settled separately from the consumer verification fee. Ask about it in scoping."
+        "title": "ما يمكن أن تكسبه منصّتك",
+        "description": "ابدأ من قاعدة تجّارك وشاهد الحصة الشهرية. تُحدَّد حصة الإيرادات نفسها في اتفاقية الشراكة — ويعرض المنزلق النطاق الذي نعمل ضمنه.",
+        "mLabel": "التجّار على منصّتك",
+        "actLabel": "النسبة التي تفعّل بطاقات Pass",
+        "nLabel": "بطاقات Passes المدفوعة المُباعة لكل تاجر نشط، شهريًا",
+        "faceLabel": "متوسط القيمة الاسمية",
+        "shareLabel": "حصتك من رسوم Mezzofy",
+        "indicative": "تقديري",
+        "rowActive": "التجّار النشِطون",
+        "rowSold": "بطاقات Pass المُباعة عبرك، شهريًا",
+        "rowFace": "القيمة الاسمية المتحرّكة عبر منصّتك",
+        "rowPool": "مجمّع رسوم Mezzofy، 10% من القيمة الاسمية",
+        "rowShare": "حصتك الشهرية",
+        "settledNote": "تُسوّى لك عند البيع، لا عند الاسترداد",
+        "zeroFeeNote": "<strong>بطاقات Passes بدون رسوم ليست ضمن هذا الرقم.</strong> فهي لا تحمل رسمًا على التاجر، لذا تُسوّى حصة الشريك عليها بشكل منفصل عن رسم التحقق من المستهلك. اسأل عنها أثناء تحديد النطاق."
       },
       "get": {
-        "title": "What you get",
+        "title": "ما تحصل عليه",
         "sandbox": {
-          "title": "Sandbox on signup",
-          "desc": "Full test environment with sample merchants and Passes. No commercial commitment to start building."
+          "title": "بيئة اختبار عند التسجيل",
+          "desc": "بيئة اختبار كاملة مع تجّار وبطاقات Pass عيّنة. بلا التزام تجاري لبدء البناء."
         },
         "issuance": {
-          "title": "Issuance and redemption",
-          "desc": "Create, distribute and validate Passes. The same endpoints the marketplace runs on."
+          "title": "الإصدار والاسترداد",
+          "desc": "أنشئ بطاقات Pass ووزّعها وتحقّق منها. نفس نقاط النهاية التي يعمل عليها السوق."
         },
         "settlement": {
-          "title": "Settlement reporting",
-          "desc": "Per-merchant and per-Pass reconciliation, so your finance team can see exactly what earned what."
+          "title": "تقارير التسوية",
+          "desc": "تسوية لكل تاجر ولكل Pass، ليرى فريقك المالي بالضبط ما الذي حقّق ماذا."
         }
       },
       "faq": {
-        "title": "Questions partners ask",
-        "q1": "Who owns the merchant relationship?",
-        "a1": "You do. Your commercial terms with your merchants are yours. Mezzofy handles Pass validation, consumer support and settlement, and never contacts your merchants directly without your say-so.",
-        "q2": "Does each merchant sign with Mezzofy?",
-        "a2": "No. One partnership agreement covers the merchants on your platform. They opt in through your interface and inherit the terms.",
-        "q3": "How long is certification?",
-        "a3": "Typically two to three weeks from a working sandbox integration. We test issuance, redemption, failure handling and settlement reconciliation before production keys are issued.",
-        "q4": "Is the partnership exclusive?",
-        "a4": "Not by default. Exclusivity in a market or category is available against volume commitments and is priced accordingly.",
-        "q5": "What if a merchant on my platform refuses a valid Pass?",
-        "a5": "The customer is credited automatically, and the merchant is flagged. Repeated refusals suspend their listing. We will tell you before it reaches that point."
+        "title": "أسئلة يطرحها الشركاء",
+        "q1": "من يملك علاقة التاجر؟",
+        "a1": "أنت. شروطك التجارية مع تجّارك ملك لك. تتولّى Mezzofy التحقق من الـ Pass ودعم المستهلك والتسوية، ولا تتصل بتجّارك مباشرةً أبدًا دون إذنك.",
+        "q2": "هل يوقّع كل تاجر مع Mezzofy؟",
+        "a2": "لا. اتفاقية شراكة واحدة تشمل التجّار على منصّتك. ينضمّون عبر واجهتك ويرثون الشروط.",
+        "q3": "كم يستغرق الاعتماد؟",
+        "a3": "عادةً من أسبوعين إلى ثلاثة أسابيع من تكامل بيئة اختبار عامل. نختبر الإصدار والاسترداد ومعالجة الأعطال وتسوية الحسابات قبل إصدار مفاتيح الإنتاج.",
+        "q4": "هل الشراكة حصرية؟",
+        "a4": "ليست كذلك افتراضيًا. تتوفّر الحصرية في سوق أو فئة مقابل التزامات بالحجم وتُسعَّر وفقًا لذلك.",
+        "q5": "ماذا لو رفض تاجر على منصّتي Pass صالحًا؟",
+        "a5": "يُقيَّد المبلغ للعميل تلقائيًا، ويُعلَّم التاجر. تؤدّي حالات الرفض المتكرّرة إلى تعليق إدراجه. وسنُخبرك قبل أن يصل الأمر إلى تلك النقطة."
       },
       "closing": {
-        "title": "Start in the sandbox today.",
-        "description": "No commercial commitment to begin building. Terms when you are ready to go live.",
-        "ctaApi": "Read the API docs",
-        "ctaPartner": "Partner with us"
+        "title": "ابدأ في بيئة الاختبار اليوم.",
+        "description": "بلا التزام تجاري لبدء البناء. الشروط عندما تكون مستعدًا للإطلاق.",
+        "ctaApi": "اقرأ وثائق API",
+        "ctaPartner": "كن شريكًا معنا"
       }
     }
   },
   "products": {
     "v2": {
       "hero": {
-        "badge": "Five products, one guarantee",
-        "title": "Everything the exchange runs on.",
-        "subtitle": "Each product does one job. Together they take an offer from creation to the moment it is consumed at a counter, with the same guarantee the whole way."
+        "badge": "خمسة منتجات، ضمان واحد",
+        "title": "كل ما يعمل عليه التبادل.",
+        "subtitle": "كل منتج يؤدّي مهمة واحدة. معًا تأخذ العرض من الإنشاء إلى لحظة استهلاكه عند الصندوق، بالضمان نفسه طوال الطريق."
       },
       "pass": {
-        "label": "The unit",
+        "label": "الوحدة",
         "title": "Pass",
-        "desc": "The tokenised, single-use primitive every offer is issued as. One standard, seven presentations.",
-        "link": "Explore Pass"
+        "desc": "الوحدة الأساسية المرمّزة للاستخدام مرة واحدة التي يُصدَر بها كل عرض. معيار واحد، وسبع طرق عرض.",
+        "link": "استكشف Pass"
       },
       "vault": {
-        "label": "For customers",
+        "label": "للعملاء",
         "title": "Vault",
-        "desc": "Where a customer keeps every Pass they own, and the prepaid balance they spend on verified offers.",
-        "link": "Explore Vault"
+        "desc": "حيث يحفظ العميل كل Pass يملكه، والرصيد المدفوع مسبقًا الذي ينفقه على العروض الموثّقة.",
+        "link": "استكشف Vault"
       },
       "ai": {
-        "label": "The engine",
+        "label": "المحرّك",
         "title": "AI Coupon",
-        "desc": "Creates offers inside limits a merchant sets, and places them across the exchange. Powers Zero Fee.",
-        "link": "Explore AI Coupon"
+        "desc": "يُنشئ عروضًا ضمن حدود يضعها التاجر، ويضعها عبر التبادل. يشغّل خدمة بدون رسوم.",
+        "link": "استكشف AI Coupon"
       },
       "nfc": {
-        "label": "The network",
-        "title": "NFC Coupon",
-        "desc": "Tap points in malls, lobbies and offices, hosted by partners. Any merchant in the pool flows through them.",
-        "link": "Explore NFC Coupon"
+        "label": "الشبكة",
+        "title": "قسيمة NFC",
+        "desc": "نقاط نقر في المراكز التجارية والبهوات والمكاتب، يستضيفها الشركاء. يمرّ عبرها أي تاجر في المجمّع.",
+        "link": "استكشف قسيمة NFC"
       },
       "cms": {
-        "label": "For merchants",
-        "title": "Coupon Management System",
-        "desc": "Issue to your own customers, off the exchange. Metered, private, and the same redemption tools.",
-        "link": "Explore the CMS"
+        "label": "للتجّار",
+        "title": "نظام إدارة القسائم",
+        "desc": "أصدِر لعملائك الخاصين، خارج التبادل. مُقاس بالاستخدام، وخاص، وبأدوات الاسترداد نفسها.",
+        "link": "استكشف نظام إدارة القسائم"
       }
     }
   },
   "pass": {
     "v2": {
       "closing": {
-        "title": "Every offer, issued as a Pass.",
-        "description": "One standard, seven ways to present it — tokenised, single-use, and honoured at the counter. List free on the exchange, or issue to your own customers.",
-        "ctaApi": "Read the API docs",
-        "ctaStart": "List your offers free"
+        "title": "كل عرض، يُصدَر كـ Pass.",
+        "description": "معيار واحد، وسبع طرق لعرضه — مرمّز، للاستخدام مرة واحدة، ومُكرَّم عند الصندوق. أدرِج مجانًا على التبادل، أو أصدِر لعملائك الخاصين.",
+        "ctaApi": "اقرأ وثائق API",
+        "ctaStart": "أدرِج عروضك مجانًا"
       },
       "hero": {
-        "title": "One primitive. Seven presentations.",
-        "subtitle": "A Pass is a tokenised entitlement with a unique code, issued once, held by one person, and consumed on validation. Whether it looks like a coupon, a ticket or a reward, the standard underneath is the same.",
-        "ctaStandard": "Read the standard",
-        "ctaApi": "API reference"
+        "title": "وحدة أساسية واحدة. سبع طرق عرض.",
+        "subtitle": "الـ Pass هو استحقاق مرمّز برمز فريد، يُصدَر مرة واحدة، ويحمله شخص واحد، ويُستهلَك عند التحقق. سواء بدا كقسيمة أو تذكرة أو مكافأة، فالمعيار الكامن تحته هو نفسه.",
+        "ctaStandard": "اقرأ المعيار",
+        "ctaApi": "مرجع API"
       },
       "passLabels": {
-        "issuerLabel": "Issuer",
-        "termsLabel": "Terms",
-        "codeLabel": "Code"
+        "issuerLabel": "الجهة المُصدِرة",
+        "termsLabel": "الشروط",
+        "codeLabel": "الرمز"
       },
       "heroPass": {
-        "issuer": "Any issuer",
+        "issuer": "أي جهة مُصدِرة",
         "value": "Pass",
-        "terms": "Unique. Single-use. Cannot be copied.",
+        "terms": "فريد. للاستخدام مرة واحدة. لا يمكن نسخه.",
         "code": "MZF-XXXX-XXXX",
-        "stamp": "CONSUMED"
+        "stamp": "مُستهلَك"
       },
       "standard": {
-        "title": "The Mezzofy Pass Standard",
-        "description": "Three properties, enforced by the system rather than promised in terms.",
+        "title": "معيار Mezzofy Pass",
+        "description": "ثلاث خصائص، يفرضها النظام بدلًا من الوعد بها في الشروط.",
         "unique": {
-          "title": "Unique",
-          "desc": "Every Pass carries its own serial, minted at issuance and traceable through its whole life. No two are alike, so a duplicate does not exist to be presented."
+          "title": "فريد",
+          "desc": "يحمل كل Pass رقمه التسلسلي الخاص، المسكوك عند الإصدار والقابل للتتبّع طوال حياته. لا يوجد اثنان متطابقان، فلا وجود لنسخة مكرّرة لتُقدَّم."
         },
         "single": {
-          "title": "Single-use",
-          "desc": "Validation consumes the Pass. It cannot be presented twice, screenshotted and reused, or forwarded after redemption. The exception is Card, which draws down instead."
+          "title": "للاستخدام مرة واحدة",
+          "desc": "يستهلك التحقق الـ Pass. لا يمكن تقديمه مرتين، أو التقاط صورته وإعادة استخدامه، أو إعادة توجيهه بعد الاسترداد. الاستثناء هو البطاقة، التي تُخصَم منها بدلًا من ذلك."
         },
         "fraud": {
-          "title": "Fraud-proof",
-          "desc": "A Pass that was not issued by the exchange will not validate. Scraped codes, generated codes and expired offers are rejected at the counter, not discovered afterwards."
+          "title": "مقاوم للاحتيال",
+          "desc": "الـ Pass الذي لم يُصدَر عبر التبادل لن يُقبَل. تُرفَض الرموز المستخرَجة والمولّدة والعروض منتهية الصلاحية عند الصندوق، لا تُكتشَف بعد فوات الأوان."
         }
       },
       "lifecycle": {
-        "title": "Lifecycle",
+        "title": "دورة الحياة",
         "issued": {
-          "t": "Issued",
-          "d": "By merchant, AI Coupon, or a loyalty programme"
+          "t": "صادر",
+          "d": "من تاجر، أو AI Coupon، أو برنامج ولاء"
         },
         "held": {
-          "t": "Held",
-          "d": "In a Vault, bound to one person"
+          "t": "محفوظ",
+          "d": "في Vault، مرتبط بشخص واحد"
         },
         "presented": {
-          "t": "Presented",
-          "d": "At a registered outlet"
+          "t": "مُقدَّم",
+          "d": "في منفذ مسجّل"
         },
         "validated": {
-          "t": "Validated",
-          "d": "Once. Then spent."
+          "t": "مُتحقَّق منه",
+          "d": "مرة واحدة. ثم يُنفَق."
         },
         "settled": {
-          "t": "Settled",
-          "d": "Merchant paid, records reconciled"
+          "t": "مُسوّى",
+          "d": "التاجر مدفوع له، والسجلات مُسوّاة"
         }
       },
       "explorer": {
-        "title": "Seven presentations, and where each can go",
-        "description": "Pick one to see it, how it is spent, whether it transfers, and where it can go. Transferability is a property of the Pass, not an assumption about the type.",
-        "chipsLabel": "Presented as",
-        "rowSpent": "How it is spent",
-        "rowTransfer": "Can it be transferred",
-        "rowCreated": "Created by",
-        "rowWhere": "Where it can go"
+        "title": "سبع طرق عرض، وأين يمكن أن تذهب كل منها",
+        "description": "اختر واحدة لتراها، وكيف تُنفَق، وهل تنتقل، وأين يمكن أن تذهب. قابلية النقل خاصية للـ Pass، لا افتراض عن النوع.",
+        "chipsLabel": "مُقدَّم كـ",
+        "rowSpent": "كيف يُنفَق",
+        "rowTransfer": "هل يمكن نقله",
+        "rowCreated": "أنشأه",
+        "rowWhere": "أين يمكن أن يذهب"
       },
       "types": {
         "coupon": {
-          "name": "Coupon",
-          "blurb": "A discount off the bill. The commonest Pass on the exchange, and the one AI Coupon creates for merchants who list free.",
-          "spent": "Consumed once",
-          "transfer": "No",
-          "created": "Merchant or AI Coupon",
-          "where": "All channels",
+          "name": "قسيمة",
+          "blurb": "خصم على الفاتورة. أكثر أنواع Pass شيوعًا على التبادل، وهو الذي يُنشئه AI Coupon للتجّار الذين يُدرجون مجانًا.",
+          "spent": "يُستهلَك مرة واحدة",
+          "transfer": "لا",
+          "created": "تاجر أو AI Coupon",
+          "where": "جميع القنوات",
           "pass": {
             "issuer": "Kopi Lane, Bugis",
-            "value": "25% off",
-            "terms": "Minimum spend $30. Valid 30 days.",
+            "value": "خصم 25%",
+            "terms": "حد أدنى للإنفاق $30. صالح 30 يومًا.",
             "code": "MZF-7K4Q-8813",
-            "stamp": "CONSUMED"
+            "stamp": "مُستهلَكة"
           }
         },
         "voucher": {
-          "name": "Voucher",
-          "blurb": "A prepaid value voucher sold on the marketplace and to enterprise buyers, paying the merchant on redemption.",
-          "spent": "Consumed once",
-          "transfer": "No",
-          "created": "Merchant (Charge Pass)",
-          "where": "Marketplace, B2B buyers",
+          "name": "سند",
+          "blurb": "سند بقيمة مدفوعة مسبقًا يُباع في السوق وللمشترين المؤسسيين، ويدفع للتاجر عند الاسترداد.",
+          "spent": "يُستهلَك مرة واحدة",
+          "transfer": "لا",
+          "created": "التاجر (Charge Pass)",
+          "where": "السوق، المشترون B2B",
           "pass": {
-            "issuer": "Your business",
-            "value": "$50 voucher",
-            "terms": "Bought for $40. Valid 6 months.",
+            "issuer": "نشاطك التجاري",
+            "value": "سند بقيمة $50",
+            "terms": "اشتُري بـ $40. صالح 6 أشهر.",
             "code": "MZF-9T2M-5540",
-            "stamp": "SOLD"
+            "stamp": "مُباع"
           }
         },
         "deal": {
-          "name": "Deal",
-          "blurb": "A marketplace offer a consumer buys into, redeemed once at the counter.",
-          "spent": "Consumed once",
-          "transfer": "No",
-          "created": "Merchant",
-          "where": "B2C marketplace",
+          "name": "صفقة",
+          "blurb": "عرض في السوق يشتريه المستهلك، يُسترد مرة واحدة عند الصندوق.",
+          "spent": "يُستهلَك مرة واحدة",
+          "transfer": "لا",
+          "created": "التاجر",
+          "where": "سوق B2C",
           "pass": {
             "issuer": "Bistro Nine",
-            "value": "1-for-1 main",
-            "terms": "Dine-in, weekdays. Valid 60 days.",
+            "value": "طبق رئيسي 1 مقابل 1",
+            "terms": "لتناول الطعام في المكان، أيام الأسبوع. صالح 60 يومًا.",
             "code": "MZF-3D5P-1180",
-            "stamp": "CONSUMED"
+            "stamp": "مُستهلَكة"
           }
         },
         "ticket": {
-          "name": "Ticket",
-          "blurb": "An admission or entry Pass. Often transferable, so it can be gifted before it is used.",
-          "spent": "Consumed once",
-          "transfer": "Yes",
-          "created": "Venue or merchant",
-          "where": "Marketplace, own channel",
+          "name": "تذكرة",
+          "blurb": "Pass دخول أو تذكرة دخول. غالبًا قابل للنقل، فيمكن إهداؤه قبل استخدامه.",
+          "spent": "يُستهلَك مرة واحدة",
+          "transfer": "نعم",
+          "created": "المكان أو التاجر",
+          "where": "السوق، القناة الخاصة",
           "pass": {
             "issuer": "Harbour Museum",
-            "value": "Admit one",
-            "terms": "Any open day this season.",
+            "value": "دخول لشخص واحد",
+            "terms": "أي يوم عمل في هذا الموسم.",
             "code": "MZF-8T1C-4402",
-            "stamp": "CONSUMED"
+            "stamp": "مُستهلَكة"
           }
         },
         "reward": {
-          "name": "Reward",
-          "blurb": "A loyalty reward issued to members against points or status, honoured at participating merchants.",
-          "spent": "Consumed once",
-          "transfer": "No",
-          "created": "Loyalty programme",
-          "where": "B2B, own channel",
+          "name": "مكافأة",
+          "blurb": "مكافأة ولاء تُصدَر للأعضاء مقابل النقاط أو المستوى، مُكرَّمة لدى التجّار المشاركين.",
+          "spent": "تُستهلَك مرة واحدة",
+          "transfer": "لا",
+          "created": "برنامج ولاء",
+          "where": "B2B، القناة الخاصة",
           "pass": {
-            "issuer": "Your rewards",
-            "value": "Free coffee",
-            "terms": "Members only. One per member.",
+            "issuer": "مكافآتك",
+            "value": "قهوة مجانية",
+            "terms": "للأعضاء فقط. واحدة لكل عضو.",
             "code": "MZF-2R6H-9310",
-            "stamp": "CONSUMED"
+            "stamp": "مُستهلَكة"
           }
         },
         "card": {
-          "name": "Card",
-          "blurb": "A stored-value card. The exception to single-use — it draws down with each visit until the balance is gone.",
-          "spent": "Draws down per use",
-          "transfer": "Yes",
-          "created": "Merchant",
-          "where": "Marketplace, own channel",
+          "name": "بطاقة",
+          "blurb": "بطاقة مخزّنة القيمة. الاستثناء من الاستخدام مرة واحدة — تُخصَم منها مع كل زيارة حتى ينفد الرصيد.",
+          "spent": "تُخصَم مع كل استخدام",
+          "transfer": "نعم",
+          "created": "التاجر",
+          "where": "السوق، القناة الخاصة",
           "pass": {
-            "issuer": "Your business",
-            "value": "$100 balance",
-            "terms": "Spend across visits until depleted.",
+            "issuer": "نشاطك التجاري",
+            "value": "رصيد $100",
+            "terms": "أنفِق عبر الزيارات حتى النفاد.",
             "code": "MZF-5C0V-7729",
-            "stamp": "ACTIVE"
+            "stamp": "نشِطة"
           }
         },
         "token": {
-          "name": "Token",
-          "blurb": "The raw tokenised entitlement, issued by API with rules set at issuance. The base every other presentation builds on.",
-          "spent": "Consumed once",
-          "transfer": "Configurable",
-          "created": "API issuance",
-          "where": "All channels",
+          "name": "توكن",
+          "blurb": "الاستحقاق المرمّز الخام، يُصدَر عبر API بقواعد تُحدَّد عند الإصدار. الأساس الذي تُبنى عليه كل طرق العرض الأخرى.",
+          "spent": "يُستهلَك مرة واحدة",
+          "transfer": "قابل للتهيئة",
+          "created": "إصدار عبر API",
+          "where": "جميع القنوات",
           "pass": {
-            "issuer": "Any issuer",
-            "value": "Tokenised entitlement",
-            "terms": "Programmatic. Rules set at issuance.",
+            "issuer": "أي جهة مُصدِرة",
+            "value": "استحقاق مرمّز",
+            "terms": "برمجي. القواعد تُحدَّد عند الإصدار.",
             "code": "MZF-1T9K-6650",
-            "stamp": "ISSUED"
+            "stamp": "صادر"
           }
         }
       },
       "dev": {
-        "title": "What a Pass looks like to a developer",
-        "description": "The same object whether it came from the marketplace, an enterprise draw, or a tap point.",
-        "ctaApi": "API reference",
-        "ctaPartner": "Partner with us"
+        "title": "كيف يبدو الـ Pass للمطوّر",
+        "description": "الكائن نفسه سواء جاء من السوق، أو من سحب مؤسسي، أو من نقطة نقر.",
+        "ctaApi": "مرجع API",
+        "ctaPartner": "كن شريكًا معنا"
       }
     }
   },
   "vault": {
     "v2": {
       "closing": {
-        "title": "Everything they own, in one Vault.",
-        "description": "Give your customers one place to hold and present every Pass, alongside the balance they spend on verified offers. Available white-label to enterprise buyers.",
-        "ctaBuyers": "For buyers",
-        "ctaApp": "Get the app"
+        "title": "كل ما يملكونه، في Vault واحد.",
+        "description": "امنح عملاءك مكانًا واحدًا لحفظ وتقديم كل Pass، إلى جانب الرصيد الذي ينفقونه على العروض الموثّقة. متاح بعلامة بيضاء للمشترين المؤسسيين.",
+        "ctaBuyers": "للمشترين",
+        "ctaApp": "احصل على التطبيق"
       },
       "hero": {
-        "title": "Every Pass you own, in one place.",
-        "subtitle": "Vault is where a customer keeps what they have claimed, bought or been given — and the prepaid balance they spend on verified offers. Present from it at any registered outlet.",
-        "ctaApp": "Get the app",
-        "ctaBrowse": "Browse deals"
+        "title": "كل Pass تملكه، في مكان واحد.",
+        "subtitle": "Vault هو حيث يحفظ العميل ما طالب به أو اشتراه أو أُهدي إليه — والرصيد المدفوع مسبقًا الذي ينفقه على العروض الموثّقة. قدّمه منه في أي منفذ مسجّل.",
+        "ctaApp": "احصل على التطبيق",
+        "ctaBrowse": "تصفّح العروض"
       },
       "preview": {
-        "balanceLabel": "Balance",
+        "balanceLabel": "الرصيد",
         "balanceValue": "$37.40",
-        "balanceTag": "closed loop",
-        "item1text": "25% off — Kopi Lane, Bugis · until 10 Oct",
-        "item1state": "READY",
-        "item2text": "$50 voucher — Harbour Grill · until Mar 2027",
-        "item2state": "READY",
-        "item3text": "Night cruise — Sat 26 Sep, seat G12",
-        "item3state": "SAT",
-        "item4text": "Free coffee — Redeemed 4 Sep",
-        "item4state": "USED"
+        "balanceTag": "حلقة مغلقة",
+        "item1text": "خصم 25% — Kopi Lane, Bugis · حتى 10 أكتوبر",
+        "item1state": "جاهزة",
+        "item2text": "سند بقيمة $50 — Harbour Grill · حتى مارس 2027",
+        "item2state": "جاهزة",
+        "item3text": "رحلة بحرية ليلية — السبت 26 سبتمبر، المقعد G12",
+        "item3state": "السبت",
+        "item4text": "قهوة مجانية — استُردت 4 سبتمبر",
+        "item4state": "مُستخدَمة"
       },
       "separate": {
-        "title": "Two things, kept separate on purpose",
-        "description": "Balance goes down. The Vault fills up. Money only ever moves one way — unless a Pass fails to validate, in which case it comes straight back."
+        "title": "شيئان، مفصولان عن قصد",
+        "description": "الرصيد ينخفض. وVault يمتلئ. لا يتحرّك المال إلا في اتجاه واحد — إلا إذا فشل Pass في التحقق، فيعود عندئذ فورًا."
       },
       "balance": {
-        "panelLabel": "Balance (spent down)",
-        "title": "Balance",
+        "panelLabel": "الرصيد (يُنفَق تدريجيًا)",
+        "title": "الرصيد",
         "meterValue": "$37.40",
-        "meterNote": "of a $100 top-up, ≈ 1,200 claims left at 3¢",
-        "rule1": "Spend only on Mezzofy Passes",
-        "rule2": "Not transferable between people",
-        "rule3": "No cash-out",
-        "arrow1": "A few cents per claim",
-        "arrow1sub": "Balance → Vault",
-        "arrow2": "Credited back",
-        "arrow2sub": "if a Pass will not validate"
+        "meterNote": "من شحن بقيمة $100، ≈ 1,200 مطالبة متبقّية بسعر 3¢",
+        "rule1": "يُنفَق فقط على بطاقات Mezzofy Pass",
+        "rule2": "غير قابل للنقل بين الأشخاص",
+        "rule3": "لا سحب نقدي",
+        "arrow1": "بضعة سنتات لكل مطالبة",
+        "arrow1sub": "الرصيد → Vault",
+        "arrow2": "يُعاد قيده",
+        "arrow2sub": "إذا لم يُقبَل Pass"
       },
       "vault": {
-        "panelLabel": "Vault (where things stay)",
+        "panelLabel": "Vault (حيث تبقى الأشياء)",
         "title": "Vault",
-        "item1text": "25% off — Kopi Lane, Bugis · until 10 Oct",
-        "item1state": "READY",
-        "item2text": "$50 voucher — Harbour Grill · until Mar 2027",
-        "item2state": "READY",
-        "item3text": "Night cruise — Sat 26 Sep, seat G12",
-        "item3state": "SAT",
-        "item4text": "$100 card — Sabai Spa · drawn down each visit",
-        "item4state": "$62.50 LEFT",
-        "item5text": "Free coffee — Redeemed 4 Sep",
-        "item5state": "USED",
-        "note": "Every Pass shows its terms, its expiry, and its state. Present from here at the counter; it is validated live and consumed once. Cards draw down instead."
+        "item1text": "خصم 25% — Kopi Lane, Bugis · حتى 10 أكتوبر",
+        "item1state": "جاهزة",
+        "item2text": "سند بقيمة $50 — Harbour Grill · حتى مارس 2027",
+        "item2state": "جاهزة",
+        "item3text": "رحلة بحرية ليلية — السبت 26 سبتمبر، المقعد G12",
+        "item3state": "السبت",
+        "item4text": "بطاقة بقيمة $100 — Sabai Spa · تُخصَم مع كل زيارة",
+        "item4state": "باقٍ $62.50",
+        "item5text": "قهوة مجانية — استُردت 4 سبتمبر",
+        "item5state": "مُستخدَمة",
+        "note": "كل Pass يعرض شروطه، وانتهاء صلاحيته، وحالته. قدّمه من هنا عند الصندوق؛ يُتحقَّق منه مباشرةً ويُستهلَك مرة واحدة. أما البطاقات فتُخصَم منها بدلًا من ذلك."
       },
       "why": {
-        "title": "Why not one wallet?",
-        "text": "A vault is a place things stay. A balance is something you spend down. Keeping them apart keeps the mental model honest for the customer, and keeps the stored-value component clearly identified for the people who regulate it."
+        "title": "لماذا لا محفظة واحدة؟",
+        "text": "الـ Vault مكان تبقى فيه الأشياء. والرصيد شيء تنفقه تدريجيًا. إبقاؤهما منفصلين يُبقي النموذج الذهني صادقًا للعميل، ويُبقي مكوّن القيمة المخزّنة محدّدًا بوضوح لمن ينظّمونه."
       },
       "claim": {
-        "title": "How a claim works",
+        "title": "كيف تعمل المطالبة",
         "find": {
-          "t": "Find",
-          "d": "Marketplace, tap point, or AI assistant"
+          "t": "اعثر",
+          "d": "السوق، أو نقطة نقر، أو مساعد بالذكاء الاصطناعي"
         },
         "claim": {
-          "t": "Claim",
-          "d": "A few cents from balance"
+          "t": "طالِب",
+          "d": "بضعة سنتات من الرصيد"
         },
         "hold": {
-          "t": "Hold",
-          "d": "Lands in the Vault, ready"
+          "t": "احفظ",
+          "d": "يصل إلى Vault، جاهزًا"
         },
         "present": {
-          "t": "Present",
-          "d": "Validated once at the counter"
+          "t": "قدّم",
+          "d": "يُتحقَّق منه مرة واحدة عند الصندوق"
         },
         "credit": {
-          "t": "Or credit back",
-          "d": "If it will not validate, balance is restored"
+          "t": "أو إعادة القيد",
+          "d": "إذا لم يُقبَل، يُستعاد الرصيد"
         },
-        "buyersNote": "Vault is available to enterprise buyers as a white-label component, so their customers hold Passes without ever seeing Mezzofy.",
-        "buyersLink": "For buyers →"
+        "buyersNote": "Vault متاح للمشترين المؤسسيين كمكوّن بعلامة بيضاء، فيحفظ عملاؤهم بطاقات Pass دون أن يروا Mezzofy أبدًا.",
+        "buyersLink": "للمشترين →"
       }
     }
   },
   "aicoupon": {
     "v2": {
       "hero": {
-        "title": "Set the limits. The AI does the rest.",
-        "subtitle": "AI Coupon creates discount offers for a merchant inside boundaries the merchant sets, and places them across the exchange. It is the engine behind Zero Fee Passes and the NFC network, and it never exceeds a limit it was given.",
-        "ctaSetup": "Set it up as a merchant",
-        "ctaSee": "See what it creates"
+        "title": "اضبط الحدود. والذكاء الاصطناعي يتولّى الباقي.",
+        "subtitle": "يُنشئ AI Coupon عروض خصم للتاجر ضمن حدود يضعها التاجر، ويضعها عبر التبادل. إنه المحرّك وراء بطاقات Passes بدون رسوم وشبكة NFC، ولا يتجاوز أبدًا حدًّا أُعطي له.",
+        "ctaSetup": "أعِدّه كتاجر",
+        "ctaSee": "شاهد ما يُنشئه"
       },
       "passLabels": {
-        "issuerLabel": "Issuer",
-        "termsLabel": "Terms",
-        "codeLabel": "Code"
+        "issuerLabel": "الجهة المُصدِرة",
+        "termsLabel": "الشروط",
+        "codeLabel": "الرمز"
       },
       "heroPass": {
-        "issuer": "Created by AI Coupon",
-        "value": "15% off",
-        "terms": "Tue–Thu, 2–5pm. Minimum spend $25.",
+        "issuer": "أنشأها AI Coupon",
+        "value": "خصم 15%",
+        "terms": "الثلاثاء–الخميس، 2–5 مساءً. حد أدنى للإنفاق $25.",
         "code": "MZF-2Q8R-4471",
-        "stamp": "FREE"
+        "stamp": "مجاني"
       },
       "boxPass": {
-        "issuer": "Created by AI Coupon",
-        "value": "15% off",
-        "terms": "Tue 11:40. Min spend $25. Valid 30 days.",
+        "issuer": "أنشأها AI Coupon",
+        "value": "خصم 15%",
+        "terms": "الثلاثاء 11:40. حد أدنى للإنفاق $25. صالح 30 يومًا.",
         "code": "MZF-2Q8R-4471",
-        "stamp": "FREE"
+        "stamp": "مجاني"
       },
       "box": {
-        "title": "The merchant builds the box. The AI works inside it.",
-        "description": "Solid walls are set by the merchant and cannot be crossed. Everything dotted is a choice the AI made inside them, for one real Pass.",
-        "latch": "Running · pause is one tap",
-        "wallTag": "Merchant walls",
-        "wallTop": "Discount 10% – 30% · Valid 30 days · Min spend $25",
-        "wallBottom": "Quota 500 / month · 25 / day · Hours Tue–Thu, 2–5pm · Outlets 3 registered",
-        "pick1lead": "Picked 15%",
-        "pick1sub": "inside 10–30%",
-        "pick2lead": "Placed at NFC lobby",
-        "pick2sub": "not the marketplace",
-        "pick3lead": "Released Tue 11:40",
-        "pick3sub": "one of 25 today",
-        "pick4lead": "Shown to office workers",
-        "pick4sub": "near the outlet",
-        "oneOf": "One of 500 this month. The 501st is not created.",
-        "wallsTitle": "The merchant sets the walls",
-        "wall1": "Maximum discount, by type",
-        "wall2": "Minimum spend to qualify",
-        "wall3": "How long each Pass is valid",
-        "wall4": "Monthly quota and daily cap",
-        "wall5": "Days and hours it can be used",
-        "wall6": "Which outlets accept it",
-        "wall7": "Whether it is running at all",
-        "picksTitle": "The AI picks inside them",
-        "aipick1": "The exact discount on each Pass",
-        "aipick2": "When to release, and how many that day",
-        "aipick3": "Which channel to place it in",
-        "aipick4": "Which customers see it",
-        "aipick5": "How to shift volume toward off-peak hours when allowed",
-        "learnsTitle": "What it learns from.",
-        "learnsText": "Redemption patterns across the exchange, time of day, location, category demand and the merchant's own history. What it never does is set the merchant's boundaries — those are typed in by a person."
+        "title": "التاجر يبني الإطار. والذكاء الاصطناعي يعمل داخله.",
+        "description": "الجدران الصلبة يحدّدها التاجر ولا يمكن تجاوزها. وكل ما هو منقّط اختيار اتخذه الذكاء الاصطناعي داخلها، لـ Pass حقيقي واحد.",
+        "latch": "قيد التشغيل · الإيقاف المؤقت بنقرة واحدة",
+        "wallTag": "جدران التاجر",
+        "wallTop": "خصم 10% – 30% · صالح 30 يومًا · حد أدنى للإنفاق $25",
+        "wallBottom": "الحصة 500 / شهر · 25 / يوم · الساعات الثلاثاء–الخميس، 2–5 مساءً · المنافذ 3 مسجّلة",
+        "pick1lead": "اختار 15%",
+        "pick1sub": "ضمن 10–30%",
+        "pick2lead": "وُضع في بهو NFC",
+        "pick2sub": "لا في السوق",
+        "pick3lead": "طُرح الثلاثاء 11:40",
+        "pick3sub": "واحد من 25 اليوم",
+        "pick4lead": "عُرض على موظفي المكاتب",
+        "pick4sub": "قرب المنفذ",
+        "oneOf": "واحد من 500 هذا الشهر. الـ 501 لا يُنشأ.",
+        "wallsTitle": "التاجر يحدّد الجدران",
+        "wall1": "الحد الأقصى للخصم، حسب النوع",
+        "wall2": "الحد الأدنى للإنفاق للتأهّل",
+        "wall3": "مدة صلاحية كل Pass",
+        "wall4": "الحصة الشهرية والحد اليومي",
+        "wall5": "أيام وساعات استخدامه",
+        "wall6": "أي المنافذ تقبله",
+        "wall7": "ما إذا كان يعمل أصلًا",
+        "picksTitle": "الذكاء الاصطناعي يختار داخلها",
+        "aipick1": "الخصم الدقيق على كل Pass",
+        "aipick2": "متى يُطرح، وكم عددها في ذلك اليوم",
+        "aipick3": "في أي قناة يضعه",
+        "aipick4": "أي العملاء يرونه",
+        "aipick5": "كيف ينقل الحجم نحو ساعات خارج الذروة عند السماح",
+        "learnsTitle": "مما يتعلّم.",
+        "learnsText": "أنماط الاسترداد عبر التبادل، ووقت اليوم، والموقع، والطلب حسب الفئة، وتاريخ التاجر نفسه. أما ما لا يفعله أبدًا فهو تحديد حدود التاجر — تلك يُدخِلها شخص."
       },
       "offers": {
-        "title": "Two offer types to start",
-        "pctLabel": "Percent off",
-        "pctTitle": "10% to 50%",
-        "pctDesc": "Scales with the bill. The merchant sets a range; the AI picks a point inside it for each Pass. Suits variable basket sizes.",
-        "amtLabel": "Amount off",
-        "amtTitle": "$1 to $100",
-        "amtDesc": "Fixed value per Pass. Minimum spend is required, and the system enforces a floor so a discount can never exceed a set share of the bill.",
-        "note": "Product-specific offers arrive with POS integration, where the item data already lives. Tickets are never AI-generated: capacity is real and finite."
+        "title": "نوعان من العروض للبدء",
+        "pctLabel": "نسبة خصم",
+        "pctTitle": "10% إلى 50%",
+        "pctDesc": "يتناسب مع الفاتورة. يحدّد التاجر نطاقًا؛ ويختار الذكاء الاصطناعي نقطة داخله لكل Pass. يناسب أحجام السلّة المتغيّرة.",
+        "amtLabel": "مبلغ خصم",
+        "amtTitle": "$1 إلى $100",
+        "amtDesc": "قيمة ثابتة لكل Pass. الحد الأدنى للإنفاق مطلوب، ويفرض النظام حدًّا أدنى بحيث لا يتجاوز الخصم أبدًا نسبة محدّدة من الفاتورة.",
+        "note": "تصل العروض الخاصة بمنتجات معيّنة مع تكامل نقطة البيع، حيث توجد بيانات الصنف بالفعل. أما التذاكر فلا يولّدها الذكاء الاصطناعي أبدًا: فالسعة حقيقية ومحدودة."
       },
       "guardrails": {
-        "title": "Guardrails, not guidelines",
+        "title": "حواجز حماية، لا إرشادات",
         "ceilings": {
-          "t": "Hard ceilings",
-          "d": "Quota, cap and depth are enforced in the system. The AI has no override."
+          "t": "سقوف صارمة",
+          "d": "الحصة والحد والعمق مفروضة في النظام. لا يملك الذكاء الاصطناعي أي تجاوز."
         },
         "preview": {
-          "t": "Preview mode",
-          "d": "New merchants approve the first campaigns before anything is issued. Automation follows trust."
+          "t": "وضع المعاينة",
+          "d": "يوافق التجّار الجدد على الحملات الأولى قبل إصدار أي شيء. تتبع الأتمتة الثقة."
         },
         "kill": {
-          "t": "Kill switch",
-          "d": "Pause stops creation instantly. Passes already issued stay valid until expiry, because a customer paid for that guarantee."
+          "t": "مفتاح الإيقاف",
+          "d": "الإيقاف المؤقت يوقف الإنشاء فورًا. تبقى بطاقات Pass الصادرة بالفعل صالحة حتى انتهاء صلاحيتها، لأن العميل دفع مقابل ذلك الضمان."
         }
       },
       "closing": {
-        "title": "Free for the merchant, start to finish.",
-        "description": "No creation, distribution or redemption fee. The customer pays a few cents for the guarantee, and that funds the exchange.",
-        "ctaHow": "How merchants use it",
-        "ctaSetup": "Set up AI Coupon"
+        "title": "مجاني للتاجر، من البداية إلى النهاية.",
+        "description": "بلا رسوم إنشاء أو توزيع أو استرداد. يدفع العميل بضعة سنتات مقابل الضمان، وهذا ما يموّل التبادل.",
+        "ctaHow": "كيف يستخدمه التجّار",
+        "ctaSetup": "أعِدّ AI Coupon"
       }
     }
   },
   "cms": {
     "v2": {
       "hero": {
-        "title": "Your customers. Your Passes. Off the exchange.",
-        "subtitle": "CMS is for merchants who already have an audience and want to issue to it directly — email, messaging, their own app. Nothing is listed on the marketplace, no other buyer sees it, and you pay only for what you use.",
-        "ctaStart": "Start with CMS",
-        "ctaCompare": "Compare with listing free"
+        "title": "عملاؤك. بطاقاتك Pass. خارج التبادل.",
+        "subtitle": "نظام إدارة القسائم مخصّص للتجّار الذين لديهم بالفعل جمهور ويريدون الإصدار له مباشرةً — البريد الإلكتروني، والرسائل، وتطبيقهم الخاص. لا شيء يُدرَج في السوق، ولا يراه أي مشترٍ آخر، ولا تدفع إلا مقابل ما تستخدمه.",
+        "ctaStart": "ابدأ بنظام إدارة القسائم",
+        "ctaCompare": "قارِن بالإدراج المجاني"
       },
       "passLabels": {
-        "issuerLabel": "Issuer",
-        "termsLabel": "Terms",
-        "codeLabel": "Code"
+        "issuerLabel": "الجهة المُصدِرة",
+        "termsLabel": "الشروط",
+        "codeLabel": "الرمز"
       },
       "heroPass": {
-        "issuer": "Your business, your list",
-        "value": "$10 off",
-        "terms": "Members only. Valid to end of month.",
+        "issuer": "نشاطك التجاري، قائمتك",
+        "value": "خصم $10",
+        "terms": "للأعضاء فقط. صالح حتى نهاية الشهر.",
         "code": "MZF-6H1D-7702",
-        "stamp": "PRIVATE"
+        "stamp": "خاص"
       },
       "flow": {
-        "title": "Create, send, redeem, reconcile",
+        "title": "الإنشاء، والإرسال، والاسترداد، والتسوية",
         "create": {
-          "t": "Create",
-          "d": "Any Pass type, your artwork, your terms. Templates for the common cases, full control when you need it. Bulk import for lists you already hold."
+          "t": "الإنشاء",
+          "d": "أي نوع من Pass، بتصميمك، وشروطك. قوالب للحالات الشائعة، وتحكّم كامل عند الحاجة. استيراد جماعي للقوائم التي تملكها بالفعل."
         },
         "send": {
-          "t": "Send",
-          "d": "Email, SMS and WhatsApp built in. QR export for print. API for your own app. Messaging costs pass through at cost."
+          "t": "الإرسال",
+          "d": "البريد الإلكتروني، وSMS، وWhatsApp مدمجة. تصدير QR للطباعة. API لتطبيقك الخاص. تُمرَّر تكاليف المراسلة بسعر التكلفة."
         },
         "redeem": {
-          "t": "Redeem",
-          "d": "The same Operator App and POS integration every Pass uses. Registered outlets only. Every validation is live and single-use."
+          "t": "الاسترداد",
+          "d": "نفس تطبيق المشغِّل وتكامل نقطة البيع الذي يستخدمه كل Pass. المنافذ المسجّلة فقط. كل عملية تحقق مباشرة وللاستخدام مرة واحدة."
         },
         "reconcile": {
-          "t": "Reconcile",
-          "d": "Issued, sent, redeemed, expired — per Pass, per campaign, per outlet. Exportable, and billed against the same numbers."
+          "t": "التسوية",
+          "d": "صادر، ومُرسَل، ومُسترد، ومنتهي الصلاحية — لكل Pass، ولكل حملة، ولكل منفذ. قابل للتصدير، ويُفوتَر وفق الأرقام نفسها."
         }
       },
       "meter": {
-        "title": "Metered, and it gets cheaper as you grow",
-        "description": "Three charges, each per Pass. Your tier is set by annual volume and applies automatically.",
-        "thCharge": "Charge",
-        "thRate": "From, per Pass",
-        "allocLabel": "Allocation, per Pass created",
-        "allocRate": "from $0.013",
-        "distLabel": "Distribution, per Pass sent",
-        "distRate": "from $0.013",
-        "redeemLabel": "Redemption, per Pass validated",
-        "redeemRate": "from $0.064",
-        "note": "Billed monthly to a card on file. Allocation and distribution are charged whether or not a Pass is redeemed. Local price points are set per market.",
-        "link": "Work out your monthly bill →"
+        "title": "مُقاس بالاستخدام، ويصبح أرخص كلما نمَا نشاطك",
+        "description": "ثلاثة رسوم، كل منها لكل Pass. تُحدَّد فئتك حسب الحجم السنوي وتُطبَّق تلقائيًا.",
+        "thCharge": "الرسم",
+        "thRate": "ابتداءً من، لكل Pass",
+        "allocLabel": "التخصيص، لكل Pass يُنشأ",
+        "allocRate": "من $0.013",
+        "distLabel": "التوزيع، لكل Pass يُرسَل",
+        "distRate": "من $0.013",
+        "redeemLabel": "الاسترداد، لكل Pass يُتحقَّق منه",
+        "redeemRate": "من $0.064",
+        "note": "يُفوتَر شهريًا على بطاقة مسجّلة. يُحتسَب التخصيص والتوزيع سواء استُرد Pass أم لا. تُحدَّد نقاط الأسعار المحلية لكل سوق.",
+        "link": "احسب فاتورتك الشهرية →"
       },
       "fork": {
-        "title": "When CMS is the right choice, and when it is not",
-        "description": "It comes down to which customers you are trying to reach. The ones you already have go one way. The ones you do not have yet go the other.",
-        "centre": "Your business",
-        "centreSub": "one account, both routes",
+        "title": "متى يكون نظام إدارة القسائم الخيار الصحيح، ومتى لا يكون",
+        "description": "يعود الأمر إلى العملاء الذين تحاول الوصول إليهم. الذين تملكهم بالفعل يذهبون في اتجاه. والذين لا تملكهم بعد يذهبون في الاتجاه الآخر.",
+        "centre": "نشاطك التجاري",
+        "centreSub": "حساب واحد، كلا المسارين",
         "cms": {
-          "routeLabel": "Customers you already have → CMS",
+          "routeLabel": "العملاء الذين تملكهم بالفعل → نظام إدارة القسائم",
           "title": "CMS",
-          "tag": "Private · metered",
-          "step1lead": "Your list",
-          "step1sub": "members, staff, past customers",
-          "step2lead": "You create the Pass",
-          "step2sub": "your artwork, your terms",
-          "step3lead": "You send it",
-          "chip1": "Email",
+          "tag": "خاص · مُقاس بالاستخدام",
+          "step1lead": "قائمتك",
+          "step1sub": "الأعضاء، والموظفون، والعملاء السابقون",
+          "step2lead": "أنت تُنشئ الـ Pass",
+          "step2sub": "تصميمك، وشروطك",
+          "step3lead": "أنت ترسله",
+          "chip1": "البريد الإلكتروني",
           "chip2": "SMS",
           "chip3": "WhatsApp",
           "chip4": "QR",
-          "chip5": "Your app",
-          "use1": "You want to reward a list privately",
-          "use2": "Member or staff programmes should not be public",
-          "use3": "You need full control of artwork, copy and timing",
-          "use4": "You need Passes inside your own app"
+          "chip5": "تطبيقك",
+          "use1": "تريد مكافأة قائمة بشكل خاص",
+          "use2": "برامج الأعضاء أو الموظفين يجب ألّا تكون علنية",
+          "use3": "تحتاج إلى تحكّم كامل في التصميم والنصوص والتوقيت",
+          "use4": "تحتاج إلى بطاقات Pass داخل تطبيقك الخاص"
         },
         "exchange": {
-          "routeLabel": "Customers you do not have yet → The exchange",
-          "title": "The exchange",
-          "tag": "Free to list",
-          "step1lead": "Set your limits",
-          "step1sub": "or your voucher value",
-          "step2lead": "AI Coupon creates and places",
-          "step2sub": "or we list what you made",
-          "step3lead": "Buyers find it",
-          "chip1": "Marketplace",
-          "chip2": "Enterprise apps",
-          "chip3": "Tap points",
-          "chip4": "AI assistants",
-          "use1": "You want new customers, not existing ones",
-          "use2": "You would rather not build campaigns — Zero Fee is automatic",
-          "use3": "You want to sell vouchers to enterprise buyers",
-          "use4": "You are near a tap point and want walk-ins"
+          "routeLabel": "العملاء الذين لا تملكهم بعد → التبادل",
+          "title": "التبادل",
+          "tag": "الإدراج مجاني",
+          "step1lead": "اضبط حدودك",
+          "step1sub": "أو قيمة سندك",
+          "step2lead": "AI Coupon يُنشئ ويضع",
+          "step2sub": "أو نُدرج ما أنشأته",
+          "step3lead": "المشترون يجدونه",
+          "chip1": "السوق",
+          "chip2": "تطبيقات المؤسسات",
+          "chip3": "نقاط نقر",
+          "chip4": "مساعدو الذكاء الاصطناعي",
+          "use1": "تريد عملاء جددًا، لا الحاليين",
+          "use2": "تفضّل عدم بناء حملات — خدمة بدون رسوم تلقائية",
+          "use3": "تريد بيع السندات للمشترين المؤسسيين",
+          "use4": "أنت قرب نقطة نقر وتريد زوّارًا مباشرين"
         },
-        "noteLead": "Most merchants run both.",
-        "noteText": "CMS for the list they have, the exchange for the customers they do not. The two inventories never mix, so a private member offer cannot leak onto the marketplace."
+        "noteLead": "معظم التجّار يشغّلون كليهما.",
+        "noteText": "نظام إدارة القسائم للقائمة التي يملكونها، والتبادل للعملاء الذين لا يملكونهم. لا يختلط المخزونان أبدًا، فلا يمكن أن يتسرّب عرض عضو خاص إلى السوق."
       },
       "closing": {
-        "title": "Start with your first 500 free.",
-        "description": "No card needed until you send your first paid distribution.",
-        "ctaThree": "See all three ways to sell",
-        "ctaStart": "Start with CMS"
+        "title": "ابدأ بأول 500 مجانًا.",
+        "description": "لا حاجة إلى بطاقة حتى ترسل أول توزيع مدفوع لك.",
+        "ctaThree": "اطّلع على طرق البيع الثلاث جميعًا",
+        "ctaStart": "ابدأ بنظام إدارة القسائم"
       }
     }
   }

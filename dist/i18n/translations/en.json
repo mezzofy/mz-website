@@ -240,7 +240,7 @@
       "acp": {
         "badge": "LIVE · SEP 2025",
         "title": "ChatGPT — Agentic Commerce Protocol (ACP)",
-        "description": "User asks for a deal → ChatGPT queries Mezzofy → consumer redeems via Instant Checkout inside chat",
+        "description": "User asks for a deal → ChatGPT queries Mezzofy → returns a matching coupon for the consumer to redeem",
         "stat": "weekly users"
       },
       "ucp": {
@@ -894,7 +894,7 @@
       },
       "step3": {
         "title": "OPTIMIZE",
-        "description": "Track with <a href=\"coupon-playbook.html\" class=\"text-primary-orange hover:underline\">Playbook</a> strategies, analyze with <a href=\"coupon-wallet.html\" class=\"text-primary-orange hover:underline\">Wallet</a> insights"
+        "description": "Track with <a href=\"coupon-playbook.html\" class=\"text-primary-orange hover:underline\">Playbook</a> strategies, analyze with <a href=\"vault.html\" class=\"text-primary-orange hover:underline\">Wallet</a> insights"
       }
     },
     "segments": {
@@ -1219,11 +1219,11 @@
       },
       "step2": {
         "title": "INTEGRATE",
-        "description": "Use <a href=\"for-developers.html\" class=\"text-primary-orange hover:underline\">Bridge API</a> with simple RESTful integration and comprehensive SDKs"
+        "description": "Use <a href=\"for-integrators.html\" class=\"text-primary-orange hover:underline\">Bridge API</a> with simple RESTful integration and comprehensive SDKs"
       },
       "step3": {
         "title": "DISTRIBUTE",
-        "description": "Deploy through your channels with optional <a href=\"coupon-wallet.html\" class=\"text-primary-orange hover:underline\">white-label Wallet</a>"
+        "description": "Deploy through your channels with optional <a href=\"vault.html\" class=\"text-primary-orange hover:underline\">white-label Wallet</a>"
       }
     },
     "types": {
@@ -2515,7 +2515,7 @@
       "acp": {
         "title": "ChatGPT — Agentic Commerce Protocol",
         "badge": "LIVE · SEPTEMBER 2025",
-        "description": "User asks 'find me a dining deal near Bukit Bintang' → ChatGPT queries Mezzofy API",
+        "description": "User asks 'find me a dining deal near Bukit Bintang' → ChatGPT queries the Mezzofy API → returns a matching merchant coupon for the consumer to redeem.",
         "benefit1": {
           "title": "900M Weekly Users",
           "description": "Largest AI user base globally, high purchase intent"
@@ -2525,8 +2525,8 @@
           "description": "Aligns with Mezzofy's performance-based revenue structure"
         },
         "benefit3": {
-          "title": "Instant Checkout",
-          "description": "Complete redemption within the chat interface, no app switching"
+          "title": "Redemption-Ready API",
+          "description": "Mezzofy coupons return in a format designed to redeem within the chat flow as ACP checkout rolls out."
         },
         "benefit4": {
           "title": "Zero Merchant Effort",

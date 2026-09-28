@@ -240,7 +240,7 @@
       "acp": {
         "badge": "已上线 · 2025 年 9 月",
         "title": "ChatGPT — 代理商务协议 (ACP)",
-        "description": "用户寻求优惠 → ChatGPT 查询 Mezzofy → 消费者在聊天中通过即时结账兑换",
+        "description": "用户寻求优惠 → ChatGPT 查询 Mezzofy → 返回相符的优惠券供消费者兑换",
         "stat": "每周用户"
       },
       "ucp": {
@@ -281,195 +281,195 @@
     },
     "v2": {
       "hero": {
-        "badge": "Live in Hong Kong, Singapore and Malaysia",
-        "title": "Every offer is real, and can only be used once.",
-        "subtitle": "Mezzofy issues tokenised Passes that cannot be faked, copied or reused, and connects the merchants who create them to the platforms that put them in front of customers.",
-        "ctaList": "List your offers free",
-        "ctaAccess": "Access inventory"
+        "badge": "已在香港、新加坡和马来西亚上线",
+        "title": "每个优惠都真实有效，且仅可使用一次。",
+        "subtitle": "Mezzofy 发行代币化的 Pass，无法伪造、复制或重复使用，并将创建优惠的商户与将优惠呈现给客户的平台连接起来。",
+        "ctaList": "免费上架您的优惠",
+        "ctaAccess": "获取库存"
       },
       "pass": {
-        "issuerLabel": "Issuer",
-        "termsLabel": "Terms",
-        "codeLabel": "Code",
+        "issuerLabel": "发行方",
+        "termsLabel": "条款",
+        "codeLabel": "编码",
         "sample": {
           "issuer": "Kopi Lane, Bugis",
-          "value": "25% off",
-          "terms": "Weekdays, 2–5pm. Minimum spend $12.",
+          "value": "立减 25%",
+          "terms": "工作日下午 2–5 点。最低消费 $12。",
           "code": "MZF-7K4Q-8813",
-          "stamp": "CONSUMED"
+          "stamp": "已核销"
         },
         "demo": {
-          "issuer": "Mezzofy demo",
-          "value": "20% off",
-          "terms": "Any participating merchant. No minimum spend.",
+          "issuer": "Mezzofy 演示",
+          "value": "立减 20%",
+          "terms": "任何参与商户均可使用。无最低消费。",
           "code": "MZF-DEMO-0000",
-          "stamp": "SAMPLE"
+          "stamp": "示例"
         }
       },
       "exchange": {
-        "title": "The exchange, right now",
-        "description": "Liquidity is what makes a marketplace work. These figures update monthly.",
+        "title": "此刻的交换平台",
+        "description": "流动性是市场运转的关键。以下数据每月更新。",
         "stat1Value": "1,240",
-        "stat1Label": "Active merchants",
+        "stat1Label": "活跃商户",
         "stat2Value": "86,400",
-        "stat2Label": "Passes redeemed monthly",
+        "stat2Label": "每月兑换的 Pass 数",
         "stat3Value": "14",
-        "stat3Label": "Merchant categories",
+        "stat3Label": "商户类别",
         "stat4Value": "3",
-        "stat4Label": "Live markets",
-        "chip1": "Food and beverage",
-        "chip2": "Retail",
-        "chip3": "Hotels",
-        "chip4": "Spa and wellness",
-        "chip5": "Attractions",
-        "chip6": "Grocery",
-        "chip7": "Health and fitness",
-        "chip8": "and 7 more"
+        "stat4Label": "已上线市场",
+        "chip1": "餐饮",
+        "chip2": "零售",
+        "chip3": "酒店",
+        "chip4": "水疗与养生",
+        "chip5": "景点",
+        "chip6": "生鲜杂货",
+        "chip7": "健康与健身",
+        "chip8": "还有 7 项"
       },
       "waysIn": {
-        "title": "Three ways in",
-        "description": "Each side of the exchange has its own page. Start where you fit.",
+        "title": "三种加入方式",
+        "description": "交换平台的每一方都有专属页面。从适合您的地方开始。",
         "merchants": {
-          "label": "Sellers",
-          "title": "Merchants",
-          "description": "List free and reach every buyer on the exchange. Zero Fee Passes are created by our AI and placed for you, or run your own issuance.",
-          "stat": "<strong>86,400</strong> redemptions a month to reach",
-          "link": "For merchants"
+          "label": "卖方",
+          "title": "商户",
+          "description": "免费上架，触达交换平台上的每一位买家。零费 Pass 由我们的 AI 创建并为您投放，您也可以自行发行。",
+          "stat": "<strong>86,400</strong> 每月可触达的兑换量",
+          "link": "商户专区"
         },
         "buyers": {
-          "label": "Buyers",
-          "title": "Buyers",
-          "description": "Banks, telcos and benefits platforms sourcing verified inventory by API — and consumers browsing the marketplace directly.",
-          "stat": "<strong>14 categories</strong> across three markets",
-          "link": "For buyers"
+          "label": "买方",
+          "title": "买家",
+          "description": "银行、电信运营商和福利平台通过 API 采购经过验证的库存 — 消费者也可直接浏览市场。",
+          "stat": "横跨三个市场的 <strong>14 个类别</strong>",
+          "link": "买家专区"
         },
         "integrators": {
-          "label": "Partners",
-          "title": "Integrators",
-          "description": "POS, loyalty and payment platforms. One integration gives every merchant on your system coupon issuance and redemption.",
-          "stat": "Revenue share on <strong>every Pass sold</strong>",
-          "link": "For integrators"
+          "label": "合作伙伴",
+          "title": "集成商",
+          "description": "POS、忠诚度和支付平台。一次集成，即可让您系统中的每一位商户获得优惠券发行与兑换能力。",
+          "stat": "从<strong>每一张售出的 Pass</strong> 中获得收入分成",
+          "link": "集成商专区"
         }
       },
       "guarantee": {
-        "title": "How the guarantee works",
-        "description": "One primitive, however it is presented to the customer.",
+        "title": "保障机制如何运作",
+        "description": "无论以何种形式呈现给客户，底层都是同一个基本单元。",
         "pass": {
-          "title": "Issued as a Pass",
-          "description": "Tokenised at creation with a unique code, traceable through its whole life. One standard, seven ways to present it.",
-          "link": "Explore Passes"
+          "title": "以 Pass 形式发行",
+          "description": "创建时即完成代币化并赋予唯一编码，可追溯其整个生命周期。一套标准，七种呈现方式。",
+          "link": "了解 Pass"
         },
         "vault": {
-          "title": "Held in a Vault",
-          "description": "Every Pass a customer owns sits in one place, ready to present — alongside the balance they spend on verified offers.",
-          "link": "Explore Vault"
+          "title": "存放于 Vault 中",
+          "description": "客户拥有的每一张 Pass 都集中存放于一处，随时可出示 — 还包括他们用于购买经过验证优惠的余额。",
+          "link": "了解 Vault"
         },
         "consumed": {
-          "title": "Consumed once",
-          "description": "Validated at the counter and immediately spent. A copy will not validate, and a Pass that was never issued does not exist."
+          "title": "仅核销一次",
+          "description": "在柜台完成验证并即刻核销。复制的副本无法通过验证，未曾发行的 Pass 根本不存在。"
         },
-        "chip1": "Coupon",
-        "chip2": "Voucher",
-        "chip3": "Deal",
-        "chip4": "Ticket",
-        "chip5": "Reward",
-        "chip6": "Card",
-        "chip7": "Token"
+        "chip1": "优惠券",
+        "chip2": "代金券",
+        "chip3": "特惠",
+        "chip4": "门票",
+        "chip5": "奖励",
+        "chip6": "储值卡",
+        "chip7": "令牌"
       },
       "demo": {
-        "title": "Try one for yourself",
-        "description": "Send yourself a real Pass and see what a customer sees — the code, the terms, and the moment it is consumed. Nothing to install, and we will not add you to anything.",
-        "emailLabel": "Email address",
+        "title": "亲自体验一次",
+        "description": "给自己发送一张真实的 Pass，看看客户所见 — 编码、条款以及核销的那一刻。无需安装任何应用，我们也不会将您加入任何名单。",
+        "emailLabel": "电子邮箱",
         "emailPlaceholder": "you@company.com",
-        "cta": "Send me a Pass",
-        "confirm": "Done — your demo Pass is on its way. Check your inbox.",
-        "note": "One demo Pass per address. Valid for seven days at any participating merchant."
+        "cta": "给我发送一张 Pass",
+        "confirm": "完成 — 您的演示 Pass 正在发送途中。请查收邮箱。",
+        "note": "每个邮箱限领一张演示 Pass。在任何参与商户处有效期为七天。"
       },
       "channels": {
-        "title": "Supply meets demand, through six channels",
-        "description": "One listing reaches every channel it is eligible for. What a merchant pays depends on which channel a Pass goes through, not on a plan.",
+        "title": "供需通过六大渠道对接",
+        "description": "一次上架即可触达其符合条件的每一个渠道。商户支付的费用取决于 Pass 经由哪个渠道，而非套餐。",
         "merchantsNode": {
-          "title": "Merchants",
-          "sub": "List free, honour at the counter"
+          "title": "商户",
+          "sub": "免费上架，在柜台履约"
         },
         "mezzofyNode": {
           "title": "Mezzofy",
-          "sub": "Tokenise, validate, settle"
+          "sub": "代币化、验证、结算"
         },
         "gridNode": {
-          "title": "Six channels"
+          "title": "六大渠道"
         },
-        "thChannel": "Channel",
-        "thReaches": "Reaches",
-        "thPays": "Who pays",
+        "thChannel": "渠道",
+        "thReaches": "触达对象",
+        "thPays": "由谁付费",
         "own": {
-          "name": "Own",
-          "reaches": "Your own list, off the exchange",
-          "pays": "Merchant pays usage"
+          "name": "自有",
+          "reaches": "您自己的名单，独立于交换平台",
+          "pays": "商户按使用量付费"
         },
         "b2c": {
           "name": "B2C",
-          "reaches": "Consumers on the marketplace",
-          "pays": "Consumer pays"
+          "reaches": "市场上的消费者",
+          "pays": "消费者付费"
         },
         "b2b": {
           "name": "B2B",
-          "reaches": "Banks, telcos, HR platforms by API",
-          "pays": "Buyer pays"
+          "reaches": "通过 API 接入的银行、电信运营商、人力资源平台",
+          "pays": "买家付费"
         },
         "ai": {
-          "name": "AI Commerce",
-          "reaches": "AI shopping assistants, Mezzofy checkout",
-          "pays": "Consumer pays"
+          "name": "AI 商务",
+          "reaches": "AI 购物助手、Mezzofy 结账",
+          "pays": "消费者付费"
         },
         "nfc": {
-          "name": "NFC Network",
-          "reaches": "Tap points in malls and offices",
-          "pays": "Free to merchants"
+          "name": "NFC 网络",
+          "reaches": "商场和办公楼中的触碰点",
+          "pays": "对商户免费"
         },
         "partners": {
-          "name": "Partners",
-          "reaches": "Partner-run private surfaces",
-          "pays": "Next phase"
+          "name": "合作伙伴",
+          "reaches": "合作伙伴运营的私有渠道",
+          "pays": "下一阶段"
         },
-        "zeroFee": "Zero Fee Passes are free to the merchant on every channel they reach.",
-        "integratorNote": "Integrators feed the supply side. POS, loyalty and payment platforms bring their merchants in through one integration, and earn on every Pass sold.",
-        "integratorLink": "For integrators",
-        "pricingNote": "Mezzofy never takes title. Listing is free and there is no subscription. What you pay depends on the type of Pass and where it goes.",
-        "pricingLink": "See pricing"
+        "zeroFee": "零费 Pass 在其触达的每个渠道上都对商户免费。",
+        "integratorNote": "集成商为供给侧输送资源。POS、忠诚度和支付平台通过一次集成引入其商户，并从每一张售出的 Pass 中获得收益。",
+        "integratorLink": "集成商专区",
+        "pricingNote": "Mezzofy 从不持有所有权。上架免费，也无订阅费。您支付的费用取决于 Pass 的类型及其去向。",
+        "pricingLink": "查看定价"
       },
       "takeFurther": {
-        "title": "Take it further",
-        "description": "Read how other operators built liquidity, or put an hour in the diary and we will walk through your case.",
+        "title": "更进一步",
+        "description": "了解其他运营方如何建立流动性，或安排一小时的时间，我们将一起梳理您的具体情况。",
         "playbook": {
-          "title": "The coupon exchange playbook",
-          "description": "Forty pages on building a coupon programme that people actually redeem — written from what we see across the exchange, not from a template.",
-          "ch1": "Why most coupon programmes fail at the counter",
-          "ch2": "Setting discount limits that protect your margin",
-          "ch3": "Choosing between free listing and selling value",
-          "ch4": "Redemption operations for multi-outlet businesses",
-          "ch5": "What enterprise buyers look for in inventory",
-          "emailLabel": "Email address",
+          "title": "优惠券交换实战手册",
+          "description": "四十页内容，讲述如何打造一个客户真正会去兑换的优惠券方案 — 源自我们在整个交换平台上的观察，而非套用模板。",
+          "ch1": "为何大多数优惠券方案在柜台环节功亏一篑",
+          "ch2": "设定保护利润的折扣上限",
+          "ch3": "在免费上架与销售价值之间做出选择",
+          "ch4": "多门店企业的兑换运营",
+          "ch5": "企业采购方在库存中看重什么",
+          "emailLabel": "电子邮箱",
           "emailPlaceholder": "you@company.com",
-          "cta": "Send me the PDF",
-          "confirm": "Thanks — the playbook PDF is on its way to your inbox."
+          "cta": "给我发送 PDF",
+          "confirm": "谢谢 — 实战手册 PDF 正在发送至您的邮箱。"
         },
         "booking": {
-          "title": "Book an hour with us",
-          "description": "A working session rather than a pitch. Bring your numbers and we will show you what the exchange would do with them.",
-          "dateLabel": "Choose a date",
-          "slotLabel": "Pick a slot",
+          "title": "预约与我们的一小时",
+          "description": "这是一次务实的工作会谈，而非推销。带上您的数据，我们将展示交换平台能为其带来什么。",
+          "dateLabel": "选择日期",
+          "slotLabel": "选择时段",
           "slot1": "9:00–10:00",
           "slot2": "10:00–11:00",
           "slot3": "11:00–12:00",
           "slot4": "2:00–3:00",
           "slot5": "3:00–4:00",
           "slot6": "4:00–5:00",
-          "slotsNote": "Monday to Friday. One-hour blocks.",
-          "emailLabel": "Email address",
+          "slotsNote": "周一至周五。每节一小时。",
+          "emailLabel": "电子邮箱",
           "emailPlaceholder": "you@company.com",
-          "cta": "Book the slot",
-          "confirm": "Booked — we will send a calendar invite to your email."
+          "cta": "预约该时段",
+          "confirm": "预约成功 — 我们将向您的邮箱发送日历邀请。"
         }
       }
     }
@@ -900,7 +900,7 @@
       },
       "step3": {
         "title": "优化",
-        "description": "使用<a href=\"coupon-playbook.html\" class=\"text-primary-orange hover:underline\">指南</a>策略追踪，通过<a href=\"coupon-wallet.html\" class=\"text-primary-orange hover:underline\">钱包</a>洞察分析"
+        "description": "使用<a href=\"coupon-playbook.html\" class=\"text-primary-orange hover:underline\">指南</a>策略追踪，通过<a href=\"vault.html\" class=\"text-primary-orange hover:underline\">钱包</a>洞察分析"
       }
     },
     "segments": {
@@ -980,225 +980,225 @@
     "definition": "Mezzofy 是一个数字优惠券交换平台，帮助商户在 15 个以上的亚太市场中创建、分发优惠券并从中获利。通过 Mezzofy 交换协议，商户可消除优惠券负债，通过 NFC、市场与数字渠道触达新客户，并在每次成功兑换时创造收益——且无需任何前期费用。",
     "v2": {
       "hero": {
-        "badge": "Free to list, no subscription",
-        "title": "Customers who were never coming in anyway.",
-        "subtitle": "Put your offers where 86,400 monthly redemptions already happen. You decide how far you will go on price. We handle everything between creating the offer and the moment someone hands it over at your counter.",
-        "ctaStart": "Start selling free",
-        "ctaPricing": "See merchant pricing"
+        "badge": "免费上架，无需订阅",
+        "title": "那些本来就不会上门的客户。",
+        "subtitle": "将您的优惠投放到每月已发生 86,400 次兑换的地方。在价格上您愿意让多少，由您决定。从创建优惠到有人在您柜台出示的那一刻，中间的一切都由我们处理。",
+        "ctaStart": "免费开始销售",
+        "ctaPricing": "查看商户定价"
       },
       "pass": {
-        "issuerLabel": "Issuer",
-        "termsLabel": "Terms",
-        "codeLabel": "Code",
+        "issuerLabel": "发行方",
+        "termsLabel": "条款",
+        "codeLabel": "编码",
         "hero": {
-          "issuer": "Your business",
-          "value": "$5 off",
-          "terms": "Minimum spend $30. Valid 30 days.",
-          "code": "Created by AI Coupon",
-          "stamp": "FREE"
+          "issuer": "您的商户",
+          "value": "立减 $5",
+          "terms": "最低消费 $30。有效期 30 天。",
+          "code": "由 AI Coupon 创建",
+          "stamp": "免费"
         },
         "zero": {
-          "issuer": "Your business",
-          "value": "20% off",
-          "terms": "No minimum spend. Valid 30 days.",
-          "stamp": "FREE"
+          "issuer": "您的商户",
+          "value": "立减 20%",
+          "terms": "无最低消费。有效期 30 天。",
+          "stamp": "免费"
         },
         "charge": {
-          "issuer": "Your business",
-          "value": "$50 voucher",
-          "terms": "Bought for $40. Valid 6 months.",
-          "stamp": "SOLD"
+          "issuer": "您的商户",
+          "value": "$50 代金券",
+          "terms": "以 $40 购得。有效期 6 个月。",
+          "stamp": "已售出"
         },
         "own": {
-          "issuer": "Your business, your list",
-          "value": "$20 off",
-          "terms": "Sent to your customers. Not listed on the exchange.",
-          "stamp": "PRIVATE"
+          "issuer": "您的商户，您的名单",
+          "value": "立减 $20",
+          "terms": "发送给您的客户。不在交换平台上架。",
+          "stamp": "私有"
         }
       },
       "reach": {
-        "title": "Who your offers reach",
-        "description": "This is the demand you are listing into. It is the only number that matters before you decide how to price.",
+        "title": "您的优惠触达谁",
+        "description": "这就是您上架所面向的需求。在您决定如何定价之前，这是唯一重要的数字。",
         "stat1Value": "86,400",
-        "stat1Label": "Redemptions monthly",
+        "stat1Label": "每月兑换量",
         "stat2Value": "4",
-        "stat2Label": "Channels, one listing",
+        "stat2Label": "渠道，一次上架",
         "stat3Value": "3",
-        "stat3Label": "Live markets",
+        "stat3Label": "已上线市场",
         "stat4Value": "$0",
-        "stat4Label": "To list",
-        "chip1": "B2C marketplace",
-        "chip2": "Enterprise buyer apps",
-        "chip3": "NFC tap points",
-        "chip4": "AI shopping assistants"
+        "stat4Label": "上架费用",
+        "chip1": "B2C 市场",
+        "chip2": "企业采购方应用",
+        "chip3": "NFC 触碰点",
+        "chip4": "AI 购物助手"
       },
       "ways": {
-        "title": "Three ways to sell, priced by what the offer is for",
-        "description": "Pick one, or run all three side by side. Each keeps its own inventory. Choose one to see how it works and what it would produce.",
+        "title": "三种销售方式，按优惠的用途定价",
+        "description": "选择其一，或三者并行。每种方式各自保有独立库存。选择一种，看看它如何运作以及会产生什么效果。",
         "zero": {
-          "label": "Easiest start",
-          "title": "Zero Fee Passes, created by AI",
-          "description": "You set the limits. Our AI creates discount offers inside them and places them across the exchange. You honour them at the counter.",
-          "row1k": "You pay",
-          "row1v": "Nothing",
-          "row2k": "You collect",
-          "row2v": "Nothing",
-          "row3k": "Bank account",
-          "row3v": "Not needed"
+          "label": "最简单的起步方式",
+          "title": "零费 Pass，由 AI 创建",
+          "description": "您设定上限。我们的 AI 在上限内创建折扣优惠并投放到整个交换平台。您在柜台履约即可。",
+          "row1k": "您支付",
+          "row1v": "无",
+          "row2k": "您收取",
+          "row2v": "无",
+          "row3k": "银行账户",
+          "row3v": "无需"
         },
         "charge": {
-          "label": "Sell value",
-          "title": "Charge Passes",
-          "description": "You set the voucher value and the discount. We sell it on the marketplace and to enterprise buyers, and pay you when it is redeemed.",
-          "row1k": "Mezzofy fee",
+          "label": "销售价值",
+          "title": "收费 Pass",
+          "description": "您设定代金券面值和折扣。我们在市场上以及向企业采购方销售，并在兑换时向您付款。",
+          "row1k": "Mezzofy 费用",
           "row1v": "10%",
-          "row2k": "You receive",
-          "row2v": "90% on redemption",
-          "row3k": "If it expires unused",
-          "row3v": "Split 50/50"
+          "row2k": "您收到",
+          "row2v": "兑换时收取 90%",
+          "row3k": "若到期未使用",
+          "row3v": "五五分成"
         },
         "own": {
-          "label": "Your own list",
-          "title": "Own channel",
-          "description": "Issue to customers you already have — email, messaging, your own app. Nothing goes on the exchange.",
-          "row1k": "Allocation",
-          "row1v": "from $0.013",
-          "row2k": "Distribution",
-          "row2v": "from $0.013",
-          "row3k": "Redemption",
-          "row3v": "from $0.064"
+          "label": "您自己的名单",
+          "title": "自有渠道",
+          "description": "向您已有的客户发行 — 电子邮件、消息、您自己的应用。任何内容都不会进入交换平台。",
+          "row1k": "分配",
+          "row1v": "$0.013 起",
+          "row2k": "分发",
+          "row2v": "$0.013 起",
+          "row3k": "兑换",
+          "row3v": "$0.064 起"
         }
       },
       "limits": {
-        "title": "Set your limits once. The network does the rest.",
-        "description": "Most platforms ask you to build a campaign and pay to run it. Zero Fee works the other way around.",
-        "tabZero": "Zero Fee Passes",
-        "tabCharge": "Charge Passes",
-        "tabOwn": "Own channel",
+        "title": "只需设定一次上限。其余交给网络。",
+        "description": "大多数平台要求您搭建活动并付费投放。零费的运作方式恰恰相反。",
+        "tabZero": "零费 Pass",
+        "tabCharge": "收费 Pass",
+        "tabOwn": "自有渠道",
         "zero": {
-          "step1Title": "You set the box",
-          "step1Desc": "Discount range, minimum spend, monthly quota, daily cap, and whether offers are limited to off-peak hours. These are hard ceilings the AI cannot pass.",
-          "step2Title": "AI Coupon creates the offers",
-          "step2Desc": "It chooses the depth, the timing and the volume inside your limits, and issues each one as a tokenised Pass.",
-          "step3Title": "The network delivers them",
-          "step3Desc": "Marketplace, NFC tap points in malls and offices, enterprise buyer apps, and AI shopping assistants. Nothing for you to build.",
-          "step4Title": "You redeem at the counter",
-          "step4Desc": "Your staff validate in the Operator App, or through your POS if you have integrated. The Pass is spent and cannot be used again.",
-          "note": "<strong>What you give up is margin on that sale. Nothing else.</strong> No creation fee, no distribution fee, no redemption fee, no bank details. The customer pays a small fee for the guarantee that the offer is real, and that is what funds the exchange."
+          "step1Title": "您设定边界",
+          "step1Desc": "折扣范围、最低消费、每月配额、每日上限，以及优惠是否仅限非高峰时段。这些都是 AI 无法突破的硬性上限。",
+          "step2Title": "AI Coupon 创建优惠",
+          "step2Desc": "它在您的上限内选择折扣力度、时机和数量，并将每一个优惠都以代币化 Pass 的形式发行。",
+          "step3Title": "网络负责投放",
+          "step3Desc": "市场、商场和办公楼中的 NFC 触碰点、企业采购方应用以及 AI 购物助手。您无需搭建任何东西。",
+          "step4Title": "您在柜台兑换",
+          "step4Desc": "您的员工在操作员 App 中验证，或者若您已集成，则通过 POS 验证。Pass 一经核销便无法再次使用。",
+          "note": "<strong>您让出的只是那笔交易的利润。仅此而已。</strong>没有创建费、分发费、兑换费，也无需银行信息。客户为优惠真实有效这一保障支付一笔小额费用，这正是交换平台的资金来源。"
         },
         "charge": {
-          "step1Title": "You set the value and the discount",
-          "step1Desc": "Choose the face value of the voucher, how much the customer saves, how long it stays valid, and how many you will release each month.",
-          "step2Title": "We list and sell it",
-          "step2Desc": "Your voucher goes to the B2C marketplace and into the B2B pool where banks, telcos and benefits platforms draw from it. We handle payment and support.",
-          "step3Title": "The customer pays and receives the Pass",
-          "step3Desc": "It lands in their Vault, tokenised and single-use. Mezzofy keeps 10%, which covers card processing, the platform and any partner who distributed it.",
-          "step4Title": "You redeem, and we pay you",
-          "step4Desc": "You receive 90% of face value once the Pass is redeemed. If it is sold but expires unused, the remaining value is split evenly between you and Mezzofy.",
-          "note": "<strong>You are paid on redemption, not on sale.</strong> Money reaches you when the customer actually walks in. A bank account and full verification are required, because Mezzofy is paying you."
+          "step1Title": "您设定面值和折扣",
+          "step1Desc": "选择代金券的面值、客户可节省多少、有效期多长，以及每月发放多少张。",
+          "step2Title": "我们上架并销售",
+          "step2Desc": "您的代金券将进入 B2C 市场以及 B2B 资源池，供银行、电信运营商和福利平台从中提取。付款和支持由我们处理。",
+          "step3Title": "客户付款并领取 Pass",
+          "step3Desc": "它会存入客户的 Vault，经代币化且仅可使用一次。Mezzofy 收取 10%，用于覆盖银行卡处理、平台以及任何参与分发的合作伙伴。",
+          "step4Title": "您兑换，我们付款给您",
+          "step4Desc": "Pass 一经兑换，您即可收到面值的 90%。若已售出但到期未使用，剩余价值由您与 Mezzofy 平均分配。",
+          "note": "<strong>您在兑换时收款，而非在售出时。</strong>只有当客户真正到店，资金才会到达您手中。由于是 Mezzofy 向您付款，因此需要银行账户和完整的身份验证。"
         },
         "own": {
-          "step1Title": "You create the Pass",
-          "step1Desc": "Build it yourself in the portal — value, terms, artwork, validity. Allocation is charged per Pass created, whether or not you send it.",
-          "step2Title": "You choose who gets it",
-          "step2Desc": "Upload your own list or pick a segment. Nothing is listed on the exchange and no other buyer can see it.",
-          "step3Title": "You send it",
-          "step3Desc": "Email, SMS, WhatsApp, QR export or your own app through the API. Distribution is charged per Pass sent. Messaging fees are passed through at cost.",
-          "step4Title": "You redeem at the counter",
-          "step4Desc": "Same Operator App and POS integration as every other Pass. Redemption is charged per Pass validated, and billed monthly to your card.",
-          "note": "<strong>This is the one place you pay Mezzofy directly.</strong> Own channel is metered software for your own distribution, so allocation and distribution are charged whether or not anything is redeemed. Rates fall as your annual volume rises."
+          "step1Title": "您创建 Pass",
+          "step1Desc": "在门户中自行创建 — 面值、条款、图样、有效期。无论您是否发送，分配费均按创建的每张 Pass 计费。",
+          "step2Title": "您选择发放对象",
+          "step2Desc": "上传您自己的名单或选择一个客群。任何内容都不会在交换平台上架，其他买家也看不到。",
+          "step3Title": "您发送出去",
+          "step3Desc": "电子邮件、短信、WhatsApp、QR 导出，或通过 API 接入您自己的应用。分发费按发送的每张 Pass 计费。消息费用按成本转嫁。",
+          "step4Title": "您在柜台兑换",
+          "step4Desc": "与其他所有 Pass 使用相同的操作员 App 和 POS 集成。兑换费按验证的每张 Pass 计费，并按月记入您的银行卡账单。",
+          "note": "<strong>这是您唯一直接向 Mezzofy 付费的环节。</strong>自有渠道是面向您自身分发的计量式软件，因此无论是否有任何兑换，分配费和分发费都会照常收取。费率会随着您年度用量的增长而下降。"
         }
       },
       "calc": {
-        "title": "Set the box, and see what comes out",
-        "description": "These are the limits from step one. Move them and watch what AI Coupon would be allowed to create for your business.",
+        "title": "设定边界，看看会产生什么",
+        "description": "这些是第一步中设定的上限。移动它们，看看 AI Coupon 被允许为您的商户创建什么。",
         "zero": {
-          "segPct": "Percent off",
-          "segAmt": "Amount off",
-          "loLabel": "Lowest discount",
-          "hiLabel": "Highest discount",
-          "minLabel": "Minimum spend to qualify",
-          "expLabel": "Valid for",
-          "quotaLabel": "Monthly quota",
-          "capLabel": "Daily cap",
-          "offpeakLabel": "Off-peak only, Monday to Thursday 2–5pm",
-          "offerLabel": "One of the offers your limits would allow",
-          "showAnother": "Show another the AI could create"
+          "segPct": "百分比折扣",
+          "segAmt": "定额减免",
+          "loLabel": "最低折扣",
+          "hiLabel": "最高折扣",
+          "minLabel": "达标所需最低消费",
+          "expLabel": "有效期",
+          "quotaLabel": "每月配额",
+          "capLabel": "每日上限",
+          "offpeakLabel": "仅限非高峰时段，周一至周四下午 2–5 点",
+          "offerLabel": "您的上限所允许的其中一个优惠",
+          "showAnother": "再看一个 AI 可创建的优惠"
         },
         "charge": {
-          "faceLabel": "Voucher face value",
-          "discLabel": "Customer saves",
-          "expLabel": "Valid for",
-          "qtyLabel": "Released each month",
-          "enterpriseLabel": "Offer to enterprise buyers as well as the marketplace",
-          "readoutTitle": "On one voucher",
-          "paysLabel": "Customer pays",
-          "feeLabel": "Mezzofy fee, 10% of face",
-          "receiveLabel": "You receive on redemption",
-          "unusedLabel": "If sold but never redeemed"
+          "faceLabel": "代金券面值",
+          "discLabel": "客户节省",
+          "expLabel": "有效期",
+          "qtyLabel": "每月发放数量",
+          "enterpriseLabel": "在面向市场的同时也向企业采购方提供",
+          "readoutTitle": "以一张代金券计",
+          "paysLabel": "客户支付",
+          "feeLabel": "Mezzofy 费用，面值的 10%",
+          "receiveLabel": "您在兑换时收到",
+          "unusedLabel": "若已售出但从未兑换"
         },
         "own": {
-          "madeLabel": "Passes created each month",
-          "sentLabel": "Share you actually send",
-          "redLabel": "Share redeemed",
-          "faceLabel": "Pass value on the face",
-          "readoutTitle": "Your monthly bill, Tier 1",
-          "allocLabel": "Allocation",
-          "distLabel": "Distribution",
-          "redeemLabel": "Redemption",
-          "totalLabel": "Total, billed to your card"
+          "madeLabel": "每月创建的 Pass 数",
+          "sentLabel": "实际发送的比例",
+          "redLabel": "被兑换的比例",
+          "faceLabel": "Pass 的面值",
+          "readoutTitle": "您的月度账单，第 1 级",
+          "allocLabel": "分配",
+          "distLabel": "分发",
+          "redeemLabel": "兑换",
+          "totalLabel": "合计，记入您的银行卡"
         }
       },
       "system": {
-        "title": "Whichever way you sell, it runs through one system",
-        "description": "The Coupon Management System is the heart of it. Every Pass you issue, from any of the three routes, is created, tracked, redeemed and reconciled in the same place. You learn one dashboard.",
-        "routeZeroT": "Zero Fee Passes",
-        "routeZeroS": "created by AI Coupon",
-        "routeChargeT": "Charge Passes",
-        "routeChargeS": "sold on the exchange",
-        "routeOwnT": "Own channel",
-        "routeOwnS": "sent to your list",
-        "coreTag": "The heart of it",
-        "coreTitle": "Core: Coupon Management System",
-        "coreDesc": "One inventory per route, one view of all of them. Limits, quotas, outlets and staff live here.",
-        "capRedeemT": "Redeem",
-        "capRedeemS": "Operator App or your POS",
-        "capTrackT": "Track",
-        "capTrackS": "every Pass, live",
-        "capReconcileT": "Reconcile",
-        "capReconcileS": "per Pass, per outlet, per route",
-        "note": "CMS is included with every account. You only pay for it when you use it for your own distribution.",
-        "link": "See the Coupon Management System →"
+        "title": "无论您以哪种方式销售，都在同一套系统中运行",
+        "description": "优惠券管理系统是其核心。您发行的每一张 Pass，无论来自三种方式中的哪一种，都在同一处完成创建、跟踪、兑换和对账。您只需学习一个仪表盘。",
+        "routeZeroT": "零费 Pass",
+        "routeZeroS": "由 AI Coupon 创建",
+        "routeChargeT": "收费 Pass",
+        "routeChargeS": "在交换平台上销售",
+        "routeOwnT": "自有渠道",
+        "routeOwnS": "发送给您的名单",
+        "coreTag": "核心所在",
+        "coreTitle": "核心：优惠券管理系统",
+        "coreDesc": "每种方式各有一份库存，全部一览无余。上限、配额、门店和员工都在这里管理。",
+        "capRedeemT": "兑换",
+        "capRedeemS": "操作员 App 或您的 POS",
+        "capTrackT": "跟踪",
+        "capTrackS": "实时跟踪每一张 Pass",
+        "capReconcileT": "对账",
+        "capReconcileS": "按 Pass、按门店、按方式对账",
+        "note": "每个账户都包含 CMS。只有当您将其用于自身分发时才会收费。",
+        "link": "了解优惠券管理系统 →"
       },
       "golive": {
-        "title": "Before you go live",
-        "description": "Two things to set up. Both take a few minutes.",
-        "outletsTitle": "Register your outlets",
-        "outletsDesc": "Add every location where your Passes can be redeemed. A Pass presented at an unregistered outlet will not validate. Enable and disable outlets individually at any time.",
-        "redeemTitle": "Choose how you redeem",
-        "redeemDesc": "Free Operator App on iOS and Android — staff scan or key in the code. Or validate through your existing POS using our API, so nobody learns anything new.",
-        "callout": "Run a test redemption at each outlet before going live. A customer turned away with a valid Pass is the worst outcome for both of us. They paid for the guarantee that it would work."
+        "title": "上线之前",
+        "description": "两件事需要设置。两者都只需几分钟。",
+        "outletsTitle": "注册您的门店",
+        "outletsDesc": "添加每一个可兑换您 Pass 的地点。在未注册门店出示的 Pass 将无法通过验证。您可随时单独启用或停用门店。",
+        "redeemTitle": "选择您的兑换方式",
+        "redeemDesc": "免费的操作员 App 支持 iOS 和 Android — 员工扫描或手动输入编码。或者通过我们的 API 用您现有的 POS 验证，无需任何人学习新东西。",
+        "callout": "上线前请在每个门店进行一次测试兑换。持有效 Pass 的客户被拒之门外，对我们双方而言都是最糟糕的结果。他们已为其能够生效的保障付了费。"
       },
       "faq": {
-        "title": "Questions merchants ask",
-        "q1": "Can the AI discount more than I can afford?",
-        "a1": "No. It cannot exceed the discount ceiling, the monthly quota or the daily cap you set. Those are enforced by the system, not guidelines.",
-        "q2": "What if I want to stop?",
-        "a2": "Pause from your dashboard and creation stops immediately. Passes already issued stay valid until they expire, because a customer has already paid for the guarantee that they work.",
-        "q3": "Do I need a bank account?",
-        "a3": "Only if you sell Charge Passes, where we pay you. Zero Fee and own channel need no bank details.",
-        "q4": "Can I see what was created?",
-        "a4": "Every Pass, its limits, its status and its redemption history are in your dashboard in real time.",
-        "q5": "What if a Pass will not validate at my counter?",
-        "a5": "Check the outlet is registered and the Pass is inside its validity window. If it still fails, the customer is credited automatically and you are not charged. Nobody argues at the till.",
-        "q6": "How quickly am I paid on Charge Passes?",
-        "a6": "Redemptions settle on a fixed cycle to your registered bank account, with a statement per Pass. The cycle is stated in your agreement."
+        "title": "商户常见问题",
+        "q1": "AI 的折扣会超出我能承受的范围吗？",
+        "a1": "不会。它无法超出您设定的折扣上限、每月配额或每日上限。这些由系统强制执行，并非指导性建议。",
+        "q2": "如果我想停止怎么办？",
+        "a2": "从仪表盘暂停，创建即刻停止。已发行的 Pass 在到期前依然有效，因为客户已为其能够生效的保障付了费。",
+        "q3": "我需要银行账户吗？",
+        "a3": "仅当您销售收费 Pass（由我们向您付款）时才需要。零费和自有渠道无需任何银行信息。",
+        "q4": "我能看到创建了哪些内容吗？",
+        "a4": "每一张 Pass、它的上限、状态及兑换记录都会实时呈现在您的仪表盘中。",
+        "q5": "如果一张 Pass 在我的柜台无法通过验证怎么办？",
+        "a5": "请检查门店是否已注册，以及 Pass 是否在有效期内。若仍然失败，系统会自动为客户退款，且不向您计费。收银台前无需任何争执。",
+        "q6": "收费 Pass 的款项多快能到账？",
+        "a6": "兑换款项按固定周期结算至您注册的银行账户，并附有每张 Pass 的明细。周期在您的协议中列明。"
       },
       "closing": {
-        "title": "List today. Nothing to pay, nothing to build.",
-        "description": "Set your limits in a few minutes and your first Pass can be live this afternoon.",
-        "ctaPricing": "See merchant pricing",
-        "ctaStart": "Start selling free"
+        "title": "今天就上架。无需付费，无需搭建。",
+        "description": "只需几分钟设定上限，您的第一张 Pass 今天下午就能上线。",
+        "ctaPricing": "查看商户定价",
+        "ctaStart": "免费开始销售"
       }
     }
   },
@@ -1225,11 +1225,11 @@
       },
       "step2": {
         "title": "整合",
-        "description": "使用<a href=\"for-developers.html\" class=\"text-primary-orange hover:underline\">桥接 API</a>，通过简单的 RESTful 整合和全面的 SDK"
+        "description": "使用<a href=\"for-integrators.html\" class=\"text-primary-orange hover:underline\">桥接 API</a>，通过简单的 RESTful 整合和全面的 SDK"
       },
       "step3": {
         "title": "分发",
-        "description": "通过您的渠道部署，可选择使用<a href=\"coupon-wallet.html\" class=\"text-primary-orange hover:underline\">白标钱包</a>"
+        "description": "通过您的渠道部署，可选择使用<a href=\"vault.html\" class=\"text-primary-orange hover:underline\">白标钱包</a>"
       }
     },
     "types": {
@@ -2179,76 +2179,76 @@
     },
     "v2": {
       "hero": {
-        "badge": "Network in build. Nodes and merchants both wanted.",
-        "title": "Tap points where people already are.",
-        "subtitle": "A physical distribution network for the exchange. Partners host tap points in malls, lobbies and offices; any merchant in the pool flows through them; a customer taps and the Pass lands in their Vault.",
-        "ctaHost": "Host a tap point",
-        "ctaSupply": "Supply the network"
+        "badge": "网络建设中。节点与商户皆在招募。",
+        "title": "在人们已经聚集的地方设置触碰点。",
+        "subtitle": "面向交换平台的实体分发网络。合作伙伴在商场、大堂和办公楼中托管触碰点；资源池中的任何商户都可经由它们流转；客户轻轻一碰，Pass 便存入其 Vault。",
+        "ctaHost": "托管一个触碰点",
+        "ctaSupply": "为网络供货"
       },
       "passLabels": {
-        "issuerLabel": "Issuer",
-        "termsLabel": "Terms",
-        "codeLabel": "Code"
+        "issuerLabel": "发行方",
+        "termsLabel": "条款",
+        "codeLabel": "编码"
       },
       "heroPass": {
-        "issuer": "Tap point · Level 2 atrium",
-        "value": "20% off",
-        "terms": "Any tenant on this floor. Today only.",
+        "issuer": "触碰点 · 二楼中庭",
+        "value": "立减 20%",
+        "terms": "本楼层任一租户。仅限今日。",
         "code": "MZF-NFC-L2-0928",
-        "stamp": "TAPPED"
+        "stamp": "已触碰"
       },
       "network": {
-        "title": "The network today",
-        "description": "Small and real beats large and unverifiable. These update as nodes go live.",
+        "title": "当下的网络",
+        "description": "小而真实胜过大而无法验证。以下数据随节点上线而更新。",
         "stat1Value": "38",
-        "stat1Label": "Tap points live",
+        "stat1Label": "已上线触碰点",
         "stat2Value": "6",
-        "stat2Label": "Partner sites",
+        "stat2Label": "合作伙伴场地",
         "stat3Value": "2",
-        "stat3Label": "Markets",
+        "stat3Label": "市场",
         "stat4Value": "Q4",
-        "stat4Label": "Next expansion"
+        "stat4Label": "下一次扩张"
       },
       "node": {
-        "title": "Not a merchant product. A network node.",
-        "description": "The old model tied one tag to one merchant. The network ties every tap point to the whole pool, so a merchant leaving changes nothing for the node.",
+        "title": "这不是一款商户产品，而是一个网络节点。",
+        "description": "旧模式将一个标签绑定到一个商户。而网络将每个触碰点与整个资源池相连，因此某个商户的离开对节点毫无影响。",
         "old": {
-          "label": "Retired",
-          "title": "The old way",
-          "diagramAlt": "One tag tied to one merchant; when the merchant leaves the tag goes dead",
-          "lead": "One tag, one merchant, one fee.",
-          "text": "When the merchant churned, the tag went dead and the fee stopped. Value never exceeded that merchant's own foot traffic."
+          "label": "已淘汰",
+          "title": "旧的方式",
+          "diagramAlt": "一个标签绑定一个商户；商户离开后标签便失效",
+          "lead": "一个标签，一个商户，一笔费用。",
+          "text": "当商户流失时，标签便失效，费用也随之停止。其价值从未超出该商户自身的客流量。"
         },
         "now": {
-          "label": "Live",
-          "title": "How it works now",
-          "diagramAlt": "A shared supply pool of merchants feeding several tap points; merchants come and go while the nodes stay live",
-          "lead": "Many merchants, many nodes, no merchant fee.",
-          "text": "A partner hosts the tap point. Any merchant in the pool flows through it, routed by AI Coupon. One leaves, another has already joined, and every node stays live. Each new node makes every merchant more valuable — and the reverse."
+          "label": "已上线",
+          "title": "现在的运作方式",
+          "diagramAlt": "由众多商户组成的共享供给池为多个触碰点供货；商户来去自如，而节点始终在线",
+          "lead": "众多商户，众多节点，无商户费用。",
+          "text": "由合作伙伴托管触碰点。资源池中的任何商户都可经由它流转，由 AI Coupon 进行调度。一个离开，另一个早已加入，每个节点始终在线。每新增一个节点都会让每一位商户更具价值 — 反之亦然。"
         }
       },
       "join": {
-        "title": "Two ways to join",
+        "title": "两种加入方式",
         "host": {
-          "label": "Host",
-          "title": "Malls, property, HR and offices",
-          "desc": "You provide the surface: entrances, directories, lift lobbies, pantries. Mezzofy provides the tags, the inventory and the redemption rails. You share in the revenue on every Pass that moves through your site, and your visitors or staff get a reason to come back.",
-          "callout": "Zero tech burden on you. Revenue share on Passes sold through your nodes."
+          "label": "托管方",
+          "title": "商场、物业、人力资源与办公场所",
+          "desc": "您提供场地：入口、指示牌、电梯厅、茶水间。Mezzofy 提供标签、库存和兑换通道。经由您场地流转的每一张 Pass，您都能分享收入，而您的访客或员工也有了再次到访的理由。",
+          "callout": "对您零技术负担。经您节点售出的 Pass 均可分享收入。"
         },
         "supply": {
-          "label": "Supply",
-          "title": "Merchants near a node",
-          "desc": "List on the exchange and your offers appear at tap points around you automatically. Zero Fee Passes cost you nothing; Charge Passes follow the usual 10%. Off-peak targeting works especially well here — a lunch offer at an office lobby at 11:45.",
-          "callout": "Nothing to install. Set your limits once."
+          "label": "供货方",
+          "title": "节点附近的商户",
+          "desc": "在交换平台上架，您的优惠便会自动出现在您周边的触碰点。零费 Pass 对您分文不取；收费 Pass 照常收取 10%。非高峰定向在这里尤其有效 — 上午 11:45 在办公楼大堂推送一份午餐优惠。",
+          "callout": "无需安装。只需设定一次上限。"
         },
-        "noteLead": "For customers, one growing network of physical places to collect verified offers.",
-        "noteText": "That is what makes a tap point worth hosting, and it is why the network is built with partners rather than sold to them."
+        "noteLead": "对客户而言，这是一个不断壮大的实体网络，可在各处领取经过验证的优惠。",
+        "noteText": "这正是触碰点值得托管的原因，也是这个网络与合作伙伴共建、而非向其兜售的原因。"
       },
       "closing": {
-        "title": "Bring a site. We will bring the merchants.",
-        "description": "Pilot a floor before you commit a building.",
-        "ctaMerchant": "I am a merchant",
-        "ctaHost": "Host a tap point"
+        "title": "带来一处场地。我们来带来商户。",
+        "description": "在投入整栋楼之前，先试点一个楼层。",
+        "ctaMerchant": "我是商户",
+        "ctaHost": "托管一个触碰点"
       }
     }
   },
@@ -2401,7 +2401,7 @@
       "acp": {
         "title": "ChatGPT — 代理商电商协议",
         "badge": "已上线 · 2025 年 9 月",
-        "description": "用户询问「在吉隆坡附近找餐饮优惠」→ ChatGPT 查询 Mezzofy API",
+        "description": "用户询问「在吉隆坡附近找餐饮优惠」→ ChatGPT 查询 Mezzofy API → 返回相符的商户优惠券供消费者兑换。",
         "benefit1": {
           "title": "每周 9 亿用户",
           "description": "全球最大 AI 用户群，购买意向高"
@@ -2411,8 +2411,8 @@
           "description": "与 Mezzofy 的绩效收益结构一致"
         },
         "benefit3": {
-          "title": "即时结账",
-          "description": "在聊天界面内完成兑换，无需切换应用程序"
+          "title": "兑换就绪的 API",
+          "description": "Mezzofy 优惠券以专为聊天流程兑换而设计的格式返回，随 ACP 结账逐步推进。"
         },
         "benefit4": {
           "title": "商家零负担",
@@ -3446,759 +3446,759 @@
   "buyers": {
     "v2": {
       "hero": {
-        "badge": "1,240 merchants across 14 categories",
-        "title": "Inventory your customers can actually use.",
-        "subtitle": "Every Pass is validated before it reaches your app. No dead codes, no duplicate claims, no support tickets from customers turned away at a counter. Source it, distribute it, and swap whatever you do not use.",
-        "ctaTalk": "Talk to us",
-        "ctaApi": "Read the API docs"
+        "badge": "横跨 14 个类别的 1,240 家商户",
+        "title": "您的客户真正用得上的库存。",
+        "subtitle": "每一张 Pass 在进入您的应用之前都已通过验证。没有失效编码，没有重复领取，也不会因客户在柜台被拒而产生工单。采购它、分发它，用不完的都可以换掉。",
+        "ctaTalk": "联系我们",
+        "ctaApi": "查看 API 文档"
       },
       "pass": {
-        "issuerLabel": "Issuer",
-        "termsLabel": "Terms",
-        "codeLabel": "Code",
+        "issuerLabel": "发行方",
+        "termsLabel": "条款",
+        "codeLabel": "编码",
         "hero": {
-          "issuer": "Drawn from the B2B pool",
+          "issuer": "取自 B2B 资源池",
           "value": "2,500",
-          "terms": "Passes reserved. Dining, Singapore.",
-          "code": "Redemption base",
-          "stamp": "RESERVED"
+          "terms": "已预留的 Pass。餐饮，新加坡。",
+          "code": "兑换基准",
+          "stamp": "已预留"
         },
         "pool": {
-          "issuer": "Reserved for your programme",
+          "issuer": "为您的方案预留",
           "value": "5,000",
-          "terms": "Passes, avg $40. Dining, Singapore.",
+          "terms": "Pass，均价 $40。餐饮，新加坡。",
           "code": "MZF-POOL-0001",
-          "stamp": "RESERVED"
+          "stamp": "已预留"
         }
       },
       "strip": {
-        "title": "Not buying for a company?",
-        "text": "Browse verified deals on the marketplace, tap an NFC point, or ask an AI assistant. Everything you claim lands in your Vault.",
-        "cta": "Browse deals"
+        "title": "不是为公司采购？",
+        "text": "在市场上浏览经过验证的优惠、轻触 NFC 触碰点，或询问 AI 助手。您领取的一切都会存入您的 Vault。",
+        "cta": "浏览优惠"
       },
       "pool": {
-        "title": "What is in the pool today",
-        "description": "Supply you can draw against right now, not a projection.",
+        "title": "资源池中当下有什么",
+        "description": "您现在就能提取的供给，而非预测。",
         "stat1Value": "1,240",
-        "stat1Label": "Verified merchants",
+        "stat1Label": "已验证商户",
         "stat2Value": "14",
-        "stat2Label": "Categories",
+        "stat2Label": "类别",
         "stat3Value": "86,400",
-        "stat3Label": "Redemptions monthly",
+        "stat3Label": "每月兑换量",
         "stat4Value": "99.9%",
-        "stat4Label": "Validation uptime",
-        "chip1": "Food and beverage",
-        "chip2": "Retail",
-        "chip3": "Hotels",
-        "chip4": "Spa and wellness",
-        "chip5": "Attractions",
-        "chip6": "Grocery",
-        "chip7": "Health and fitness",
-        "chip8": "and 7 more"
+        "stat4Label": "验证正常运行时间",
+        "chip1": "餐饮",
+        "chip2": "零售",
+        "chip3": "酒店",
+        "chip4": "水疗与养生",
+        "chip5": "景点",
+        "chip6": "生鲜杂货",
+        "chip7": "健康与健身",
+        "chip8": "还有 7 项"
       },
       "model": {
-        "title": "Model a commitment before you make one",
-        "description": "Two ways to buy. Move the numbers and see what you pay, what you use, and what happens to the rest.",
-        "segBase": "Redemption base",
-        "segFull": "Full purchase",
-        "descBase": "Discounted upfront against the quantity you commit to. Settlement follows actual redemption.",
-        "descFull": "Bought outright at your commitment discount. Unredeemed Passes follow the expiry terms in your agreement.",
-        "qtyLabel": "Passes committed",
-        "faceLabel": "Average face value",
-        "discLabel": "Commitment discount",
-        "rrLabel": "Share you expect to be redeemed",
-        "rowCommitted": "Face value committed",
-        "rowUpfront": "You pay upfront",
-        "rowRedeemed": "Expected to be redeemed",
-        "rowRestBase": "Unredeemed, swappable at full value",
-        "rowRestFull": "Unredeemed value, per your agreement",
-        "poolTitle": "What sits in your pool",
-        "noteBase": "<strong>Undistributed Passes can be swapped.</strong> If a merchant's inventory does not suit your campaign after all, exchange it for another seller's at the same value. Your commitment is to the exchange, not to one merchant.",
-        "noteFull": "<strong>Full purchase settles now.</strong> You own the allocation outright at the commitment discount; unredeemed Passes follow the expiry and rollover terms set in your agreement."
+        "title": "在做出承诺之前先做测算",
+        "description": "两种采购方式。移动数字，看看您支付多少、使用多少，以及剩余部分会如何处理。",
+        "segBase": "兑换基准",
+        "segFull": "全额购买",
+        "descBase": "按您承诺的数量预先折扣付款。结算随实际兑换情况进行。",
+        "descFull": "按您的承诺折扣一次性买断。未兑换的 Pass 按您协议中的到期条款处理。",
+        "qtyLabel": "承诺的 Pass 数量",
+        "faceLabel": "平均面值",
+        "discLabel": "承诺折扣",
+        "rrLabel": "您预期被兑换的比例",
+        "rowCommitted": "承诺的面值总额",
+        "rowUpfront": "您预先支付",
+        "rowRedeemed": "预期被兑换",
+        "rowRestBase": "未兑换部分，可按全额价值调换",
+        "rowRestFull": "未兑换价值，按您的协议处理",
+        "poolTitle": "您资源池中的内容",
+        "noteBase": "<strong>尚未分发的 Pass 可以调换。</strong>如果某商户的库存最终不适合您的活动，可按同等价值换成另一家卖方的库存。您承诺的对象是交换平台，而非某一家商户。",
+        "noteFull": "<strong>全额购买即时结算。</strong>您按承诺折扣一次性买断整批配额；未兑换的 Pass 按您协议中设定的到期和结转条款处理。"
       },
       "distribute": {
-        "title": "Two ways to put it in front of your customers",
+        "title": "两种方式将其呈现给您的客户",
         "api": {
-          "title": "Draw by API",
-          "desc": "Pull from your reserved pool into your own app. Your customers never see Mezzofy. Validation happens on our side, redemption happens at the merchant.",
-          "note": "REST and MCP. Sandbox on signup."
+          "title": "通过 API 提取",
+          "desc": "从您预留的资源池提取到您自己的应用中。您的客户永远不会看到 Mezzofy。验证在我们这边完成，兑换在商户处进行。",
+          "note": "支持 REST 和 MCP。注册即享沙盒环境。"
         },
         "direct": {
-          "title": "Use Pass and Vault directly",
-          "desc": "Build nothing. Distribute Passes to your customers, who store them in a Vault and present them at the counter. Useful for pilots and short campaigns.",
-          "note": "Live in days rather than sprints."
+          "title": "直接使用 Pass 和 Vault",
+          "desc": "无需搭建。将 Pass 分发给您的客户，他们将其存放在 Vault 中并在柜台出示。适合试点和短期活动。",
+          "note": "以天而非以冲刺周期计即可上线。"
         }
       },
       "guarantee": {
-        "title": "Why the guarantee matters to a regulated buyer",
+        "title": "为何这一保障对受监管的买家至关重要",
         "single": {
-          "title": "Single use, enforced",
-          "desc": "Every Pass is tokenised and consumed on validation. A duplicate does not work, so promotion abuse does not reach your customers."
+          "title": "单次使用，强制执行",
+          "desc": "每一张 Pass 都经过代币化，并在验证时核销。副本无法生效，因此促销滥用不会波及您的客户。"
         },
         "verified": {
-          "title": "Verified at source",
-          "desc": "Merchants are onboarded and verified before their inventory enters the pool. You are not distributing scraped offers."
+          "title": "源头已验证",
+          "desc": "商户在其库存进入资源池之前已完成入驻和验证。您分发的并非抓取来的优惠。"
         },
         "trail": {
-          "title": "Full redemption trail",
-          "desc": "Every issuance, draw and redemption is recorded and reconcilable, which is what your finance and audit teams will ask for."
+          "title": "完整的兑换轨迹",
+          "desc": "每一次发行、提取和兑换都会被记录且可对账，这正是您的财务和审计团队会要求的。"
         },
-        "note": "Security documentation, uptime commitments and data residency options are provided during procurement.",
-        "link": "Request the pack →"
+        "note": "安全文档、正常运行时间承诺及数据驻留选项将在采购过程中提供。",
+        "link": "索取资料包 →"
       },
       "faq": {
-        "title": "Questions buyers ask",
-        "q1": "How long does integration take?",
-        "a1": "Pass and Vault direct needs no build and can be live in days. API integration is typically two to four weeks including certification, with a sandbox from day one.",
-        "q2": "Who handles a customer whose Pass will not validate?",
-        "a2": "Mezzofy does. Every Pass carries a guarantee, and a failed redemption is credited back automatically. Your support team is not in the loop unless you want to be.",
-        "q3": "Can I get inventory nobody else has?",
-        "a3": "Yes. Exclusive allocations and co-branded Passes are available against volume commitments. Ask during scoping.",
-        "q4": "What reporting do I receive?",
-        "a4": "Draw, distribution and redemption per Pass, per merchant and per campaign, reconcilable to settlement. Available in the portal and by API.",
-        "q5": "What happens to full-purchase Passes that expire unused?",
-        "a5": "On redemption base they can be swapped. On full purchase, expiry terms are set in your agreement. Ask about rollover credit before you choose full purchase."
+        "title": "买家常见问题",
+        "q1": "集成需要多长时间？",
+        "a1": "Pass 与 Vault 直连无需搭建，几天内即可上线。API 集成通常需要两到四周（含认证），并从第一天起提供沙盒环境。",
+        "q2": "客户的 Pass 无法通过验证时由谁处理？",
+        "a2": "由 Mezzofy 处理。每一张 Pass 都附带保障，兑换失败会自动退款。除非您希望参与，否则您的支持团队无需介入。",
+        "q3": "我能获得别人没有的库存吗？",
+        "a3": "可以。凭借用量承诺可获得专属配额和联合品牌 Pass。请在方案洽谈时提出。",
+        "q4": "我会收到哪些报表？",
+        "a4": "按 Pass、按商户、按活动的提取、分发和兑换数据，且可与结算对账。可在门户中查看，也可通过 API 获取。",
+        "q5": "全额购买的 Pass 若到期未使用会怎样？",
+        "a5": "在兑换基准模式下可以调换。在全额购买模式下，到期条款在您的协议中设定。在选择全额购买前，请咨询结转额度事宜。"
       },
       "closing": {
-        "title": "Bring a programme. We will size it.",
-        "description": "An hour with your numbers and ours. No deck.",
-        "ctaBook": "Book an hour",
-        "ctaTalk": "Talk to us"
+        "title": "带来一个方案。我们来为其定量。",
+        "description": "用一小时对照您和我们的数据。没有演示文稿。",
+        "ctaBook": "预约一小时",
+        "ctaTalk": "联系我们"
       }
     }
   },
   "integrators": {
     "v2": {
       "hero": {
-        "badge": "Partner programme",
-        "title": "One integration. Every merchant on your platform.",
-        "subtitle": "Your merchants already trust you with their transactions. Give them coupon issuance and redemption without asking them to build, buy or learn anything, and earn a share every time a Pass sells through your platform.",
-        "ctaPartner": "Partner with us",
-        "ctaApi": "Read the API docs"
+        "badge": "合作伙伴计划",
+        "title": "一次集成。触及您平台上的每一位商户。",
+        "subtitle": "您的商户已将交易托付于您。无需他们搭建、购买或学习任何东西，即可为他们提供优惠券发行与兑换能力，而每当有 Pass 经由您的平台售出，您都能分得一份收益。",
+        "ctaPartner": "成为合作伙伴",
+        "ctaApi": "查看 API 文档"
       },
       "pass": {
-        "issuerLabel": "Issuer",
-        "termsLabel": "Terms",
-        "codeLabel": "Code",
+        "issuerLabel": "发行方",
+        "termsLabel": "条款",
+        "codeLabel": "编码",
         "hero": {
-          "issuer": "Your platform",
-          "value": "1 → all",
-          "terms": "Every merchant on your system inherits it.",
+          "issuer": "您的平台",
+          "value": "1 → 全部",
+          "terms": "您系统上的每一位商户都将继承它。",
           "code": "REST · MCP",
-          "stamp": "CONNECTED"
+          "stamp": "已连接"
         },
         "paid": {
-          "issuer": "Partner settlement",
+          "issuer": "合作伙伴结算",
           "value": "$17,500",
-          "terms": "This month, across 500 active merchants.",
-          "code": "Monthly statement",
-          "stamp": "PAID"
+          "terms": "本月，覆盖 500 家活跃商户。",
+          "code": "月度结算单",
+          "stamp": "已支付"
         }
       },
       "reach": {
-        "title": "What one integration reaches",
-        "description": "Connect once, and your merchants sit inside all of it.",
+        "title": "一次集成能触及什么",
+        "description": "连接一次，您的商户便置身于这一切之中。",
         "stat1Value": "1,240",
-        "stat1Label": "Merchants on the exchange",
+        "stat1Label": "交换平台上的商户",
         "stat2Value": "86,400",
-        "stat2Label": "Redemptions monthly",
+        "stat2Label": "每月兑换量",
         "stat3Value": "3",
-        "stat3Label": "Live markets",
+        "stat3Label": "已上线市场",
         "stat4Value": "2",
-        "stat4Label": "Protocols, REST and MCP"
+        "stat4Label": "协议，REST 和 MCP"
       },
       "adds": {
-        "title": "What it adds, depending on what you build",
+        "title": "根据您所构建的产品，它能带来什么",
         "pos": {
-          "title": "POS platforms",
-          "desc": "Redemption happens at the till your merchants already use. No new hardware, no staff retraining, and coupon capability becomes a reason to stay on your system."
+          "title": "POS 平台",
+          "desc": "兑换就发生在您的商户已在使用的收银台。无需新硬件，无需员工再培训，优惠券能力也成为留在您系统上的理由。"
         },
         "loyalty": {
-          "title": "Loyalty and rewards",
-          "desc": "Members exchange points against live merchant supply instead of a fixed catalogue that never changes. Your redemption rates stop being a function of catalogue fatigue."
+          "title": "忠诚度与奖励",
+          "desc": "会员用积分兑换实时的商户供给，而不再是一成不变的固定目录。您的兑换率不再受制于目录疲劳。"
         },
         "payment": {
-          "title": "Payment gateways",
-          "desc": "Attach verified offers to transactions your merchants already process through you. A new line on the same rails."
+          "title": "支付网关",
+          "desc": "将经过验证的优惠附加到您的商户已经通过您处理的交易上。同一通道上的一条新业务线。"
         }
       },
       "how": {
-        "title": "How the partnership works",
-        "step1Title": "Connect once",
-        "step1Desc": "REST or MCP, against a sandbox you get on signup. Certification before you go live in production.",
-        "step2Title": "Your merchants inherit the capability",
-        "step2Desc": "One agreement covers the merchants on your platform. They do not each sign separately, and they do not each integrate.",
-        "step3Title": "You earn on every Pass sold",
-        "step3Desc": "Revenue share settled at the point of sale rather than at redemption, so your earnings do not depend on whether a customer turns up at the counter.",
-        "note": "<strong>Support stays where the relationship is.</strong> You keep the merchant relationship and the commercial terms with them. Mezzofy handles Pass validation, consumer support and settlement."
+        "title": "合作如何运作",
+        "step1Title": "连接一次",
+        "step1Desc": "使用 REST 或 MCP，对接注册即得的沙盒环境。上线生产前先通过认证。",
+        "step2Title": "您的商户继承这一能力",
+        "step2Desc": "一份协议即覆盖您平台上的所有商户。他们无需各自单独签约，也无需各自集成。",
+        "step3Title": "每售出一张 Pass 您都有收益",
+        "step3Desc": "收入分成在销售时点结算，而非在兑换时，因此您的收益不取决于客户是否到店。",
+        "note": "<strong>支持始终留在关系所在之处。</strong>您保有与商户的关系及商务条款。Mezzofy 负责 Pass 验证、消费者支持和结算。"
       },
       "earn": {
-        "title": "What your platform could earn",
-        "description": "Start from your merchant base and see the monthly share. The revenue share itself is set in the partnership agreement — the slider shows the range we work in.",
-        "mLabel": "Merchants on your platform",
-        "actLabel": "Share that activate Passes",
-        "nLabel": "Charge Passes sold per active merchant, monthly",
-        "faceLabel": "Average face value",
-        "shareLabel": "Your share of the Mezzofy fee",
-        "indicative": "indicative",
-        "rowActive": "Active merchants",
-        "rowSold": "Passes sold through you, monthly",
-        "rowFace": "Face value moving through your platform",
-        "rowPool": "Mezzofy fee pool, 10% of face",
-        "rowShare": "Your monthly share",
-        "settledNote": "Settled to you on sale, not on redemption",
-        "zeroFeeNote": "<strong>Zero Fee Passes are not in this number.</strong> They carry no merchant fee, so partner share on them is settled separately from the consumer verification fee. Ask about it in scoping."
+        "title": "您的平台能赚取什么",
+        "description": "从您的商户基数出发，看看每月的分成。收入分成比例本身在合作协议中确定 — 滑块展示的是我们通常的区间范围。",
+        "mLabel": "您平台上的商户",
+        "actLabel": "激活 Pass 的比例",
+        "nLabel": "每家活跃商户每月售出的收费 Pass 数",
+        "faceLabel": "平均面值",
+        "shareLabel": "您在 Mezzofy 费用中的分成",
+        "indicative": "参考值",
+        "rowActive": "活跃商户",
+        "rowSold": "每月经您售出的 Pass 数",
+        "rowFace": "经您平台流转的面值总额",
+        "rowPool": "Mezzofy 费用池，面值的 10%",
+        "rowShare": "您的月度分成",
+        "settledNote": "在销售时结算给您，而非在兑换时",
+        "zeroFeeNote": "<strong>零费 Pass 不计入此数字。</strong>它们不含商户费用，因此其合作伙伴分成与消费者验证费分开结算。请在方案洽谈时咨询。"
       },
       "get": {
-        "title": "What you get",
+        "title": "您将获得什么",
         "sandbox": {
-          "title": "Sandbox on signup",
-          "desc": "Full test environment with sample merchants and Passes. No commercial commitment to start building."
+          "title": "注册即得沙盒环境",
+          "desc": "包含示例商户和 Pass 的完整测试环境。开始构建无需任何商务承诺。"
         },
         "issuance": {
-          "title": "Issuance and redemption",
-          "desc": "Create, distribute and validate Passes. The same endpoints the marketplace runs on."
+          "title": "发行与兑换",
+          "desc": "创建、分发和验证 Pass。与市场所运行的相同接口。"
         },
         "settlement": {
-          "title": "Settlement reporting",
-          "desc": "Per-merchant and per-Pass reconciliation, so your finance team can see exactly what earned what."
+          "title": "结算报表",
+          "desc": "按商户、按 Pass 对账，让您的财务团队清楚看到每一笔收益的来源。"
         }
       },
       "faq": {
-        "title": "Questions partners ask",
-        "q1": "Who owns the merchant relationship?",
-        "a1": "You do. Your commercial terms with your merchants are yours. Mezzofy handles Pass validation, consumer support and settlement, and never contacts your merchants directly without your say-so.",
-        "q2": "Does each merchant sign with Mezzofy?",
-        "a2": "No. One partnership agreement covers the merchants on your platform. They opt in through your interface and inherit the terms.",
-        "q3": "How long is certification?",
-        "a3": "Typically two to three weeks from a working sandbox integration. We test issuance, redemption, failure handling and settlement reconciliation before production keys are issued.",
-        "q4": "Is the partnership exclusive?",
-        "a4": "Not by default. Exclusivity in a market or category is available against volume commitments and is priced accordingly.",
-        "q5": "What if a merchant on my platform refuses a valid Pass?",
-        "a5": "The customer is credited automatically, and the merchant is flagged. Repeated refusals suspend their listing. We will tell you before it reaches that point."
+        "title": "合作伙伴常见问题",
+        "q1": "谁拥有与商户的关系？",
+        "a1": "由您拥有。您与商户之间的商务条款归您所有。Mezzofy 负责 Pass 验证、消费者支持和结算，未经您同意绝不直接联系您的商户。",
+        "q2": "每位商户都要与 Mezzofy 签约吗？",
+        "a2": "不用。一份合作协议即覆盖您平台上的所有商户。他们通过您的界面选择加入并继承相关条款。",
+        "q3": "认证需要多长时间？",
+        "a3": "从可用的沙盒集成算起，通常为两到三周。在签发生产密钥前，我们会测试发行、兑换、失败处理和结算对账。",
+        "q4": "合作是独家的吗？",
+        "a4": "默认不是。凭借用量承诺可获得某一市场或类别的独家权益，并据此定价。",
+        "q5": "如果我平台上的某个商户拒绝一张有效的 Pass 怎么办？",
+        "a5": "系统会自动为客户退款，并标记该商户。屡次拒绝将暂停其上架。在事态发展到那一步之前，我们会先通知您。"
       },
       "closing": {
-        "title": "Start in the sandbox today.",
-        "description": "No commercial commitment to begin building. Terms when you are ready to go live.",
-        "ctaApi": "Read the API docs",
-        "ctaPartner": "Partner with us"
+        "title": "今天就在沙盒中开始。",
+        "description": "开始构建无需任何商务承诺。待您准备好上线时再谈条款。",
+        "ctaApi": "查看 API 文档",
+        "ctaPartner": "成为合作伙伴"
       }
     }
   },
   "products": {
     "v2": {
       "hero": {
-        "badge": "Five products, one guarantee",
-        "title": "Everything the exchange runs on.",
-        "subtitle": "Each product does one job. Together they take an offer from creation to the moment it is consumed at a counter, with the same guarantee the whole way."
+        "badge": "五款产品，一个保障",
+        "title": "交换平台运转所依赖的一切。",
+        "subtitle": "每款产品各司其职。它们协同将优惠从创建带到在柜台核销的那一刻，且全程秉持同一个保障。"
       },
       "pass": {
-        "label": "The unit",
+        "label": "基本单元",
         "title": "Pass",
-        "desc": "The tokenised, single-use primitive every offer is issued as. One standard, seven presentations.",
-        "link": "Explore Pass"
+        "desc": "每个优惠都以此形式发行的、代币化的单次使用基本单元。一套标准，七种呈现方式。",
+        "link": "了解 Pass"
       },
       "vault": {
-        "label": "For customers",
+        "label": "面向客户",
         "title": "Vault",
-        "desc": "Where a customer keeps every Pass they own, and the prepaid balance they spend on verified offers.",
-        "link": "Explore Vault"
+        "desc": "客户存放其拥有的每一张 Pass、以及用于购买经过验证优惠的预付余额的地方。",
+        "link": "了解 Vault"
       },
       "ai": {
-        "label": "The engine",
+        "label": "引擎",
         "title": "AI Coupon",
-        "desc": "Creates offers inside limits a merchant sets, and places them across the exchange. Powers Zero Fee.",
-        "link": "Explore AI Coupon"
+        "desc": "在商户设定的上限内创建优惠，并投放到整个交换平台。为零费提供动力。",
+        "link": "了解 AI Coupon"
       },
       "nfc": {
-        "label": "The network",
+        "label": "网络",
         "title": "NFC Coupon",
-        "desc": "Tap points in malls, lobbies and offices, hosted by partners. Any merchant in the pool flows through them.",
-        "link": "Explore NFC Coupon"
+        "desc": "由合作伙伴托管、位于商场、大堂和办公楼中的触碰点。资源池中的任何商户都可经由它们流转。",
+        "link": "了解 NFC Coupon"
       },
       "cms": {
-        "label": "For merchants",
-        "title": "Coupon Management System",
-        "desc": "Issue to your own customers, off the exchange. Metered, private, and the same redemption tools.",
-        "link": "Explore the CMS"
+        "label": "面向商户",
+        "title": "优惠券管理系统",
+        "desc": "在交换平台之外向您自己的客户发行。计量式、私有，并配备相同的兑换工具。",
+        "link": "了解 CMS"
       }
     }
   },
   "pass": {
     "v2": {
       "closing": {
-        "title": "Every offer, issued as a Pass.",
-        "description": "One standard, seven ways to present it — tokenised, single-use, and honoured at the counter. List free on the exchange, or issue to your own customers.",
-        "ctaApi": "Read the API docs",
-        "ctaStart": "List your offers free"
+        "title": "每个优惠，都以 Pass 形式发行。",
+        "description": "一套标准，七种呈现方式 — 代币化、单次使用，并在柜台履约。在交换平台上免费上架，或向您自己的客户发行。",
+        "ctaApi": "查看 API 文档",
+        "ctaStart": "免费上架您的优惠"
       },
       "hero": {
-        "title": "One primitive. Seven presentations.",
-        "subtitle": "A Pass is a tokenised entitlement with a unique code, issued once, held by one person, and consumed on validation. Whether it looks like a coupon, a ticket or a reward, the standard underneath is the same.",
-        "ctaStandard": "Read the standard",
-        "ctaApi": "API reference"
+        "title": "一个基本单元。七种呈现方式。",
+        "subtitle": "Pass 是一种带有唯一编码的代币化权益，发行一次，由一个人持有，并在验证时核销。无论它看起来像优惠券、门票还是奖励，底层的标准都是一致的。",
+        "ctaStandard": "阅读标准",
+        "ctaApi": "API 参考"
       },
       "passLabels": {
-        "issuerLabel": "Issuer",
-        "termsLabel": "Terms",
-        "codeLabel": "Code"
+        "issuerLabel": "发行方",
+        "termsLabel": "条款",
+        "codeLabel": "编码"
       },
       "heroPass": {
-        "issuer": "Any issuer",
+        "issuer": "任何发行方",
         "value": "Pass",
-        "terms": "Unique. Single-use. Cannot be copied.",
+        "terms": "唯一。单次使用。无法复制。",
         "code": "MZF-XXXX-XXXX",
-        "stamp": "CONSUMED"
+        "stamp": "已核销"
       },
       "standard": {
-        "title": "The Mezzofy Pass Standard",
-        "description": "Three properties, enforced by the system rather than promised in terms.",
+        "title": "Mezzofy Pass 标准",
+        "description": "三项属性，由系统强制执行，而非在条款中口头承诺。",
         "unique": {
-          "title": "Unique",
-          "desc": "Every Pass carries its own serial, minted at issuance and traceable through its whole life. No two are alike, so a duplicate does not exist to be presented."
+          "title": "唯一",
+          "desc": "每一张 Pass 都带有自己的序列号，在发行时铸造并可追溯其整个生命周期。没有两张是相同的，因此不存在可供出示的副本。"
         },
         "single": {
-          "title": "Single-use",
-          "desc": "Validation consumes the Pass. It cannot be presented twice, screenshotted and reused, or forwarded after redemption. The exception is Card, which draws down instead."
+          "title": "单次使用",
+          "desc": "验证即核销 Pass。它无法出示两次、截图重用，或在兑换后转发。储值卡是例外，它采用逐次扣减的方式。"
         },
         "fraud": {
-          "title": "Fraud-proof",
-          "desc": "A Pass that was not issued by the exchange will not validate. Scraped codes, generated codes and expired offers are rejected at the counter, not discovered afterwards."
+          "title": "防伪",
+          "desc": "并非由交换平台发行的 Pass 将无法通过验证。抓取的编码、生成的编码和过期的优惠都会在柜台被拒，而不是事后才发现。"
         }
       },
       "lifecycle": {
-        "title": "Lifecycle",
+        "title": "生命周期",
         "issued": {
-          "t": "Issued",
-          "d": "By merchant, AI Coupon, or a loyalty programme"
+          "t": "已发行",
+          "d": "由商户、AI Coupon 或忠诚度方案发行"
         },
         "held": {
-          "t": "Held",
-          "d": "In a Vault, bound to one person"
+          "t": "已持有",
+          "d": "存于 Vault 中，绑定到一个人"
         },
         "presented": {
-          "t": "Presented",
-          "d": "At a registered outlet"
+          "t": "已出示",
+          "d": "在已注册门店"
         },
         "validated": {
-          "t": "Validated",
-          "d": "Once. Then spent."
+          "t": "已验证",
+          "d": "仅一次。随后即核销。"
         },
         "settled": {
-          "t": "Settled",
-          "d": "Merchant paid, records reconciled"
+          "t": "已结算",
+          "d": "商户已付款，记录已对账"
         }
       },
       "explorer": {
-        "title": "Seven presentations, and where each can go",
-        "description": "Pick one to see it, how it is spent, whether it transfers, and where it can go. Transferability is a property of the Pass, not an assumption about the type.",
-        "chipsLabel": "Presented as",
-        "rowSpent": "How it is spent",
-        "rowTransfer": "Can it be transferred",
-        "rowCreated": "Created by",
-        "rowWhere": "Where it can go"
+        "title": "七种呈现方式，以及各自能去往何处",
+        "description": "选择一种，看看它的样子、如何核销、能否转让，以及能去往何处。可转让性是 Pass 的一项属性，而非对类型的假设。",
+        "chipsLabel": "呈现为",
+        "rowSpent": "如何核销",
+        "rowTransfer": "能否转让",
+        "rowCreated": "创建者",
+        "rowWhere": "能去往何处"
       },
       "types": {
         "coupon": {
-          "name": "Coupon",
-          "blurb": "A discount off the bill. The commonest Pass on the exchange, and the one AI Coupon creates for merchants who list free.",
-          "spent": "Consumed once",
-          "transfer": "No",
-          "created": "Merchant or AI Coupon",
-          "where": "All channels",
+          "name": "优惠券",
+          "blurb": "从账单中扣减的折扣。交换平台上最常见的 Pass，也是 AI Coupon 为免费上架的商户创建的那一种。",
+          "spent": "仅核销一次",
+          "transfer": "否",
+          "created": "商户或 AI Coupon",
+          "where": "所有渠道",
           "pass": {
             "issuer": "Kopi Lane, Bugis",
-            "value": "25% off",
-            "terms": "Minimum spend $30. Valid 30 days.",
+            "value": "立减 25%",
+            "terms": "最低消费 $30。有效期 30 天。",
             "code": "MZF-7K4Q-8813",
-            "stamp": "CONSUMED"
+            "stamp": "已核销"
           }
         },
         "voucher": {
-          "name": "Voucher",
-          "blurb": "A prepaid value voucher sold on the marketplace and to enterprise buyers, paying the merchant on redemption.",
-          "spent": "Consumed once",
-          "transfer": "No",
-          "created": "Merchant (Charge Pass)",
-          "where": "Marketplace, B2B buyers",
+          "name": "代金券",
+          "blurb": "在市场上以及向企业采购方销售的预付价值代金券，在兑换时向商户付款。",
+          "spent": "仅核销一次",
+          "transfer": "否",
+          "created": "商户（收费 Pass）",
+          "where": "市场、B2B 采购方",
           "pass": {
-            "issuer": "Your business",
-            "value": "$50 voucher",
-            "terms": "Bought for $40. Valid 6 months.",
+            "issuer": "您的商户",
+            "value": "$50 代金券",
+            "terms": "以 $40 购得。有效期 6 个月。",
             "code": "MZF-9T2M-5540",
-            "stamp": "SOLD"
+            "stamp": "已售出"
           }
         },
         "deal": {
-          "name": "Deal",
-          "blurb": "A marketplace offer a consumer buys into, redeemed once at the counter.",
-          "spent": "Consumed once",
-          "transfer": "No",
-          "created": "Merchant",
-          "where": "B2C marketplace",
+          "name": "特惠",
+          "blurb": "消费者购买的市场优惠，在柜台核销一次。",
+          "spent": "仅核销一次",
+          "transfer": "否",
+          "created": "商户",
+          "where": "B2C 市场",
           "pass": {
             "issuer": "Bistro Nine",
-            "value": "1-for-1 main",
-            "terms": "Dine-in, weekdays. Valid 60 days.",
+            "value": "主菜买一送一",
+            "terms": "堂食，工作日。有效期 60 天。",
             "code": "MZF-3D5P-1180",
-            "stamp": "CONSUMED"
+            "stamp": "已核销"
           }
         },
         "ticket": {
-          "name": "Ticket",
-          "blurb": "An admission or entry Pass. Often transferable, so it can be gifted before it is used.",
-          "spent": "Consumed once",
-          "transfer": "Yes",
-          "created": "Venue or merchant",
-          "where": "Marketplace, own channel",
+          "name": "门票",
+          "blurb": "一种准入或入场 Pass。通常可转让，因此可在使用前作为礼物赠送。",
+          "spent": "仅核销一次",
+          "transfer": "是",
+          "created": "场馆或商户",
+          "where": "市场、自有渠道",
           "pass": {
             "issuer": "Harbour Museum",
-            "value": "Admit one",
-            "terms": "Any open day this season.",
+            "value": "入场一人",
+            "terms": "本季任一开放日。",
             "code": "MZF-8T1C-4402",
-            "stamp": "CONSUMED"
+            "stamp": "已核销"
           }
         },
         "reward": {
-          "name": "Reward",
-          "blurb": "A loyalty reward issued to members against points or status, honoured at participating merchants.",
-          "spent": "Consumed once",
-          "transfer": "No",
-          "created": "Loyalty programme",
-          "where": "B2B, own channel",
+          "name": "奖励",
+          "blurb": "根据积分或等级发放给会员的忠诚度奖励，在参与商户处履约。",
+          "spent": "仅核销一次",
+          "transfer": "否",
+          "created": "忠诚度方案",
+          "where": "B2B、自有渠道",
           "pass": {
-            "issuer": "Your rewards",
-            "value": "Free coffee",
-            "terms": "Members only. One per member.",
+            "issuer": "您的奖励",
+            "value": "免费咖啡",
+            "terms": "仅限会员。每位会员限一份。",
             "code": "MZF-2R6H-9310",
-            "stamp": "CONSUMED"
+            "stamp": "已核销"
           }
         },
         "card": {
-          "name": "Card",
-          "blurb": "A stored-value card. The exception to single-use — it draws down with each visit until the balance is gone.",
-          "spent": "Draws down per use",
-          "transfer": "Yes",
-          "created": "Merchant",
-          "where": "Marketplace, own channel",
+          "name": "储值卡",
+          "blurb": "一种储值卡。单次使用的例外 — 它随每次到访逐次扣减，直至余额用尽。",
+          "spent": "每次使用逐次扣减",
+          "transfer": "是",
+          "created": "商户",
+          "where": "市场、自有渠道",
           "pass": {
-            "issuer": "Your business",
-            "value": "$100 balance",
-            "terms": "Spend across visits until depleted.",
+            "issuer": "您的商户",
+            "value": "$100 余额",
+            "terms": "跨多次到访消费，直至用尽。",
             "code": "MZF-5C0V-7729",
-            "stamp": "ACTIVE"
+            "stamp": "使用中"
           }
         },
         "token": {
-          "name": "Token",
-          "blurb": "The raw tokenised entitlement, issued by API with rules set at issuance. The base every other presentation builds on.",
-          "spent": "Consumed once",
-          "transfer": "Configurable",
-          "created": "API issuance",
-          "where": "All channels",
+          "name": "令牌",
+          "blurb": "最原始的代币化权益，通过 API 发行，规则在发行时设定。是其他所有呈现方式的基础。",
+          "spent": "仅核销一次",
+          "transfer": "可配置",
+          "created": "API 发行",
+          "where": "所有渠道",
           "pass": {
-            "issuer": "Any issuer",
-            "value": "Tokenised entitlement",
-            "terms": "Programmatic. Rules set at issuance.",
+            "issuer": "任何发行方",
+            "value": "代币化权益",
+            "terms": "程序化。规则在发行时设定。",
             "code": "MZF-1T9K-6650",
-            "stamp": "ISSUED"
+            "stamp": "已发行"
           }
         }
       },
       "dev": {
-        "title": "What a Pass looks like to a developer",
-        "description": "The same object whether it came from the marketplace, an enterprise draw, or a tap point.",
-        "ctaApi": "API reference",
-        "ctaPartner": "Partner with us"
+        "title": "在开发者眼中 Pass 是什么样子",
+        "description": "无论它来自市场、企业提取还是触碰点，都是同一个对象。",
+        "ctaApi": "API 参考",
+        "ctaPartner": "成为合作伙伴"
       }
     }
   },
   "vault": {
     "v2": {
       "closing": {
-        "title": "Everything they own, in one Vault.",
-        "description": "Give your customers one place to hold and present every Pass, alongside the balance they spend on verified offers. Available white-label to enterprise buyers.",
-        "ctaBuyers": "For buyers",
-        "ctaApp": "Get the app"
+        "title": "他们拥有的一切，尽在一个 Vault 中。",
+        "description": "为您的客户提供一处，用以存放和出示每一张 Pass，以及他们用于购买经过验证优惠的余额。可向企业采购方提供白标版本。",
+        "ctaBuyers": "买家专区",
+        "ctaApp": "获取应用"
       },
       "hero": {
-        "title": "Every Pass you own, in one place.",
-        "subtitle": "Vault is where a customer keeps what they have claimed, bought or been given — and the prepaid balance they spend on verified offers. Present from it at any registered outlet.",
-        "ctaApp": "Get the app",
-        "ctaBrowse": "Browse deals"
+        "title": "您拥有的每一张 Pass，尽在一处。",
+        "subtitle": "Vault 是客户存放其领取、购买或获赠内容的地方 — 以及他们用于购买经过验证优惠的预付余额。可在任何已注册门店从中出示。",
+        "ctaApp": "获取应用",
+        "ctaBrowse": "浏览优惠"
       },
       "preview": {
-        "balanceLabel": "Balance",
+        "balanceLabel": "余额",
         "balanceValue": "$37.40",
-        "balanceTag": "closed loop",
-        "item1text": "25% off — Kopi Lane, Bugis · until 10 Oct",
-        "item1state": "READY",
-        "item2text": "$50 voucher — Harbour Grill · until Mar 2027",
-        "item2state": "READY",
-        "item3text": "Night cruise — Sat 26 Sep, seat G12",
-        "item3state": "SAT",
-        "item4text": "Free coffee — Redeemed 4 Sep",
-        "item4state": "USED"
+        "balanceTag": "闭环",
+        "item1text": "立减 25% — Kopi Lane, Bugis · 至 10 月 10 日",
+        "item1state": "可使用",
+        "item2text": "$50 代金券 — Harbour Grill · 至 2027 年 3 月",
+        "item2state": "可使用",
+        "item3text": "夜游 — 9 月 26 日周六，座位 G12",
+        "item3state": "周六",
+        "item4text": "免费咖啡 — 9 月 4 日已兑换",
+        "item4state": "已使用"
       },
       "separate": {
-        "title": "Two things, kept separate on purpose",
-        "description": "Balance goes down. The Vault fills up. Money only ever moves one way — unless a Pass fails to validate, in which case it comes straight back."
+        "title": "两样东西，刻意分开",
+        "description": "余额向下扣减。Vault 逐渐充实。资金只会朝一个方向流动 — 除非某张 Pass 无法通过验证，此时资金会立即退回。"
       },
       "balance": {
-        "panelLabel": "Balance (spent down)",
-        "title": "Balance",
+        "panelLabel": "余额（逐次扣减）",
+        "title": "余额",
         "meterValue": "$37.40",
-        "meterNote": "of a $100 top-up, ≈ 1,200 claims left at 3¢",
-        "rule1": "Spend only on Mezzofy Passes",
-        "rule2": "Not transferable between people",
-        "rule3": "No cash-out",
-        "arrow1": "A few cents per claim",
-        "arrow1sub": "Balance → Vault",
-        "arrow2": "Credited back",
-        "arrow2sub": "if a Pass will not validate"
+        "meterNote": "$100 充值中的余额，约合按 3¢ 计还剩 1,200 次领取",
+        "rule1": "仅可用于购买 Mezzofy Pass",
+        "rule2": "不可在个人之间转让",
+        "rule3": "不可提现",
+        "arrow1": "每次领取几美分",
+        "arrow1sub": "余额 → Vault",
+        "arrow2": "退回入账",
+        "arrow2sub": "若某张 Pass 无法通过验证"
       },
       "vault": {
-        "panelLabel": "Vault (where things stay)",
+        "panelLabel": "Vault（存放之处）",
         "title": "Vault",
-        "item1text": "25% off — Kopi Lane, Bugis · until 10 Oct",
-        "item1state": "READY",
-        "item2text": "$50 voucher — Harbour Grill · until Mar 2027",
-        "item2state": "READY",
-        "item3text": "Night cruise — Sat 26 Sep, seat G12",
-        "item3state": "SAT",
-        "item4text": "$100 card — Sabai Spa · drawn down each visit",
-        "item4state": "$62.50 LEFT",
-        "item5text": "Free coffee — Redeemed 4 Sep",
-        "item5state": "USED",
-        "note": "Every Pass shows its terms, its expiry, and its state. Present from here at the counter; it is validated live and consumed once. Cards draw down instead."
+        "item1text": "立减 25% — Kopi Lane, Bugis · 至 10 月 10 日",
+        "item1state": "可使用",
+        "item2text": "$50 代金券 — Harbour Grill · 至 2027 年 3 月",
+        "item2state": "可使用",
+        "item3text": "夜游 — 9 月 26 日周六，座位 G12",
+        "item3state": "周六",
+        "item4text": "$100 储值卡 — Sabai Spa · 每次到访逐次扣减",
+        "item4state": "剩余 $62.50",
+        "item5text": "免费咖啡 — 9 月 4 日已兑换",
+        "item5state": "已使用",
+        "note": "每一张 Pass 都会显示其条款、有效期和状态。在柜台从这里出示；它会被实时验证并核销一次。储值卡则采用逐次扣减。"
       },
       "why": {
-        "title": "Why not one wallet?",
-        "text": "A vault is a place things stay. A balance is something you spend down. Keeping them apart keeps the mental model honest for the customer, and keeps the stored-value component clearly identified for the people who regulate it."
+        "title": "为何不用单一钱包？",
+        "text": "Vault 是东西留存之处。余额是可以逐次花掉的钱。将两者分开，能让客户的心智模型保持清晰，也让储值部分对监管者而言清晰可辨。"
       },
       "claim": {
-        "title": "How a claim works",
+        "title": "一次领取如何运作",
         "find": {
-          "t": "Find",
-          "d": "Marketplace, tap point, or AI assistant"
+          "t": "发现",
+          "d": "市场、触碰点或 AI 助手"
         },
         "claim": {
-          "t": "Claim",
-          "d": "A few cents from balance"
+          "t": "领取",
+          "d": "从余额中扣除几美分"
         },
         "hold": {
-          "t": "Hold",
-          "d": "Lands in the Vault, ready"
+          "t": "持有",
+          "d": "存入 Vault，随时可用"
         },
         "present": {
-          "t": "Present",
-          "d": "Validated once at the counter"
+          "t": "出示",
+          "d": "在柜台验证一次"
         },
         "credit": {
-          "t": "Or credit back",
-          "d": "If it will not validate, balance is restored"
+          "t": "或退回入账",
+          "d": "若无法通过验证，余额将恢复"
         },
-        "buyersNote": "Vault is available to enterprise buyers as a white-label component, so their customers hold Passes without ever seeing Mezzofy.",
-        "buyersLink": "For buyers →"
+        "buyersNote": "Vault 可作为白标组件提供给企业采购方，让他们的客户持有 Pass 却从不接触到 Mezzofy。",
+        "buyersLink": "买家专区 →"
       }
     }
   },
   "aicoupon": {
     "v2": {
       "hero": {
-        "title": "Set the limits. The AI does the rest.",
-        "subtitle": "AI Coupon creates discount offers for a merchant inside boundaries the merchant sets, and places them across the exchange. It is the engine behind Zero Fee Passes and the NFC network, and it never exceeds a limit it was given.",
-        "ctaSetup": "Set it up as a merchant",
-        "ctaSee": "See what it creates"
+        "title": "设定上限。其余交给 AI。",
+        "subtitle": "AI Coupon 在商户设定的边界内为其创建折扣优惠，并投放到整个交换平台。它是零费 Pass 和 NFC 网络背后的引擎，且从不超越所设定的任何上限。",
+        "ctaSetup": "以商户身份进行设置",
+        "ctaSee": "看看它创建了什么"
       },
       "passLabels": {
-        "issuerLabel": "Issuer",
-        "termsLabel": "Terms",
-        "codeLabel": "Code"
+        "issuerLabel": "发行方",
+        "termsLabel": "条款",
+        "codeLabel": "编码"
       },
       "heroPass": {
-        "issuer": "Created by AI Coupon",
-        "value": "15% off",
-        "terms": "Tue–Thu, 2–5pm. Minimum spend $25.",
+        "issuer": "由 AI Coupon 创建",
+        "value": "立减 15%",
+        "terms": "周二至周四，下午 2–5 点。最低消费 $25。",
         "code": "MZF-2Q8R-4471",
-        "stamp": "FREE"
+        "stamp": "免费"
       },
       "boxPass": {
-        "issuer": "Created by AI Coupon",
-        "value": "15% off",
-        "terms": "Tue 11:40. Min spend $25. Valid 30 days.",
+        "issuer": "由 AI Coupon 创建",
+        "value": "立减 15%",
+        "terms": "周二 11:40。最低消费 $25。有效期 30 天。",
         "code": "MZF-2Q8R-4471",
-        "stamp": "FREE"
+        "stamp": "免费"
       },
       "box": {
-        "title": "The merchant builds the box. The AI works inside it.",
-        "description": "Solid walls are set by the merchant and cannot be crossed. Everything dotted is a choice the AI made inside them, for one real Pass.",
-        "latch": "Running · pause is one tap",
-        "wallTag": "Merchant walls",
-        "wallTop": "Discount 10% – 30% · Valid 30 days · Min spend $25",
-        "wallBottom": "Quota 500 / month · 25 / day · Hours Tue–Thu, 2–5pm · Outlets 3 registered",
-        "pick1lead": "Picked 15%",
-        "pick1sub": "inside 10–30%",
-        "pick2lead": "Placed at NFC lobby",
-        "pick2sub": "not the marketplace",
-        "pick3lead": "Released Tue 11:40",
-        "pick3sub": "one of 25 today",
-        "pick4lead": "Shown to office workers",
-        "pick4sub": "near the outlet",
-        "oneOf": "One of 500 this month. The 501st is not created.",
-        "wallsTitle": "The merchant sets the walls",
-        "wall1": "Maximum discount, by type",
-        "wall2": "Minimum spend to qualify",
-        "wall3": "How long each Pass is valid",
-        "wall4": "Monthly quota and daily cap",
-        "wall5": "Days and hours it can be used",
-        "wall6": "Which outlets accept it",
-        "wall7": "Whether it is running at all",
-        "picksTitle": "The AI picks inside them",
-        "aipick1": "The exact discount on each Pass",
-        "aipick2": "When to release, and how many that day",
-        "aipick3": "Which channel to place it in",
-        "aipick4": "Which customers see it",
-        "aipick5": "How to shift volume toward off-peak hours when allowed",
-        "learnsTitle": "What it learns from.",
-        "learnsText": "Redemption patterns across the exchange, time of day, location, category demand and the merchant's own history. What it never does is set the merchant's boundaries — those are typed in by a person."
+        "title": "商户搭建边界。AI 在其中运作。",
+        "description": "实线的边界由商户设定，不可逾越。所有虚线部分都是 AI 在其中做出的选择，针对一张真实的 Pass。",
+        "latch": "运行中 · 一键即可暂停",
+        "wallTag": "商户边界",
+        "wallTop": "折扣 10% – 30% · 有效期 30 天 · 最低消费 $25",
+        "wallBottom": "配额 500 / 月 · 25 / 日 · 时段 周二至周四，下午 2–5 点 · 门店 3 家已注册",
+        "pick1lead": "选定 15%",
+        "pick1sub": "在 10–30% 之内",
+        "pick2lead": "投放于 NFC 大堂",
+        "pick2sub": "而非市场",
+        "pick3lead": "周二 11:40 发放",
+        "pick3sub": "今日 25 张中的一张",
+        "pick4lead": "展示给上班族",
+        "pick4sub": "门店附近",
+        "oneOf": "本月 500 张中的一张。第 501 张不会被创建。",
+        "wallsTitle": "商户设定边界",
+        "wall1": "按类型设定的最高折扣",
+        "wall2": "达标所需最低消费",
+        "wall3": "每张 Pass 的有效期",
+        "wall4": "每月配额和每日上限",
+        "wall5": "可使用的日期和时段",
+        "wall6": "哪些门店接受它",
+        "wall7": "是否处于运行状态",
+        "picksTitle": "AI 在其中做选择",
+        "aipick1": "每张 Pass 的确切折扣",
+        "aipick2": "何时发放，当天发放多少",
+        "aipick3": "投放到哪个渠道",
+        "aipick4": "哪些客户能看到",
+        "aipick5": "在允许时如何将量向非高峰时段转移",
+        "learnsTitle": "它从何处学习。",
+        "learnsText": "整个交换平台的兑换模式、时段、位置、类别需求以及商户自身的历史数据。它绝不会做的一件事，是设定商户的边界 — 那些是由人工输入的。"
       },
       "offers": {
-        "title": "Two offer types to start",
-        "pctLabel": "Percent off",
-        "pctTitle": "10% to 50%",
-        "pctDesc": "Scales with the bill. The merchant sets a range; the AI picks a point inside it for each Pass. Suits variable basket sizes.",
-        "amtLabel": "Amount off",
-        "amtTitle": "$1 to $100",
-        "amtDesc": "Fixed value per Pass. Minimum spend is required, and the system enforces a floor so a discount can never exceed a set share of the bill.",
-        "note": "Product-specific offers arrive with POS integration, where the item data already lives. Tickets are never AI-generated: capacity is real and finite."
+        "title": "两种起步的优惠类型",
+        "pctLabel": "百分比折扣",
+        "pctTitle": "10% 至 50%",
+        "pctDesc": "随账单金额浮动。商户设定一个范围；AI 为每张 Pass 在其中选取一个点。适合篮子金额不固定的场景。",
+        "amtLabel": "定额减免",
+        "amtTitle": "$1 至 $100",
+        "amtDesc": "每张 Pass 面值固定。需设定最低消费，系统会强制设置下限，使折扣永远不会超过账单的某一设定比例。",
+        "note": "特定商品的优惠将随 POS 集成一并推出，届时商品数据已经就位。门票绝不会由 AI 生成：容量是真实且有限的。"
       },
       "guardrails": {
-        "title": "Guardrails, not guidelines",
+        "title": "是护栏，而非指引",
         "ceilings": {
-          "t": "Hard ceilings",
-          "d": "Quota, cap and depth are enforced in the system. The AI has no override."
+          "t": "硬性上限",
+          "d": "配额、上限和折扣力度在系统中强制执行。AI 无权覆盖。"
         },
         "preview": {
-          "t": "Preview mode",
-          "d": "New merchants approve the first campaigns before anything is issued. Automation follows trust."
+          "t": "预览模式",
+          "d": "新商户在发行任何内容之前先审批前几个活动。自动化以信任为前提。"
         },
         "kill": {
-          "t": "Kill switch",
-          "d": "Pause stops creation instantly. Passes already issued stay valid until expiry, because a customer paid for that guarantee."
+          "t": "紧急停止开关",
+          "d": "暂停即刻停止创建。已发行的 Pass 在到期前依然有效，因为客户已为该保障付了费。"
         }
       },
       "closing": {
-        "title": "Free for the merchant, start to finish.",
-        "description": "No creation, distribution or redemption fee. The customer pays a few cents for the guarantee, and that funds the exchange.",
-        "ctaHow": "How merchants use it",
-        "ctaSetup": "Set up AI Coupon"
+        "title": "对商户而言，自始至终免费。",
+        "description": "没有创建费、分发费或兑换费。客户为保障支付几美分，这便是交换平台的资金来源。",
+        "ctaHow": "商户如何使用它",
+        "ctaSetup": "设置 AI Coupon"
       }
     }
   },
   "cms": {
     "v2": {
       "hero": {
-        "title": "Your customers. Your Passes. Off the exchange.",
-        "subtitle": "CMS is for merchants who already have an audience and want to issue to it directly — email, messaging, their own app. Nothing is listed on the marketplace, no other buyer sees it, and you pay only for what you use.",
-        "ctaStart": "Start with CMS",
-        "ctaCompare": "Compare with listing free"
+        "title": "您的客户。您的 Pass。独立于交换平台。",
+        "subtitle": "CMS 面向已拥有受众、并希望直接向其发行的商户 — 电子邮件、消息、自己的应用。任何内容都不会在市场上架，其他买家也看不到，您只需为实际使用量付费。",
+        "ctaStart": "从 CMS 开始",
+        "ctaCompare": "与免费上架进行比较"
       },
       "passLabels": {
-        "issuerLabel": "Issuer",
-        "termsLabel": "Terms",
-        "codeLabel": "Code"
+        "issuerLabel": "发行方",
+        "termsLabel": "条款",
+        "codeLabel": "编码"
       },
       "heroPass": {
-        "issuer": "Your business, your list",
-        "value": "$10 off",
-        "terms": "Members only. Valid to end of month.",
+        "issuer": "您的商户，您的名单",
+        "value": "立减 $10",
+        "terms": "仅限会员。有效期至月底。",
         "code": "MZF-6H1D-7702",
-        "stamp": "PRIVATE"
+        "stamp": "私有"
       },
       "flow": {
-        "title": "Create, send, redeem, reconcile",
+        "title": "创建、发送、兑换、对账",
         "create": {
-          "t": "Create",
-          "d": "Any Pass type, your artwork, your terms. Templates for the common cases, full control when you need it. Bulk import for lists you already hold."
+          "t": "创建",
+          "d": "任意 Pass 类型、您的图样、您的条款。常见场景有模板，需要时可完全掌控。对已持有的名单支持批量导入。"
         },
         "send": {
-          "t": "Send",
-          "d": "Email, SMS and WhatsApp built in. QR export for print. API for your own app. Messaging costs pass through at cost."
+          "t": "发送",
+          "d": "内置电子邮件、短信和 WhatsApp。可导出 QR 用于打印。通过 API 接入您自己的应用。消息费用按成本转嫁。"
         },
         "redeem": {
-          "t": "Redeem",
-          "d": "The same Operator App and POS integration every Pass uses. Registered outlets only. Every validation is live and single-use."
+          "t": "兑换",
+          "d": "与每张 Pass 使用相同的操作员 App 和 POS 集成。仅限已注册门店。每一次验证都是实时且单次使用的。"
         },
         "reconcile": {
-          "t": "Reconcile",
-          "d": "Issued, sent, redeemed, expired — per Pass, per campaign, per outlet. Exportable, and billed against the same numbers."
+          "t": "对账",
+          "d": "已发行、已发送、已兑换、已过期 — 按 Pass、按活动、按门店。可导出，并按同一组数字计费。"
         }
       },
       "meter": {
-        "title": "Metered, and it gets cheaper as you grow",
-        "description": "Three charges, each per Pass. Your tier is set by annual volume and applies automatically.",
-        "thCharge": "Charge",
-        "thRate": "From, per Pass",
-        "allocLabel": "Allocation, per Pass created",
+        "title": "计量式收费，且随您成长而更便宜",
+        "description": "三项收费，均按每张 Pass 计。您的级别由年度用量决定并自动适用。",
+        "thCharge": "收费项",
+        "thRate": "起价，每张 Pass",
+        "allocLabel": "分配，按创建的每张 Pass",
         "allocRate": "from $0.013",
-        "distLabel": "Distribution, per Pass sent",
+        "distLabel": "分发，按发送的每张 Pass",
         "distRate": "from $0.013",
-        "redeemLabel": "Redemption, per Pass validated",
+        "redeemLabel": "兑换，按验证的每张 Pass",
         "redeemRate": "from $0.064",
-        "note": "Billed monthly to a card on file. Allocation and distribution are charged whether or not a Pass is redeemed. Local price points are set per market.",
-        "link": "Work out your monthly bill →"
+        "note": "按月记入在档银行卡。无论 Pass 是否被兑换，分配费和分发费都会照常收取。本地价位按各市场设定。",
+        "link": "计算您的月度账单 →"
       },
       "fork": {
-        "title": "When CMS is the right choice, and when it is not",
-        "description": "It comes down to which customers you are trying to reach. The ones you already have go one way. The ones you do not have yet go the other.",
-        "centre": "Your business",
-        "centreSub": "one account, both routes",
+        "title": "何时该选 CMS，何时不该",
+        "description": "这归结于您想触及哪些客户。您已拥有的客户走一条路。您尚未拥有的客户走另一条。",
+        "centre": "您的商户",
+        "centreSub": "一个账户，两条路径",
         "cms": {
-          "routeLabel": "Customers you already have → CMS",
+          "routeLabel": "您已拥有的客户 → CMS",
           "title": "CMS",
-          "tag": "Private · metered",
-          "step1lead": "Your list",
-          "step1sub": "members, staff, past customers",
-          "step2lead": "You create the Pass",
-          "step2sub": "your artwork, your terms",
-          "step3lead": "You send it",
-          "chip1": "Email",
-          "chip2": "SMS",
+          "tag": "私有 · 计量式",
+          "step1lead": "您的名单",
+          "step1sub": "会员、员工、老客户",
+          "step2lead": "您创建 Pass",
+          "step2sub": "您的图样，您的条款",
+          "step3lead": "您发送出去",
+          "chip1": "电子邮件",
+          "chip2": "短信",
           "chip3": "WhatsApp",
           "chip4": "QR",
-          "chip5": "Your app",
-          "use1": "You want to reward a list privately",
-          "use2": "Member or staff programmes should not be public",
-          "use3": "You need full control of artwork, copy and timing",
-          "use4": "You need Passes inside your own app"
+          "chip5": "您的应用",
+          "use1": "您想私下奖励某份名单",
+          "use2": "会员或员工方案不宜公开",
+          "use3": "您需要完全掌控图样、文案和时机",
+          "use4": "您需要在自己的应用内使用 Pass"
         },
         "exchange": {
-          "routeLabel": "Customers you do not have yet → The exchange",
-          "title": "The exchange",
-          "tag": "Free to list",
-          "step1lead": "Set your limits",
-          "step1sub": "or your voucher value",
-          "step2lead": "AI Coupon creates and places",
-          "step2sub": "or we list what you made",
-          "step3lead": "Buyers find it",
-          "chip1": "Marketplace",
-          "chip2": "Enterprise apps",
-          "chip3": "Tap points",
-          "chip4": "AI assistants",
-          "use1": "You want new customers, not existing ones",
-          "use2": "You would rather not build campaigns — Zero Fee is automatic",
-          "use3": "You want to sell vouchers to enterprise buyers",
-          "use4": "You are near a tap point and want walk-ins"
+          "routeLabel": "您尚未拥有的客户 → 交换平台",
+          "title": "交换平台",
+          "tag": "免费上架",
+          "step1lead": "设定您的上限",
+          "step1sub": "或您的代金券面值",
+          "step2lead": "AI Coupon 创建并投放",
+          "step2sub": "或由我们上架您所创建的内容",
+          "step3lead": "买家找到它",
+          "chip1": "市场",
+          "chip2": "企业应用",
+          "chip3": "触碰点",
+          "chip4": "AI 助手",
+          "use1": "您想要新客户，而非现有客户",
+          "use2": "您宁愿不搭建活动 — 零费是自动的",
+          "use3": "您想向企业采购方销售代金券",
+          "use4": "您在触碰点附近，希望吸引到店客流"
         },
-        "noteLead": "Most merchants run both.",
-        "noteText": "CMS for the list they have, the exchange for the customers they do not. The two inventories never mix, so a private member offer cannot leak onto the marketplace."
+        "noteLead": "大多数商户两者并用。",
+        "noteText": "已有名单用 CMS，尚未拥有的客户用交换平台。两份库存从不混合，因此私有会员优惠不会泄漏到市场上。"
       },
       "closing": {
-        "title": "Start with your first 500 free.",
-        "description": "No card needed until you send your first paid distribution.",
-        "ctaThree": "See all three ways to sell",
-        "ctaStart": "Start with CMS"
+        "title": "首 500 张免费起步。",
+        "description": "在您发送第一批付费分发之前无需银行卡。",
+        "ctaThree": "查看全部三种销售方式",
+        "ctaStart": "从 CMS 开始"
       }
     }
   }
