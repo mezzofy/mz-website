@@ -34,6 +34,18 @@ MCP server configuration fixed for Windows. Shadcn MCP server now loads correctl
 
 ## Recently Completed (Last 7 Days)
 
+**2026-09-29 (Frontend — "coupon (umbrella) → Pass/Passes" rebrand, High+Medium only):**
+- Audited all 23 marketing/product/corporate pages (3 parallel reviewers) against KEEP/FLAG criteria; blog/news/team (19 editorial) deferred. Total flagged 4 High · ~26 Med · ~24 Low; ~85% on coupon-marketplace + for-ai-commerce.
+- ✅ **Applied High + Medium (26 i18n keys × 4 langs, src+dist) + HTML fallbacks.** "Pass/Passes" kept as an English brand term in all languages. Pages touched: coupon-marketplace (2H+11M), for-ai-commerce (1H+~8M in JSON, +4 HTML-only Med whose JSON had no umbrella term), for-integrators (1H+1M), index (1M), investors (1M), support (1M).
+- ✅ **Footer tagline** `common.footer.tagline` "coupon infrastructure" → "Pass infrastructure" (4 langs + 38 HTML fallbacks). *Rated Low but kept* — highest-leverage site-wide brand line.
+- ⏸️ **Low/borderline NOT applied** (per scope): reverted their worker-made HTML fallbacks back to "coupon" — marketplace (models.subtitle, c2c.cardDescription, flexiblePricing, hero imageAlt), for-ai-commerce (opportunities.subtitle/pricing, architecture tokens), about (Smart Couponing, Coupons Handled), investors why-card, support 3 issue bullets, nfc-user-guide 2 slogans, status.html card. Available to apply later if desired.
+- ✅ KEPT throughout: "Global Coupon Exchange Protocol" (brand), product names (Coupon Marketplace/CMS/CaaS/AI·NFC Coupon), title/meta/OG/H1 SEO keyword, coupon-as-a-Pass-type, JSON-LD, factual market data, coupon-playbook (coupon-tactics by design). Verified: JSON valid, src==dist parity, HTML fallbacks consistent (High/Med=Pass, Low=coupon).
+
+**2026-09-29 (Frontend — `coupon-pass.html` → `pass.html`, URL consistency with `vault.html`):**
+- ✅ `git mv coupon-pass.html → pass.html`; **138 refs across 42 files** updated (HTML, i18n JSON src+dist, sitemap, llms, REDIRECTS-301.md). Page self-canonical/og/twitter/JSON-LD/hreflang now `pass.html`; JSON-LD 2/2 valid.
+- ✅ Redirect stub at `coupon-pass.html` → `pass.html`. **Repointed `coupon-serial.html` stub directly to `pass.html`** (avoids the coupon-serial→coupon-pass→pass chain). Both old URLs serve 200 and bounce to pass.html.
+- ✅ Updated Infra 301 handoff + REDIRECTS-301.md: added `coupon-pass.html → pass.html`, `coupon-serial.html → pass.html` (direct). `pass.v2` i18n namespace unchanged. Kept title "Coupon Pass | …" (keyword in title, bare brand in URL — same pattern as vault).
+
 **2026-09-29 (Frontend — visible rebrand of the 3 renamed pages):**
 - ✅ **Nav + footer labels rebranded** (6 i18n keys × 4 langs, src+dist): "I'm a Distributor"→"I'm a Buyer", "I'm a Developer"→"I'm an Integrator", "Coupon Wallet"→**Vault**; footer "For Distributors"→"For Buyers", "For Developers"→"For Integrators", "Wallet"→**Vault**. "Vault" kept as an English brand term in all languages (like Pass). HTML fallback text updated site-wide (**38 files**, 76 nav + 38 footer spots each).
 - ✅ **Page title chrome rebranded** on the 3 pages (`<title>` + og:title + twitter:title + JSON-LD WebPage `name` + breadcrumb `name`): for-buyers → "Coupon Inventory Platform for Buyers | Mezzofy"; for-integrators → "Mezzofy for Integrators - Build on the Exchange Protocol"; vault → "Vault | Digital Coupon Storage on iOS, Android & NFC | Mezzofy". All JSON-LD blocks re-validated (2/2 per page).

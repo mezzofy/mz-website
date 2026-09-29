@@ -15,11 +15,12 @@ responses at the edge are needed to consolidate SEO and drop the interim stubs.
 
 | # | Old path (301 FROM) | New path (301 TO) | Interim stub in repo? | Notes |
 |---|---------------------|-------------------|:---------------------:|-------|
-| 1 | `/coupon-serial.html` | `/coupon-pass.html` | ✅ yes | Renamed earlier ("Pass" rebrand). |
-| 2 | `/for-distributors.html` | `/for-buyers.html` | ✅ yes | Renamed 2026-09-28. |
-| 3 | `/for-developers.html` | `/for-integrators.html` | ✅ yes | Renamed 2026-09-28. |
-| 4 | `/coupon-wallet.html` | `/vault.html` | ✅ yes | Renamed 2026-09-28. |
-| 5 | `/coupon-campaign.html` | `/coupon-management.html` | ❌ no (noindex) | **Optional.** Campaign page was hidden (noindex, dropped from nav/sitemap). A 301 is optional; if not redirected it 404s once the file is removed. Confirm intent before adding. |
+| 1 | `/coupon-serial.html` | `/pass.html` | ✅ yes | Original "Serial" page. Stub points **directly** to `pass.html` (no chain). |
+| 2 | `/coupon-pass.html` | `/pass.html` | ✅ yes | Interim name; renamed to bare `pass.html` 2026-09-29. |
+| 3 | `/for-distributors.html` | `/for-buyers.html` | ✅ yes | Renamed 2026-09-28. |
+| 4 | `/for-developers.html` | `/for-integrators.html` | ✅ yes | Renamed 2026-09-28. |
+| 5 | `/coupon-wallet.html` | `/vault.html` | ✅ yes | Renamed 2026-09-28. |
+| 6 | `/coupon-campaign.html` | `/coupon-management.html` | ❌ no (noindex) | **Optional.** Campaign page was hidden (noindex, dropped from nav/sitemap). A 301 is optional; if not redirected it 404s once the file is removed. Confirm intent before adding. |
 
 All redirects are **permanent (301)**, host `mezzofy.com` (+ `www` if served).
 
@@ -32,7 +33,8 @@ All redirects are **permanent (301)**, host `mezzofy.com` (+ `www` if served).
 ```js
 function handler(event) {
   var map = {
-    '/coupon-serial.html': '/coupon-pass.html',
+    '/coupon-serial.html': '/pass.html',
+    '/coupon-pass.html': '/pass.html',
     '/for-distributors.html': '/for-buyers.html',
     '/for-developers.html': '/for-integrators.html',
     '/coupon-wallet.html': '/vault.html'
@@ -60,14 +62,14 @@ endpoint) — add one `RoutingRule` per pair with
 ## After Infra ships the 301s
 
 Frontend can then **delete the interim stub files** (`coupon-serial.html`,
-`for-distributors.html`, `for-developers.html`, `coupon-wallet.html`) so the edge
-301 is the only redirect. Do **not** delete them before the 301s are live, or the
-old URLs will hard-404.
+`coupon-pass.html`, `for-distributors.html`, `for-developers.html`,
+`coupon-wallet.html`) so the edge 301 is the only redirect. Do **not** delete them
+before the 301s are live, or the old URLs will hard-404.
 
 ## Verify
 
 ```bash
-for u in coupon-serial for-distributors for-developers coupon-wallet; do
+for u in coupon-serial coupon-pass for-distributors for-developers coupon-wallet; do
   curl -sI "https://mezzofy.com/$u.html" | grep -iE "HTTP/|location"
 done
 # expect: HTTP/2 301  +  location: /<new>.html

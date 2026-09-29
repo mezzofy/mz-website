@@ -27,7 +27,7 @@
       "investors": "Investors"
     },
     "footer": {
-      "tagline": "Building the future of coupon infrastructure through the Mezzofy Exchange Protocol.",
+      "tagline": "Building the future of Pass infrastructure through the Mezzofy Exchange Protocol.",
       "solutions": {
         "title": "Solutions",
         "merchants": "For Merchants",
@@ -340,7 +340,7 @@
         "integrators": {
           "label": "Partners",
           "title": "Integrators",
-          "description": "POS, loyalty and payment platforms. One integration gives every merchant on your system coupon issuance and redemption.",
+          "description": "POS, loyalty and payment platforms. One integration gives every merchant on your system Pass issuance and redemption.",
           "stat": "Revenue share on <strong>every Pass sold</strong>",
           "link": "For integrators"
         }
@@ -708,7 +708,7 @@
     "intro": {
       "label": "INVESTOR",
       "title": "Join Us in Revolutionizing Digital Commerce",
-      "description": "At Mezzofy, we are redefining how businesses engage customers through our innovative digital couponing solutions. As we continue to expand and innovate, we invite like-minded investors and partners to explore opportunities to collaborate with us. Together, let's revolutionize the way businesses connect with customers and unlock new growth possibilities.",
+      "description": "At Mezzofy, we are redefining how businesses engage customers through our Pass exchange platform. As we continue to expand and innovate, we invite like-minded investors and partners to explore opportunities to collaborate with us. Together, let's revolutionize the way businesses connect with customers and unlock new growth possibilities.",
       "cta": "Contact Us"
     },
     "cases": {
@@ -1797,7 +1797,7 @@
     "hero": {
       "label": "COUPON MARKETPLACE",
       "title": "GLOBAL <span class=\"text-primary-orange\">EXCHANGE HUB</span> FOR COUPONS",
-      "description": "The only <span class=\"text-primary-orange font-semibold\">secure peer-to-peer</span> coupon exchange enabling B2B, B2C, and C2C transactions. Built on <span class=\"text-primary-orange font-semibold\">tokenization technology</span> to create a secondary market for digital coupons with fraud-proof validation.",
+      "description": "The only <span class=\"text-primary-orange font-semibold\">secure peer-to-peer</span> Pass exchange enabling B2B, B2C, and C2C transactions. Built on <span class=\"text-primary-orange font-semibold\">tokenization technology</span> to create a secondary market for digital Passes with fraud-proof validation.",
       "listInventory": "List Your Inventory",
       "exploreMarketplace": "Explore Marketplace",
       "imageAlt": "Coupon Exchange Network Visualization"
@@ -1824,19 +1824,19 @@
       "b2b": {
         "badge": "B2B MARKETPLACE",
         "title": "Business to Business",
-        "description": "Mezzofy serves as the central exchange hub connecting merchants with distributors, resellers, and channel partners. List your coupon inventory and gain instant access to global distribution networks.",
-        "benefit1": "Wholesale Distribution: Sell coupon inventory in bulk to distributors and resellers",
+        "description": "Mezzofy serves as the central exchange hub connecting merchants with distributors, resellers, and channel partners. List your Pass inventory and gain instant access to global distribution networks.",
+        "benefit1": "Wholesale Distribution: Sell Pass inventory in bulk to distributors and resellers",
         "benefit2": "Channel Partner Network: Connect with marketing platforms, loyalty programs, and affiliate networks",
         "benefit3": "Cross-Promotion Opportunities: Trade inventory with complementary businesses for mutual benefit",
         "benefit4": "Transparent Pricing: Real-time market pricing with automated settlement and commission tracking",
         "cardTitle": "Merchant → Distributor",
-        "cardDescription": "Turn coupon liabilities into high-performing digital assets with global reach"
+        "cardDescription": "Turn Pass liabilities into high-performing digital assets with global reach"
       },
       "b2c": {
         "badge": "B2C MARKETPLACE",
         "title": "Business to Consumer",
         "description": "Enable direct customer engagement through secure, personalized promotional campaigns that drive measurable results.",
-        "benefit1": "Direct Distribution: Push coupons to customers via email, SMS, social media, and mobile apps",
+        "benefit1": "Direct Distribution: Push Passes to customers via email, SMS, social media, and mobile apps",
         "benefit2": "Personalized Campaigns: Target specific customer segments with tailored promotional offers",
         "benefit3": "Real-Time Analytics: Track redemption rates, customer engagement, and campaign performance",
         "benefit4": "Multi-Channel Reach: Distribute through marketplaces, e-commerce platforms, and retail partners",
@@ -1846,11 +1846,11 @@
       "c2c": {
         "badge": "C2C MARKETPLACE",
         "title": "Consumer to Consumer",
-        "description": "The world's first secure peer-to-peer coupon exchange marketplace. Transfer, gift, or trade coupons with fraud-proof validation.",
-        "benefit1": "Transferable Coupons: Gift or transfer coupons to friends and family with secure validation",
-        "benefit2": "Secondary Marketplace: Trade or sell unused coupons to maximize value and reduce waste",
+        "description": "The world's first secure peer-to-peer Pass exchange marketplace. Transfer, gift, or trade Passes with fraud-proof validation.",
+        "benefit1": "Transferable Passes: Gift or transfer Passes to friends and family with secure validation",
+        "benefit2": "Secondary Marketplace: Trade or sell unused Passes to maximize value and reduce waste",
         "benefit3": "Fraud Prevention: Blockchain-inspired tokenization ensures each coupon is unique and valid",
-        "benefit4": "Increased Redemption: Unused coupons find new owners, driving actual business value for merchants",
+        "benefit4": "Increased Redemption: Unused Passes find new owners, driving actual business value for merchants",
         "cardTitle": "Consumer ↔ Consumer",
         "cardDescription": "Peer-to-peer coupon exchange with fraud-proof validation"
       }
@@ -1859,11 +1859,11 @@
       "title": "How The Exchange Works",
       "step1": {
         "title": "List Inventory",
-        "description": "Merchants list coupon inventory on the Mezzofy Exchange. Set pricing, terms, and distribution preferences for your digital assets."
+        "description": "Merchants list Pass inventory on the Mezzofy Exchange. Set pricing, terms, and distribution preferences for your digital assets."
       },
       "step2": {
         "title": "Match & Trade",
-        "description": "Our exchange protocol matches supply with demand. Distributors, businesses, or consumers discover and acquire coupons through secure transactions."
+        "description": "Our exchange protocol matches supply with demand. Distributors, businesses, or consumers discover and acquire Passes through secure transactions."
       },
       "step3": {
         "title": "Validate & Settle",
@@ -2511,11 +2511,11 @@
     },
     "protocols": {
       "title": "Three Protocols, One Supply Layer",
-      "subtitle": "Mezzofy exposes your merchant coupon inventory to the world's largest AI platforms through standardized commerce protocols. One listing in the Mezzofy Exchange = discoverable across all three.",
+      "subtitle": "Mezzofy exposes your merchant Pass inventory to the world's largest AI platforms through standardized commerce protocols. One listing in the Mezzofy Exchange = discoverable across all three.",
       "acp": {
         "title": "ChatGPT — Agentic Commerce Protocol",
         "badge": "LIVE · SEPTEMBER 2025",
-        "description": "User asks 'find me a dining deal near Bukit Bintang' → ChatGPT queries the Mezzofy API → returns a matching merchant coupon for the consumer to redeem.",
+        "description": "User asks 'find me a dining deal near Bukit Bintang' → ChatGPT queries the Mezzofy API → returns a matching merchant Pass for the consumer to redeem.",
         "benefit1": {
           "title": "900M Weekly Users",
           "description": "Largest AI user base globally, high purchase intent"
@@ -2526,7 +2526,7 @@
         },
         "benefit3": {
           "title": "Redemption-Ready API",
-          "description": "Mezzofy coupons return in a format designed to redeem within the chat flow as ACP checkout rolls out."
+          "description": "Mezzofy Passes return in a format designed to redeem within the chat flow as ACP checkout rolls out."
         },
         "benefit4": {
           "title": "Zero Merchant Effort",
@@ -2539,11 +2539,11 @@
         "description": "Gemini's 45 billion-item Shopping Graph now includes promotions",
         "benefit1": {
           "title": "45B-Item Shopping Graph",
-          "description": "Mezzofy coupons indexed alongside the world's largest product catalog"
+          "description": "Mezzofy Passes indexed alongside the world's largest product catalog"
         },
         "benefit2": {
           "title": "Cross-Surface Distribution",
-          "description": "Coupons surface in Google Search, Maps, Shopping, and Assistant"
+          "description": "Passes surface in Google Search, Maps, Shopping, and Assistant"
         },
         "benefit3": {
           "title": "Backed by Major Partners",
@@ -2580,7 +2580,7 @@
       "title": "From Merchant Listing to AI Redemption in Four Steps",
       "step1": {
         "title": "LIST",
-        "description": "Merchant lists coupon inventory in the Mezzofy Exchange via the self-serve supply portal. Zero upfront cost."
+        "description": "Merchant lists Pass inventory in the Mezzofy Exchange via the self-serve supply portal. Zero upfront cost."
       },
       "step2": {
         "title": "INDEX",
@@ -2634,7 +2634,7 @@
       "title": "What AI Commerce Means for You",
       "merchants": {
         "title": "For Merchants",
-        "description": "Your coupons become discoverable to 900M+ AI users the moment you list them",
+        "description": "Your Passes become discoverable to 900M+ AI users the moment you list them",
         "cta": "List Your Inventory →"
       },
       "distributors": {
@@ -2644,7 +2644,7 @@
       },
       "developers": {
         "title": "For Developers",
-        "description": "Integrate Mezzofy's coupon supply via ACP, UCP, or MCP endpoints",
+        "description": "Integrate Mezzofy's Pass supply via ACP, UCP, or MCP endpoints",
         "cta": "Explore API Documentation →"
       }
     },
@@ -2961,7 +2961,7 @@
       },
       "email": {
         "title": "Email Support",
-        "desc": "For consumers and end users who need assistance with coupon redemption, wallet issues, or general inquiries.",
+        "desc": "For consumers and end users who need assistance with Pass redemption, Vault issues, or general inquiries.",
         "cta": "Email Support"
       }
     },
@@ -3686,7 +3686,7 @@
       "hero": {
         "badge": "Partner programme",
         "title": "One integration. Every merchant on your platform.",
-        "subtitle": "Your merchants already trust you with their transactions. Give them coupon issuance and redemption without asking them to build, buy or learn anything, and earn a share every time a Pass sells through your platform.",
+        "subtitle": "Your merchants already trust you with their transactions. Give them Pass issuance and redemption without asking them to build, buy or learn anything, and earn a share every time a Pass sells through your platform.",
         "ctaPartner": "Partner with us",
         "ctaApi": "Read the API docs"
       },
@@ -3725,7 +3725,7 @@
         "title": "What it adds, depending on what you build",
         "pos": {
           "title": "POS platforms",
-          "desc": "Redemption happens at the till your merchants already use. No new hardware, no staff retraining, and coupon capability becomes a reason to stay on your system."
+          "desc": "Redemption happens at the till your merchants already use. No new hardware, no staff retraining, and Pass capability becomes a reason to stay on your system."
         },
         "loyalty": {
           "title": "Loyalty and rewards",
