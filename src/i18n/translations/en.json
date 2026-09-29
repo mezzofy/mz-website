@@ -11,15 +11,15 @@
       "distributorSolution": "I'm a Buyer",
       "developerSolution": "I'm an Integrator",
       "aiCommerceSolution": "AI Commerce (Beta)",
-      "managementSystem": "Coupon Management System",
-      "marketplace": "Coupon Marketplace",
-      "nfc": "Coupon NFC",
+      "managementSystem": "Management System",
+      "marketplace": "Marketplace",
+      "nfc": "NFC Pass",
       "marketing": "Coupon Campaign",
       "wallet": "Vault",
       "serial": "Pass",
       "apiDoc": "API Documentation",
       "apiUseCase": "API Use Case",
-      "playbook": "Coupon Playbook",
+      "playbook": "Passes Playbook",
       "support": "Support",
       "aboutUs": "About Us",
       "contactUs": "Contact Us",
@@ -47,7 +47,7 @@
       },
       "resources": {
         "title": "Resources",
-        "playbook": "Coupon Playbook",
+        "playbook": "Passes Playbook",
         "apiDoc": "API Documentation",
         "apiUseCase": "API Use Case",
         "support": "Support"
@@ -436,9 +436,9 @@
         "title": "Take it further",
         "description": "Read how other operators built liquidity, or put an hour in the diary and we will walk through your case.",
         "playbook": {
-          "title": "The coupon exchange playbook",
-          "description": "Forty pages on building a coupon programme that people actually redeem — written from what we see across the exchange, not from a template.",
-          "ch1": "Why most coupon programmes fail at the counter",
+          "title": "The Pass exchange playbook",
+          "description": "Forty pages on building a Pass programme that people actually redeem — written from what we see across the exchange, not from a template.",
+          "ch1": "Why most Pass programmes fail at the counter",
           "ch2": "Setting discount limits that protect your margin",
           "ch3": "Choosing between free listing and selling value",
           "ch4": "Redemption operations for multi-outlet businesses",
@@ -471,7 +471,7 @@
   "about": {
     "hero": {
       "title": "ABOUT COMPANY",
-      "subtitle": "Connecting Businesses and Customers Through The <span class=\"text-primary-orange\">Power of Smart Couponing</span>"
+      "subtitle": "Connecting Businesses and Customers Through The <span class=\"text-primary-orange\">Power of Smart Passes</span>"
     },
     "mission": {
       "title": "Our Mission",
@@ -492,7 +492,7 @@
       "title": "Performance at Scale",
       "metric1": {
         "value": "Millions",
-        "label": "Coupons Handled"
+        "label": "Passes Handled"
       },
       "metric2": {
         "value": "Billions",
@@ -752,7 +752,7 @@
       "title": "Why Invest in Mezzofy?",
       "highlight1": {
         "title": "Market Leadership",
-        "description": "As pioneers in the digital coupon infrastructure space, we've built the most comprehensive platform connecting merchants, distributors, and consumers globally."
+        "description": "As pioneers in the digital Pass infrastructure space, we've built the most comprehensive platform connecting merchants, distributors, and consumers globally."
       },
       "highlight2": {
         "title": "Proven Technology",
@@ -774,9 +774,9 @@
       "link": "View Ecosystem"
     },
     "hero": {
-      "title": "THE ULTIMATE <span class=\"text-primary-orange\">COUPON PLAYBOOK</span>",
-      "subtitle": "Smart Coupon Strategies for Every Stage of Growth",
-      "description": "<span class=\"text-primary-orange font-semibold\">Strategic framework</span> aligning coupon tactics to customer lifecycle stages. Educational resource providing best practices for <span class=\"text-primary-orange font-semibold\">Attract, Spark, and Retain</span> phases using the Mezzofy Exchange Protocol.",
+      "title": "THE ULTIMATE <span class=\"text-primary-orange\">PASSES PLAYBOOK</span>",
+      "subtitle": "Smart Pass Strategies for Every Stage of Growth",
+      "description": "<span class=\"text-primary-orange font-semibold\">Strategic framework</span> aligning Pass tactics to customer lifecycle stages. Educational resource providing best practices for <span class=\"text-primary-orange font-semibold\">Attract, Spark, and Retain</span> phases using the Mezzofy Exchange Protocol.",
       "requestDemo": "Request a Demo",
       "exploreStrategies": "Explore Strategies"
     },
@@ -789,62 +789,62 @@
       },
       "brandedCatalog": {
         "title": "Branded Catalog",
-        "description": "Showcase your products with curated coupon catalogs that highlight your brand identity and value proposition."
+        "description": "Showcase your products with curated Pass catalogs that highlight your brand identity and value proposition."
       },
       "socialSharing": {
-        "title": "Social Sharing Coupon",
-        "description": "Amplify your reach by incentivizing customers to share exclusive coupons with their networks on social media."
+        "title": "Social Sharing Pass",
+        "description": "Amplify your reach by incentivizing customers to share exclusive Passes with their networks on social media."
       },
       "messenger": {
-        "title": "Coupon Via Messenger",
-        "description": "Engage customers directly through messaging platforms with personalized coupon offers that feel exclusive and immediate."
+        "title": "Pass Via Messenger",
+        "description": "Engage customers directly through messaging platforms with personalized Pass offers that feel exclusive and immediate."
       }
     },
     "stage2": {
       "title": "Spark Interest & Drive Action",
       "subtitle": "Encourage discovery, build trust, and engage customers",
       "survey": {
-        "title": "Survey Coupon",
-        "description": "Gather valuable customer insights while rewarding participation with coupons, creating a win-win engagement opportunity."
+        "title": "Survey Pass",
+        "description": "Gather valuable customer insights while rewarding participation with Passes, creating a win-win engagement opportunity."
       },
       "freeTrial": {
-        "title": "Free Trial Coupon",
+        "title": "Free Trial Pass",
         "description": "Lower the barrier to entry by offering risk-free trials that let customers experience your product or service firsthand."
       },
       "wallet": {
-        "title": "Coupon Wallet",
-        "description": "Build anticipation and repeat visits by allowing customers to save multiple coupons for future use in a centralized wallet."
+        "title": "Vault",
+        "description": "Build anticipation and repeat visits by allowing customers to save multiple Passes for future use in a centralized Vault."
       },
       "chained": {
-        "title": "Chained Coupon",
-        "description": "Create progressive journeys where each coupon redemption unlocks the next, guiding customers through your product lineup."
+        "title": "Chained Pass",
+        "description": "Create progressive journeys where each Pass redemption unlocks the next, guiding customers through your product lineup."
       }
     },
     "stage3": {
       "title": "Keep Customers Coming Back",
       "subtitle": "Build long-term relationships and turn customers into loyal advocates",
       "luckyDraw": {
-        "title": "Lucky Draw Coupon",
+        "title": "Lucky Draw Pass",
         "description": "Add excitement and gamification with random reward draws that keep customers engaged and eager to participate."
       },
       "bundle": {
-        "title": "Bundle Discount Coupon",
+        "title": "Bundle Discount Pass",
         "description": "Increase average order value by offering attractive discounts on product bundles that complement each other."
       },
       "occasion": {
-        "title": "Occasion Coupon",
+        "title": "Occasion Pass",
         "description": "Strengthen emotional connections by celebrating birthdays, anniversaries, and special moments with personalized offers."
       },
       "valueBoost": {
-        "title": "Value-Boost Coupon",
-        "description": "Reward loyalty and encourage higher spending with tiered coupons that increase in value based on purchase amount or frequency."
+        "title": "Value-Boost Pass",
+        "description": "Reward loyalty and encourage higher spending with tiered Passes that increase in value based on purchase amount or frequency."
       }
     },
     "whyMezzofy": {
       "title": "Why Businesses Choose Mezzofy",
       "efficient": {
         "title": "Efficient",
-        "description": "Seamless and flexible coupon creation & management - create in minutes, not hours"
+        "description": "Seamless and flexible Pass creation & management - create in minutes, not hours"
       },
       "firstParty": {
         "title": "First Party Data",
@@ -857,7 +857,7 @@
     },
     "ecosystem": {
       "title": "Works Seamlessly with the Mezzofy Ecosystem",
-      "description": "Coupon Playbook integrates with other Mezzofy products to create a complete solution",
+      "description": "Passes Playbook integrates with other Mezzofy products to create a complete solution",
       "product1": "Implement playbook strategies with our infrastructure",
       "product2": "Execute in-store activation strategies from playbook",
       "product3": "Monetize playbook tactics through voucher sales",
@@ -866,8 +866,8 @@
       "contactSales": "Contact Sales for Bundle Pricing"
     },
     "footerCta": {
-      "title": "Engage, Convert, and Retain Customers with the Right Coupon Strategy",
-      "description": "Ready to transform your customer acquisition and retention with smart coupon strategies?",
+      "title": "Engage, Convert, and Retain Customers with the Right Pass Strategy",
+      "description": "Ready to transform your customer acquisition and retention with smart Pass strategies?",
       "contactUs": "Contact Us to Get Started",
       "scheduleDemo": "Schedule a Demo"
     }
@@ -889,7 +889,7 @@
       },
       "step2": {
         "title": "DISTRIBUTE",
-        "description": "Deploy via <a href=\"coupon-nfc.html\" class=\"text-white font-semibold underline\">NFC</a>, <a href=\"coupon-campaign.html\" class=\"text-white font-semibold underline\">Marketing</a>, <a href=\"coupon-marketplace.html\" class=\"text-white font-semibold underline\">Marketplace</a>",
+        "description": "Deploy via <a href=\"nfc-pass.html\" class=\"text-white font-semibold underline\">NFC</a>, <a href=\"coupon-campaign.html\" class=\"text-white font-semibold underline\">Marketing</a>, <a href=\"coupon-marketplace.html\" class=\"text-white font-semibold underline\">Marketplace</a>",
         "channels": "<span class=\"px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white\">Email</span><span class=\"px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white\">SMS</span><span class=\"px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white\">Chat</span><span class=\"px-3 py-1 bg-white rounded-full text-xs font-bold text-primary-orange\">API</span>"
       },
       "step3": {
@@ -988,7 +988,7 @@
           "issuer": "Your business",
           "value": "$5 off",
           "terms": "Minimum spend $30. Valid 30 days.",
-          "code": "Created by AI Coupon",
+          "code": "Created by AI Pass",
           "stamp": "FREE"
         },
         "zero": {
@@ -1072,7 +1072,7 @@
         "zero": {
           "step1Title": "You set the box",
           "step1Desc": "Discount range, minimum spend, monthly quota, daily cap, and whether offers are limited to off-peak hours. These are hard ceilings the AI cannot pass.",
-          "step2Title": "AI Coupon creates the offers",
+          "step2Title": "AI Pass creates the offers",
           "step2Desc": "It chooses the depth, the timing and the volume inside your limits, and issues each one as a tokenised Pass.",
           "step3Title": "The network delivers them",
           "step3Desc": "Marketplace, NFC tap points in malls and offices, enterprise buyer apps, and AI shopping assistants. Nothing for you to build.",
@@ -1105,7 +1105,7 @@
       },
       "calc": {
         "title": "Set the box, and see what comes out",
-        "description": "These are the limits from step one. Move them and watch what AI Coupon would be allowed to create for your business.",
+        "description": "These are the limits from step one. Move them and watch what AI Pass would be allowed to create for your business.",
         "zero": {
           "segPct": "Percent off",
           "segAmt": "Amount off",
@@ -1147,7 +1147,7 @@
         "title": "Whichever way you sell, it runs through one system",
         "description": "The Coupon Management System is the heart of it. Every Pass you issue, from any of the three routes, is created, tracked, redeemed and reconciled in the same place. You learn one dashboard.",
         "routeZeroT": "Zero Fee Passes",
-        "routeZeroS": "created by AI Coupon",
+        "routeZeroS": "created by AI Pass",
         "routeChargeT": "Charge Passes",
         "routeChargeS": "sold on the exchange",
         "routeOwnT": "Own channel",
@@ -1413,7 +1413,7 @@
           "example": "$10 coupon → $X fee"
         },
         "row2": {
-          "type": "NFC Coupon",
+          "type": "NFC Pass",
           "trigger": "On successful redemption",
           "formula": "X% of face value",
           "example": "$10 NFC coupon → $X fee"
@@ -1800,7 +1800,7 @@
       "description": "The only <span class=\"text-primary-orange font-semibold\">secure peer-to-peer</span> Pass exchange enabling B2B, B2C, and C2C transactions. Built on <span class=\"text-primary-orange font-semibold\">tokenization technology</span> to create a secondary market for digital Passes with fraud-proof validation.",
       "listInventory": "List Your Inventory",
       "exploreMarketplace": "Explore Marketplace",
-      "imageAlt": "Coupon Exchange Network Visualization"
+      "imageAlt": "Pass Exchange Network Visualization"
     },
     "exchange": {
       "title": "The Coupon Exchange Protocol",
@@ -1820,7 +1820,7 @@
     },
     "models": {
       "title": "Three Marketplace Models, One Platform",
-      "subtitle": "Mezzofy powers coupon exchange across all transaction types, creating a comprehensive ecosystem for digital promotion distribution",
+      "subtitle": "Mezzofy powers Pass exchange across all transaction types, creating a comprehensive ecosystem for digital promotion distribution",
       "b2b": {
         "badge": "B2B MARKETPLACE",
         "title": "Business to Business",
@@ -1849,10 +1849,10 @@
         "description": "The world's first secure peer-to-peer Pass exchange marketplace. Transfer, gift, or trade Passes with fraud-proof validation.",
         "benefit1": "Transferable Passes: Gift or transfer Passes to friends and family with secure validation",
         "benefit2": "Secondary Marketplace: Trade or sell unused Passes to maximize value and reduce waste",
-        "benefit3": "Fraud Prevention: Blockchain-inspired tokenization ensures each coupon is unique and valid",
+        "benefit3": "Fraud Prevention: Blockchain-inspired tokenization ensures each Pass is unique and valid",
         "benefit4": "Increased Redemption: Unused Passes find new owners, driving actual business value for merchants",
         "cardTitle": "Consumer ↔ Consumer",
-        "cardDescription": "Peer-to-peer coupon exchange with fraud-proof validation"
+        "cardDescription": "Peer-to-peer Pass exchange with fraud-proof validation"
       }
     },
     "howItWorks": {
@@ -1878,7 +1878,7 @@
       },
       "fraudPrevention": {
         "title": "Fraud Prevention",
-        "description": "Tokenized coupons with unique digital signatures"
+        "description": "Tokenized Passes with unique digital signatures"
       },
       "instantSettlement": {
         "title": "Instant Settlement",
@@ -1898,7 +1898,7 @@
       },
       "flexiblePricing": {
         "title": "Flexible Pricing",
-        "description": "Pay only when coupons are redeemed"
+        "description": "Pay only when Passes are redeemed"
       },
       "support24": {
         "title": "24/7 Support",
@@ -2171,6 +2171,25 @@
       "submit": "Request Partnership Discussion"
     },
     "v2": {
+      "faq": {
+        "q3": {
+          "question": "Which phones support NFC Pass?",
+          "answer": "All modern iOS and Android smartphones with NFC — most phones released since 2018."
+        },
+        "q2": {
+          "question": "Do customers need an app to use NFC Pass?",
+          "answer": "No app required — tapping opens the Pass in the browser. Every NFC Pass also carries a QR code as a fallback."
+        },
+        "q1": {
+          "question": "What is an NFC Pass?",
+          "answer": "A Pass delivered by tapping an NFC tag with a smartphone — instant tap-to-redeem, secured with HMAC."
+        },
+        "title": "Frequently Asked Questions",
+        "q4": {
+          "answer": "Physical retail, restaurants, events, and product packaging — anywhere an NFC tag or card can be placed.",
+          "question": "Where is NFC Pass used?"
+        }
+      },
       "hero": {
         "badge": "Network in build. Nodes and merchants both wanted.",
         "title": "Tap points where people already are.",
@@ -2217,7 +2236,7 @@
           "title": "How it works now",
           "diagramAlt": "A shared supply pool of merchants feeding several tap points; merchants come and go while the nodes stay live",
           "lead": "Many merchants, many nodes, no merchant fee.",
-          "text": "A partner hosts the tap point. Any merchant in the pool flows through it, routed by AI Coupon. One leaves, another has already joined, and every node stays live. Each new node makes every merchant more valuable — and the reverse."
+          "text": "A partner hosts the tap point. Any merchant in the pool flows through it, routed by AI Pass. One leaves, another has already joined, and every node stays live. Each new node makes every merchant more valuable — and the reverse."
         }
       },
       "join": {
@@ -2368,11 +2387,11 @@
   },
   "nfcGuide": {
     "header": {
-      "title": "🎫 How to Use Mezzofy NFC Coupons",
-      "subtitle": "Your complete guide to tapping, claiming, and redeeming digital coupons"
+      "title": "🎫 How to Use Mezzofy NFC Passes",
+      "subtitle": "Your complete guide to tapping, claiming, and redeeming digital Passes"
     },
     "intro": {
-      "title": "Welcome to the Future of Coupons!",
+      "title": "Welcome to the Future of Passes!",
       "description": "Mezzofy's NFC technology makes saving money easier than ever. Simply tap your phone on any Mezzofy NFC sticker or scan a QR code to unlock exclusive deals. Follow this simple guide to start saving today!"
     },
     "steps": {
@@ -2386,33 +2405,33 @@
       "step2": {
         "number": "2",
         "title": "Tap Your Phone",
-        "description": "Hold the back of your smartphone close to the NFC sticker (within 1-2 inches). You'll feel a vibration or hear a sound confirming the tap. Your phone will automatically open the coupon link in your browser."
+        "description": "Hold the back of your smartphone close to the NFC sticker (within 1-2 inches). You'll feel a vibration or hear a sound confirming the tap. Your phone will automatically open the Pass link in your browser."
       },
       "step3": {
         "number": "3",
-        "title": "View Coupon Details",
+        "title": "View Pass Details",
         "description": "Once the page loads, you'll see:",
         "item1": "The discount or offer details",
         "item2": "Expiration date and terms",
         "item3": "Participating merchant information",
-        "item4": "A unique coupon code"
+        "item4": "A unique Pass code"
       },
       "step4": {
         "number": "4",
-        "title": "Claim Your Coupon (Two Ways)",
+        "title": "Claim Your Pass (Two Ways)",
         "optionA": {
           "heading": "Option A: With Mezzofy Coupon Clipper App (Recommended)",
           "intro": "For the best experience, download the <strong>Mezzofy Coupon Clipper</strong> app:",
           "item1": "<strong>Seamless Collection:</strong> Tap any NFC coupon and it automatically saves to your app",
           "item2": "<strong>No Personal Data Required:</strong> Start using immediately without sign-up",
-          "item3": "<strong>All Coupons in One Place:</strong> Easy access to your entire coupon collection",
-          "item4": "<strong>Instant Redemption:</strong> Show coupons directly from the app at checkout"
+          "item3": "<strong>All Passes in One Place:</strong> Easy access to your entire Pass collection",
+          "item4": "<strong>Instant Redemption:</strong> Show Passes directly from the app at checkout"
         },
         "optionB": {
           "heading": "Option B: Without the App (Browser-Based)",
           "intro": "Don't have the app yet? No problem! When you tap an NFC coupon:",
-          "item1": "The coupon details page launches immediately in your browser",
-          "item2": "View and use the coupon right away at checkout",
+          "item1": "The Pass details page launches immediately in your browser",
+          "item2": "View and use the Pass right away at checkout",
           "item3": "<strong>Save Options:</strong> Optionally save to Apple Wallet, Google Wallet, or Samsung Wallet",
           "item4": "<strong>Or Download the App:</strong> A convenient link to download Mezzofy Coupon Clipper for future use"
         }
@@ -2420,63 +2439,63 @@
       "step5": {
         "number": "5",
         "title": "Redeem at Checkout",
-        "description": "When you're ready to use your coupon:",
-        "item1": "Open your Mezzofy Coupon Clipper app or access the coupon from your device wallet",
-        "item2": "Select the coupon you want to use",
+        "description": "When you're ready to use your Pass:",
+        "item1": "Open your Mezzofy Coupon Clipper app or access the Pass from your device wallet",
+        "item2": "Select the Pass you want to use",
         "item3": "Show the QR code or barcode to the merchant's scanner at checkout",
         "item4": "Watch your discount apply instantly!"
       }
     },
     "features": {
-      "title": "✨ Key Features of Mezzofy NFC Coupons",
+      "title": "✨ Key Features of Mezzofy NFC Passes",
       "feature1": "<strong>Instant Access:</strong> No need to download apps before tapping – works directly in your browser",
       "feature2": "<strong>Privacy-Friendly:</strong> The Coupon Clipper app requires no personal data to use",
       "feature3": "<strong>Multiple Wallet Options:</strong> Save to Mezzofy, Apple Wallet, Google Wallet, or Samsung Wallet",
       "feature4": "<strong>No Printing Required:</strong> Completely paperless and eco-friendly",
-      "feature5": "<strong>Real-Time Updates:</strong> Get notifications about new deals and expiring coupons",
+      "feature5": "<strong>Real-Time Updates:</strong> Get notifications about new deals and expiring Passes",
       "feature6": "<strong>Multi-Portal Support:</strong> Works with B2C, C2C, and partner merchant systems"
     },
     "tips": {
       "title": "💡 Pro Tips for Maximum Savings",
       "tip1": "<strong>Download the App:</strong> Get the Mezzofy Coupon Clipper for the fastest, most seamless experience",
-      "tip2": "<strong>Enable Notifications:</strong> Never miss a deal – allow Mezzofy to send you alerts about new coupons and expiring offers",
-      "tip3": "<strong>Check Expiration Dates:</strong> Use your coupons before they expire to maximize your savings",
-      "tip4": "<strong>Stack Offers:</strong> Some merchants allow you to combine multiple coupons – check the terms!",
-      "tip5": "<strong>Share with Friends:</strong> Use our C2C portal to trade or gift coupons you won't use",
+      "tip2": "<strong>Enable Notifications:</strong> Never miss a deal – allow Mezzofy to send you alerts about new Passes and expiring offers",
+      "tip3": "<strong>Check Expiration Dates:</strong> Use your Passes before they expire to maximize your savings",
+      "tip4": "<strong>Stack Offers:</strong> Some merchants allow you to combine multiple Passes – check the terms!",
+      "tip5": "<strong>Share with Friends:</strong> Use our C2C portal to trade or gift Passes you won't use",
       "tip6": "<strong>Follow Favorite Merchants:</strong> Get exclusive early access to their promotions"
     },
     "faq": {
       "title": "Frequently Asked Questions",
       "q1": {
         "question": "Q: Do I need to download an app to use NFC coupons?",
-        "answer": "A: No! You can tap and view coupons directly in your mobile browser. However, downloading the Mezzofy Coupon Clipper app provides the best experience with automatic coupon collection and no personal data required."
+        "answer": "A: No! You can tap and view Passes directly in your mobile browser. However, downloading the Mezzofy Coupon Clipper app provides the best experience with automatic Pass collection and no personal data required."
       },
       "q2": {
         "question": "Q: What if my phone doesn't have NFC?",
-        "answer": "A: No problem! Every NFC coupon also has a QR code option. Simply open your camera app and scan the QR code to access the same coupon."
+        "answer": "A: No problem! Every NFC coupon also has a QR code option. Simply open your camera app and scan the QR code to access the same Pass."
       },
       "q3": {
         "question": "Q: Does the Mezzofy Coupon Clipper app require personal information?",
         "answer": "A: No! You can start using the app immediately without providing any personal data. It's designed for privacy and convenience."
       },
       "q4": {
-        "question": "Q: Can I use a coupon multiple times?",
-        "answer": "A: It depends on the coupon terms. Most coupons are single-use, but some promotional offers allow multiple redemptions. Check the coupon details for specific information."
+        "question": "Q: Can I use a Pass multiple times?",
+        "answer": "A: It depends on the Pass terms. Most Passes are single-use, but some promotional offers allow multiple redemptions. Check the Pass details for specific information."
       },
       "q5": {
-        "question": "Q: What happens if I tap a coupon but don't save it?",
-        "answer": "A: Without the app, you can still use the coupon immediately from the browser page. You can also save it to your device wallet (Apple, Google, or Samsung) or tap the same NFC sticker again later."
+        "question": "Q: What happens if I tap a Pass but don't save it?",
+        "answer": "A: Without the app, you can still use the Pass immediately from the browser page. You can also save it to your device wallet (Apple, Google, or Samsung) or tap the same NFC sticker again later."
       },
       "q6": {
-        "question": "Q: Can I transfer my coupons to someone else?",
-        "answer": "A: Yes! Through our C2C (Customer-to-Customer) portal, you can trade, gift, or sell unused coupons to other Mezzofy users."
+        "question": "Q: Can I transfer my Passes to someone else?",
+        "answer": "A: Yes! Through our C2C (Customer-to-Customer) portal, you can trade, gift, or sell unused Passes to other Mezzofy users."
       },
       "q7": {
-        "question": "Q: What if the coupon doesn't work at checkout?",
-        "answer": "A: First, check that the coupon hasn't expired and that you're using it at a participating merchant. If issues persist, contact the merchant or Mezzofy customer support for assistance."
+        "question": "Q: What if the Pass doesn't work at checkout?",
+        "answer": "A: First, check that the Pass hasn't expired and that you're using it at a participating merchant. If issues persist, contact the merchant or Mezzofy customer support for assistance."
       },
       "q8": {
-        "question": "Q: Which wallet should I use to save coupons?",
+        "question": "Q: Which wallet should I use to save Passes?",
         "answer": "A: We recommend the Mezzofy Coupon Clipper app for the best experience. However, you can also save to Apple Wallet (iPhone), Google Wallet (Android), or Samsung Wallet depending on your device."
       }
     },
@@ -2597,13 +2616,13 @@
     },
     "opportunities": {
       "title": "Beyond Discovery: The AI-Powered Product Suite",
-      "subtitle": "Coupon search is just the starting point. Mezzofy is building a full AI commerce intelligence layer on top of the exchange.",
+      "subtitle": "Pass search is just the starting point. Mezzofy is building a full AI commerce intelligence layer on top of the exchange.",
       "api": {
         "title": "AI Shopping Agent API",
         "description": "Mezzofy becomes a registered data provider for ChatGPT (ACP) and Gemini (UCP). Merchants in the supply pool are automatically discoverable by 900M+ AI users globally."
       },
       "intelligence": {
-        "title": "Predictive Coupon Intelligence",
+        "title": "Predictive Pass Intelligence",
         "description": "Aggregate anonymized redemption data across thousands of merchants to build predictive models."
       },
       "concierge": {
@@ -2612,7 +2631,7 @@
       },
       "pricing": {
         "title": "Dynamic Pricing & Smart Quotas",
-        "description": "AI engine that automatically adjusts coupon availability based on redemption velocity, merchant capacity, and time-of-day demand."
+        "description": "AI engine that automatically adjusts Pass availability based on redemption velocity, merchant capacity, and time-of-day demand."
       },
       "fraud": {
         "title": "AI-Powered Fraud Detection",
@@ -2651,7 +2670,7 @@
     "architecture": {
       "title": "Integration Architecture",
       "diagram": "MERCHANT SUPPLY POOL",
-      "description": "Expose Mezzofy supply inventory via ACP, UCP, and MCP endpoints. AI agents query in real time. Coupon tokens are validated on redemption. Mezzofy earns a transaction fee on every successful AI-referred redemption. One supply listing. Three protocol endpoints. Global AI distribution."
+      "description": "Expose Mezzofy supply inventory via ACP, UCP, and MCP endpoints. AI agents query in real time. Pass tokens are validated on redemption. Mezzofy earns a transaction fee on every successful AI-referred redemption. One supply listing. Three protocol endpoints. Global AI distribution."
     },
     "footerCta": {
       "title": "AI Commerce Is Live. Your Inventory Should Be Too.",
@@ -2970,7 +2989,7 @@
       "description": "Common issues and what to do, organized by user type.",
       "supply": {
         "title": "Supply Customers (Merchants)",
-        "issue1": "Coupon not activating or displaying incorrectly",
+        "issue1": "Pass not activating or displaying incorrectly",
         "issue2": "NFC tag setup and configuration issues",
         "issue3": "Redemption data discrepancies or reporting errors",
         "issue4": "API integration failures or webhook errors",
@@ -2986,10 +3005,10 @@
       },
       "partners": {
         "title": "End Users & Consumers",
-        "issue1": "Coupon not applying at checkout",
+        "issue1": "Pass not applying at checkout",
         "issue2": "Wallet app login or sync issues",
         "issue3": "NFC tap not recognized at point of sale",
-        "issue4": "Coupon expired or terms not as expected"
+        "issue4": "Pass expired or terms not as expected"
       }
     },
     "sla": {
@@ -3801,6 +3820,25 @@
   },
   "products": {
     "v2": {
+      "faq": {
+        "q3": {
+          "question": "Do I need all five products?",
+          "answer": "No. Each works on its own; most merchants start with the Management System or AI Pass and add the others as they grow."
+        },
+        "q2": {
+          "question": "What is a Pass?",
+          "answer": "A Pass is one tokenized, single-use, fraud-proof offer that can be presented seven ways — coupon, voucher, deal, ticket, reward, card, or token."
+        },
+        "q1": {
+          "question": "What products does the Mezzofy exchange include?",
+          "answer": "Five: Pass (the tokenized offer standard), Vault (the consumer app that holds them), AI Pass (creates offers automatically), NFC Pass (tap-to-redeem), and the Management System (enterprise CaaS)."
+        },
+        "title": "Frequently Asked Questions",
+        "q4": {
+          "answer": "A coupon is one of the seven types a Pass can take. Pass is the umbrella standard; a coupon is a Pass presented as a discount.",
+          "question": "Is a coupon the same as a Pass?"
+        }
+      },
       "hero": {
         "badge": "Five products, one guarantee",
         "title": "Everything the exchange runs on.",
@@ -3820,19 +3858,19 @@
       },
       "ai": {
         "label": "The engine",
-        "title": "AI Coupon",
+        "title": "AI Pass",
         "desc": "Creates offers inside limits a merchant sets, and places them across the exchange. Powers Zero Fee.",
-        "link": "Explore AI Coupon"
+        "link": "Explore AI Pass"
       },
       "nfc": {
         "label": "The network",
-        "title": "NFC Coupon",
+        "title": "NFC Pass",
         "desc": "Tap points in malls, lobbies and offices, hosted by partners. Any merchant in the pool flows through them.",
-        "link": "Explore NFC Coupon"
+        "link": "Explore NFC Pass"
       },
       "cms": {
         "label": "For merchants",
-        "title": "Coupon Management System",
+        "title": "Management System",
         "desc": "Issue to your own customers, off the exchange. Metered, private, and the same redemption tools.",
         "link": "Explore the CMS"
       }
@@ -3840,6 +3878,25 @@
   },
   "pass": {
     "v2": {
+      "faq": {
+        "q3": {
+          "question": "What are the seven Pass types?",
+          "answer": "Coupon, voucher, deal (group-buy), ticket, reward, card (stored value), and token — one standard, seven presentations."
+        },
+        "q2": {
+          "question": "How is a Pass different from a normal coupon?",
+          "answer": "A coupon is one form a Pass takes. Every Pass is tokenized and consumed once on validation, so it cannot be faked, copied, or reused."
+        },
+        "q1": {
+          "question": "What is a Mezzofy Pass?",
+          "answer": "A single, tokenized, single-use offer presented seven ways — coupon, voucher, deal, ticket, reward, card, or token — unique and fraud-proof."
+        },
+        "title": "Frequently Asked Questions",
+        "q4": {
+          "answer": "Yes. A Pass can be gifted, transferred, or traded, and it stays unique and valid because it is tokenized.",
+          "question": "Can a Pass be transferred?"
+        }
+      },
       "closing": {
         "title": "Every offer, issued as a Pass.",
         "description": "One standard, seven ways to present it — tokenised, single-use, and honoured at the counter. List free on the exchange, or issue to your own customers.",
@@ -3884,7 +3941,7 @@
         "title": "Lifecycle",
         "issued": {
           "t": "Issued",
-          "d": "By merchant, AI Coupon, or a loyalty programme"
+          "d": "By merchant, AI Pass, or a loyalty programme"
         },
         "held": {
           "t": "Held",
@@ -3915,10 +3972,10 @@
       "types": {
         "coupon": {
           "name": "Coupon",
-          "blurb": "A discount off the bill. The commonest Pass on the exchange, and the one AI Coupon creates for merchants who list free.",
+          "blurb": "A discount off the bill. The commonest Pass on the exchange, and the one AI Pass creates for merchants who list free.",
           "spent": "Consumed once",
           "transfer": "No",
-          "created": "Merchant or AI Coupon",
+          "created": "Merchant or AI Pass",
           "where": "All channels",
           "pass": {
             "issuer": "Kopi Lane, Bugis",
@@ -4029,6 +4086,25 @@
   },
   "vault": {
     "v2": {
+      "faq": {
+        "q3": {
+          "question": "Does the Vault work with Apple Wallet and Google Pay?",
+          "answer": "Yes. Passes can be added to Apple Wallet and Google Pay, alongside the Vault app and an NFC physical card."
+        },
+        "q2": {
+          "question": "What is the difference between a Vault and a wallet balance?",
+          "answer": "A wallet holds money; the Vault holds Passes — each a specific, single-use tokenized offer, redeemed by tapping, scanning, or presenting."
+        },
+        "q1": {
+          "question": "What is the Mezzofy Vault?",
+          "answer": "A consumer app (iOS, Android, Web, and NFC card) that securely stores, organizes, and redeems your Passes."
+        },
+        "title": "Frequently Asked Questions",
+        "q4": {
+          "answer": "Open the Pass and tap NFC, scan the QR or barcode, or present the code at the counter — it is consumed once on validation.",
+          "question": "How do I redeem a Pass from the Vault?"
+        }
+      },
       "closing": {
         "title": "Everything they own, in one Vault.",
         "description": "Give your customers one place to hold and present every Pass, alongside the balance they spend on verified offers. Available white-label to enterprise buyers.",
@@ -4119,9 +4195,28 @@
   },
   "aicoupon": {
     "v2": {
+      "faq": {
+        "q3": {
+          "question": "What does Zero Fee Passes mean?",
+          "answer": "Offers AI Pass creates for merchants who list free — it is the engine behind them, distributed at no upfront cost."
+        },
+        "q2": {
+          "question": "Will AI Pass exceed my budget?",
+          "answer": "No. AI Pass never exceeds a limit you set — you define the boundaries and it works strictly inside them."
+        },
+        "q1": {
+          "question": "What is AI Pass?",
+          "answer": "An AI engine that automatically creates discount offers within the limits a merchant sets, and places them across the Mezzofy exchange."
+        },
+        "title": "Frequently Asked Questions",
+        "q4": {
+          "answer": "No. Merchants can create Passes manually in the Management System; AI Pass is an optional automation.",
+          "question": "Do I have to use AI Pass to create offers?"
+        }
+      },
       "hero": {
         "title": "Set the limits. The AI does the rest.",
-        "subtitle": "AI Coupon creates discount offers for a merchant inside boundaries the merchant sets, and places them across the exchange. It is the engine behind Zero Fee Passes and the NFC network, and it never exceeds a limit it was given.",
+        "subtitle": "AI Pass creates discount offers for a merchant inside boundaries the merchant sets, and places them across the exchange. It is the engine behind Zero Fee Passes and the NFC network, and it never exceeds a limit it was given.",
         "ctaSetup": "Set it up as a merchant",
         "ctaSee": "See what it creates"
       },
@@ -4131,14 +4226,14 @@
         "codeLabel": "Code"
       },
       "heroPass": {
-        "issuer": "Created by AI Coupon",
+        "issuer": "Created by AI Pass",
         "value": "15% off",
         "terms": "Tue–Thu, 2–5pm. Minimum spend $25.",
         "code": "MZF-2Q8R-4471",
         "stamp": "FREE"
       },
       "boxPass": {
-        "issuer": "Created by AI Coupon",
+        "issuer": "Created by AI Pass",
         "value": "15% off",
         "terms": "Tue 11:40. Min spend $25. Valid 30 days.",
         "code": "MZF-2Q8R-4471",
@@ -4206,12 +4301,31 @@
         "title": "Free for the merchant, start to finish.",
         "description": "No creation, distribution or redemption fee. The customer pays a few cents for the guarantee, and that funds the exchange.",
         "ctaHow": "How merchants use it",
-        "ctaSetup": "Set up AI Coupon"
+        "ctaSetup": "Set up AI Pass"
       }
     }
   },
   "cms": {
     "v2": {
+      "faq": {
+        "q3": {
+          "question": "Does it have an API?",
+          "answer": "Yes — a full open API for issuance, redemption, and analytics, plus a user-friendly interface."
+        },
+        "q2": {
+          "question": "How is it different from the exchange?",
+          "answer": "The Management System is where you build and run your own Passes; the exchange is where Passes are distributed to buyers and AI agents. They work together."
+        },
+        "q1": {
+          "question": "What is the Coupon Management System?",
+          "answer": "Mezzofy's enterprise Coupon-as-a-Service (CaaS) platform to create, issue, distribute, validate, track, and expire Passes at scale."
+        },
+        "title": "Frequently Asked Questions",
+        "q4": {
+          "answer": "Issuance, redemption, and expiry in real time, per campaign and per Pass, for audit and performance.",
+          "question": "What can I track?"
+        }
+      },
       "hero": {
         "title": "Your customers. Your Passes. Off the exchange.",
         "subtitle": "CMS is for merchants who already have an audience and want to issue to it directly — email, messaging, their own app. Nothing is listed on the marketplace, no other buyer sees it, and you pay only for what you use.",
@@ -4293,7 +4407,7 @@
           "tag": "Free to list",
           "step1lead": "Set your limits",
           "step1sub": "or your voucher value",
-          "step2lead": "AI Coupon creates and places",
+          "step2lead": "AI Pass creates and places",
           "step2sub": "or we list what you made",
           "step3lead": "Buyers find it",
           "chip1": "Marketplace",

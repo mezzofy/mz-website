@@ -76,14 +76,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/products.html"/>
   </url>
   <url>
-    <loc>https://mezzofy.com/ai-coupon.html</loc>
+    <loc>https://mezzofy.com/ai-pass.html</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/ai-coupon.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/ai-coupon.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/ai-coupon.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/ai-coupon.html"/>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/ai-pass.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/ai-pass.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/ai-pass.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/ai-pass.html"/>
   </url>
   <url>
     <loc>https://mezzofy.com/for-ai-commerce.html</loc>
@@ -118,14 +118,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/coupon-marketplace.html"/>
   </url>
   <url>
-    <loc>https://mezzofy.com/coupon-nfc.html</loc>
+    <loc>https://mezzofy.com/nfc-pass.html</loc>
     <lastmod>2026-04-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/coupon-nfc.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/coupon-nfc.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/coupon-nfc.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/coupon-nfc.html"/>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/nfc-pass.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/nfc-pass.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/nfc-pass.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/nfc-pass.html"/>
   </url>
   <url>
     <loc>https://mezzofy.com/vault.html</loc>

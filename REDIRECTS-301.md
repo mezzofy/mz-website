@@ -20,7 +20,9 @@ responses at the edge are needed to consolidate SEO and drop the interim stubs.
 | 3 | `/for-distributors.html` | `/for-buyers.html` | ✅ yes | Renamed 2026-09-28. |
 | 4 | `/for-developers.html` | `/for-integrators.html` | ✅ yes | Renamed 2026-09-28. |
 | 5 | `/coupon-wallet.html` | `/vault.html` | ✅ yes | Renamed 2026-09-28. |
-| 6 | `/coupon-campaign.html` | `/coupon-management.html` | ❌ no (noindex) | **Optional.** Campaign page was hidden (noindex, dropped from nav/sitemap). A 301 is optional; if not redirected it 404s once the file is removed. Confirm intent before adding. |
+| 6 | `/ai-coupon.html` | `/ai-pass.html` | ✅ yes | Product renamed AI Coupon→AI Pass 2026-09-29. |
+| 7 | `/coupon-nfc.html` | `/nfc-pass.html` | ✅ yes | Product renamed NFC Coupon→NFC Pass 2026-09-29. |
+| 8 | `/coupon-campaign.html` | `/coupon-management.html` | ❌ no (noindex) | **Optional.** Campaign page was hidden (noindex, dropped from nav/sitemap). A 301 is optional; if not redirected it 404s once the file is removed. Confirm intent before adding. |
 
 All redirects are **permanent (301)**, host `mezzofy.com` (+ `www` if served).
 
@@ -37,7 +39,9 @@ function handler(event) {
     '/coupon-pass.html': '/pass.html',
     '/for-distributors.html': '/for-buyers.html',
     '/for-developers.html': '/for-integrators.html',
-    '/coupon-wallet.html': '/vault.html'
+    '/coupon-wallet.html': '/vault.html',
+    '/ai-coupon.html': '/ai-pass.html',
+    '/coupon-nfc.html': '/nfc-pass.html'
     // '/coupon-campaign.html': '/coupon-management.html'  // enable only if confirmed
   };
   var uri = event.request.uri;
@@ -63,13 +67,14 @@ endpoint) — add one `RoutingRule` per pair with
 
 Frontend can then **delete the interim stub files** (`coupon-serial.html`,
 `coupon-pass.html`, `for-distributors.html`, `for-developers.html`,
-`coupon-wallet.html`) so the edge 301 is the only redirect. Do **not** delete them
-before the 301s are live, or the old URLs will hard-404.
+`coupon-wallet.html`, `ai-coupon.html`, `coupon-nfc.html`) so the edge 301 is the
+only redirect. Do **not** delete them before the 301s are live, or the old URLs
+will hard-404.
 
 ## Verify
 
 ```bash
-for u in coupon-serial coupon-pass for-distributors for-developers coupon-wallet; do
+for u in coupon-serial coupon-pass for-distributors for-developers coupon-wallet ai-coupon coupon-nfc; do
   curl -sI "https://mezzofy.com/$u.html" | grep -iE "HTTP/|location"
 done
 # expect: HTTP/2 301  +  location: /<new>.html

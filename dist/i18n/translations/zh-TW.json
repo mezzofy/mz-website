@@ -11,15 +11,15 @@
       "distributorSolution": "我是買家",
       "developerSolution": "我是整合商",
       "aiCommerceSolution": "AI 電商 (Beta)",
-      "managementSystem": "電子券管理系統",
-      "marketplace": "電子券市場",
-      "nfc": "電子券 NFC",
+      "managementSystem": "管理系統",
+      "marketplace": "市場",
+      "nfc": "NFC Pass",
       "marketing": "電子券活動",
       "wallet": "Vault",
       "serial": "Pass",
       "apiDoc": "API 文檔",
       "apiUseCase": "API 使用案例",
-      "playbook": "電子券指南",
+      "playbook": "Passes 指南",
       "support": "支援",
       "aboutUs": "關於我們",
       "contactUs": "聯絡我們",
@@ -47,7 +47,7 @@
       },
       "resources": {
         "title": "資源",
-        "playbook": "電子券指南",
+        "playbook": "Passes 指南",
         "apiDoc": "API 文檔",
         "apiUseCase": "API 使用案例",
         "support": "支援"
@@ -436,9 +436,9 @@
         "title": "更進一步",
         "description": "了解其他營運商如何建立流動性，或安排一小時，我們將逐一梳理您的情況。",
         "playbook": {
-          "title": "優惠券交易所實戰手冊",
-          "description": "四十頁篇幅，講述如何打造一個真正會被兌換的優惠券計劃 — 內容源自我們在整個交易所所見，而非套用範本。",
-          "ch1": "為何大多數優惠券計劃在櫃檯環節失敗",
+          "title": "Pass 交易所實戰手冊",
+          "description": "四十頁篇幅，講述如何打造一個真正會被兌換的 Pass 計劃 — 內容源自我們在整個交易所所見，而非套用範本。",
+          "ch1": "為何大多數 Pass 計劃在櫃檯環節失敗",
           "ch2": "設定保護您利潤的折扣上限",
           "ch3": "在免費刊登與銷售價值之間做出選擇",
           "ch4": "多門市業務的兌換營運",
@@ -471,7 +471,7 @@
   "about": {
     "hero": {
       "title": "關於公司",
-      "subtitle": "透過<span class=\"text-primary-orange\">智能電子券的力量</span>連接企業與客戶"
+      "subtitle": "透過<span class=\"text-primary-orange\">智能 Pass 的力量</span>連接企業與客戶"
     },
     "mission": {
       "title": "我們的使命",
@@ -492,7 +492,7 @@
       "title": "大規模性能",
       "metric1": {
         "value": "數百萬",
-        "label": "處理的電子券"
+        "label": "處理的 Pass"
       },
       "metric2": {
         "value": "數十億",
@@ -752,7 +752,7 @@
       "title": "為什麼投資 Mezzofy？",
       "highlight1": {
         "title": "市場領導地位",
-        "description": "作為數位電子券基礎設施領域的先驅，我們已經建立了最全面的平台，連接全球商家、分銷商和消費者。"
+        "description": "作為數位 Pass 基礎設施領域的先驅，我們已經建立了最全面的平台，連接全球商家、分銷商和消費者。"
       },
       "highlight2": {
         "title": "經過驗證的技術",
@@ -774,9 +774,9 @@
       "link": "查看生態系統"
     },
     "hero": {
-      "title": "終極<span class=\"text-primary-orange\">電子券指南</span>",
-      "subtitle": "適用於各個成長階段的智能電子券策略",
-      "description": "<span class=\"text-primary-orange font-semibold\">策略框架</span>將電子券策略與客戶生命週期階段對齊。提供<span class=\"text-primary-orange font-semibold\">吸引、激發和保留</span>階段最佳實踐的教育資源，使用 Mezzofy 交易協議。",
+      "title": "終極<span class=\"text-primary-orange\">Passes 指南</span>",
+      "subtitle": "適用於各個成長階段的智能 Pass 策略",
+      "description": "<span class=\"text-primary-orange font-semibold\">策略框架</span>將 Pass 策略與客戶生命週期階段對齊。提供<span class=\"text-primary-orange font-semibold\">吸引、激發和保留</span>階段最佳實踐的教育資源，使用 Mezzofy 交易協議。",
       "requestDemo": "申請演示",
       "exploreStrategies": "探索策略"
     },
@@ -789,62 +789,62 @@
       },
       "brandedCatalog": {
         "title": "品牌目錄",
-        "description": "通過精選的電子券目錄展示您的產品，突出您的品牌形象和價值主張。"
+        "description": "通過精選的 Pass 目錄展示您的產品，突出您的品牌形象和價值主張。"
       },
       "socialSharing": {
-        "title": "社交分享電子券",
-        "description": "通過激勵客戶在社交媒體上與他們的網絡分享獨家電子券，擴大您的觸及範圍。"
+        "title": "社交分享 Pass",
+        "description": "通過激勵客戶在社交媒體上與他們的網絡分享獨家 Passes，擴大您的觸及範圍。"
       },
       "messenger": {
-        "title": "通訊軟體電子券",
-        "description": "通過訊息平台直接與客戶互動，提供個性化的電子券，感覺既獨特又即時。"
+        "title": "通訊軟體 Pass",
+        "description": "通過訊息平台直接與客戶互動，提供個性化的 Pass，感覺既獨特又即時。"
       }
     },
     "stage2": {
       "title": "激發興趣並推動行動",
       "subtitle": "鼓勵發現、建立信任並吸引客戶",
       "survey": {
-        "title": "調查電子券",
-        "description": "收集有價值的客戶洞察，同時用電子券獎勵參與，創造雙贏的互動機會。"
+        "title": "調查 Pass",
+        "description": "收集有價值的客戶洞察，同時用 Passes 獎勵參與，創造雙贏的互動機會。"
       },
       "freeTrial": {
-        "title": "免費試用電子券",
+        "title": "免費試用 Pass",
         "description": "通過提供無風險試用來降低進入門檻，讓客戶親身體驗您的產品或服務。"
       },
       "wallet": {
-        "title": "電子券錢包",
-        "description": "通過允許客戶在集中式錢包中保存多張電子券以供將來使用，建立期待並鼓勵重複訪問。"
+        "title": "Vault",
+        "description": "通過允許客戶在集中式 Vault 中保存多張 Passes 以供將來使用，建立期待並鼓勵重複訪問。"
       },
       "chained": {
-        "title": "連鎖電子券",
-        "description": "創建漸進式旅程，每次電子券兌換都會解鎖下一個，引導客戶瀏覽您的產品線。"
+        "title": "連鎖 Pass",
+        "description": "創建漸進式旅程，每次 Pass 兌換都會解鎖下一個，引導客戶瀏覽您的產品線。"
       }
     },
     "stage3": {
       "title": "讓客戶持續回訪",
       "subtitle": "建立長期關係，將客戶轉變為忠實擁護者",
       "luckyDraw": {
-        "title": "幸運抽獎電子券",
+        "title": "幸運抽獎 Pass",
         "description": "通過隨機獎勵抽獎增加興奮感和遊戲化，保持客戶的參與度和熱情。"
       },
       "bundle": {
-        "title": "組合折扣電子券",
+        "title": "組合折扣 Pass",
         "description": "通過為相互補充的產品組合提供有吸引力的折扣，增加平均訂單價值。"
       },
       "occasion": {
-        "title": "場合電子券",
+        "title": "場合 Pass",
         "description": "通過慶祝生日、週年紀念和特殊時刻提供個性化優惠，加強情感聯繫。"
       },
       "valueBoost": {
-        "title": "價值提升電子券",
-        "description": "通過基於購買金額或頻率增加價值的分級電子券來獎勵忠誠度並鼓勵更高消費。"
+        "title": "價值提升 Pass",
+        "description": "通過基於購買金額或頻率增加價值的分級 Passes 來獎勵忠誠度並鼓勵更高消費。"
       }
     },
     "whyMezzofy": {
       "title": "為什麼企業選擇 Mezzofy",
       "efficient": {
         "title": "高效",
-        "description": "無縫且靈活的電子券創建和管理 - 幾分鐘內完成，而非數小時"
+        "description": "無縫且靈活的 Pass 創建和管理 - 幾分鐘內完成，而非數小時"
       },
       "firstParty": {
         "title": "第一方數據",
@@ -857,7 +857,7 @@
     },
     "ecosystem": {
       "title": "與 Mezzofy 生態系統無縫配合",
-      "description": "電子券指南與其他 Mezzofy 產品整合，創建完整的解決方案",
+      "description": "Passes 指南與其他 Mezzofy 產品整合，創建完整的解決方案",
       "product1": "使用我們的基礎設施實施指南策略",
       "product2": "執行指南中的店內激活策略",
       "product3": "通過電子券銷售將指南策略變現",
@@ -866,8 +866,8 @@
       "contactSales": "聯繫銷售獲取套裝價格"
     },
     "footerCta": {
-      "title": "通過正確的電子券策略吸引、轉化和保留客戶",
-      "description": "準備好使用智能電子券策略轉變您的客戶獲取和保留了嗎？",
+      "title": "通過正確的 Pass 策略吸引、轉化和保留客戶",
+      "description": "準備好使用智能 Pass 策略轉變您的客戶獲取和保留了嗎？",
       "contactUs": "聯繫我們開始",
       "scheduleDemo": "預約演示"
     }
@@ -889,7 +889,7 @@
       },
       "step2": {
         "title": "分發",
-        "description": "透過<a href=\"coupon-nfc.html\" class=\"text-white font-semibold underline\">NFC</a>、<a href=\"coupon-campaign.html\" class=\"text-white font-semibold underline\">行銷</a>、<a href=\"coupon-marketplace.html\" class=\"text-white font-semibold underline\">市集</a>部署",
+        "description": "透過<a href=\"nfc-pass.html\" class=\"text-white font-semibold underline\">NFC</a>、<a href=\"coupon-campaign.html\" class=\"text-white font-semibold underline\">行銷</a>、<a href=\"coupon-marketplace.html\" class=\"text-white font-semibold underline\">市集</a>部署",
         "channels": "<span class=\"px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white\">電郵</span><span class=\"px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white\">SMS</span><span class=\"px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white\">聊天</span><span class=\"px-3 py-1 bg-white rounded-full text-xs font-bold text-primary-orange\">API</span>"
       },
       "step3": {
@@ -988,7 +988,7 @@
           "issuer": "您的商家",
           "value": "減 $5",
           "terms": "最低消費 $30。有效期 30 天。",
-          "code": "由 AI Coupon 創建",
+          "code": "由 AI Pass 創建",
           "stamp": "免費"
         },
         "zero": {
@@ -1072,7 +1072,7 @@
         "zero": {
           "step1Title": "您設定框架",
           "step1Desc": "折扣範圍、最低消費、每月配額、每日上限，以及優惠是否僅限非繁忙時段。這些都是 AI 無法逾越的硬性上限。",
-          "step2Title": "AI Coupon 創建優惠",
+          "step2Title": "AI Pass 創建優惠",
           "step2Desc": "它在您的上限範圍內選擇折扣幅度、時機與數量，並將每一項發行為代幣化的 Pass。",
           "step3Title": "網路負責投放",
           "step3Desc": "市場、商場與辦公室的 NFC 感應點、企業買家應用程式，以及 AI 購物助理。您無需建立任何東西。",
@@ -1105,7 +1105,7 @@
       },
       "calc": {
         "title": "設定框架，看看會產出什麼",
-        "description": "這些是第一步所設的上限。調整它們，看看 AI Coupon 在允許範圍內能為您的商家創建什麼。",
+        "description": "這些是第一步所設的上限。調整它們，看看 AI Pass 在允許範圍內能為您的商家創建什麼。",
         "zero": {
           "segPct": "按百分比折扣",
           "segAmt": "按金額折扣",
@@ -1147,7 +1147,7 @@
         "title": "無論您以哪種方式銷售，都在同一套系統中運行",
         "description": "優惠券管理系統是其核心。您透過三種途徑中任一種所發行的每張 Pass，都在同一處完成創建、追蹤、兌換與對帳。您只需學會一個儀表板。",
         "routeZeroT": "零費用 Pass",
-        "routeZeroS": "由 AI Coupon 創建",
+        "routeZeroS": "由 AI Pass 創建",
         "routeChargeT": "收費 Pass",
         "routeChargeS": "於交易所銷售",
         "routeOwnT": "自有渠道",
@@ -1800,7 +1800,7 @@
       "description": "唯一支援 B2B、B2C 和 C2C 交易的安全點對點 Pass 交換平台。基於代幣化技術打造，為數位促銷活動建立具防詐保護的二級市場。",
       "listInventory": "刊登您的庫存",
       "exploreMarketplace": "探索市集",
-      "imageAlt": "優惠券交換網絡視覺化"
+      "imageAlt": "Pass 交換網絡視覺化"
     },
     "exchange": {
       "title": "電子券交換協定",
@@ -1820,7 +1820,7 @@
     },
     "models": {
       "title": "三種市集模式，一個平台",
-      "subtitle": "Mezzofy 支援所有交易類型的電子券交換，建立完整的數位促銷分銷生態系統",
+      "subtitle": "Mezzofy 支援所有交易類型的 Pass 交換，建立完整的數位促銷分銷生態系統",
       "b2b": {
         "badge": "B2B 市集",
         "title": "企業對企業",
@@ -1849,10 +1849,10 @@
         "description": "全球首個安全的點對點 Pass 交換市集。透過防詐驗證轉移、贈送或交易 Passes。",
         "benefit1": "可轉讓 Passes：透過安全驗證將 Passes 贈送或轉讓給親友",
         "benefit2": "二級市場：交易或出售未使用的 Passes 以最大化價值並減少浪費",
-        "benefit3": "防詐保護：區塊鏈啟發的代幣化確保每張電子券唯一且有效",
+        "benefit3": "防詐保護：區塊鏈啟發的代幣化確保每張 Pass 唯一且有效",
         "benefit4": "提高兌換率：未使用的 Passes 找到新主人，為商家帶來實際商業價值",
         "cardTitle": "消費者 ↔ 消費者",
-        "cardDescription": "具有防詐驗證的點對點電子券交換"
+        "cardDescription": "具有防詐驗證的點對點 Pass 交換"
       }
     },
     "howItWorks": {
@@ -1878,7 +1878,7 @@
       },
       "fraudPrevention": {
         "title": "防詐保護",
-        "description": "具有獨特數位簽名的代幣化電子券"
+        "description": "具有獨特數位簽名的代幣化 Passes"
       },
       "instantSettlement": {
         "title": "即時結算",
@@ -1898,7 +1898,7 @@
       },
       "flexiblePricing": {
         "title": "彈性定價",
-        "description": "僅在電子券被兌換時付費"
+        "description": "僅在 Passes 被兌換時付費"
       },
       "support24": {
         "title": "24/7 支援",
@@ -2171,6 +2171,25 @@
       "submit": "請求合作夥伴關係討論"
     },
     "v2": {
+      "faq": {
+        "q3": {
+          "question": "哪些手機支援 NFC Pass？",
+          "answer": "所有配備 NFC 的現代 iOS 及 Android 智能手機——即大部分 2018 年以後推出的手機。"
+        },
+        "q2": {
+          "question": "顧客需要安裝應用程式才能使用 NFC Pass 嗎？",
+          "answer": "無需任何應用程式——輕觸即可在瀏覽器中開啟 Pass。每個 NFC Pass 還附帶 QR 碼作為備用方案。"
+        },
+        "q1": {
+          "question": "什麼是 NFC Pass？",
+          "answer": "透過智能手機輕觸 NFC 標籤即可獲取的 Pass——即時輕觸兌換，並以 HMAC 加密保護。"
+        },
+        "title": "常見問題",
+        "q4": {
+          "answer": "實體零售、餐廳、活動及產品包裝——任何可放置 NFC 標籤或卡片的地方。",
+          "question": "NFC Pass 用於哪些場景？"
+        }
+      },
       "hero": {
         "badge": "網路建置中。誠邀節點與商戶加入。",
         "title": "在人流已聚集之處設置感應點。",
@@ -2217,7 +2236,7 @@
           "title": "現在的運作方式",
           "diagramAlt": "由眾多商戶組成的共享供給池為多個感應點供貨；商戶來來去去，而節點始終運行",
           "lead": "眾多商戶、眾多節點，商戶免費。",
-          "text": "由夥伴設置感應點。資源池中的任何商戶都可經由它流通，並由 AI Coupon 進行調配。一個離開，另一個早已加入，每個節點始終運行。每新增一個節點，都讓每位商戶更具價值 — 反之亦然。"
+          "text": "由夥伴設置感應點。資源池中的任何商戶都可經由它流通，並由 AI Pass 進行調配。一個離開，另一個早已加入，每個節點始終運行。每新增一個節點，都讓每位商戶更具價值 — 反之亦然。"
         }
       },
       "join": {
@@ -2476,13 +2495,13 @@
     },
     "opportunities": {
       "title": "超越發現：AI 驅動的產品套件",
-      "subtitle": "電子券搜尋只是起點。Mezzofy 正在交易所之上構建完整的 AI 電商智能層。",
+      "subtitle": "Pass 搜尋只是起點。Mezzofy 正在交易所之上構建完整的 AI 電商智能層。",
       "api": {
         "title": "AI 購物代理商 API",
         "description": "Mezzofy 成為 ChatGPT（ACP）和 Gemini（UCP）的註冊數據提供商。供應池中的商家可被全球 9 億以上 AI 用戶自動發現。"
       },
       "intelligence": {
-        "title": "預測性電子券智能",
+        "title": "預測性 Pass 智能",
         "description": "匯總數千家商家的匿名兌換數據，建立預測模型。"
       },
       "concierge": {
@@ -2491,7 +2510,7 @@
       },
       "pricing": {
         "title": "動態定價與智能配額",
-        "description": "根據兌換速度、商家容量和時段需求自動調整電子券可用性的 AI 引擎。"
+        "description": "根據兌換速度、商家容量和時段需求自動調整 Pass 可用性的 AI 引擎。"
       },
       "fraud": {
         "title": "AI 驅動的欺詐檢測",
@@ -2530,7 +2549,7 @@
     "architecture": {
       "title": "整合架構",
       "diagram": "商家供應池",
-      "description": "通過 ACP、UCP 和 MCP 端點開放 Mezzofy 供應庫存。AI 代理商即時查詢。電子券代幣在兌換時驗證。Mezzofy 對每次成功的 AI 推薦兌換收取交易費。一次供應上架。三個協議端點。全球 AI 分發。"
+      "description": "通過 ACP、UCP 和 MCP 端點開放 Mezzofy 供應庫存。AI 代理商即時查詢。Pass 代幣在兌換時驗證。Mezzofy 對每次成功的 AI 推薦兌換收取交易費。一次供應上架。三個協議端點。全球 AI 分發。"
     },
     "footerCta": {
       "title": "AI 電商已上線。您的庫存也應該上線了。",
@@ -2849,7 +2868,7 @@
       "description": "按用戶類型整理的常見問題及處理方式。",
       "supply": {
         "title": "供應客戶（商家）",
-        "issue1": "電子券無法啟用或顯示不正確",
+        "issue1": "Pass 無法啟用或顯示不正確",
         "issue2": "NFC 標籤設定和配置問題",
         "issue3": "兌換數據差異或報表錯誤",
         "issue4": "API 整合失敗或 Webhook 錯誤",
@@ -2865,10 +2884,10 @@
       },
       "partners": {
         "title": "終端用戶及消費者",
-        "issue1": "結帳時電子券無法套用",
+        "issue1": "結帳時 Pass 無法套用",
         "issue2": "錢包應用程式登入或同步問題",
         "issue3": "NFC 感應在銷售點未被識別",
-        "issue4": "電子券已過期或條款與預期不符"
+        "issue4": "Pass 已過期或條款與預期不符"
       }
     },
     "sla": {
@@ -3680,6 +3699,25 @@
   },
   "products": {
     "v2": {
+      "faq": {
+        "q3": {
+          "question": "我需要全部五項產品嗎？",
+          "answer": "不需要。每項都能獨立運作；大多數商戶從管理系統或 AI Pass 開始，並在成長過程中逐步加入其他產品。"
+        },
+        "q2": {
+          "question": "什麼是 Pass？",
+          "answer": "Pass 是一項代幣化、僅可使用一次且防偽的優惠，可以七種方式呈現 — 優惠券、代金券、團購優惠、門票、獎勵、儲值卡或代幣。"
+        },
+        "q1": {
+          "question": "Mezzofy 交易所包含哪些產品？",
+          "answer": "五項：Pass（代幣化優惠標準）、Vault（存放它們的消費者應用程式）、AI Pass（自動創建優惠）、NFC Pass（感應即兌換），以及管理系統（企業級 CaaS）。"
+        },
+        "title": "常見問題",
+        "q4": {
+          "answer": "優惠券是 Pass 可呈現的七種類型之一。Pass 是總體標準；優惠券則是以折扣形式呈現的 Pass。",
+          "question": "優惠券和 Pass 是一樣的嗎？"
+        }
+      },
       "hero": {
         "badge": "五項產品，一致保證",
         "title": "交易所賴以運行的一切。",
@@ -3699,19 +3737,19 @@
       },
       "ai": {
         "label": "引擎",
-        "title": "AI Coupon",
+        "title": "AI Pass",
         "desc": "在商戶設定的上限範圍內創建優惠，並投放至整個交易所。為零費用提供動力。",
-        "link": "探索 AI Coupon"
+        "link": "探索 AI Pass"
       },
       "nfc": {
         "label": "網路",
-        "title": "NFC Coupon",
+        "title": "NFC Pass",
         "desc": "由夥伴在商場、大堂與辦公室設置的感應點。資源池中的任何商戶都可透過它們流通。",
-        "link": "探索 NFC Coupon"
+        "link": "探索 NFC Pass"
       },
       "cms": {
         "label": "為商戶而設",
-        "title": "優惠券管理系統",
+        "title": "管理系統",
         "desc": "向您自己的客戶發行，不經交易所。計量收費、私密，並使用相同的兌換工具。",
         "link": "探索 CMS"
       }
@@ -3719,6 +3757,25 @@
   },
   "pass": {
     "v2": {
+      "faq": {
+        "q3": {
+          "question": "七種 Pass 類型有哪些？",
+          "answer": "優惠券、代金券、團購優惠、門票、獎勵、儲值卡以及代幣 — 一套標準，七種呈現方式。"
+        },
+        "q2": {
+          "question": "Pass 與一般優惠券有何不同？",
+          "answer": "優惠券是 Pass 呈現的其中一種形式。每張 Pass 都經過代幣化，並在驗證時使用一次，因此無法被偽造、複製或重複使用。"
+        },
+        "q1": {
+          "question": "什麼是 Mezzofy Pass？",
+          "answer": "一項單一、代幣化、僅可使用一次的優惠，以七種方式呈現 — 優惠券、代金券、團購優惠、門票、獎勵、儲值卡或代幣 — 唯一且防偽。"
+        },
+        "title": "常見問題",
+        "q4": {
+          "answer": "可以。Pass 可以贈送、轉讓或交易，並且因為經過代幣化而始終保持唯一且有效。",
+          "question": "Pass 可以轉讓嗎？"
+        }
+      },
       "closing": {
         "title": "每個優惠，都以 Pass 形式發行。",
         "description": "一套標準，七種呈現方式 — 代幣化、僅可使用一次，並於櫃檯兌現。可在交易所免費刊登，或向您自己的客戶發行。",
@@ -3763,7 +3820,7 @@
         "title": "生命週期",
         "issued": {
           "t": "已發行",
-          "d": "由商戶、AI Coupon 或忠誠度計劃發行"
+          "d": "由商戶、AI Pass 或忠誠度計劃發行"
         },
         "held": {
           "t": "持有中",
@@ -3794,10 +3851,10 @@
       "types": {
         "coupon": {
           "name": "優惠券",
-          "blurb": "帳單上的折扣。交易所中最常見的 Pass，也是 AI Coupon 為免費刊登的商戶所創建的類型。",
+          "blurb": "帳單上的折扣。交易所中最常見的 Pass，也是 AI Pass 為免費刊登的商戶所創建的類型。",
           "spent": "只可使用一次",
           "transfer": "否",
-          "created": "商戶或 AI Coupon",
+          "created": "商戶或 AI Pass",
           "where": "所有渠道",
           "pass": {
             "issuer": "Kopi Lane, Bugis",
@@ -3908,6 +3965,25 @@
   },
   "vault": {
     "v2": {
+      "faq": {
+        "q3": {
+          "question": "Vault 能與 Apple Wallet 和 Google Pay 搭配使用嗎？",
+          "answer": "可以。Pass 可加入 Apple Wallet 和 Google Pay，並可與 Vault 應用程式及 NFC 實體卡一併使用。"
+        },
+        "q2": {
+          "question": "Vault 與錢包餘額有什麼區別？",
+          "answer": "錢包存放金錢；Vault 則存放 Pass — 每張都是一項特定、僅可使用一次的代幣化優惠，透過感應、掃描或出示來兌換。"
+        },
+        "q1": {
+          "question": "什麼是 Mezzofy Vault？",
+          "answer": "一款消費者應用程式（iOS、Android、Web 及 NFC 卡），可安全地儲存、整理並兌換您的 Pass。"
+        },
+        "title": "常見問題",
+        "q4": {
+          "answer": "開啟該 Pass，然後感應 NFC、掃描 QR 或條碼，或在櫃檯出示代碼 — 它會在驗證時使用一次。",
+          "question": "我要如何從 Vault 兌換 Pass？"
+        }
+      },
       "closing": {
         "title": "他們擁有的一切，盡在一個 Vault 中。",
         "description": "為您的客戶提供一個統一之處，用以存放與出示每一張 Pass，並與其用於購買已驗證優惠的餘額並列。可為企業買家提供白標版本。",
@@ -3998,9 +4074,28 @@
   },
   "aicoupon": {
     "v2": {
+      "faq": {
+        "q3": {
+          "question": "Zero Fee Passes 是什麼意思？",
+          "answer": "AI Pass 為免費上架的商戶所創建的優惠——它是背後的引擎，分發時無需任何前期成本。"
+        },
+        "q2": {
+          "question": "AI Pass 會超出我的預算嗎？",
+          "answer": "不會。AI Pass 絕不會超出您設定的限制——您界定邊界，它嚴格在其範圍內運作。"
+        },
+        "q1": {
+          "question": "什麼是 AI Pass？",
+          "answer": "一個 AI 引擎，在商戶設定的限制範圍內自動創建折扣優惠，並將其分發至整個 Mezzofy 交易所。"
+        },
+        "title": "常見問題",
+        "q4": {
+          "answer": "不用。商戶可以在管理系統中手動創建 Passes；AI Pass 只是一項可選的自動化功能。",
+          "question": "我一定要使用 AI Pass 來創建優惠嗎？"
+        }
+      },
       "hero": {
         "title": "設定上限，其餘交由 AI 處理。",
-        "subtitle": "AI Coupon 在商戶設定的界限內為其創建折扣優惠，並投放至整個交易所。它是零費用 Pass 與 NFC 網路背後的引擎，且從不逾越所獲授的任何上限。",
+        "subtitle": "AI Pass 在商戶設定的界限內為其創建折扣優惠，並投放至整個交易所。它是零費用 Pass 與 NFC 網路背後的引擎，且從不逾越所獲授的任何上限。",
         "ctaSetup": "以商戶身分設定",
         "ctaSee": "看看它會創建什麼"
       },
@@ -4010,14 +4105,14 @@
         "codeLabel": "代碼"
       },
       "heroPass": {
-        "issuer": "由 AI Coupon 創建",
+        "issuer": "由 AI Pass 創建",
         "value": "15% 折扣",
         "terms": "星期二至星期四，下午 2–5 時。最低消費 $25。",
         "code": "MZF-2Q8R-4471",
         "stamp": "免費"
       },
       "boxPass": {
-        "issuer": "由 AI Coupon 創建",
+        "issuer": "由 AI Pass 創建",
         "value": "15% 折扣",
         "terms": "星期二 11:40。最低消費 $25。有效期 30 天。",
         "code": "MZF-2Q8R-4471",
@@ -4085,12 +4180,31 @@
         "title": "對商戶而言，從頭到尾完全免費。",
         "description": "沒有創建費、分發費或兌換費。客戶為這項保證支付數美分，而這正是交易所的資金來源。",
         "ctaHow": "商戶如何使用",
-        "ctaSetup": "設定 AI Coupon"
+        "ctaSetup": "設定 AI Pass"
       }
     }
   },
   "cms": {
     "v2": {
+      "faq": {
+        "q3": {
+          "question": "它有 API 嗎？",
+          "answer": "有——提供完整的開放 API 用於發行、兌換及分析，並配備易於使用的介面。"
+        },
+        "q2": {
+          "question": "它與交易所有何不同？",
+          "answer": "管理系統是您構建及運行自有 Passes 的地方；交易所則是 Passes 分發給買家及 AI 代理的地方。兩者協同運作。"
+        },
+        "q1": {
+          "question": "什麼是優惠券管理系統？",
+          "answer": "Mezzofy 的企業級優惠券即服務（CaaS）平台，可大規模創建、發行、分發、驗證、追蹤及讓 Passes 到期。"
+        },
+        "title": "常見問題",
+        "q4": {
+          "answer": "即時追蹤發行、兌換及到期情況，按活動及按 Pass 細分，以供審計與績效分析。",
+          "question": "我可以追蹤哪些數據？"
+        }
+      },
       "hero": {
         "title": "您的客戶。您的 Pass。不經交易所。",
         "subtitle": "CMS 專為已擁有受眾、並希望直接向其發行的商戶而設 — 電郵、訊息、他們自己的應用程式。任何內容都不會刊登於市場，其他買家也看不到，而您只需為所使用的部分付費。",
@@ -4172,7 +4286,7 @@
           "tag": "免費刊登",
           "step1lead": "設定您的上限",
           "step1sub": "或您的代金券面值",
-          "step2lead": "AI Coupon 創建並投放",
+          "step2lead": "AI Pass 創建並投放",
           "step2sub": "或由我們刊登您所製作的內容",
           "step3lead": "買家發現它",
           "chip1": "市場",
