@@ -34,6 +34,11 @@ MCP server configuration fixed for Windows. Shadcn MCP server now loads correctl
 
 ## Recently Completed (Last 7 Days)
 
+**2026-09-30 (Homepage 3D-depth revamp — CSS transforms, restyle existing content):**
+- Restyled `index.html` hero into a CSS-3D stage (no libraries, all content/i18n/SEO/FAQ preserved). The Pass card floats (idle bob) and tilts in perspective to the cursor (desktop) or gyroscope (Android), with a resting tilt so it reads 3D on load/touch; added a soft brand glow behind it, a deep shadow, and 3 ambient depth orbs with pointer parallax. Section cards (3 "ways-in" + 3 guarantee stages) get a restrained cursor hover-tilt (desktop/fine-pointer only).
+- All transform/opacity; `will-change` on animated layers; `perspective:1500px` hero + `perspective()` per card. Everything is fully disabled under `prefers-reduced-motion` (verified: card flat, no float, JS returns early). Inline `<style>` + inline `<script>` in index.html only — **no output.css rebuild, 1 file changed**.
+- Verified live: desktop 1440 + mobile 375 both **0 horizontal overflow**; tilt produces real matrix3d rotation; 0 raw-i18n-key leaks (FAQ/content intact); works EN/zh-TW; only the known localhost analytics-CORS console noise.
+
 **2026-09-29 (SEO/AEO/GEO review of the 10 revamped pages + defect fixes):**
 - Fixed stale OLD product names in structured data: products.html meta/og/twitter/JSON-LD desc (4×) "AI Coupon, NFC Coupon"→"AI Pass, NFC Pass" + ItemList names; index.html Organization OfferCatalog names → Management System/Marketplace/NFC Pass/Vault; ai-pass.html SoftwareApplication "Mezzofy AI Coupon"→"Mezzofy AI Pass". JSON-LD re-validated.
 - Fixed llms.txt (GEO): link text now matches renamed products (For Buyers, For Integrators, Management System, Marketplace, NFC Pass, Vault, Pass) + added missing AI Pass entry.

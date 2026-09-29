@@ -301,9 +301,27 @@
         .pass-stub--wide .pass-stub__value { font-size:3rem; }
         /* Channel infographic nodes */
         .channel-node { background:#fff; border:1px solid rgba(26,26,26,0.12); border-top:3px solid #FF6B35; border-radius:12px; padding:18px 20px; }
+        /* Mobile: centre the stacked channel cards under the vertical flow arrows
+           (desktop keeps items-stretch for equal-height cards in the row). */
+        @media (max-width:639px) {
+            #channels-flow { align-items:center; }
+            #channels-flow .channel-node { width:100%; max-width:22rem; }
+        }
         .channel-node__title { font-weight:700; color:#1a1a1a; }
         .channel-node__sub { font-size:0.85rem; color:#808080; margin-top:2px; }
+        /* Flow arrow: a chevron head with dashes "flowing" toward it (value moving
+           through the exchange). Points right on desktop, down on mobile; static
+           under reduced-motion. */
         .flow-arrow { color:#FF6B35; }
+        .flow-arrow__svg { width:46px; height:14px; overflow:visible; display:block; }
+        .flow-arrow__line { stroke:#FF6B35; stroke-width:2; stroke-linecap:round;
+            stroke-dasharray:0.5 6; animation: flowDash 0.9s linear infinite; }
+        .flow-arrow__head { stroke:#FF6B35; stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round; }
+        @keyframes flowDash { to { stroke-dashoffset:-6.5; } }
+        @media (max-width:639px) { .flow-arrow__svg { transform: rotate(90deg); margin:4px 0; } }
+        @media (prefers-reduced-motion: reduce) {
+            .flow-arrow__line { animation:none; stroke-dasharray:none; }
+        }
         /* Channel grid table */
         .v2-table { width:100%; border-collapse:collapse; }
         .v2-table th, .v2-table td { text-align:left; padding:12px 14px; border-bottom:1px solid rgba(26,26,26,0.10); font-size:0.92rem; vertical-align:top; }
@@ -410,6 +428,66 @@
             .reveal { opacity:1; transform:none; transition:none; }
             .ways-card::before { transition:none; }
             .btn-primary:active, .btn-secondary:active, .slot-btn:active { transform:none; }
+        }
+
+        /* ===== 3D depth revamp — CSS transforms only, mobile-safe, reduced-motion-aware ===== */
+        /* Hero becomes a 3D stage: the Pass floats and tilts to the cursor/gyroscope. */
+        #hero-section { perspective: 1500px; perspective-origin: 62% 40%; }
+
+        /* Floating wrapper: gentle idle bob. Uses the `translate` property so the JS
+           tilt (which uses `transform`) composes cleanly without fighting it. */
+        .pass-float { position:relative; transform-style:preserve-3d; will-change:translate;
+            animation: passBob 6.5s ease-in-out infinite; }
+        @keyframes passBob { 0%,100%{ translate:0 0 } 50%{ translate:0 -16px } }
+
+        /* The Pass card tilts as a solid panel in the hero's 3D space. A gentle resting
+           tilt reads as 3D on load (and on touch devices with no pointer); JS overrides
+           the vars live on cursor/gyro move. */
+        .pass-3d {
+            --rx: 3deg; --ry: -7deg;
+            transform: rotateX(var(--rx)) rotateY(var(--ry));
+            transition: transform .25s cubic-bezier(0.23,1,0.32,1);
+            box-shadow: 0 44px 90px -30px rgba(0,0,0,0.75), 0 10px 30px -14px rgba(255,107,53,0.28);
+            will-change: transform; }
+
+        /* The float wrapper is a flex item; give it width:100% so the card's
+           width:100% resolves to the column (never overflows on mobile). */
+        #hero-section .pass-float { width: 100%; }
+        /* Enlarge the Pass on desktop (lg+), where the 2-column layout gives room. */
+        @media (min-width: 1024px) {
+            #hero-section .pass-stub--wide { max-width: 600px; padding: 40px 38px 36px; }
+            #hero-section .pass-stub--wide .pass-stub__value { font-size: 3.7rem; }
+            #hero-section .pass-stub--wide .pass-stub__issuer { font-size: 0.8rem; }
+            #hero-section .pass-stub--wide .pass-stub__terms { font-size: 1.05rem; }
+            #hero-section .pass-stub--wide .pass-stub__code { font-size: 1.02rem; }
+            #hero-section .pass-stub--wide .pass-stamp { font-size: 0.86rem; right: 26px; bottom: 24px; }
+            #hero-section .pass-stub--wide .pass-perf { margin: 24px -38px; }
+        }
+
+        /* Soft brand glow anchored behind the floating card. */
+        .pass-glow { position:absolute; inset:-16%; z-index:-1; border-radius:38px;
+            background: radial-gradient(closest-side, rgba(255,107,53,0.40), transparent 70%);
+            filter: blur(30px); }
+
+        /* Ambient depth orbs drifting behind the hero (parallax var set by JS). */
+        .hero-orb { position:absolute; z-index:0; border-radius:50%; pointer-events:none;
+            background: radial-gradient(circle at 34% 30%, rgba(255,107,53,0.40), rgba(255,107,53,0) 68%);
+            filter: blur(4px); animation: orbDrift ease-in-out infinite; will-change:transform,translate; }
+        @keyframes orbDrift { 0%,100%{ transform:translate3d(0,0,0) } 50%{ transform:translate3d(0,-30px,0) } }
+
+        /* Content cards: restrained 3D hover-lift with cursor tilt (desktop, fine pointer). */
+        @media (hover:hover) and (pointer:fine) {
+            .card-3d { transition: transform .3s cubic-bezier(0.23,1,0.32,1), box-shadow .3s; will-change:transform; }
+            .card-3d:hover { transform: perspective(900px) translateY(-6px)
+                    rotateX(var(--cx,0deg)) rotateY(var(--cy,0deg));
+                box-shadow: 0 28px 54px -26px rgba(0,0,0,0.30); z-index:2; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .pass-float, .hero-orb { animation:none; }
+            .pass-3d { transform:none !important; transition:none; }
+            .card-3d { transition:none; }
+            .card-3d:hover { transform:none; }
         }
     </style>
     <noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
@@ -654,7 +732,11 @@
     <!-- ============================================================ -->
 
     <!-- Hero Section -->
-    <section id="hero-section" class="hero-bg relative min-h-screen flex items-center">
+    <section id="hero-section" class="hero-bg relative min-h-screen flex items-center overflow-hidden">
+        <!-- ambient 3D depth orbs (decorative) -->
+        <span class="hero-orb" style="width:130px;height:130px;top:16%;left:7%;animation-duration:11s" aria-hidden="true"></span>
+        <span class="hero-orb" style="width:74px;height:74px;top:66%;left:16%;animation-duration:9s;animation-delay:-3s" aria-hidden="true"></span>
+        <span class="hero-orb" style="width:96px;height:96px;top:28%;right:8%;animation-duration:13s;animation-delay:-5s" aria-hidden="true"></span>
         <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16 md:pt-32 md:pb-24">
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
@@ -662,7 +744,7 @@
                 <div>
                     <div class="hero-badge mb-6 anim-fade-in">
                         <span class="hero-badge-dot"></span>
-                        <span data-i18n="home.v2.hero.badge">Live in Hong Kong, Singapore and Malaysia</span>
+                        <span data-i18n="home.v2.hero.badge">Live now Globally</span>
                     </div>
                     <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 anim-fade-up delay-1" data-i18n="home.v2.hero.title">
                         Every offer is real, and can only be used once.
@@ -681,9 +763,11 @@
                     </div>
                 </div>
 
-                <!-- Right: Pass preview stub -->
+                <!-- Right: Pass preview stub (3D floating) -->
                 <div class="flex justify-center lg:justify-end anim-fade-in delay-3">
-                    <div class="pass-stub pass-stub--wide" role="img" aria-label="Sample Mezzofy Pass from Kopi Lane, 25% off, marked consumed">
+                  <div class="pass-float">
+                    <span class="pass-glow" aria-hidden="true"></span>
+                    <div class="pass-stub pass-stub--wide pass-3d" role="img" aria-label="Sample Mezzofy Pass from Kopi Lane, 25% off, marked consumed">
                         <div class="pass-stub__issuer">
                             <span data-i18n="home.v2.pass.issuerLabel">Issuer</span> · <span data-i18n="home.v2.pass.sample.issuer">Kopi Lane, Bugis</span>
                         </div>
@@ -698,6 +782,7 @@
                         </div>
                         <span class="pass-stamp" data-i18n="home.v2.pass.sample.stamp">CONSUMED</span>
                     </div>
+                  </div>
                 </div>
 
             </div>
@@ -935,20 +1020,26 @@
             </div>
 
             <!-- Infographic: Merchants -> Mezzofy -> channel grid -->
-            <div class="flex flex-col sm:flex-row items-stretch justify-center gap-4 mb-10" aria-hidden="false">
+            <div id="channels-flow" class="flex flex-col sm:flex-row items-stretch justify-center gap-4 mb-10" aria-hidden="false">
                 <div class="channel-node flex-1 max-w-xs">
                     <div class="channel-node__title" data-i18n="home.v2.channels.merchantsNode.title">Merchants</div>
                     <div class="channel-node__sub" data-i18n="home.v2.channels.merchantsNode.sub">List free, honour at the counter</div>
                 </div>
-                <div class="flex items-center justify-center flow-arrow text-2xl font-bold" aria-hidden="true">
-                    <span class="hidden sm:inline">&rarr;</span><span class="sm:hidden">&darr;</span>
+                <div class="flex items-center justify-center flow-arrow" aria-hidden="true">
+                    <svg class="flow-arrow__svg" viewBox="0 0 46 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="flow-arrow__line" d="M1 7H36"/>
+                        <path class="flow-arrow__head" d="M32 2 38 7 32 12"/>
+                    </svg>
                 </div>
                 <div class="channel-node flex-1 max-w-xs">
                     <div class="channel-node__title" data-i18n="home.v2.channels.mezzofyNode.title">Mezzofy</div>
                     <div class="channel-node__sub" data-i18n="home.v2.channels.mezzofyNode.sub">Tokenise, validate, settle</div>
                 </div>
-                <div class="flex items-center justify-center flow-arrow text-2xl font-bold" aria-hidden="true">
-                    <span class="hidden sm:inline">&rarr;</span><span class="sm:hidden">&darr;</span>
+                <div class="flex items-center justify-center flow-arrow" aria-hidden="true">
+                    <svg class="flow-arrow__svg" viewBox="0 0 46 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="flow-arrow__line" d="M1 7H36"/>
+                        <path class="flow-arrow__head" d="M32 2 38 7 32 12"/>
+                    </svg>
                 </div>
                 <div class="channel-node flex-1 max-w-xs flex items-center">
                     <div class="channel-node__title" data-i18n="home.v2.channels.gridNode.title">Six channels</div>
@@ -1249,6 +1340,73 @@
             });
           }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
           for (var k = 0; k < reveals.length; k++) io.observe(reveals[k]);
+        }
+      })();
+    </script>
+    <!-- 3D depth: cursor/gyro tilt for the hero Pass, orb parallax, card hover-tilt.
+         Transform/opacity only; fully disabled for prefers-reduced-motion. -->
+    <script>
+      (function () {
+        if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        var clamp = function (v, a, b) { return Math.max(a, Math.min(b, v)); };
+        var hero = document.getElementById('hero-section');
+        var card = hero && hero.querySelector('.pass-3d');
+        var orbs = hero ? Array.prototype.slice.call(hero.querySelectorAll('.hero-orb')) : [];
+        var raf = null, px = 0, py = 0;
+        function apply() {
+          raf = null;
+          if (card) {
+            card.style.setProperty('--ry', (px * 14).toFixed(2) + 'deg');
+            card.style.setProperty('--rx', (-py * 12).toFixed(2) + 'deg');
+          }
+          for (var i = 0; i < orbs.length; i++) {
+            var d = (i + 1) * 14;
+            orbs[i].style.translate = (px * d).toFixed(1) + 'px ' + (py * d).toFixed(1) + 'px';
+          }
+        }
+        function set(nx, ny) { px = nx; py = ny; if (!raf) raf = requestAnimationFrame(apply); }
+        if (hero && window.matchMedia && window.matchMedia('(pointer:fine)').matches) {
+          hero.addEventListener('pointermove', function (e) {
+            var r = hero.getBoundingClientRect();
+            set((e.clientX - r.left) / r.width - 0.5, (e.clientY - r.top) / r.height - 0.5);
+          });
+          hero.addEventListener('pointerleave', function () {
+            px = 0; py = 0;
+            if (raf) cancelAnimationFrame(raf);
+            raf = requestAnimationFrame(function () {
+              raf = null;
+              if (card) { card.style.removeProperty('--rx'); card.style.removeProperty('--ry'); }
+              for (var i = 0; i < orbs.length; i++) orbs[i].style.translate = '0px 0px';
+            });
+          });
+        }
+        // Gyroscope tilt on devices that expose it without a permission prompt (Android).
+        if (window.DeviceOrientationEvent && typeof DeviceOrientationEvent.requestPermission !== 'function') {
+          window.addEventListener('deviceorientation', function (e) {
+            if (e.gamma == null || !card) return;
+            set(clamp(e.gamma / 28, -1, 1) * 0.5, clamp((e.beta - 40) / 28, -1, 1) * 0.5);
+          });
+        }
+        // Restrained cursor-tilt on the main content card grids (desktop only).
+        if (window.matchMedia && window.matchMedia('(hover:hover) and (pointer:fine)').matches) {
+          var cards = document.querySelectorAll('.ways-card, .stage');
+          for (var c = 0; c < cards.length; c++) {
+            (function (el) {
+              el.classList.add('card-3d');
+              var rect = null;
+              el.addEventListener('pointerenter', function () { rect = el.getBoundingClientRect(); });
+              el.addEventListener('pointermove', function (e) {
+                if (!rect) rect = el.getBoundingClientRect();
+                var cx = (e.clientX - rect.left) / rect.width - 0.5;
+                var cy = (e.clientY - rect.top) / rect.height - 0.5;
+                el.style.setProperty('--cy', (cx * 6).toFixed(2) + 'deg');
+                el.style.setProperty('--cx', (-cy * 6).toFixed(2) + 'deg');
+              });
+              el.addEventListener('pointerleave', function () {
+                el.style.setProperty('--cx', '0deg'); el.style.setProperty('--cy', '0deg'); rect = null;
+              });
+            })(cards[c]);
+          }
         }
       })();
     </script>
