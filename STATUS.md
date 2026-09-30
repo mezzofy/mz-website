@@ -34,6 +34,14 @@ MCP server configuration fixed for Windows. Shadcn MCP server now loads correctl
 
 ## Recently Completed (Last 7 Days)
 
+**2026-09-30 (Marketplace page revamped to the v2 standard):**
+- `coupon-marketplace.html` was never part of the original 10-page v2 revamp (no temp spec) — brought it up to the Pass/Vault/CMS standard. Rebuilt body: dark gradient hero ("The exchange hub where Passes are traded" + a `pass-stub` with a LISTED stamp) → "the exchange hub" (bg-white, 3 value cards) → "Three ways to trade" B2B/B2C/C2C (bg-light-grey) → "List, discover, transact, settle" 4-step (bg-white) → FAQ (bg-light-grey, 4 Q&As) → dark closing CTA. Removed the old orange "Protocol Context Banner", the stock hero image, and the duplicate footer CTA.
+- New nested `marketplace.v2` namespace: **67 leaves × 4 langs** (en real; zh-TW/zh-CN/ar real translations; Pass/B2B/B2C/C2C/Mezzofy/AI kept Latin), inserted into src+dist without reformatting; old flat `marketplace.*` keys left unused.
+- SEO/AEO: kept head title/meta/OG; **fixed a pre-existing malformed head JSON-LD** (stray `}` after a stale coupon-worded FAQPage) and added a new FAQPage whose answers match the visible FAQ. 3 ld+json blocks valid, exactly 1 FAQPage.
+- Verified live: EN/zh-TW/ar 0 raw-key leaks, 0 overflow at 375/1440, Arabic RTL, src==dist parity. No build needed.
+
+
+
 **2026-09-30 (Homepage 3D-depth revamp — CSS transforms, restyle existing content):**
 - Restyled `index.html` hero into a CSS-3D stage (no libraries, all content/i18n/SEO/FAQ preserved). The Pass card floats (idle bob) and tilts in perspective to the cursor (desktop) or gyroscope (Android), with a resting tilt so it reads 3D on load/touch; added a soft brand glow behind it, a deep shadow, and 3 ambient depth orbs with pointer parallax. Section cards (3 "ways-in" + 3 guarantee stages) get a restrained cursor hover-tilt (desktop/fine-pointer only).
 - All transform/opacity; `will-change` on animated layers; `perspective:1500px` hero + `perspective()` per card. Everything is fully disabled under `prefers-reduced-motion` (verified: card flat, no float, JS returns early). Inline `<style>` + inline `<script>` in index.html only — **no output.css rebuild, 1 file changed**.

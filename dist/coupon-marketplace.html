@@ -65,45 +65,6 @@
           ]
         }
       },
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What is the Mezzofy Coupon Marketplace?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The Mezzofy Coupon Marketplace is a global digital exchange hub where merchants, distributors, and consumers buy, sell, and trade digital coupons. It supports B2B bulk coupon trading, B2C retail coupon purchases, and C2C peer-to-peer coupon transfers."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do merchants list coupons on the Mezzofy Marketplace?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Merchants create coupon batches in the Mezzofy Management System and publish them to the Marketplace with pricing, distribution rules, and availability windows. Approved distributors can then purchase or claim inventory through the platform."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the difference between B2B and B2C coupon trading on Mezzofy?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "B2B trading on Mezzofy involves bulk coupon inventory exchanges between merchants and distributors, typically at wholesale rates. B2C involves individual consumers purchasing or receiving coupons directly through distributor apps, wallets, or the Mezzofy platform."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is the Mezzofy Coupon Marketplace available globally?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. The Mezzofy Coupon Marketplace operates globally with a strong presence in Asia-Pacific. Merchants can reach distributors across multiple markets, and coupons can be configured for region-specific redemption rules and currency."
-            }
-          }
-        ]
-      }
-    },
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
@@ -169,6 +130,42 @@
             background-color: #FF6B35;
             color: white;
         }
+
+        /* ===== v2 components (site palette) ===== */
+        .pill-label { display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:0.66rem; letter-spacing:0.14em; text-transform:uppercase; color:#FF6B35; margin-bottom:10px; }
+        .v2-card { background:#fff; border:1px solid rgba(26,26,26,0.10); border-radius:16px; padding:28px; border-top:4px solid #FF6B35; transition:transform .2s, box-shadow .2s; }
+        .v2-card:hover { transform:translateY(-4px); box-shadow:0 12px 28px -12px rgba(0,0,0,0.18); }
+        .step-card { background:#fff; border-radius:12px; padding:24px; box-shadow:0 1px 3px rgba(0,0,0,0.08); border-top:3px solid #FF6B35; }
+        .step-num { display:inline-flex; align-items:center; justify-content:center; width:32px; height:32px; border-radius:50%; background:rgba(255,107,53,0.12); color:#FF6B35; font-family:'IBM Plex Mono',monospace; font-weight:700; margin-bottom:12px; }
+        .step-card h3 { font-size:1rem; font-weight:700; color:#1a1a1a; margin-bottom:8px; }
+        .step-card p { font-size:0.9rem; color:#4a4a4a; }
+        .check-list { list-style:none; padding:0; margin:0; }
+        .check-list li { position:relative; padding-left:24px; margin-bottom:10px; color:#4a4a4a; font-size:0.92rem; }
+        .check-list li::before { content:''; position:absolute; left:0; top:7px; width:8px; height:8px; border-radius:2px; background:#FF6B35; }
+        .mode-note { background:#fff; border-left:4px solid #FF6B35; border-radius:0 12px 12px 0; padding:20px 24px; color:#4a4a4a; box-shadow:0 1px 3px rgba(0,0,0,0.06); }
+        .mode-note strong { color:#1a1a1a; }
+        /* Pass stub */
+        .pass-stub { position:relative; background:#fff; color:#1a1a1a; border:1px solid rgba(26,26,26,0.10); border-radius:16px; padding:30px 26px 26px; box-shadow:0 24px 60px -20px rgba(0,0,0,0.45); width:100%; max-width:520px; overflow:hidden; }
+        .pass-stub::before { content:''; position:absolute; top:0; left:0; right:0; height:5px; background:#FF6B35; }
+        .pass-stub__issuer { font-family:'IBM Plex Mono',monospace; font-size:0.72rem; letter-spacing:0.06em; text-transform:uppercase; color:#808080; }
+        .pass-stub__value { font-size:3rem; line-height:1.05; font-weight:800; color:#1a1a1a; margin:8px 0 10px; }
+        .pass-stub__terms { font-size:0.9rem; color:#4a4a4a; }
+        .pass-perf { position:relative; margin:20px -26px; border-top:2px dashed rgba(26,26,26,0.18); }
+        .pass-perf::before, .pass-perf::after { content:''; position:absolute; top:-11px; width:20px; height:20px; border-radius:50%; background:#fff; box-shadow:inset 0 0 0 1px rgba(26,26,26,0.10); }
+        .pass-perf::before { left:-10px; } .pass-perf::after { right:-10px; }
+        .pass-stub__code { font-family:'IBM Plex Mono',monospace; font-size:0.88rem; letter-spacing:0.04em; color:#1a1a1a; }
+        .pass-stamp { position:absolute; right:20px; bottom:18px; font-family:'IBM Plex Mono',monospace; font-weight:700; font-size:0.76rem; letter-spacing:0.12em; text-transform:uppercase; color:#FF6B35; border:2px solid #FF6B35; border-radius:6px; padding:4px 10px; transform:rotate(-8deg); opacity:.92; }
+        .faq-item { background:#fff; border:1px solid rgba(26,26,26,0.10); border-radius:12px; padding:20px 24px; }
+        .faq-item h3 { font-weight:700; color:#1a1a1a; margin-bottom:6px; }
+        .faq-item p { color:#4a4a4a; font-size:0.95rem; }
+        /* Quality floor: focus ring, press feedback, reduced-motion */
+        a:focus-visible, button:focus-visible { outline:2px solid #FF6B35; outline-offset:3px; border-radius:4px; }
+        .btn-primary:active, .btn-secondary:active { transform:scale(0.97); }
+        @media (prefers-reduced-motion: reduce) {
+            .feature-card, .v2-card { transition:none; }
+            .feature-card:hover, .v2-card:hover { transform:none; }
+            .btn-primary:active, .btn-secondary:active { transform:none; }
+        }
     </style>
 
     <!-- Favicon -->
@@ -181,6 +178,10 @@
     <!-- SpeakableSpecification -->
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"WebPage","url":"https://mezzofy.com/coupon-marketplace.html","speakable":{"@type":"SpeakableSpecification","cssSelector":["h1","h2"]}}
+    </script>
+    <!-- FAQPage -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the Mezzofy Marketplace?","acceptedAnswer":{"@type":"Answer","text":"The exchange hub where merchants list Pass inventory and buyers, from businesses to consumers to AI agents, discover and acquire it across B2B, B2C and C2C."}},{"@type":"Question","name":"Who can trade on it?","acceptedAnswer":{"@type":"Answer","text":"Merchants and brands list; distributors, marketing platforms, consumers and AI shopping agents buy or claim. One listing reaches every channel it is eligible for."}},{"@type":"Question","name":"How are Passes kept unique when traded?","acceptedAnswer":{"@type":"Answer","text":"Every Pass is tokenised and consumed once on validation, so it cannot be faked, copied or double-spent, even after it is transferred, gifted or resold."}},{"@type":"Question","name":"What does it cost?","acceptedAnswer":{"@type":"Answer","text":"Listing is free. You pay a performance-based fee only when a Pass is redeemed, with automated settlement and real-time pricing."}}]}
     </script>
     <!-- i18n Script -->
     <script src="i18n/i18n.js"></script>
@@ -418,455 +419,143 @@
         </div>
     </nav>
 
-    <!-- Protocol Context Banner -->
-    <section class="mt-16 bg-primary-orange">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="py-2 flex items-center justify-center gap-2 text-white text-sm">
-                <span class="font-medium" data-i18n="marketplace.banner.text">Part of Mezzofy Exchange Protocol</span>
-                <span class="text-white/60">|</span>
-                <a href="index.html" class="hover:underline flex items-center gap-1">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
-                    </svg>
-                    <span data-i18n="marketplace.banner.link">View Ecosystem</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Hero Section -->
-    <section class="pt-6 pb-20 bg-gradient-to-br from-primary-black via-gray-900 to-primary-black">
+    <!-- Hero -->
+    <section id="hero-section" class="pt-32 pb-20 bg-gradient-to-br from-primary-black via-gray-900 to-primary-black">
         <div class="section-container">
-            <div class="max-w-6xl mx-auto">
-                <div class="grid md:grid-cols-2 gap-12 items-center">
-                    <!-- Content -->
-                    <div>
-                        <p class="text-primary-orange text-lg font-semibold mb-4" data-i18n="marketplace.hero.label">COUPON MARKETPLACE</p>
-                        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-6" data-i18n="marketplace.hero.title">
-                            GLOBAL <span class="text-primary-orange">EXCHANGE HUB</span> FOR COUPONS
-                        </h1>
-                        <p class="text-lg text-gray-100 mb-8 leading-relaxed" data-i18n="marketplace.hero.description">
-                            The only <span class="text-primary-orange font-semibold">secure peer-to-peer</span> Pass exchange enabling B2B, B2C, and C2C transactions. Built on <span class="text-primary-orange font-semibold">tokenization technology</span> to create a secondary market for digital Passes with fraud-proof validation.
-                        </p>
-                        <div class="flex flex-col sm:flex-row gap-4">
-                            <a href="contact.html" class="btn-primary inline-block text-center" data-cta="signup">
-                                <span data-i18n="marketplace.hero.listInventory">List Your Inventory</span>
-                            </a>
-                            <a href="#marketplace-types" class="btn-secondary inline-block text-center bg-white/10 text-white border-white hover:bg-white/20" data-cta="learn-more" data-i18n="marketplace.hero.exploreMarketplace">Explore Marketplace</a>
-                        </div>
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div>
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-6" data-i18n="marketplace.v2.hero.title">The exchange hub where <span class="text-primary-orange">Passes</span> are traded</h1>
+                    <p class="hero-description text-lg sm:text-xl text-gray-100 mb-10 max-w-xl" data-i18n="marketplace.v2.hero.subtitle">One listing reaches every channel it is eligible for. Merchants list Pass inventory once, and businesses, consumers and AI agents discover and acquire it across B2B, B2C and C2C, tokenised and settled automatically.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="contact.html" class="btn-primary inline-block text-center" data-cta="signup"><span data-i18n="marketplace.v2.hero.ctaList">List your inventory free</span></a>
+                        <a href="#models" class="btn-secondary inline-block text-center bg-white/10 text-white border-white hover:bg-white/20" data-cta="learn-more"><span data-i18n="marketplace.v2.hero.ctaExplore">See how it works</span></a>
                     </div>
-
-                    <!-- Hero Image -->
-                    <div>
-                        <img src="assets/images/coupon_marketplace.png" data-i18n-alt="marketplace.hero.imageAlt" alt="Pass Exchange Network Visualization" class="rounded-xl shadow-2xl">
+                </div>
+                <div class="flex justify-center lg:justify-end">
+                    <div class="pass-stub" role="img" aria-label="Sample Pass listed on the exchange, 25% off, tradeable across markets">
+                        <div class="pass-stub__issuer"><span data-i18n="marketplace.v2.passLabels.issuerLabel">Issuer</span> · <span data-i18n="marketplace.v2.heroPass.issuer">Listed on the exchange</span></div>
+                        <div class="pass-stub__value" data-i18n="marketplace.v2.heroPass.value">25% off</div>
+                        <div class="pass-stub__terms"><span class="font-semibold" data-i18n="marketplace.v2.passLabels.termsLabel">Terms</span>: <span data-i18n="marketplace.v2.heroPass.terms">Tradeable across B2B, B2C and C2C.</span></div>
+                        <div class="pass-perf"></div>
+                        <div class="pass-stub__code"><span data-i18n="marketplace.v2.passLabels.codeLabel">Code</span>: <span data-i18n="marketplace.v2.heroPass.code">MZF-4A9X-2210</span></div>
+                        <span class="pass-stamp" data-i18n="marketplace.v2.heroPass.stamp">LISTED</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Exchange Hub Overview Section -->
-    <section class="bg-light-grey">
+    <!-- The exchange hub (plain / white) -->
+    <section id="hub" class="bg-white">
         <div class="section-container">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-5xl font-bold text-primary-black mb-4" data-i18n="marketplace.exchange.title">
-                    The Coupon Exchange Protocol
-                </h2>
-                <p class="text-lg text-dark-grey max-w-3xl mx-auto" data-i18n="marketplace.exchange.description">
-                    Traditional digital promotions are failing due to fragmentation, high costs, and security risks. Mezzofy eliminates the obsolete model and replaces it with a <span class="font-semibold text-primary-orange">high-liquidity, high-performance Exchange Protocol</span>.
-                </p>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black mb-5" data-i18n="marketplace.v2.hub.title">One exchange. Network effects. Fraud-proof settlement.</h2>
+                <p class="text-lg sm:text-xl text-dark-grey max-w-3xl mx-auto" data-i18n="marketplace.v2.hub.description">Not a tool bolted onto promotions, but a liquid exchange. Every listing gains reach as the network grows, every Pass is unique, and settlement is automatic.</p>
             </div>
-
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Network Effects -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 text-primary-black" data-i18n="marketplace.exchange.network.title">From Tool to Network</h3>
-                    <p class="text-dark-grey leading-relaxed" data-i18n="marketplace.exchange.network.description">
-                        We focus on network effects and secure settlement, not just features. Build real value through connections across the global marketplace.
-                    </p>
+                <div class="v2-card">
+                    <h3 class="text-xl font-bold text-primary-black mb-3" data-i18n="marketplace.v2.hub.network.title">From tool to network</h3>
+                    <p class="text-dark-grey leading-relaxed" data-i18n="marketplace.v2.hub.network.desc">Value compounds through connections. Every merchant that lists and every buyer that joins makes the exchange more useful to everyone on it.</p>
                 </div>
-
-                <!-- Secure Exchange -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 text-primary-black" data-i18n="marketplace.exchange.security.title">Unrivaled Security</h3>
-                    <p class="text-dark-grey leading-relaxed" data-i18n="marketplace.exchange.security.description">
-                        Every promotion is standardized into the Mezzofy Coupon Standard, a proprietary protocol that guarantees unique, fraud-proof digital assets.
-                    </p>
+                <div class="v2-card">
+                    <h3 class="text-xl font-bold text-primary-black mb-3" data-i18n="marketplace.v2.hub.security.title">Fraud-proof by design</h3>
+                    <p class="text-dark-grey leading-relaxed" data-i18n="marketplace.v2.hub.security.desc">Every Pass is tokenised and consumed once on validation. Unique, single-use, and impossible to fake or double-spend, even after it changes hands.</p>
                 </div>
-
-                <!-- AI-Native -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 text-primary-black" data-i18n="marketplace.exchange.ai.title">AI-Native Infrastructure</h3>
-                    <p class="text-dark-grey leading-relaxed" data-i18n="marketplace.exchange.ai.description">
-                        Our data is machine-readable, making us the standard interface for the next generation of autonomous AI shopping agents.
-                    </p>
+                <div class="v2-card">
+                    <h3 class="text-xl font-bold text-primary-black mb-3" data-i18n="marketplace.v2.hub.ai.title">AI-native infrastructure</h3>
+                    <p class="text-dark-grey leading-relaxed" data-i18n="marketplace.v2.hub.ai.desc">Machine-readable inventory that AI shopping agents can read, match and transact against. The standard interface for autonomous commerce.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Marketplace Types Section -->
-    <section id="marketplace-types" class="bg-white">
+    <!-- Three ways to trade (light band) -->
+    <section id="models" class="bg-light-grey">
         <div class="section-container">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-bold text-primary-black mb-4" data-i18n="marketplace.models.title">
-                    Three Marketplace Models, One Platform
-                </h2>
-                <p class="text-lg text-dark-grey max-w-3xl mx-auto" data-i18n="marketplace.models.subtitle">
-                    Mezzofy powers Pass exchange across all transaction types, creating a comprehensive ecosystem for digital promotion distribution
-                </p>
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black mb-5" data-i18n="marketplace.v2.models.title">Three ways to trade</h2>
+                <p class="text-lg sm:text-xl text-dark-grey max-w-3xl mx-auto" data-i18n="marketplace.v2.models.subtitle">One inventory, three markets. List once and reach businesses, consumers and other holders. Mezzofy handles pricing, validation and settlement across all of them.</p>
             </div>
-
-            <!-- B2B Marketplace -->
-            <div class="mb-20">
-                <div class="grid md:grid-cols-2 gap-12 items-center mb-8">
-                    <div>
-                        <div class="inline-block bg-primary-orange text-white px-4 py-2 rounded-full font-bold text-sm mb-4" data-i18n="marketplace.models.b2b.badge">B2B MARKETPLACE</div>
-                        <h3 class="text-3xl md:text-4xl font-bold text-primary-black mb-6" data-i18n="marketplace.models.b2b.title">Business to Business</h3>
-                        <p class="text-lg text-dark-grey mb-6 leading-relaxed" data-i18n="marketplace.models.b2b.description">
-                            Mezzofy serves as the <span class="font-semibold text-primary-orange">central exchange hub</span> connecting merchants with distributors, resellers, and channel partners. List your Pass inventory and gain instant access to global distribution networks.
-                        </p>
-                        <ul class="space-y-4">
-                            <li class="flex items-start gap-3">
-                                <svg class="w-6 h-6 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-dark-grey" data-i18n="marketplace.models.b2b.benefit1"><strong>Wholesale Distribution:</strong> Sell Pass inventory in bulk to distributors and resellers</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <svg class="w-6 h-6 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-dark-grey" data-i18n="marketplace.models.b2b.benefit2"><strong>Channel Partner Network:</strong> Connect with marketing platforms, loyalty programs, and affiliate networks</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <svg class="w-6 h-6 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-dark-grey" data-i18n="marketplace.models.b2b.benefit3"><strong>Cross-Promotion Opportunities:</strong> Trade inventory with complementary businesses for mutual benefit</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <svg class="w-6 h-6 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-dark-grey" data-i18n="marketplace.models.b2b.benefit4"><strong>Transparent Pricing:</strong> Real-time market pricing with automated settlement and commission tracking</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="feature-card bg-gradient-to-br from-primary-orange/5 to-primary-orange/10 border-2 border-primary-orange/20">
-                        <div class="text-center py-8">
-                            <div class="w-24 h-24 bg-primary-orange rounded-full flex items-center justify-center mx-auto mb-6">
-                                <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
-                                </svg>
-                            </div>
-                            <h4 class="text-2xl font-bold text-primary-black mb-4" data-i18n="marketplace.models.b2b.cardTitle">Merchant → Distributor</h4>
-                            <p class="text-dark-grey" data-i18n="marketplace.models.b2b.cardDescription">Turn Pass liabilities into high-performing digital assets with global reach</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- B2C Marketplace -->
-            <div class="mb-20">
-                <div class="grid md:grid-cols-2 gap-12 items-center mb-8">
-                    <div class="order-2 md:order-1 feature-card bg-gradient-to-br from-primary-orange/5 to-primary-orange/10 border-2 border-primary-orange/20">
-                        <div class="text-center py-8">
-                            <div class="w-24 h-24 bg-primary-orange rounded-full flex items-center justify-center mx-auto mb-6">
-                                <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
-                                </svg>
-                            </div>
-                            <h4 class="text-2xl font-bold text-primary-black mb-4" data-i18n="marketplace.models.b2c.cardTitle">Business → Consumer</h4>
-                            <p class="text-dark-grey" data-i18n="marketplace.models.b2c.cardDescription">Direct customer engagement with personalized promotional campaigns</p>
-                        </div>
-                    </div>
-                    <div class="order-1 md:order-2">
-                        <div class="inline-block bg-primary-orange text-white px-4 py-2 rounded-full font-bold text-sm mb-4" data-i18n="marketplace.models.b2c.badge">B2C MARKETPLACE</div>
-                        <h3 class="text-3xl md:text-4xl font-bold text-primary-black mb-6" data-i18n="marketplace.models.b2c.title">Business to Consumer</h3>
-                        <p class="text-lg text-dark-grey mb-6 leading-relaxed" data-i18n="marketplace.models.b2c.description">
-                            Enable direct-to-consumer Pass distribution through Mezzofy's <span class="font-semibold text-primary-orange">hosted inventory platform</span>. Businesses can list, manage, and distribute Passes directly to end customers through multiple channels.
-                        </p>
-                        <ul class="space-y-4">
-                            <li class="flex items-start gap-3">
-                                <svg class="w-6 h-6 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-dark-grey" data-i18n="marketplace.models.b2c.benefit1"><strong>Direct Distribution:</strong> Push Passes to customers via email, SMS, social media, and mobile apps</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <svg class="w-6 h-6 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-dark-grey" data-i18n="marketplace.models.b2c.benefit2"><strong>Personalized Campaigns:</strong> Target specific customer segments with tailored promotional offers</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <svg class="w-6 h-6 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-dark-grey" data-i18n="marketplace.models.b2c.benefit3"><strong>Real-Time Analytics:</strong> Track redemption rates, customer engagement, and campaign performance</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <svg class="w-6 h-6 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-dark-grey" data-i18n="marketplace.models.b2c.benefit4"><strong>Multi-Channel Reach:</strong> Distribute through marketplaces, e-commerce platforms, and retail partners</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- C2C Marketplace -->
-            <div>
-                <div class="grid md:grid-cols-2 gap-12 items-center mb-8">
-                    <div>
-                        <div class="inline-block bg-primary-orange text-white px-4 py-2 rounded-full font-bold text-sm mb-4" data-i18n="marketplace.models.c2c.badge">C2C MARKETPLACE</div>
-                        <h3 class="text-3xl md:text-4xl font-bold text-primary-black mb-6" data-i18n="marketplace.models.c2c.title">Consumer to Consumer</h3>
-                        <p class="text-lg text-dark-grey mb-6 leading-relaxed" data-i18n="marketplace.models.c2c.description">
-                            Mezzofy enables the first truly <span class="font-semibold text-primary-orange">secure peer-to-peer Pass exchange</span>. Consumers can transfer, gift, trade, or sell unused Passes to other consumers, creating a secondary market that increases overall redemption rates.
-                        </p>
-                        <ul class="space-y-4">
-                            <li class="flex items-start gap-3">
-                                <svg class="w-6 h-6 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-dark-grey" data-i18n="marketplace.models.c2c.benefit1"><strong>Transferable Passes:</strong> Gift or transfer Passes to friends and family with secure validation</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <svg class="w-6 h-6 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-dark-grey" data-i18n="marketplace.models.c2c.benefit2"><strong>Secondary Marketplace:</strong> Trade or sell unused Passes to maximize value and reduce waste</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <svg class="w-6 h-6 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-dark-grey" data-i18n="marketplace.models.c2c.benefit3"><strong>Fraud Prevention:</strong> Blockchain-inspired tokenization ensures each Pass is unique and valid</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <svg class="w-6 h-6 text-primary-orange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-dark-grey" data-i18n="marketplace.models.c2c.benefit4"><strong>Increased Redemption:</strong> Unused Passes find new owners, driving actual business value for merchants</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="feature-card bg-gradient-to-br from-primary-orange/5 to-primary-orange/10 border-2 border-primary-orange/20">
-                        <div class="text-center py-8">
-                            <div class="w-24 h-24 bg-primary-orange rounded-full flex items-center justify-center mx-auto mb-6">
-                                <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                                </svg>
-                            </div>
-                            <h4 class="text-2xl font-bold text-primary-black mb-4" data-i18n="marketplace.models.c2c.cardTitle">Consumer ↔ Consumer</h4>
-                            <p class="text-dark-grey" data-i18n="marketplace.models.c2c.cardDescription">Peer-to-peer Pass exchange with fraud-proof validation</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How The Exchange Works -->
-    <section class="bg-light-grey">
-        <div class="section-container">
-            <h2 class="text-3xl md:text-5xl font-bold text-primary-black mb-12 text-center" data-i18n="marketplace.howItWorks.title">
-                How The Exchange Works
-            </h2>
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Step 1 -->
-                <div class="feature-card text-center">
-                    <div class="w-16 h-16 bg-primary-orange rounded-full flex items-center justify-center mx-auto mb-6">
-                        <span class="text-3xl font-bold text-white">1</span>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4 text-primary-black" data-i18n="marketplace.howItWorks.step1.title">List Inventory</h3>
-                    <p class="text-dark-grey leading-relaxed" data-i18n="marketplace.howItWorks.step1.description">
-                        Merchants list Pass inventory on the Mezzofy Exchange. Set pricing, terms, and distribution preferences for your digital assets.
-                    </p>
+                <div class="v2-card">
+                    <span class="pill-label" data-i18n="marketplace.v2.models.b2b.tag">B2B</span>
+                    <h3 class="text-2xl font-bold text-primary-black mb-3" data-i18n="marketplace.v2.models.b2b.title">Business to business</h3>
+                    <p class="text-dark-grey mb-5" data-i18n="marketplace.v2.models.b2b.desc">Sell Pass inventory in bulk to distributors, marketing platforms and loyalty programmes, with real-time pricing and automated settlement.</p>
+                    <ul class="check-list">
+                        <li data-i18n="marketplace.v2.models.b2b.b1">Wholesale distribution to distributors and resellers</li>
+                        <li data-i18n="marketplace.v2.models.b2b.b2">Channel partners: marketing platforms, loyalty, affiliates</li>
+                        <li data-i18n="marketplace.v2.models.b2b.b3">Cross-promotion with complementary brands</li>
+                        <li data-i18n="marketplace.v2.models.b2b.b4">Transparent market pricing and commission tracking</li>
+                    </ul>
                 </div>
-
-                <!-- Step 2 -->
-                <div class="feature-card text-center">
-                    <div class="w-16 h-16 bg-primary-orange rounded-full flex items-center justify-center mx-auto mb-6">
-                        <span class="text-3xl font-bold text-white">2</span>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4 text-primary-black" data-i18n="marketplace.howItWorks.step2.title">Match & Trade</h3>
-                    <p class="text-dark-grey leading-relaxed" data-i18n="marketplace.howItWorks.step2.description">
-                        Our exchange protocol matches supply with demand. Distributors, businesses, or consumers discover and acquire Passes through secure transactions.
-                    </p>
+                <div class="v2-card">
+                    <span class="pill-label" data-i18n="marketplace.v2.models.b2c.tag">B2C</span>
+                    <h3 class="text-2xl font-bold text-primary-black mb-3" data-i18n="marketplace.v2.models.b2c.title">Business to consumer</h3>
+                    <p class="text-dark-grey mb-5" data-i18n="marketplace.v2.models.b2c.desc">Distribute Passes straight to customers across every channel, with targeting and real-time analytics.</p>
+                    <ul class="check-list">
+                        <li data-i18n="marketplace.v2.models.b2c.b1">Direct delivery via email, SMS, social and apps</li>
+                        <li data-i18n="marketplace.v2.models.b2c.b2">Personalised campaigns by customer segment</li>
+                        <li data-i18n="marketplace.v2.models.b2c.b3">Real-time redemption and engagement analytics</li>
+                        <li data-i18n="marketplace.v2.models.b2c.b4">Reach through marketplaces, e-commerce and retail</li>
+                    </ul>
                 </div>
-
-                <!-- Step 3 -->
-                <div class="feature-card text-center">
-                    <div class="w-16 h-16 bg-primary-orange rounded-full flex items-center justify-center mx-auto mb-6">
-                        <span class="text-3xl font-bold text-white">3</span>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4 text-primary-black" data-i18n="marketplace.howItWorks.step3.title">Validate & Settle</h3>
-                    <p class="text-dark-grey leading-relaxed" data-i18n="marketplace.howItWorks.step3.description">
-                        Fraudless validation ensures every redemption is legitimate. Automated settlement processes handle payments and commissions instantly.
-                    </p>
+                <div class="v2-card">
+                    <span class="pill-label" data-i18n="marketplace.v2.models.c2c.tag">C2C</span>
+                    <h3 class="text-2xl font-bold text-primary-black mb-3" data-i18n="marketplace.v2.models.c2c.title">Consumer to consumer</h3>
+                    <p class="text-dark-grey mb-5" data-i18n="marketplace.v2.models.c2c.desc">Let holders gift, transfer or resell unused Passes. Each one stays unique and valid because it is tokenised.</p>
+                    <ul class="check-list">
+                        <li data-i18n="marketplace.v2.models.c2c.b1">Transferable Passes: gift or transfer with secure validation</li>
+                        <li data-i18n="marketplace.v2.models.c2c.b2">A secondary market for unused Passes</li>
+                        <li data-i18n="marketplace.v2.models.c2c.b3">Tokenisation keeps every Pass unique and fraud-proof</li>
+                        <li data-i18n="marketplace.v2.models.c2c.b4">Unused Passes find new owners, driving real redemption</li>
+                    </ul>
                 </div>
+            </div>
+            <div class="mode-note mt-8">
+                <strong data-i18n="marketplace.v2.models.noteLead">One listing, every eligible channel.</strong>
+                <span data-i18n="marketplace.v2.models.noteText">You do not pick a market up front. List your Pass inventory once and it reaches every channel it fits, priced and settled automatically.</span>
             </div>
         </div>
     </section>
 
-    <!-- Key Exchange Features -->
-    <section class="bg-white">
+    <!-- How it works (plain / white) -->
+    <section id="how" class="bg-white">
         <div class="section-container">
-            <h2 class="text-3xl md:text-5xl font-bold text-primary-black mb-12 text-center" data-i18n="marketplace.features.title">
-                Exchange Platform Features
-            </h2>
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black" data-i18n="marketplace.v2.flow.title">List, discover, transact, settle</h2>
+            </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Feature 1 -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="marketplace.features.realTimePricing.title">Real-Time Pricing</h3>
-                    <p class="text-dark-grey text-sm" data-i18n="marketplace.features.realTimePricing.description">Dynamic market pricing based on supply and demand</p>
-                </div>
-
-                <!-- Feature 2 -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="marketplace.features.fraudPrevention.title">Fraud Prevention</h3>
-                    <p class="text-dark-grey text-sm" data-i18n="marketplace.features.fraudPrevention.description">Tokenized Passes with unique digital signatures</p>
-                </div>
-
-                <!-- Feature 3 -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="marketplace.features.instantSettlement.title">Instant Settlement</h3>
-                    <p class="text-dark-grey text-sm" data-i18n="marketplace.features.instantSettlement.description">Automated payment processing and commission tracking</p>
-                </div>
-
-                <!-- Feature 4 -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="marketplace.features.deepAnalytics.title">Deep Analytics</h3>
-                    <p class="text-dark-grey text-sm" data-i18n="marketplace.features.deepAnalytics.description">Track performance, redemption rates, and ROI</p>
-                </div>
-
-                <!-- Feature 5 -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="marketplace.features.globalReach.title">Global Reach</h3>
-                    <p class="text-dark-grey text-sm" data-i18n="marketplace.features.globalReach.description">Access to 15+ markets across Asia-Pacific</p>
-                </div>
-
-                <!-- Feature 6 -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="marketplace.features.apiIntegration.title">API Integration</h3>
-                    <p class="text-dark-grey text-sm" data-i18n="marketplace.features.apiIntegration.description">Seamless integration with existing systems</p>
-                </div>
-
-                <!-- Feature 7 -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="marketplace.features.flexiblePricing.title">Flexible Pricing</h3>
-                    <p class="text-dark-grey text-sm" data-i18n="marketplace.features.flexiblePricing.description">Pay only when Passes are redeemed</p>
-                </div>
-
-                <!-- Feature 8 -->
-                <div class="feature-card">
-                    <div class="w-12 h-12 bg-primary-orange rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-bold mb-2 text-primary-black" data-i18n="marketplace.features.support24.title">24/7 Support</h3>
-                    <p class="text-dark-grey text-sm" data-i18n="marketplace.features.support24.description">Expert assistance whenever you need it</p>
-                </div>
+                <div class="step-card"><span class="step-num">1</span><h3 data-i18n="marketplace.v2.flow.list.t">List</h3><p data-i18n="marketplace.v2.flow.list.d">Merchants list Pass inventory on the exchange for free. One listing is eligible for every channel it fits.</p></div>
+                <div class="step-card"><span class="step-num">2</span><h3 data-i18n="marketplace.v2.flow.discover.t">Discover</h3><p data-i18n="marketplace.v2.flow.discover.d">Buyers, from businesses to consumers to AI agents, find matching Passes through the marketplace, apps and assistants.</p></div>
+                <div class="step-card"><span class="step-num">3</span><h3 data-i18n="marketplace.v2.flow.transact.t">Transact</h3><p data-i18n="marketplace.v2.flow.transact.d">Secure peer-to-peer transfer. Every Pass is tokenised, so it stays unique and valid through the trade.</p></div>
+                <div class="step-card"><span class="step-num">4</span><h3 data-i18n="marketplace.v2.flow.settle.t">Settle</h3><p data-i18n="marketplace.v2.flow.settle.d">Automated settlement and commission tracking. You pay a performance fee only when a Pass is redeemed.</p></div>
             </div>
         </div>
     </section>
 
-    <!-- Integration & Ecosystem Section -->
-    <section class="bg-light-grey">
+    <!-- Frequently Asked Questions (light band) -->
+    <section id="faq" class="bg-light-grey">
         <div class="section-container">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-primary-black mb-4" data-i18n="marketplace.ecosystem.title">
-                    Works Seamlessly with the Mezzofy Ecosystem
-                </h2>
-                <p class="text-lg text-dark-grey max-w-3xl mx-auto" data-i18n="marketplace.ecosystem.description">
-                    Coupon Marketplace integrates with other Mezzofy products to create a complete solution
-                </p>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black" data-i18n="marketplace.v2.faq.title">Frequently Asked Questions</h2>
             </div>
-
-            <div class="grid md:grid-cols-3 gap-8 mb-12">
-                <!-- Related Product 1 -->
-                <div class="feature-card">
-                    <h4 class="text-lg font-bold text-primary-black mb-3">
-                        <a href="coupon-management.html" class="text-primary-orange hover:underline" data-i18n="marketplace.ecosystem.management.title">+ Coupon Management</a>
-                    </h4>
-                    <p class="text-dark-grey text-sm" data-i18n="marketplace.ecosystem.management.description">Create and manage inventory before listing on marketplace</p>
-                </div>
-
-
-                <!-- Related Product 3 -->
-                <div class="feature-card">
-                    <h4 class="text-lg font-bold text-primary-black mb-3">
-                        <a href="for-integrators.html" class="text-primary-orange hover:underline" data-i18n="marketplace.ecosystem.bridgeApi.title">+ Bridge API</a>
-                    </h4>
-                    <p class="text-dark-grey text-sm" data-i18n="marketplace.ecosystem.bridgeApi.description">Integrate marketplace access into your platform</p>
-                </div>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="faq-item"><h3 data-i18n="marketplace.v2.faq.q1.question">What is the Mezzofy Marketplace?</h3><p data-i18n="marketplace.v2.faq.q1.answer">The exchange hub where merchants list Pass inventory and buyers, from businesses to consumers to AI agents, discover and acquire it across B2B, B2C and C2C.</p></div>
+                <div class="faq-item"><h3 data-i18n="marketplace.v2.faq.q2.question">Who can trade on it?</h3><p data-i18n="marketplace.v2.faq.q2.answer">Merchants and brands list; distributors, marketing platforms, consumers and AI shopping agents buy or claim. One listing reaches every channel it is eligible for.</p></div>
+                <div class="faq-item"><h3 data-i18n="marketplace.v2.faq.q3.question">How are Passes kept unique when traded?</h3><p data-i18n="marketplace.v2.faq.q3.answer">Every Pass is tokenised and consumed once on validation, so it cannot be faked, copied or double-spent, even after it is transferred, gifted or resold.</p></div>
+                <div class="faq-item"><h3 data-i18n="marketplace.v2.faq.q4.question">What does it cost?</h3><p data-i18n="marketplace.v2.faq.q4.answer">Listing is free. You pay a performance-based fee only when a Pass is redeemed, with automated settlement and real-time pricing.</p></div>
             </div>
+        </div>
+    </section>
 
-            <!-- Recommended Bundle -->
-            <div class="bg-white rounded-xl p-8 max-w-3xl mx-auto border-2 border-primary-orange/20">
-                <h3 class="text-2xl font-bold text-primary-black mb-4 text-center" data-i18n="marketplace.ecosystem.bundle.title">
-                    💡 Recommended Bundle: Revenue Maximizer Bundle
-                </h3>
-                <p class="text-dark-grey text-center mb-6" data-i18n="marketplace.ecosystem.bundle.description">
-                    Combine Management, Marketing, and Marketplace to create, sell, and distribute Passes as a revenue stream
-                </p>
-                <div class="flex justify-center">
-                    <a href="contact.html" class="btn-primary" data-cta="contact" data-i18n="marketplace.ecosystem.bundle.cta">Contact Sales for Bundle Pricing</a>
-                </div>
+    <!-- Closing CTA band -->
+    <section id="closing" class="bg-gradient-to-br from-primary-black to-gray-900 text-white">
+        <div class="section-container text-center">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-5" data-i18n="marketplace.v2.closing.title">List your inventory. Reach every channel.</h2>
+            <p class="text-lg sm:text-xl text-orange-200 max-w-3xl mx-auto mb-10" data-i18n="marketplace.v2.closing.description">Listing is free. You pay only when a Pass is redeemed.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="products.html" class="btn-secondary inline-block bg-white/10 text-white border-white hover:bg-white/20" data-cta="learn-more"><span data-i18n="marketplace.v2.closing.ctaProducts">See all five products</span></a>
+                <a href="contact.html" class="btn-primary inline-block" data-cta="signup"><span data-i18n="marketplace.v2.closing.ctaList">List your inventory free</span></a>
             </div>
         </div>
     </section>
@@ -874,20 +563,6 @@
     <!-- Footer & CTA -->
     <footer id="footer" class="bg-primary-black text-white pt-16 pb-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6" data-i18n="marketplace.footerCta.title">
-                    Ready to Join The Global Coupon Exchange?
-                </h2>
-                <p class="text-lg sm:text-xl text-gray-100 mb-10 max-w-3xl mx-auto" data-i18n="marketplace.footerCta.description">
-                    Whether you're a merchant looking to maximize reach or a distributor seeking high-intent inventory, Mezzofy is your indispensable exchange infrastructure
-                </p>
-
-                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <a href="contact.html" class="btn-primary w-full sm:w-auto text-center" data-cta="signup" data-i18n="marketplace.footerCta.listInventory">List Your Inventory</a>
-                    <a href="contact.html" class="btn-secondary w-full sm:w-auto text-center bg-white/10 text-white border-white hover:bg-white/20" data-cta="signup" data-i18n="marketplace.footerCta.accessDeals">Access Deals</a>
-                </div>
-            </div>
-
             <!-- Footer Links -->
             <div class="border-t border-white/20 pt-12 mt-12">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
