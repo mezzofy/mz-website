@@ -23,7 +23,7 @@
       "support": "Support",
       "aboutUs": "About Us",
       "contactUs": "Contact Us",
-      "newsPress": "News & Press",
+      "newsPress": "News & Blogs",
       "investors": "Investors"
     },
     "footer": {
@@ -56,7 +56,7 @@
         "title": "Company",
         "about": "About Us",
         "contact": "Contact Us",
-        "news": "News & Press",
+        "news": "News & Blogs",
         "investors": "Investors"
       },
       "copyright": "© 2026 Mezzofy. All rights reserved."
@@ -71,14 +71,14 @@
       "alt": "Mezzofy Logo"
     },
     "blog": {
-      "backToHub": "Back to News & Press",
+      "backToHub": "Back to News & Blogs",
       "previous": "Previous",
       "next": "Next",
       "source": "Source",
       "category": "Blog"
     },
     "news": {
-      "backToHub": "Back to News & Press",
+      "backToHub": "Back to News & Blogs",
       "previous": "Previous",
       "next": "Next",
       "source": "Source",
@@ -628,7 +628,7 @@
   },
   "newsPress": {
     "hero": {
-      "title": "NEWS & PRESS",
+      "title": "NEWS & BLOGS",
       "subtitle": "Stay informed with the <span class=\"text-primary-orange\">latest news, industry insights, and company updates</span> from Mezzofy"
     },
     "filter": {
@@ -885,11 +885,11 @@
       "description": "How merchants leverage the Mezzofy Exchange Protocol across the coupon lifecycle",
       "step1": {
         "title": "CREATE",
-        "description": "Use <a href=\"coupon-management.html\" class=\"text-primary-orange hover:underline\">Management System</a> to build campaigns with first-party data control"
+        "description": "Use <a href=\"management.html\" class=\"text-primary-orange hover:underline\">Management System</a> to build campaigns with first-party data control"
       },
       "step2": {
         "title": "DISTRIBUTE",
-        "description": "Deploy via <a href=\"nfc-pass.html\" class=\"text-white font-semibold underline\">NFC</a>, <a href=\"coupon-campaign.html\" class=\"text-white font-semibold underline\">Marketing</a>, <a href=\"coupon-marketplace.html\" class=\"text-white font-semibold underline\">Marketplace</a>",
+        "description": "Deploy via <a href=\"nfc-pass.html\" class=\"text-white font-semibold underline\">NFC</a>, <a href=\"coupon-campaign.html\" class=\"text-white font-semibold underline\">Marketing</a>, <a href=\"marketplace.html\" class=\"text-white font-semibold underline\">Marketplace</a>",
         "channels": "<span class=\"px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white\">Email</span><span class=\"px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white\">SMS</span><span class=\"px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white\">Chat</span><span class=\"px-3 py-1 bg-white rounded-full text-xs font-bold text-primary-orange\">API</span>"
       },
       "step3": {
@@ -1215,7 +1215,7 @@
       "description": "Three simple steps to integrate verified, high-value coupon inventory into your platform",
       "step1": {
         "title": "SOURCE",
-        "description": "Browse <a href=\"coupon-marketplace.html\" class=\"text-primary-orange hover:underline\">Marketplace</a> inventory with curated deals from verified merchants"
+        "description": "Browse <a href=\"marketplace.html\" class=\"text-primary-orange hover:underline\">Marketplace</a> inventory with curated deals from verified merchants"
       },
       "step2": {
         "title": "INTEGRATE",

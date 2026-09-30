@@ -11,8 +11,8 @@
 
 ## Products
 - [Products](https://mezzofy.com/products.html): The five products the exchange runs on — Pass, Vault, AI Pass, NFC Pass, and the Management System — with the Pass as the single tokenized standard behind them all
-- [Management System](https://mezzofy.com/coupon-management.html): Enterprise Coupon-as-a-Service (CaaS) platform for full lifecycle management — create, issue, distribute, validate, track, and expire Passes at scale with open API
-- [Marketplace](https://mezzofy.com/coupon-marketplace.html): Global B2B/B2C/C2C exchange hub where merchants list Pass inventory and buyers purchase or claim Passes; supports wholesale and retail pricing tiers
+- [Management System](https://mezzofy.com/management.html): Enterprise Coupon-as-a-Service (CaaS) platform for full lifecycle management — create, issue, distribute, validate, track, and expire Passes at scale with open API
+- [Marketplace](https://mezzofy.com/marketplace.html): Global B2B/B2C/C2C exchange hub where merchants list Pass inventory and buyers purchase or claim Passes; supports wholesale and retail pricing tiers
 - [NFC Pass](https://mezzofy.com/nfc-pass.html): HMAC-secured NFC tap-to-redeem Pass technology for physical retail, restaurants, events, and product packaging; works on all modern iOS and Android smartphones
 - [Vault](https://mezzofy.com/vault.html): Consumer-facing vault app (iOS, Android, Web, NFC Physical Card) for storing, organizing, and redeeming Passes; supports Apple Wallet and Google Pay
 - [Pass](https://mezzofy.com/pass.html): The tokenised, single-use coupon Pass — one standard presented seven ways (coupon, voucher, deal, ticket, reward, card, token), unique and fraud-proof
@@ -25,7 +25,7 @@
 
 ## About
 - [About Mezzofy](https://mezzofy.com/about.html): Company history (founded 2015 by Dicky Ying in Hong Kong), mission to digitize global coupon distribution, team, ESG commitments, and HK Awards for Environmental Excellence recognition
-- [News & Press](https://mezzofy.com/news-press.html): Latest awards, media coverage, analyst recognition, and strategic partnership announcements from Mezzofy
+- [News & Press](https://mezzofy.com/news-blogs.html): Latest awards, media coverage, analyst recognition, and strategic partnership announcements from Mezzofy
 - [Investors](https://mezzofy.com/investors.html): Investment overview, company growth milestones (300M+ coupons), market opportunity in digital promotions, and investor contact information
 
 ## Blog

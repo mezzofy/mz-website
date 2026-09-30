@@ -98,24 +98,24 @@
 
   <!-- Product Pages -->
   <url>
-    <loc>https://mezzofy.com/coupon-management.html</loc>
+    <loc>https://mezzofy.com/management.html</loc>
     <lastmod>2026-04-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/coupon-management.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/coupon-management.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/coupon-management.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/coupon-management.html"/>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/management.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/management.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/management.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/management.html"/>
   </url>
   <url>
-    <loc>https://mezzofy.com/coupon-marketplace.html</loc>
+    <loc>https://mezzofy.com/marketplace.html</loc>
     <lastmod>2026-04-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/coupon-marketplace.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/coupon-marketplace.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/coupon-marketplace.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/coupon-marketplace.html"/>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/marketplace.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/marketplace.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/marketplace.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/marketplace.html"/>
   </url>
   <url>
     <loc>https://mezzofy.com/nfc-pass.html</loc>
@@ -204,14 +204,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/investors.html"/>
   </url>
   <url>
-    <loc>https://mezzofy.com/news-press.html</loc>
+    <loc>https://mezzofy.com/news-blogs.html</loc>
     <lastmod>2026-04-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/news-press.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/news-press.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/news-press.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/news-press.html"/>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/news-blogs.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/news-blogs.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/news-blogs.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/news-blogs.html"/>
   </url>
   <url>
     <loc>https://mezzofy.com/nfc-user-guide.html</loc>

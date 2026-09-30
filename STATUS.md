@@ -34,6 +34,13 @@ MCP server configuration fixed for Windows. Shadcn MCP server now loads correctl
 
 ## Recently Completed (Last 7 Days)
 
+**2026-09-30 (URL consistency: dropped `coupon-` from the last two product pages):**
+- `coupon-marketplace.html`→`marketplace.html` (150 refs) and `coupon-management.html`→`management.html` (143 refs) — the only two product URLs still carrying the `coupon-` prefix; now bare like pass/vault/ai-pass/nfc-pass. `git mv`, all refs updated across HTML/JSON(src+dist)/sitemap/llms/REDIRECTS; redirect stubs at old paths (200 + verified redirect). Self-canonical/og/JSON-LD/hreflang point to new URLs; `<title>`s keep the "coupon" SEO keyword. REDIRECTS-301.md + Infra handoff updated (now 9 renames + 1 optional). JSON valid + src==dist parity.
+
+**2026-09-30 (nfc-pass.html standardized to product-page rhythm):**
+- Converted the "The network today" stats band from dark to a light band (white stat-cards restyled), removing the double-dark block (dark hero → dark stats) that no other product page had. Rhythm now alternates cleanly (dark→grey→white→grey→white→dark) like Pass/Vault/CMS/Marketplace. 1 file, no i18n/build.
+
+
 **2026-09-30 (Marketplace page revamped to the v2 standard):**
 - `coupon-marketplace.html` was never part of the original 10-page v2 revamp (no temp spec) — brought it up to the Pass/Vault/CMS standard. Rebuilt body: dark gradient hero ("The exchange hub where Passes are traded" + a `pass-stub` with a LISTED stamp) → "the exchange hub" (bg-white, 3 value cards) → "Three ways to trade" B2B/B2C/C2C (bg-light-grey) → "List, discover, transact, settle" 4-step (bg-white) → FAQ (bg-light-grey, 4 Q&As) → dark closing CTA. Removed the old orange "Protocol Context Banner", the stock hero image, and the duplicate footer CTA.
 - New nested `marketplace.v2` namespace: **67 leaves × 4 langs** (en real; zh-TW/zh-CN/ar real translations; Pass/B2B/B2C/C2C/Mezzofy/AI kept Latin), inserted into src+dist without reformatting; old flat `marketplace.*` keys left unused.

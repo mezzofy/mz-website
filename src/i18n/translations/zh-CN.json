@@ -23,7 +23,7 @@
       "support": "支持",
       "aboutUs": "关于我们",
       "contactUs": "联系我们",
-      "newsPress": "新闻与媒体",
+      "newsPress": "新闻与博客",
       "investors": "投资者"
     },
     "footer": {
@@ -56,7 +56,7 @@
         "title": "公司",
         "about": "关于我们",
         "contact": "联系我们",
-        "news": "新闻与媒体",
+        "news": "新闻与博客",
         "investors": "投资者"
       },
       "copyright": "© 2026 Mezzofy. 版权所有。"
@@ -71,14 +71,14 @@
       "alt": "Mezzofy 标志"
     },
     "blog": {
-      "backToHub": "返回新闻发布",
+      "backToHub": "返回新闻与博客",
       "previous": "上一篇",
       "next": "下一篇",
       "source": "来源",
       "category": "博客"
     },
     "news": {
-      "backToHub": "返回新闻发布",
+      "backToHub": "返回新闻与博客",
       "previous": "上一篇",
       "next": "下一篇",
       "source": "来源",
@@ -634,7 +634,7 @@
   },
   "newsPress": {
     "hero": {
-      "title": "新闻与媒体",
+      "title": "新闻与博客",
       "subtitle": "了解 Mezzofy 的<span class=\"text-primary-orange\">最新消息、行业见解和公司动态</span>"
     },
     "filter": {
@@ -891,11 +891,11 @@
       "description": "商家如何在电子券生命周期中善用 Mezzofy 交换协议",
       "step1": {
         "title": "创建",
-        "description": "使用<a href=\"coupon-management.html\" class=\"text-primary-orange hover:underline\">管理系统</a>建立活动，掌控第一方数据"
+        "description": "使用<a href=\"management.html\" class=\"text-primary-orange hover:underline\">管理系统</a>建立活动，掌控第一方数据"
       },
       "step2": {
         "title": "分发",
-        "description": "通过<a href=\"nfc-pass.html\" class=\"text-white font-semibold underline\">NFC</a>、<a href=\"coupon-campaign.html\" class=\"text-white font-semibold underline\">营销</a>、<a href=\"coupon-marketplace.html\" class=\"text-white font-semibold underline\">市集</a>部署",
+        "description": "通过<a href=\"nfc-pass.html\" class=\"text-white font-semibold underline\">NFC</a>、<a href=\"coupon-campaign.html\" class=\"text-white font-semibold underline\">营销</a>、<a href=\"marketplace.html\" class=\"text-white font-semibold underline\">市集</a>部署",
         "channels": "<span class=\"px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white\">邮件</span><span class=\"px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white\">SMS</span><span class=\"px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white\">聊天</span><span class=\"px-3 py-1 bg-white rounded-full text-xs font-bold text-primary-orange\">API</span>"
       },
       "step3": {
@@ -1221,7 +1221,7 @@
       "description": "三个简单步骤，将经过验证的高价值电子券库存整合到您的平台",
       "step1": {
         "title": "来源",
-        "description": "浏览<a href=\"coupon-marketplace.html\" class=\"text-primary-orange hover:underline\">市场</a>库存，获取来自经过验证商家的精选优惠"
+        "description": "浏览<a href=\"marketplace.html\" class=\"text-primary-orange hover:underline\">市场</a>库存，获取来自经过验证商家的精选优惠"
       },
       "step2": {
         "title": "整合",

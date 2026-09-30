@@ -23,7 +23,7 @@
       "support": "الدعم",
       "aboutUs": "من نحن",
       "contactUs": "اتصل بنا",
-      "newsPress": "الأخبار والصحافة",
+      "newsPress": "الأخبار والمدونات",
       "investors": "المستثمرون"
     },
     "footer": {
@@ -56,7 +56,7 @@
         "title": "الشركة",
         "about": "من نحن",
         "contact": "اتصل بنا",
-        "news": "الأخبار والصحافة",
+        "news": "الأخبار والمدونات",
         "investors": "المستثمرون"
       },
       "copyright": "© 2026 Mezzofy. جميع الحقوق محفوظة."
@@ -71,14 +71,14 @@
       "alt": "شعار Mezzofy"
     },
     "blog": {
-      "backToHub": "العودة إلى الأخبار والصحافة",
+      "backToHub": "العودة إلى الأخبار والمدونات",
       "previous": "السابق",
       "next": "التالي",
       "source": "المصدر",
       "category": "مدوّنة"
     },
     "news": {
-      "backToHub": "العودة إلى الأخبار والصحافة",
+      "backToHub": "العودة إلى الأخبار والمدونات",
       "previous": "السابق",
       "next": "التالي",
       "source": "المصدر",
@@ -628,7 +628,7 @@
   },
   "newsPress": {
     "hero": {
-      "title": "الأخبار والصحافة",
+      "title": "الأخبار والمدونات",
       "subtitle": "ابقَ على اطّلاع بـ<span class=\"text-primary-orange\">أحدث الأخبار ورؤى القطاع وتحديثات الشركة</span> من Mezzofy"
     },
     "filter": {
@@ -885,11 +885,11 @@
       "description": "كيف يستفيد التجّار من بروتوكول تبادل Mezzofy عبر دورة حياة القسيمة",
       "step1": {
         "title": "الإنشاء",
-        "description": "استخدم <a href=\"coupon-management.html\" class=\"text-primary-orange hover:underline\">نظام الإدارة</a> لبناء الحملات مع التحكّم في بيانات الطرف الأول"
+        "description": "استخدم <a href=\"management.html\" class=\"text-primary-orange hover:underline\">نظام الإدارة</a> لبناء الحملات مع التحكّم في بيانات الطرف الأول"
       },
       "step2": {
         "title": "التوزيع",
-        "description": "انشر عبر <a href=\"nfc-pass.html\" class=\"text-white font-semibold underline\">NFC</a> و<a href=\"coupon-campaign.html\" class=\"text-white font-semibold underline\">التسويق</a> و<a href=\"coupon-marketplace.html\" class=\"text-white font-semibold underline\">السوق</a>",
+        "description": "انشر عبر <a href=\"nfc-pass.html\" class=\"text-white font-semibold underline\">NFC</a> و<a href=\"coupon-campaign.html\" class=\"text-white font-semibold underline\">التسويق</a> و<a href=\"marketplace.html\" class=\"text-white font-semibold underline\">السوق</a>",
         "channels": "<span class=\"px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white\">البريد الإلكتروني</span><span class=\"px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white\">SMS</span><span class=\"px-3 py-1 bg-white/20 rounded-full text-xs font-semibold text-white\">المحادثة</span><span class=\"px-3 py-1 bg-white rounded-full text-xs font-bold text-primary-orange\">API</span>"
       },
       "step3": {
@@ -1215,7 +1215,7 @@
       "description": "ثلاث خطوات بسيطة لدمج مخزون قسائم موثّق وعالي القيمة في منصّتك",
       "step1": {
         "title": "المصدر",
-        "description": "تصفّح مخزون <a href=\"coupon-marketplace.html\" class=\"text-primary-orange hover:underline\">السوق</a> بعروض منتقاة من تجّار موثّقين"
+        "description": "تصفّح مخزون <a href=\"marketplace.html\" class=\"text-primary-orange hover:underline\">السوق</a> بعروض منتقاة من تجّار موثّقين"
       },
       "step2": {
         "title": "التكامل",
