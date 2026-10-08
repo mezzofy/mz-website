@@ -301,14 +301,14 @@
         }
       },
       "exchange": {
-        "title": "The exchange, right now",
-        "description": "Liquidity is what makes a marketplace work. These figures update monthly.",
-        "stat1Value": "1,240",
-        "stat1Label": "Active merchants",
-        "stat2Value": "86,400",
-        "stat2Label": "Passes redeemed monthly",
+        "title": "Built for liquidity from day one",
+        "description": "The exchange is engineered to move value the moment you join — here's what's live and ready today.",
+        "stat1Value": "7",
+        "stat1Label": "Pass types",
+        "stat2Value": "Instant",
+        "stat2Label": "Redemption",
         "stat3Value": "14",
-        "stat3Label": "Merchant categories",
+        "stat3Label": "Categories live",
         "stat4Value": "3",
         "stat4Label": "Live markets",
         "chip1": "Food and beverage",
@@ -327,7 +327,7 @@
           "label": "Sellers",
           "title": "Merchants",
           "description": "List free and reach every buyer on the exchange. Zero Fee Passes are created by our AI and placed for you, or run your own issuance.",
-          "stat": "<strong>86,400</strong> redemptions a month to reach",
+          "stat": "<strong>Instant</strong> redemption on every pass",
           "link": "For merchants"
         },
         "buyers": {
@@ -976,7 +976,7 @@
       "hero": {
         "badge": "Free to list, no subscription",
         "title": "Customers who were never coming in anyway.",
-        "subtitle": "Put your offers where 86,400 monthly redemptions already happen. You decide how far you will go on price. We handle everything between creating the offer and the moment someone hands it over at your counter.",
+        "subtitle": "Put your offers in front of buyers across the global exchange. You decide how far you will go on price. We handle everything between creating the offer and the moment someone hands it over at your counter.",
         "ctaStart": "Start selling free",
         "ctaPricing": "See merchant pricing"
       },
@@ -1013,8 +1013,8 @@
       "reach": {
         "title": "Who your offers reach",
         "description": "This is the demand you are listing into. It is the only number that matters before you decide how to price.",
-        "stat1Value": "86,400",
-        "stat1Label": "Redemptions monthly",
+        "stat1Value": "Global",
+        "stat1Label": "Buyer reach",
         "stat2Value": "4",
         "stat2Label": "Channels, one listing",
         "stat3Value": "3",
@@ -1172,6 +1172,20 @@
         "redeemTitle": "Choose how you redeem",
         "redeemDesc": "Free Operator App on iOS and Android — staff scan or key in the code. Or validate through your existing POS using our API, so nobody learns anything new.",
         "callout": "Run a test redemption at each outlet before going live. A customer turned away with a valid Pass is the worst outcome for both of us. They paid for the guarantee that it would work."
+      },
+      "onboarding": {
+        "title": "From sign-up to selling in four steps",
+        "description": "Joining the exchange is free and takes minutes. Here is the path from creating your account to your first live Pass.",
+        "step1Title": "Create your free account",
+        "step1Desc": "Register on the merchant portal with your business email. No subscription and no setup fee to get started.",
+        "step2Title": "Verify your business",
+        "step2Desc": "Complete KYC to secure your account. Bank details are only needed if you sell Charge Passes, where we pay you.",
+        "step3Title": "List your offers",
+        "step3Desc": "Set your limits and let AI Pass create offers for you, or issue your own. Register the outlets where Passes can be redeemed.",
+        "step4Title": "Go live and get paid",
+        "step4Desc": "Your Passes reach the whole exchange. Validate at the counter in the Operator App or your POS, and get paid on redemption.",
+        "cta": "Create your merchant account",
+        "ctaNote": "Free to join. Opens the merchant registration portal in a new tab."
       },
       "faq": {
         "title": "Questions merchants ask",
@@ -3692,7 +3706,7 @@
   "buyers": {
     "v2": {
       "hero": {
-        "badge": "1,240 merchants across 14 categories",
+        "badge": "Merchants across 14 categories",
         "title": "Inventory your customers can actually use.",
         "subtitle": "Every Pass is validated before it reaches your app. No dead codes, no duplicate claims, no support tickets from customers turned away at a counter. Source it, distribute it, and swap whatever you do not use.",
         "ctaTalk": "Talk to us",
@@ -3725,12 +3739,12 @@
       "pool": {
         "title": "What is in the pool today",
         "description": "Supply you can draw against right now, not a projection.",
-        "stat1Value": "1,240",
+        "stat1Value": "100%",
         "stat1Label": "Verified merchants",
         "stat2Value": "14",
         "stat2Label": "Categories",
-        "stat3Value": "86,400",
-        "stat3Label": "Redemptions monthly",
+        "stat3Value": "Instant",
+        "stat3Label": "Redemption",
         "stat4Value": "99.9%",
         "stat4Label": "Validation uptime",
         "chip1": "Food and beverage",
@@ -3792,6 +3806,20 @@
         "note": "Security documentation, uptime commitments and data residency options are provided during procurement.",
         "link": "Request the pack →"
       },
+      "onboarding": {
+        "title": "From sign-up to your first programme in four steps",
+        "description": "Getting on the exchange is quick, and you can start in a sandbox from day one. Here is the path from account to live distribution.",
+        "step1Title": "Create your exchange account",
+        "step1Desc": "Sign up and get sandbox access from day one. Explore the pool and the API with no commitment.",
+        "step2Title": "Scope your programme",
+        "step2Desc": "Tell us your volume and categories. Choose redemption base or full purchase, and we size the commitment with you.",
+        "step3Title": "Reserve your pool",
+        "step3Desc": "Commit at your discount and we reserve verified merchant inventory for you. Undistributed Passes stay swappable at full value.",
+        "step4Title": "Distribute and reconcile",
+        "step4Desc": "Draw by API into your own app, or hand out Passes through Vault. Every draw and redemption is reconcilable for finance and audit.",
+        "cta": "Create your exchange account",
+        "ctaNote": "Sandbox from day one. Opens the exchange sign-up in a new tab."
+      },
       "faq": {
         "title": "Questions buyers ask",
         "q1": "How long does integration take?",
@@ -3844,10 +3872,10 @@
       "reach": {
         "title": "What one integration reaches",
         "description": "Connect once, and your merchants sit inside all of it.",
-        "stat1Value": "1,240",
-        "stat1Label": "Merchants on the exchange",
-        "stat2Value": "86,400",
-        "stat2Label": "Redemptions monthly",
+        "stat1Value": "Global",
+        "stat1Label": "Merchant network",
+        "stat2Value": "Instant",
+        "stat2Label": "Redemption",
         "stat3Value": "3",
         "stat3Label": "Live markets",
         "stat4Value": "2",
