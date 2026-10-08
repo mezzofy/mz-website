@@ -377,6 +377,8 @@
         "emailPlaceholder": "you@company.com",
         "cta": "傳送一張 Pass 給我",
         "confirm": "完成 — 您的示範 Pass 正在寄送途中。請查看您的收件匣。",
+        "sending": "正在傳送您的示範 Pass…",
+        "error": "發生錯誤。請重試，或來信 hello@mezzofy.com。",
         "note": "每個地址限一張示範 Pass。可於任何參與商戶使用，有效期七天。"
       },
       "channels": {

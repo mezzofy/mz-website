@@ -975,6 +975,14 @@
                         <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                         <span data-i18n="home.v2.demo.confirm">Done — your demo Pass is on its way. Check your inbox.</span>
                     </p>
+                    <p id="demo-pass-sending" class="form-confirm" hidden style="color:#4a4a4a;">
+                        <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"></path></svg>
+                        <span data-i18n="home.v2.demo.sending">Sending your demo Pass…</span>
+                    </p>
+                    <p id="demo-pass-error" class="form-confirm" hidden style="color:#b42318;">
+                        <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v4m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"></path></svg>
+                        <span data-i18n="home.v2.demo.error">Something went wrong. Please try again, or email hello@mezzofy.com.</span>
+                    </p>
                     <p class="text-sm text-medium-grey mt-4" data-i18n="home.v2.demo.note">
                         One demo Pass per address. Valid for seven days at any participating merchant.
                     </p>
@@ -1291,9 +1299,19 @@
     </footer>
 
     <script src="js/main.js"></script>
-    <!-- Homepage v2: front-end-only form confirmations (post nowhere) -->
+    <!-- EmailJS SDK (client-side email sending for the demo-Pass form) -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4.4.1/dist/email.min.js"></script>
     <script>
       (function () {
+        // ─── EmailJS config — fill these in from your EmailJS dashboard ───
+        // Until all three are set (not "YOUR_…"), the form just shows the
+        // confirmation message and does NOT attempt to send.
+        var EMAILJS_CONFIG = {
+          publicKey:  'YOUR_EMAILJS_PUBLIC_KEY',
+          serviceId:  'YOUR_EMAILJS_SERVICE_ID',
+          templateId: 'YOUR_EMAILJS_TEMPLATE_ID'
+        };
+
         function wireConfirm(formId, confirmId) {
           var form = document.getElementById(formId);
           var confirm = document.getElementById(confirmId);
@@ -1307,7 +1325,52 @@
             for (var i = 0; i < slots.length; i++) slots[i].classList.remove('selected');
           });
         }
-        wireConfirm('demo-pass-form', 'demo-pass-confirm');
+        // Demo-Pass form: send a real email via EmailJS to the entered address.
+        function wireDemoPass() {
+          var form = document.getElementById('demo-pass-form');
+          if (!form) return;
+          var emailInput = document.getElementById('demo-pass-email');
+          var btn = form.querySelector('button[type="submit"]');
+          var confirmEl = document.getElementById('demo-pass-confirm');
+          var sendingEl = document.getElementById('demo-pass-sending');
+          var errorEl = document.getElementById('demo-pass-error');
+          function show(el) {
+            [confirmEl, sendingEl, errorEl].forEach(function (n) { if (n) n.hidden = (n !== el); });
+          }
+          var configured = EMAILJS_CONFIG.publicKey.indexOf('YOUR_') !== 0 &&
+                           EMAILJS_CONFIG.serviceId.indexOf('YOUR_') !== 0 &&
+                           EMAILJS_CONFIG.templateId.indexOf('YOUR_') !== 0 &&
+                           typeof emailjs !== 'undefined';
+          if (configured) { try { emailjs.init({ publicKey: EMAILJS_CONFIG.publicKey }); } catch (e) {} }
+
+          form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            if (typeof form.reportValidity === 'function' && !form.reportValidity()) return;
+            var email = (emailInput && emailInput.value || '').trim();
+
+            if (!configured) {
+              // Not yet wired to EmailJS — don't look broken, just confirm.
+              console.warn('[demo-pass] EmailJS not configured (set EMAILJS_CONFIG). Showing confirmation only.');
+              show(confirmEl); form.reset(); return;
+            }
+
+            if (btn) btn.disabled = true;
+            show(sendingEl);
+            emailjs.send(EMAILJS_CONFIG.serviceId, EMAILJS_CONFIG.templateId, {
+              to_email: email,   // template "To Email" should be {{to_email}}
+              email: email,      // alias, in case the template uses {{email}}
+              reply_to: 'hello@mezzofy.com'
+            }).then(function () {
+              show(confirmEl); form.reset();
+            }).catch(function (err) {
+              console.error('[demo-pass] EmailJS send failed', err);
+              show(errorEl);
+            }).finally(function () {
+              if (btn) btn.disabled = false;
+            });
+          });
+        }
+        wireDemoPass();
         wireConfirm('playbook-form', 'playbook-confirm');
         wireConfirm('booking-form', 'booking-confirm');
 

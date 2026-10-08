@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Your Mezzofy Demo Pass</title>
+    <meta name="description" content="A sample Mezzofy digital Pass — see the code, the terms, and the moment it is consumed.">
+    <meta name="robots" content="noindex, follow">
+    <meta name="theme-color" content="#FF6B35">
+    <link rel="icon" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --orange: #FF6B35;
+            --orange-dark: #e65a2b;
+            --ink: #1a1a1a;
+            --grey: #4a4a4a;
+            --muted: #8a8278;
+            --card: #ffffff;
+            --page-1: #f7f2ed;
+            --page-2: #efe7e0;
+            --page-3: #e8ded6;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { -webkit-text-size-adjust: 100%; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: var(--ink);
+            background: linear-gradient(160deg, var(--page-1) 0%, var(--page-2) 55%, var(--page-3) 100%);
+            min-height: 100vh;
+            min-height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 32px 20px calc(32px + env(safe-area-inset-bottom));
+            gap: 18px;
+        }
+        .intro { text-align: center; }
+        .intro__eyebrow {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.72rem;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+        .intro__title { font-size: 1.05rem; font-weight: 600; color: var(--grey); margin-top: 6px; }
+
+        .pass {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            background: var(--card);
+            border-radius: 22px;
+            box-shadow: 0 24px 60px rgba(26, 26, 26, 0.14), 0 2px 6px rgba(26, 26, 26, 0.06);
+            overflow: hidden;
+        }
+        .pass__accent { height: 6px; background: linear-gradient(90deg, var(--orange), #ff9a6b); }
+
+        .pass__body { padding: 26px 28px 20px; }
+        .pass__brand { display: flex; align-items: center; gap: 10px; margin-bottom: 22px; }
+        .pass__logo { height: 30px; width: auto; display: block; }
+        .pass__issuer {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.68rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+        .pass__value { font-size: clamp(2.6rem, 11vw, 3.4rem); font-weight: 800; line-height: 1; color: var(--ink); letter-spacing: -0.02em; }
+        .pass__sub { margin-top: 8px; font-size: 0.95rem; color: var(--grey); }
+        .pass__terms { margin-top: 14px; font-size: 0.9rem; color: var(--grey); }
+        .pass__terms strong { color: var(--ink); font-weight: 600; }
+
+        /* Perforation / tear line */
+        .pass__perf { position: relative; height: 1px; margin: 22px 0; }
+        .pass__perf::before {
+            content: ""; position: absolute; left: 24px; right: 24px; top: 0;
+            border-top: 2px dashed rgba(26, 26, 26, 0.16);
+        }
+        .pass__perf .notch {
+            position: absolute; top: 50%; width: 24px; height: 24px; border-radius: 50%;
+            background: var(--page-2); transform: translateY(-50%);
+            box-shadow: inset 0 1px 2px rgba(0,0,0,0.08);
+        }
+        .pass__perf .notch--l { left: -12px; }
+        .pass__perf .notch--r { right: -12px; }
+
+        .pass__foot { padding: 4px 28px 28px; text-align: center; }
+        .pass__qr {
+            width: 168px; height: 168px; margin: 4px auto 18px; display: flex;
+            align-items: center; justify-content: center;
+            border: 1px solid rgba(26,26,26,0.08); border-radius: 14px; padding: 12px; background: #fff;
+        }
+        .pass__qr img, .pass__qr canvas { display: block; width: 100% !important; height: 100% !important; }
+        .pass__qr--fallback { font-family: 'IBM Plex Mono', monospace; color: var(--muted); font-size: 0.8rem; text-align: center; }
+
+        .pass__code { display: flex; flex-direction: column; gap: 4px; margin-bottom: 6px; }
+        .pass__code span { font-family: 'IBM Plex Mono', monospace; font-size: 0.66rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }
+        .pass__code strong { font-family: 'IBM Plex Mono', monospace; font-size: 1.15rem; font-weight: 600; color: var(--ink); letter-spacing: 0.06em; }
+        .pass__valid { font-size: 0.82rem; color: var(--muted); margin-bottom: 18px; }
+
+        .pass__btn {
+            width: 100%; border: none; cursor: pointer;
+            background: var(--orange); color: #fff; font-family: inherit; font-size: 1rem; font-weight: 700;
+            padding: 15px 20px; border-radius: 12px; transition: background 0.2s, transform 0.1s;
+        }
+        .pass__btn:hover { background: var(--orange-dark); }
+        .pass__btn:active { transform: translateY(1px); }
+        .pass__btn:disabled { background: #cfc8c1; color: #fff; cursor: default; }
+
+        /* Redeemed state */
+        .pass.is-redeemed .pass__body, .pass.is-redeemed .pass__foot .pass__qr,
+        .pass.is-redeemed .pass__code, .pass.is-redeemed .pass__valid { opacity: 0.45; filter: grayscale(0.4); }
+        .pass__stamp {
+            position: absolute; top: 44%; left: 50%;
+            transform: translate(-50%, -50%) rotate(-14deg);
+            font-family: 'IBM Plex Mono', monospace; font-weight: 700; font-size: 2rem; letter-spacing: 0.1em;
+            color: rgba(230, 90, 43, 0.9); border: 4px solid rgba(230, 90, 43, 0.9);
+            padding: 6px 18px; border-radius: 10px; pointer-events: none;
+            text-transform: uppercase;
+        }
+        [hidden] { display: none !important; }
+
+        .powered { font-family: 'IBM Plex Mono', monospace; font-size: 0.66rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); }
+        .backlink { font-size: 0.85rem; color: var(--muted); text-decoration: none; }
+        .backlink:hover { color: var(--orange); }
+
+        @media (max-width: 400px) {
+            .pass__body { padding: 22px 20px 16px; }
+            .pass__foot { padding: 4px 20px 24px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="intro">
+        <div class="intro__eyebrow">Your demo Pass</div>
+        <h1 class="intro__title">This is a sample Mezzofy Pass</h1>
+    </div>
+
+    <div class="pass" id="pass">
+        <div class="pass__accent"></div>
+        <div class="pass__body">
+            <div class="pass__brand">
+                <img src="assets/images/logo.png" alt="Mezzofy" class="pass__logo">
+                <span class="pass__issuer">Issuer · Mezzofy Demo</span>
+            </div>
+            <div class="pass__value">20% OFF</div>
+            <p class="pass__sub">A demo Pass, on us — no purchase required.</p>
+            <p class="pass__terms"><strong>Terms:</strong> Any participating merchant. No minimum spend.</p>
+        </div>
+
+        <div class="pass__perf"><span class="notch notch--l"></span><span class="notch notch--r"></span></div>
+
+        <div class="pass__foot">
+            <div class="pass__qr" id="qr"><span class="pass__qr--fallback">MZF-DEMO-0000</span></div>
+            <div class="pass__code"><span>Code</span><strong>MZF-DEMO-0000</strong></div>
+            <div class="pass__valid">Valid for 7 days · Single use</div>
+            <button class="pass__btn" id="redeem" type="button">Show at counter &amp; redeem</button>
+        </div>
+
+        <div class="pass__stamp" id="stamp" hidden>Redeemed</div>
+    </div>
+
+    <div class="powered">Powered by Mezzofy</div>
+    <a class="backlink" href="index.html">&larr; Back to mezzofy.com</a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script>
+      (function () {
+        // Render a QR for the demo pass (decorative/demo — encodes the demo code).
+        try {
+          if (typeof QRCode !== 'undefined') {
+            var el = document.getElementById('qr');
+            el.innerHTML = '';
+            new QRCode(el, {
+              text: 'MZF-DEMO-0000',
+              width: 144, height: 144,
+              colorDark: '#1a1a1a', colorLight: '#ffffff',
+              correctLevel: QRCode.CorrectLevel.M
+            });
+          }
+        } catch (e) { /* keep the text fallback */ }
+
+        // Demo redemption: show the single-use moment of consumption.
+        var btn = document.getElementById('redeem');
+        var pass = document.getElementById('pass');
+        var stamp = document.getElementById('stamp');
+        if (btn) {
+          btn.addEventListener('click', function () {
+            pass.classList.add('is-redeemed');
+            stamp.hidden = false;
+            btn.disabled = true;
+            btn.textContent = 'Redeemed ✓';
+          });
+        }
+      })();
+    </script>
+</body>
+</html>

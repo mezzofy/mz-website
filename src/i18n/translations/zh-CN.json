@@ -383,6 +383,8 @@
         "emailPlaceholder": "you@company.com",
         "cta": "给我发送一张 Pass",
         "confirm": "完成 — 您的演示 Pass 正在发送途中。请查收邮箱。",
+        "sending": "正在发送您的演示 Pass…",
+        "error": "出了点问题。请重试，或发送邮件至 hello@mezzofy.com。",
         "note": "每个邮箱限领一张演示 Pass。在任何参与商户处有效期为七天。"
       },
       "channels": {

@@ -377,6 +377,8 @@
         "emailPlaceholder": "you@company.com",
         "cta": "Send me a Pass",
         "confirm": "Done — your demo Pass is on its way. Check your inbox.",
+        "sending": "Sending your demo Pass…",
+        "error": "Something went wrong. Please try again, or email hello@mezzofy.com.",
         "note": "One demo Pass per address. Valid for seven days at any participating merchant."
       },
       "channels": {
