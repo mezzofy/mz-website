@@ -1303,13 +1303,25 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4.4.1/dist/email.min.js"></script>
     <script>
       (function () {
-        // ─── EmailJS config — fill these in from your EmailJS dashboard ───
-        // Until all three are set (not "YOUR_…"), the form just shows the
-        // confirmation message and does NOT attempt to send.
-        var EMAILJS_CONFIG = {
-          publicKey:  'YOUR_EMAILJS_PUBLIC_KEY',
-          serviceId:  'YOUR_EMAILJS_SERVICE_ID',
-          templateId: 'YOUR_EMAILJS_TEMPLATE_ID'
+        // ─── Demo-Pass sender config (endpoint-agnostic) ───
+        // The form uses whichever is configured, in this order of preference:
+        //   1) DEMO_PASS.endpoint.url — your own backend (preferred): sends from
+        //      hello@mezzofy.com via your SES. It POSTs JSON { <emailField>: email }
+        //      and should return 2xx on success. Leave url '' to disable.
+        //   2) DEMO_PASS.emailjs — EmailJS (needs the SDK below + the 3 IDs).
+        // If neither is set, the form just shows the confirmation (no send).
+        var DEMO_PASS = {
+          endpoint: {
+            url: '',               // e.g. 'https://api.mezzofy.com/public/demo-pass' (leave '' to disable)
+            method: 'POST',
+            emailField: 'email',   // JSON field name the API expects for the recipient
+            headers: {}            // optional extra headers, e.g. { 'x-api-key': '...' }
+          },
+          emailjs: {
+            publicKey:  'YOUR_EMAILJS_PUBLIC_KEY',
+            serviceId:  'YOUR_EMAILJS_SERVICE_ID',
+            templateId: 'YOUR_EMAILJS_TEMPLATE_ID'
+          }
         };
 
         function wireConfirm(formId, confirmId) {
@@ -1325,7 +1337,7 @@
             for (var i = 0; i < slots.length; i++) slots[i].classList.remove('selected');
           });
         }
-        // Demo-Pass form: send a real email via EmailJS to the entered address.
+        // Demo-Pass form: send a real email via a backend endpoint OR EmailJS.
         function wireDemoPass() {
           var form = document.getElementById('demo-pass-form');
           if (!form) return;
@@ -1337,33 +1349,53 @@
           function show(el) {
             [confirmEl, sendingEl, errorEl].forEach(function (n) { if (n) n.hidden = (n !== el); });
           }
-          var configured = EMAILJS_CONFIG.publicKey.indexOf('YOUR_') !== 0 &&
-                           EMAILJS_CONFIG.serviceId.indexOf('YOUR_') !== 0 &&
-                           EMAILJS_CONFIG.templateId.indexOf('YOUR_') !== 0 &&
-                           typeof emailjs !== 'undefined';
-          if (configured) { try { emailjs.init({ publicKey: EMAILJS_CONFIG.publicKey }); } catch (e) {} }
+
+          // Pick the active sender. A backend endpoint wins over EmailJS.
+          var ep = DEMO_PASS.endpoint || {};
+          var ej = DEMO_PASS.emailjs || {};
+          var hasEndpoint = typeof ep.url === 'string' && /^https?:\/\//.test(ep.url);
+          var hasEmailjs  = ej.publicKey && ej.publicKey.indexOf('YOUR_') !== 0 &&
+                            ej.serviceId && ej.serviceId.indexOf('YOUR_') !== 0 &&
+                            ej.templateId && ej.templateId.indexOf('YOUR_') !== 0 &&
+                            typeof emailjs !== 'undefined';
+          var mode = hasEndpoint ? 'endpoint' : (hasEmailjs ? 'emailjs' : null);
+          if (mode === 'emailjs') { try { emailjs.init({ publicKey: ej.publicKey }); } catch (e) {} }
+
+          function sendVia(email) {
+            if (mode === 'endpoint') {
+              var body = {}; body[ep.emailField || 'email'] = email;
+              var headers = { 'Content-Type': 'application/json' };
+              if (ep.headers) {
+                for (var k in ep.headers) { if (ep.headers.hasOwnProperty(k)) headers[k] = ep.headers[k]; }
+              }
+              return fetch(ep.url, { method: ep.method || 'POST', headers: headers, body: JSON.stringify(body) })
+                .then(function (res) { if (!res.ok) throw new Error('HTTP ' + res.status); return res; });
+            }
+            // EmailJS
+            return emailjs.send(ej.serviceId, ej.templateId, {
+              to_email: email,   // template "To Email" should be {{to_email}}
+              email: email,      // alias in case the template uses {{email}}
+              reply_to: 'hello@mezzofy.com'
+            });
+          }
 
           form.addEventListener('submit', function (e) {
             e.preventDefault();
             if (typeof form.reportValidity === 'function' && !form.reportValidity()) return;
             var email = (emailInput && emailInput.value || '').trim();
 
-            if (!configured) {
-              // Not yet wired to EmailJS — don't look broken, just confirm.
-              console.warn('[demo-pass] EmailJS not configured (set EMAILJS_CONFIG). Showing confirmation only.');
+            if (!mode) {
+              // No sender wired yet — don't look broken, just confirm.
+              console.warn('[demo-pass] No sender configured (set DEMO_PASS.endpoint.url or DEMO_PASS.emailjs). Showing confirmation only.');
               show(confirmEl); form.reset(); return;
             }
 
             if (btn) btn.disabled = true;
             show(sendingEl);
-            emailjs.send(EMAILJS_CONFIG.serviceId, EMAILJS_CONFIG.templateId, {
-              to_email: email,   // template "To Email" should be {{to_email}}
-              email: email,      // alias, in case the template uses {{email}}
-              reply_to: 'hello@mezzofy.com'
-            }).then(function () {
+            sendVia(email).then(function () {
               show(confirmEl); form.reset();
             }).catch(function (err) {
-              console.error('[demo-pass] EmailJS send failed', err);
+              console.error('[demo-pass] send failed (' + mode + ')', err);
               show(errorEl);
             }).finally(function () {
               if (btn) btn.disabled = false;
