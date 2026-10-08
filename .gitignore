@@ -12,7 +12,7 @@ credentials.json
 
 # Dependencies
 node_modules/
-package-lock.json
+# package-lock.json is intentionally committed (reproducible installs via `npm ci`)
 
 # IDE
 .vscode/
