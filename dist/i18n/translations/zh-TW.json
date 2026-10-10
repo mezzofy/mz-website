@@ -3,7 +3,6 @@
     "nav": {
       "solutions": "解決方案",
       "products": "產品",
-      "developer": "開發者",
       "resources": "資源",
       "company": "公司",
       "getStarted": "開始使用",
@@ -17,8 +16,6 @@
       "marketing": "電子券活動",
       "wallet": "Vault",
       "serial": "Pass",
-      "apiDoc": "API 文檔",
-      "apiUseCase": "API 使用案例",
       "playbook": "Passes 指南",
       "support": "支援",
       "aboutUs": "關於我們",
@@ -48,8 +45,6 @@
       "resources": {
         "title": "資源",
         "playbook": "Passes 指南",
-        "apiDoc": "API 文檔",
-        "apiUseCase": "API 使用案例",
         "support": "支援"
       },
       "company": {
@@ -3590,8 +3585,7 @@
         "badge": "橫跨 14 個類別的商戶",
         "title": "您的客戶真正用得上的庫存。",
         "subtitle": "每張 Pass 在送達您的應用程式之前都已通過驗證。沒有失效代碼、沒有重複領取，也不會有客戶因在櫃檯被拒而產生的客服工單。採購它、分發它，並將任何未使用的部分換掉。",
-        "ctaTalk": "與我們洽談",
-        "ctaApi": "閱讀 API 文件"
+        "ctaTalk": "與我們洽談"
       },
       "pass": {
         "issuerLabel": "發行者",
@@ -3728,8 +3722,7 @@
         "badge": "合作夥伴計劃",
         "title": "一次整合，涵蓋您平台上的每一位商戶。",
         "subtitle": "您的商戶已將交易託付予您。讓他們無需建置、購買或學習任何東西，即可擁有 Pass 發行與兌換功能；而每當有 Pass 透過您的平台售出，您都能分得一份收益。",
-        "ctaPartner": "成為我們的夥伴",
-        "ctaApi": "閱讀 API 文件"
+        "ctaPartner": "成為我們的夥伴"
       },
       "pass": {
         "issuerLabel": "發行者",
@@ -3835,7 +3828,6 @@
       "closing": {
         "title": "今天就在沙盒環境中開始。",
         "description": "開始建置無需任何商業承諾。待您準備正式上線時再談條款。",
-        "ctaApi": "閱讀 API 文件",
         "ctaPartner": "成為我們的夥伴"
       }
     }
@@ -3922,14 +3914,12 @@
       "closing": {
         "title": "每個優惠，都以 Pass 形式發行。",
         "description": "一套標準，七種呈現方式 — 代幣化、僅可使用一次，並於櫃檯兌現。可在交易所免費刊登，或向您自己的客戶發行。",
-        "ctaApi": "閱讀 API 文件",
         "ctaStart": "免費刊登您的優惠"
       },
       "hero": {
         "title": "一個基礎單元，七種呈現方式。",
         "subtitle": "Pass 是一種帶有唯一代碼的代幣化權益，僅發行一次，由單一持有人持有，並在驗證時使用完畢。無論它看起來像優惠券、門票還是獎勵，底層的標準都是相同的。",
-        "ctaStandard": "閱讀標準規範",
-        "ctaApi": "API 參考文件"
+        "ctaStandard": "閱讀標準規範"
       },
       "passLabels": {
         "issuerLabel": "發行者",
@@ -4101,7 +4091,6 @@
       "dev": {
         "title": "在開發者眼中 Pass 是什麼樣子",
         "description": "無論它來自市場、企業提取還是感應點，都是同一個物件。",
-        "ctaApi": "API 參考文件",
         "ctaPartner": "成為我們的夥伴"
       }
     }

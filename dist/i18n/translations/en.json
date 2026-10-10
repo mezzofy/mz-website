@@ -3,7 +3,6 @@
     "nav": {
       "solutions": "Solutions",
       "products": "Products",
-      "developer": "Developer",
       "resources": "Resources",
       "company": "Company",
       "getStarted": "Get Started",
@@ -17,8 +16,6 @@
       "marketing": "Coupon Campaign",
       "wallet": "Vault",
       "serial": "Pass",
-      "apiDoc": "API Documentation",
-      "apiUseCase": "API Use Case",
       "playbook": "Passes Playbook",
       "support": "Support",
       "aboutUs": "About Us",
@@ -48,8 +45,6 @@
       "resources": {
         "title": "Resources",
         "playbook": "Passes Playbook",
-        "apiDoc": "API Documentation",
-        "apiUseCase": "API Use Case",
         "support": "Support"
       },
       "company": {
@@ -3711,8 +3706,7 @@
         "badge": "Merchants across 14 categories",
         "title": "Inventory your customers can actually use.",
         "subtitle": "Every Pass is validated before it reaches your app. No dead codes, no duplicate claims, no support tickets from customers turned away at a counter. Source it, distribute it, and swap whatever you do not use.",
-        "ctaTalk": "Talk to us",
-        "ctaApi": "Read the API docs"
+        "ctaTalk": "Talk to us"
       },
       "pass": {
         "issuerLabel": "Issuer",
@@ -3849,8 +3843,7 @@
         "badge": "Partner programme",
         "title": "One integration. Every merchant on your platform.",
         "subtitle": "Your merchants already trust you with their transactions. Give them Pass issuance and redemption without asking them to build, buy or learn anything, and earn a share every time a Pass sells through your platform.",
-        "ctaPartner": "Partner with us",
-        "ctaApi": "Read the API docs"
+        "ctaPartner": "Partner with us"
       },
       "pass": {
         "issuerLabel": "Issuer",
@@ -3956,7 +3949,6 @@
       "closing": {
         "title": "Start in the sandbox today.",
         "description": "No commercial commitment to begin building. Terms when you are ready to go live.",
-        "ctaApi": "Read the API docs",
         "ctaPartner": "Partner with us"
       }
     }
@@ -4043,14 +4035,12 @@
       "closing": {
         "title": "Every offer, issued as a Pass.",
         "description": "One standard, seven ways to present it — tokenised, single-use, and honoured at the counter. List free on the exchange, or issue to your own customers.",
-        "ctaApi": "Read the API docs",
         "ctaStart": "List your offers free"
       },
       "hero": {
         "title": "One primitive. Seven presentations.",
         "subtitle": "A Pass is a tokenised entitlement with a unique code, issued once, held by one person, and consumed on validation. Whether it looks like a coupon, a ticket or a reward, the standard underneath is the same.",
-        "ctaStandard": "Read the standard",
-        "ctaApi": "API reference"
+        "ctaStandard": "Read the standard"
       },
       "passLabels": {
         "issuerLabel": "Issuer",
@@ -4222,7 +4212,6 @@
       "dev": {
         "title": "What a Pass looks like to a developer",
         "description": "The same object whether it came from the marketplace, an enterprise draw, or a tap point.",
-        "ctaApi": "API reference",
         "ctaPartner": "Partner with us"
       }
     }

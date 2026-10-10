@@ -34,6 +34,11 @@ MCP server configuration fixed for Windows. Shadcn MCP server now loads correctl
 
 ## Recently Completed (Last 7 Days)
 
+**2026-10-09 (Removed "Developer" nav section — API docs moved to the portal):**
+- Removed the **Developer** dropdown (desktop + mobile) from the header and the 2 Developer links (API Documentation, API Use Case) from the footer across **38 pages** (handled 3 different mobile-nav variants in root vs blog/news). Header now has 4 dropdowns: Solutions, Products, Resources, Company.
+- Deleted the 2 pages `api-doc.html` + `api-use-case.html`; removed the 6 in-page "Read the API docs / API reference" CTAs on for-buyers (1), for-integrators (2), pass (3) — siblings retained, no dead links.
+- Updated `sitemap.xml` (removed the `<!-- API Pages -->` block; done at user's explicit request — normally Webmaster scope). No CSS/i18n/JS change → no build needed. Visual QA passed (desktop + mobile, nav balanced). Orphaned nav/CTA i18n keys left in place (unused, harmless).
+
 **2026-09-30 (URL consistency: dropped `coupon-` from the last two product pages):**
 - `coupon-marketplace.html`→`marketplace.html` (150 refs) and `coupon-management.html`→`management.html` (143 refs) — the only two product URLs still carrying the `coupon-` prefix; now bare like pass/vault/ai-pass/nfc-pass. `git mv`, all refs updated across HTML/JSON(src+dist)/sitemap/llms/REDIRECTS; redirect stubs at old paths (200 + verified redirect). Self-canonical/og/JSON-LD/hreflang point to new URLs; `<title>`s keep the "coupon" SEO keyword. REDIRECTS-301.md + Infra handoff updated (now 9 renames + 1 optional). JSON valid + src==dist parity.
 

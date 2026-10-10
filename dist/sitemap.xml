@@ -158,29 +158,8 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/pass.html"/>
   </url>
 
-  <!-- API Pages -->
-  <url>
-    <loc>https://mezzofy.com/api-doc.html</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://mezzofy.com/api-doc.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-TW"     href="https://mezzofy.com/api-doc.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN"     href="https://mezzofy.com/api-doc.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/api-doc.html"/>
-  </url>
-  <url>
-    <loc>https://mezzofy.com/api-use-case.html</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://mezzofy.com/api-use-case.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-TW"     href="https://mezzofy.com/api-use-case.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN"     href="https://mezzofy.com/api-use-case.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/api-use-case.html"/>
-  </url>
 
-  <!-- Status Page -->
+<!-- Status Page -->
   <url>
     <loc>https://mezzofy.com/status.html</loc>
     <lastmod>2026-04-10</lastmod>

@@ -3,7 +3,6 @@
     "nav": {
       "solutions": "解决方案",
       "products": "产品",
-      "developer": "开发者",
       "resources": "资源",
       "company": "公司",
       "getStarted": "开始使用",
@@ -17,8 +16,6 @@
       "marketing": "电子券活动",
       "wallet": "Vault",
       "serial": "Pass",
-      "apiDoc": "API 文档",
-      "apiUseCase": "API 使用案例",
       "playbook": "Passes 指南",
       "support": "支持",
       "aboutUs": "关于我们",
@@ -48,8 +45,6 @@
       "resources": {
         "title": "资源",
         "playbook": "Passes 指南",
-        "apiDoc": "API 文档",
-        "apiUseCase": "API 使用案例",
         "support": "支持"
       },
       "company": {
@@ -3597,8 +3592,7 @@
         "badge": "横跨 14 个类别的商户",
         "title": "您的客户真正用得上的库存。",
         "subtitle": "每一张 Pass 在进入您的应用之前都已通过验证。没有失效编码，没有重复领取，也不会因客户在柜台被拒而产生工单。采购它、分发它，用不完的都可以换掉。",
-        "ctaTalk": "联系我们",
-        "ctaApi": "查看 API 文档"
+        "ctaTalk": "联系我们"
       },
       "pass": {
         "issuerLabel": "发行方",
@@ -3735,8 +3729,7 @@
         "badge": "合作伙伴计划",
         "title": "一次集成。触及您平台上的每一位商户。",
         "subtitle": "您的商户已将交易托付于您。无需他们搭建、购买或学习任何东西，即可为他们提供 Pass 发行与兑换能力，而每当有 Pass 经由您的平台售出，您都能分得一份收益。",
-        "ctaPartner": "成为合作伙伴",
-        "ctaApi": "查看 API 文档"
+        "ctaPartner": "成为合作伙伴"
       },
       "pass": {
         "issuerLabel": "发行方",
@@ -3842,7 +3835,6 @@
       "closing": {
         "title": "今天就在沙盒中开始。",
         "description": "开始构建无需任何商务承诺。待您准备好上线时再谈条款。",
-        "ctaApi": "查看 API 文档",
         "ctaPartner": "成为合作伙伴"
       }
     }
@@ -3929,14 +3921,12 @@
       "closing": {
         "title": "每个优惠，都以 Pass 形式发行。",
         "description": "一套标准，七种呈现方式 — 代币化、单次使用，并在柜台履约。在交换平台上免费上架，或向您自己的客户发行。",
-        "ctaApi": "查看 API 文档",
         "ctaStart": "免费上架您的优惠"
       },
       "hero": {
         "title": "一个基本单元。七种呈现方式。",
         "subtitle": "Pass 是一种带有唯一编码的代币化权益，发行一次，由一个人持有，并在验证时核销。无论它看起来像优惠券、门票还是奖励，底层的标准都是一致的。",
-        "ctaStandard": "阅读标准",
-        "ctaApi": "API 参考"
+        "ctaStandard": "阅读标准"
       },
       "passLabels": {
         "issuerLabel": "发行方",
@@ -4108,7 +4098,6 @@
       "dev": {
         "title": "在开发者眼中 Pass 是什么样子",
         "description": "无论它来自市场、企业提取还是触碰点，都是同一个对象。",
-        "ctaApi": "API 参考",
         "ctaPartner": "成为合作伙伴"
       }
     }
