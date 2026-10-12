@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XY60PRETXZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XY60PRETXZ');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Source verified Passes from the pool and reward your customers with incentives, loyalty rewards or promotions — validated before they reach them, reconciled to settlement.">
+    <meta name="theme-color" content="#FF6B35">
+    <title>Customer Rewards Programs Playbook | Mezzofy</title>
+
+    <!-- Hidden from search and crawlers (internal use-case page) -->
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="output.css">
+    <style>
+        .section-container { max-width:1200px; margin:0 auto; padding:4rem 1.5rem; }
+        .btn-primary { background-color:#FF6B35; color:#fff; padding:0.75rem 1.5rem; border-radius:0.5rem; font-weight:600; display:inline-block; transition:background-color .2s; }
+        .btn-primary:hover { background-color:#e65a2b; }
+        .btn-secondary { background-color:#fff; color:#FF6B35; padding:0.75rem 1.5rem; border-radius:0.5rem; font-weight:600; display:inline-block; border:2px solid #FF6B35; transition:all .2s; }
+        .btn-secondary:hover { background-color:#FF6B35; color:#fff; }
+        .pill-label { display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:0.66rem; letter-spacing:0.14em; text-transform:uppercase; color:#FF6B35; margin-bottom:10px; }
+        .calc-panel { background:#fff; border:1px solid rgba(26,26,26,0.10); border-radius:16px; padding:26px; height:100%; }
+        .cap-card { background:#fff; border:1px solid rgba(26,26,26,0.10); border-radius:16px; padding:26px; height:100%; transition:border-color .2s, transform .2s; }
+        .cap-card:hover { border-color:rgba(255,107,53,0.45); transform:translateY(-3px); }
+        .why-card { background:#fff; border-radius:16px; padding:30px; text-align:center; border-top:4px solid #FF6B35; box-shadow:0 1px 3px rgba(0,0,0,0.08); height:100%; }
+        .why-ico { width:56px; height:56px; border-radius:50%; background:rgba(255,107,53,0.12); color:#FF6B35; display:flex; align-items:center; justify-content:center; margin:0 auto 18px; }
+        .faq-item { background:#fff; border:1px solid rgba(26,26,26,0.10); border-radius:12px; padding:20px 24px; }
+        .faq-item h3 { font-weight:700; color:#1a1a1a; margin-bottom:6px; }
+        .faq-item p { color:#4a4a4a; font-size:0.95rem; }
+        /* Play steps */
+        .flow { list-style:none; display:flex; flex-wrap:wrap; gap:16px; justify-content:center; padding:0; }
+        .flow-step { flex:1 1 200px; max-width:260px; background:#fff; border-radius:12px; padding:22px; box-shadow:0 1px 3px rgba(0,0,0,0.08); border-top:3px solid #FF6B35; }
+        .lc-num { display:inline-flex; align-items:center; justify-content:center; width:34px; height:34px; border-radius:50%; background:rgba(255,107,53,0.12); color:#FF6B35; font-family:'IBM Plex Mono',monospace; font-weight:700; margin-bottom:12px; }
+        .flow-step h3 { font-size:1.05rem; font-weight:700; color:#1a1a1a; margin-bottom:6px; }
+        .flow-step p { font-size:0.9rem; color:#4a4a4a; }
+        /* Pass stub (hero visual) */
+        .pass-stub { position:relative; background:#fff; color:#1a1a1a; border:1px solid rgba(26,26,26,0.10); border-radius:16px; padding:30px 26px 26px; box-shadow:0 24px 60px -20px rgba(0,0,0,0.45); width:100%; max-width:460px; overflow:hidden; }
+        .pass-stub::before { content:''; position:absolute; top:0; left:0; right:0; height:5px; background:#FF6B35; }
+        .pass-stub__issuer { font-family:'IBM Plex Mono',monospace; font-size:0.72rem; letter-spacing:0.06em; text-transform:uppercase; color:#808080; }
+        .pass-stub__value { font-size:2rem; line-height:1.1; font-weight:800; color:#1a1a1a; margin:8px 0 10px; }
+        .pass-stub__terms { font-size:0.9rem; color:#4a4a4a; }
+        .pass-perf { position:relative; margin:20px -26px; border-top:2px dashed rgba(26,26,26,0.18); }
+        .pass-perf::before, .pass-perf::after { content:''; position:absolute; top:-11px; width:20px; height:20px; border-radius:50%; background:#fff; box-shadow:inset 0 0 0 1px rgba(26,26,26,0.10); }
+        .pass-perf::before { left:-10px; } .pass-perf::after { right:-10px; }
+        .pass-stub__code { font-family:'IBM Plex Mono',monospace; font-size:0.88rem; letter-spacing:0.04em; color:#1a1a1a; }
+        .pass-stamp { position:absolute; right:20px; bottom:18px; font-family:'IBM Plex Mono',monospace; font-weight:700; font-size:0.74rem; letter-spacing:0.12em; text-transform:uppercase; color:#FF6B35; border:2px solid #FF6B35; border-radius:6px; padding:4px 10px; transform:rotate(-8deg); opacity:.92; }
+        /* Code block */
+        .code-block { background:#1a1a1a; color:#e8e8e8; border-radius:12px; padding:22px 24px; overflow-x:auto; font-family:'IBM Plex Mono','Courier New',monospace; font-size:0.84rem; line-height:1.6; }
+    </style>
+    <script src="i18n/i18n.js"></script>
+<script src="/js/analytics.js" defer></script>
+</head>
+<body class="bg-white text-dark-grey i18n-loading">
+
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <img src="assets/images/logo.png" alt="Mezzofy Logo" class="h-8 md:h-10">
+                        <span class="md:hidden text-xl font-bold text-primary-black">MEZZOFY</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <!-- Solutions Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.solutions">Solutions</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="for-merchants.html" class="dropdown-item" data-i18n="common.nav.merchantSolution">I'm a Merchant</a>
+                            <a href="for-buyers.html" class="dropdown-item" data-i18n="common.nav.distributorSolution">I'm a Buyer</a>
+                            <a href="for-integrators.html" class="dropdown-item" data-i18n="common.nav.developerSolution">I'm an Integrator</a>
+                                                    <a href="for-ai-commerce.html" class="dropdown-item" data-i18n="common.nav.aiCommerceSolution">AI Commerce (Beta)</a>
+                        </div>
+                    </div>
+
+                    <!-- Products Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.products">Products</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="management.html" class="dropdown-item" data-i18n="common.nav.managementSystem">Management System</a>
+                            <a href="marketplace.html" class="dropdown-item" data-i18n="common.nav.marketplace">Marketplace</a>
+                            <a href="nfc-pass.html" class="dropdown-item" data-i18n="common.nav.nfc">NFC Pass</a>
+                            <a href="vault.html" class="dropdown-item" data-i18n="common.nav.wallet">Vault</a>
+                            <a href="pass.html" class="dropdown-item" data-i18n="common.nav.serial">Pass</a>
+                        </div>
+                    </div>
+
+                    <!-- Resources Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.resources">Resources</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item text-primary-orange font-semibold" data-i18n="common.nav.playbook">Passes Playbook</a>
+                            <a href="support.html" class="dropdown-item" data-i18n="common.nav.support">Support</a>
+                        </div>
+                    </div>
+
+                    <!-- Company Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <span data-i18n="common.nav.company">Company</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="about.html" class="dropdown-item" data-i18n="common.nav.aboutUs">About Us</a>
+                            <a href="contact.html" class="dropdown-item" data-cta="contact" data-i18n="common.nav.contactUs">Contact Us</a>
+                            <a href="news-blogs.html" class="dropdown-item" data-i18n="common.nav.newsPress">News & Blogs</a>
+                            <a href="investors.html" class="dropdown-item" data-i18n="common.nav.investors">Investors</a>
+                        </div>
+                    </div>
+
+                    <!-- Language Toggle Desktop -->
+                    <div class="dropdown">
+                        <button class="dropdown-trigger text-medium-grey hover:text-primary-black transition-colors">
+                            <svg class="w-5 h-5 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+                            </svg>
+                            <span id="current-lang-desktop">English</span>
+                            <svg class="w-4 h-4 inline ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item lang-option" data-lang="en">English</a>
+                            <a href="#" class="dropdown-item lang-option" data-lang="zh-TW">繁體中文</a>
+                            <a href="#" class="dropdown-item lang-option" data-lang="zh-CN">简体中文</a>
+                            <a href="#" class="dropdown-item lang-option" data-lang="ar">العربية</a>
+                        </div>
+                    </div>
+
+                    <a href="contact.html" class="btn-primary" data-cta="signup" data-i18n="common.nav.getStarted">Get Started</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-primary-black focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-1">
+                <!-- Language Toggle Mobile -->
+                <div class="mobile-dropdown border-b border-gray-200 pb-2 mb-2">
+                    <button class="mobile-dropdown-trigger" data-dropdown="language">
+                        <span class="flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+                            </svg>
+                            <span id="current-lang-mobile">English</span>
+                        </span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="language">
+                        <a href="#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange lang-option" data-lang="en">English</a>
+                        <a href="#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange lang-option" data-lang="zh-TW">繁體中文</a>
+                        <a href="#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange lang-option" data-lang="zh-CN">简体中文</a>
+                        <a href="#" class="block py-2 text-sm text-medium-grey hover:text-primary-orange lang-option" data-lang="ar">العربية</a>
+                    </div>
+                </div>
+
+                <!-- Solutions Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" data-dropdown="solutions">
+                        <span data-i18n="common.nav.solutions">Solutions</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="solutions">
+                        <a href="for-merchants.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.merchantSolution">I'm a Merchant</a>
+                        <a href="for-buyers.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.distributorSolution">I'm a Buyer</a>
+                        <a href="for-integrators.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.developerSolution">I'm an Integrator</a>
+                                            <a href="for-ai-commerce.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.aiCommerceSolution">AI Commerce (Beta)</a>
+                    </div>
+                </div>
+
+                <!-- Products Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" data-dropdown="products">
+                        <span data-i18n="common.nav.products">Products</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="products">
+                        <a href="management.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.managementSystem">Management System</a>
+                        <a href="marketplace.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.marketplace">Marketplace</a>
+                        <a href="nfc-pass.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.nfc">NFC Pass</a>
+                        <a href="vault.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.wallet">Vault</a>
+                        <a href="pass.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.serial">Pass</a>
+                    </div>
+                </div>
+
+                <!-- Resources Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" data-dropdown="resources">
+                        <span data-i18n="common.nav.resources">Resources</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="resources">
+                        <a href="pass-playbook.html" class="block py-2 text-sm text-primary-orange font-semibold" data-i18n="common.nav.playbook">Passes Playbook</a>
+                        <a href="support.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.support">Support</a>
+                    </div>
+                </div>
+
+                <!-- Company Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" data-dropdown="company">
+                        <span data-i18n="common.nav.company">Company</span>
+                        <svg class="w-4 h-4 transform transition-transform chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-menu" data-menu="company">
+                        <a href="about.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.aboutUs">About Us</a>
+                        <a href="contact.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-cta="contact" data-i18n="common.nav.contactUs">Contact Us</a>
+                        <a href="news-blogs.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.newsPress">News & Blogs</a>
+                        <a href="investors.html" class="block py-2 text-sm text-medium-grey hover:text-primary-orange" data-i18n="common.nav.investors">Investors</a>
+                    </div>
+                </div>
+
+                <a href="contact.html" class="block py-2 text-primary-orange font-semibold" data-cta="signup" data-i18n="common.nav.getStarted">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero-section" class="pt-32 pb-20 bg-gradient-to-br from-primary-black via-gray-900 to-primary-black">
+        <div class="section-container">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div>
+                    <div class="pill-label" data-i18n="pbRwd.hero.eyebrow">Buyer Playbook</div>
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-6" data-i18n="pbRwd.hero.title">Reward your customers with offers they can actually use.</h1>
+                    <p class="text-lg sm:text-xl text-gray-100 mb-10 max-w-xl" data-i18n="pbRwd.hero.subhead">Source verified Passes from the pool and hand them to your customers as incentives, loyalty rewards or promotions — every one validated before it reaches them, redeemed at real merchants, reconciled to settlement.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://exchange.mezzofy.com/signup" class="btn-primary text-center" target="_blank" rel="noopener noreferrer" data-cta="signup"><span data-i18n="pbRwd.cta.primary">Create your exchange account</span></a>
+                        <a href="for-buyers.html" class="btn-secondary text-center bg-white/10 text-white border-white hover:bg-white/20" data-cta="learn-more"><span data-i18n="pbRwd.cta.secondary">See the buyer model</span></a>
+                    </div>
+                </div>
+                <div class="flex justify-center lg:justify-end">
+                    <div class="pass-stub" role="img" aria-label="Example Pass">
+                        <div class="pass-stub__issuer"><span data-i18n="pbRwd.heroPass.issuer">Verified merchant</span></div>
+                        <div class="pass-stub__value" data-i18n="pbRwd.heroPass.value">Your reward</div>
+                        <div class="pass-stub__terms" data-i18n="pbRwd.heroPass.terms">Validated before it reaches your customer.</div>
+                        <div class="pass-perf"></div>
+                        <div class="pass-stub__code">MZF-••••-••••</div>
+                        <span class="pass-stamp" data-i18n="pbRwd.heroPass.stamp">VERIFIED</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem -->
+    <section class="bg-light-grey">
+        <div class="section-container">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black" data-i18n="pbRwd.problem.title">Why reward programmes disappoint</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+                <div class="calc-panel">
+                    <h3 class="text-lg font-bold text-primary-black mb-2" data-i18n="pbRwd.problem.p0.t">Rewards nobody wants</h3>
+                    <p class="text-dark-grey" data-i18n="pbRwd.problem.p0.d">A generic gift code for a brand your customer does not use goes unredeemed, and the goodwill with it.</p>
+                </div>
+                <div class="calc-panel">
+                    <h3 class="text-lg font-bold text-primary-black mb-2" data-i18n="pbRwd.problem.p1.t">Dead codes break trust</h3>
+                    <p class="text-dark-grey" data-i18n="pbRwd.problem.p1.d">An incentive that fails at the counter does more damage than sending nothing at all.</p>
+                </div>
+                <div class="calc-panel">
+                    <h3 class="text-lg font-bold text-primary-black mb-2" data-i18n="pbRwd.problem.p2.t">Reconciliation is a nightmare</h3>
+                    <p class="text-dark-grey" data-i18n="pbRwd.problem.p2.d">Codes from several suppliers, in several formats, with no single trail for finance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The play -->
+    <section id="how" class="bg-white">
+        <div class="section-container">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <div class="pill-label">The play</div>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black" data-i18n="pbRwd.play.title">How rewarding customers works</h2>
+            </div>
+            <ol class="flow">
+                <li class="flow-step"><span class="lc-num">1</span><h3 data-i18n="pbRwd.play.s0.t">Source</h3><p data-i18n="pbRwd.play.s0.d">Reserve verified Pass inventory across the categories your customers care about, from one pool.</p></li>
+                <li class="flow-step"><span class="lc-num">2</span><h3 data-i18n="pbRwd.play.s1.t">Reward</h3><p data-i18n="pbRwd.play.s1.d">Send Passes as incentives, loyalty rewards or promotions — by API into your app, or through the Vault.</p></li>
+                <li class="flow-step"><span class="lc-num">3</span><h3 data-i18n="pbRwd.play.s2.t">Redeem at real merchants</h3><p data-i18n="pbRwd.play.s2.d">Your customer presents at a registered outlet. The Pass is validated and consumed once.</p></li>
+                <li class="flow-step"><span class="lc-num">4</span><h3 data-i18n="pbRwd.play.s3.t">Reconcile</h3><p data-i18n="pbRwd.play.s3.d">Every draw, distribution and redemption is reconcilable to settlement, per Pass, per merchant, per campaign.</p></li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Capabilities -->
+    <section class="bg-light-grey">
+        <div class="section-container">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black" data-i18n="pbRwd.cap.title">What makes these rewards work</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+                <div class="cap-card">
+                    <h3 class="text-lg font-bold text-primary-black mb-2" data-i18n="pbRwd.cap.c0.t">Offers customers actually use</h3>
+                    <p class="text-dark-grey" data-i18n="pbRwd.cap.c0.d">Reserve across 14 categories of verified merchants, so a reward is something your customer wants.</p>
+                </div>
+                <div class="cap-card">
+                    <h3 class="text-lg font-bold text-primary-black mb-2" data-i18n="pbRwd.cap.c1.t">Verified before it reaches them</h3>
+                    <p class="text-dark-grey" data-i18n="pbRwd.cap.c1.d">Every merchant is verified and every Pass validated before it is handed out — no dead codes, no turned-away customers.</p>
+                </div>
+                <div class="cap-card">
+                    <h3 class="text-lg font-bold text-primary-black mb-2" data-i18n="pbRwd.cap.c2.t">Distribute your way</h3>
+                    <p class="text-dark-grey" data-i18n="pbRwd.cap.c2.d">Draw by API into your own app so customers never see Mezzofy, or hand out Passes through the Vault for a pilot.</p>
+                </div>
+                <div class="cap-card">
+                    <h3 class="text-lg font-bold text-primary-black mb-2" data-i18n="pbRwd.cap.c3.t">One reconcilable trail</h3>
+                    <p class="text-dark-grey" data-i18n="pbRwd.cap.c3.d">Draw, distribution and redemption per Pass, per merchant and per campaign, in the portal and by API.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Outcomes -->
+    <section class="bg-white">
+        <div class="section-container">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black" data-i18n="pbRwd.outcome.title">Why your customers notice</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+                <div class="why-card">
+                    <div class="why-ico"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></div>
+                    <h3 class="text-lg font-bold text-primary-black mb-2" data-i18n="pbRwd.outcome.o0.t">Rewards that get redeemed</h3>
+                    <p class="text-dark-grey" data-i18n="pbRwd.outcome.o0.d">Relevant, verified offers beat a generic code that expires unused.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-ico"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></div>
+                    <h3 class="text-lg font-bold text-primary-black mb-2" data-i18n="pbRwd.outcome.o1.t">Trust you keep</h3>
+                    <p class="text-dark-grey" data-i18n="pbRwd.outcome.o1.d">No dead codes means no support tickets and no damaged goodwill.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-ico"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></div>
+                    <h3 class="text-lg font-bold text-primary-black mb-2" data-i18n="pbRwd.outcome.o2.t">Finance-ready</h3>
+                    <p class="text-dark-grey" data-i18n="pbRwd.outcome.o2.d">A single reconcilable trail across every merchant and campaign.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="bg-light-grey">
+        <div class="section-container">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black" data-i18n="pbRwd.faq.title">Frequently Asked Questions</h2>
+            </div>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="faq-item"><h3 data-i18n="pbRwd.faq.q0.q">How do I make sure rewards get used?</h3><p data-i18n="pbRwd.faq.q0.a">Reserve across 14 categories of verified merchants, so the reward matches what your customers want, and every Pass is validated before it reaches them.</p></div>
+                <div class="faq-item"><h3 data-i18n="pbRwd.faq.q1.q">How do I hand Passes to my customers?</h3><p data-i18n="pbRwd.faq.q1.a">Draw by API into your own app so they never see Mezzofy, or distribute through the Vault for pilots and short campaigns.</p></div>
+                <div class="faq-item"><h3 data-i18n="pbRwd.faq.q2.q">What if a reward fails to redeem?</h3><p data-i18n="pbRwd.faq.q2.a">Every Pass is validated before it is handed out, and on the rare failure the customer is credited automatically.</p></div>
+                <div class="faq-item"><h3 data-i18n="pbRwd.faq.q3.q">Can finance reconcile it all?</h3><p data-i18n="pbRwd.faq.q3.a">Yes. Draw, distribution and redemption are reconcilable to settlement, per Pass, per merchant and per campaign.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Closing CTA -->
+    <section id="closing" class="bg-gradient-to-br from-primary-black to-gray-900 text-white">
+        <div class="section-container text-center">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-5" data-i18n="pbRwd.closing.title">Reward customers with Passes they will use.</h2>
+            <p class="text-lg sm:text-xl text-orange-200 max-w-3xl mx-auto mb-10" data-i18n="pbRwd.closing.desc">Source verified inventory, distribute by API or Vault, and reconcile every reward to settlement — validated before it reaches a single customer.</p>
+            <div class="flex justify-center">
+                <a href="https://exchange.mezzofy.com/signup" class="btn-primary text-center" target="_blank" rel="noopener noreferrer" data-cta="signup"><span data-i18n="pbRwd.closing.cta">Create your exchange account</span></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-primary-black text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Footer Links -->
+            <div class="border-t border-white/20 pt-12 mt-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+                    <!-- Company Info -->
+                    <div class="lg:col-span-1">
+                        <h3 class="text-2xl font-bold text-primary-orange mb-4">Mezzofy</h3>
+                        <p class="text-sm mb-4 text-gray-200" data-i18n="common.footer.tagline">Building the future of Pass infrastructure through the Mezzofy Exchange Protocol.</p>
+                        <!-- Social Media -->
+                        <div class="flex gap-3 mt-4 flex-wrap">
+                            <a href="https://www.facebook.com/mezzofy" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-9 h-9 rounded-lg border border-gray-700 flex items-center justify-center text-gray-400 hover:text-primary-orange hover:border-primary-orange transition-all duration-200">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                            </a>
+                            <a href="https://twitter.com/mezzofy" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X" class="w-9 h-9 rounded-lg border border-gray-700 flex items-center justify-center text-gray-400 hover:text-primary-orange hover:border-primary-orange transition-all duration-200">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                            </a>
+                            <a href="https://www.linkedin.com/company/mezzofy" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-9 h-9 rounded-lg border border-gray-700 flex items-center justify-center text-gray-400 hover:text-primary-orange hover:border-primary-orange transition-all duration-200">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                            </a>
+                            <a href="https://instagram.com/mezzofy_official" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-9 h-9 rounded-lg border border-gray-700 flex items-center justify-center text-gray-400 hover:text-primary-orange hover:border-primary-orange transition-all duration-200">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                            </a>
+                            <a href="https://www.youtube.com/mezzofy" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="w-9 h-9 rounded-lg border border-gray-700 flex items-center justify-center text-gray-400 hover:text-primary-orange hover:border-primary-orange transition-all duration-200">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.4a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon fill="white" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Solutions -->
+                    <div>
+                        <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.solutions.title">Solutions</h3>
+                        <ul class="space-y-2 text-gray-200">
+                            <li><a href="for-merchants.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.merchants">For Merchants</a></li>
+                            <li><a href="for-buyers.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.distributors">For Buyers</a></li>
+                            <li><a href="for-integrators.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.developers">For Integrators</a></li>
+                                                    <li><a href="for-ai-commerce.html" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.aiCommerce">For AI Commerce</a></li>
+                        <li><a href="index.html#product-ecosystem" class="hover:text-white transition-colors" data-i18n="common.footer.solutions.ecosystem">Product Ecosystem</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Products -->
+                    <div>
+                        <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.products.title">Products</h3>
+                        <ul class="space-y-2 text-gray-200">
+                            <li><a href="management.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.management">Management</a></li>
+                            <li><a href="marketplace.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.marketplace">Marketplace</a></li>
+                            <li><a href="nfc-pass.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.nfc">NFC</a></li>
+                            <li><a href="vault.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.wallet">Vault</a></li>
+                            <li><a href="pass.html" class="hover:text-white transition-colors" data-i18n="common.footer.products.serial">Pass</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Resources -->
+                    <div>
+                        <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.resources.title">Resources</h3>
+                        <ul class="space-y-2 text-gray-200">
+                            <li><a href="pass-playbook.html" class="hover:text-white transition-colors" data-i18n="common.footer.resources.playbook">Passes Playbook</a></li>
+
+                            <li><a href="support.html" class="hover:text-white transition-colors" data-i18n="common.footer.resources.support">Support</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Company -->
+                    <div>
+                        <h3 class="font-bold text-lg mb-4 text-white" data-i18n="common.footer.company.title">Company</h3>
+                        <ul class="space-y-2 text-gray-200">
+                            <li><a href="about.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.about">About Us</a></li>
+                            <li><a href="contact.html" class="hover:text-white transition-colors" data-cta="contact" data-i18n="common.footer.company.contact">Contact Us</a></li>
+                            <li><a href="news-blogs.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.news">News & Blogs</a></li>
+                            <li><a href="investors.html" class="hover:text-white transition-colors" data-i18n="common.footer.company.investors">Investors</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="border-t border-white/20 pt-8 text-center text-gray-200">
+                    <p data-i18n="common.footer.copyright">&copy; 2024 Mezzofy. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

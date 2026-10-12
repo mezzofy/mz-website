@@ -886,6 +886,41 @@
         "answer": "Yes. The playbook is built to chain — a flash sale that attracts can feed a loyalty Pass that retains, all under one tokenised standard."
       }
     },
+    "byRole": {
+      "title": "Playbooks by role",
+      "description": "See how merchants, buyers and integrators put Passes to work. More playbooks are on the way.",
+      "loy": {
+        "title": "Rewards & Loyalty",
+        "desc": "Issue Passes from your loyalty engine and let members redeem points against live merchant supply."
+      },
+      "mkt": {
+        "title": "Marketplace & Catalog",
+        "desc": "List live, machine-readable Pass inventory in your app without holding stock."
+      },
+      "mig": {
+        "title": "Legacy Migration",
+        "desc": "Import existing coupon stock and unify validation across every channel."
+      },
+      "rwd": {
+        "title": "Customer Rewards",
+        "desc": "Reward your customers with verified offers they can actually use."
+      },
+      "pos": {
+        "tag": "For integrators",
+        "title": "POS Redemption",
+        "desc": "Validate and consume any Pass at the till your merchants already use."
+      },
+      "gov": {
+        "tag": "For merchants",
+        "title": "Central Pass Governance",
+        "desc": "One tokenised standard for every pass — physical and digital, imported or generated."
+      },
+      "src": {
+        "tag": "For buyers",
+        "title": "Inventory Sourcing",
+        "desc": "Reserve verified inventory from the pool and draw it on demand when demand spikes."
+      }
+    },
     "footerCta": {
       "title": "Engage, Convert, and Retain Customers with the Right Pass Strategy",
       "description": "Ready to transform your customer acquisition and retention with smart Pass strategies?",
@@ -4584,6 +4619,776 @@
         "ctaThree": "See all three ways to sell",
         "ctaStart": "Start with CMS"
       }
+    }
+  },
+  "pbPos": {
+    "hero": {
+      "eyebrow": "Integrator Playbook",
+      "title": "Redeem any Pass at the till they already use.",
+      "subhead": "Add Pass validation to your POS once, and every merchant on your platform can accept tokenised, single-use Passes at checkout — no new hardware, no staff retraining, and no code they can fake."
+    },
+    "cta": {
+      "primary": "Partner with us",
+      "secondary": "Read the integrator brief"
+    },
+    "heroPass": {
+      "issuer": "Any merchant",
+      "value": "Validated",
+      "terms": "Genuine. Unspent. Consumed once.",
+      "code": "MZF-••••-••••",
+      "stamp": "CONSUMED"
+    },
+    "problem": {
+      "title": "Why checkout is where coupons break",
+      "p0": {
+        "t": "Codes you cannot trust",
+        "d": "Screenshots, generated codes and expired offers all look valid to a cashier. The till has no way to tell a real code from a fake one."
+      },
+      "p1": {
+        "t": "Manual lookups slow the line",
+        "d": "Typing codes into a separate portal, or calling a promo desk, turns a five-second checkout into a queue."
+      },
+      "p2": {
+        "t": "Double-spend found too late",
+        "d": "A paper or PDF coupon can be presented twice. You discover it in reconciliation, not at the counter."
+      }
+    },
+    "play": {
+      "title": "How redemption works once you are integrated",
+      "s0": {
+        "t": "Present",
+        "d": "The customer shows a Pass from their Vault — a QR, a barcode or an NFC tap — at your merchant's till."
+      },
+      "s1": {
+        "t": "Validate",
+        "d": "Your POS calls the exchange with the code. We check it is genuine, unspent, and eligible for this basket, outlet and time window."
+      },
+      "s2": {
+        "t": "Consume",
+        "d": "On success the Pass is consumed in the same call. It cannot be presented again, screenshotted or forwarded."
+      },
+      "s3": {
+        "t": "Settle",
+        "d": "The redemption is recorded per Pass and per outlet, and settlement follows on the agreed cycle."
+      }
+    },
+    "cap": {
+      "title": "What the integration gives you",
+      "c0": {
+        "t": "One endpoint, every merchant",
+        "d": "The same validation endpoint the marketplace runs on. One integration covers every merchant on your platform — they do not each integrate."
+      },
+      "c1": {
+        "t": "Eligibility at the counter",
+        "d": "The response carries value, conditions and status, so your till applies minimum-spend, time-window and outlet rules before it accepts the Pass."
+      },
+      "c2": {
+        "t": "Voucherless redemption",
+        "d": "Look up and redeem straight from the customer's Vault by member or token, with no code to read, when that fits your flow."
+      },
+      "c3": {
+        "t": "REST or MCP, sandbox on signup",
+        "d": "OAuth2, webhooks for redemption events, and a full sandbox with sample merchants and Passes before you certify."
+      }
+    },
+    "outcome": {
+      "title": "Why it is worth the integration",
+      "o0": {
+        "t": "A reason to stay on your system",
+        "d": "Pass acceptance becomes a capability your merchants cannot get by switching POS."
+      },
+      "o1": {
+        "t": "No fraud to reconcile",
+        "d": "Every redemption is genuine and single-use, so there is nothing to claw back later."
+      },
+      "o2": {
+        "t": "Revenue on every Pass",
+        "d": "You earn a share on Passes sold through your platform, settled at the point of sale."
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q0": {
+        "q": "Do my merchants need new hardware?",
+        "a": "No. Redemption happens at the till they already use. If it can scan a barcode or read an NFC tap and call an API, it can accept a Pass."
+      },
+      "q1": {
+        "q": "What happens if a Pass fails to validate?",
+        "a": "The till rejects it at the counter and the customer is credited automatically. The merchant is never charged for a Pass that did not redeem."
+      },
+      "q2": {
+        "q": "How long does certification take?",
+        "a": "Typically two to three weeks from a working sandbox integration, covering issuance, redemption, failure handling and settlement reconciliation."
+      },
+      "q3": {
+        "q": "REST or MCP?",
+        "a": "Both. Use REST for a classic POS integration, or MCP if your platform speaks it. You get a sandbox on signup either way."
+      }
+    },
+    "closing": {
+      "title": "One integration. Every merchant on your platform.",
+      "desc": "Give the merchants you already serve Pass issuance and redemption, without asking them to build, buy or learn anything.",
+      "cta": "Partner with us"
+    }
+  },
+  "pbGov": {
+    "hero": {
+      "eyebrow": "Merchant Playbook",
+      "title": "One standard for every pass you issue.",
+      "subhead": "Stop running a different system for in-store coupons, digital vouchers and the stack you inherited. Bring physical and digital onto one tokenised standard — imported, exported or generated — and govern all of it from one place."
+    },
+    "cta": {
+      "primary": "Create your merchant account",
+      "secondary": "See how merchants sell"
+    },
+    "heroPass": {
+      "issuer": "Your brand",
+      "value": "One standard",
+      "terms": "Physical and digital. Imported, exported or generated.",
+      "code": "MZF-••••-••••",
+      "stamp": "UNIQUE"
+    },
+    "problem": {
+      "title": "What fragmented pass management costs you",
+      "p0": {
+        "t": "Every system has its own rules",
+        "d": "Paper coupons, a legacy voucher tool, a loyalty export and a spreadsheet each track issuance and redemption differently. No single view, no single truth."
+      },
+      "p1": {
+        "t": "Fraud hides in the gaps",
+        "d": "A code that can be screenshotted, duplicated or honoured after expiry is one you find out about in reconciliation, if at all."
+      },
+      "p2": {
+        "t": "Governance is manual",
+        "d": "Discount limits, quotas and outlet rules live in people's heads, or across four different admin panels."
+      }
+    },
+    "play": {
+      "title": "How central governance works",
+      "s0": {
+        "t": "Bring everything in",
+        "d": "Import the stock you already hold, export when you need to, or generate new Passes in the portal. Physical and digital, one inventory per route."
+      },
+      "s1": {
+        "t": "Issue to one standard",
+        "d": "Every Pass, whatever its origin, becomes tokenised, unique and single-use. The standard is enforced by the system, not promised in terms."
+      },
+      "s2": {
+        "t": "Set the guardrails",
+        "d": "Discount range, minimum spend, monthly quota, daily cap, off-peak windows and which outlets can validate — hard ceilings, changeable any time."
+      },
+      "s3": {
+        "t": "Redeem and reconcile",
+        "d": "Staff validate in the Operator App or your POS, registered outlets only, and every Pass is reconciled per outlet, per route, per campaign."
+      }
+    },
+    "cap": {
+      "title": "One system, every route",
+      "c0": {
+        "t": "Physical and digital, unified",
+        "d": "Tap points, printed QR, email, messaging and your own app all issue the same Pass standard. Nothing is a special case."
+      },
+      "c1": {
+        "t": "Import, export, generate",
+        "d": "Bring legacy stock onto the exchange, hand off when you must, or mint fresh Passes — without maintaining a separate tool for each."
+      },
+      "c2": {
+        "t": "Governance by design",
+        "d": "System-enforced ceilings on discount, quota and daily caps; enable or disable outlets individually; KYC on the account."
+      },
+      "c3": {
+        "t": "One reconciled view",
+        "d": "Issued, sent, redeemed, expired — per Pass, per outlet, per route, exportable and billed against the same numbers."
+      }
+    },
+    "outcome": {
+      "title": "Why one standard wins",
+      "o0": {
+        "t": "No legacy system to maintain",
+        "d": "Retire the tools that only do one channel. The Management System is included; you pay only for what you use."
+      },
+      "o1": {
+        "t": "Fraud-proof across the board",
+        "d": "One tokenised standard means a duplicate or expired Pass fails at the counter, everywhere."
+      },
+      "o2": {
+        "t": "Audit-ready",
+        "d": "A full redemption trail for finance and compliance, per Pass."
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q0": {
+        "q": "Can I keep issuing from my existing tools?",
+        "a": "Yes — import what you hold and export when you need to. The goal is one standard for validation and reconciliation, not ripping out everything on day one."
+      },
+      "q1": {
+        "q": "Does this handle both physical and digital?",
+        "a": "Yes. Tap points, printed QR, email, messaging and your own app all issue and redeem the same Pass."
+      },
+      "q2": {
+        "q": "Who can validate a Pass?",
+        "a": "Only your registered outlets. A Pass presented at an unregistered outlet will not validate, and you can enable or disable outlets at any time."
+      },
+      "q3": {
+        "q": "What does it cost?",
+        "a": "The Management System is included with every account; you are billed per Pass only for your own distribution, cheaper with volume."
+      }
+    },
+    "closing": {
+      "title": "Govern every pass from one place.",
+      "desc": "One tokenised standard for physical and digital, imported, exported or generated — created, tracked, redeemed and reconciled in the same place.",
+      "cta": "Create your merchant account"
+    }
+  },
+  "pbSrc": {
+    "hero": {
+      "eyebrow": "Buyer Playbook",
+      "title": "Inventory that is ready when demand spikes.",
+      "subhead": "Reserve verified Pass inventory from the pool, draw it into your app on demand, and swap whatever a campaign does not use. Every Pass is validated before it reaches a customer — no dead codes, no duplicate claims."
+    },
+    "cta": {
+      "primary": "Create your exchange account",
+      "secondary": "See the buyer model"
+    },
+    "heroPass": {
+      "issuer": "Verified merchant",
+      "value": "In the pool",
+      "terms": "Validated before it reaches your app.",
+      "code": "MZF-••••-••••",
+      "stamp": "VERIFIED"
+    },
+    "problem": {
+      "title": "Why sourcing coupons usually hurts",
+      "p0": {
+        "t": "Dead codes reach customers",
+        "d": "Gray-market or unverified stock means codes that fail at the counter — and a support ticket for every one."
+      },
+      "p1": {
+        "t": "You commit to the wrong merchant",
+        "d": "Buy a block of one merchant's vouchers, and if the campaign shifts you are stuck with inventory you cannot use."
+      },
+      "p2": {
+        "t": "No supply when demand surges",
+        "d": "A promotion takes off and there is nothing left to hand out, or sourcing more takes weeks."
+      }
+    },
+    "play": {
+      "title": "How sourcing from the pool works",
+      "s0": {
+        "t": "Scope",
+        "d": "Set your volume and the categories you need, and choose redemption-base or full purchase."
+      },
+      "s1": {
+        "t": "Reserve",
+        "d": "Commit at a discount and we reserve verified merchant inventory from the pool. Undistributed Passes stay swappable."
+      },
+      "s2": {
+        "t": "Draw on demand",
+        "d": "Pull from your reserved pool into your own app by API as customers claim — they never see Mezzofy. Or hand out Passes through Vault for pilots."
+      },
+      "s3": {
+        "t": "Swap and reconcile",
+        "d": "Exchange undistributed inventory for another seller's at the same value, and reconcile every draw and redemption to settlement."
+      }
+    },
+    "cap": {
+      "title": "What the pool gives you",
+      "c0": {
+        "t": "Verified at source",
+        "d": "Every merchant is onboarded and verified before inventory enters the pool, and every Pass is validated before it reaches your app."
+      },
+      "c1": {
+        "t": "Reserve now, draw later",
+        "d": "Hold a pool against a commitment and draw from it as demand arrives — REST and MCP, sandbox on signup."
+      },
+      "c2": {
+        "t": "Swap what you do not use",
+        "d": "Your commitment is to the exchange, not to one merchant. Exchange undistributed Passes for another's at the same value."
+      },
+      "c3": {
+        "t": "Reconcilable to settlement",
+        "d": "Draw, distribution and redemption per Pass, per merchant and per campaign, in the portal and by API."
+      }
+    },
+    "outcome": {
+      "title": "Why the pool beats one-off sourcing",
+      "o0": {
+        "t": "No dead codes, no tickets",
+        "d": "Verified at source, with 99.9% validation uptime and auto-credit on the rare failure."
+      },
+      "o1": {
+        "t": "Inventory that flexes with demand",
+        "d": "Reserve ahead, draw on demand, and swap whatever a campaign shifts away from."
+      },
+      "o2": {
+        "t": "Procurement-ready",
+        "d": "Security documentation, uptime commitments and data residency options, provided during procurement."
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q0": {
+        "q": "What if a campaign changes after I commit?",
+        "a": "Undistributed Passes can be swapped for another seller's at the same value. Your commitment is to the exchange, not one merchant."
+      },
+      "q1": {
+        "q": "How fast can I go live?",
+        "a": "Pass-and-Vault distribution can be live in days; a full API integration is typically two to four weeks including certification, with a sandbox from day one."
+      },
+      "q2": {
+        "q": "How do I distribute to my customers?",
+        "a": "Draw by API into your own app so customers never see Mezzofy, or hand out Passes through the Vault for pilots and short campaigns."
+      },
+      "q3": {
+        "q": "What about failed redemptions?",
+        "a": "Every Pass is validated before it reaches a customer, and on the rare failure the customer is credited automatically."
+      }
+    },
+    "closing": {
+      "title": "Source verified inventory, ready for the surge.",
+      "desc": "Reserve from the pool, draw into your app on demand, and swap what you do not use — validated before it ever reaches a customer.",
+      "cta": "Create your exchange account"
+    }
+  },
+  "pbLoy": {
+    "hero": {
+      "eyebrow": "Integrator Playbook",
+      "title": "Let members redeem points against live merchant supply.",
+      "subhead": "Issue, list and distribute Passes from your loyalty or rewards engine, and keep their status and the member's Vault in sync. Members exchange points against real merchant inventory instead of a catalogue that never changes."
+    },
+    "cta": {
+      "primary": "Partner with us",
+      "secondary": "Read the integrator brief"
+    },
+    "heroPass": {
+      "issuer": "From your programme",
+      "value": "Reward",
+      "terms": "Issued to one member. Single-use.",
+      "code": "MZF-••••-••••",
+      "stamp": "ISSUED"
+    },
+    "problem": {
+      "title": "Why reward catalogues stall",
+      "p0": {
+        "t": "Catalogue fatigue",
+        "d": "A fixed rewards catalogue that never changes stops driving redemptions. Your redemption rate becomes a function of how stale the list looks."
+      },
+      "p1": {
+        "t": "Codes that fail or double-redeem",
+        "d": "Static codes issued from a spreadsheet get screenshotted, shared and reused. Members hit dead codes, and you reconcile the mess later."
+      },
+      "p2": {
+        "t": "No live link to merchant supply",
+        "d": "Points sit on your ledger with nothing fresh to spend them on, because adding merchants means a new contract and a new integration each time."
+      }
+    },
+    "play": {
+      "title": "How issuance and redemption work",
+      "s0": {
+        "t": "List live supply",
+        "d": "Members browse live merchant inventory from the exchange inside your app, not a frozen catalogue."
+      },
+      "s1": {
+        "t": "Issue a Pass",
+        "d": "A member spends points and you issue a Pass through one API call. It is tokenised, bound to that member, and lands in their Vault."
+      },
+      "s2": {
+        "t": "Track status",
+        "d": "Issued, held, presented, validated, settled — the Pass status and the member's Vault stay in sync through webhooks."
+      },
+      "s3": {
+        "t": "Redeem once",
+        "d": "The member presents at a registered outlet or your POS. The Pass is consumed once and reconciled per Pass."
+      }
+    },
+    "cap": {
+      "title": "What the integration gives you",
+      "c0": {
+        "t": "Issue with one call",
+        "d": "Create, distribute and validate Passes on the same endpoints the marketplace runs on. Idempotency keys stop a retried request issuing twice."
+      },
+      "c1": {
+        "t": "Live merchant supply",
+        "d": "Members exchange points against real inventory that refreshes itself, so your redemption rate stops being a function of catalogue fatigue."
+      },
+      "c2": {
+        "t": "Status and Vault in sync",
+        "d": "Webhooks for every state change keep your ledger and the member's Vault aligned without polling."
+      },
+      "c3": {
+        "t": "Delivery your way",
+        "d": "Deliver by email, SMS, a claim link, or straight into the member's Vault. REST and MCP, sandbox on signup."
+      }
+    },
+    "outcome": {
+      "title": "Why members redeem more",
+      "o0": {
+        "t": "Redemptions that keep moving",
+        "d": "Live supply beats a frozen catalogue, so points get spent instead of expiring on your books."
+      },
+      "o1": {
+        "t": "Nothing to reconcile by hand",
+        "d": "Every Pass is single-use and tokenised, with a full status trail per member."
+      },
+      "o2": {
+        "t": "One integration, every merchant",
+        "d": "Add the whole merchant network at once, not one contract at a time."
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q0": {
+        "q": "Do points leave my system?",
+        "a": "No. You keep the loyalty ledger and the member relationship. Mezzofy issues, validates and settles the Pass; points are debited in your engine."
+      },
+      "q1": {
+        "q": "How do I keep status in sync?",
+        "a": "Subscribe to webhooks for issued, held, presented, validated and settled events, so your ledger and the member's Vault update without polling."
+      },
+      "q2": {
+        "q": "Can I avoid issuing the same reward twice?",
+        "a": "Yes. Send an idempotency key with each issuance; a retried request returns the original Pass rather than minting a new one."
+      },
+      "q3": {
+        "q": "How do members receive a Pass?",
+        "a": "By email, SMS, a claim link, or straight into their Vault — whichever fits your app. All on REST or MCP with a sandbox on signup."
+      }
+    },
+    "closing": {
+      "title": "Turn points into Passes members actually spend.",
+      "desc": "Issue against live merchant supply, keep status and the Vault in sync, and settle per Pass — one integration for the whole merchant network.",
+      "cta": "Partner with us"
+    }
+  },
+  "pbMkt": {
+    "hero": {
+      "eyebrow": "Integrator Playbook",
+      "title": "List every merchant's Passes inside your app.",
+      "subhead": "Pull live, machine-readable Pass inventory into your marketplace, super-app or AI assistant through one API — priced, validated and settled by the exchange, so you surface offers without holding risk."
+    },
+    "cta": {
+      "primary": "Partner with us",
+      "secondary": "See the marketplace"
+    },
+    "heroPass": {
+      "issuer": "Any merchant",
+      "value": "Listed",
+      "terms": "One listing, every eligible channel.",
+      "code": "MZF-••••-••••",
+      "stamp": "LIVE"
+    },
+    "problem": {
+      "title": "Why building a deals catalogue is hard",
+      "p0": {
+        "t": "Content goes stale fast",
+        "d": "A hand-built deals list is out of date the day after you publish it, and keeping it fresh is a full-time job."
+      },
+      "p1": {
+        "t": "You hold the risk",
+        "d": "Buying inventory to resell means carrying stock, chasing merchants, and eating what does not sell."
+      },
+      "p2": {
+        "t": "Fraud lands on you",
+        "d": "Static codes get copied and reused, and the chargebacks and support tickets are yours."
+      }
+    },
+    "play": {
+      "title": "How listing works",
+      "s0": {
+        "t": "Pull the catalogue",
+        "d": "Read live, machine-readable Pass inventory from the exchange — each Pass eligible for every channel it fits."
+      },
+      "s1": {
+        "t": "Surface offers",
+        "d": "Show them in your marketplace, super-app or AI assistant. The same object whether it came from the marketplace, a draw, or a tap point."
+      },
+      "s2": {
+        "t": "Transact",
+        "d": "A user claims or buys. The Pass is issued tokenised and single-use, and lands in their Vault."
+      },
+      "s3": {
+        "t": "Settle",
+        "d": "Pricing, validation and settlement are handled by the exchange. You earn on what sells, reconciled per Pass."
+      }
+    },
+    "cap": {
+      "title": "What the listing API gives you",
+      "c0": {
+        "t": "Machine-readable inventory",
+        "d": "A standard interface AI agents and apps can read, match and transact against — the same inventory the marketplace runs on."
+      },
+      "c1": {
+        "t": "One listing, every channel",
+        "d": "Each Pass is eligible for every channel it fits, so you surface the right offers without manual curation."
+      },
+      "c2": {
+        "t": "No inventory risk",
+        "d": "You list and surface; the exchange prices, validates and settles. You carry no stock."
+      },
+      "c3": {
+        "t": "Fraud-proof by design",
+        "d": "Every Pass is tokenised and consumed once, even after changing hands, so there is nothing to charge back."
+      }
+    },
+    "outcome": {
+      "title": "Why list instead of build",
+      "o0": {
+        "t": "Fresh offers, zero curation",
+        "d": "Live supply refreshes itself. No catalogue to maintain."
+      },
+      "o1": {
+        "t": "Revenue without risk",
+        "d": "Earn on every Pass that sells through you, with no stock to carry."
+      },
+      "o2": {
+        "t": "AI-ready supply",
+        "d": "Your assistant can read and transact against real, fraud-proof inventory."
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q0": {
+        "q": "Do I have to buy inventory to list it?",
+        "a": "No. Listing surfaces live exchange inventory. Pricing, validation and settlement are handled for you; you earn on what sells."
+      },
+      "q1": {
+        "q": "Is the inventory machine-readable for an AI agent?",
+        "a": "Yes. It is a standard interface AI shopping agents can read, match and transact against — the same inventory behind the marketplace."
+      },
+      "q2": {
+        "q": "How is fraud handled?",
+        "a": "Every Pass is tokenised and consumed once, even after it changes hands, so copied or reused codes simply fail."
+      },
+      "q3": {
+        "q": "REST or MCP?",
+        "a": "Both, with a sandbox on signup. Use whichever your platform speaks."
+      }
+    },
+    "closing": {
+      "title": "Surface live offers without holding the risk.",
+      "desc": "One API for live, machine-readable, fraud-proof inventory — priced, validated and settled by the exchange. You list; you earn on what sells.",
+      "cta": "Partner with us"
+    }
+  },
+  "pbMig": {
+    "hero": {
+      "eyebrow": "Merchant Playbook",
+      "title": "Bring the coupons you already run onto one exchange.",
+      "subhead": "Import the stock you hold, keep issuing across in-store, NFC and digital, and unify validation and reconciliation on one tokenised standard — without ripping out everything on day one."
+    },
+    "cta": {
+      "primary": "Create your merchant account",
+      "secondary": "See how merchants sell"
+    },
+    "heroPass": {
+      "issuer": "Your brand",
+      "value": "Migrated",
+      "terms": "Legacy stock, now tokenised and single-use.",
+      "code": "MZF-••••-••••",
+      "stamp": "UNIQUE"
+    },
+    "problem": {
+      "title": "Why legacy coupon stacks hold you back",
+      "p0": {
+        "t": "Codes you cannot trust",
+        "d": "Printed and PDF coupons from the old system get screenshotted, duplicated and honoured after expiry, and you only find out in reconciliation."
+      },
+      "p1": {
+        "t": "Every channel is its own island",
+        "d": "In-store, NFC and digital each run on a different tool, with no single view of what was issued or redeemed."
+      },
+      "p2": {
+        "t": "Rip-and-replace is too risky",
+        "d": "You cannot switch everything off overnight, so the old systems linger and the fragmentation stays."
+      }
+    },
+    "play": {
+      "title": "How migration works",
+      "s0": {
+        "t": "Import what you hold",
+        "d": "Bring existing coupon and voucher stock onto the exchange by bulk import. No need to reissue to customers who already have one."
+      },
+      "s1": {
+        "t": "Tokenise on validation",
+        "d": "Imported Passes validate against the exchange, so a duplicate or expired code fails at the counter from day one."
+      },
+      "s2": {
+        "t": "Unify the channels",
+        "d": "Issue new Passes across in-store, NFC, email, messaging and your own app — all one standard, one inventory per route."
+      },
+      "s3": {
+        "t": "Retire the old tools",
+        "d": "Move channel by channel at your pace. When a legacy tool has nothing left to do, switch it off."
+      }
+    },
+    "cap": {
+      "title": "What migration gives you",
+      "c0": {
+        "t": "Bulk import, no reissue",
+        "d": "Upload the lists and stock you already hold. Customers keep what they have; you gain trusted validation."
+      },
+      "c1": {
+        "t": "One standard across channels",
+        "d": "Physical and digital issue and redeem the same tokenised Pass. Nothing is a special case."
+      },
+      "c2": {
+        "t": "Validate at your outlets",
+        "d": "Operator App or your POS, registered outlets only. A Pass at an unregistered outlet will not validate."
+      },
+      "c3": {
+        "t": "Reconciled in one place",
+        "d": "Issued, sent, redeemed, expired — per Pass, per outlet, per route, exportable and billed against the same numbers."
+      }
+    },
+    "outcome": {
+      "title": "Why migrate gradually",
+      "o0": {
+        "t": "Fraud stops at the counter",
+        "d": "Imported stock becomes fraud-proof the moment it validates against the exchange."
+      },
+      "o1": {
+        "t": "One source of truth",
+        "d": "Every channel reconciles to the same numbers, for finance and audit."
+      },
+      "o2": {
+        "t": "Move at your pace",
+        "d": "Channel by channel, with no big-bang cutover."
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q0": {
+        "q": "Do customers need a new coupon after I import?",
+        "a": "No. Import the stock you already hold; existing coupons keep working while gaining trusted validation."
+      },
+      "q1": {
+        "q": "Can I keep my old system running during migration?",
+        "a": "Yes. Move one channel at a time. The old tools stay until they have nothing left to do."
+      },
+      "q2": {
+        "q": "Does this cover physical coupons?",
+        "a": "Yes. Printed and QR, NFC tap points, email, messaging and your own app all issue and redeem the same Pass."
+      },
+      "q3": {
+        "q": "What does it cost?",
+        "a": "The Management System is included with every account; you are billed per Pass only for your own distribution, cheaper with volume."
+      }
+    },
+    "closing": {
+      "title": "Unify every coupon channel, at your pace.",
+      "desc": "Import what you hold, tokenise on validation, and reconcile physical and digital in one place — retiring legacy tools channel by channel.",
+      "cta": "Create your merchant account"
+    }
+  },
+  "pbRwd": {
+    "hero": {
+      "eyebrow": "Buyer Playbook",
+      "title": "Reward your customers with offers they can actually use.",
+      "subhead": "Source verified Passes from the pool and hand them to your customers as incentives, loyalty rewards or promotions — every one validated before it reaches them, redeemed at real merchants, reconciled to settlement."
+    },
+    "cta": {
+      "primary": "Create your exchange account",
+      "secondary": "See the buyer model"
+    },
+    "heroPass": {
+      "issuer": "Verified merchant",
+      "value": "Your reward",
+      "terms": "Validated before it reaches your customer.",
+      "code": "MZF-••••-••••",
+      "stamp": "VERIFIED"
+    },
+    "problem": {
+      "title": "Why reward programmes disappoint",
+      "p0": {
+        "t": "Rewards nobody wants",
+        "d": "A generic gift code for a brand your customer does not use goes unredeemed, and the goodwill with it."
+      },
+      "p1": {
+        "t": "Dead codes break trust",
+        "d": "An incentive that fails at the counter does more damage than sending nothing at all."
+      },
+      "p2": {
+        "t": "Reconciliation is a nightmare",
+        "d": "Codes from several suppliers, in several formats, with no single trail for finance."
+      }
+    },
+    "play": {
+      "title": "How rewarding customers works",
+      "s0": {
+        "t": "Source",
+        "d": "Reserve verified Pass inventory across the categories your customers care about, from one pool."
+      },
+      "s1": {
+        "t": "Reward",
+        "d": "Send Passes as incentives, loyalty rewards or promotions — by API into your app, or through the Vault."
+      },
+      "s2": {
+        "t": "Redeem at real merchants",
+        "d": "Your customer presents at a registered outlet. The Pass is validated and consumed once."
+      },
+      "s3": {
+        "t": "Reconcile",
+        "d": "Every draw, distribution and redemption is reconcilable to settlement, per Pass, per merchant, per campaign."
+      }
+    },
+    "cap": {
+      "title": "What makes these rewards work",
+      "c0": {
+        "t": "Offers customers actually use",
+        "d": "Reserve across 14 categories of verified merchants, so a reward is something your customer wants."
+      },
+      "c1": {
+        "t": "Verified before it reaches them",
+        "d": "Every merchant is verified and every Pass validated before it is handed out — no dead codes, no turned-away customers."
+      },
+      "c2": {
+        "t": "Distribute your way",
+        "d": "Draw by API into your own app so customers never see Mezzofy, or hand out Passes through the Vault for a pilot."
+      },
+      "c3": {
+        "t": "One reconcilable trail",
+        "d": "Draw, distribution and redemption per Pass, per merchant and per campaign, in the portal and by API."
+      }
+    },
+    "outcome": {
+      "title": "Why your customers notice",
+      "o0": {
+        "t": "Rewards that get redeemed",
+        "d": "Relevant, verified offers beat a generic code that expires unused."
+      },
+      "o1": {
+        "t": "Trust you keep",
+        "d": "No dead codes means no support tickets and no damaged goodwill."
+      },
+      "o2": {
+        "t": "Finance-ready",
+        "d": "A single reconcilable trail across every merchant and campaign."
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q0": {
+        "q": "How do I make sure rewards get used?",
+        "a": "Reserve across 14 categories of verified merchants, so the reward matches what your customers want, and every Pass is validated before it reaches them."
+      },
+      "q1": {
+        "q": "How do I hand Passes to my customers?",
+        "a": "Draw by API into your own app so they never see Mezzofy, or distribute through the Vault for pilots and short campaigns."
+      },
+      "q2": {
+        "q": "What if a reward fails to redeem?",
+        "a": "Every Pass is validated before it is handed out, and on the rare failure the customer is credited automatically."
+      },
+      "q3": {
+        "q": "Can finance reconcile it all?",
+        "a": "Yes. Draw, distribution and redemption are reconcilable to settlement, per Pass, per merchant and per campaign."
+      }
+    },
+    "closing": {
+      "title": "Reward customers with Passes they will use.",
+      "desc": "Source verified inventory, distribute by API or Vault, and reconcile every reward to settlement — validated before it reaches a single customer.",
+      "cta": "Create your exchange account"
     }
   }
 }

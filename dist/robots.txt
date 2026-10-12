@@ -2,6 +2,7 @@
 
 User-agent: *
 Allow: /
+Disallow: /playbook-
 
 # Block test pages
 Disallow: /test-i18n.html
@@ -21,46 +22,60 @@ Sitemap: https://mezzofy.com/sitemap.xml
 # Common bots
 User-agent: Googlebot
 Allow: /
+Disallow: /playbook-
 
 User-agent: Bingbot
 Allow: /
+Disallow: /playbook-
 
 User-agent: Slurp
 Allow: /
+Disallow: /playbook-
 
 # AI crawlers — explicitly allowed for AEO
 User-agent: GPTBot
 Allow: /
+Disallow: /playbook-
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /playbook-
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /playbook-
 
 User-agent: anthropic-ai
 Allow: /
+Disallow: /playbook-
 
 User-agent: Applebot
 Allow: /
+Disallow: /playbook-
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /playbook-
 
 User-agent: Meta-ExternalAgent
 Allow: /
+Disallow: /playbook-
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /playbook-
 
 User-agent: Bytespider
 Allow: /
+Disallow: /playbook-
 
 User-agent: PetalBot
 Allow: /
+Disallow: /playbook-
 
 User-agent: Diffbot
 Allow: /
+Disallow: /playbook-
 
 # Block bad bots (optional)
 User-agent: AhrefsBot

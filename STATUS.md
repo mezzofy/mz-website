@@ -34,6 +34,13 @@ MCP server configuration fixed for Windows. Shadcn MCP server now loads correctl
 
 ## Recently Completed (Last 7 Days)
 
+**2026-10-12 (Role-based playbook use-case pages — 7 pages, hidden from crawlers):**
+- Generated **7 new playbook (use-case) pages** in the v2 design, grounded in the real 3-solution + Pass/Management positioning (via a capability-map research pass): **Integrators** — `playbook-pos-redemption`, `playbook-loyalty-integration`, `playbook-marketplace-listing`; **Merchants** — `playbook-central-governance`, `playbook-legacy-migration`; **Buyers** — `playbook-inventory-sourcing`, `playbook-customer-rewards`. Each: dark hero + Pass-stub, problem band, numbered "the play", capability cards (integrator pages carry a real API code sample), outcomes, FAQ, closing CTA.
+- **Hidden from search/crawlers** per request: `noindex,nofollow` on every page; **not** in `sitemap.xml`/`llms.txt`; `robots.txt` now `Disallow: /playbook-` across all 15 crawler groups (incl. GPTBot/ClaudeBot/PerplexityBot, previously *allowed*). (True scrape-proofing isn't possible for a public static page — this blocks compliant crawlers + indexes only.)
+- **Hub:** added a "Playbooks by role" section to `pass-playbook.html` linking all 7 (fully translated, 4 langs).
+- i18n: new per-page namespaces (`pbPos/pbGov/pbSrc/pbLoy/pbMkt/pbMig/pbRwd`) added to all 4 langs, src+dist — **EN-first**: EN real, zh-TW/zh-CN/ar are EN placeholders pending a translation follow-up. Hub `byRole` keys ARE fully translated. 0 missing keys in any language; src==dist parity; tags balanced; no CSS build needed (inline v2 styles).
+- **Follow-up:** translate the 7 pages' bodies (zh-TW/zh-CN/ar) when ready.
+
 **2026-10-12 (Passes Playbook — v2 UI revamp + rename to `pass-playbook.html`):**
 - Revamped `coupon-playbook.html` body onto the **v2 product-page design system** (inline-style components; no CSS build needed): dark 2-col hero with a 3-stage `calc-panel` rail, `pill-label` stage eyebrows, v2 **tactic cards** (soft-orange icon tiles) replacing flat `feature-card`s, v2 why/ecosystem cards, a **new visible FAQ** (4 Q&A), and a dark closing-CTA band (moved out of the footer). Dropped the old orange banner.
 - i18n: reused the existing real `playbook.*` translations; **added 16 new keys** (3 stage eyebrows, hero eyebrow + rail title, 4-Q FAQ) **in all 4 langs** (en/zh-TW/zh-CN/ar), src+dist. 109/109 `data-i18n` keys resolve in every language; src==dist parity holds. Fixed a **pre-existing stray-brace** that was breaking this page's JSON-LD; FAQPage schema now matches the visible FAQ.
