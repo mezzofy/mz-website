@@ -4502,772 +4502,772 @@
   },
   "pbPos": {
     "hero": {
-      "eyebrow": "Integrator Playbook",
-      "title": "Redeem any Pass at the till they already use.",
-      "subhead": "Add Pass validation to your POS once, and every merchant on your platform can accept tokenised, single-use Passes at checkout — no new hardware, no staff retraining, and no code they can fake."
+      "eyebrow": "دليل جهة التكامل",
+      "title": "استبدل أي Pass على نقطة الدفع التي يستخدمها التجّار بالفعل.",
+      "subhead": "أضف التحقق من Pass إلى نظام POS مرة واحدة، ليصبح بإمكان كل تاجر على منصّتك قبول Passes مُرمَّزة للاستخدام مرة واحدة عند نقطة الدفع — دون أجهزة جديدة، ودون إعادة تدريب الموظفين، ودون رمز قابل للتزوير."
     },
     "cta": {
-      "primary": "Partner with us",
-      "secondary": "Read the integrator brief"
+      "primary": "كن شريكنا",
+      "secondary": "اطّلع على موجز جهة التكامل"
     },
     "heroPass": {
-      "issuer": "Any merchant",
-      "value": "Validated",
-      "terms": "Genuine. Unspent. Consumed once.",
+      "issuer": "أي تاجر",
+      "value": "تم التحقق",
+      "terms": "أصلي. غير مُستخدَم. يُستهلك مرة واحدة.",
       "code": "MZF-••••-••••",
-      "stamp": "CONSUMED"
+      "stamp": "مُستخدَم"
     },
     "problem": {
-      "title": "Why checkout is where coupons break",
+      "title": "لماذا تنهار القسائم عند نقطة الدفع",
       "p0": {
-        "t": "Codes you cannot trust",
-        "d": "Screenshots, generated codes and expired offers all look valid to a cashier. The till has no way to tell a real code from a fake one."
+        "t": "رموز لا يمكنك الوثوق بها",
+        "d": "لقطات الشاشة والرموز المُولَّدة والعروض المنتهية تبدو كلها صالحة في نظر الكاشير. ولا تملك نقطة الدفع وسيلة للتمييز بين رمز حقيقي وآخر مزيّف."
       },
       "p1": {
-        "t": "Manual lookups slow the line",
-        "d": "Typing codes into a separate portal, or calling a promo desk, turns a five-second checkout into a queue."
+        "t": "عمليات البحث اليدوية تُبطئ الطابور",
+        "d": "إدخال الرموز في بوابة منفصلة أو الاتصال بمكتب العروض يحوّل عملية دفع من خمس ثوانٍ إلى طابور انتظار."
       },
       "p2": {
-        "t": "Double-spend found too late",
-        "d": "A paper or PDF coupon can be presented twice. You discover it in reconciliation, not at the counter."
+        "t": "الاستخدام المزدوج يُكتشف بعد فوات الأوان",
+        "d": "يمكن تقديم قسيمة ورقية أو بصيغة PDF مرتين، فتكتشف ذلك أثناء المطابقة لا عند الكاشير."
       }
     },
     "play": {
-      "title": "How redemption works once you are integrated",
+      "title": "كيف يتم الاستبدال بعد اكتمال التكامل",
       "s0": {
-        "t": "Present",
-        "d": "The customer shows a Pass from their Vault — a QR, a barcode or an NFC tap — at your merchant's till."
+        "t": "التقديم",
+        "d": "يُظهر العميل Pass من Vault الخاص به — عبر QR أو باركود أو لمسة NFC — عند نقطة الدفع لدى التاجر."
       },
       "s1": {
-        "t": "Validate",
-        "d": "Your POS calls the exchange with the code. We check it is genuine, unspent, and eligible for this basket, outlet and time window."
+        "t": "التحقق",
+        "d": "يرسل نظام POS الرمز إلى المنصة، فنتحقق من أنه أصلي وغير مُستخدَم ومؤهَّل لهذه السلة ومنفذ البيع والنافذة الزمنية."
       },
       "s2": {
-        "t": "Consume",
-        "d": "On success the Pass is consumed in the same call. It cannot be presented again, screenshotted or forwarded."
+        "t": "الاستهلاك",
+        "d": "عند النجاح يُستهلك الـ Pass في المكالمة نفسها، فلا يمكن تقديمه مجددًا أو التقاط صورة له أو إعادة توجيهه."
       },
       "s3": {
-        "t": "Settle",
-        "d": "The redemption is recorded per Pass and per outlet, and settlement follows on the agreed cycle."
+        "t": "التسوية",
+        "d": "يُسجَّل الاستبدال لكل Pass ولكل منفذ بيع، وتتبعه التسوية وفق الدورة المتفق عليها."
       }
     },
     "cap": {
-      "title": "What the integration gives you",
+      "title": "ما الذي يمنحك إياه التكامل",
       "c0": {
-        "t": "One endpoint, every merchant",
-        "d": "The same validation endpoint the marketplace runs on. One integration covers every merchant on your platform — they do not each integrate."
+        "t": "نقطة اتصال واحدة لكل التجّار",
+        "d": "نقطة التحقق نفسها التي تعمل عليها المنصة. تكامل واحد يغطي كل تاجر على منصّتك — دون حاجة إلى تكامل كلٍّ منهم على حدة."
       },
       "c1": {
-        "t": "Eligibility at the counter",
-        "d": "The response carries value, conditions and status, so your till applies minimum-spend, time-window and outlet rules before it accepts the Pass."
+        "t": "الأهلية عند الكاشير",
+        "d": "تحمل الاستجابة القيمة والشروط والحالة، لتطبّق نقطة الدفع قواعد الحد الأدنى للإنفاق والنافذة الزمنية ومنفذ البيع قبل قبول الـ Pass."
       },
       "c2": {
-        "t": "Voucherless redemption",
-        "d": "Look up and redeem straight from the customer's Vault by member or token, with no code to read, when that fits your flow."
+        "t": "استبدال دون قسيمة",
+        "d": "ابحث واستبدل مباشرة من Vault العميل عبر العضو أو الرمز المُرمَّز، دون قراءة أي رمز، عندما يناسب ذلك مسار عملك."
       },
       "c3": {
-        "t": "REST or MCP, sandbox on signup",
-        "d": "OAuth2, webhooks for redemption events, and a full sandbox with sample merchants and Passes before you certify."
+        "t": "REST أو MCP، مع بيئة اختبار (sandbox) عند التسجيل",
+        "d": "OAuth2 وwebhooks لأحداث الاستبدال، وبيئة اختبار (sandbox) كاملة بتجّار وPasses تجريبية قبل الاعتماد."
       }
     },
     "outcome": {
-      "title": "Why it is worth the integration",
+      "title": "لماذا يستحق التكامل العناء",
       "o0": {
-        "t": "A reason to stay on your system",
-        "d": "Pass acceptance becomes a capability your merchants cannot get by switching POS."
+        "t": "سبب للبقاء على نظامك",
+        "d": "يصبح قبول Pass قدرة لا يحصل عليها تجّارك بتبديل نظام POS."
       },
       "o1": {
-        "t": "No fraud to reconcile",
-        "d": "Every redemption is genuine and single-use, so there is nothing to claw back later."
+        "t": "لا احتيال يستوجب المطابقة",
+        "d": "كل استبدال أصلي وللاستخدام مرة واحدة، فلا شيء يُستردّ لاحقًا."
       },
       "o2": {
-        "t": "Revenue on every Pass",
-        "d": "You earn a share on Passes sold through your platform, settled at the point of sale."
+        "t": "إيراد على كل Pass",
+        "d": "تكسب حصة على Passes المُباعة عبر منصّتك، تُسوَّى عند نقطة البيع."
       }
     },
     "faq": {
-      "title": "Frequently Asked Questions",
+      "title": "الأسئلة الشائعة",
       "q0": {
-        "q": "Do my merchants need new hardware?",
-        "a": "No. Redemption happens at the till they already use. If it can scan a barcode or read an NFC tap and call an API, it can accept a Pass."
+        "q": "هل يحتاج تجّاري إلى أجهزة جديدة؟",
+        "a": "لا. يتم الاستبدال على نقطة الدفع التي يستخدمونها بالفعل. فإذا كانت تمسح باركود أو تقرأ لمسة NFC وتستدعي API، فبإمكانها قبول Pass."
       },
       "q1": {
-        "q": "What happens if a Pass fails to validate?",
-        "a": "The till rejects it at the counter and the customer is credited automatically. The merchant is never charged for a Pass that did not redeem."
+        "q": "ماذا يحدث إذا فشل التحقق من Pass؟",
+        "a": "ترفضه نقطة الدفع عند الكاشير ويُرَدّ المبلغ إلى العميل تلقائيًا. ولا يُحتسب على التاجر أي Pass لم يُستبدَل."
       },
       "q2": {
-        "q": "How long does certification take?",
-        "a": "Typically two to three weeks from a working sandbox integration, covering issuance, redemption, failure handling and settlement reconciliation."
+        "q": "كم تستغرق عملية الاعتماد؟",
+        "a": "عادةً من أسبوعين إلى ثلاثة أسابيع بدءًا من تكامل فعّال في بيئة الاختبار (sandbox)، ويشمل الإصدار والاستبدال ومعالجة الأعطال ومطابقة التسوية."
       },
       "q3": {
-        "q": "REST or MCP?",
-        "a": "Both. Use REST for a classic POS integration, or MCP if your platform speaks it. You get a sandbox on signup either way."
+        "q": "REST أم MCP؟",
+        "a": "كلاهما. استخدم REST لتكامل POS التقليدي، أو MCP إذا كانت منصّتك تدعمه. وتحصل على بيئة اختبار (sandbox) عند التسجيل في كلتا الحالتين."
       }
     },
     "closing": {
-      "title": "One integration. Every merchant on your platform.",
-      "desc": "Give the merchants you already serve Pass issuance and redemption, without asking them to build, buy or learn anything.",
-      "cta": "Partner with us"
+      "title": "تكامل واحد. كل تاجر على منصّتك.",
+      "desc": "امنح التجّار الذين تخدمهم بالفعل إصدار Pass واستبداله، دون أن تطلب منهم بناء أو شراء أو تعلّم أي شيء.",
+      "cta": "كن شريكنا"
     }
   },
   "pbGov": {
     "hero": {
-      "eyebrow": "Merchant Playbook",
-      "title": "One standard for every pass you issue.",
-      "subhead": "Stop running a different system for in-store coupons, digital vouchers and the stack you inherited. Bring physical and digital onto one tokenised standard — imported, exported or generated — and govern all of it from one place."
+      "eyebrow": "دليل التاجر",
+      "title": "معيار واحد لكل Pass تُصدِره.",
+      "subhead": "توقّف عن تشغيل نظام مختلف للقسائم داخل المتجر والقسائم الرقمية والمنظومة التي ورثتها. اجمع المادي والرقمي على معيار واحد مُرمَّز — مستورَدًا أو مُصدَّرًا أو مُولَّدًا — وتولَّ حوكمة كل ذلك من مكان واحد."
     },
     "cta": {
-      "primary": "Create your merchant account",
-      "secondary": "See how merchants sell"
+      "primary": "أنشئ حساب التاجر",
+      "secondary": "اطّلع على كيفية بيع التجّار"
     },
     "heroPass": {
-      "issuer": "Your brand",
-      "value": "One standard",
-      "terms": "Physical and digital. Imported, exported or generated.",
+      "issuer": "علامتك التجارية",
+      "value": "معيار واحد",
+      "terms": "مادي ورقمي. مستورَد أو مُصدَّر أو مُولَّد.",
       "code": "MZF-••••-••••",
-      "stamp": "UNIQUE"
+      "stamp": "فريد"
     },
     "problem": {
-      "title": "What fragmented pass management costs you",
+      "title": "ما تكلّفه عليك إدارة الـ Passes المُجزّأة",
       "p0": {
-        "t": "Every system has its own rules",
-        "d": "Paper coupons, a legacy voucher tool, a loyalty export and a spreadsheet each track issuance and redemption differently. No single view, no single truth."
+        "t": "لكل نظام قواعده الخاصة",
+        "d": "القسائم الورقية وأداة قسائم قديمة وتصدير برنامج ولاء وجدول بيانات، يتتبّع كلٌّ منها الإصدار والاستبدال بطريقة مختلفة. لا رؤية موحّدة ولا مصدر حقيقة واحد."
       },
       "p1": {
-        "t": "Fraud hides in the gaps",
-        "d": "A code that can be screenshotted, duplicated or honoured after expiry is one you find out about in reconciliation, if at all."
+        "t": "الاحتيال يختبئ في الفجوات",
+        "d": "الرمز الذي يمكن التقاط صورته أو تكراره أو قبوله بعد انتهاء صلاحيته هو رمز تكتشفه أثناء المطابقة، إن اكتشفته أصلاً."
       },
       "p2": {
-        "t": "Governance is manual",
-        "d": "Discount limits, quotas and outlet rules live in people's heads, or across four different admin panels."
+        "t": "الحوكمة يدوية",
+        "d": "حدود الخصم والحصص وقواعد منافذ البيع تعيش في أذهان الأشخاص، أو موزّعة على أربع لوحات إدارة مختلفة."
       }
     },
     "play": {
-      "title": "How central governance works",
+      "title": "كيف تعمل الحوكمة المركزية",
       "s0": {
-        "t": "Bring everything in",
-        "d": "Import the stock you already hold, export when you need to, or generate new Passes in the portal. Physical and digital, one inventory per route."
+        "t": "اجمع كل شيء",
+        "d": "استورد المخزون الذي تملكه بالفعل، وصدّر عند الحاجة، أو ولّد Passes جديدة في البوابة. مادي ورقمي، مخزون واحد لكل مسار."
       },
       "s1": {
-        "t": "Issue to one standard",
-        "d": "Every Pass, whatever its origin, becomes tokenised, unique and single-use. The standard is enforced by the system, not promised in terms."
+        "t": "أصدِر وفق معيار واحد",
+        "d": "كل Pass، أيًّا كان مصدره، يصبح مُرمَّزًا وفريدًا وللاستخدام مرة واحدة. والمعيار يفرضه النظام، لا مجرد وعد في الشروط."
       },
       "s2": {
-        "t": "Set the guardrails",
-        "d": "Discount range, minimum spend, monthly quota, daily cap, off-peak windows and which outlets can validate — hard ceilings, changeable any time."
+        "t": "اضبط الضوابط",
+        "d": "نطاق الخصم والحد الأدنى للإنفاق والحصة الشهرية والسقف اليومي ونوافذ خارج أوقات الذروة وأي المنافذ يمكنها التحقق — سقوف صارمة، قابلة للتغيير في أي وقت."
       },
       "s3": {
-        "t": "Redeem and reconcile",
-        "d": "Staff validate in the Operator App or your POS, registered outlets only, and every Pass is reconciled per outlet, per route, per campaign."
+        "t": "استبدل وطابِق",
+        "d": "يتحقّق الموظفون عبر Operator App أو نظام POS الخاص بك، في المنافذ المُسجَّلة فقط، وتُجرى المطابقة لكل Pass بحسب منفذ البيع والمسار والحملة."
       }
     },
     "cap": {
-      "title": "One system, every route",
+      "title": "نظام واحد لكل المسارات",
       "c0": {
-        "t": "Physical and digital, unified",
-        "d": "Tap points, printed QR, email, messaging and your own app all issue the same Pass standard. Nothing is a special case."
+        "t": "المادي والرقمي، موحَّدان",
+        "d": "نقاط اللمس وQR المطبوع والبريد الإلكتروني والمراسلة وتطبيقك الخاص، كلها تُصدِر معيار الـ Pass نفسه. لا شيء يُعدّ حالة خاصة."
       },
       "c1": {
-        "t": "Import, export, generate",
-        "d": "Bring legacy stock onto the exchange, hand off when you must, or mint fresh Passes — without maintaining a separate tool for each."
+        "t": "استيراد وتصدير وتوليد",
+        "d": "انقل المخزون القديم إلى المنصة، وسلّمه عند الضرورة، أو أنشئ Passes جديدة — دون صيانة أداة منفصلة لكلٍّ منها."
       },
       "c2": {
-        "t": "Governance by design",
-        "d": "System-enforced ceilings on discount, quota and daily caps; enable or disable outlets individually; KYC on the account."
+        "t": "حوكمة بالتصميم",
+        "d": "سقوف يفرضها النظام على الخصم والحصة والحدود اليومية؛ وتفعيل المنافذ أو تعطيلها فرديًا؛ وإجراء KYC على الحساب."
       },
       "c3": {
-        "t": "One reconciled view",
-        "d": "Issued, sent, redeemed, expired — per Pass, per outlet, per route, exportable and billed against the same numbers."
+        "t": "رؤية موحّدة ومُطابَقة",
+        "d": "صادر، مُرسَل، مُستبدَل، منتهي الصلاحية — لكل Pass ولكل منفذ بيع ولكل مسار، قابل للتصدير ويُحتسب على الأرقام نفسها."
       }
     },
     "outcome": {
-      "title": "Why one standard wins",
+      "title": "لماذا يفوز المعيار الواحد",
       "o0": {
-        "t": "No legacy system to maintain",
-        "d": "Retire the tools that only do one channel. The Management System is included; you pay only for what you use."
+        "t": "لا نظام قديم يحتاج إلى صيانة",
+        "d": "تقاعَد عن الأدوات التي تخدم قناة واحدة فقط. Management System مشمول؛ ولا تدفع إلا مقابل ما تستخدمه."
       },
       "o1": {
-        "t": "Fraud-proof across the board",
-        "d": "One tokenised standard means a duplicate or expired Pass fails at the counter, everywhere."
+        "t": "محصّن ضد الاحتيال على كل المستويات",
+        "d": "معيار واحد مُرمَّز يعني أن Pass مكررًا أو منتهي الصلاحية يفشل عند الكاشير، في كل مكان."
       },
       "o2": {
-        "t": "Audit-ready",
-        "d": "A full redemption trail for finance and compliance, per Pass."
+        "t": "جاهز للتدقيق",
+        "d": "سجلّ استبدال كامل للمالية والامتثال، لكل Pass."
       }
     },
     "faq": {
-      "title": "Frequently Asked Questions",
+      "title": "الأسئلة الشائعة",
       "q0": {
-        "q": "Can I keep issuing from my existing tools?",
-        "a": "Yes — import what you hold and export when you need to. The goal is one standard for validation and reconciliation, not ripping out everything on day one."
+        "q": "هل يمكنني الاستمرار في الإصدار من أدواتي الحالية؟",
+        "a": "نعم — استورد ما تملكه وصدّر عند الحاجة. الهدف معيار واحد للتحقق والمطابقة، لا اقتلاع كل شيء من اليوم الأول."
       },
       "q1": {
-        "q": "Does this handle both physical and digital?",
-        "a": "Yes. Tap points, printed QR, email, messaging and your own app all issue and redeem the same Pass."
+        "q": "هل يتعامل هذا مع المادي والرقمي معًا؟",
+        "a": "نعم. نقاط اللمس وQR المطبوع والبريد الإلكتروني والمراسلة وتطبيقك الخاص، كلها تُصدِر الـ Pass نفسه وتستبدله."
       },
       "q2": {
-        "q": "Who can validate a Pass?",
-        "a": "Only your registered outlets. A Pass presented at an unregistered outlet will not validate, and you can enable or disable outlets at any time."
+        "q": "من يمكنه التحقق من Pass؟",
+        "a": "منافذك المُسجَّلة فقط. الـ Pass المُقدَّم عند منفذ بيع غير مُسجَّل لن يجتاز التحقق، ويمكنك تفعيل المنافذ أو تعطيلها في أي وقت."
       },
       "q3": {
-        "q": "What does it cost?",
-        "a": "The Management System is included with every account; you are billed per Pass only for your own distribution, cheaper with volume."
+        "q": "كم تبلغ التكلفة؟",
+        "a": "Management System مشمول مع كل حساب؛ ولا تُحتسب عليك سوى تكلفة لكل Pass مقابل توزيعك الخاص، وتقلّ التكلفة مع زيادة الحجم."
       }
     },
     "closing": {
-      "title": "Govern every pass from one place.",
-      "desc": "One tokenised standard for physical and digital, imported, exported or generated — created, tracked, redeemed and reconciled in the same place.",
-      "cta": "Create your merchant account"
+      "title": "تولَّ حوكمة كل Pass من مكان واحد.",
+      "desc": "معيار واحد مُرمَّز للمادي والرقمي، مستورَد أو مُصدَّر أو مُولَّد — يُنشأ ويُتتبَّع ويُستبدَل ويُطابَق في المكان نفسه.",
+      "cta": "أنشئ حساب التاجر"
     }
   },
   "pbSrc": {
     "hero": {
-      "eyebrow": "Buyer Playbook",
-      "title": "Inventory that is ready when demand spikes.",
-      "subhead": "Reserve verified Pass inventory from the pool, draw it into your app on demand, and swap whatever a campaign does not use. Every Pass is validated before it reaches a customer — no dead codes, no duplicate claims."
+      "eyebrow": "دليل المشتري",
+      "title": "مخزون جاهز حين يرتفع الطلب.",
+      "subhead": "احجز مخزون Passes موثوقًا من المجمّع، واسحبه إلى تطبيقك عند الطلب، وبدّل ما لا تستخدمه الحملة. يُتحقَّق من كل Pass قبل وصوله إلى العميل — لا رموز غير صالحة ولا مطالبات مكررة."
     },
     "cta": {
-      "primary": "Create your exchange account",
-      "secondary": "See the buyer model"
+      "primary": "أنشئ حسابك على المنصة",
+      "secondary": "اطّلع على نموذج المشتري"
     },
     "heroPass": {
-      "issuer": "Verified merchant",
-      "value": "In the pool",
-      "terms": "Validated before it reaches your app.",
+      "issuer": "تاجر موثوق",
+      "value": "في المجمّع",
+      "terms": "يُتحقَّق منه قبل وصوله إلى تطبيقك.",
       "code": "MZF-••••-••••",
-      "stamp": "VERIFIED"
+      "stamp": "موثّق"
     },
     "problem": {
-      "title": "Why sourcing coupons usually hurts",
+      "title": "لماذا يؤلم توريد القسائم عادةً",
       "p0": {
-        "t": "Dead codes reach customers",
-        "d": "Gray-market or unverified stock means codes that fail at the counter — and a support ticket for every one."
+        "t": "رموز غير صالحة تصل إلى العملاء",
+        "d": "المخزون من السوق الرمادية أو غير الموثوق يعني رموزًا تفشل عند الكاشير — وتذكرة دعم عن كل واحدة منها."
       },
       "p1": {
-        "t": "You commit to the wrong merchant",
-        "d": "Buy a block of one merchant's vouchers, and if the campaign shifts you are stuck with inventory you cannot use."
+        "t": "تلتزم تجاه التاجر الخطأ",
+        "d": "اشترِ دفعة من قسائم تاجر واحد، وإذا تغيّرت الحملة تَعلق بمخزون لا يمكنك استخدامه."
       },
       "p2": {
-        "t": "No supply when demand surges",
-        "d": "A promotion takes off and there is nothing left to hand out, or sourcing more takes weeks."
+        "t": "لا عروض حين يتدفّق الطلب",
+        "d": "ينطلق عرض ترويجي ولا يبقى شيء لتوزيعه، أو يستغرق توريد المزيد أسابيع."
       }
     },
     "play": {
-      "title": "How sourcing from the pool works",
+      "title": "كيف يعمل التوريد من المجمّع",
       "s0": {
-        "t": "Scope",
-        "d": "Set your volume and the categories you need, and choose redemption-base or full purchase."
+        "t": "التحديد",
+        "d": "حدّد حجمك والفئات التي تحتاجها، واختر بين النموذج القائم على الاستبدال أو الشراء الكامل."
       },
       "s1": {
-        "t": "Reserve",
-        "d": "Commit at a discount and we reserve verified merchant inventory from the pool. Undistributed Passes stay swappable."
+        "t": "الحجز",
+        "d": "التزم بخصم فنحجز لك مخزونًا موثوقًا من التجّار من المجمّع. وتبقى Passes غير الموزّعة قابلة للتبديل."
       },
       "s2": {
-        "t": "Draw on demand",
-        "d": "Pull from your reserved pool into your own app by API as customers claim — they never see Mezzofy. Or hand out Passes through Vault for pilots."
+        "t": "اسحب عند الطلب",
+        "d": "اسحب من مجمّعك المحجوز إلى تطبيقك الخاص عبر API عندما يطالب العملاء — دون أن يروا Mezzofy أبدًا. أو وزّع Passes عبر Vault للتجارب التجريبية."
       },
       "s3": {
-        "t": "Swap and reconcile",
-        "d": "Exchange undistributed inventory for another seller's at the same value, and reconcile every draw and redemption to settlement."
+        "t": "بدّل وطابِق",
+        "d": "بادل المخزون غير الموزّع بمخزون بائع آخر بالقيمة نفسها، وطابِق كل سحب واستبدال مع التسوية."
       }
     },
     "cap": {
-      "title": "What the pool gives you",
+      "title": "ما الذي يمنحك إياه المجمّع",
       "c0": {
-        "t": "Verified at source",
-        "d": "Every merchant is onboarded and verified before inventory enters the pool, and every Pass is validated before it reaches your app."
+        "t": "موثوق من المصدر",
+        "d": "يُسجَّل كل تاجر ويُوثَّق قبل دخول المخزون إلى المجمّع، ويُتحقَّق من كل Pass قبل وصوله إلى تطبيقك."
       },
       "c1": {
-        "t": "Reserve now, draw later",
-        "d": "Hold a pool against a commitment and draw from it as demand arrives — REST and MCP, sandbox on signup."
+        "t": "احجز الآن، واسحب لاحقًا",
+        "d": "احتفظ بمجمّع مقابل التزام واسحب منه مع وصول الطلب — REST وMCP، مع بيئة اختبار (sandbox) عند التسجيل."
       },
       "c2": {
-        "t": "Swap what you do not use",
-        "d": "Your commitment is to the exchange, not to one merchant. Exchange undistributed Passes for another's at the same value."
+        "t": "بدّل ما لا تستخدمه",
+        "d": "التزامك تجاه المنصة، لا تجاه تاجر واحد. بادل Passes غير الموزّعة بأخرى لتاجر آخر بالقيمة نفسها."
       },
       "c3": {
-        "t": "Reconcilable to settlement",
-        "d": "Draw, distribution and redemption per Pass, per merchant and per campaign, in the portal and by API."
+        "t": "قابل للمطابقة مع التسوية",
+        "d": "السحب والتوزيع والاستبدال لكل Pass ولكل تاجر ولكل حملة، في البوابة وعبر API."
       }
     },
     "outcome": {
-      "title": "Why the pool beats one-off sourcing",
+      "title": "لماذا يتفوّق المجمّع على التوريد المتقطّع",
       "o0": {
-        "t": "No dead codes, no tickets",
-        "d": "Verified at source, with 99.9% validation uptime and auto-credit on the rare failure."
+        "t": "لا رموز غير صالحة ولا تذاكر",
+        "d": "موثوق من المصدر، بزمن تشغيل للتحقق يبلغ 99.9% ورَدّ تلقائي للمبلغ عند الفشل النادر."
       },
       "o1": {
-        "t": "Inventory that flexes with demand",
-        "d": "Reserve ahead, draw on demand, and swap whatever a campaign shifts away from."
+        "t": "مخزون يتكيّف مع الطلب",
+        "d": "احجز مسبقًا، واسحب عند الطلب، وبدّل كل ما تتحوّل عنه الحملة."
       },
       "o2": {
-        "t": "Procurement-ready",
-        "d": "Security documentation, uptime commitments and data residency options, provided during procurement."
+        "t": "جاهز للمشتريات",
+        "d": "وثائق أمنية والتزامات بزمن التشغيل وخيارات إقامة البيانات، تُقدَّم أثناء عملية المشتريات."
       }
     },
     "faq": {
-      "title": "Frequently Asked Questions",
+      "title": "الأسئلة الشائعة",
       "q0": {
-        "q": "What if a campaign changes after I commit?",
-        "a": "Undistributed Passes can be swapped for another seller's at the same value. Your commitment is to the exchange, not one merchant."
+        "q": "ماذا لو تغيّرت الحملة بعد التزامي؟",
+        "a": "يمكن تبديل Passes غير الموزّعة بأخرى لبائع آخر بالقيمة نفسها. فالتزامك تجاه المنصة، لا تجاه تاجر واحد."
       },
       "q1": {
-        "q": "How fast can I go live?",
-        "a": "Pass-and-Vault distribution can be live in days; a full API integration is typically two to four weeks including certification, with a sandbox from day one."
+        "q": "ما مدى سرعة انطلاقي للعمل المباشر؟",
+        "a": "يمكن أن يصبح التوزيع عبر Pass وVault مباشرًا خلال أيام؛ أما تكامل API الكامل فيستغرق عادةً من أسبوعين إلى أربعة أسابيع بما يشمل الاعتماد، مع بيئة اختبار (sandbox) من اليوم الأول."
       },
       "q2": {
-        "q": "How do I distribute to my customers?",
-        "a": "Draw by API into your own app so customers never see Mezzofy, or hand out Passes through the Vault for pilots and short campaigns."
+        "q": "كيف أوزّع على عملائي؟",
+        "a": "اسحب عبر API إلى تطبيقك الخاص بحيث لا يرى العملاء Mezzofy أبدًا، أو وزّع Passes عبر Vault للتجارب التجريبية والحملات القصيرة."
       },
       "q3": {
-        "q": "What about failed redemptions?",
-        "a": "Every Pass is validated before it reaches a customer, and on the rare failure the customer is credited automatically."
+        "q": "ماذا عن عمليات الاستبدال الفاشلة؟",
+        "a": "يُتحقَّق من كل Pass قبل وصوله إلى العميل، وعند الفشل النادر يُرَدّ المبلغ إلى العميل تلقائيًا."
       }
     },
     "closing": {
-      "title": "Source verified inventory, ready for the surge.",
-      "desc": "Reserve from the pool, draw into your app on demand, and swap what you do not use — validated before it ever reaches a customer.",
-      "cta": "Create your exchange account"
+      "title": "ورّد مخزونًا موثوقًا، جاهزًا للتدفّق.",
+      "desc": "احجز من المجمّع، واسحب إلى تطبيقك عند الطلب، وبدّل ما لا تستخدمه — موثوقًا قبل أن يصل إلى أي عميل.",
+      "cta": "أنشئ حسابك على المنصة"
     }
   },
   "pbLoy": {
     "hero": {
-      "eyebrow": "Integrator Playbook",
-      "title": "Let members redeem points against live merchant supply.",
-      "subhead": "Issue, list and distribute Passes from your loyalty or rewards engine, and keep their status and the member's Vault in sync. Members exchange points against real merchant inventory instead of a catalogue that never changes."
+      "eyebrow": "دليل جهة التكامل",
+      "title": "دع الأعضاء يستبدلون نقاطهم مقابل عروض حيّة من التجّار.",
+      "subhead": "أصدِر Passes واعرضها ووزّعها من محرّك الولاء أو المكافآت لديك، وابقِ حالتها وVault العضو متزامنَين. يستبدل الأعضاء النقاط مقابل مخزون حقيقي من التجّار بدلاً من كتالوج لا يتغيّر أبدًا."
     },
     "cta": {
-      "primary": "Partner with us",
-      "secondary": "Read the integrator brief"
+      "primary": "كن شريكنا",
+      "secondary": "اطّلع على موجز جهة التكامل"
     },
     "heroPass": {
-      "issuer": "From your programme",
-      "value": "Reward",
-      "terms": "Issued to one member. Single-use.",
+      "issuer": "من برنامجك",
+      "value": "مكافأة",
+      "terms": "صادر لعضو واحد. للاستخدام مرة واحدة.",
       "code": "MZF-••••-••••",
-      "stamp": "ISSUED"
+      "stamp": "صادر"
     },
     "problem": {
-      "title": "Why reward catalogues stall",
+      "title": "لماذا تتعثّر كتالوجات المكافآت",
       "p0": {
-        "t": "Catalogue fatigue",
-        "d": "A fixed rewards catalogue that never changes stops driving redemptions. Your redemption rate becomes a function of how stale the list looks."
+        "t": "إرهاق الكتالوج",
+        "d": "كتالوج مكافآت ثابت لا يتغيّر يتوقّف عن تحفيز عمليات الاستبدال، فيغدو معدّل الاستبدال لديك رهنًا بمدى قِدَم القائمة."
       },
       "p1": {
-        "t": "Codes that fail or double-redeem",
-        "d": "Static codes issued from a spreadsheet get screenshotted, shared and reused. Members hit dead codes, and you reconcile the mess later."
+        "t": "رموز تفشل أو تُستبدَل مرتين",
+        "d": "الرموز الثابتة الصادرة من جدول بيانات تُلتقَط صورها وتُشارَك ويُعاد استخدامها. يصطدم الأعضاء برموز غير صالحة، وتتولّى أنت مطابقة الفوضى لاحقًا."
       },
       "p2": {
-        "t": "No live link to merchant supply",
-        "d": "Points sit on your ledger with nothing fresh to spend them on, because adding merchants means a new contract and a new integration each time."
+        "t": "لا رابط حيّ بعروض التجّار",
+        "d": "تبقى النقاط في سجلّك دون جديد لإنفاقها عليه، لأن إضافة التجّار تعني عقدًا جديدًا وتكاملًا جديدًا في كل مرة."
       }
     },
     "play": {
-      "title": "How issuance and redemption work",
+      "title": "كيف يعمل الإصدار والاستبدال",
       "s0": {
-        "t": "List live supply",
-        "d": "Members browse live merchant inventory from the exchange inside your app, not a frozen catalogue."
+        "t": "اعرض العروض الحيّة",
+        "d": "يتصفّح الأعضاء مخزون التجّار الحيّ من المنصة داخل تطبيقك، لا كتالوجًا جامدًا."
       },
       "s1": {
-        "t": "Issue a Pass",
-        "d": "A member spends points and you issue a Pass through one API call. It is tokenised, bound to that member, and lands in their Vault."
+        "t": "أصدِر Pass",
+        "d": "ينفق العضو نقاطه فتُصدِر Pass عبر استدعاء API واحد. يكون مُرمَّزًا (برمز آمن فريد) ومرتبطًا بذلك العضو ويصل إلى Vault الخاص به."
       },
       "s2": {
-        "t": "Track status",
-        "d": "Issued, held, presented, validated, settled — the Pass status and the member's Vault stay in sync through webhooks."
+        "t": "تتبّع الحالة",
+        "d": "صادر، محجوز، مُقدَّم، مُتحقَّق منه، مُسوّى — تبقى حالة الـ Pass وVault العضو متزامنَين عبر webhooks."
       },
       "s3": {
-        "t": "Redeem once",
-        "d": "The member presents at a registered outlet or your POS. The Pass is consumed once and reconciled per Pass."
+        "t": "استبدل مرة واحدة",
+        "d": "يقدّم العضو الـ Pass عند منفذ بيع مُسجَّل أو نظام POS الخاص بك. يُستهلك مرة واحدة وتُجرى المطابقة لكل Pass."
       }
     },
     "cap": {
-      "title": "What the integration gives you",
+      "title": "ما الذي يمنحك إياه التكامل",
       "c0": {
-        "t": "Issue with one call",
-        "d": "Create, distribute and validate Passes on the same endpoints the marketplace runs on. Idempotency keys stop a retried request issuing twice."
+        "t": "الإصدار باستدعاء واحد",
+        "d": "أنشئ Passes ووزّعها وتحقّق منها على نقاط الاتصال نفسها التي تعمل عليها المنصة. وتمنع مفاتيح idempotency إصدارًا مزدوجًا عند إعادة إرسال الطلب."
       },
       "c1": {
-        "t": "Live merchant supply",
-        "d": "Members exchange points against real inventory that refreshes itself, so your redemption rate stops being a function of catalogue fatigue."
+        "t": "عروض حيّة من التجّار",
+        "d": "يستبدل الأعضاء النقاط مقابل مخزون حقيقي يتجدّد ذاتيًا، فلا يعود معدّل الاستبدال لديك رهنًا بإرهاق الكتالوج."
       },
       "c2": {
-        "t": "Status and Vault in sync",
-        "d": "Webhooks for every state change keep your ledger and the member's Vault aligned without polling."
+        "t": "الحالة وVault متزامنان",
+        "d": "تُبقي webhooks الخاصة بكل تغيّر في الحالة سجلّك وVault العضو متوافقَين دون استطلاع متكرر (polling)."
       },
       "c3": {
-        "t": "Delivery your way",
-        "d": "Deliver by email, SMS, a claim link, or straight into the member's Vault. REST and MCP, sandbox on signup."
+        "t": "تسليم بطريقتك",
+        "d": "سلّم عبر البريد الإلكتروني أو الرسائل النصية أو رابط مطالبة أو مباشرة إلى Vault العضو. REST وMCP، مع بيئة اختبار (sandbox) عند التسجيل."
       }
     },
     "outcome": {
-      "title": "Why members redeem more",
+      "title": "لماذا يستبدل الأعضاء أكثر",
       "o0": {
-        "t": "Redemptions that keep moving",
-        "d": "Live supply beats a frozen catalogue, so points get spent instead of expiring on your books."
+        "t": "عمليات استبدال لا تتوقّف",
+        "d": "العروض الحيّة تتفوّق على الكتالوج الجامد، فتُنفَق النقاط بدلاً من أن تنتهي صلاحيتها في دفاترك."
       },
       "o1": {
-        "t": "Nothing to reconcile by hand",
-        "d": "Every Pass is single-use and tokenised, with a full status trail per member."
+        "t": "لا شيء يُطابَق يدويًا",
+        "d": "كل Pass للاستخدام مرة واحدة ومُرمَّز، مع سجلّ حالة كامل لكل عضو."
       },
       "o2": {
-        "t": "One integration, every merchant",
-        "d": "Add the whole merchant network at once, not one contract at a time."
+        "t": "تكامل واحد لكل التجّار",
+        "d": "أضف شبكة التجّار بأكملها دفعة واحدة، لا عقدًا تلو الآخر."
       }
     },
     "faq": {
-      "title": "Frequently Asked Questions",
+      "title": "الأسئلة الشائعة",
       "q0": {
-        "q": "Do points leave my system?",
-        "a": "No. You keep the loyalty ledger and the member relationship. Mezzofy issues, validates and settles the Pass; points are debited in your engine."
+        "q": "هل تغادر النقاط نظامي؟",
+        "a": "لا. تحتفظ بسجلّ الولاء وبعلاقتك بالعضو. تتولّى Mezzofy إصدار الـ Pass والتحقق منه وتسويته؛ أما النقاط فتُخصَم في محرّكك."
       },
       "q1": {
-        "q": "How do I keep status in sync?",
-        "a": "Subscribe to webhooks for issued, held, presented, validated and settled events, so your ledger and the member's Vault update without polling."
+        "q": "كيف أُبقي الحالة متزامنة؟",
+        "a": "اشترك في webhooks لأحداث الإصدار والحجز والتقديم والتحقق والتسوية، ليتحدّث سجلّك وVault العضو دون استطلاع متكرر (polling)."
       },
       "q2": {
-        "q": "Can I avoid issuing the same reward twice?",
-        "a": "Yes. Send an idempotency key with each issuance; a retried request returns the original Pass rather than minting a new one."
+        "q": "هل يمكنني تجنّب إصدار المكافأة نفسها مرتين؟",
+        "a": "نعم. أرسِل مفتاح idempotency مع كل إصدار؛ فيُعيد الطلب المُعاد إرساله الـ Pass الأصلي بدلاً من إنشاء واحد جديد."
       },
       "q3": {
-        "q": "How do members receive a Pass?",
-        "a": "By email, SMS, a claim link, or straight into their Vault — whichever fits your app. All on REST or MCP with a sandbox on signup."
+        "q": "كيف يستلم الأعضاء Pass؟",
+        "a": "عبر البريد الإلكتروني أو الرسائل النصية أو رابط مطالبة أو مباشرة إلى Vault الخاص بهم — أيّها يناسب تطبيقك. كل ذلك عبر REST أو MCP مع بيئة اختبار (sandbox) عند التسجيل."
       }
     },
     "closing": {
-      "title": "Turn points into Passes members actually spend.",
-      "desc": "Issue against live merchant supply, keep status and the Vault in sync, and settle per Pass — one integration for the whole merchant network.",
-      "cta": "Partner with us"
+      "title": "حوّل النقاط إلى Passes ينفقها الأعضاء فعلاً.",
+      "desc": "أصدِر مقابل عروض حيّة من التجّار، وأبقِ الحالة وVault متزامنَين، وسوِّ لكل Pass — تكامل واحد لشبكة التجّار بأكملها.",
+      "cta": "كن شريكنا"
     }
   },
   "pbMkt": {
     "hero": {
-      "eyebrow": "Integrator Playbook",
-      "title": "List every merchant's Passes inside your app.",
-      "subhead": "Pull live, machine-readable Pass inventory into your marketplace, super-app or AI assistant through one API — priced, validated and settled by the exchange, so you surface offers without holding risk."
+      "eyebrow": "دليل جهة التكامل",
+      "title": "اعرض Passes كل تاجر داخل تطبيقك.",
+      "subhead": "اسحب مخزون Passes حيًّا وقابلاً للقراءة آليًا إلى سوقك الإلكتروني أو تطبيقك الشامل أو مساعدك الذكي عبر API واحد — تتولّى المنصة تسعيره والتحقق منه وتسويته، لتعرض العروض دون تحمّل المخاطر."
     },
     "cta": {
-      "primary": "Partner with us",
-      "secondary": "See the marketplace"
+      "primary": "كن شريكنا",
+      "secondary": "استكشف السوق"
     },
     "heroPass": {
-      "issuer": "Any merchant",
-      "value": "Listed",
-      "terms": "One listing, every eligible channel.",
+      "issuer": "أي تاجر",
+      "value": "مُدرَج",
+      "terms": "إدراج واحد، لكل قناة مؤهَّلة.",
       "code": "MZF-••••-••••",
-      "stamp": "LIVE"
+      "stamp": "مباشر"
     },
     "problem": {
-      "title": "Why building a deals catalogue is hard",
+      "title": "لماذا يصعب بناء كتالوج عروض",
       "p0": {
-        "t": "Content goes stale fast",
-        "d": "A hand-built deals list is out of date the day after you publish it, and keeping it fresh is a full-time job."
+        "t": "المحتوى يتقادم بسرعة",
+        "d": "قائمة عروض مبنية يدويًا تصبح قديمة في اليوم التالي لنشرها، والحفاظ على حداثتها عمل بدوام كامل."
       },
       "p1": {
-        "t": "You hold the risk",
-        "d": "Buying inventory to resell means carrying stock, chasing merchants, and eating what does not sell."
+        "t": "أنت من يتحمّل المخاطر",
+        "d": "شراء المخزون لإعادة بيعه يعني تكديس البضاعة وملاحقة التجّار وتحمّل خسارة ما لا يُباع."
       },
       "p2": {
-        "t": "Fraud lands on you",
-        "d": "Static codes get copied and reused, and the chargebacks and support tickets are yours."
+        "t": "الاحتيال يقع على عاتقك",
+        "d": "الرموز الثابتة تُنسَخ ويُعاد استخدامها، وتقع عليك عمليات ردّ المبالغ وتذاكر الدعم."
       }
     },
     "play": {
-      "title": "How listing works",
+      "title": "كيف يعمل الإدراج",
       "s0": {
-        "t": "Pull the catalogue",
-        "d": "Read live, machine-readable Pass inventory from the exchange — each Pass eligible for every channel it fits."
+        "t": "اسحب الكتالوج",
+        "d": "اقرأ مخزون Passes حيًّا وقابلاً للقراءة آليًا من المنصة — كل Pass مؤهَّل لكل قناة تناسبه."
       },
       "s1": {
-        "t": "Surface offers",
-        "d": "Show them in your marketplace, super-app or AI assistant. The same object whether it came from the marketplace, a draw, or a tap point."
+        "t": "اعرض العروض",
+        "d": "اعرضها في سوقك الإلكتروني أو تطبيقك الشامل أو مساعدك الذكي. الكائن نفسه سواء جاء من السوق أو من سحب أو من نقطة لمس."
       },
       "s2": {
-        "t": "Transact",
-        "d": "A user claims or buys. The Pass is issued tokenised and single-use, and lands in their Vault."
+        "t": "أتمِم المعاملة",
+        "d": "يطالب المستخدم بالـ Pass أو يشتريه. يُصدَر مُرمَّزًا (برمز آمن فريد) وللاستخدام مرة واحدة، ويصل إلى Vault الخاص به."
       },
       "s3": {
-        "t": "Settle",
-        "d": "Pricing, validation and settlement are handled by the exchange. You earn on what sells, reconciled per Pass."
+        "t": "التسوية",
+        "d": "تتولّى المنصة التسعير والتحقق والتسوية. تكسب على ما يُباع، مع مطابقة لكل Pass."
       }
     },
     "cap": {
-      "title": "What the listing API gives you",
+      "title": "ما الذي يمنحك إياه API الإدراج",
       "c0": {
-        "t": "Machine-readable inventory",
-        "d": "A standard interface AI agents and apps can read, match and transact against — the same inventory the marketplace runs on."
+        "t": "مخزون قابل للقراءة آليًا",
+        "d": "واجهة قياسية يمكن لوكلاء الذكاء الاصطناعي والتطبيقات قراءتها ومطابقتها وإجراء المعاملات عليها — المخزون نفسه الذي تعمل عليه المنصة."
       },
       "c1": {
-        "t": "One listing, every channel",
-        "d": "Each Pass is eligible for every channel it fits, so you surface the right offers without manual curation."
+        "t": "إدراج واحد لكل قناة",
+        "d": "كل Pass مؤهَّل لكل قناة تناسبه، فتعرض العروض المناسبة دون تنسيق يدوي."
       },
       "c2": {
-        "t": "No inventory risk",
-        "d": "You list and surface; the exchange prices, validates and settles. You carry no stock."
+        "t": "لا مخاطر مخزون",
+        "d": "أنت تُدرِج وتعرض؛ وتتولّى المنصة التسعير والتحقق والتسوية. ولا تحتفظ بأي مخزون."
       },
       "c3": {
-        "t": "Fraud-proof by design",
-        "d": "Every Pass is tokenised and consumed once, even after changing hands, so there is nothing to charge back."
+        "t": "محصّن ضد الاحتيال بالتصميم",
+        "d": "كل Pass مُرمَّز ويُستهلك مرة واحدة، حتى بعد تداوله، فلا شيء يُستردّ."
       }
     },
     "outcome": {
-      "title": "Why list instead of build",
+      "title": "لماذا الإدراج بدلاً من البناء",
       "o0": {
-        "t": "Fresh offers, zero curation",
-        "d": "Live supply refreshes itself. No catalogue to maintain."
+        "t": "عروض حديثة، دون أي تنسيق",
+        "d": "العروض الحيّة تتجدّد ذاتيًا. ولا كتالوج يحتاج إلى صيانة."
       },
       "o1": {
-        "t": "Revenue without risk",
-        "d": "Earn on every Pass that sells through you, with no stock to carry."
+        "t": "إيراد دون مخاطر",
+        "d": "اكسب على كل Pass يُباع عبرك، دون مخزون تحتفظ به."
       },
       "o2": {
-        "t": "AI-ready supply",
-        "d": "Your assistant can read and transact against real, fraud-proof inventory."
+        "t": "عروض جاهزة للذكاء الاصطناعي",
+        "d": "يستطيع مساعدك قراءة مخزون حقيقي محصّن ضد الاحتيال وإجراء المعاملات عليه."
       }
     },
     "faq": {
-      "title": "Frequently Asked Questions",
+      "title": "الأسئلة الشائعة",
       "q0": {
-        "q": "Do I have to buy inventory to list it?",
-        "a": "No. Listing surfaces live exchange inventory. Pricing, validation and settlement are handled for you; you earn on what sells."
+        "q": "هل عليّ شراء المخزون لإدراجه؟",
+        "a": "لا. يعرض الإدراج مخزون المنصة الحيّ. ويُتولّى عنك التسعير والتحقق والتسوية؛ وتكسب على ما يُباع."
       },
       "q1": {
-        "q": "Is the inventory machine-readable for an AI agent?",
-        "a": "Yes. It is a standard interface AI shopping agents can read, match and transact against — the same inventory behind the marketplace."
+        "q": "هل المخزون قابل للقراءة آليًا من قِبل وكيل ذكاء اصطناعي؟",
+        "a": "نعم. إنه واجهة قياسية يمكن لوكلاء التسوّق بالذكاء الاصطناعي قراءتها ومطابقتها وإجراء المعاملات عليها — المخزون نفسه الذي يقف خلف السوق."
       },
       "q2": {
-        "q": "How is fraud handled?",
-        "a": "Every Pass is tokenised and consumed once, even after it changes hands, so copied or reused codes simply fail."
+        "q": "كيف يُعالَج الاحتيال؟",
+        "a": "كل Pass مُرمَّز ويُستهلك مرة واحدة، حتى بعد تداوله، فالرموز المنسوخة أو المُعاد استخدامها تفشل ببساطة."
       },
       "q3": {
-        "q": "REST or MCP?",
-        "a": "Both, with a sandbox on signup. Use whichever your platform speaks."
+        "q": "REST أم MCP؟",
+        "a": "كلاهما، مع بيئة اختبار (sandbox) عند التسجيل. استخدم ما تدعمه منصّتك."
       }
     },
     "closing": {
-      "title": "Surface live offers without holding the risk.",
-      "desc": "One API for live, machine-readable, fraud-proof inventory — priced, validated and settled by the exchange. You list; you earn on what sells.",
-      "cta": "Partner with us"
+      "title": "اعرض عروضًا حيّة دون تحمّل المخاطر.",
+      "desc": "API واحد لمخزون حيّ قابل للقراءة آليًا ومحصّن ضد الاحتيال — تتولّى المنصة تسعيره والتحقق منه وتسويته. أنت تُدرِج؛ وتكسب على ما يُباع.",
+      "cta": "كن شريكنا"
     }
   },
   "pbMig": {
     "hero": {
-      "eyebrow": "Merchant Playbook",
-      "title": "Bring the coupons you already run onto one exchange.",
-      "subhead": "Import the stock you hold, keep issuing across in-store, NFC and digital, and unify validation and reconciliation on one tokenised standard — without ripping out everything on day one."
+      "eyebrow": "دليل التاجر",
+      "title": "انقل القسائم التي تشغّلها بالفعل إلى منصة واحدة.",
+      "subhead": "استورد المخزون الذي تملكه، واستمر في الإصدار عبر المتجر وNFC والقنوات الرقمية، ووحّد التحقق والمطابقة على معيار واحد مُرمَّز — دون اقتلاع كل شيء من اليوم الأول."
     },
     "cta": {
-      "primary": "Create your merchant account",
-      "secondary": "See how merchants sell"
+      "primary": "أنشئ حساب التاجر",
+      "secondary": "اطّلع على كيفية بيع التجّار"
     },
     "heroPass": {
-      "issuer": "Your brand",
-      "value": "Migrated",
-      "terms": "Legacy stock, now tokenised and single-use.",
+      "issuer": "علامتك التجارية",
+      "value": "مُرحَّل",
+      "terms": "مخزون قديم، أصبح الآن مُرمَّزًا وللاستخدام مرة واحدة.",
       "code": "MZF-••••-••••",
-      "stamp": "UNIQUE"
+      "stamp": "فريد"
     },
     "problem": {
-      "title": "Why legacy coupon stacks hold you back",
+      "title": "لماذا تعيقك منظومات القسائم القديمة",
       "p0": {
-        "t": "Codes you cannot trust",
-        "d": "Printed and PDF coupons from the old system get screenshotted, duplicated and honoured after expiry, and you only find out in reconciliation."
+        "t": "رموز لا يمكنك الوثوق بها",
+        "d": "القسائم المطبوعة وبصيغة PDF من النظام القديم تُلتقَط صورها وتُكرَّر وتُقبَل بعد انتهاء صلاحيتها، ولا تكتشف ذلك إلا أثناء المطابقة."
       },
       "p1": {
-        "t": "Every channel is its own island",
-        "d": "In-store, NFC and digital each run on a different tool, with no single view of what was issued or redeemed."
+        "t": "كل قناة جزيرة بذاتها",
+        "d": "المتجر وNFC والقنوات الرقمية يعمل كلٌّ منها على أداة مختلفة، دون رؤية موحّدة لما صدر أو استُبدِل."
       },
       "p2": {
-        "t": "Rip-and-replace is too risky",
-        "d": "You cannot switch everything off overnight, so the old systems linger and the fragmentation stays."
+        "t": "الاقتلاع والاستبدال محفوف بالمخاطر",
+        "d": "لا يمكنك إيقاف كل شيء بين عشية وضحاها، فتبقى الأنظمة القديمة وتستمر التجزئة."
       }
     },
     "play": {
-      "title": "How migration works",
+      "title": "كيف يتم الترحيل",
       "s0": {
-        "t": "Import what you hold",
-        "d": "Bring existing coupon and voucher stock onto the exchange by bulk import. No need to reissue to customers who already have one."
+        "t": "استورد ما تملكه",
+        "d": "انقل مخزون القسائم والقسائم الشرائية القائم إلى المنصة عبر استيراد مجمّع. لا حاجة لإعادة الإصدار للعملاء الذين يملكون واحدة بالفعل."
       },
       "s1": {
-        "t": "Tokenise on validation",
-        "d": "Imported Passes validate against the exchange, so a duplicate or expired code fails at the counter from day one."
+        "t": "الترميز عند التحقق",
+        "d": "تُتحقَّق Passes المستورَدة عبر المنصة، فيفشل أي رمز مكرر أو منتهي الصلاحية عند الكاشير من اليوم الأول."
       },
       "s2": {
-        "t": "Unify the channels",
-        "d": "Issue new Passes across in-store, NFC, email, messaging and your own app — all one standard, one inventory per route."
+        "t": "وحّد القنوات",
+        "d": "أصدِر Passes جديدة عبر المتجر وNFC والبريد الإلكتروني والمراسلة وتطبيقك الخاص — كلها بمعيار واحد، ومخزون واحد لكل مسار."
       },
       "s3": {
-        "t": "Retire the old tools",
-        "d": "Move channel by channel at your pace. When a legacy tool has nothing left to do, switch it off."
+        "t": "تقاعَد عن الأدوات القديمة",
+        "d": "انتقل قناة تلو الأخرى وفق وتيرتك. وعندما لا يبقى لأداة قديمة ما تفعله، أوقفها."
       }
     },
     "cap": {
-      "title": "What migration gives you",
+      "title": "ما الذي يمنحك إياه الترحيل",
       "c0": {
-        "t": "Bulk import, no reissue",
-        "d": "Upload the lists and stock you already hold. Customers keep what they have; you gain trusted validation."
+        "t": "استيراد مجمّع، دون إعادة إصدار",
+        "d": "ارفع القوائم والمخزون الذي تملكه بالفعل. يحتفظ العملاء بما لديهم؛ وتكسب أنت تحقّقًا موثوقًا."
       },
       "c1": {
-        "t": "One standard across channels",
-        "d": "Physical and digital issue and redeem the same tokenised Pass. Nothing is a special case."
+        "t": "معيار واحد عبر القنوات",
+        "d": "المادي والرقمي يُصدِران الـ Pass المُرمَّز نفسه ويستبدلانه. لا شيء يُعدّ حالة خاصة."
       },
       "c2": {
-        "t": "Validate at your outlets",
-        "d": "Operator App or your POS, registered outlets only. A Pass at an unregistered outlet will not validate."
+        "t": "التحقق في منافذك",
+        "d": "Operator App أو نظام POS الخاص بك، في المنافذ المُسجَّلة فقط. الـ Pass عند منفذ بيع غير مُسجَّل لن يجتاز التحقق."
       },
       "c3": {
-        "t": "Reconciled in one place",
-        "d": "Issued, sent, redeemed, expired — per Pass, per outlet, per route, exportable and billed against the same numbers."
+        "t": "مُطابَق في مكان واحد",
+        "d": "صادر، مُرسَل، مُستبدَل، منتهي الصلاحية — لكل Pass ولكل منفذ بيع ولكل مسار، قابل للتصدير ويُحتسب على الأرقام نفسها."
       }
     },
     "outcome": {
-      "title": "Why migrate gradually",
+      "title": "لماذا الترحيل التدريجي",
       "o0": {
-        "t": "Fraud stops at the counter",
-        "d": "Imported stock becomes fraud-proof the moment it validates against the exchange."
+        "t": "الاحتيال يتوقّف عند الكاشير",
+        "d": "يصبح المخزون المستورَد محصّنًا ضد الاحتيال لحظة اجتيازه التحقق عبر المنصة."
       },
       "o1": {
-        "t": "One source of truth",
-        "d": "Every channel reconciles to the same numbers, for finance and audit."
+        "t": "مصدر حقيقة واحد",
+        "d": "تُطابَق كل قناة على الأرقام نفسها، لأغراض المالية والتدقيق."
       },
       "o2": {
-        "t": "Move at your pace",
-        "d": "Channel by channel, with no big-bang cutover."
+        "t": "انتقل وفق وتيرتك",
+        "d": "قناة تلو الأخرى، دون تحوّل مفاجئ شامل."
       }
     },
     "faq": {
-      "title": "Frequently Asked Questions",
+      "title": "الأسئلة الشائعة",
       "q0": {
-        "q": "Do customers need a new coupon after I import?",
-        "a": "No. Import the stock you already hold; existing coupons keep working while gaining trusted validation."
+        "q": "هل يحتاج العملاء إلى قسيمة جديدة بعد الاستيراد؟",
+        "a": "لا. استورد المخزون الذي تملكه بالفعل؛ وتستمر القسائم الحالية في العمل مع اكتسابها تحقّقًا موثوقًا."
       },
       "q1": {
-        "q": "Can I keep my old system running during migration?",
-        "a": "Yes. Move one channel at a time. The old tools stay until they have nothing left to do."
+        "q": "هل يمكنني إبقاء نظامي القديم يعمل أثناء الترحيل؟",
+        "a": "نعم. انتقل بقناة واحدة في كل مرة. وتبقى الأدوات القديمة حتى لا يعود لها ما تفعله."
       },
       "q2": {
-        "q": "Does this cover physical coupons?",
-        "a": "Yes. Printed and QR, NFC tap points, email, messaging and your own app all issue and redeem the same Pass."
+        "q": "هل يشمل هذا القسائم المادية؟",
+        "a": "نعم. القسائم المطبوعة وQR ونقاط لمس NFC والبريد الإلكتروني والمراسلة وتطبيقك الخاص، كلها تُصدِر الـ Pass نفسه وتستبدله."
       },
       "q3": {
-        "q": "What does it cost?",
-        "a": "The Management System is included with every account; you are billed per Pass only for your own distribution, cheaper with volume."
+        "q": "كم تبلغ التكلفة؟",
+        "a": "Management System مشمول مع كل حساب؛ ولا تُحتسب عليك سوى تكلفة لكل Pass مقابل توزيعك الخاص، وتقلّ التكلفة مع زيادة الحجم."
       }
     },
     "closing": {
-      "title": "Unify every coupon channel, at your pace.",
-      "desc": "Import what you hold, tokenise on validation, and reconcile physical and digital in one place — retiring legacy tools channel by channel.",
-      "cta": "Create your merchant account"
+      "title": "وحّد كل قناة قسائم، وفق وتيرتك.",
+      "desc": "استورد ما تملكه، ورمّز عند التحقق، وطابِق المادي والرقمي في مكان واحد — مع التقاعد عن الأدوات القديمة قناة تلو الأخرى.",
+      "cta": "أنشئ حساب التاجر"
     }
   },
   "pbRwd": {
     "hero": {
-      "eyebrow": "Buyer Playbook",
-      "title": "Reward your customers with offers they can actually use.",
-      "subhead": "Source verified Passes from the pool and hand them to your customers as incentives, loyalty rewards or promotions — every one validated before it reaches them, redeemed at real merchants, reconciled to settlement."
+      "eyebrow": "دليل المشتري",
+      "title": "كافئ عملاءك بعروض يمكنهم استخدامها فعلاً.",
+      "subhead": "ورّد Passes موثوقة من المجمّع وسلّمها إلى عملائك كحوافز أو مكافآت ولاء أو عروض ترويجية — يُتحقَّق من كل واحدة قبل وصولها إليهم، وتُستبدَل لدى تجّار حقيقيين، وتُطابَق مع التسوية."
     },
     "cta": {
-      "primary": "Create your exchange account",
-      "secondary": "See the buyer model"
+      "primary": "أنشئ حسابك على المنصة",
+      "secondary": "اطّلع على نموذج المشتري"
     },
     "heroPass": {
-      "issuer": "Verified merchant",
-      "value": "Your reward",
-      "terms": "Validated before it reaches your customer.",
+      "issuer": "تاجر موثوق",
+      "value": "مكافأتك",
+      "terms": "يُتحقَّق منه قبل وصوله إلى عميلك.",
       "code": "MZF-••••-••••",
-      "stamp": "VERIFIED"
+      "stamp": "موثّق"
     },
     "problem": {
-      "title": "Why reward programmes disappoint",
+      "title": "لماذا تخيّب برامج المكافآت الآمال",
       "p0": {
-        "t": "Rewards nobody wants",
-        "d": "A generic gift code for a brand your customer does not use goes unredeemed, and the goodwill with it."
+        "t": "مكافآت لا يريدها أحد",
+        "d": "رمز هدية عام لعلامة تجارية لا يستخدمها عميلك يبقى دون استبدال، وتضيع معه النية الحسنة."
       },
       "p1": {
-        "t": "Dead codes break trust",
-        "d": "An incentive that fails at the counter does more damage than sending nothing at all."
+        "t": "الرموز غير الصالحة تكسر الثقة",
+        "d": "الحافز الذي يفشل عند الكاشير يُلحق ضررًا أكبر من عدم إرسال أي شيء على الإطلاق."
       },
       "p2": {
-        "t": "Reconciliation is a nightmare",
-        "d": "Codes from several suppliers, in several formats, with no single trail for finance."
+        "t": "المطابقة كابوس",
+        "d": "رموز من عدة موردين، بعدة صيغ، دون سجلّ واحد للمالية."
       }
     },
     "play": {
-      "title": "How rewarding customers works",
+      "title": "كيف تعمل مكافأة العملاء",
       "s0": {
-        "t": "Source",
-        "d": "Reserve verified Pass inventory across the categories your customers care about, from one pool."
+        "t": "التوريد",
+        "d": "احجز مخزون Passes موثوقًا عبر الفئات التي تهمّ عملاءك، من مجمّع واحد."
       },
       "s1": {
-        "t": "Reward",
-        "d": "Send Passes as incentives, loyalty rewards or promotions — by API into your app, or through the Vault."
+        "t": "المكافأة",
+        "d": "أرسِل Passes كحوافز أو مكافآت ولاء أو عروض ترويجية — عبر API إلى تطبيقك، أو عبر Vault."
       },
       "s2": {
-        "t": "Redeem at real merchants",
-        "d": "Your customer presents at a registered outlet. The Pass is validated and consumed once."
+        "t": "استبدل لدى تجّار حقيقيين",
+        "d": "يقدّم عميلك الـ Pass عند منفذ بيع مُسجَّل. يُتحقَّق منه ويُستهلك مرة واحدة."
       },
       "s3": {
-        "t": "Reconcile",
-        "d": "Every draw, distribution and redemption is reconcilable to settlement, per Pass, per merchant, per campaign."
+        "t": "المطابقة",
+        "d": "كل سحب وتوزيع واستبدال قابل للمطابقة مع التسوية، لكل Pass ولكل تاجر ولكل حملة."
       }
     },
     "cap": {
-      "title": "What makes these rewards work",
+      "title": "ما الذي يجعل هذه المكافآت ناجحة",
       "c0": {
-        "t": "Offers customers actually use",
-        "d": "Reserve across 14 categories of verified merchants, so a reward is something your customer wants."
+        "t": "عروض يستخدمها العملاء فعلاً",
+        "d": "احجز عبر 14 فئة من التجّار الموثوقين، لتكون المكافأة شيئًا يريده عميلك."
       },
       "c1": {
-        "t": "Verified before it reaches them",
-        "d": "Every merchant is verified and every Pass validated before it is handed out — no dead codes, no turned-away customers."
+        "t": "موثوق قبل وصوله إليهم",
+        "d": "كل تاجر موثوق وكل Pass مُتحقَّق منه قبل تسليمه — لا رموز غير صالحة ولا عملاء يُردّون خائبين."
       },
       "c2": {
-        "t": "Distribute your way",
-        "d": "Draw by API into your own app so customers never see Mezzofy, or hand out Passes through the Vault for a pilot."
+        "t": "وزّع بطريقتك",
+        "d": "اسحب عبر API إلى تطبيقك الخاص بحيث لا يرى العملاء Mezzofy أبدًا، أو وزّع Passes عبر Vault لتجربة تجريبية."
       },
       "c3": {
-        "t": "One reconcilable trail",
-        "d": "Draw, distribution and redemption per Pass, per merchant and per campaign, in the portal and by API."
+        "t": "سجلّ واحد قابل للمطابقة",
+        "d": "السحب والتوزيع والاستبدال لكل Pass ولكل تاجر ولكل حملة، في البوابة وعبر API."
       }
     },
     "outcome": {
-      "title": "Why your customers notice",
+      "title": "لماذا يلاحظ عملاؤك الفرق",
       "o0": {
-        "t": "Rewards that get redeemed",
-        "d": "Relevant, verified offers beat a generic code that expires unused."
+        "t": "مكافآت تُستبدَل فعلاً",
+        "d": "العروض الملائمة والموثوقة تتفوّق على رمز عام تنتهي صلاحيته دون استخدام."
       },
       "o1": {
-        "t": "Trust you keep",
-        "d": "No dead codes means no support tickets and no damaged goodwill."
+        "t": "ثقة تحافظ عليها",
+        "d": "انعدام الرموز غير الصالحة يعني لا تذاكر دعم ولا نية حسنة متضرّرة."
       },
       "o2": {
-        "t": "Finance-ready",
-        "d": "A single reconcilable trail across every merchant and campaign."
+        "t": "جاهز للمالية",
+        "d": "سجلّ واحد قابل للمطابقة عبر كل تاجر وكل حملة."
       }
     },
     "faq": {
-      "title": "Frequently Asked Questions",
+      "title": "الأسئلة الشائعة",
       "q0": {
-        "q": "How do I make sure rewards get used?",
-        "a": "Reserve across 14 categories of verified merchants, so the reward matches what your customers want, and every Pass is validated before it reaches them."
+        "q": "كيف أضمن استخدام المكافآت؟",
+        "a": "احجز عبر 14 فئة من التجّار الموثوقين، لتطابق المكافأة ما يريده عملاؤك، ويُتحقَّق من كل Pass قبل وصوله إليهم."
       },
       "q1": {
-        "q": "How do I hand Passes to my customers?",
-        "a": "Draw by API into your own app so they never see Mezzofy, or distribute through the Vault for pilots and short campaigns."
+        "q": "كيف أسلّم Passes إلى عملائي؟",
+        "a": "اسحب عبر API إلى تطبيقك الخاص بحيث لا يرون Mezzofy أبدًا، أو وزّع عبر Vault للتجارب التجريبية والحملات القصيرة."
       },
       "q2": {
-        "q": "What if a reward fails to redeem?",
-        "a": "Every Pass is validated before it is handed out, and on the rare failure the customer is credited automatically."
+        "q": "ماذا لو فشل استبدال مكافأة؟",
+        "a": "يُتحقَّق من كل Pass قبل تسليمه، وعند الفشل النادر يُرَدّ المبلغ إلى العميل تلقائيًا."
       },
       "q3": {
-        "q": "Can finance reconcile it all?",
-        "a": "Yes. Draw, distribution and redemption are reconcilable to settlement, per Pass, per merchant and per campaign."
+        "q": "هل يمكن للمالية مطابقة كل ذلك؟",
+        "a": "نعم. السحب والتوزيع والاستبدال قابلة للمطابقة مع التسوية، لكل Pass ولكل تاجر ولكل حملة."
       }
     },
     "closing": {
-      "title": "Reward customers with Passes they will use.",
-      "desc": "Source verified inventory, distribute by API or Vault, and reconcile every reward to settlement — validated before it reaches a single customer.",
-      "cta": "Create your exchange account"
+      "title": "كافئ عملاءك بـ Passes سيستخدمونها.",
+      "desc": "ورّد مخزونًا موثوقًا، ووزّع عبر API أو Vault، وطابِق كل مكافأة مع التسوية — موثوقًا قبل أن يصل إلى أي عميل.",
+      "cta": "أنشئ حسابك على المنصة"
     }
   }
 }

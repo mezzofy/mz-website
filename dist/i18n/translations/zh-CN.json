@@ -4509,772 +4509,772 @@
   },
   "pbPos": {
     "hero": {
-      "eyebrow": "Integrator Playbook",
-      "title": "Redeem any Pass at the till they already use.",
-      "subhead": "Add Pass validation to your POS once, and every merchant on your platform can accept tokenised, single-use Passes at checkout — no new hardware, no staff retraining, and no code they can fake."
+      "eyebrow": "集成商手册",
+      "title": "在商户已有的收银台上核销任意 Pass。",
+      "subhead": "只需为你的 POS 接入一次 Pass 验证，平台上的每一家商户都能在收银台受理代币化、一次性的 Pass——无需新硬件、无需重新培训员工，也没有可被伪造的代码。"
     },
     "cta": {
-      "primary": "Partner with us",
-      "secondary": "Read the integrator brief"
+      "primary": "与我们合作",
+      "secondary": "阅读集成商简介"
     },
     "heroPass": {
-      "issuer": "Any merchant",
-      "value": "Validated",
-      "terms": "Genuine. Unspent. Consumed once.",
+      "issuer": "任意商户",
+      "value": "已验证",
+      "terms": "真实有效。尚未使用。仅核销一次。",
       "code": "MZF-••••-••••",
-      "stamp": "CONSUMED"
+      "stamp": "已核销"
     },
     "problem": {
-      "title": "Why checkout is where coupons break",
+      "title": "为什么收银台是优惠券最容易出问题的环节",
       "p0": {
-        "t": "Codes you cannot trust",
-        "d": "Screenshots, generated codes and expired offers all look valid to a cashier. The till has no way to tell a real code from a fake one."
+        "t": "无法信任的代码",
+        "d": "截图、生成的代码和过期优惠在收银员眼里都像是有效的。收银台根本无从分辨真码和假码。"
       },
       "p1": {
-        "t": "Manual lookups slow the line",
-        "d": "Typing codes into a separate portal, or calling a promo desk, turns a five-second checkout into a queue."
+        "t": "人工查验拖慢队伍",
+        "d": "把代码敲进另一个后台，或是打电话给促销台，会把五秒钟的结账变成一条长队。"
       },
       "p2": {
-        "t": "Double-spend found too late",
-        "d": "A paper or PDF coupon can be presented twice. You discover it in reconciliation, not at the counter."
+        "t": "重复使用发现得太晚",
+        "d": "一张纸质或 PDF 优惠券可以被出示两次。你要到对账时才会发现，而不是在柜台。"
       }
     },
     "play": {
-      "title": "How redemption works once you are integrated",
+      "title": "接入之后，核销是如何运作的",
       "s0": {
-        "t": "Present",
-        "d": "The customer shows a Pass from their Vault — a QR, a barcode or an NFC tap — at your merchant's till."
+        "t": "出示",
+        "d": "顾客在你商户的收银台出示 Vault 中的一张 Pass——QR 码、条形码或 NFC 轻触皆可。"
       },
       "s1": {
-        "t": "Validate",
-        "d": "Your POS calls the exchange with the code. We check it is genuine, unspent, and eligible for this basket, outlet and time window."
+        "t": "验证",
+        "d": "你的 POS 携带代码向交易所发起请求。我们会核实它真实有效、尚未使用，并符合本笔订单、本门店和本时段的条件。"
       },
       "s2": {
-        "t": "Consume",
-        "d": "On success the Pass is consumed in the same call. It cannot be presented again, screenshotted or forwarded."
+        "t": "核销",
+        "d": "验证成功后，Pass 在同一次请求中被核销。它无法再次出示、截图或转发。"
       },
       "s3": {
-        "t": "Settle",
-        "d": "The redemption is recorded per Pass and per outlet, and settlement follows on the agreed cycle."
+        "t": "结算",
+        "d": "每一次核销都按 Pass、按门店记录，结算则按约定周期进行。"
       }
     },
     "cap": {
-      "title": "What the integration gives you",
+      "title": "这次集成能带给你什么",
       "c0": {
-        "t": "One endpoint, every merchant",
-        "d": "The same validation endpoint the marketplace runs on. One integration covers every merchant on your platform — they do not each integrate."
+        "t": "一个端点，所有商户",
+        "d": "与市场运行所用的是同一个验证端点。一次集成即覆盖平台上的每一家商户——它们无需各自对接。"
       },
       "c1": {
-        "t": "Eligibility at the counter",
-        "d": "The response carries value, conditions and status, so your till applies minimum-spend, time-window and outlet rules before it accepts the Pass."
+        "t": "柜台即判定资格",
+        "d": "响应中带有金额、条件和状态，你的收银台可在受理 Pass 之前先套用最低消费、时段和门店规则。"
       },
       "c2": {
-        "t": "Voucherless redemption",
-        "d": "Look up and redeem straight from the customer's Vault by member or token, with no code to read, when that fits your flow."
+        "t": "无需凭证的核销",
+        "d": "在流程合适时，可按会员或令牌直接从顾客的 Vault 中查询并核销，无需读取任何代码。"
       },
       "c3": {
-        "t": "REST or MCP, sandbox on signup",
-        "d": "OAuth2, webhooks for redemption events, and a full sandbox with sample merchants and Passes before you certify."
+        "t": "REST 或 MCP，注册即得沙盒",
+        "d": "OAuth2、用于核销事件的 webhook，以及在认证前即可使用、内含样例商户和 Pass 的完整沙盒。"
       }
     },
     "outcome": {
-      "title": "Why it is worth the integration",
+      "title": "为什么这次集成值得",
       "o0": {
-        "t": "A reason to stay on your system",
-        "d": "Pass acceptance becomes a capability your merchants cannot get by switching POS."
+        "t": "让商户留在你系统上的理由",
+        "d": "受理 Pass 成为一项商户无法靠更换 POS 获得的能力。"
       },
       "o1": {
-        "t": "No fraud to reconcile",
-        "d": "Every redemption is genuine and single-use, so there is nothing to claw back later."
+        "t": "没有需要对账的欺诈",
+        "d": "每一次核销都真实有效且一次性，事后没有任何需要追回的东西。"
       },
       "o2": {
-        "t": "Revenue on every Pass",
-        "d": "You earn a share on Passes sold through your platform, settled at the point of sale."
+        "t": "每张 Pass 都有收入",
+        "d": "凡经你平台售出的 Pass，你都能分成，并在销售当下完成结算。"
       }
     },
     "faq": {
-      "title": "Frequently Asked Questions",
+      "title": "常见问题",
       "q0": {
-        "q": "Do my merchants need new hardware?",
-        "a": "No. Redemption happens at the till they already use. If it can scan a barcode or read an NFC tap and call an API, it can accept a Pass."
+        "q": "我的商户需要新硬件吗？",
+        "a": "不需要。核销就在商户已有的收银台上完成。只要它能扫描条形码或读取 NFC 轻触并调用 API，就能受理 Pass。"
       },
       "q1": {
-        "q": "What happens if a Pass fails to validate?",
-        "a": "The till rejects it at the counter and the customer is credited automatically. The merchant is never charged for a Pass that did not redeem."
+        "q": "如果一张 Pass 验证失败会怎样？",
+        "a": "收银台会在柜台当场拒绝它，并自动为顾客退款。商户绝不会为一张未核销的 Pass 付费。"
       },
       "q2": {
-        "q": "How long does certification take?",
-        "a": "Typically two to three weeks from a working sandbox integration, covering issuance, redemption, failure handling and settlement reconciliation."
+        "q": "认证需要多长时间？",
+        "a": "从一个可用的沙盒集成算起，通常为两到三周，涵盖发行、核销、失败处理和结算对账。"
       },
       "q3": {
-        "q": "REST or MCP?",
-        "a": "Both. Use REST for a classic POS integration, or MCP if your platform speaks it. You get a sandbox on signup either way."
+        "q": "REST 还是 MCP？",
+        "a": "两者皆可。经典的 POS 集成用 REST，若你的平台支持 MCP 也可以用它。无论哪种，注册即获得沙盒。"
       }
     },
     "closing": {
-      "title": "One integration. Every merchant on your platform.",
-      "desc": "Give the merchants you already serve Pass issuance and redemption, without asking them to build, buy or learn anything.",
-      "cta": "Partner with us"
+      "title": "一次集成。覆盖平台上的每一家商户。",
+      "desc": "让你已经服务的商户拥有 Pass 的发行与核销能力，无需要求他们自建、采购或学习任何东西。",
+      "cta": "与我们合作"
     }
   },
   "pbGov": {
     "hero": {
-      "eyebrow": "Merchant Playbook",
-      "title": "One standard for every pass you issue.",
-      "subhead": "Stop running a different system for in-store coupons, digital vouchers and the stack you inherited. Bring physical and digital onto one tokenised standard — imported, exported or generated — and govern all of it from one place."
+      "eyebrow": "商户手册",
+      "title": "你发行的每一张通票，统一于一套标准。",
+      "subhead": "别再为门店优惠券、数字券和你承接下来的旧系统各跑一套系统。把实体与数字统一到一套代币化标准上——无论是导入、导出还是生成——并在同一处治理这一切。"
     },
     "cta": {
-      "primary": "Create your merchant account",
-      "secondary": "See how merchants sell"
+      "primary": "创建商户账户",
+      "secondary": "了解商户如何销售"
     },
     "heroPass": {
-      "issuer": "Your brand",
-      "value": "One standard",
-      "terms": "Physical and digital. Imported, exported or generated.",
+      "issuer": "你的品牌",
+      "value": "一套标准",
+      "terms": "实体与数字。导入、导出或生成。",
       "code": "MZF-••••-••••",
-      "stamp": "UNIQUE"
+      "stamp": "唯一"
     },
     "problem": {
-      "title": "What fragmented pass management costs you",
+      "title": "碎片化的通票管理让你付出什么代价",
       "p0": {
-        "t": "Every system has its own rules",
-        "d": "Paper coupons, a legacy voucher tool, a loyalty export and a spreadsheet each track issuance and redemption differently. No single view, no single truth."
+        "t": "每套系统各有各的规则",
+        "d": "纸质优惠券、一个旧的券工具、一份忠诚导出和一张电子表格，各自以不同方式记录发行和核销。没有统一视图，没有统一真相。"
       },
       "p1": {
-        "t": "Fraud hides in the gaps",
-        "d": "A code that can be screenshotted, duplicated or honoured after expiry is one you find out about in reconciliation, if at all."
+        "t": "欺诈藏在缝隙里",
+        "d": "一个可被截图、复制或过期后仍被兑现的代码，你要到对账时才会发现——如果还能发现的话。"
       },
       "p2": {
-        "t": "Governance is manual",
-        "d": "Discount limits, quotas and outlet rules live in people's heads, or across four different admin panels."
+        "t": "治理全靠人工",
+        "d": "折扣上限、配额和门店规则，要么装在人们脑子里，要么散落在四个不同的管理后台中。"
       }
     },
     "play": {
-      "title": "How central governance works",
+      "title": "集中治理是如何运作的",
       "s0": {
-        "t": "Bring everything in",
-        "d": "Import the stock you already hold, export when you need to, or generate new Passes in the portal. Physical and digital, one inventory per route."
+        "t": "把一切纳入进来",
+        "d": "导入你已持有的库存，需要时导出，或在后台生成新的 Pass。实体与数字，每条路径一份库存。"
       },
       "s1": {
-        "t": "Issue to one standard",
-        "d": "Every Pass, whatever its origin, becomes tokenised, unique and single-use. The standard is enforced by the system, not promised in terms."
+        "t": "按一套标准发行",
+        "d": "每张 Pass，无论来源如何，都变得代币化、唯一且一次性。这套标准由系统强制执行，而非在条款中承诺。"
       },
       "s2": {
-        "t": "Set the guardrails",
-        "d": "Discount range, minimum spend, monthly quota, daily cap, off-peak windows and which outlets can validate — hard ceilings, changeable any time."
+        "t": "设定护栏",
+        "d": "折扣区间、最低消费、每月配额、每日上限、非高峰时段，以及哪些门店可以验证——都是硬性上限，可随时更改。"
       },
       "s3": {
-        "t": "Redeem and reconcile",
-        "d": "Staff validate in the Operator App or your POS, registered outlets only, and every Pass is reconciled per outlet, per route, per campaign."
+        "t": "核销与对账",
+        "d": "员工在 Operator App 或你的 POS 上验证，仅限已登记门店，且每张 Pass 都按门店、按路径、按活动对账。"
       }
     },
     "cap": {
-      "title": "One system, every route",
+      "title": "一套系统，所有路径",
       "c0": {
-        "t": "Physical and digital, unified",
-        "d": "Tap points, printed QR, email, messaging and your own app all issue the same Pass standard. Nothing is a special case."
+        "t": "实体与数字，归于一体",
+        "d": "轻触点、印刷 QR、电子邮件、消息和你自己的 App，发行的都是同一套 Pass 标准。没有任何特例。"
       },
       "c1": {
-        "t": "Import, export, generate",
-        "d": "Bring legacy stock onto the exchange, hand off when you must, or mint fresh Passes — without maintaining a separate tool for each."
+        "t": "导入、导出、生成",
+        "d": "把旧库存接入交易所、必要时移交，或铸造全新的 Pass——无需为每一种各养一套独立工具。"
       },
       "c2": {
-        "t": "Governance by design",
-        "d": "System-enforced ceilings on discount, quota and daily caps; enable or disable outlets individually; KYC on the account."
+        "t": "治理内建于设计",
+        "d": "系统强制执行折扣、配额和每日上限的天花板；可逐一启用或停用门店；账户层面完成 KYC。"
       },
       "c3": {
-        "t": "One reconciled view",
-        "d": "Issued, sent, redeemed, expired — per Pass, per outlet, per route, exportable and billed against the same numbers."
+        "t": "一个对过账的视图",
+        "d": "已发行、已发送、已核销、已过期——按 Pass、按门店、按路径，可导出，并对同一组数字计费。"
       }
     },
     "outcome": {
-      "title": "Why one standard wins",
+      "title": "为什么一套标准胜出",
       "o0": {
-        "t": "No legacy system to maintain",
-        "d": "Retire the tools that only do one channel. The Management System is included; you pay only for what you use."
+        "t": "没有旧系统需要维护",
+        "d": "淘汰那些只能做单一渠道的工具。Management System 已包含在内；你只为用量付费。"
       },
       "o1": {
-        "t": "Fraud-proof across the board",
-        "d": "One tokenised standard means a duplicate or expired Pass fails at the counter, everywhere."
+        "t": "全线防欺诈",
+        "d": "一套代币化标准意味着重复或过期的 Pass 会在柜台当场失败——处处如此。"
       },
       "o2": {
-        "t": "Audit-ready",
-        "d": "A full redemption trail for finance and compliance, per Pass."
+        "t": "随时可审计",
+        "d": "为财务与合规提供完整的核销轨迹，精确到每张 Pass。"
       }
     },
     "faq": {
-      "title": "Frequently Asked Questions",
+      "title": "常见问题",
       "q0": {
-        "q": "Can I keep issuing from my existing tools?",
-        "a": "Yes — import what you hold and export when you need to. The goal is one standard for validation and reconciliation, not ripping out everything on day one."
+        "q": "我能继续用现有工具发行吗？",
+        "a": "可以——导入你所持有的，需要时导出。目标是统一验证与对账的一套标准，而不是第一天就把一切连根拔起。"
       },
       "q1": {
-        "q": "Does this handle both physical and digital?",
-        "a": "Yes. Tap points, printed QR, email, messaging and your own app all issue and redeem the same Pass."
+        "q": "这同时支持实体和数字吗？",
+        "a": "支持。轻触点、印刷 QR、电子邮件、消息和你自己的 App，发行与核销的都是同一张 Pass。"
       },
       "q2": {
-        "q": "Who can validate a Pass?",
-        "a": "Only your registered outlets. A Pass presented at an unregistered outlet will not validate, and you can enable or disable outlets at any time."
+        "q": "谁可以验证一张 Pass？",
+        "a": "只有你已登记的门店。在未登记门店出示的 Pass 不会通过验证，而你可以随时启用或停用门店。"
       },
       "q3": {
-        "q": "What does it cost?",
-        "a": "The Management System is included with every account; you are billed per Pass only for your own distribution, cheaper with volume."
+        "q": "费用是多少？",
+        "a": "每个账户都已包含 Management System；你仅为自己的分发按 Pass 计费，用量越大越便宜。"
       }
     },
     "closing": {
-      "title": "Govern every pass from one place.",
-      "desc": "One tokenised standard for physical and digital, imported, exported or generated — created, tracked, redeemed and reconciled in the same place.",
-      "cta": "Create your merchant account"
+      "title": "在同一处治理每一张通票。",
+      "desc": "一套面向实体与数字的代币化标准，无论导入、导出还是生成——在同一处创建、追踪、核销与对账。",
+      "cta": "创建商户账户"
     }
   },
   "pbSrc": {
     "hero": {
-      "eyebrow": "Buyer Playbook",
-      "title": "Inventory that is ready when demand spikes.",
-      "subhead": "Reserve verified Pass inventory from the pool, draw it into your app on demand, and swap whatever a campaign does not use. Every Pass is validated before it reaches a customer — no dead codes, no duplicate claims."
+      "eyebrow": "买家手册",
+      "title": "需求激增时随时就绪的库存。",
+      "subhead": "从资源池中预订经核验的 Pass 库存，按需拉取到你的 App，并把活动没用完的部分置换掉。每张 Pass 在到达顾客之前都已验证——没有失效代码，没有重复领取。"
     },
     "cta": {
-      "primary": "Create your exchange account",
-      "secondary": "See the buyer model"
+      "primary": "创建交易所账户",
+      "secondary": "了解买家模式"
     },
     "heroPass": {
-      "issuer": "Verified merchant",
-      "value": "In the pool",
-      "terms": "Validated before it reaches your app.",
+      "issuer": "经核验的商户",
+      "value": "在资源池中",
+      "terms": "在到达你的 App 之前已验证。",
       "code": "MZF-••••-••••",
-      "stamp": "VERIFIED"
+      "stamp": "已验证"
     },
     "problem": {
-      "title": "Why sourcing coupons usually hurts",
+      "title": "为什么采购优惠券通常很痛苦",
       "p0": {
-        "t": "Dead codes reach customers",
-        "d": "Gray-market or unverified stock means codes that fail at the counter — and a support ticket for every one."
+        "t": "失效代码到了顾客手里",
+        "d": "灰色市场或未经核验的库存意味着代码会在柜台失败——每一个都带来一张客服工单。"
       },
       "p1": {
-        "t": "You commit to the wrong merchant",
-        "d": "Buy a block of one merchant's vouchers, and if the campaign shifts you are stuck with inventory you cannot use."
+        "t": "你押错了商户",
+        "d": "买下某一家商户的一批券，一旦活动方向有变，你就被卡在一堆用不上的库存里。"
       },
       "p2": {
-        "t": "No supply when demand surges",
-        "d": "A promotion takes off and there is nothing left to hand out, or sourcing more takes weeks."
+        "t": "需求骤增时没有供给",
+        "d": "一场促销火了，却没有东西可发，或者再去采购要耗上好几周。"
       }
     },
     "play": {
-      "title": "How sourcing from the pool works",
+      "title": "从资源池采购是如何运作的",
       "s0": {
-        "t": "Scope",
-        "d": "Set your volume and the categories you need, and choose redemption-base or full purchase."
+        "t": "界定范围",
+        "d": "设定你所需的量和类目，并选择按核销计费或全额采购。"
       },
       "s1": {
-        "t": "Reserve",
-        "d": "Commit at a discount and we reserve verified merchant inventory from the pool. Undistributed Passes stay swappable."
+        "t": "预订",
+        "d": "以折扣价做出承诺，我们便从资源池中为你预留经核验的商户库存。未分发的 Pass 仍可置换。"
       },
       "s2": {
-        "t": "Draw on demand",
-        "d": "Pull from your reserved pool into your own app by API as customers claim — they never see Mezzofy. Or hand out Passes through Vault for pilots."
+        "t": "按需拉取",
+        "d": "随着顾客领取，通过 API 从你预留的资源池拉取到你自己的 App——他们绝不会看到 Mezzofy。或在试点中通过 Vault 发放 Pass。"
       },
       "s3": {
-        "t": "Swap and reconcile",
-        "d": "Exchange undistributed inventory for another seller's at the same value, and reconcile every draw and redemption to settlement."
+        "t": "置换与对账",
+        "d": "以等值方式把未分发的库存置换成另一家卖方的，并把每一次拉取和核销对账到结算。"
       }
     },
     "cap": {
-      "title": "What the pool gives you",
+      "title": "资源池能带给你什么",
       "c0": {
-        "t": "Verified at source",
-        "d": "Every merchant is onboarded and verified before inventory enters the pool, and every Pass is validated before it reaches your app."
+        "t": "源头即经核验",
+        "d": "每一家商户在库存进入资源池之前都已完成入驻与核验，每一张 Pass 在到达你的 App 之前都已验证。"
       },
       "c1": {
-        "t": "Reserve now, draw later",
-        "d": "Hold a pool against a commitment and draw from it as demand arrives — REST and MCP, sandbox on signup."
+        "t": "现在预订，稍后拉取",
+        "d": "凭一份承诺持有一个资源池，并随需求到来从中拉取——支持 REST 和 MCP，注册即得沙盒。"
       },
       "c2": {
-        "t": "Swap what you do not use",
-        "d": "Your commitment is to the exchange, not to one merchant. Exchange undistributed Passes for another's at the same value."
+        "t": "用不上的尽可置换",
+        "d": "你承诺的对象是交易所，而非某一家商户。以等值方式把未分发的 Pass 置换成别家的。"
       },
       "c3": {
-        "t": "Reconcilable to settlement",
-        "d": "Draw, distribution and redemption per Pass, per merchant and per campaign, in the portal and by API."
+        "t": "可对账到结算",
+        "d": "按 Pass、按商户、按活动记录拉取、分发和核销，在后台和通过 API 均可查看。"
       }
     },
     "outcome": {
-      "title": "Why the pool beats one-off sourcing",
+      "title": "为什么资源池胜过一次性采购",
       "o0": {
-        "t": "No dead codes, no tickets",
-        "d": "Verified at source, with 99.9% validation uptime and auto-credit on the rare failure."
+        "t": "没有失效代码，没有工单",
+        "d": "源头即经核验，验证可用率达 99.9%，并在罕见的失败时自动退款。"
       },
       "o1": {
-        "t": "Inventory that flexes with demand",
-        "d": "Reserve ahead, draw on demand, and swap whatever a campaign shifts away from."
+        "t": "随需求伸缩的库存",
+        "d": "提前预订、按需拉取，并把活动转向后不再需要的部分置换掉。"
       },
       "o2": {
-        "t": "Procurement-ready",
-        "d": "Security documentation, uptime commitments and data residency options, provided during procurement."
+        "t": "采购就绪",
+        "d": "安全文档、可用率承诺和数据驻留选项，均在采购过程中提供。"
       }
     },
     "faq": {
-      "title": "Frequently Asked Questions",
+      "title": "常见问题",
       "q0": {
-        "q": "What if a campaign changes after I commit?",
-        "a": "Undistributed Passes can be swapped for another seller's at the same value. Your commitment is to the exchange, not one merchant."
+        "q": "如果我承诺之后活动发生变化怎么办？",
+        "a": "未分发的 Pass 可以等值置换成另一家卖方的。你承诺的对象是交易所，而非某一家商户。"
       },
       "q1": {
-        "q": "How fast can I go live?",
-        "a": "Pass-and-Vault distribution can be live in days; a full API integration is typically two to four weeks including certification, with a sandbox from day one."
+        "q": "我多快能上线？",
+        "a": "Pass 加 Vault 的分发方式可在数日内上线；完整的 API 集成通常为两到四周，含认证，并从第一天起即配有沙盒。"
       },
       "q2": {
-        "q": "How do I distribute to my customers?",
-        "a": "Draw by API into your own app so customers never see Mezzofy, or hand out Passes through the Vault for pilots and short campaigns."
+        "q": "我该如何分发给我的顾客？",
+        "a": "通过 API 拉取到你自己的 App，让顾客绝不会看到 Mezzofy；或在试点和短期活动中通过 Vault 发放 Pass。"
       },
       "q3": {
-        "q": "What about failed redemptions?",
-        "a": "Every Pass is validated before it reaches a customer, and on the rare failure the customer is credited automatically."
+        "q": "核销失败怎么办？",
+        "a": "每张 Pass 在到达顾客之前都已验证，在罕见的失败时会自动为顾客退款。"
       }
     },
     "closing": {
-      "title": "Source verified inventory, ready for the surge.",
-      "desc": "Reserve from the pool, draw into your app on demand, and swap what you do not use — validated before it ever reaches a customer.",
-      "cta": "Create your exchange account"
+      "title": "采购经核验的库存，为激增做好准备。",
+      "desc": "从资源池预订，按需拉取到你的 App，并把用不上的部分置换掉——在抵达任何一位顾客之前就已验证。",
+      "cta": "创建交易所账户"
     }
   },
   "pbLoy": {
     "hero": {
-      "eyebrow": "Integrator Playbook",
-      "title": "Let members redeem points against live merchant supply.",
-      "subhead": "Issue, list and distribute Passes from your loyalty or rewards engine, and keep their status and the member's Vault in sync. Members exchange points against real merchant inventory instead of a catalogue that never changes."
+      "eyebrow": "集成商手册",
+      "title": "让会员用积分兑换实时的商户供给。",
+      "subhead": "从你的忠诚或奖励引擎中发行、上架并分发 Pass，并让其状态与会员的 Vault 保持同步。会员用积分兑换的是真实的商户库存，而非一成不变的目录。"
     },
     "cta": {
-      "primary": "Partner with us",
-      "secondary": "Read the integrator brief"
+      "primary": "与我们合作",
+      "secondary": "阅读集成商简介"
     },
     "heroPass": {
-      "issuer": "From your programme",
-      "value": "Reward",
-      "terms": "Issued to one member. Single-use.",
+      "issuer": "来自你的计划",
+      "value": "奖励",
+      "terms": "发放给单一会员。一次性。",
       "code": "MZF-••••-••••",
-      "stamp": "ISSUED"
+      "stamp": "已发行"
     },
     "problem": {
-      "title": "Why reward catalogues stall",
+      "title": "为什么奖励目录会陷入停滞",
       "p0": {
-        "t": "Catalogue fatigue",
-        "d": "A fixed rewards catalogue that never changes stops driving redemptions. Your redemption rate becomes a function of how stale the list looks."
+        "t": "目录疲劳",
+        "d": "一成不变的固定奖励目录会逐渐失去拉动核销的能力。你的核销率变成了列表有多陈旧的函数。"
       },
       "p1": {
-        "t": "Codes that fail or double-redeem",
-        "d": "Static codes issued from a spreadsheet get screenshotted, shared and reused. Members hit dead codes, and you reconcile the mess later."
+        "t": "失败或被重复核销的代码",
+        "d": "从电子表格发出的静态代码会被截图、分享和重复使用。会员撞上失效代码，而你事后再去收拾这摊乱局。"
       },
       "p2": {
-        "t": "No live link to merchant supply",
-        "d": "Points sit on your ledger with nothing fresh to spend them on, because adding merchants means a new contract and a new integration each time."
+        "t": "与商户供给没有实时连接",
+        "d": "积分停在你的账本上却没有新鲜的东西可兑换，因为每新增一家商户都意味着一份新合同和一次新集成。"
       }
     },
     "play": {
-      "title": "How issuance and redemption work",
+      "title": "发行与核销是如何运作的",
       "s0": {
-        "t": "List live supply",
-        "d": "Members browse live merchant inventory from the exchange inside your app, not a frozen catalogue."
+        "t": "上架实时供给",
+        "d": "会员在你的 App 内浏览来自交易所的实时商户库存，而非一份冻结的目录。"
       },
       "s1": {
-        "t": "Issue a Pass",
-        "d": "A member spends points and you issue a Pass through one API call. It is tokenised, bound to that member, and lands in their Vault."
+        "t": "发行一张 Pass",
+        "d": "会员消耗积分，你通过一次 API 调用发行一张 Pass。它是代币化的、绑定到该会员，并落入其 Vault。"
       },
       "s2": {
-        "t": "Track status",
-        "d": "Issued, held, presented, validated, settled — the Pass status and the member's Vault stay in sync through webhooks."
+        "t": "追踪状态",
+        "d": "已发行、持有、已出示、已验证、已结算——Pass 状态与会员的 Vault 通过 webhook 保持同步。"
       },
       "s3": {
-        "t": "Redeem once",
-        "d": "The member presents at a registered outlet or your POS. The Pass is consumed once and reconciled per Pass."
+        "t": "仅核销一次",
+        "d": "会员在已登记的门店或你的 POS 上出示。Pass 被核销一次，并按 Pass 对账。"
       }
     },
     "cap": {
-      "title": "What the integration gives you",
+      "title": "这次集成能带给你什么",
       "c0": {
-        "t": "Issue with one call",
-        "d": "Create, distribute and validate Passes on the same endpoints the marketplace runs on. Idempotency keys stop a retried request issuing twice."
+        "t": "一次调用即可发行",
+        "d": "在与市场运行相同的端点上创建、分发并验证 Pass。幂等键可防止重试请求造成重复发行。"
       },
       "c1": {
-        "t": "Live merchant supply",
-        "d": "Members exchange points against real inventory that refreshes itself, so your redemption rate stops being a function of catalogue fatigue."
+        "t": "实时的商户供给",
+        "d": "会员用积分兑换会自我刷新的真实库存，于是你的核销率不再是目录疲劳的函数。"
       },
       "c2": {
-        "t": "Status and Vault in sync",
-        "d": "Webhooks for every state change keep your ledger and the member's Vault aligned without polling."
+        "t": "状态与 Vault 同步",
+        "d": "每一次状态变化的 webhook，都让你的账本与会员的 Vault 保持一致，无需轮询。"
       },
       "c3": {
-        "t": "Delivery your way",
-        "d": "Deliver by email, SMS, a claim link, or straight into the member's Vault. REST and MCP, sandbox on signup."
+        "t": "分发随你所愿",
+        "d": "通过电子邮件、短信、领取链接，或直接送入会员的 Vault 来交付。支持 REST 和 MCP，注册即得沙盒。"
       }
     },
     "outcome": {
-      "title": "Why members redeem more",
+      "title": "为什么会员会核销得更多",
       "o0": {
-        "t": "Redemptions that keep moving",
-        "d": "Live supply beats a frozen catalogue, so points get spent instead of expiring on your books."
+        "t": "持续流动的核销",
+        "d": "实时供给胜过冻结的目录，于是积分被花掉，而不是在你的账上过期作废。"
       },
       "o1": {
-        "t": "Nothing to reconcile by hand",
-        "d": "Every Pass is single-use and tokenised, with a full status trail per member."
+        "t": "无需人工对账",
+        "d": "每张 Pass 都是一次性且代币化的，并按会员留有完整的状态轨迹。"
       },
       "o2": {
-        "t": "One integration, every merchant",
-        "d": "Add the whole merchant network at once, not one contract at a time."
+        "t": "一次集成，所有商户",
+        "d": "一次性接入整个商户网络，而不是逐份合同慢慢来。"
       }
     },
     "faq": {
-      "title": "Frequently Asked Questions",
+      "title": "常见问题",
       "q0": {
-        "q": "Do points leave my system?",
-        "a": "No. You keep the loyalty ledger and the member relationship. Mezzofy issues, validates and settles the Pass; points are debited in your engine."
+        "q": "积分会离开我的系统吗？",
+        "a": "不会。忠诚账本和会员关系仍归你所有。Mezzofy 负责发行、验证并结算 Pass；积分则在你的引擎中扣减。"
       },
       "q1": {
-        "q": "How do I keep status in sync?",
-        "a": "Subscribe to webhooks for issued, held, presented, validated and settled events, so your ledger and the member's Vault update without polling."
+        "q": "我该如何保持状态同步？",
+        "a": "订阅已发行、持有、已出示、已验证和已结算等事件的 webhook，你的账本与会员的 Vault 即可无需轮询地更新。"
       },
       "q2": {
-        "q": "Can I avoid issuing the same reward twice?",
-        "a": "Yes. Send an idempotency key with each issuance; a retried request returns the original Pass rather than minting a new one."
+        "q": "我能避免同一份奖励被发行两次吗？",
+        "a": "可以。每次发行时附带一个幂等键；重试的请求会返回原来的那张 Pass，而不是再铸造一张新的。"
       },
       "q3": {
-        "q": "How do members receive a Pass?",
-        "a": "By email, SMS, a claim link, or straight into their Vault — whichever fits your app. All on REST or MCP with a sandbox on signup."
+        "q": "会员如何收到 Pass？",
+        "a": "通过电子邮件、短信、领取链接，或直接送入其 Vault——哪种适配你的 App 就用哪种。全部支持 REST 或 MCP，注册即得沙盒。"
       }
     },
     "closing": {
-      "title": "Turn points into Passes members actually spend.",
-      "desc": "Issue against live merchant supply, keep status and the Vault in sync, and settle per Pass — one integration for the whole merchant network.",
-      "cta": "Partner with us"
+      "title": "把积分变成会员真正会花掉的 Pass。",
+      "desc": "对接实时的商户供给来发行，让状态与 Vault 保持同步，并按 Pass 结算——一次集成即覆盖整个商户网络。",
+      "cta": "与我们合作"
     }
   },
   "pbMkt": {
     "hero": {
-      "eyebrow": "Integrator Playbook",
-      "title": "List every merchant's Passes inside your app.",
-      "subhead": "Pull live, machine-readable Pass inventory into your marketplace, super-app or AI assistant through one API — priced, validated and settled by the exchange, so you surface offers without holding risk."
+      "eyebrow": "集成商手册",
+      "title": "在你的 App 内上架每一家商户的 Pass。",
+      "subhead": "通过一个 API，把实时、机器可读的 Pass 库存接入你的市场、超级 App 或 AI 助手——由交易所定价、验证并结算，让你呈现优惠却不承担风险。"
     },
     "cta": {
-      "primary": "Partner with us",
-      "secondary": "See the marketplace"
+      "primary": "与我们合作",
+      "secondary": "了解市场"
     },
     "heroPass": {
-      "issuer": "Any merchant",
-      "value": "Listed",
-      "terms": "One listing, every eligible channel.",
+      "issuer": "任意商户",
+      "value": "已上架",
+      "terms": "一次上架，通达每一个合适的渠道。",
       "code": "MZF-••••-••••",
-      "stamp": "LIVE"
+      "stamp": "上架中"
     },
     "problem": {
-      "title": "Why building a deals catalogue is hard",
+      "title": "为什么自建优惠目录很难",
       "p0": {
-        "t": "Content goes stale fast",
-        "d": "A hand-built deals list is out of date the day after you publish it, and keeping it fresh is a full-time job."
+        "t": "内容很快就过时",
+        "d": "一份手工搭建的优惠清单，发布第二天就过时了，而保持它常新是一份全职工作。"
       },
       "p1": {
-        "t": "You hold the risk",
-        "d": "Buying inventory to resell means carrying stock, chasing merchants, and eating what does not sell."
+        "t": "风险由你承担",
+        "d": "采购库存来转售意味着压货、追着商户跑，还得自己消化卖不掉的部分。"
       },
       "p2": {
-        "t": "Fraud lands on you",
-        "d": "Static codes get copied and reused, and the chargebacks and support tickets are yours."
+        "t": "欺诈落到你头上",
+        "d": "静态代码会被复制和重复使用，而退单和客服工单都归你。"
       }
     },
     "play": {
-      "title": "How listing works",
+      "title": "上架是如何运作的",
       "s0": {
-        "t": "Pull the catalogue",
-        "d": "Read live, machine-readable Pass inventory from the exchange — each Pass eligible for every channel it fits."
+        "t": "拉取目录",
+        "d": "从交易所读取实时、机器可读的 Pass 库存——每张 Pass 都对它适配的每个渠道可用。"
       },
       "s1": {
-        "t": "Surface offers",
-        "d": "Show them in your marketplace, super-app or AI assistant. The same object whether it came from the marketplace, a draw, or a tap point."
+        "t": "呈现优惠",
+        "d": "在你的市场、超级 App 或 AI 助手中展示它们。无论来自市场、抽奖还是轻触点，都是同一个对象。"
       },
       "s2": {
-        "t": "Transact",
-        "d": "A user claims or buys. The Pass is issued tokenised and single-use, and lands in their Vault."
+        "t": "完成交易",
+        "d": "用户领取或购买。Pass 以代币化、一次性的形式发行，并落入其 Vault。"
       },
       "s3": {
-        "t": "Settle",
-        "d": "Pricing, validation and settlement are handled by the exchange. You earn on what sells, reconciled per Pass."
+        "t": "结算",
+        "d": "定价、验证和结算均由交易所处理。你从售出的部分获取收入，并按 Pass 对账。"
       }
     },
     "cap": {
-      "title": "What the listing API gives you",
+      "title": "上架 API 能带给你什么",
       "c0": {
-        "t": "Machine-readable inventory",
-        "d": "A standard interface AI agents and apps can read, match and transact against — the same inventory the marketplace runs on."
+        "t": "机器可读的库存",
+        "d": "一套 AI 代理和应用可读取、匹配并交易的标准接口——与市场运行所用的是同一份库存。"
       },
       "c1": {
-        "t": "One listing, every channel",
-        "d": "Each Pass is eligible for every channel it fits, so you surface the right offers without manual curation."
+        "t": "一次上架，通达每个渠道",
+        "d": "每张 Pass 都对它适配的每个渠道可用，于是你无需人工筛选即可呈现合适的优惠。"
       },
       "c2": {
-        "t": "No inventory risk",
-        "d": "You list and surface; the exchange prices, validates and settles. You carry no stock."
+        "t": "没有库存风险",
+        "d": "你负责上架与呈现；交易所负责定价、验证与结算。你无需压任何货。"
       },
       "c3": {
-        "t": "Fraud-proof by design",
-        "d": "Every Pass is tokenised and consumed once, even after changing hands, so there is nothing to charge back."
+        "t": "设计上即可防欺诈",
+        "d": "每张 Pass 都是代币化的，即便几经转手也仅核销一次，于是没有任何可被退单的东西。"
       }
     },
     "outcome": {
-      "title": "Why list instead of build",
+      "title": "为什么选择上架而非自建",
       "o0": {
-        "t": "Fresh offers, zero curation",
-        "d": "Live supply refreshes itself. No catalogue to maintain."
+        "t": "优惠常新，零筛选",
+        "d": "实时供给会自我刷新。没有目录需要维护。"
       },
       "o1": {
-        "t": "Revenue without risk",
-        "d": "Earn on every Pass that sells through you, with no stock to carry."
+        "t": "无风险的收入",
+        "d": "凡经你售出的每张 Pass 都能赚取收入，且无需压货。"
       },
       "o2": {
-        "t": "AI-ready supply",
-        "d": "Your assistant can read and transact against real, fraud-proof inventory."
+        "t": "面向 AI 就绪的供给",
+        "d": "你的助手可以读取真实、防欺诈的库存并与之交易。"
       }
     },
     "faq": {
-      "title": "Frequently Asked Questions",
+      "title": "常见问题",
       "q0": {
-        "q": "Do I have to buy inventory to list it?",
-        "a": "No. Listing surfaces live exchange inventory. Pricing, validation and settlement are handled for you; you earn on what sells."
+        "q": "我必须先采购库存才能上架吗？",
+        "a": "不必。上架呈现的是交易所的实时库存。定价、验证和结算都替你处理好了；你从售出的部分获取收入。"
       },
       "q1": {
-        "q": "Is the inventory machine-readable for an AI agent?",
-        "a": "Yes. It is a standard interface AI shopping agents can read, match and transact against — the same inventory behind the marketplace."
+        "q": "这些库存对 AI 代理来说是机器可读的吗？",
+        "a": "是的。它是一套 AI 购物代理可读取、匹配并交易的标准接口——与市场背后的是同一份库存。"
       },
       "q2": {
-        "q": "How is fraud handled?",
-        "a": "Every Pass is tokenised and consumed once, even after it changes hands, so copied or reused codes simply fail."
+        "q": "欺诈是如何处理的？",
+        "a": "每张 Pass 都是代币化的，即便几经转手也仅核销一次，于是被复制或重复使用的代码只会直接失败。"
       },
       "q3": {
-        "q": "REST or MCP?",
-        "a": "Both, with a sandbox on signup. Use whichever your platform speaks."
+        "q": "REST 还是 MCP？",
+        "a": "两者皆可，注册即得沙盒。你的平台支持哪种就用哪种。"
       }
     },
     "closing": {
-      "title": "Surface live offers without holding the risk.",
-      "desc": "One API for live, machine-readable, fraud-proof inventory — priced, validated and settled by the exchange. You list; you earn on what sells.",
-      "cta": "Partner with us"
+      "title": "呈现实时优惠，却不承担风险。",
+      "desc": "一个 API 即可获得实时、机器可读、防欺诈的库存——由交易所定价、验证并结算。你负责上架；你从售出的部分赚取收入。",
+      "cta": "与我们合作"
     }
   },
   "pbMig": {
     "hero": {
-      "eyebrow": "Merchant Playbook",
-      "title": "Bring the coupons you already run onto one exchange.",
-      "subhead": "Import the stock you hold, keep issuing across in-store, NFC and digital, and unify validation and reconciliation on one tokenised standard — without ripping out everything on day one."
+      "eyebrow": "商户手册",
+      "title": "把你已在运行的优惠券迁入同一个交易所。",
+      "subhead": "导入你持有的库存，继续在门店、NFC 和数字渠道发行，并把验证与对账统一到一套代币化标准上——无需第一天就把一切连根拔起。"
     },
     "cta": {
-      "primary": "Create your merchant account",
-      "secondary": "See how merchants sell"
+      "primary": "创建商户账户",
+      "secondary": "了解商户如何销售"
     },
     "heroPass": {
-      "issuer": "Your brand",
-      "value": "Migrated",
-      "terms": "Legacy stock, now tokenised and single-use.",
+      "issuer": "你的品牌",
+      "value": "已迁移",
+      "terms": "旧有库存，如今已代币化且一次性。",
       "code": "MZF-••••-••••",
-      "stamp": "UNIQUE"
+      "stamp": "唯一"
     },
     "problem": {
-      "title": "Why legacy coupon stacks hold you back",
+      "title": "为什么旧的优惠券技术栈拖住了你",
       "p0": {
-        "t": "Codes you cannot trust",
-        "d": "Printed and PDF coupons from the old system get screenshotted, duplicated and honoured after expiry, and you only find out in reconciliation."
+        "t": "无法信任的代码",
+        "d": "旧系统里的印刷和 PDF 优惠券会被截图、复制，并在过期后仍被兑现，而你只有在对账时才会发现。"
       },
       "p1": {
-        "t": "Every channel is its own island",
-        "d": "In-store, NFC and digital each run on a different tool, with no single view of what was issued or redeemed."
+        "t": "每个渠道都是一座孤岛",
+        "d": "门店、NFC 和数字各跑在不同的工具上，对于发行了什么、核销了什么没有统一视图。"
       },
       "p2": {
-        "t": "Rip-and-replace is too risky",
-        "d": "You cannot switch everything off overnight, so the old systems linger and the fragmentation stays."
+        "t": "推倒重来风险太大",
+        "d": "你无法一夜之间关掉一切，于是旧系统迟迟不退，碎片化依旧存在。"
       }
     },
     "play": {
-      "title": "How migration works",
+      "title": "迁移是如何运作的",
       "s0": {
-        "t": "Import what you hold",
-        "d": "Bring existing coupon and voucher stock onto the exchange by bulk import. No need to reissue to customers who already have one."
+        "t": "导入你所持有的",
+        "d": "通过批量导入，把现有的优惠券和券库存接入交易所。无需向已持有券的顾客重新发放。"
       },
       "s1": {
-        "t": "Tokenise on validation",
-        "d": "Imported Passes validate against the exchange, so a duplicate or expired code fails at the counter from day one."
+        "t": "在验证时完成代币化",
+        "d": "导入的 Pass 对交易所进行验证，于是重复或过期的代码从第一天起就会在柜台当场失败。"
       },
       "s2": {
-        "t": "Unify the channels",
-        "d": "Issue new Passes across in-store, NFC, email, messaging and your own app — all one standard, one inventory per route."
+        "t": "统一各个渠道",
+        "d": "在门店、NFC、电子邮件、消息和你自己的 App 上发行新的 Pass——全部一套标准，每条路径一份库存。"
       },
       "s3": {
-        "t": "Retire the old tools",
-        "d": "Move channel by channel at your pace. When a legacy tool has nothing left to do, switch it off."
+        "t": "淘汰旧工具",
+        "d": "按你的节奏逐个渠道推进。当一个旧工具再无事可做时，就把它关掉。"
       }
     },
     "cap": {
-      "title": "What migration gives you",
+      "title": "迁移能带给你什么",
       "c0": {
-        "t": "Bulk import, no reissue",
-        "d": "Upload the lists and stock you already hold. Customers keep what they have; you gain trusted validation."
+        "t": "批量导入，无需重发",
+        "d": "上传你已持有的清单和库存。顾客保留手中已有的；你则获得可信的验证。"
       },
       "c1": {
-        "t": "One standard across channels",
-        "d": "Physical and digital issue and redeem the same tokenised Pass. Nothing is a special case."
+        "t": "跨渠道的一套标准",
+        "d": "实体与数字发行并核销同一张代币化的 Pass。没有任何特例。"
       },
       "c2": {
-        "t": "Validate at your outlets",
-        "d": "Operator App or your POS, registered outlets only. A Pass at an unregistered outlet will not validate."
+        "t": "在你的门店验证",
+        "d": "Operator App 或你的 POS，仅限已登记门店。在未登记门店的 Pass 不会通过验证。"
       },
       "c3": {
-        "t": "Reconciled in one place",
-        "d": "Issued, sent, redeemed, expired — per Pass, per outlet, per route, exportable and billed against the same numbers."
+        "t": "在同一处对账",
+        "d": "已发行、已发送、已核销、已过期——按 Pass、按门店、按路径，可导出，并对同一组数字计费。"
       }
     },
     "outcome": {
-      "title": "Why migrate gradually",
+      "title": "为什么要循序渐进地迁移",
       "o0": {
-        "t": "Fraud stops at the counter",
-        "d": "Imported stock becomes fraud-proof the moment it validates against the exchange."
+        "t": "欺诈止于柜台",
+        "d": "导入的库存，在对交易所完成验证的那一刻起就变得防欺诈。"
       },
       "o1": {
-        "t": "One source of truth",
-        "d": "Every channel reconciles to the same numbers, for finance and audit."
+        "t": "单一真相来源",
+        "d": "每个渠道都对齐到同一组数字，供财务与审计使用。"
       },
       "o2": {
-        "t": "Move at your pace",
-        "d": "Channel by channel, with no big-bang cutover."
+        "t": "按你的节奏推进",
+        "d": "逐个渠道推进，没有一刀切的大爆炸式切换。"
       }
     },
     "faq": {
-      "title": "Frequently Asked Questions",
+      "title": "常见问题",
       "q0": {
-        "q": "Do customers need a new coupon after I import?",
-        "a": "No. Import the stock you already hold; existing coupons keep working while gaining trusted validation."
+        "q": "导入之后，顾客需要一张新优惠券吗？",
+        "a": "不需要。导入你已持有的库存；现有优惠券在获得可信验证的同时继续有效。"
       },
       "q1": {
-        "q": "Can I keep my old system running during migration?",
-        "a": "Yes. Move one channel at a time. The old tools stay until they have nothing left to do."
+        "q": "迁移期间我能让旧系统继续运行吗？",
+        "a": "可以。一次迁移一个渠道。旧工具会一直保留，直到它们再无事可做。"
       },
       "q2": {
-        "q": "Does this cover physical coupons?",
-        "a": "Yes. Printed and QR, NFC tap points, email, messaging and your own app all issue and redeem the same Pass."
+        "q": "这涵盖实体优惠券吗？",
+        "a": "涵盖。印刷与 QR、NFC 轻触点、电子邮件、消息和你自己的 App，发行与核销的都是同一张 Pass。"
       },
       "q3": {
-        "q": "What does it cost?",
-        "a": "The Management System is included with every account; you are billed per Pass only for your own distribution, cheaper with volume."
+        "q": "费用是多少？",
+        "a": "每个账户都已包含 Management System；你仅为自己的分发按 Pass 计费，用量越大越便宜。"
       }
     },
     "closing": {
-      "title": "Unify every coupon channel, at your pace.",
-      "desc": "Import what you hold, tokenise on validation, and reconcile physical and digital in one place — retiring legacy tools channel by channel.",
-      "cta": "Create your merchant account"
+      "title": "按你的节奏，统一每一个优惠券渠道。",
+      "desc": "导入你所持有的，在验证时完成代币化，并在同一处对账实体与数字——逐个渠道淘汰旧工具。",
+      "cta": "创建商户账户"
     }
   },
   "pbRwd": {
     "hero": {
-      "eyebrow": "Buyer Playbook",
-      "title": "Reward your customers with offers they can actually use.",
-      "subhead": "Source verified Passes from the pool and hand them to your customers as incentives, loyalty rewards or promotions — every one validated before it reaches them, redeemed at real merchants, reconciled to settlement."
+      "eyebrow": "买家手册",
+      "title": "用顾客真正用得上的优惠回馈他们。",
+      "subhead": "从资源池采购经核验的 Pass，作为激励、忠诚奖励或促销发放给你的顾客——每一张在到达他们之前都已验证，在真实商户处核销，并对账到结算。"
     },
     "cta": {
-      "primary": "Create your exchange account",
-      "secondary": "See the buyer model"
+      "primary": "创建交易所账户",
+      "secondary": "了解买家模式"
     },
     "heroPass": {
-      "issuer": "Verified merchant",
-      "value": "Your reward",
-      "terms": "Validated before it reaches your customer.",
+      "issuer": "经核验的商户",
+      "value": "你的奖励",
+      "terms": "在到达你的顾客之前已验证。",
       "code": "MZF-••••-••••",
-      "stamp": "VERIFIED"
+      "stamp": "已验证"
     },
     "problem": {
-      "title": "Why reward programmes disappoint",
+      "title": "为什么奖励计划总是令人失望",
       "p0": {
-        "t": "Rewards nobody wants",
-        "d": "A generic gift code for a brand your customer does not use goes unredeemed, and the goodwill with it."
+        "t": "没人想要的奖励",
+        "d": "一张顾客并不使用的品牌的通用礼品码，最终无人核销，连带好感一起浪费掉。"
       },
       "p1": {
-        "t": "Dead codes break trust",
-        "d": "An incentive that fails at the counter does more damage than sending nothing at all."
+        "t": "失效代码摧毁信任",
+        "d": "一份在柜台失败的激励，造成的伤害比什么都不发还要大。"
       },
       "p2": {
-        "t": "Reconciliation is a nightmare",
-        "d": "Codes from several suppliers, in several formats, with no single trail for finance."
+        "t": "对账是一场噩梦",
+        "d": "来自多家供应商、格式各异的代码，没有一条供财务使用的统一轨迹。"
       }
     },
     "play": {
-      "title": "How rewarding customers works",
+      "title": "回馈顾客是如何运作的",
       "s0": {
-        "t": "Source",
-        "d": "Reserve verified Pass inventory across the categories your customers care about, from one pool."
+        "t": "采购",
+        "d": "从同一个资源池预订经核验的 Pass 库存，覆盖你顾客在意的各个类目。"
       },
       "s1": {
-        "t": "Reward",
-        "d": "Send Passes as incentives, loyalty rewards or promotions — by API into your app, or through the Vault."
+        "t": "回馈",
+        "d": "把 Pass 作为激励、忠诚奖励或促销发出去——通过 API 送入你的 App，或经由 Vault。"
       },
       "s2": {
-        "t": "Redeem at real merchants",
-        "d": "Your customer presents at a registered outlet. The Pass is validated and consumed once."
+        "t": "在真实商户处核销",
+        "d": "你的顾客在已登记的门店出示。Pass 被验证并核销一次。"
       },
       "s3": {
-        "t": "Reconcile",
-        "d": "Every draw, distribution and redemption is reconcilable to settlement, per Pass, per merchant, per campaign."
+        "t": "对账",
+        "d": "每一次拉取、分发和核销都可对账到结算，精确到每张 Pass、每家商户、每场活动。"
       }
     },
     "cap": {
-      "title": "What makes these rewards work",
+      "title": "是什么让这些奖励奏效",
       "c0": {
-        "t": "Offers customers actually use",
-        "d": "Reserve across 14 categories of verified merchants, so a reward is something your customer wants."
+        "t": "顾客真正会用的优惠",
+        "d": "在 14 个类目的经核验商户中预订，让奖励成为你顾客真正想要的东西。"
       },
       "c1": {
-        "t": "Verified before it reaches them",
-        "d": "Every merchant is verified and every Pass validated before it is handed out — no dead codes, no turned-away customers."
+        "t": "在到达他们之前已核验",
+        "d": "每一家商户都经核验，每一张 Pass 在发放之前都已验证——没有失效代码，没有被拒之门外的顾客。"
       },
       "c2": {
-        "t": "Distribute your way",
-        "d": "Draw by API into your own app so customers never see Mezzofy, or hand out Passes through the Vault for a pilot."
+        "t": "分发随你所愿",
+        "d": "通过 API 拉取到你自己的 App，让顾客绝不会看到 Mezzofy；或在试点中通过 Vault 发放 Pass。"
       },
       "c3": {
-        "t": "One reconcilable trail",
-        "d": "Draw, distribution and redemption per Pass, per merchant and per campaign, in the portal and by API."
+        "t": "一条可对账的轨迹",
+        "d": "按 Pass、按商户、按活动记录拉取、分发和核销，在后台和通过 API 均可查看。"
       }
     },
     "outcome": {
-      "title": "Why your customers notice",
+      "title": "为什么你的顾客会注意到",
       "o0": {
-        "t": "Rewards that get redeemed",
-        "d": "Relevant, verified offers beat a generic code that expires unused."
+        "t": "真正被核销的奖励",
+        "d": "相关、经核验的优惠胜过一张过期作废的通用代码。"
       },
       "o1": {
-        "t": "Trust you keep",
-        "d": "No dead codes means no support tickets and no damaged goodwill."
+        "t": "守得住的信任",
+        "d": "没有失效代码，就没有客服工单，也不会损伤好感。"
       },
       "o2": {
-        "t": "Finance-ready",
-        "d": "A single reconcilable trail across every merchant and campaign."
+        "t": "财务就绪",
+        "d": "跨每一家商户和每一场活动的一条可对账轨迹。"
       }
     },
     "faq": {
-      "title": "Frequently Asked Questions",
+      "title": "常见问题",
       "q0": {
-        "q": "How do I make sure rewards get used?",
-        "a": "Reserve across 14 categories of verified merchants, so the reward matches what your customers want, and every Pass is validated before it reaches them."
+        "q": "我如何确保奖励被用掉？",
+        "a": "在 14 个类目的经核验商户中预订，让奖励契合你顾客想要的，而每一张 Pass 在到达他们之前都已验证。"
       },
       "q1": {
-        "q": "How do I hand Passes to my customers?",
-        "a": "Draw by API into your own app so they never see Mezzofy, or distribute through the Vault for pilots and short campaigns."
+        "q": "我如何把 Pass 发给我的顾客？",
+        "a": "通过 API 拉取到你自己的 App，让他们绝不会看到 Mezzofy；或在试点和短期活动中经由 Vault 分发。"
       },
       "q2": {
-        "q": "What if a reward fails to redeem?",
-        "a": "Every Pass is validated before it is handed out, and on the rare failure the customer is credited automatically."
+        "q": "如果一份奖励核销失败怎么办？",
+        "a": "每张 Pass 在发放之前都已验证，在罕见的失败时会自动为顾客退款。"
       },
       "q3": {
-        "q": "Can finance reconcile it all?",
-        "a": "Yes. Draw, distribution and redemption are reconcilable to settlement, per Pass, per merchant and per campaign."
+        "q": "财务能把这一切都对好账吗？",
+        "a": "可以。拉取、分发和核销都可对账到结算，精确到每张 Pass、每家商户和每场活动。"
       }
     },
     "closing": {
-      "title": "Reward customers with Passes they will use.",
-      "desc": "Source verified inventory, distribute by API or Vault, and reconcile every reward to settlement — validated before it reaches a single customer.",
-      "cta": "Create your exchange account"
+      "title": "用顾客会用的 Pass 回馈他们。",
+      "desc": "采购经核验的库存，通过 API 或 Vault 分发，并把每一份奖励对账到结算——在到达任何一位顾客之前就已验证。",
+      "cta": "创建交易所账户"
     }
   }
 }
