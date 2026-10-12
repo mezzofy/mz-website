@@ -34,6 +34,13 @@ MCP server configuration fixed for Windows. Shadcn MCP server now loads correctl
 
 ## Recently Completed (Last 7 Days)
 
+**2026-10-12 (Passes Playbook — v2 UI revamp + rename to `pass-playbook.html`):**
+- Revamped `coupon-playbook.html` body onto the **v2 product-page design system** (inline-style components; no CSS build needed): dark 2-col hero with a 3-stage `calc-panel` rail, `pill-label` stage eyebrows, v2 **tactic cards** (soft-orange icon tiles) replacing flat `feature-card`s, v2 why/ecosystem cards, a **new visible FAQ** (4 Q&A), and a dark closing-CTA band (moved out of the footer). Dropped the old orange banner.
+- i18n: reused the existing real `playbook.*` translations; **added 16 new keys** (3 stage eyebrows, hero eyebrow + rail title, 4-Q FAQ) **in all 4 langs** (en/zh-TW/zh-CN/ar), src+dist. 109/109 `data-i18n` keys resolve in every language; src==dist parity holds. Fixed a **pre-existing stray-brace** that was breaking this page's JSON-LD; FAQPage schema now matches the visible FAQ.
+- **Renamed** `coupon-playbook.html` → `pass-playbook.html`: new file with self-refs/canonical/OG/hreflang/JSON-LD updated; re-pointed **119 refs across 45 files** (nav+footer site-wide, blog/news `../` variants, sitemap.xml, llms.txt, the embedded i18n `<a href>` in 4 langs ×src/dist). Left a client-side **redirect stub** (noindex + refresh + canonical) at the old path. 0 stray old refs.
+- **Webmaster/Infra follow-up:** real **301** `coupon-playbook.html → pass-playbook.html` at CloudFront/S3 (stub is interim); rich-results re-validation; HowTo JSON-LD copy still coupon-era.
+- ⚠️ **`dist/index.html` also holds a TEMP local demo-endpoint** (`http://127.0.0.1:8080/public/demo-pass`) left in per user request for local send testing — **must be reverted to `https://assistant.mezzofy.com/public/demo-pass` before any production commit/deploy.**
+
 **2026-10-09 (Removed "Developer" nav section — API docs moved to the portal):**
 - Removed the **Developer** dropdown (desktop + mobile) from the header and the 2 Developer links (API Documentation, API Use Case) from the footer across **38 pages** (handled 3 different mobile-nav variants in root vs blog/news). Header now has 4 dropdowns: Solutions, Products, Resources, Company.
 - Deleted the 2 pages `api-doc.html` + `api-use-case.html`; removed the 6 in-page "Read the API docs / API reference" CTAs on for-buyers (1), for-integrators (2), pass (3) — siblings retained, no dead links.

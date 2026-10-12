@@ -774,12 +774,15 @@
       "title": "THE ULTIMATE <span class=\"text-primary-orange\">PASSES PLAYBOOK</span>",
       "subtitle": "Smart Pass Strategies for Every Stage of Growth",
       "description": "<span class=\"text-primary-orange font-semibold\">Strategic framework</span> aligning Pass tactics to customer lifecycle stages. Educational resource providing best practices for <span class=\"text-primary-orange font-semibold\">Attract, Spark, and Retain</span> phases using the Mezzofy Exchange Protocol.",
+      "eyebrow": "Passes Playbook",
+      "railTitle": "Three stages, one playbook",
       "requestDemo": "Request a Demo",
       "exploreStrategies": "Explore Strategies"
     },
     "stage1": {
       "title": "Attract Potential Customers",
       "subtitle": "Capture attention, spark interest, and bring new customers to your brand",
+      "eyebrow": "Stage 01 · Attract",
       "flashSales": {
         "title": "Flash Sales",
         "description": "Create urgency with limited-time offers that drive immediate action and attract deal-seekers to your brand."
@@ -800,6 +803,7 @@
     "stage2": {
       "title": "Spark Interest & Drive Action",
       "subtitle": "Encourage discovery, build trust, and engage customers",
+      "eyebrow": "Stage 02 · Spark",
       "survey": {
         "title": "Survey Pass",
         "description": "Gather valuable customer insights while rewarding participation with Passes, creating a win-win engagement opportunity."
@@ -820,6 +824,7 @@
     "stage3": {
       "title": "Keep Customers Coming Back",
       "subtitle": "Build long-term relationships and turn customers into loyal advocates",
+      "eyebrow": "Stage 03 · Retain",
       "luckyDraw": {
         "title": "Lucky Draw Pass",
         "description": "Add excitement and gamification with random reward draws that keep customers engaged and eager to participate."
@@ -862,6 +867,25 @@
       "recommendedDesc": "The Playbook is included as strategic guidance for maximizing any Mezzofy product combination",
       "contactSales": "Contact Sales for Bundle Pricing"
     },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": {
+        "question": "What is the Passes Playbook?",
+        "answer": "A strategy guide that maps Pass tactics to three stages of the customer lifecycle — attract, spark and retain — so you issue the right Pass at the right moment."
+      },
+      "q2": {
+        "question": "Do I need every Mezzofy product to use these strategies?",
+        "answer": "No. Every tactic runs on the Mezzofy exchange. Start with one Pass type, then add the Management System, NFC Pass, Marketplace or Vault as you grow."
+      },
+      "q3": {
+        "question": "How quickly can I launch a Pass campaign?",
+        "answer": "Most tactics go live in minutes: create a Pass in the Management System, choose a distribution channel, and track redemptions in real time."
+      },
+      "q4": {
+        "question": "Can I combine tactics across stages?",
+        "answer": "Yes. The playbook is built to chain — a flash sale that attracts can feed a loyalty Pass that retains, all under one tokenised standard."
+      }
+    },
     "footerCta": {
       "title": "Engage, Convert, and Retain Customers with the Right Pass Strategy",
       "description": "Ready to transform your customer acquisition and retention with smart Pass strategies?",
@@ -891,7 +915,7 @@
       },
       "step3": {
         "title": "OPTIMIZE",
-        "description": "Track with <a href=\"coupon-playbook.html\" class=\"text-primary-orange hover:underline\">Playbook</a> strategies, analyze with <a href=\"vault.html\" class=\"text-primary-orange hover:underline\">Wallet</a> insights"
+        "description": "Track with <a href=\"pass-playbook.html\" class=\"text-primary-orange hover:underline\">Playbook</a> strategies, analyze with <a href=\"vault.html\" class=\"text-primary-orange hover:underline\">Wallet</a> insights"
       }
     },
     "segments": {

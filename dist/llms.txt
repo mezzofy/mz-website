@@ -19,7 +19,7 @@
 - [AI Pass](https://mezzofy.com/ai-pass.html): AI engine that automatically creates discount offers within merchant-set limits and places them across the exchange; the engine behind Zero Fee Passes and the NFC network
 
 ## Resources
-- [Coupon Playbook](https://mezzofy.com/coupon-playbook.html): Strategic guide for planning and executing digital coupon campaigns, covering personalized targeting, CRM/POS integration, multi-channel delivery, and campaign ROI measurement
+- [Coupon Playbook](https://mezzofy.com/pass-playbook.html): Strategic guide for planning and executing digital coupon campaigns, covering personalized targeting, CRM/POS integration, multi-channel delivery, and campaign ROI measurement
 - [NFC User Guide](https://mezzofy.com/nfc-user-guide.html): Step-by-step customer instructions for tapping, claiming, and redeeming Mezzofy NFC coupons at retail stores, restaurants, and events using an NFC-enabled smartphone
 - [Support](https://mezzofy.com/support.html): Help center with FAQs, troubleshooting guides, and support contact for merchants, distributors, and developers using the Mezzofy platform
 

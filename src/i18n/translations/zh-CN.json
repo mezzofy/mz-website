@@ -780,12 +780,15 @@
       "title": "终极<span class=\"text-primary-orange\">Passes 指南</span>",
       "subtitle": "适用于各个成长阶段的智能 Pass 策略",
       "description": "<span class=\"text-primary-orange font-semibold\">策略框架</span>将 Pass 策略与客户生命周期阶段对齐。提供<span class=\"text-primary-orange font-semibold\">吸引、激发和保留</span>阶段最佳实践的教育资源，使用 Mezzofy 交易协议。",
+      "eyebrow": "Passes 指南",
+      "railTitle": "三个阶段，一本指南",
       "requestDemo": "申请演示",
       "exploreStrategies": "探索策略"
     },
     "stage1": {
       "title": "吸引潜在客户",
       "subtitle": "吸引注意力、激发兴趣，将新客户带到您的品牌",
+      "eyebrow": "阶段 01 · 吸引",
       "flashSales": {
         "title": "限时抢购",
         "description": "通过限时优惠创造紧迫感，推动即时行动，吸引寻求优惠的客户。"
@@ -806,6 +809,7 @@
     "stage2": {
       "title": "激发兴趣并推动行动",
       "subtitle": "鼓励发现、建立信任并吸引客户",
+      "eyebrow": "阶段 02 · 激发",
       "survey": {
         "title": "调查 Pass",
         "description": "收集有价值的客户洞察，同时用 Passes 奖励参与，创造双赢的互动机会。"
@@ -826,6 +830,7 @@
     "stage3": {
       "title": "让客户持续回访",
       "subtitle": "建立长期关系，将客户转变为忠实拥护者",
+      "eyebrow": "阶段 03 · 保留",
       "luckyDraw": {
         "title": "幸运抽奖 Pass",
         "description": "通过随机奖励抽奖增加兴奋感和游戏化，保持客户的参与度和热情。"
@@ -868,6 +873,25 @@
       "recommendedDesc": "指南作为战略指导包含在内，用于最大化任何 Mezzofy 产品组合",
       "contactSales": "联系销售获取套装价格"
     },
+    "faq": {
+      "title": "常见问题",
+      "q1": {
+        "question": "什么是 Passes 指南？",
+        "answer": "一份策略指南，将 Pass 策略对应到客户生命周期的三个阶段——吸引、激发与保留——让您在正确的时机发出正确的 Pass。"
+      },
+      "q2": {
+        "question": "我需要使用所有 Mezzofy 产品才能运用这些策略吗？",
+        "answer": "不需要。每项策略都在 Mezzofy 交易所上运行。先从一种 Pass 类型开始，再随着业务成长加入 Management System、NFC Pass、Marketplace 或 Vault。"
+      },
+      "q3": {
+        "question": "我能多快启动一个 Pass 活动？",
+        "answer": "大多数策略可在几分钟内上线：在 Management System 中创建 Pass，选择一个分发渠道，并实时追踪核销。"
+      },
+      "q4": {
+        "question": "我可以跨阶段组合不同策略吗？",
+        "answer": "可以。本指南专为串联而设计——一场吸引客户的限时抢购，可以衔接一张留住客户的忠诚 Pass，全部基于同一套代币化标准。"
+      }
+    },
     "footerCta": {
       "title": "通过正确的 Pass 策略吸引、转化和保留客户",
       "description": "准备好使用智能 Pass 策略转变您的客户获取和保留了吗？",
@@ -897,7 +921,7 @@
       },
       "step3": {
         "title": "优化",
-        "description": "使用<a href=\"coupon-playbook.html\" class=\"text-primary-orange hover:underline\">指南</a>策略追踪，通过<a href=\"vault.html\" class=\"text-primary-orange hover:underline\">钱包</a>洞察分析"
+        "description": "使用<a href=\"pass-playbook.html\" class=\"text-primary-orange hover:underline\">指南</a>策略追踪，通过<a href=\"vault.html\" class=\"text-primary-orange hover:underline\">钱包</a>洞察分析"
       }
     },
     "segments": {
