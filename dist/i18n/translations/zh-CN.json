@@ -452,6 +452,15 @@
           "confirm": "谢谢 — 实战手册 PDF 正在发送至您的邮箱。"
         },
         "booking": {
+          "nameLabel": "你的姓名",
+          "namePlaceholder": "你的全名",
+          "nameError": "请输入你的姓名。",
+          "emailError": "请输入有效的邮箱。",
+          "dateError": "请选择日期。",
+          "slotError": "请选择时段。",
+          "success": "已预约，我们会把日历邀请发送到你的邮箱。",
+          "error": "出了点问题，请重试，或发送邮件至 hello@mezzofy.com。",
+          "sending": "发送中…",
           "title": "预约与我们的一小时",
           "description": "这是一次务实的工作会谈，而非推销。带上您的数据，我们将展示交换平台能为其带来什么。",
           "dateLabel": "选择日期",

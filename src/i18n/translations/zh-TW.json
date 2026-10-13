@@ -446,6 +446,15 @@
           "confirm": "謝謝 — 實戰手冊 PDF 正寄往您的收件匣。"
         },
         "booking": {
+          "nameLabel": "你的姓名",
+          "namePlaceholder": "你的全名",
+          "nameError": "請輸入你的姓名。",
+          "emailError": "請輸入有效的電郵。",
+          "dateError": "請選擇日期。",
+          "slotError": "請選擇時段。",
+          "success": "已預約，我們會把行事曆邀請寄到你的電郵。",
+          "error": "發生問題，請再試一次，或電郵至 hello@mezzofy.com。",
+          "sending": "傳送中…",
           "title": "與我們預約一小時",
           "description": "這是一場實務討論，而非推銷。帶上您的數據，我們將向您展示交易所能如何運用它們。",
           "dateLabel": "選擇日期",

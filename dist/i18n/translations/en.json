@@ -446,6 +446,15 @@
           "confirm": "Thanks — the playbook PDF is on its way to your inbox."
         },
         "booking": {
+          "nameLabel": "Your name",
+          "namePlaceholder": "Your full name",
+          "nameError": "Please enter your name.",
+          "emailError": "Please enter a valid email.",
+          "dateError": "Please choose a date.",
+          "slotError": "Please pick a time slot.",
+          "success": "Booked. We will send a calendar invite to your email.",
+          "error": "Something went wrong. Please try again, or email hello@mezzofy.com.",
+          "sending": "Sending…",
           "title": "Book an hour with us",
           "description": "A working session rather than a pitch. Bring your numbers and we will show you what the exchange would do with them.",
           "dateLabel": "Choose a date",
