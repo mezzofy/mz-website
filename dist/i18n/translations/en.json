@@ -1109,7 +1109,7 @@
         },
         "own": {
           "label": "Your own list",
-          "title": "Own channel",
+          "title": "Own Channel Passes",
           "description": "Issue to customers you already have — email, messaging, your own app. Nothing goes on the exchange.",
           "row1k": "Allocation",
           "row1v": "from $0.013",
@@ -1124,7 +1124,7 @@
         "description": "Most platforms ask you to build a campaign and pay to run it. Zero Fee works the other way around.",
         "tabZero": "Zero Fee Passes",
         "tabCharge": "Charge Passes",
-        "tabOwn": "Own channel",
+        "tabOwn": "Own Channel Passes",
         "zero": {
           "step1Title": "You set the box",
           "step1Desc": "Discount range, minimum spend, monthly quota, daily cap, and whether offers are limited to off-peak hours. These are hard ceilings the AI cannot pass.",
@@ -1201,15 +1201,15 @@
       },
       "system": {
         "title": "Whichever way you sell, it runs through one system",
-        "description": "The Coupon Management System is the heart of it. Every Pass you issue, from any of the three routes, is created, tracked, redeemed and reconciled in the same place. You learn one dashboard.",
+        "description": "The Pass Management System is the heart of it. Every Pass you issue, from any of the three routes, is created, tracked, redeemed and reconciled in the same place. You learn one dashboard.",
         "routeZeroT": "Zero Fee Passes",
         "routeZeroS": "created by AI Pass",
         "routeChargeT": "Charge Passes",
         "routeChargeS": "sold on the exchange",
-        "routeOwnT": "Own channel",
+        "routeOwnT": "Own Channel Passes",
         "routeOwnS": "sent to your list",
         "coreTag": "The heart of it",
-        "coreTitle": "Core: Coupon Management System",
+        "coreTitle": "Core: Pass Management System",
         "coreDesc": "One inventory per route, one view of all of them. Limits, quotas, outlets and staff live here.",
         "capRedeemT": "Redeem",
         "capRedeemS": "Operator App or your POS",
@@ -1217,8 +1217,8 @@
         "capTrackS": "every Pass, live",
         "capReconcileT": "Reconcile",
         "capReconcileS": "per Pass, per outlet, per route",
-        "note": "CMS is included with every account. You only pay for it when you use it for your own distribution.",
-        "link": "See the Coupon Management System →"
+        "note": "PMS is included with every account. You only pay for it when you use it for your own distribution.",
+        "link": "See the Pass Management System →"
       },
       "golive": {
         "title": "Before you go live",

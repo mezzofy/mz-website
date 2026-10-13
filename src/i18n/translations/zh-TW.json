@@ -1109,7 +1109,7 @@
         },
         "own": {
           "label": "您自己的名單",
-          "title": "自有渠道",
+          "title": "自有渠道 Pass",
           "description": "向您現有的客戶發行 — 電郵、訊息、您自己的應用程式。任何內容都不會上架交易所。",
           "row1k": "分配",
           "row1v": "由 $0.013 起",
@@ -1124,7 +1124,7 @@
         "description": "大多數平台要求您建立活動並付費投放。零費用的運作方式恰好相反。",
         "tabZero": "零費用 Pass",
         "tabCharge": "收費 Pass",
-        "tabOwn": "自有渠道",
+        "tabOwn": "自有渠道 Pass",
         "zero": {
           "step1Title": "您設定框架",
           "step1Desc": "折扣範圍、最低消費、每月配額、每日上限，以及優惠是否僅限非繁忙時段。這些都是 AI 無法逾越的硬性上限。",
@@ -1201,15 +1201,15 @@
       },
       "system": {
         "title": "無論您以哪種方式銷售，都在同一套系統中運行",
-        "description": "優惠券管理系統是其核心。您透過三種途徑中任一種所發行的每張 Pass，都在同一處完成創建、追蹤、兌換與對帳。您只需學會一個儀表板。",
+        "description": "Pass 管理系統是其核心。您透過三種途徑中任一種所發行的每張 Pass，都在同一處完成創建、追蹤、兌換與對帳。您只需學會一個儀表板。",
         "routeZeroT": "零費用 Pass",
         "routeZeroS": "由 AI Pass 創建",
         "routeChargeT": "收費 Pass",
         "routeChargeS": "於交易所銷售",
-        "routeOwnT": "自有渠道",
+        "routeOwnT": "自有渠道 Pass",
         "routeOwnS": "傳送給您的名單",
         "coreTag": "核心所在",
-        "coreTitle": "核心：優惠券管理系統",
+        "coreTitle": "核心：Pass 管理系統",
         "coreDesc": "每種途徑各有一份庫存，並可一覽全部。上限、配額、門市與員工均在此管理。",
         "capRedeemT": "兌換",
         "capRedeemS": "營運商 App 或您的 POS",
@@ -1217,8 +1217,8 @@
         "capTrackS": "即時追蹤每張 Pass",
         "capReconcileT": "對帳",
         "capReconcileS": "按每張 Pass、每個門市、每種途徑",
-        "note": "每個帳戶都內含 CMS。只有當您將其用於自有分發時才需付費。",
-        "link": "查看優惠券管理系統 →"
+        "note": "每個帳戶都內含 PMS。只有當您將其用於自有分發時才需付費。",
+        "link": "查看 Pass 管理系統 →"
       },
       "golive": {
         "title": "上線之前",

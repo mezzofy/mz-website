@@ -1115,7 +1115,7 @@
         },
         "own": {
           "label": "您自己的名单",
-          "title": "自有渠道",
+          "title": "自有渠道 Pass",
           "description": "向您已有的客户发行 — 电子邮件、消息、您自己的应用。任何内容都不会进入交换平台。",
           "row1k": "分配",
           "row1v": "$0.013 起",
@@ -1130,7 +1130,7 @@
         "description": "大多数平台要求您搭建活动并付费投放。零费的运作方式恰恰相反。",
         "tabZero": "零费 Pass",
         "tabCharge": "收费 Pass",
-        "tabOwn": "自有渠道",
+        "tabOwn": "自有渠道 Pass",
         "zero": {
           "step1Title": "您设定边界",
           "step1Desc": "折扣范围、最低消费、每月配额、每日上限，以及优惠是否仅限非高峰时段。这些都是 AI 无法突破的硬性上限。",
@@ -1207,15 +1207,15 @@
       },
       "system": {
         "title": "无论您以哪种方式销售，都在同一套系统中运行",
-        "description": "优惠券管理系统是其核心。您发行的每一张 Pass，无论来自三种方式中的哪一种，都在同一处完成创建、跟踪、兑换和对账。您只需学习一个仪表盘。",
+        "description": "Pass 管理系统是其核心。您发行的每一张 Pass，无论来自三种方式中的哪一种，都在同一处完成创建、跟踪、兑换和对账。您只需学习一个仪表盘。",
         "routeZeroT": "零费 Pass",
         "routeZeroS": "由 AI Pass 创建",
         "routeChargeT": "收费 Pass",
         "routeChargeS": "在交换平台上销售",
-        "routeOwnT": "自有渠道",
+        "routeOwnT": "自有渠道 Pass",
         "routeOwnS": "发送给您的名单",
         "coreTag": "核心所在",
-        "coreTitle": "核心：优惠券管理系统",
+        "coreTitle": "核心：Pass 管理系统",
         "coreDesc": "每种方式各有一份库存，全部一览无余。上限、配额、门店和员工都在这里管理。",
         "capRedeemT": "兑换",
         "capRedeemS": "操作员 App 或您的 POS",
@@ -1223,8 +1223,8 @@
         "capTrackS": "实时跟踪每一张 Pass",
         "capReconcileT": "对账",
         "capReconcileS": "按 Pass、按门店、按方式对账",
-        "note": "每个账户都包含 CMS。只有当您将其用于自身分发时才会收费。",
-        "link": "了解优惠券管理系统 →"
+        "note": "每个账户都包含 PMS。只有当您将其用于自身分发时才会收费。",
+        "link": "了解 Pass 管理系统 →"
       },
       "golive": {
         "title": "上线之前",
