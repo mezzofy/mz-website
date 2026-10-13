@@ -442,7 +442,7 @@
           "ch5": "企業買家在庫存中尋求什麼",
           "emailLabel": "電郵地址",
           "emailPlaceholder": "you@company.com",
-          "cta": "把 PDF 傳給我",
+          "cta": "探索實戰手冊",
           "confirm": "謝謝 — 實戰手冊 PDF 正寄往您的收件匣。"
         },
         "booking": {
@@ -887,6 +887,14 @@
       }
     },
     "byRole": {
+      "lead": {
+        "title": "想更深入了解其中任何一個使用案例？",
+        "desc": "留下你的電郵，我們會把完整的使用案例資料寄給你，並為你推薦最適合你業務模式的實戰手冊。",
+        "emailLabel": "電郵地址",
+        "placeholder": "you@company.com",
+        "cta": "把使用案例資料寄給我",
+        "confirm": "已收到，使用案例資料將盡快寄到你的收件匣。"
+      },
       "title": "依角色瀏覽指南",
       "description": "了解商戶、買家與整合商如何運用 Pass。更多指南即將推出。",
       "loy": {

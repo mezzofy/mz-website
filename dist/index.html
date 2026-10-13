@@ -1136,17 +1136,10 @@
                             <span class="text-dark-grey" data-i18n="home.v2.takeFurther.playbook.ch5">What enterprise buyers look for in inventory</span>
                         </li>
                     </ul>
-                    <form id="playbook-form" class="flex flex-col sm:flex-row gap-3" novalidate>
-                        <label for="playbook-email" class="sr-only" data-i18n="home.v2.takeFurther.playbook.emailLabel">Email address</label>
-                        <input id="playbook-email" type="email" required class="v2-input" data-i18n-placeholder="home.v2.takeFurther.playbook.emailPlaceholder" placeholder="you@company.com">
-                        <button type="submit" class="btn-primary whitespace-nowrap" data-cta="learn-more">
-                            <span data-i18n="home.v2.takeFurther.playbook.cta">Send me the PDF</span>
-                        </button>
-                    </form>
-                    <p id="playbook-confirm" class="form-confirm" hidden>
-                        <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span data-i18n="home.v2.takeFurther.playbook.confirm">Thanks — the playbook PDF is on its way to your inbox.</span>
-                    </p>
+                    <a href="pass-playbook.html" class="btn-primary inline-flex items-center gap-2 whitespace-nowrap" data-cta="learn-more">
+                        <span data-i18n="home.v2.takeFurther.playbook.cta">Explore the playbooks</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5-5 5M6 12h12"></path></svg>
+                    </a>
                 </div>
 
                 <!-- Book an hour -->
@@ -1374,7 +1367,6 @@
           });
         }
         wireDemoPass();
-        wireConfirm('playbook-form', 'playbook-confirm');
         wireConfirm('booking-form', 'booking-confirm');
 
         // Booking time-slot selection (single choice)
