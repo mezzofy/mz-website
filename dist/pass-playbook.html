@@ -151,13 +151,6 @@
         .faq-item { background:#fff; border:1px solid rgba(26,26,26,0.10); border-radius:12px; padding:20px 24px; }
         .faq-item h3 { font-weight:700; color:#1a1a1a; margin-bottom:6px; }
         .faq-item p { color:#4a4a4a; font-size:0.95rem; }
-        /* Use-case lead capture */
-        .lead-panel { background:#fff; border:1px solid rgba(26,26,26,0.12); border-radius:16px; padding:32px; box-shadow:0 1px 3px rgba(0,0,0,0.06); }
-        .pb-input { flex:1 1 auto; min-width:0; background:#fff; border:1px solid rgba(26,26,26,0.18); border-radius:0.5rem; padding:0.75rem 1rem; font-size:1rem; color:#1a1a1a; transition:border-color .2s, box-shadow .2s; }
-        .pb-input::placeholder { color:#6e6e6e; }
-        .pb-input:focus { outline:none; border-color:#FF6B35; box-shadow:0 0 0 3px rgba(255,107,53,0.15); }
-        .form-confirm { margin-top:14px; font-size:0.9rem; color:#1a7a3d; display:flex; align-items:center; justify-content:center; gap:6px; }
-        .form-confirm[hidden] { display:none; }
     </style>
 
     <!-- Favicon -->
@@ -679,23 +672,6 @@
                     <p class="text-dark-grey text-sm" data-i18n="playbook.byRole.rwd.desc">Reward customers with verified offers.</p>
                 </a>
             </div>
-            <div class="max-w-2xl mx-auto mt-16">
-                <div class="lead-panel text-center">
-                    <h3 class="text-xl md:text-2xl font-bold text-primary-black mb-2" data-i18n="playbook.byRole.lead.title">Want a deeper walkthrough of any of these?</h3>
-                    <p class="text-dark-grey mb-6" data-i18n="playbook.byRole.lead.desc">Tell us where to send the full use-case pack, and we'll point you to the playbook that fits your model.</p>
-                    <form id="usecase-form" class="flex flex-col sm:flex-row gap-3" novalidate>
-                        <label for="usecase-email" class="sr-only" data-i18n="playbook.byRole.lead.emailLabel">Email address</label>
-                        <input id="usecase-email" type="email" required class="pb-input" data-i18n-placeholder="playbook.byRole.lead.placeholder" placeholder="you@company.com">
-                        <button type="submit" class="btn-primary whitespace-nowrap" data-cta="learn-more">
-                            <span data-i18n="playbook.byRole.lead.cta">Send me the use-case pack</span>
-                        </button>
-                    </form>
-                    <p id="usecase-confirm" class="form-confirm" hidden>
-                        <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span data-i18n="playbook.byRole.lead.confirm">Thanks. The use-case pack is on its way to your inbox.</span>
-                    </p>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -795,20 +771,5 @@
     </footer>
 
     <script src="js/main.js"></script>
-    <script>
-      // Use-case lead form: front-end confirmation only (no lead backend wired yet).
-      (function () {
-        var form = document.getElementById('usecase-form');
-        var confirmEl = document.getElementById('usecase-confirm');
-        if (!form || !confirmEl) return;
-        form.addEventListener('submit', function (e) {
-          e.preventDefault();
-          if (typeof form.reportValidity === 'function' && !form.reportValidity()) return;
-          console.warn('[usecase] No sender configured; showing confirmation only.');
-          confirmEl.hidden = false;
-          form.reset();
-        });
-      })();
-    </script>
 </body>
 </html>

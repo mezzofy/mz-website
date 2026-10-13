@@ -887,14 +887,6 @@
       }
     },
     "byRole": {
-      "lead": {
-        "title": "Want a deeper walkthrough of any of these?",
-        "desc": "Tell us where to send the full use-case pack, and we'll point you to the playbook that fits your model.",
-        "emailLabel": "Email address",
-        "placeholder": "you@company.com",
-        "cta": "Send me the use-case pack",
-        "confirm": "Thanks. The use-case pack is on its way to your inbox."
-      },
       "title": "Playbooks by role",
       "description": "See how merchants, buyers and integrators put Passes to work. More playbooks are on the way.",
       "loy": {
