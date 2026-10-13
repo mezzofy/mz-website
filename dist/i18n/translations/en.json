@@ -3765,7 +3765,8 @@
         "badge": "Merchants across 14 categories",
         "title": "Inventory your customers can actually use.",
         "subtitle": "Every Pass is validated before it reaches your app. No dead codes, no duplicate claims, no support tickets from customers turned away at a counter. Source it, distribute it, and swap whatever you do not use.",
-        "ctaTalk": "Talk to us"
+        "ctaTalk": "Talk to us",
+        "ctaAccess": "Access inventory"
       },
       "pass": {
         "issuerLabel": "Issuer",
