@@ -152,3 +152,7 @@ html[dir="rtl"] body,
 /* Custom component overrides */
 [dir="rtl"] .dropdown-menu { left: auto; right: 0; }
 [dir="rtl"] .mobile-dropdown-menu { padding-left: 0; padding-right: 1rem; }
+
+/* Balance the closing CTA band: the footer's pt-16 already adds space below,
+   so trim the band's own bottom padding across all pages with a closing section. */
+#closing .section-container { padding-bottom: 2rem; }
