@@ -1,5 +1,25 @@
 {
   "common": {
+    "signupModal": {
+      "title": "開始使用 Mezzofy",
+      "subtitle": "選擇最適合你的方式。",
+      "close": "關閉",
+      "seller": {
+        "tag": "商戶",
+        "title": "賣家",
+        "desc": "在交易所上架並銷售你的 Pass。"
+      },
+      "buyer": {
+        "tag": "企業",
+        "title": "買家",
+        "desc": "為你的顧客採購經驗證的 Pass 庫存。"
+      },
+      "partner": {
+        "tag": "企業",
+        "title": "合作夥伴",
+        "desc": "與我們整合、分銷或共同打造。聯絡我們的團隊。"
+      }
+    },
     "nav": {
       "solutions": "解決方案",
       "products": "產品",

@@ -1,5 +1,25 @@
 {
   "common": {
+    "signupModal": {
+      "title": "Get started with Mezzofy",
+      "subtitle": "Pick the path that fits you.",
+      "close": "Close",
+      "seller": {
+        "tag": "Merchant",
+        "title": "Seller",
+        "desc": "List and sell your Passes across the exchange."
+      },
+      "buyer": {
+        "tag": "Company",
+        "title": "Buyer",
+        "desc": "Source verified Pass inventory for your customers."
+      },
+      "partner": {
+        "tag": "Company",
+        "title": "Partner",
+        "desc": "Integrate, resell, or co-build with us. Talk to our team."
+      }
+    },
     "nav": {
       "solutions": "Solutions",
       "products": "Products",
