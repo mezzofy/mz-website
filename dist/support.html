@@ -124,6 +124,9 @@
         .pill-label { display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:0.66rem; letter-spacing:0.14em; text-transform:uppercase; color:#FF6B35; margin-bottom:10px; }
         .svc-card--accent { border-top:3px solid #FF6B35; }
         .email-band { background:#fff; border:1px solid rgba(26,26,26,0.10); border-radius:16px; padding:22px 28px; }
+        /* Pin role-card CTAs to the bottom so they align across uneven descriptions */
+        #reach .feature-card { display:flex; flex-direction:column; }
+        #reach .feature-card > a { margin-top:auto; }
         .btn-primary {
             background-color: #FF6B35;
             color: white;
@@ -765,7 +768,6 @@
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
                     <a href="contact.html" class="btn-primary w-full sm:w-auto text-center" data-cta="contact" data-i18n="support.footerCta.contactUs">Contact Support</a>
-                    <a href="https://mezzofy.freshdesk.com/support/home" target="_blank" rel="noopener" class="btn-secondary w-full sm:w-auto text-center bg-white/10 text-white border-white hover:bg-white/20" data-cta="learn-more" data-i18n="support.footerCta.viewDocs">View Documentation</a>
                 </div>
             </div>
 
