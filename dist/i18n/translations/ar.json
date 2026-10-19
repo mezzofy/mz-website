@@ -446,6 +446,7 @@
           "confirm": "شكرًا — ملف الدليل PDF في طريقه إلى بريدك الوارد."
         },
         "booking": {
+          "close": "إغلاق",
           "nameLabel": "اسمك",
           "namePlaceholder": "اسمك الكامل",
           "nameError": "يُرجى إدخال اسمك.",

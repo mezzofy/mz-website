@@ -452,6 +452,7 @@
           "confirm": "谢谢 — 实战手册 PDF 正在发送至您的邮箱。"
         },
         "booking": {
+          "close": "关闭",
           "nameLabel": "你的姓名",
           "namePlaceholder": "你的全名",
           "nameError": "请输入你的姓名。",

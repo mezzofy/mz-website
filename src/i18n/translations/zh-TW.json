@@ -446,6 +446,7 @@
           "confirm": "謝謝 — 實戰手冊 PDF 正寄往您的收件匣。"
         },
         "booking": {
+          "close": "關閉",
           "nameLabel": "你的姓名",
           "namePlaceholder": "你的全名",
           "nameError": "請輸入你的姓名。",

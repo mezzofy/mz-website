@@ -446,6 +446,7 @@
           "confirm": "Thanks — the playbook PDF is on its way to your inbox."
         },
         "booking": {
+          "close": "Close",
           "nameLabel": "Your name",
           "namePlaceholder": "Your full name",
           "nameError": "Please enter your name.",

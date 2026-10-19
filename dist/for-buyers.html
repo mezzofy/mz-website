@@ -276,6 +276,27 @@
         .step-num { display:inline-flex; align-items:center; justify-content:center; width:32px; height:32px; border-radius:50%; background:rgba(255,107,53,0.12); color:#FF6B35; font-family:'IBM Plex Mono',monospace; font-weight:700; margin-bottom:12px; }
         .step-card h3 { font-size:1rem; font-weight:700; color:#1a1a1a; margin-bottom:8px; }
         .step-card p { font-size:0.9rem; color:#4a4a4a; }
+        /* Booking modal (ports the homepage booking form) */
+        button.btn-primary, button.btn-secondary { border:0; cursor:pointer; font:inherit; }
+        .v2-input { width:100%; border:1px solid rgba(26,26,26,0.18); border-radius:8px; padding:11px 14px; font-size:0.95rem; color:#1a1a1a; background:#fff; }
+        .v2-input:focus { outline:none; border-color:#FF6B35; box-shadow:0 0 0 3px rgba(255,107,53,0.15); }
+        .slot-btn { border:1px solid rgba(26,26,26,0.16); background:#fff; color:#4a4a4a; border-radius:8px; padding:8px 12px; font-size:0.85rem; cursor:pointer; transition:border-color .18s, color .18s, background .18s; }
+        .slot-btn:hover { border-color:#FF6B35; color:#1a1a1a; }
+        .slot-btn.selected { background:#FF6B35; border-color:#FF6B35; color:#fff; }
+        .slot-btn:active { transform:scale(0.97); }
+        .booking-dialog { width:min(540px, calc(100vw - 32px)); max-height:min(88vh, 760px); border:0; border-radius:16px; padding:0; color:#1a1a1a; background:#fff; box-shadow:0 30px 60px -20px rgba(0,0,0,0.45); display:flex; flex-direction:column; overflow:hidden; }
+        .booking-dialog::backdrop { background:rgba(26,26,26,0.55); }
+        .booking-dialog__body { padding:28px; overflow-y:auto; }
+        .booking-close { position:absolute; top:12px; right:12px; width:44px; height:44px; display:inline-flex; align-items:center; justify-content:center; border:0; border-radius:10px; background:#f5f5f5; color:#4a4a4a; cursor:pointer; transition:background .18s, color .18s; }
+        .booking-close:hover { background:#ececec; color:#1a1a1a; }
+        .booking-close:focus-visible { outline:2px solid #FF6B35; outline-offset:2px; }
+        [dir="rtl"] .booking-close { right:auto; left:14px; }
+        @media (prefers-reduced-motion: no-preference) {
+          .booking-dialog[open] { animation:bk-in .22s cubic-bezier(0.23,1,0.32,1); }
+          .booking-dialog[open]::backdrop { animation:bk-fade .22s ease-out; }
+        }
+        @keyframes bk-in { from { opacity:0; transform:translateY(8px) scale(0.97); } to { opacity:1; transform:none; } }
+        @keyframes bk-fade { from { opacity:0; } to { opacity:1; } }
     </style>
 
     <!-- Favicon -->
@@ -727,7 +748,7 @@
             <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-5" data-i18n="buyers.v2.closing.title">Bring a programme. We will size it.</h2>
             <p class="text-lg sm:text-xl text-orange-200 max-w-3xl mx-auto mb-10" data-i18n="buyers.v2.closing.description">An hour with your numbers and ours. No deck.</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="contact.html" class="btn-primary inline-block" data-cta="contact"><span data-i18n="buyers.v2.closing.ctaBook">Book an hour</span></a>
+                <button type="button" id="booking-open" class="btn-primary inline-block" data-cta="contact"><span data-i18n="buyers.v2.closing.ctaBook">Book an hour</span></button>
                 <a href="contact.html" class="btn-secondary inline-block bg-white/10 text-white border-white hover:bg-white/20" data-cta="contact"><span data-i18n="buyers.v2.closing.ctaTalk">Talk to us</span></a>
             </div>
         </div>
@@ -810,6 +831,70 @@
         </div>
     </footer>
 
+    <!-- Booking modal — same fields + /booking API as the homepage booking form -->
+    <dialog id="booking-modal" class="booking-dialog" aria-labelledby="booking-modal-title">
+        <button type="button" id="booking-close" class="booking-close">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            <span class="sr-only" data-i18n="home.v2.takeFurther.booking.close">Close</span>
+        </button>
+        <div class="booking-dialog__body">
+            <h3 id="booking-modal-title" class="text-xl md:text-2xl font-bold text-primary-black mb-2" data-i18n="home.v2.takeFurther.booking.title">Book an hour with us</h3>
+            <p class="text-dark-grey mb-6" data-i18n="home.v2.takeFurther.booking.description">A working session rather than a pitch. Bring your numbers and we will show you what the exchange would do with them.</p>
+            <form id="booking-form" class="space-y-4" novalidate>
+                <!-- Anti-spam: honeypots + load timestamp (backend validates 3s–3600s age) -->
+                <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+                <input type="text" id="booking-website" name="website" style="display:none" tabindex="-1" autocomplete="off">
+                <input type="hidden" id="booking-ts" name="_ts" value="">
+                <input type="hidden" id="booking-slot-value" name="slot" value="">
+
+                <div class="grid sm:grid-cols-2 gap-3">
+                    <div>
+                        <label for="booking-name" class="block text-sm font-semibold text-primary-black mb-2" data-i18n="home.v2.takeFurther.booking.nameLabel">Your name</label>
+                        <input id="booking-name" type="text" required class="v2-input" data-i18n-placeholder="home.v2.takeFurther.booking.namePlaceholder" placeholder="Your full name">
+                        <p class="hidden mt-1 text-sm text-red-500" data-error="booking-name" data-i18n="home.v2.takeFurther.booking.nameError">Please enter your name.</p>
+                    </div>
+                    <div>
+                        <label for="booking-email" class="block text-sm font-semibold text-primary-black mb-2" data-i18n="home.v2.takeFurther.booking.emailLabel">Email address</label>
+                        <input id="booking-email" type="email" required class="v2-input" data-i18n-placeholder="home.v2.takeFurther.booking.emailPlaceholder" placeholder="you@company.com">
+                        <p class="hidden mt-1 text-sm text-red-500" data-error="booking-email" data-i18n="home.v2.takeFurther.booking.emailError">Please enter a valid email.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="booking-date" class="block text-sm font-semibold text-primary-black mb-2" data-i18n="home.v2.takeFurther.booking.dateLabel">Choose a date</label>
+                    <input id="booking-date" type="date" required class="v2-input">
+                    <p class="hidden mt-1 text-sm text-red-500" data-error="booking-date" data-i18n="home.v2.takeFurther.booking.dateError">Please choose a date.</p>
+                </div>
+
+                <div>
+                    <span class="block text-sm font-semibold text-primary-black mb-2" data-i18n="home.v2.takeFurther.booking.slotLabel">Pick a slot</span>
+                    <div class="flex flex-wrap gap-2" role="group" aria-label="Available time slots">
+                        <button type="button" class="slot-btn" data-slot="1" data-i18n="home.v2.takeFurther.booking.slot1">9:00–10:00</button>
+                        <button type="button" class="slot-btn" data-slot="2" data-i18n="home.v2.takeFurther.booking.slot2">10:00–11:00</button>
+                        <button type="button" class="slot-btn" data-slot="3" data-i18n="home.v2.takeFurther.booking.slot3">11:00–12:00</button>
+                        <button type="button" class="slot-btn" data-slot="4" data-i18n="home.v2.takeFurther.booking.slot4">2:00–3:00</button>
+                        <button type="button" class="slot-btn" data-slot="5" data-i18n="home.v2.takeFurther.booking.slot5">3:00–4:00</button>
+                        <button type="button" class="slot-btn" data-slot="6" data-i18n="home.v2.takeFurther.booking.slot6">4:00–5:00</button>
+                    </div>
+                    <p class="text-sm text-medium-grey mt-2" data-i18n="home.v2.takeFurther.booking.slotsNote">Monday to Friday. One-hour blocks.</p>
+                    <p class="hidden mt-1 text-sm text-red-500" data-error="booking-slot" data-i18n="home.v2.takeFurther.booking.slotError">Please pick a time slot.</p>
+                </div>
+
+                <button id="booking-submit-btn" type="submit" class="btn-primary w-full sm:w-auto whitespace-nowrap disabled:opacity-60 disabled:cursor-not-allowed" data-cta="contact">
+                    <span data-i18n="home.v2.takeFurther.booking.cta">Book the slot</span>
+                </button>
+            </form>
+            <div id="booking-success" class="hidden mt-4 p-4 bg-green-50 border border-green-200 rounded-lg text-sm text-green-800 flex items-start gap-2">
+                <svg class="w-5 h-5 shrink-0 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <span data-i18n="home.v2.takeFurther.booking.success">Booked. We will send a calendar invite to your email.</span>
+            </div>
+            <div id="booking-error" class="hidden mt-4 p-4 bg-red-50 border border-red-200 rounded-lg text-sm text-red-800 flex items-start gap-2">
+                <svg class="w-5 h-5 shrink-0 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.539-1.333-3.308 0L3.732 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                <span data-i18n="home.v2.takeFurther.booking.error">Something went wrong. Please try again, or email hello@mezzofy.com.</span>
+            </div>
+        </div>
+    </dialog>
+
     <script src="js/main.js"></script>
     <!-- For Buyers v2: front-end-only commitment model (post nowhere) -->
     <script>
@@ -854,6 +939,139 @@
           if ($('b-pool-terms')) $('b-pool-terms').textContent = 'Passes, avg $' + face + '. Dining, Singapore.';
         }
         recalc();
+      })();
+    </script>
+
+    <!-- Booking modal: open/close + submit to the MZ-AI-ASSISTANT "Booking Form" -->
+    <script>
+      // Dialog open/close
+      (function () {
+        var dlg = document.getElementById('booking-modal');
+        var openBtn = document.getElementById('booking-open');
+        var closeBtn = document.getElementById('booking-close');
+        if (!dlg || !openBtn) return;
+        function resetState() {
+          var f = document.getElementById('booking-form'); if (f) f.reset();
+          var sv = document.getElementById('booking-slot-value'); if (sv) sv.value = '';
+          dlg.querySelectorAll('.slot-btn').forEach(function (b) { b.classList.remove('selected'); });
+          dlg.querySelectorAll('[data-error]').forEach(function (e) { e.classList.add('hidden'); });
+          var ok = document.getElementById('booking-success'); if (ok) ok.classList.add('hidden');
+          var er = document.getElementById('booking-error'); if (er) er.classList.add('hidden');
+          var ts = document.getElementById('booking-ts'); if (ts) ts.value = String(Date.now());
+        }
+        openBtn.addEventListener('click', function () {
+          resetState();
+          if (typeof dlg.showModal === 'function') { dlg.showModal(); } else { dlg.setAttribute('open', ''); }
+        });
+        if (closeBtn) closeBtn.addEventListener('click', function () { dlg.close(); });
+        // Click on the backdrop (outside the body) closes the dialog
+        dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
+      })();
+
+      // Booking form submit — mirrors the homepage booking form (contact-form pattern)
+      (function () {
+        var BOOKING_ENDPOINT = 'https://assistant.mezzofy.com/booking';
+        var bForm   = document.getElementById('booking-form');
+        if (!bForm) return;
+        var bName   = document.getElementById('booking-name');
+        var bEmail  = document.getElementById('booking-email');
+        var bDate   = document.getElementById('booking-date');
+        var bSlotEl = document.getElementById('booking-slot-value');
+        var bBtn    = document.getElementById('booking-submit-btn');
+        var bOk     = document.getElementById('booking-success');
+        var bErr    = document.getElementById('booking-error');
+        var bTs     = document.getElementById('booking-ts');
+        if (bTs) bTs.value = String(Date.now());
+
+        var slotButtons = bForm.querySelectorAll('.slot-btn');
+        for (var i = 0; i < slotButtons.length; i++) {
+          slotButtons[i].addEventListener('click', function () {
+            for (var j = 0; j < slotButtons.length; j++) slotButtons[j].classList.remove('selected');
+            this.classList.add('selected');
+            if (bSlotEl) bSlotEl.value = (this.textContent || '').trim();
+            showBookingError('booking-slot', false);
+          });
+        }
+
+        function showBookingError(name, show) {
+          var el = bForm.querySelector('[data-error="' + name + '"]');
+          if (el) el.classList.toggle('hidden', !show);
+        }
+
+        function validateBooking() {
+          var ok = true;
+          var nameVal = (bName.value || '').trim();
+          showBookingError('booking-name', !nameVal); if (!nameVal) ok = false;
+          var emailVal = (bEmail.value || '').trim();
+          var emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailVal);
+          showBookingError('booking-email', !emailOk); if (!emailOk) ok = false;
+          var dateVal = (bDate.value || '').trim();
+          showBookingError('booking-date', !dateVal); if (!dateVal) ok = false;
+          var slotVal = (bSlotEl.value || '').trim();
+          showBookingError('booking-slot', !slotVal); if (!slotVal) ok = false;
+          return ok;
+        }
+
+        [bName, bEmail, bDate].forEach(function (el) {
+          if (el) el.addEventListener('input', function () { showBookingError(el.id, false); });
+        });
+
+        bForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+          bOk.classList.add('hidden');
+          bErr.classList.add('hidden');
+          if (!validateBooking()) return;
+
+          var payload = {
+            name   : (bName.value  || '').trim(),
+            email  : (bEmail.value || '').trim(),
+            date   : (bDate.value  || '').trim(),
+            slot   : (bSlotEl.value || '').trim(),
+            form   : 'booking',
+            _gotcha : (bForm.querySelector('[name="_gotcha"]').value || ''),
+            website : (bForm.querySelector('[name="website"]').value || ''),
+            _ts     : (bTs && bTs.value) || ''
+          };
+
+          var labelSpan = bBtn.querySelector('span');
+          var original = labelSpan ? labelSpan.textContent : bBtn.textContent;
+          var sendingText = 'Sending…';
+          try {
+            if (window.i18n && typeof window.i18n.getTranslation === 'function') {
+              var s = window.i18n.getTranslation('home.v2.takeFurther.booking.sending');
+              if (s && s.indexOf('home.v2') !== 0) sendingText = s;
+            }
+          } catch (err) {}
+          bBtn.disabled = true;
+          if (labelSpan) { labelSpan.textContent = sendingText; } else { bBtn.textContent = sendingText; }
+
+          fetch(BOOKING_ENDPOINT, {
+            method : 'POST',
+            body   : JSON.stringify(payload),
+            headers: { 'Content-Type': 'application/json' }
+          })
+          .then(function (res) {
+            return res.json().then(function (json) {
+              if (res.ok && json.ok) {
+                bForm.reset();
+                if (bSlotEl) bSlotEl.value = '';
+                for (var k = 0; k < slotButtons.length; k++) slotButtons[k].classList.remove('selected');
+                bOk.classList.remove('hidden');
+                bOk.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+              } else {
+                throw new Error(json.error || 'Server error');
+              }
+            });
+          })
+          .catch(function () {
+            bErr.classList.remove('hidden');
+            bErr.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          })
+          .finally(function () {
+            bBtn.disabled = false;
+            if (labelSpan) { labelSpan.textContent = original; } else { bBtn.textContent = original; }
+          });
+        });
       })();
     </script>
 </body>
