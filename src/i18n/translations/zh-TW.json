@@ -3051,36 +3051,42 @@
     },
     "hero": {
       "title": "全天候為您提供協助 — <span class=\"text-primary-orange\">24/7</span>",
-      "subtitle": "<span class=\"text-primary-orange font-semibold\">專屬支援</span>服務商、經銷商、合作夥伴及 Mezzofy 平台上的終端用戶。我們的團隊全天候待命，確保您的<span class=\"text-primary-orange font-semibold\">業務不間斷</span>。",
-      "ctaMerchant": "商家入口",
-      "ctaPartner": "經銷商入口"
+      "subtitle": "為 Mezzofy 交易所上的賣家、買家、整合商與終端用戶提供<span class=\"text-primary-orange font-semibold\">專屬支援</span>。我們的團隊全天候待命，讓你的<span class=\"text-primary-orange font-semibold\">業務不停歇</span>。",
+      "ctaMerchant": "賣家入口",
+      "ctaPartner": "買家入口"
     },
     "reach": {
+      "integrator": {
+        "badge": "給整合商",
+        "title": "整合商支援",
+        "desc": "正在串接交易所 API（POS、忠誠、市集）嗎？聯絡我們的整合團隊取得金鑰、沙盒存取、webhook 與認證協助。",
+        "cta": "聯絡整合團隊"
+      },
       "title": "如何聯繫我們",
       "description": "選擇最適合您在 Mezzofy 平台角色的支援管道。",
       "merchant": {
-        "badge": "商家專用",
-        "title": "商家入口",
-        "desc": "供應端客戶可直接透過商家入口提交並追蹤支援請求，存取工單系統及說明文件。",
-        "cta": "存取商家入口"
+        "badge": "給賣家",
+        "title": "賣家入口",
+        "desc": "在交易所銷售的商戶可在賣家入口提交與追蹤支援工單、取得文件並處理核銷問題。",
+        "cta": "開啟賣家入口"
       },
       "partner": {
-        "badge": "經銷商專用",
-        "title": "經銷商入口",
-        "desc": "經銷商可透過經銷商入口管理支援請求、查看 SLA、追蹤庫存問題及升級工單。",
-        "cta": "存取經銷商入口"
+        "badge": "給買家",
+        "title": "買家入口",
+        "desc": "從庫存池採購的買家可在買家入口管理支援請求、檢視 SLA、追蹤庫存與分發並升級工單。",
+        "cta": "開啟買家入口"
       },
       "email": {
         "title": "電子郵件支援",
-        "desc": "適用於需要協助兌換 Pass、Vault 問題或一般查詢的消費者及終端用戶。",
-        "cta": "電子郵件支援"
+        "desc": "供終端用戶與一般查詢：Pass 核銷、Vault 問題或其他任何事宜。我們會以 support@mezzofy.com 回覆。",
+        "cta": "寄信至 support@mezzofy.com"
       }
     },
     "audience": {
       "title": "按受眾分類的支援",
       "description": "按用戶類型整理的常見問題及處理方式。",
       "supply": {
-        "title": "供應客戶（商家）",
+        "title": "賣家（商戶）",
         "issue1": "Pass 無法啟用或顯示不正確",
         "issue2": "NFC 標籤設定和配置問題",
         "issue3": "兌換數據差異或報表錯誤",
@@ -3089,7 +3095,7 @@
         "note": "提交工單前，請先檢查您的商店網路和設備配置。"
       },
       "demand": {
-        "title": "需求客戶（經銷商及合作夥伴）",
+        "title": "買家與整合商",
         "issue1": "市場存取或庫存同步問題",
         "issue2": "Bridge API 身份驗證或速率限制錯誤",
         "issue3": "錢包白標配置問題",
@@ -3121,7 +3127,7 @@
       "description": "提交支援請求後的處理步驟。",
       "step1": {
         "title": "提交",
-        "desc": "透過商家入口、經銷商入口或電子郵件提交請求。請附上您的帳號 ID、清晰的問題描述及任何截圖或日誌。"
+        "desc": "透過賣家入口、買家入口或電子郵件提交你的請求。請附上帳戶 ID、清楚的描述，以及任何截圖或紀錄。"
       },
       "step2": {
         "title": "確認",

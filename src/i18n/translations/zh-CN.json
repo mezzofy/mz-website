@@ -3058,36 +3058,42 @@
     },
     "hero": {
       "title": "全天候为您提供帮助 — <span class=\"text-primary-orange\">24/7</span>",
-      "subtitle": "<span class=\"text-primary-orange font-semibold\">专属支持</span>服务商、经销商、合作伙伴及 Mezzofy 平台上的终端用户。我们的团队全天候待命，确保您的<span class=\"text-primary-orange font-semibold\">业务不间断</span>。",
-      "ctaMerchant": "商家入口",
-      "ctaPartner": "经销商入口"
+      "subtitle": "为 Mezzofy 交易所上的卖家、买家、集成商与终端用户提供<span class=\"text-primary-orange font-semibold\">专属支持</span>。我们的团队全天候待命，让你的<span class=\"text-primary-orange font-semibold\">业务不停歇</span>。",
+      "ctaMerchant": "卖家入口",
+      "ctaPartner": "买家入口"
     },
     "reach": {
+      "integrator": {
+        "badge": "给集成商",
+        "title": "集成商支持",
+        "desc": "正在对接交易所 API（POS、忠诚、市集）吗？联系我们的集成团队获取密钥、沙盒访问、webhook 与认证协助。",
+        "cta": "联系集成团队"
+      },
       "title": "如何联系我们",
       "description": "选择最适合您在 Mezzofy 平台角色的支持渠道。",
       "merchant": {
-        "badge": "商家专用",
-        "title": "商家入口",
-        "desc": "供应端客户可直接通过商家入口提交并跟踪支持请求，访问工单系统及帮助文档。",
-        "cta": "访问商家入口"
+        "badge": "给卖家",
+        "title": "卖家入口",
+        "desc": "在交易所销售的商户可在卖家入口提交与跟踪支持工单、获取文档并处理核销问题。",
+        "cta": "打开卖家入口"
       },
       "partner": {
-        "badge": "经销商专用",
-        "title": "经销商入口",
-        "desc": "经销商可通过经销商入口管理支持请求、查看 SLA、跟踪库存问题及升级工单。",
-        "cta": "访问经销商入口"
+        "badge": "给买家",
+        "title": "买家入口",
+        "desc": "从库存池采购的买家可在买家入口管理支持请求、查看 SLA、跟踪库存与分发并升级工单。",
+        "cta": "打开买家入口"
       },
       "email": {
         "title": "电子邮件支持",
-        "desc": "适用于需要协助兑换 Pass、Vault 问题或一般咨询的消费者及终端用户。",
-        "cta": "电子邮件支持"
+        "desc": "供终端用户与一般咨询：Pass 核销、Vault 问题或其他任何事宜。我们会以 support@mezzofy.com 回复。",
+        "cta": "发送邮件至 support@mezzofy.com"
       }
     },
     "audience": {
       "title": "按受众分类的支持",
       "description": "按用户类型整理的常见问题及处理方式。",
       "supply": {
-        "title": "供应客户（商家）",
+        "title": "卖家（商户）",
         "issue1": "Pass 无法激活或显示不正确",
         "issue2": "NFC 标签设置和配置问题",
         "issue3": "兑换数据差异或报表错误",
@@ -3096,7 +3102,7 @@
         "note": "提交工单前，请先检查您的商店网络和设备配置。"
       },
       "demand": {
-        "title": "需求客户（经销商及合作伙伴）",
+        "title": "买家与集成商",
         "issue1": "市场访问或库存同步问题",
         "issue2": "Bridge API 身份验证或速率限制错误",
         "issue3": "钱包白标配置问题",
@@ -3128,7 +3134,7 @@
       "description": "提交支持请求后的处理步骤。",
       "step1": {
         "title": "提交",
-        "desc": "通过商家入口、经销商入口或电子邮件提交请求。请附上您的账号 ID、清晰的问题描述及任何截图或日志。"
+        "desc": "通过卖家入口、买家入口或电子邮件提交你的请求。请附上账户 ID、清晰的描述，以及任何截图或日志。"
       },
       "step2": {
         "title": "确认",
