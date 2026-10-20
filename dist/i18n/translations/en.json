@@ -4051,6 +4051,12 @@
   },
   "products": {
     "v2": {
+      "marketplace": {
+        "label": "The exchange",
+        "title": "Marketplace",
+        "desc": "Where live, verified Pass inventory is listed once and discovered across B2B, B2C and C2C, tokenised and settled automatically.",
+        "link": "Explore Marketplace"
+      },
       "faq": {
         "q3": {
           "question": "Do I need all five products?",
@@ -4071,7 +4077,7 @@
         }
       },
       "hero": {
-        "badge": "Five products, one guarantee",
+        "badge": "Six products, one guarantee",
         "title": "Everything the exchange runs on.",
         "subtitle": "Each product does one job. Together they take an offer from creation to the moment it is consumed at a counter, with the same guarantee the whole way."
       },
