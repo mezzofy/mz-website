@@ -4059,7 +4059,7 @@
       },
       "faq": {
         "q3": {
-          "question": "Do I need all five products?",
+          "question": "Do I need all six products?",
           "answer": "No. Each works on its own; most merchants start with the Management System or AI Pass and add the others as they grow."
         },
         "q2": {
@@ -4068,7 +4068,7 @@
         },
         "q1": {
           "question": "What products does the Mezzofy exchange include?",
-          "answer": "Five: Pass (the tokenized offer standard), Vault (the consumer app that holds them), AI Pass (creates offers automatically), NFC Pass (tap-to-redeem), and the Management System (enterprise CaaS)."
+          "answer": "Six: Pass (the tokenized offer standard), Vault (the consumer app that holds them), AI Pass (creates offers automatically), NFC Pass (tap-to-redeem), the Management System (enterprise CaaS), and Marketplace (where inventory is listed and discovered)."
         },
         "title": "Frequently Asked Questions",
         "q4": {
