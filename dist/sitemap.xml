@@ -4,14 +4,15 @@
 
   <!-- Core Pages -->
   <url>
-    <loc>https://mezzofy.com/index.html</loc>
-    <lastmod>2026-04-10</lastmod>
+    <loc>https://mezzofy.com/</loc>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/index.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/index.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/index.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/"/>
   </url>
   <url>
     <loc>https://mezzofy.com/about.html</loc>
@@ -21,6 +22,7 @@
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/about.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/about.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/about.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/about.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/about.html"/>
   </url>
   <url>
@@ -31,58 +33,64 @@
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/contact.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/contact.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/contact.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/contact.html"/>
   </url>
 
   <!-- Solutions Pages -->
   <url>
     <loc>https://mezzofy.com/for-merchants.html</loc>
-    <lastmod>2026-04-10</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/for-merchants.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/for-merchants.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/for-merchants.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/for-merchants.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/for-merchants.html"/>
   </url>
   <url>
     <loc>https://mezzofy.com/for-buyers.html</loc>
-    <lastmod>2026-04-10</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/for-buyers.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/for-buyers.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/for-buyers.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/for-buyers.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/for-buyers.html"/>
   </url>
   <url>
     <loc>https://mezzofy.com/for-integrators.html</loc>
-    <lastmod>2026-04-10</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/for-integrators.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/for-integrators.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/for-integrators.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/for-integrators.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/for-integrators.html"/>
   </url>
   <url>
     <loc>https://mezzofy.com/products.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/products.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/products.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/products.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/products.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/products.html"/>
   </url>
   <url>
     <loc>https://mezzofy.com/ai-pass.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/ai-pass.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/ai-pass.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/ai-pass.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/ai-pass.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/ai-pass.html"/>
   </url>
   <url>
@@ -93,68 +101,75 @@
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/for-ai-commerce.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/for-ai-commerce.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/for-ai-commerce.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/for-ai-commerce.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/for-ai-commerce.html"/>
   </url>
 
   <!-- Product Pages -->
   <url>
     <loc>https://mezzofy.com/management.html</loc>
-    <lastmod>2026-04-10</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/management.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/management.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/management.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/management.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/management.html"/>
   </url>
   <url>
     <loc>https://mezzofy.com/marketplace.html</loc>
-    <lastmod>2026-04-10</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/marketplace.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/marketplace.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/marketplace.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/marketplace.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/marketplace.html"/>
   </url>
   <url>
     <loc>https://mezzofy.com/nfc-pass.html</loc>
-    <lastmod>2026-04-10</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/nfc-pass.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/nfc-pass.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/nfc-pass.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/nfc-pass.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/nfc-pass.html"/>
   </url>
   <url>
     <loc>https://mezzofy.com/vault.html</loc>
-    <lastmod>2026-04-10</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/vault.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/vault.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/vault.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/vault.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/vault.html"/>
   </url>
   <url>
     <loc>https://mezzofy.com/pass-playbook.html</loc>
-    <lastmod>2026-04-10</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/pass-playbook.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/pass-playbook.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/pass-playbook.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/pass-playbook.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/pass-playbook.html"/>
   </url>
   <url>
     <loc>https://mezzofy.com/pass.html</loc>
-    <lastmod>2026-04-10</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/pass.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/pass.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/pass.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/pass.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/pass.html"/>
   </url>
 
@@ -162,12 +177,13 @@
 <!-- Status Page -->
   <url>
     <loc>https://mezzofy.com/status.html</loc>
-    <lastmod>2026-04-10</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/status.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/status.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/status.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/status.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/status.html"/>
   </url>
 
@@ -180,6 +196,7 @@
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/investors.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/investors.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/investors.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/investors.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/investors.html"/>
   </url>
   <url>
@@ -190,6 +207,7 @@
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/news-blogs.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/news-blogs.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/news-blogs.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/news-blogs.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/news-blogs.html"/>
   </url>
   <url>
@@ -200,16 +218,18 @@
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/nfc-user-guide.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/nfc-user-guide.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/nfc-user-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/nfc-user-guide.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/nfc-user-guide.html"/>
   </url>
   <url>
     <loc>https://mezzofy.com/support.html</loc>
-    <lastmod>2026-04-10</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/support.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/support.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/support.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/support.html"/>
   </url>
 
@@ -222,6 +242,7 @@
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/blog/e-coupons-preference.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/blog/e-coupons-preference.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/blog/e-coupons-preference.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/blog/e-coupons-preference.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/blog/e-coupons-preference.html"/>
   </url>
   <url>
@@ -232,6 +253,7 @@
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/blog/environmental-excellence.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/blog/environmental-excellence.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/blog/environmental-excellence.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/blog/environmental-excellence.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/blog/environmental-excellence.html"/>
   </url>
   <url>
@@ -242,6 +264,7 @@
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/blog/holiday-guide.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/blog/holiday-guide.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/blog/holiday-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/blog/holiday-guide.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/blog/holiday-guide.html"/>
   </url>
   <url>
@@ -252,6 +275,7 @@
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/blog/hotel-tech-innovation.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/blog/hotel-tech-innovation.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/blog/hotel-tech-innovation.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/blog/hotel-tech-innovation.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/blog/hotel-tech-innovation.html"/>
   </url>
   <url>
@@ -262,6 +286,7 @@
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/blog/nfc-parknshop.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/blog/nfc-parknshop.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/blog/nfc-parknshop.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/blog/nfc-parknshop.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/blog/nfc-parknshop.html"/>
   </url>
   <url>
@@ -272,6 +297,7 @@
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/blog/smart-retail.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/blog/smart-retail.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/blog/smart-retail.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/blog/smart-retail.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/blog/smart-retail.html"/>
   </url>
 
@@ -284,6 +310,7 @@
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/news/cioworld-feature.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/news/cioworld-feature.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/news/cioworld-feature.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/news/cioworld-feature.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/news/cioworld-feature.html"/>
   </url>
   <url>
@@ -294,6 +321,7 @@
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/news/dual-esg-awards.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/news/dual-esg-awards.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/news/dual-esg-awards.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/news/dual-esg-awards.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/news/dual-esg-awards.html"/>
   </url>
   <url>
@@ -304,6 +332,7 @@
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/news/edigest-leading-solution.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/news/edigest-leading-solution.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/news/edigest-leading-solution.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/news/edigest-leading-solution.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/news/edigest-leading-solution.html"/>
   </url>
   <url>
@@ -314,6 +343,7 @@
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/news/ejtech-300m-coupons.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/news/ejtech-300m-coupons.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/news/ejtech-300m-coupons.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/news/ejtech-300m-coupons.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/news/ejtech-300m-coupons.html"/>
   </url>
   <url>
@@ -324,6 +354,7 @@
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/news/forbes-dicky-yin.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/news/forbes-dicky-yin.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/news/forbes-dicky-yin.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/news/forbes-dicky-yin.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/news/forbes-dicky-yin.html"/>
   </url>
   <url>
@@ -334,6 +365,7 @@
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/news/funding-announcement.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/news/funding-announcement.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/news/funding-announcement.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/news/funding-announcement.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/news/funding-announcement.html"/>
   </url>
   <url>
@@ -344,6 +376,7 @@
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/news/techapple-innovation-index.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/news/techapple-innovation-index.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/news/techapple-innovation-index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/news/techapple-innovation-index.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/news/techapple-innovation-index.html"/>
   </url>
   <url>
@@ -354,6 +387,7 @@
     <xhtml:link rel="alternate" hreflang="en"      href="https://mezzofy.com/news/treasure-global-partnership.html"/>
     <xhtml:link rel="alternate" hreflang="zh-TW"   href="https://mezzofy.com/news/treasure-global-partnership.html"/>
     <xhtml:link rel="alternate" hreflang="zh-CN"   href="https://mezzofy.com/news/treasure-global-partnership.html"/>
+    <xhtml:link rel="alternate" hreflang="ar"     href="https://mezzofy.com/news/treasure-global-partnership.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mezzofy.com/news/treasure-global-partnership.html"/>
   </url>
 

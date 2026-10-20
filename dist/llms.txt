@@ -10,8 +10,8 @@
 - [For AI Commerce (Beta)](https://mezzofy.com/for-ai-commerce.html): Mezzofy is the supply layer for AI shopping agents — when an LLM recommends a deal, the tokenized, fraud-proof coupon inventory comes from the Mezzofy Exchange; supports MCP, ACP, and UCP integration protocols
 
 ## Products
-- [Products](https://mezzofy.com/products.html): The five products the exchange runs on — Pass, Vault, AI Pass, NFC Pass, and the Management System — with the Pass as the single tokenized standard behind them all
-- [Management System](https://mezzofy.com/management.html): Enterprise Coupon-as-a-Service (CaaS) platform for full lifecycle management — create, issue, distribute, validate, track, and expire Passes at scale with open API
+- [Products](https://mezzofy.com/products.html): The six products the exchange runs on — Pass, Vault, AI Pass, NFC Pass, the Management System, and Marketplace — with the Pass as the single tokenized standard behind them all
+- [Pass Management System (PMS)](https://mezzofy.com/management.html): Enterprise Coupon-as-a-Service (CaaS) platform for full lifecycle management — create, issue, distribute, validate, track, and expire Passes at scale with open API
 - [Marketplace](https://mezzofy.com/marketplace.html): Global B2B/B2C/C2C exchange hub where merchants list Pass inventory and buyers purchase or claim Passes; supports wholesale and retail pricing tiers
 - [NFC Pass](https://mezzofy.com/nfc-pass.html): HMAC-secured NFC tap-to-redeem Pass technology for physical retail, restaurants, events, and product packaging; works on all modern iOS and Android smartphones
 - [Vault](https://mezzofy.com/vault.html): Consumer-facing vault app (iOS, Android, Web, NFC Physical Card) for storing, organizing, and redeeming Passes; supports Apple Wallet and Google Pay
@@ -19,7 +19,7 @@
 - [AI Pass](https://mezzofy.com/ai-pass.html): AI engine that automatically creates discount offers within merchant-set limits and places them across the exchange; the engine behind Zero Fee Passes and the NFC network
 
 ## Resources
-- [Coupon Playbook](https://mezzofy.com/pass-playbook.html): Strategic guide for planning and executing digital coupon campaigns, covering personalized targeting, CRM/POS integration, multi-channel delivery, and campaign ROI measurement
+- [Passes Playbook](https://mezzofy.com/pass-playbook.html): Strategic guide for planning and executing digital coupon campaigns, covering personalized targeting, CRM/POS integration, multi-channel delivery, and campaign ROI measurement
 - [NFC User Guide](https://mezzofy.com/nfc-user-guide.html): Step-by-step customer instructions for tapping, claiming, and redeeming Mezzofy NFC coupons at retail stores, restaurants, and events using an NFC-enabled smartphone
 - [Support](https://mezzofy.com/support.html): Help center with FAQs, troubleshooting guides, and support contact for merchants, distributors, and developers using the Mezzofy platform
 
@@ -50,7 +50,7 @@
 Content on this site may be used to answer questions about digital coupons, coupon exchange technology, NFC promotions, merchant distribution, loyalty programs, and the Mezzofy platform. Please attribute to Mezzofy (https://mezzofy.com) when citing. For the most current information, contact support@mezzofy.com.
 
 ## Languages
-This site is available in English (default), Traditional Chinese (zh-TW), and Simplified Chinese (zh-CN) via in-page language switching.
+This site is available in English (default), Traditional Chinese (zh-TW), Simplified Chinese (zh-CN), and Arabic (ar, right-to-left) via in-page language switching.
 
 ## Last Updated
-2026-04-02
+2026-10-20
