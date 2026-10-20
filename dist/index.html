@@ -296,6 +296,16 @@
             padding:4px 10px; transform:rotate(-8deg); opacity:0.92;
         }
         .pass-stamp--sample { color:#808080; border-color:#808080; }
+        .pass-stamp--sold { color:#1a7a3d; border-color:#1a7a3d; }
+        .pass-stamp--muted { color:#808080; border-color:#808080; }
+        /* Pass type explorer (ported from pass.html) */
+        .type-chip:hover { border-color:#FF6B35; color:#1a1a1a; }
+        .type-chip.selected { background:#FF6B35; border-color:#FF6B35; color:#fff; }
+        .calc-panel { background:#fff; border:1px solid rgba(26,26,26,0.10); border-radius:16px; padding:26px; }
+        .pt-table { width:100%; border-collapse:collapse; }
+        .pt-table td { padding:12px 6px; border-bottom:1px solid rgba(26,26,26,0.10); font-size:0.95rem; color:#808080; }
+        .pt-table td.pt-val { text-align:right; color:#1a1a1a; font-weight:700; }
+        .pt-table tr:last-child td { border-bottom:0; }
         /* Wider Pass for the standalone demo showcase (fills its column) */
         .pass-stub--wide { max-width:520px; }
         .pass-stub--wide .pass-stub__value { font-size:3rem; }
@@ -921,8 +931,77 @@
         </div>
     </section>
 
+    <!-- Seven presentations (type explorer, ported from pass.html) -->
+    <section id="pass-types" class="bg-white">
+        <div class="section-container">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-black mb-5" data-i18n="pass.v2.explorer.title">Seven presentations, and where each can go</h2>
+                <p class="text-lg sm:text-xl text-dark-grey max-w-3xl mx-auto" data-i18n="pass.v2.explorer.description">Pick one to see it, how it is spent, whether it transfers, and where it can go. Transferability is a property of the Pass, not an assumption about the type.</p>
+            </div>
+
+            <div class="flex flex-wrap items-center justify-center gap-2 mb-10">
+                <span class="pill-label mb-0 mr-1" data-i18n="pass.v2.explorer.chipsLabel">Presented as</span>
+                <button type="button" class="chip type-chip selected" data-ptype="coupon" data-i18n="pass.v2.types.coupon.name">Coupon</button>
+                <button type="button" class="chip type-chip" data-ptype="voucher" data-i18n="pass.v2.types.voucher.name">Voucher</button>
+                <button type="button" class="chip type-chip" data-ptype="deal" data-i18n="pass.v2.types.deal.name">Deal</button>
+                <button type="button" class="chip type-chip" data-ptype="ticket" data-i18n="pass.v2.types.ticket.name">Ticket</button>
+                <button type="button" class="chip type-chip" data-ptype="reward" data-i18n="pass.v2.types.reward.name">Reward</button>
+                <button type="button" class="chip type-chip" data-ptype="card" data-i18n="pass.v2.types.card.name">Card</button>
+                <button type="button" class="chip type-chip" data-ptype="token" data-i18n="pass.v2.types.token.name">Token</button>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+                <div class="calc-panel">
+                    <h3 class="text-2xl font-bold text-primary-black mb-1" id="pt-name" data-ptype-field="name" data-i18n="pass.v2.types.coupon.name">Coupon</h3>
+                    <p class="text-dark-grey mb-6" id="pt-blurb" data-ptype-field="blurb" data-i18n="pass.v2.types.coupon.blurb">A discount off the bill. The commonest Pass on the exchange, and the one AI Pass creates for merchants who list free.</p>
+                    <table class="pt-table">
+                        <tbody>
+                            <tr><td data-i18n="pass.v2.explorer.rowSpent">How it is spent</td><td class="pt-val" data-ptype-field="spent" data-i18n="pass.v2.types.coupon.spent">Consumed once</td></tr>
+                            <tr><td data-i18n="pass.v2.explorer.rowTransfer">Can it be transferred</td><td class="pt-val" data-ptype-field="transfer" data-i18n="pass.v2.types.coupon.transfer">No</td></tr>
+                            <tr><td data-i18n="pass.v2.explorer.rowCreated">Created by</td><td class="pt-val" data-ptype-field="created" data-i18n="pass.v2.types.coupon.created">Merchant or AI Pass</td></tr>
+                            <tr><td data-i18n="pass.v2.explorer.rowWhere">Where it can go</td><td class="pt-val" data-ptype-field="where" data-i18n="pass.v2.types.coupon.where">All channels</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="calc-panel flex justify-center">
+                    <div class="pass-stub" role="img" aria-label="Example Pass for the selected presentation">
+                        <div class="pass-stub__issuer"><span data-i18n="pass.v2.passLabels.issuerLabel">Issuer</span> · <span data-ptype-field="pass.issuer" data-i18n="pass.v2.types.coupon.pass.issuer">Kopi Lane, Bugis</span></div>
+                        <div class="pass-stub__value" data-ptype-field="pass.value" data-i18n="pass.v2.types.coupon.pass.value">25% off</div>
+                        <div class="pass-stub__terms"><span class="font-semibold" data-i18n="pass.v2.passLabels.termsLabel">Terms</span>: <span data-ptype-field="pass.terms" data-i18n="pass.v2.types.coupon.pass.terms">Minimum spend $30. Valid 30 days.</span></div>
+                        <div class="pass-perf"></div>
+                        <div class="pass-stub__code"><span data-i18n="pass.v2.passLabels.codeLabel">Code</span>: <span data-ptype-field="pass.code" data-i18n="pass.v2.types.coupon.pass.code">MZF-7K4Q-8813</span></div>
+                        <span class="pass-stamp" id="pt-stamp" data-ptype-field="pass.stamp" data-i18n="pass.v2.types.coupon.pass.stamp">CONSUMED</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pass type explorer: re-points data-i18n keys on select, then re-translates -->
+    <script>
+      (function () {
+        var STAMP = { voucher: 'pass-stamp--sold', card: 'pass-stamp--sold', token: 'pass-stamp--muted' };
+        function setType(t) {
+          document.querySelectorAll('#pass-types [data-ptype]').forEach(function (b) {
+            b.classList.toggle('selected', b.getAttribute('data-ptype') === t);
+          });
+          document.querySelectorAll('#pass-types [data-ptype-field]').forEach(function (el) {
+            el.setAttribute('data-i18n', 'pass.v2.types.' + t + '.' + el.getAttribute('data-ptype-field'));
+          });
+          if (window.i18n && typeof window.i18n.applyTranslations === 'function') {
+            window.i18n.applyTranslations();
+          }
+          var stamp = document.getElementById('pt-stamp');
+          if (stamp) stamp.className = 'pass-stamp' + (STAMP[t] ? ' ' + STAMP[t] : '');
+        }
+        document.querySelectorAll('#pass-types [data-ptype]').forEach(function (b) {
+          b.addEventListener('click', function () { setType(b.getAttribute('data-ptype')); });
+        });
+      })();
+    </script>
+
     <!-- Try one for yourself (plain) -->
-    <section id="try-a-pass" class="bg-white">
+    <section id="try-a-pass" class="bg-white border-t border-gray-100">
         <div class="section-container">
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center reveal">
                 <!-- Left: copy + form -->

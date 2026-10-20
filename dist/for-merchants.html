@@ -583,9 +583,9 @@
                         Issue to customers you already have — email, messaging, your own app. Nothing goes on the exchange.
                     </p>
                     <dl class="price-rows">
-                        <div><dt data-i18n="merchants.v2.ways.own.row1k">Allocation</dt><dd data-i18n="merchants.v2.ways.own.row1v">from $0.013</dd></div>
-                        <div><dt data-i18n="merchants.v2.ways.own.row2k">Distribution</dt><dd data-i18n="merchants.v2.ways.own.row2v">from $0.013</dd></div>
-                        <div><dt data-i18n="merchants.v2.ways.own.row3k">Redemption</dt><dd data-i18n="merchants.v2.ways.own.row3v">from $0.064</dd></div>
+                        <div><dt data-i18n="merchants.v2.ways.own.row1k">Allocation</dt><dd data-i18n="merchants.v2.ways.own.row1v">from US$0.013</dd></div>
+                        <div><dt data-i18n="merchants.v2.ways.own.row2k">Distribution</dt><dd data-i18n="merchants.v2.ways.own.row2v">from US$0.013</dd></div>
+                        <div><dt data-i18n="merchants.v2.ways.own.row3k">Redemption</dt><dd data-i18n="merchants.v2.ways.own.row3v">from US$0.064</dd></div>
                     </dl>
                 </button>
             </div>
@@ -956,7 +956,7 @@
       (function () {
         var $ = function (id) { return document.getElementById(id); };
         var val = function (id) { var el = $(id); return el ? parseFloat(el.value) : 0; };
-        var usd = function (n) { return '$' + n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); };
+        var usd = function (n) { return 'US$' + n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); };
         var intc = function (n) { return Math.round(n).toLocaleString('en-US'); };
 
         // ---- Mode switching (cards + tabs drive a shared state) ----
@@ -996,7 +996,7 @@
           if (f === 'days') return v + (v === 1 ? ' day' : ' days');
           if (f === 'months') return v + (v === 1 ? ' month' : ' months');
           if (f === 'count') return intc(v);
-          if (f === 'pct-or-amt') return zType === 'amt' ? ('$' + v) : (v + '%');
+          if (f === 'pct-or-amt') return zType === 'amt' ? ('US$' + v) : (v + '%');
           return String(v);
         }
         document.querySelectorAll('.v2-range').forEach(function (el) {
@@ -1022,7 +1022,7 @@
             var steps = [], s = lo; while (s <= hi) { steps.push(s); s += 5; }
             var pick = steps[Math.floor(Math.random() * steps.length)];
             var min = val('r-min'), exp = val('r-exp'), off = $('r-offpeak').checked;
-            $('z-value').textContent = zType === 'amt' ? ('$' + pick + ' off') : (pick + '% off');
+            $('z-value').textContent = zType === 'amt' ? ('US$' + pick + ' off') : (pick + '% off');
             var t = (min > 0 ? ('Minimum spend $' + min + '. ') : 'No minimum spend. ') + 'Valid ' + exp + ' days.' + (off ? ' Off-peak only.' : '');
             $('z-terms').textContent = t;
           } else if (mode === 'charge') {
@@ -1032,7 +1032,7 @@
             $('c-fee').textContent = usd(fee);
             $('c-recv').textContent = usd(recv);
             $('c-unused').textContent = usd(unused) + ' to you';
-            $('c-value').textContent = '$' + face + ' voucher';
+            $('c-value').textContent = 'US$' + face + ' voucher';
             $('c-terms').textContent = 'Bought for ' + usd(pays).replace('.00', '') + '. Valid ' + cexp + (cexp === 1 ? ' month.' : ' months.');
           } else if (mode === 'own') {
             var made = val('o-made'), sentPct = val('o-sent'), redPct = val('o-red'), oface = val('o-face');
@@ -1046,7 +1046,7 @@
             $('o-alloc-d').textContent = '· ' + intc(made) + ' created';
             $('o-dist-d').textContent = '· ' + intc(sent) + ' sent';
             $('o-red-d').textContent = '· ' + intc(redeemed) + ' validated';
-            $('o-value').textContent = '$' + oface + ' off';
+            $('o-value').textContent = 'US$' + oface + ' off';
           }
         }
 

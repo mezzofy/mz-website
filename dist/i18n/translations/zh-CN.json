@@ -1148,11 +1148,11 @@
           "title": "自有渠道 Pass",
           "description": "向您已有的客户发行 — 电子邮件、消息、您自己的应用。任何内容都不会进入交换平台。",
           "row1k": "分配",
-          "row1v": "$0.013 起",
+          "row1v": "US$0.013 起",
           "row2k": "分发",
-          "row2v": "$0.013 起",
+          "row2v": "US$0.013 起",
           "row3k": "兑换",
-          "row3v": "$0.064 起"
+          "row3v": "US$0.064 起"
         }
       },
       "limits": {
@@ -4448,8 +4448,8 @@
       },
       "hero": {
         "title": "您的客户。您的 Pass。独立于交换平台。",
-        "subtitle": "CMS 面向已拥有受众、并希望直接向其发行的商户 — 电子邮件、消息、自己的应用。任何内容都不会在市场上架，其他买家也看不到，您只需为实际使用量付费。",
-        "ctaStart": "从 CMS 开始",
+        "subtitle": "PMS 面向已拥有受众、并希望直接向其发行的商户 — 电子邮件、消息、自己的应用。任何内容都不会在市场上架，其他买家也看不到，您只需为实际使用量付费。",
+        "ctaStart": "从 PMS 开始",
         "ctaCompare": "与免费上架进行比较"
       },
       "passLabels": {
@@ -4489,22 +4489,22 @@
         "thCharge": "收费项",
         "thRate": "起价，每张 Pass",
         "allocLabel": "分配，按创建的每张 Pass",
-        "allocRate": "from $0.013",
+        "allocRate": "from US$0.013",
         "distLabel": "分发，按发送的每张 Pass",
-        "distRate": "from $0.013",
+        "distRate": "from US$0.013",
         "redeemLabel": "兑换，按验证的每张 Pass",
-        "redeemRate": "from $0.064",
+        "redeemRate": "from US$0.064",
         "note": "按月记入在档银行卡。无论 Pass 是否被兑换，分配费和分发费都会照常收取。本地价位按各市场设定。",
         "link": "计算您的月度账单 →"
       },
       "fork": {
-        "title": "何时该选 CMS，何时不该",
+        "title": "何时该选 PMS，何时不该",
         "description": "这归结于您想触及哪些客户。您已拥有的客户走一条路。您尚未拥有的客户走另一条。",
         "centre": "您的商户",
         "centreSub": "一个账户，两条路径",
         "cms": {
-          "routeLabel": "您已拥有的客户 → CMS",
-          "title": "CMS",
+          "routeLabel": "您已拥有的客户 → PMS",
+          "title": "PMS",
           "tag": "私有 · 计量式",
           "step1lead": "您的名单",
           "step1sub": "会员、员工、老客户",
@@ -4540,13 +4540,13 @@
           "use4": "您在触碰点附近，希望吸引到店客流"
         },
         "noteLead": "大多数商户两者并用。",
-        "noteText": "已有名单用 CMS，尚未拥有的客户用交换平台。两份库存从不混合，因此私有会员优惠不会泄漏到市场上。"
+        "noteText": "已有名单用 PMS，尚未拥有的客户用交换平台。两份库存从不混合，因此私有会员优惠不会泄漏到市场上。"
       },
       "closing": {
         "title": "首 500 张免费起步。",
         "description": "在您发送第一批付费分发之前无需银行卡。",
         "ctaThree": "查看全部三种销售方式",
-        "ctaStart": "从 CMS 开始"
+        "ctaStart": "从 PMS 开始"
       }
     }
   },

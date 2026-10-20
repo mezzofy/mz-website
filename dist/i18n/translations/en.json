@@ -1142,11 +1142,11 @@
           "title": "Own Channel Passes",
           "description": "Issue to customers you already have — email, messaging, your own app. Nothing goes on the exchange.",
           "row1k": "Allocation",
-          "row1v": "from $0.013",
+          "row1v": "from US$0.013",
           "row2k": "Distribution",
-          "row2v": "from $0.013",
+          "row2v": "from US$0.013",
           "row3k": "Redemption",
-          "row3v": "from $0.064"
+          "row3v": "from US$0.064"
         }
       },
       "limits": {
@@ -4551,7 +4551,7 @@
           "answer": "The Management System is where you build and run your own Passes; the exchange is where Passes are distributed to buyers and AI agents. They work together."
         },
         "q1": {
-          "question": "What is the Coupon Management System?",
+          "question": "What is the Pass Management System?",
           "answer": "Mezzofy's enterprise Coupon-as-a-Service (CaaS) platform to create, issue, distribute, validate, track, and expire Passes at scale."
         },
         "title": "Frequently Asked Questions",
@@ -4562,8 +4562,8 @@
       },
       "hero": {
         "title": "Your customers. Your Passes. Off the exchange.",
-        "subtitle": "CMS is for merchants who already have an audience and want to issue to it directly — email, messaging, their own app. Nothing is listed on the marketplace, no other buyer sees it, and you pay only for what you use.",
-        "ctaStart": "Start with CMS",
+        "subtitle": "PMS is for merchants who already have an audience and want to issue to it directly — email, messaging, their own app. Nothing is listed on the marketplace, no other buyer sees it, and you pay only for what you use.",
+        "ctaStart": "Start with PMS",
         "ctaCompare": "Compare with listing free"
       },
       "passLabels": {
@@ -4603,22 +4603,22 @@
         "thCharge": "Charge",
         "thRate": "From, per Pass",
         "allocLabel": "Allocation, per Pass created",
-        "allocRate": "from $0.013",
+        "allocRate": "from US$0.013",
         "distLabel": "Distribution, per Pass sent",
-        "distRate": "from $0.013",
+        "distRate": "from US$0.013",
         "redeemLabel": "Redemption, per Pass validated",
-        "redeemRate": "from $0.064",
+        "redeemRate": "from US$0.064",
         "note": "Billed monthly to a card on file. Allocation and distribution are charged whether or not a Pass is redeemed. Local price points are set per market.",
         "link": "Work out your monthly bill →"
       },
       "fork": {
-        "title": "When CMS is the right choice, and when it is not",
+        "title": "When PMS is the right choice, and when it is not",
         "description": "It comes down to which customers you are trying to reach. The ones you already have go one way. The ones you do not have yet go the other.",
         "centre": "Your business",
         "centreSub": "one account, both routes",
         "cms": {
-          "routeLabel": "Customers you already have → CMS",
-          "title": "CMS",
+          "routeLabel": "Customers you already have → PMS",
+          "title": "PMS",
           "tag": "Private · metered",
           "step1lead": "Your list",
           "step1sub": "members, staff, past customers",
@@ -4654,13 +4654,13 @@
           "use4": "You are near a tap point and want walk-ins"
         },
         "noteLead": "Most merchants run both.",
-        "noteText": "CMS for the list they have, the exchange for the customers they do not. The two inventories never mix, so a private member offer cannot leak onto the marketplace."
+        "noteText": "PMS for the list they have, the exchange for the customers they do not. The two inventories never mix, so a private member offer cannot leak onto the marketplace."
       },
       "closing": {
         "title": "Start with your first 500 free.",
         "description": "No card needed until you send your first paid distribution.",
         "ctaThree": "See all three ways to sell",
-        "ctaStart": "Start with CMS"
+        "ctaStart": "Start with PMS"
       }
     }
   },
