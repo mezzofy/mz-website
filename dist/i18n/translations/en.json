@@ -5,11 +5,13 @@
       "subtitle": "Pick the path that fits you.",
       "close": "Close",
       "seller": {
+        "terms": "Merchant Portal Terms of Use",
         "tag": "Merchant",
         "title": "Seller",
         "desc": "List and sell your Passes across the exchange."
       },
       "buyer": {
+        "terms": "Enterprise Buyer Terms of Use",
         "tag": "Company",
         "title": "Buyer",
         "desc": "Source verified Pass inventory for your customers."
@@ -3186,12 +3188,14 @@
       "title": "How to Reach Us",
       "description": "Choose the support channel that best fits your role on the Mezzofy platform.",
       "merchant": {
+        "terms": "Merchant Portal Terms of Use",
         "badge": "For Sellers",
         "title": "Seller Portal",
         "desc": "Merchants selling on the exchange submit and track support tickets, access documentation, and manage redemption issues in the Seller Portal.",
         "cta": "Open the Seller Portal"
       },
       "partner": {
+        "terms": "Enterprise Buyer Terms of Use",
         "badge": "For Buyers",
         "title": "Buyer Portal",
         "desc": "Buyers sourcing from the pool manage support requests, review SLAs, track inventory and distribution, and escalate tickets in the Buyer Portal.",

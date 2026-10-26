@@ -137,6 +137,10 @@ document.addEventListener('DOMContentLoaded', async function() {
             '.signup-opt__tag{font-family:"IBM Plex Mono",monospace;font-size:0.66rem;letter-spacing:0.12em;text-transform:uppercase;color:#FF6B35;}',
             '.signup-opt__title{font-size:1.05rem;font-weight:700;color:#1a1a1a;margin:1px 0 2px;}',
             '.signup-opt__desc{font-size:0.88rem;color:#4a4a4a;}',
+            '.signup-optwrap{display:flex;flex-direction:column;gap:7px;}',
+            '.signup-opt__terms{align-self:flex-start;display:inline-flex;align-items:center;gap:6px;margin-inline-start:2px;font-size:0.76rem;color:#808080;text-decoration:none;transition:color .18s;}',
+            '.signup-opt__terms:hover{color:#FF6B35;text-decoration:underline;}',
+            '.signup-opt__terms:focus-visible{outline:2px solid #FF6B35;outline-offset:2px;border-radius:4px;}',
             '.signup-opt__arrow{flex-shrink:0;color:#808080;transition:transform .18s,color .18s;}',
             '.signup-opt:hover .signup-opt__arrow{color:#FF6B35;transform:translateX(3px);}',
             '[dir="rtl"] .signup-opt__arrow svg{transform:scaleX(-1);}',
@@ -156,15 +160,20 @@ document.addEventListener('DOMContentLoaded', async function() {
         document.head.appendChild(style);
 
         var ARROW = '<span class="signup-opt__arrow"><svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5-5 5M6 12h12"></path></svg></span>';
-        function opt(href, external, ico, tagKey, titleKey, descKey) {
+        var DOC_ICO = '<svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"></path><path d="M14 2v6h6"></path><path d="M9 13h6M9 17h6"></path></svg>';
+        function opt(href, external, ico, tagKey, titleKey, descKey, termsHref, termsKey) {
             var attrs = external ? ' target="_blank" rel="noopener noreferrer"' : '';
-            return '<a class="signup-opt" href="' + href + '"' + attrs + ' data-cta="signup">' +
+            var card = '<a class="signup-opt" href="' + href + '"' + attrs + ' data-cta="signup">' +
                 '<span class="signup-opt__ico">' + ico + '</span>' +
                 '<span class="signup-opt__txt">' +
                     '<span class="signup-opt__tag" data-i18n="' + tagKey + '"></span>' +
                     '<span class="signup-opt__title" data-i18n="' + titleKey + '"></span>' +
                     '<span class="signup-opt__desc" data-i18n="' + descKey + '"></span>' +
                 '</span>' + ARROW + '</a>';
+            if (!termsHref) return card;
+            var terms = '<a class="signup-opt__terms" href="' + termsHref + '" target="_blank" rel="noopener noreferrer" data-cta="legal">' +
+                DOC_ICO + '<span data-i18n="' + termsKey + '"></span></a>';
+            return '<div class="signup-optwrap">' + card + terms + '</div>';
         }
         var icoSeller = '<svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5a2 2 0 011.414.586l7 7a2 2 0 010 2.828l-5 5a2 2 0 01-2.828 0l-7-7A2 2 0 013 10V5a2 2 0 012-2z"></path></svg>';
         var icoBuyer = '<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path><path d="M3 6h18"></path><path d="M16 10a4 4 0 01-8 0"></path></svg>';
@@ -185,8 +194,8 @@ document.addEventListener('DOMContentLoaded', async function() {
                     '<p class="su-sub" data-i18n="common.signupModal.subtitle">Pick the path that fits you.</p>' +
                 '</div>' +
                 '<div class="signup-opts">' +
-                    opt('https://merchant.mezzofy.com/register', true, icoSeller, 'common.signupModal.seller.tag', 'common.signupModal.seller.title', 'common.signupModal.seller.desc') +
-                    opt('https://exchange.mezzofy.com/signup', true, icoBuyer, 'common.signupModal.buyer.tag', 'common.signupModal.buyer.title', 'common.signupModal.buyer.desc') +
+                    opt('https://merchant.mezzofy.com/register', true, icoSeller, 'common.signupModal.seller.tag', 'common.signupModal.seller.title', 'common.signupModal.seller.desc', '/legal/merchant-portal/terms-of-use.html', 'common.signupModal.seller.terms') +
+                    opt('https://exchange.mezzofy.com/signup', true, icoBuyer, 'common.signupModal.buyer.tag', 'common.signupModal.buyer.title', 'common.signupModal.buyer.desc', '/legal/exchange/terms-of-use.html', 'common.signupModal.buyer.terms') +
                     opt('contact.html', false, icoPartner, 'common.signupModal.partner.tag', 'common.signupModal.partner.title', 'common.signupModal.partner.desc') +
                 '</div>' +
             '</div>';
