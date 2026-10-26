@@ -1,6 +1,6 @@
 # Project Status: mz-website
 
-**Last Updated:** 2026-02-25
+**Last Updated:** 2026-10-26
 **Current Phase:** i18n Complete ✅ / Color Audit Complete ✅
 **Overall Progress:** ~98% (Base features complete, i18n 100% complete, Color audit complete, 1 fix pending)
 **Branch:** main
@@ -33,6 +33,13 @@ MCP server configuration fixed for Windows. Shadcn MCP server now loads correctl
 ---
 
 ## Recently Completed (Last 7 Days)
+
+**2026-10-26 (Merchant Portal — Terms of Use legal page, new):**
+- Created `dist/legal/merchant-portal/terms-of-use.html` from `docs/Mezzofy_Merchant_Portal_Terms_of_Use_v2.1.md`, reusing the operator legal-page "legal instrument" design (mono masthead, orange-ruled EFFECTIVE/VERSION/GOVERNING LAW/APPLIES-TO meta row, sticky scroll-synced clause index + mobile accordion, single brand-orange accent, print stylesheet, RTL, WCAG focus-visible). Chrome-less (no site nav/footer) for in-app embedding at merchant.mezzofy.com; masthead 4-language toggle; page opens in English by default (page-local i18n override, `?lang=` still honored).
+- 24 clauses with preserved sub-clause numbering (1.1, 1.2 …) rendered as orange mono `.sub` markers so the many cross-references (clause 8.2, 7.1 …) stay intact. Key facts vs the operator doc: entity **Mezzofy Holding Limited** (HK company no. 394841), **Hong Kong** governing law + **HKIAC** arbitration, **v2.1 / effective 1 Oct 2026**.
+- i18n: new top-level `merchantPortalLegal` namespace (93 keys: `common` + `terms`), added to all 4 langs, src+dist. Per user decision, **only the UI chrome (`common.*`) is translated** (zh-TW/zh-CN/ar reuse the operator wording); the 24 clause bodies + titles + summary + notice are **English in every language file** (the agreement itself states the English version prevails). Verified live: 93/93 keys resolve in all 4 langs (0 raw keys), src==dist parity, 24 clauses, 1 `<h1>`, 0 horizontal overflow at 1440/390, Arabic `dir=rtl` + translated chrome with English bodies. No CSS build needed (inline styles + existing utilities).
+- **Webmaster follow-up:** page has only `<title>`/`<meta description>`/theme-color + an HTML comment flagging the SEO block — canonical, hreflang (en/zh-TW/zh-CN/ar/x-default), Open Graph, JSON-LD (WebPage + BreadcrumbList), robots, and the sitemap/indexing decision are left for the Webmaster Agent (operator legal pages are `index,follow` but NOT in sitemap — likely the same here).
+- **Not committed yet** (awaiting user go-ahead). No companion Privacy Policy page exists for the Merchant Portal, so the doc-switch shows only the Terms chip + Print.
 
 **2026-10-12 (Role-based playbook use-case pages — 7 pages, hidden from crawlers):**
 - Generated **7 new playbook (use-case) pages** in the v2 design, grounded in the real 3-solution + Pass/Management positioning (via a capability-map research pass): **Integrators** — `playbook-pos-redemption`, `playbook-loyalty-integration`, `playbook-marketplace-listing`; **Merchants** — `playbook-central-governance`, `playbook-legacy-migration`; **Buyers** — `playbook-inventory-sourcing`, `playbook-customer-rewards`. Each: dark hero + Pass-stub, problem band, numbered "the play", capability cards (integrator pages carry a real API code sample), outcomes, FAQ, closing CTA.
