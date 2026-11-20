@@ -471,7 +471,13 @@
           "emailLabel": "电子邮箱",
           "emailPlaceholder": "you@company.com",
           "cta": "探索实战手冊",
-          "confirm": "谢谢 — 实战手册 PDF 正在发送至您的邮箱。"
+          "confirm": "谢谢 — 实战手册 PDF 正在发送至您的邮箱。",
+          "submit": "把实战手册发给我",
+          "sending": "发送中…",
+          "success": "请查收邮箱 — 实战手册马上送达。",
+          "error": "出错了，请重试，或发送邮件至 hello@mezzofy.com。",
+          "emailError": "请输入有效的邮箱地址。",
+          "secondary": "或在线阅读实战手册"
         },
         "booking": {
           "close": "关闭",

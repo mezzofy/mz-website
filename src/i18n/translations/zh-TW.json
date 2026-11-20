@@ -465,7 +465,13 @@
           "emailLabel": "電郵地址",
           "emailPlaceholder": "you@company.com",
           "cta": "探索實戰手冊",
-          "confirm": "謝謝 — 實戰手冊 PDF 正寄往您的收件匣。"
+          "confirm": "謝謝 — 實戰手冊 PDF 正寄往您的收件匣。",
+          "submit": "把實戰手冊寄給我",
+          "sending": "傳送中…",
+          "success": "請查看收件匣 — 實戰手冊即將送達。",
+          "error": "發生錯誤，請再試一次，或電郵至 hello@mezzofy.com。",
+          "emailError": "請輸入有效的電郵地址。",
+          "secondary": "或在線上閱讀實戰手冊"
         },
         "booking": {
           "close": "關閉",

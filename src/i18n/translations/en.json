@@ -465,7 +465,13 @@
           "emailLabel": "Email address",
           "emailPlaceholder": "you@company.com",
           "cta": "Explore the playbooks",
-          "confirm": "Thanks — the playbook PDF is on its way to your inbox."
+          "confirm": "Thanks — the playbook PDF is on its way to your inbox.",
+          "submit": "Send me the playbook",
+          "sending": "Sending…",
+          "success": "Check your inbox — the playbook is on its way.",
+          "error": "Something went wrong. Please try again, or email hello@mezzofy.com.",
+          "emailError": "Please enter a valid email address.",
+          "secondary": "Or read the playbooks online"
         },
         "booking": {
           "close": "Close",

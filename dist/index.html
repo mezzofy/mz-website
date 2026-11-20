@@ -1213,8 +1213,32 @@
                             <span class="text-dark-grey" data-i18n="home.v2.takeFurther.playbook.ch5">What enterprise buyers look for in inventory</span>
                         </li>
                     </ul>
-                    <a href="pass-playbook.html" class="btn-primary inline-flex items-center gap-2 whitespace-nowrap" data-cta="learn-more">
-                        <span data-i18n="home.v2.takeFurther.playbook.cta">Explore the playbooks</span>
+                    <form id="playbook-form" class="space-y-3" novalidate>
+                        <!-- Anti-spam: honeypots + load timestamp (backend validates 3s–3600s age) -->
+                        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+                        <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
+                        <input type="hidden" id="playbook-ts" name="_ts" value="">
+                        <div>
+                            <label for="playbook-email" class="block text-sm font-semibold text-primary-black mb-2" data-i18n="home.v2.takeFurther.playbook.emailLabel">Email address</label>
+                            <div class="flex flex-col sm:flex-row gap-3">
+                                <input id="playbook-email" type="email" required class="v2-input w-full" data-i18n-placeholder="home.v2.takeFurther.playbook.emailPlaceholder" placeholder="you@company.com">
+                                <button id="playbook-submit-btn" type="submit" class="btn-primary whitespace-nowrap disabled:opacity-60 disabled:cursor-not-allowed" data-cta="learn-more">
+                                    <span data-i18n="home.v2.takeFurther.playbook.submit">Send me the playbook</span>
+                                </button>
+                            </div>
+                            <p class="hidden mt-1 text-sm text-red-500" data-error="playbook-email" data-i18n="home.v2.takeFurther.playbook.emailError">Please enter a valid email address.</p>
+                        </div>
+                    </form>
+                    <div id="playbook-success" class="hidden mt-4 p-4 bg-green-50 border border-green-200 rounded-lg text-sm text-green-800 flex items-start gap-2">
+                        <svg class="w-5 h-5 shrink-0 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span data-i18n="home.v2.takeFurther.playbook.success">Check your inbox — the playbook is on its way.</span>
+                    </div>
+                    <div id="playbook-error" class="hidden mt-4 p-4 bg-red-50 border border-red-200 rounded-lg text-sm text-red-800 flex items-start gap-2">
+                        <svg class="w-5 h-5 shrink-0 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.539-1.333-3.308 0L3.732 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                        <span data-i18n="home.v2.takeFurther.playbook.error">Something went wrong. Please try again, or email hello@mezzofy.com.</span>
+                    </div>
+                    <a href="pass-playbook.html" class="inline-flex items-center gap-2 mt-4 text-sm font-semibold text-primary-orange hover:text-dark-orange" data-cta="learn-more">
+                        <span data-i18n="home.v2.takeFurther.playbook.secondary">Or read the playbooks online</span>
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5-5 5M6 12h12"></path></svg>
                     </a>
                 </div>
@@ -1575,6 +1599,85 @@
             .finally(function () {
               bBtn.disabled = false;
               if (labelSpan) { labelSpan.textContent = original; } else { bBtn.textContent = original; }
+            });
+          });
+        })();
+
+        // ── Playbook form: emails the Passes Playbook to the requester ──────
+        // POSTs to the MZ-AI-ASSISTANT /playbook endpoint (mirrors the booking
+        // form). The backend emails the playbook highlights + a link to
+        // pass-playbook.html and records the lead as a "Playbook" submission.
+        (function () {
+          var PLAYBOOK_ENDPOINT = 'https://assistant.mezzofy.com/playbook';
+          var pForm = document.getElementById('playbook-form');
+          if (!pForm) return;
+          var pEmail = document.getElementById('playbook-email');
+          var pBtn   = document.getElementById('playbook-submit-btn');
+          var pOk    = document.getElementById('playbook-success');
+          var pErr   = document.getElementById('playbook-error');
+          var pTs    = document.getElementById('playbook-ts');
+          if (pTs) pTs.value = String(Date.now());
+
+          function showPbError(show) {
+            var el = pForm.querySelector('[data-error="playbook-email"]');
+            if (el) el.classList.toggle('hidden', !show);
+          }
+
+          if (pEmail) pEmail.addEventListener('input', function () { showPbError(false); });
+
+          pForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            pOk.classList.add('hidden');
+            pErr.classList.add('hidden');
+
+            var emailVal = (pEmail.value || '').trim();
+            var emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailVal);
+            showPbError(!emailOk);
+            if (!emailOk) return;
+
+            var payload = {
+              email   : emailVal,
+              form    : 'playbook',
+              _gotcha : (pForm.querySelector('[name="_gotcha"]').value || ''),
+              website : (pForm.querySelector('[name="website"]').value || ''),
+              _ts     : (pTs && pTs.value) || ''
+            };
+
+            var labelSpan = pBtn.querySelector('span');
+            var original = labelSpan ? labelSpan.textContent : pBtn.textContent;
+            var sendingText = 'Sending…';
+            try {
+              if (window.i18n && typeof window.i18n.getTranslation === 'function') {
+                var s = window.i18n.getTranslation('home.v2.takeFurther.playbook.sending');
+                if (s && s.indexOf('home.v2') !== 0) sendingText = s;
+              }
+            } catch (err) {}
+            pBtn.disabled = true;
+            if (labelSpan) { labelSpan.textContent = sendingText; } else { pBtn.textContent = sendingText; }
+
+            fetch(PLAYBOOK_ENDPOINT, {
+              method : 'POST',
+              body   : JSON.stringify(payload),
+              headers: { 'Content-Type': 'application/json' }
+            })
+            .then(function (res) {
+              return res.json().then(function (json) {
+                if (res.ok && json.ok) {
+                  pForm.reset();
+                  pOk.classList.remove('hidden');
+                  pOk.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                } else {
+                  throw new Error(json.error || 'Server error');
+                }
+              });
+            })
+            .catch(function () {
+              pErr.classList.remove('hidden');
+              pErr.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            })
+            .finally(function () {
+              pBtn.disabled = false;
+              if (labelSpan) { labelSpan.textContent = original; } else { pBtn.textContent = original; }
             });
           });
         })();
