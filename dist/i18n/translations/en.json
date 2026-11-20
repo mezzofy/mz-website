@@ -289,7 +289,7 @@
         "title": "Clearinghouse",
         "description": "The core manages all consignment, financial reconciliation, and fraudless validation."
       }
-    },
+    },
     "v2": {
       "hero": {
         "badge": "Live now Globally",
@@ -667,8 +667,8 @@
       "subtitle": "Stay informed with the <span class=\"text-primary-orange\">latest news, industry insights, and company updates</span> from Mezzofy"
     },
     "filter": {
-      "all": "All (14)",
-      "blog": "Blog (6)",
+      "all": "All (15)",
+      "blog": "Blog (7)",
       "news": "News (8)"
     },
     "category": {
@@ -1065,7 +1065,7 @@
       "getStarted": "List Your First Coupon",
       "talkToSales": "View All Products"
     },
-    "definition": "Mezzofy is a digital coupon exchange platform that helps merchants create, distribute, and monetize digital coupons across 15+ Asia-Pacific markets. Using the Mezzofy Exchange Protocol, merchants eliminate coupon liabilities, reach new customers through NFC, marketplace, and digital channels, and generate revenue on every successful redemption — with zero upfront fees.",
+    "definition": "Mezzofy is a digital coupon exchange platform that helps merchants create, distribute, and monetize digital coupons across 15+ Asia-Pacific markets. Using the Mezzofy Exchange Protocol, merchants eliminate coupon liabilities, reach new customers through NFC, marketplace, and digital channels, and generate revenue on every successful redemption — with zero upfront fees.",
     "v2": {
       "hero": {
         "badge": "Free to list, no subscription",
@@ -1899,118 +1899,118 @@
   },
   "marketplace": {
     "v2": {
-        "hero": {
-          "title": "The exchange hub where <span class=\"text-primary-orange\">Passes</span> are traded",
-          "subtitle": "One listing reaches every channel it is eligible for. Merchants list Pass inventory once, and businesses, consumers and AI agents discover and acquire it across B2B, B2C and C2C, tokenised and settled automatically.",
-          "ctaList": "List your inventory free",
-          "ctaExplore": "See how it works"
+      "hero": {
+        "title": "The exchange hub where <span class=\"text-primary-orange\">Passes</span> are traded",
+        "subtitle": "One listing reaches every channel it is eligible for. Merchants list Pass inventory once, and businesses, consumers and AI agents discover and acquire it across B2B, B2C and C2C, tokenised and settled automatically.",
+        "ctaList": "List your inventory free",
+        "ctaExplore": "See how it works"
+      },
+      "passLabels": {
+        "issuerLabel": "Issuer",
+        "termsLabel": "Terms",
+        "codeLabel": "Code"
+      },
+      "heroPass": {
+        "issuer": "Listed on the exchange",
+        "value": "25% off",
+        "terms": "Tradeable across B2B, B2C and C2C.",
+        "code": "MZF-4A9X-2210",
+        "stamp": "LISTED"
+      },
+      "hub": {
+        "title": "One exchange. Network effects. Fraud-proof settlement.",
+        "description": "Not a tool bolted onto promotions, but a liquid exchange. Every listing gains reach as the network grows, every Pass is unique, and settlement is automatic.",
+        "network": {
+          "title": "From tool to network",
+          "desc": "Value compounds through connections. Every merchant that lists and every buyer that joins makes the exchange more useful to everyone on it."
         },
-        "passLabels": {
-          "issuerLabel": "Issuer",
-          "termsLabel": "Terms",
-          "codeLabel": "Code"
+        "security": {
+          "title": "Fraud-proof by design",
+          "desc": "Every Pass is tokenised and consumed once on validation. Unique, single-use, and impossible to fake or double-spend, even after it changes hands."
         },
-        "heroPass": {
-          "issuer": "Listed on the exchange",
-          "value": "25% off",
-          "terms": "Tradeable across B2B, B2C and C2C.",
-          "code": "MZF-4A9X-2210",
-          "stamp": "LISTED"
-        },
-        "hub": {
-          "title": "One exchange. Network effects. Fraud-proof settlement.",
-          "description": "Not a tool bolted onto promotions, but a liquid exchange. Every listing gains reach as the network grows, every Pass is unique, and settlement is automatic.",
-          "network": {
-            "title": "From tool to network",
-            "desc": "Value compounds through connections. Every merchant that lists and every buyer that joins makes the exchange more useful to everyone on it."
-          },
-          "security": {
-            "title": "Fraud-proof by design",
-            "desc": "Every Pass is tokenised and consumed once on validation. Unique, single-use, and impossible to fake or double-spend, even after it changes hands."
-          },
-          "ai": {
-            "title": "AI-native infrastructure",
-            "desc": "Machine-readable inventory that AI shopping agents can read, match and transact against. The standard interface for autonomous commerce."
-          }
-        },
-        "models": {
-          "title": "Three ways to trade",
-          "subtitle": "One inventory, three markets. List once and reach businesses, consumers and other holders. Mezzofy handles pricing, validation and settlement across all of them.",
-          "b2b": {
-            "tag": "B2B",
-            "title": "Business to business",
-            "desc": "Sell Pass inventory in bulk to distributors, marketing platforms and loyalty programmes, with real-time pricing and automated settlement.",
-            "b1": "Wholesale distribution to distributors and resellers",
-            "b2": "Channel partners: marketing platforms, loyalty, affiliates",
-            "b3": "Cross-promotion with complementary brands",
-            "b4": "Transparent market pricing and commission tracking"
-          },
-          "b2c": {
-            "tag": "B2C",
-            "title": "Business to consumer",
-            "desc": "Distribute Passes straight to customers across every channel, with targeting and real-time analytics.",
-            "b1": "Direct delivery via email, SMS, social and apps",
-            "b2": "Personalised campaigns by customer segment",
-            "b3": "Real-time redemption and engagement analytics",
-            "b4": "Reach through marketplaces, e-commerce and retail"
-          },
-          "c2c": {
-            "tag": "C2C",
-            "title": "Consumer to consumer",
-            "desc": "Let holders gift, transfer or resell unused Passes. Each one stays unique and valid because it is tokenised.",
-            "b1": "Transferable Passes: gift or transfer with secure validation",
-            "b2": "A secondary market for unused Passes",
-            "b3": "Tokenisation keeps every Pass unique and fraud-proof",
-            "b4": "Unused Passes find new owners, driving real redemption"
-          },
-          "noteLead": "One listing, every eligible channel.",
-          "noteText": "You do not pick a market up front. List your Pass inventory once and it reaches every channel it fits, priced and settled automatically."
-        },
-        "flow": {
-          "title": "List, discover, transact, settle",
-          "list": {
-            "t": "List",
-            "d": "Merchants list Pass inventory on the exchange for free. One listing is eligible for every channel it fits."
-          },
-          "discover": {
-            "t": "Discover",
-            "d": "Buyers, from businesses to consumers to AI agents, find matching Passes through the marketplace, apps and assistants."
-          },
-          "transact": {
-            "t": "Transact",
-            "d": "Secure peer-to-peer transfer. Every Pass is tokenised, so it stays unique and valid through the trade."
-          },
-          "settle": {
-            "t": "Settle",
-            "d": "Automated settlement and commission tracking. You pay a performance fee only when a Pass is redeemed."
-          }
-        },
-        "faq": {
-          "title": "Frequently Asked Questions",
-          "q1": {
-            "question": "What is the Mezzofy Marketplace?",
-            "answer": "The exchange hub where merchants list Pass inventory and buyers, from businesses to consumers to AI agents, discover and acquire it across B2B, B2C and C2C."
-          },
-          "q2": {
-            "question": "Who can trade on it?",
-            "answer": "Merchants and brands list; distributors, marketing platforms, consumers and AI shopping agents buy or claim. One listing reaches every channel it is eligible for."
-          },
-          "q3": {
-            "question": "How are Passes kept unique when traded?",
-            "answer": "Every Pass is tokenised and consumed once on validation, so it cannot be faked, copied or double-spent, even after it is transferred, gifted or resold."
-          },
-          "q4": {
-            "question": "What does it cost?",
-            "answer": "Listing is free. You pay a performance-based fee only when a Pass is redeemed, with automated settlement and real-time pricing."
-          }
-        },
-        "closing": {
-          "title": "List your inventory. Reach every channel.",
-          "description": "Listing is free. You pay only when a Pass is redeemed.",
-          "ctaProducts": "See all five products",
-          "ctaList": "List your inventory free"
+        "ai": {
+          "title": "AI-native infrastructure",
+          "desc": "Machine-readable inventory that AI shopping agents can read, match and transact against. The standard interface for autonomous commerce."
         }
       },
+      "models": {
+        "title": "Three ways to trade",
+        "subtitle": "One inventory, three markets. List once and reach businesses, consumers and other holders. Mezzofy handles pricing, validation and settlement across all of them.",
+        "b2b": {
+          "tag": "B2B",
+          "title": "Business to business",
+          "desc": "Sell Pass inventory in bulk to distributors, marketing platforms and loyalty programmes, with real-time pricing and automated settlement.",
+          "b1": "Wholesale distribution to distributors and resellers",
+          "b2": "Channel partners: marketing platforms, loyalty, affiliates",
+          "b3": "Cross-promotion with complementary brands",
+          "b4": "Transparent market pricing and commission tracking"
+        },
+        "b2c": {
+          "tag": "B2C",
+          "title": "Business to consumer",
+          "desc": "Distribute Passes straight to customers across every channel, with targeting and real-time analytics.",
+          "b1": "Direct delivery via email, SMS, social and apps",
+          "b2": "Personalised campaigns by customer segment",
+          "b3": "Real-time redemption and engagement analytics",
+          "b4": "Reach through marketplaces, e-commerce and retail"
+        },
+        "c2c": {
+          "tag": "C2C",
+          "title": "Consumer to consumer",
+          "desc": "Let holders gift, transfer or resell unused Passes. Each one stays unique and valid because it is tokenised.",
+          "b1": "Transferable Passes: gift or transfer with secure validation",
+          "b2": "A secondary market for unused Passes",
+          "b3": "Tokenisation keeps every Pass unique and fraud-proof",
+          "b4": "Unused Passes find new owners, driving real redemption"
+        },
+        "noteLead": "One listing, every eligible channel.",
+        "noteText": "You do not pick a market up front. List your Pass inventory once and it reaches every channel it fits, priced and settled automatically."
+      },
+      "flow": {
+        "title": "List, discover, transact, settle",
+        "list": {
+          "t": "List",
+          "d": "Merchants list Pass inventory on the exchange for free. One listing is eligible for every channel it fits."
+        },
+        "discover": {
+          "t": "Discover",
+          "d": "Buyers, from businesses to consumers to AI agents, find matching Passes through the marketplace, apps and assistants."
+        },
+        "transact": {
+          "t": "Transact",
+          "d": "Secure peer-to-peer transfer. Every Pass is tokenised, so it stays unique and valid through the trade."
+        },
+        "settle": {
+          "t": "Settle",
+          "d": "Automated settlement and commission tracking. You pay a performance fee only when a Pass is redeemed."
+        }
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "q1": {
+          "question": "What is the Mezzofy Marketplace?",
+          "answer": "The exchange hub where merchants list Pass inventory and buyers, from businesses to consumers to AI agents, discover and acquire it across B2B, B2C and C2C."
+        },
+        "q2": {
+          "question": "Who can trade on it?",
+          "answer": "Merchants and brands list; distributors, marketing platforms, consumers and AI shopping agents buy or claim. One listing reaches every channel it is eligible for."
+        },
+        "q3": {
+          "question": "How are Passes kept unique when traded?",
+          "answer": "Every Pass is tokenised and consumed once on validation, so it cannot be faked, copied or double-spent, even after it is transferred, gifted or resold."
+        },
+        "q4": {
+          "question": "What does it cost?",
+          "answer": "Listing is free. You pay a performance-based fee only when a Pass is redeemed, with automated settlement and real-time pricing."
+        }
+      },
+      "closing": {
+        "title": "List your inventory. Reach every channel.",
+        "description": "Listing is free. You pay only when a Pass is redeemed.",
+        "ctaProducts": "See all five products",
+        "ctaList": "List your inventory free"
+      }
+    },
     "banner": {
       "text": "Part of Mezzofy Exchange Protocol",
       "link": "View Ecosystem"
@@ -2390,7 +2390,7 @@
       "message": "Message",
       "messagePlaceholder": "Tell us about your distribution partnership goals...",
       "submit": "Request Partnership Discussion"
-    },
+    },
     "v2": {
       "faq": {
         "q3": {
@@ -3626,6 +3626,21 @@
         "contact": {
           "heading": "Contact Us",
           "info": "<a href=\"mailto:hello@mezzofy.com\" class=\"text-primary-orange hover:underline\">hello@mezzofy.com</a> | <a href=\"https://www.linkedin.com/company/mezzofy\" class=\"text-primary-orange hover:underline\">LinkedIn</a>"
+        }
+      },
+      "campaign-one-login-every-voucher-instant-wins-test": {
+        "title": "One Login. Every Voucher. Instant Wins | Mezzofy Marketplace",
+        "excerpt": "Say goodbye to app overload. Mezzofy's Marketplace Portal puts every voucher you'll ever need behind one login — with AI-personalized offers from global merchants and real-time redemption rewards that make your first save instantly gratifying. Your smartest deal is one click away.",
+        "headings": {
+          "s1": "One Login for a Fragmented Voucher Market",
+          "s2": "AI-Personalized Offers at the Point of Discovery",
+          "s3": "Real-Time Rewards That Convert Trials into Loyalty"
+        },
+        "paragraphs": {
+          "intro": "Mezzofy, the global coupon and voucher exchange marketplace, has launched its latest campaign, 'One Login. Every Voucher. Instant Wins.', aimed at deal-savvy digital shoppers aged 25 to 45. The initiative positions the company's B2C Marketplace Portal as the single destination where every voucher a consumer could need sits one login away. Its stated objective is to convert new sign-ups into first-time redeemers and, from there, into loyal repeat users.",
+          "s1": "Digital vouchers today are scattered across merchant apps, email inboxes, and physical wallets, leaving a significant share of potential savings unclaimed. The Marketplace Portal consolidates offers from global merchants into one authenticated account, removing the need to move between multiple platforms. For the 25-to-45 demographic, fluent in e-commerce yet fatigued by account sprawl, the single-login model addresses a well-documented pain point.",
+          "s2": "At the core of the portal is an AI-driven recommendation engine that matches merchant offers to individual browsing behavior, purchase history, and category preferences. Rather than presenting a uniform catalogue, the system prioritizes the deals each user is statistically most likely to redeem. The personalization is designed to shorten the path from registration to first redemption, widely regarded as the most critical conversion window for digital coupon platforms.",
+          "s3": "The campaign also foregrounds real-time redemption rewards, which deliver immediate gratification the moment a first voucher is redeemed. Mezzofy presents this instant feedback loop as the mechanism that turns a trial redemption into a repeatable habit. Early engagement data from comparable platforms indicates that users who redeem within their first session return at markedly higher rates. The company expects the campaign to establish a durable base of repeat redeemers across its global merchant network."
         }
       }
     }
@@ -5619,7 +5634,7 @@
       "t17Title": "Contact",
       "t17Body": "<p>We are here to help:</p><ul><li><strong>Customer support and Merchant closure requests</strong> — <a href=\"mailto:support@mezzofy.com\">support@mezzofy.com</a></li><li><strong>Legal notices</strong> — <a href=\"mailto:legal@mezzofy.com\">legal@mezzofy.com</a></li><li><strong>Marketplace</strong> — <a href=\"https://marketplace.mezzofy.com\">marketplace.mezzofy.com</a></li></ul>"
     }
-  },
+  },
   "b2bLegal": {
     "common": {
       "eyebrow": "B2B Exchange Portal · Legal",
